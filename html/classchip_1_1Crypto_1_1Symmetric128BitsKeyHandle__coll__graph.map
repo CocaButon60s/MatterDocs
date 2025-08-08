@@ -1,0 +1,7 @@
+<map id="chip::Crypto::Symmetric128BitsKeyHandle" name="chip::Crypto::Symmetric128BitsKeyHandle">
+<area shape="rect" id="Node000001" title="Platform&#45;specific 128&#45;bit symmetric key handle" alt="" coords="33,227,235,267"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Crypto_1_1SymmetricKeyHandle.html" title=" " alt="" coords="5,123,263,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,191,137,226,131,226,131,191"/>
+<area shape="rect" id="Node000003" href="$structchip_1_1Crypto_1_1SymmetricKeyHandle_1_1OpaqueContext.html" title=" " alt="" coords="33,5,235,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="137,74,137,122,131,122,131,74"/>
+</map>

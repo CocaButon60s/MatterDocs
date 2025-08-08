@@ -1,0 +1,10 @@
+<map id="chip::CopyCharSpanToMutableCharSpanWithTruncation" name="chip::CopyCharSpanToMutableCharSpanWithTruncation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,224,87"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097" title=" " alt="" coords="296,5,423,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,45,282,31,283,36,215,50"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Span.html#a675272efc7d6fffcb1eb12ad749cb15e" title=" " alt="" coords="272,55,447,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,65,258,65,258,70,224,70"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8" title=" " alt="" coords="495,80,617,105"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="224,83,272,89,382,93,481,93,481,98,381,99,272,94,224,89"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="447,76,481,80,481,86,447,81"/>
+</map>

@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/setup_payload/QRCodeSetupPayloadGenerator.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_487a48ec74188c06fd12863762b9f260.html">setup_payload</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">QRCodeSetupPayloadGenerator.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="QRCodeSetupPayloadGenerator_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2020 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="SetupPayload_8h.html">SetupPayload.h</a>&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;<a class="code" href="Span_8h.html">lib/support/Span.h</a>&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeSetupPayloadGenerator.html">   40</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1QRCodeSetupPayloadGenerator.html">QRCodeSetupPayloadGenerator</a></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a77099bf45e98e87153854ef55649419c">   43</a></span>    <a class="code hl_class" href="classchip_1_1SetupPayload.html">SetupPayload</a> <a class="code hl_variable" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a77099bf45e98e87153854ef55649419c">mPayload</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a836021ecdda075944c25a64defdbe8b0">   46</a></span>    <a class="code hl_function" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a836021ecdda075944c25a64defdbe8b0">QRCodeSetupPayloadGenerator</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1SetupPayload.html">SetupPayload</a> &amp; setupPayload) : <a class="code hl_variable" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a77099bf45e98e87153854ef55649419c">mPayload</a>(setupPayload) {}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a0661bdf9e8b0a409f51c392881fbd5f0">   64</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a0661bdf9e8b0a409f51c392881fbd5f0">payloadBase38Representation</a>(std::string &amp; base38Representation);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a4e564a3ecd93a6c86ef44112faa19f7f">   83</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a4e564a3ecd93a6c86ef44112faa19f7f">payloadBase38RepresentationWithAutoTLVBuffer</a>(std::string &amp; base38Representation);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a6f91c9565194d2b46e2b9f3c3bfbd39b">  107</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a6f91c9565194d2b46e2b9f3c3bfbd39b">payloadBase38Representation</a>(std::string &amp; base38Representation, uint8_t * tlvDataStart, uint32_t tlvDataStartSize);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a466c054b81da849057111f429262ee10">  114</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a466c054b81da849057111f429262ee10">SetAllowInvalidPayload</a>(<span class="keywordtype">bool</span> allow) { <a class="code hl_variable" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a20b62bbc72cfb0db469e90ebe8e0cccf">mAllowInvalidPayload</a> = allow; }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a361c639838b368b70fea174c25510044">  117</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a361c639838b368b70fea174c25510044">generateTLVFromOptionalData</a>(<a class="code hl_class" href="classchip_1_1SetupPayload.html">SetupPayload</a> &amp; outPayload, uint8_t * tlvDataStart, uint32_t maxLen,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                                           <span class="keywordtype">size_t</span> &amp; tlvDataLengthInBytes);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a20b62bbc72cfb0db469e90ebe8e0cccf">  120</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a20b62bbc72cfb0db469e90ebe8e0cccf">mAllowInvalidPayload</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>};</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="};">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html">  127</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html">QRCodeBasicSetupPayloadGenerator</a></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#a577037a97923e74b9dbb725eddb2995f">  130</a></span>    <a class="code hl_struct" href="structchip_1_1PayloadContents.html">PayloadContents</a> <a class="code hl_variable" href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#a577037a97923e74b9dbb725eddb2995f">mPayload</a>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#abc32979961ab323127ee7ac73531b2ce">  133</a></span>    <a class="code hl_function" href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#abc32979961ab323127ee7ac73531b2ce">QRCodeBasicSetupPayloadGenerator</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1PayloadContents.html">PayloadContents</a> &amp; payload) : <a class="code hl_variable" href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#a577037a97923e74b9dbb725eddb2995f">mPayload</a>(payload) {}</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#ab2932352ca5b396fbbf5776c062d835c">  155</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#ab2932352ca5b396fbbf5776c062d835c">payloadBase38Representation</a>(<a class="code hl_class" href="classchip_1_1Span.html">MutableCharSpan</a> &amp; outBuffer);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="comment">// TODO - Find the optimal value for maximum length of QR Code Base38 string</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#a9e6432d490e74daa1b8c81edce0cb761">  158</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> uint16_t <a class="code hl_variable" href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#a9e6432d490e74daa1b8c81edce0cb761">kMaxQRCodeBase38RepresentationLength</a> = 128;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>};</div>
+</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>} <span class="comment">// namespace chip</span></div>
+<div class="ttc" id="aSetupPayload_8h_html"><div class="ttname"><a href="SetupPayload_8h.html">SetupPayload.h</a></div></div>
+<div class="ttc" id="aSpan_8h_html"><div class="ttname"><a href="Span_8h.html">Span.h</a></div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html"><div class="ttname"><a href="classchip_1_1ChipError.html">chip::ChipError</a></div><div class="ttdef"><b>Definition</b> CHIPError.h:55</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeBasicSetupPayloadGenerator_html"><div class="ttname"><a href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html">chip::QRCodeBasicSetupPayloadGenerator</a></div><div class="ttdef"><b>Definition</b> QRCodeSetupPayloadGenerator.h:128</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeBasicSetupPayloadGenerator_html_a577037a97923e74b9dbb725eddb2995f"><div class="ttname"><a href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#a577037a97923e74b9dbb725eddb2995f">chip::QRCodeBasicSetupPayloadGenerator::mPayload</a></div><div class="ttdeci">PayloadContents mPayload</div><div class="ttdef"><b>Definition</b> QRCodeSetupPayloadGenerator.h:130</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeBasicSetupPayloadGenerator_html_a9e6432d490e74daa1b8c81edce0cb761"><div class="ttname"><a href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#a9e6432d490e74daa1b8c81edce0cb761">chip::QRCodeBasicSetupPayloadGenerator::kMaxQRCodeBase38RepresentationLength</a></div><div class="ttdeci">static constexpr uint16_t kMaxQRCodeBase38RepresentationLength</div><div class="ttdef"><b>Definition</b> QRCodeSetupPayloadGenerator.h:158</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeBasicSetupPayloadGenerator_html_ab2932352ca5b396fbbf5776c062d835c"><div class="ttname"><a href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#ab2932352ca5b396fbbf5776c062d835c">chip::QRCodeBasicSetupPayloadGenerator::payloadBase38Representation</a></div><div class="ttdeci">CHIP_ERROR payloadBase38Representation(MutableCharSpan &amp;outBuffer)</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeBasicSetupPayloadGenerator_html_abc32979961ab323127ee7ac73531b2ce"><div class="ttname"><a href="classchip_1_1QRCodeBasicSetupPayloadGenerator.html#abc32979961ab323127ee7ac73531b2ce">chip::QRCodeBasicSetupPayloadGenerator::QRCodeBasicSetupPayloadGenerator</a></div><div class="ttdeci">QRCodeBasicSetupPayloadGenerator(const PayloadContents &amp;payload)</div><div class="ttdef"><b>Definition</b> QRCodeSetupPayloadGenerator.h:133</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeSetupPayloadGenerator_html"><div class="ttname"><a href="classchip_1_1QRCodeSetupPayloadGenerator.html">chip::QRCodeSetupPayloadGenerator</a></div><div class="ttdef"><b>Definition</b> QRCodeSetupPayloadGenerator.h:41</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeSetupPayloadGenerator_html_a0661bdf9e8b0a409f51c392881fbd5f0"><div class="ttname"><a href="classchip_1_1QRCodeSetupPayloadGenerator.html#a0661bdf9e8b0a409f51c392881fbd5f0">chip::QRCodeSetupPayloadGenerator::payloadBase38Representation</a></div><div class="ttdeci">CHIP_ERROR payloadBase38Representation(std::string &amp;base38Representation)</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeSetupPayloadGenerator_html_a20b62bbc72cfb0db469e90ebe8e0cccf"><div class="ttname"><a href="classchip_1_1QRCodeSetupPayloadGenerator.html#a20b62bbc72cfb0db469e90ebe8e0cccf">chip::QRCodeSetupPayloadGenerator::mAllowInvalidPayload</a></div><div class="ttdeci">bool mAllowInvalidPayload</div><div class="ttdef"><b>Definition</b> QRCodeSetupPayloadGenerator.h:120</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeSetupPayloadGenerator_html_a361c639838b368b70fea174c25510044"><div class="ttname"><a href="classchip_1_1QRCodeSetupPayloadGenerator.html#a361c639838b368b70fea174c25510044">chip::QRCodeSetupPayloadGenerator::generateTLVFromOptionalData</a></div><div class="ttdeci">CHIP_ERROR generateTLVFromOptionalData(SetupPayload &amp;outPayload, uint8_t *tlvDataStart, uint32_t maxLen, size_t &amp;tlvDataLengthInBytes)</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeSetupPayloadGenerator_html_a466c054b81da849057111f429262ee10"><div class="ttname"><a href="classchip_1_1QRCodeSetupPayloadGenerator.html#a466c054b81da849057111f429262ee10">chip::QRCodeSetupPayloadGenerator::SetAllowInvalidPayload</a></div><div class="ttdeci">void SetAllowInvalidPayload(bool allow)</div><div class="ttdef"><b>Definition</b> QRCodeSetupPayloadGenerator.h:114</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeSetupPayloadGenerator_html_a4e564a3ecd93a6c86ef44112faa19f7f"><div class="ttname"><a href="classchip_1_1QRCodeSetupPayloadGenerator.html#a4e564a3ecd93a6c86ef44112faa19f7f">chip::QRCodeSetupPayloadGenerator::payloadBase38RepresentationWithAutoTLVBuffer</a></div><div class="ttdeci">CHIP_ERROR payloadBase38RepresentationWithAutoTLVBuffer(std::string &amp;base38Representation)</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeSetupPayloadGenerator_html_a6f91c9565194d2b46e2b9f3c3bfbd39b"><div class="ttname"><a href="classchip_1_1QRCodeSetupPayloadGenerator.html#a6f91c9565194d2b46e2b9f3c3bfbd39b">chip::QRCodeSetupPayloadGenerator::payloadBase38Representation</a></div><div class="ttdeci">CHIP_ERROR payloadBase38Representation(std::string &amp;base38Representation, uint8_t *tlvDataStart, uint32_t tlvDataStartSize)</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeSetupPayloadGenerator_html_a77099bf45e98e87153854ef55649419c"><div class="ttname"><a href="classchip_1_1QRCodeSetupPayloadGenerator.html#a77099bf45e98e87153854ef55649419c">chip::QRCodeSetupPayloadGenerator::mPayload</a></div><div class="ttdeci">SetupPayload mPayload</div><div class="ttdef"><b>Definition</b> QRCodeSetupPayloadGenerator.h:43</div></div>
+<div class="ttc" id="aclasschip_1_1QRCodeSetupPayloadGenerator_html_a836021ecdda075944c25a64defdbe8b0"><div class="ttname"><a href="classchip_1_1QRCodeSetupPayloadGenerator.html#a836021ecdda075944c25a64defdbe8b0">chip::QRCodeSetupPayloadGenerator::QRCodeSetupPayloadGenerator</a></div><div class="ttdeci">QRCodeSetupPayloadGenerator(const SetupPayload &amp;setupPayload)</div><div class="ttdef"><b>Definition</b> QRCodeSetupPayloadGenerator.h:46</div></div>
+<div class="ttc" id="aclasschip_1_1SetupPayload_html"><div class="ttname"><a href="classchip_1_1SetupPayload.html">chip::SetupPayload</a></div><div class="ttdef"><b>Definition</b> SetupPayload.h:187</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html"><div class="ttname"><a href="classchip_1_1Span.html">chip::Span</a></div><div class="ttdoc">A wrapper class for holding objects and its length, without the ownership of it. We can use C++20 std...</div><div class="ttdef"><b>Definition</b> Span.h:41</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+<div class="ttc" id="astructchip_1_1PayloadContents_html"><div class="ttname"><a href="structchip_1_1PayloadContents.html">chip::PayloadContents</a></div><div class="ttdef"><b>Definition</b> SetupPayload.h:121</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

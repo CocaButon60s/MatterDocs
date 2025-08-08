@@ -1,0 +1,8 @@
+<map id="chip::ChipError::MakeInteger" name="chip::ChipError::MakeInteger">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,212,31"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59" title=" " alt="" coords="515,5,705,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,15,501,15,501,21,212,21"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf" title=" " alt="" coords="260,31,467,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,26,247,29,246,34,212,31"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="466,30,501,27,501,32,467,35"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Device::GetLocation" name="Device::GetLocation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="483,75,636,101"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#ae579118b6e30a9a0f9219e48f91ad5fb" title=" " alt="" coords="280,39,431,65"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="473,76,427,67,428,62,474,70"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#ad0d534fabf21a1a35ee4e750f0fff965" title=" " alt="" coords="276,99,435,125"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="470,101,435,105,435,100,469,96"/>
+<area shape="rect" id="Node000003" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a5c4740fd4a4f26ccf02e2ae6b74883ac" title=" " alt="" coords="5,5,228,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,50,228,48,228,43,267,45"/>
+<area shape="rect" id="Node000005" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a40c81795ed59dad860acec7bbc2652c9" title="Callback that will be called to handle an InstantAction command." alt="" coords="11,99,222,168"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="262,123,223,127,222,121,262,118"/>
+</map>

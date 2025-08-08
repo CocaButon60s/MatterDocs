@@ -1,0 +1,13 @@
+<map id="connectedhomeip/src/app/AttributeAccessInterface.h" name="connectedhomeip/src/app/AttributeAccessInterface.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,232,45"/>
+<area shape="rect" id="Node000002" href="$bridged-actions-stub_8cpp.html" title=" " alt="" coords="10,196,217,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,55,39,72,21,95,13,121,21,147,40,173,65,194,62,198,36,177,16,149,8,121,16,92,35,68,58,50"/>
+<area shape="rect" id="Node000003" href="$AttributeAccessInterfaceRegistry_8h.html" title=" " alt="" coords="231,93,446,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,48,278,91,276,96,175,53"/>
+<area shape="rect" id="Node000005" href="$actions-server_8h.html" title=" " alt="" coords="31,93,207,148"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="121,59,121,93,116,93,116,59"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="269,156,173,198,171,194,267,151"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title=" " alt="" coords="241,203,447,243"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="343,162,346,203,340,203,338,162"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="119,162,117,196,112,196,114,162"/>
+</map>

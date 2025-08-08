@@ -1,0 +1,1928 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::Server クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="classchip_1_1Server.html">Server</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-static-methods">静的非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="classchip_1_1Server-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::Server クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Server_8h_source.html">Server.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::Server 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server__coll__graph.png" border="0" usemap="#achip_1_1Server_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1Server_coll__map" id="achip_1_1Server_coll__map">
+<area shape="rect" title=" " alt="" coords="745,123,843,149"/>
+<area shape="poly" title=" " alt="" coords="756,109,767,100,794,97,816,99,829,105,833,115,826,125,822,122,828,114,826,109,815,104,794,102,769,105,759,113"/>
+<area shape="rect" href="classchip_1_1Server_1_1GroupDataProviderListener.html" title=" " alt="" coords="1071,176,1301,216"/>
+<area shape="poly" title=" " alt="" coords="832,152,879,173,933,189,1002,199,1071,200,1070,206,1001,204,931,195,877,178,830,157"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html" title=" " alt="" coords="1093,40,1279,80"/>
+<area shape="poly" title=" " alt="" coords="838,116,931,87,1014,72,1092,63,1093,69,1014,77,933,92,840,121"/>
+<area shape="rect" href="classchip_1_1TransportMgr.html" title=" " alt="" coords="245,20,428,60"/>
+<area shape="poly" title=" " alt="" coords="442,52,546,69,657,92,755,121,754,126,655,97,545,74,441,57"/>
+<area shape="rect" title=" " alt="" coords="21,27,160,53"/>
+<area shape="poly" title=" " alt="" coords="174,37,245,37,245,43,174,43"/>
+<area shape="rect" href="classchip_1_1Server_1_1IgnoreRootExpirationValidityPolicy.html" title=" " alt="" coords="247,84,426,124"/>
+<area shape="poly" title=" " alt="" coords="440,109,745,130,744,135,440,114"/>
+<area shape="rect" title=" " alt="" coords="5,84,176,124"/>
+<area shape="poly" title=" " alt="" coords="190,101,247,101,247,107,190,107"/>
+<area shape="poly" title=" " alt="" coords="1057,179,843,146,844,141,1058,174"/>
+<area shape="rect" title=" " alt="" coords="680,220,908,260"/>
+<area shape="poly" title=" " alt="" coords="921,231,1046,219,1082,213,1083,219,1047,224,922,236"/>
+<area shape="poly" title=" " alt="" coords="1118,87,1047,107,938,125,844,135,843,130,938,120,1046,101,1116,82"/>
+<area shape="rect" title=" " alt="" coords="725,5,863,45"/>
+<area shape="poly" title=" " alt="" coords="877,28,1047,41,1093,46,1092,51,1046,47,876,33"/>
+<area shape="rect" href="classchip_1_1TestEventTriggerDelegate.html" title=" " alt="" coords="225,149,448,174"/>
+<area shape="poly" title=" " alt="" coords="462,159,656,152,744,141,744,147,656,157,462,165"/>
+<area shape="rect" href="classchip_1_1Inet_1_1InterfaceId.html" title=" " alt="" coords="257,198,417,223"/>
+<area shape="poly" title=" " alt="" coords="431,205,539,196,655,179,711,164,760,146,762,151,713,169,657,184,540,202,431,210"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server_1_1GroupDataProviderListener.html">GroupDataProviderListener</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server_1_1IgnoreRootExpirationValidityPolicy.html">IgnoreRootExpirationValidityPolicy</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server_1_1ServerFabricDelegate.html">ServerFabricDelegate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a15468bdd7924d29116dc04abab145da4" id="r_a15468bdd7924d29116dc04abab145da4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a15468bdd7924d29116dc04abab145da4">Init</a> (const <a class="el" href="structchip_1_1ServerInitParams.html">ServerInitParams</a> &amp;initParams)</td></tr>
+<tr class="separator:a15468bdd7924d29116dc04abab145da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348bb49ab49a04d1cbf7cc8ce59dcfdb" id="r_a348bb49ab49a04d1cbf7cc8ce59dcfdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a348bb49ab49a04d1cbf7cc8ce59dcfdb">RejoinExistingMulticastGroups</a> ()</td></tr>
+<tr class="memdesc:a348bb49ab49a04d1cbf7cc8ce59dcfdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this function to rejoin existing groups found in the GroupDataProvider  <br /></td></tr>
+<tr class="separator:a348bb49ab49a04d1cbf7cc8ce59dcfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083be7c6cb9061ba50c3cdb09acb6f1c" id="r_a083be7c6cb9061ba50c3cdb09acb6f1c"><td class="memItemLeft" align="right" valign="top">FabricTable &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a083be7c6cb9061ba50c3cdb09acb6f1c">GetFabricTable</a> ()</td></tr>
+<tr class="separator:a083be7c6cb9061ba50c3cdb09acb6f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73153de34e601aa0da18867b5e54357" id="r_ac73153de34e601aa0da18867b5e54357"><td class="memItemLeft" align="right" valign="top">CASESessionManager *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#ac73153de34e601aa0da18867b5e54357">GetCASESessionManager</a> ()</td></tr>
+<tr class="separator:ac73153de34e601aa0da18867b5e54357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a02e00e51fd6d9a94c30660e83be9c" id="r_a96a02e00e51fd6d9a94c30660e83be9c"><td class="memItemLeft" align="right" valign="top">Messaging::ExchangeManager &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a96a02e00e51fd6d9a94c30660e83be9c">GetExchangeManager</a> ()</td></tr>
+<tr class="separator:a96a02e00e51fd6d9a94c30660e83be9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8b2836d597c6770dbe284d07e088c8" id="r_aef8b2836d597c6770dbe284d07e088c8"><td class="memItemLeft" align="right" valign="top">SessionManager &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#aef8b2836d597c6770dbe284d07e088c8">GetSecureSessionManager</a> ()</td></tr>
+<tr class="separator:aef8b2836d597c6770dbe284d07e088c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc837a4eaca927b99edf6cc336cb25a7" id="r_acc837a4eaca927b99edf6cc336cb25a7"><td class="memItemLeft" align="right" valign="top">SessionResumptionStorage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#acc837a4eaca927b99edf6cc336cb25a7">GetSessionResumptionStorage</a> ()</td></tr>
+<tr class="separator:acc837a4eaca927b99edf6cc336cb25a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd460ae413187139cd4340cf50459c8f" id="r_abd460ae413187139cd4340cf50459c8f"><td class="memItemLeft" align="right" valign="top">app::SubscriptionResumptionStorage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#abd460ae413187139cd4340cf50459c8f">GetSubscriptionResumptionStorage</a> ()</td></tr>
+<tr class="separator:abd460ae413187139cd4340cf50459c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11d7410208d8b707a0b0ebe0a34f857" id="r_ab11d7410208d8b707a0b0ebe0a34f857"><td class="memItemLeft" align="right" valign="top">TransportMgrBase &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#ab11d7410208d8b707a0b0ebe0a34f857">GetTransportManager</a> ()</td></tr>
+<tr class="separator:ab11d7410208d8b707a0b0ebe0a34f857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17700671882196b6ac7736ecc3f4e9f1" id="r_a17700671882196b6ac7736ecc3f4e9f1"><td class="memItemLeft" align="right" valign="top">Credentials::GroupDataProvider *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a17700671882196b6ac7736ecc3f4e9f1">GetGroupDataProvider</a> ()</td></tr>
+<tr class="separator:a17700671882196b6ac7736ecc3f4e9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35709cca5f0720374d359bfc7e06e18" id="r_ac35709cca5f0720374d359bfc7e06e18"><td class="memItemLeft" align="right" valign="top">Crypto::SessionKeystore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#ac35709cca5f0720374d359bfc7e06e18">GetSessionKeystore</a> () const</td></tr>
+<tr class="separator:ac35709cca5f0720374d359bfc7e06e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028441cde3dca084cad196dbab534a73" id="r_a028441cde3dca084cad196dbab534a73"><td class="memItemLeft" align="right" valign="top">CommissioningWindowManager &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a028441cde3dca084cad196dbab534a73">GetCommissioningWindowManager</a> ()</td></tr>
+<tr class="separator:a028441cde3dca084cad196dbab534a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a35951b1a202d4ddd33c6b4f196d042" id="r_a3a35951b1a202d4ddd33c6b4f196d042"><td class="memItemLeft" align="right" valign="top">PersistentStorageDelegate &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a3a35951b1a202d4ddd33c6b4f196d042">GetPersistentStorage</a> ()</td></tr>
+<tr class="separator:a3a35951b1a202d4ddd33c6b4f196d042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c01e758bbc210f0530009d818cf6ba7" id="r_a6c01e758bbc210f0530009d818cf6ba7"><td class="memItemLeft" align="right" valign="top">app::FailSafeContext &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a6c01e758bbc210f0530009d818cf6ba7">GetFailSafeContext</a> ()</td></tr>
+<tr class="separator:a6c01e758bbc210f0530009d818cf6ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18c31f86a759bd668acb7ee63484f73c" id="r_a18c31f86a759bd668acb7ee63484f73c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1TestEventTriggerDelegate.html">TestEventTriggerDelegate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a18c31f86a759bd668acb7ee63484f73c">GetTestEventTriggerDelegate</a> ()</td></tr>
+<tr class="separator:a18c31f86a759bd668acb7ee63484f73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac427f1a1bfe4a02fabc339ed9954efd" id="r_aac427f1a1bfe4a02fabc339ed9954efd"><td class="memItemLeft" align="right" valign="top">Crypto::OperationalKeystore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#aac427f1a1bfe4a02fabc339ed9954efd">GetOperationalKeystore</a> ()</td></tr>
+<tr class="separator:aac427f1a1bfe4a02fabc339ed9954efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52a2465b08b830575fd20a9ed91c3d4" id="r_ac52a2465b08b830575fd20a9ed91c3d4"><td class="memItemLeft" align="right" valign="top">Credentials::OperationalCertificateStore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#ac52a2465b08b830575fd20a9ed91c3d4">GetOpCertStore</a> ()</td></tr>
+<tr class="separator:ac52a2465b08b830575fd20a9ed91c3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bdbba6904ee2e3059aaee65064b3a82" id="r_a9bdbba6904ee2e3059aaee65064b3a82"><td class="memItemLeft" align="right" valign="top">app::DefaultSafeAttributePersistenceProvider &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a9bdbba6904ee2e3059aaee65064b3a82">GetDefaultAttributePersister</a> ()</td></tr>
+<tr class="separator:a9bdbba6904ee2e3059aaee65064b3a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8e7a864712cfb3f7796c19c28a23c46" id="r_ad8e7a864712cfb3f7796c19c28a23c46"><td class="memItemLeft" align="right" valign="top">app::reporting::ReportScheduler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#ad8e7a864712cfb3f7796c19c28a23c46">GetReportScheduler</a> ()</td></tr>
+<tr class="separator:ad8e7a864712cfb3f7796c19c28a23c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a19ddeb66b639f93d0ff613d4c04e3e" id="r_a8a19ddeb66b639f93d0ff613d4c04e3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a8a19ddeb66b639f93d0ff613d4c04e3e">GenerateShutDownEvent</a> ()</td></tr>
+<tr class="separator:a8a19ddeb66b639f93d0ff613d4c04e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1182135f01c00fc0a8ebc9e8ef1d9e22" id="r_a1182135f01c00fc0a8ebc9e8ef1d9e22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a1182135f01c00fc0a8ebc9e8ef1d9e22">Shutdown</a> ()</td></tr>
+<tr class="separator:a1182135f01c00fc0a8ebc9e8ef1d9e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176aac49e891eea3c330fdb10df2d014" id="r_a176aac49e891eea3c330fdb10df2d014"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a176aac49e891eea3c330fdb10df2d014">ScheduleFactoryReset</a> ()</td></tr>
+<tr class="separator:a176aac49e891eea3c330fdb10df2d014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79d16ed3182aa6e1764aa3e56f0cd40" id="r_aa79d16ed3182aa6e1764aa3e56f0cd40"><td class="memItemLeft" align="right" valign="top">System::Clock::Microseconds64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#aa79d16ed3182aa6e1764aa3e56f0cd40">TimeSinceInit</a> () const</td></tr>
+<tr class="separator:aa79d16ed3182aa6e1764aa3e56f0cd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:aebc85f8a7d702eb987e86f075f2119e8" id="r_aebc85f8a7d702eb987e86f075f2119e8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classchip_1_1Server.html">Server</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#aebc85f8a7d702eb987e86f075f2119e8">GetInstance</a> ()</td></tr>
+<tr class="separator:aebc85f8a7d702eb987e86f075f2119e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:ab67a4e576b77c2a9947b837f41b40ca7" id="r_ab67a4e576b77c2a9947b837f41b40ca7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#ab67a4e576b77c2a9947b837f41b40ca7">Server</a> ()</td></tr>
+<tr class="separator:ab67a4e576b77c2a9947b837f41b40ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c36ee43b25ed57484c478dadc9fbfed" id="r_a1c36ee43b25ed57484c478dadc9fbfed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a1c36ee43b25ed57484c478dadc9fbfed">InitFailSafe</a> ()</td></tr>
+<tr class="separator:a1c36ee43b25ed57484c478dadc9fbfed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3ca1dae42621f56add0d43fe99da14" id="r_a9e3ca1dae42621f56add0d43fe99da14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a9e3ca1dae42621f56add0d43fe99da14">OnPlatformEvent</a> (const DeviceLayer::ChipDeviceEvent &amp;event)</td></tr>
+<tr class="separator:a9e3ca1dae42621f56add0d43fe99da14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af179a8726f0283733c366f001e0e40eb" id="r_af179a8726f0283733c366f001e0e40eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#af179a8726f0283733c366f001e0e40eb">CheckServerReadyEvent</a> ()</td></tr>
+<tr class="separator:af179a8726f0283733c366f001e0e40eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779204e313bbae64d039b3db01ab6094" id="r_a779204e313bbae64d039b3db01ab6094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a779204e313bbae64d039b3db01ab6094">PostFactoryResetEvent</a> ()</td></tr>
+<tr class="separator:a779204e313bbae64d039b3db01ab6094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静的非公開メンバ関数</h2></td></tr>
+<tr class="memitem:af51fa108ae5a5ae622a58d21e907bb92" id="r_af51fa108ae5a5ae622a58d21e907bb92"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#af51fa108ae5a5ae622a58d21e907bb92">OnPlatformEventWrapper</a> (const DeviceLayer::ChipDeviceEvent *event, intptr_t)</td></tr>
+<tr class="separator:af51fa108ae5a5ae622a58d21e907bb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a05558beee3b849c19499882fd43a5e45" id="r_a05558beee3b849c19499882fd43a5e45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a0701d2adcf53e85d036cfe72735eb757">ServerTransportMgr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a05558beee3b849c19499882fd43a5e45">mTransports</a></td></tr>
+<tr class="separator:a05558beee3b849c19499882fd43a5e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d50dfee735591af221f694ffb36c924" id="r_a1d50dfee735591af221f694ffb36c924"><td class="memItemLeft" align="right" valign="top">SessionManager&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a1d50dfee735591af221f694ffb36c924">mSessions</a></td></tr>
+<tr class="separator:a1d50dfee735591af221f694ffb36c924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ae15a7a7c908fe7d3e3ed4668aaf90" id="r_a29ae15a7a7c908fe7d3e3ed4668aaf90"><td class="memItemLeft" align="right" valign="top">CASEServer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a29ae15a7a7c908fe7d3e3ed4668aaf90">mCASEServer</a></td></tr>
+<tr class="separator:a29ae15a7a7c908fe7d3e3ed4668aaf90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc59760b1f6d38b2ed4924462ed1e90" id="r_a8bc59760b1f6d38b2ed4924462ed1e90"><td class="memItemLeft" align="right" valign="top">CASESessionManager&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a8bc59760b1f6d38b2ed4924462ed1e90">mCASESessionManager</a></td></tr>
+<tr class="separator:a8bc59760b1f6d38b2ed4924462ed1e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9597224e3c62e894534df7703320bd9d" id="r_a9597224e3c62e894534df7703320bd9d"><td class="memItemLeft" align="right" valign="top">CASEClientPool&lt; <a class="el" href="CHIPConfig_8h.html#a4f427e8253f10eada4583275e85d7eda">CHIP_CONFIG_DEVICE_MAX_ACTIVE_CASE_CLIENTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a9597224e3c62e894534df7703320bd9d">mCASEClientPool</a></td></tr>
+<tr class="separator:a9597224e3c62e894534df7703320bd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0e2e2b8da8eefa655780d016e045a5" id="r_aae0e2e2b8da8eefa655780d016e045a5"><td class="memItemLeft" align="right" valign="top">OperationalSessionSetupPool&lt; <a class="el" href="CHIPConfig_8h.html#af09f09ca0948295ca305b1a119184785">CHIP_CONFIG_DEVICE_MAX_ACTIVE_DEVICES</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#aae0e2e2b8da8eefa655780d016e045a5">mSessionSetupPool</a></td></tr>
+<tr class="separator:aae0e2e2b8da8eefa655780d016e045a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8924101f38b0446b2485ce2d3aadcb84" id="r_a8924101f38b0446b2485ce2d3aadcb84"><td class="memItemLeft" align="right" valign="top">Protocols::SecureChannel::UnsolicitedStatusHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a8924101f38b0446b2485ce2d3aadcb84">mUnsolicitedStatusHandler</a></td></tr>
+<tr class="separator:a8924101f38b0446b2485ce2d3aadcb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ec68925e8ccb230d8a21949cb26dd0" id="r_a26ec68925e8ccb230d8a21949cb26dd0"><td class="memItemLeft" align="right" valign="top">Messaging::ExchangeManager&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a26ec68925e8ccb230d8a21949cb26dd0">mExchangeMgr</a></td></tr>
+<tr class="separator:a26ec68925e8ccb230d8a21949cb26dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95db88d6a2db212857f3f3b706ff332" id="r_ac95db88d6a2db212857f3f3b706ff332"><td class="memItemLeft" align="right" valign="top">FabricTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#ac95db88d6a2db212857f3f3b706ff332">mFabrics</a></td></tr>
+<tr class="separator:ac95db88d6a2db212857f3f3b706ff332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad831851e132a15805ca1449834235132" id="r_ad831851e132a15805ca1449834235132"><td class="memItemLeft" align="right" valign="top">secure_channel::MessageCounterManager&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#ad831851e132a15805ca1449834235132">mMessageCounterManager</a></td></tr>
+<tr class="separator:ad831851e132a15805ca1449834235132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f46c83a66e0e2826ab2b47ace4457f" id="r_ae9f46c83a66e0e2826ab2b47ace4457f"><td class="memItemLeft" align="right" valign="top">CommissioningWindowManager&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#ae9f46c83a66e0e2826ab2b47ace4457f">mCommissioningWindowManager</a></td></tr>
+<tr class="separator:ae9f46c83a66e0e2826ab2b47ace4457f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709c1904b13039455be7161dbb802106" id="r_a709c1904b13039455be7161dbb802106"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Server_1_1IgnoreRootExpirationValidityPolicy.html">IgnoreRootExpirationValidityPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a709c1904b13039455be7161dbb802106">mCertificateValidityPolicy</a></td></tr>
+<tr class="separator:a709c1904b13039455be7161dbb802106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe09bd010b4e6a01513c4a77ec3ef0b" id="r_acbe09bd010b4e6a01513c4a77ec3ef0b"><td class="memItemLeft" align="right" valign="top">PersistentStorageDelegate *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#acbe09bd010b4e6a01513c4a77ec3ef0b">mDeviceStorage</a></td></tr>
+<tr class="separator:acbe09bd010b4e6a01513c4a77ec3ef0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1679bd0810118658beb87776be1893a1" id="r_a1679bd0810118658beb87776be1893a1"><td class="memItemLeft" align="right" valign="top">SessionResumptionStorage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a1679bd0810118658beb87776be1893a1">mSessionResumptionStorage</a></td></tr>
+<tr class="separator:a1679bd0810118658beb87776be1893a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb61f3beea4caf5a19f43a9f1668558a" id="r_afb61f3beea4caf5a19f43a9f1668558a"><td class="memItemLeft" align="right" valign="top">app::SubscriptionResumptionStorage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#afb61f3beea4caf5a19f43a9f1668558a">mSubscriptionResumptionStorage</a></td></tr>
+<tr class="separator:afb61f3beea4caf5a19f43a9f1668558a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21108bf94707c752c84eb900bddf888f" id="r_a21108bf94707c752c84eb900bddf888f"><td class="memItemLeft" align="right" valign="top">Credentials::GroupDataProvider *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a21108bf94707c752c84eb900bddf888f">mGroupsProvider</a></td></tr>
+<tr class="separator:a21108bf94707c752c84eb900bddf888f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9cd1a89914274773a4fb2d24cb7519c" id="r_ad9cd1a89914274773a4fb2d24cb7519c"><td class="memItemLeft" align="right" valign="top">Crypto::SessionKeystore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#ad9cd1a89914274773a4fb2d24cb7519c">mSessionKeystore</a></td></tr>
+<tr class="separator:ad9cd1a89914274773a4fb2d24cb7519c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1875f5ff7ee99e024820585a9c544b" id="r_a7b1875f5ff7ee99e024820585a9c544b"><td class="memItemLeft" align="right" valign="top">app::DefaultSafeAttributePersistenceProvider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a7b1875f5ff7ee99e024820585a9c544b">mAttributePersister</a></td></tr>
+<tr class="separator:a7b1875f5ff7ee99e024820585a9c544b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677c44eb363e3ebb66fc5d8a57c5b1f8" id="r_a677c44eb363e3ebb66fc5d8a57c5b1f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Server_1_1GroupDataProviderListener.html">GroupDataProviderListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a677c44eb363e3ebb66fc5d8a57c5b1f8">mListener</a></td></tr>
+<tr class="separator:a677c44eb363e3ebb66fc5d8a57c5b1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a80bbfba3ee09cd340bf969b69cb67" id="r_af6a80bbfba3ee09cd340bf969b69cb67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Server_1_1ServerFabricDelegate.html">ServerFabricDelegate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#af6a80bbfba3ee09cd340bf969b69cb67">mFabricDelegate</a></td></tr>
+<tr class="separator:af6a80bbfba3ee09cd340bf969b69cb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad573b6a620723526860b005bc99d1ec5" id="r_ad573b6a620723526860b005bc99d1ec5"><td class="memItemLeft" align="right" valign="top">app::reporting::ReportScheduler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#ad573b6a620723526860b005bc99d1ec5">mReportScheduler</a></td></tr>
+<tr class="separator:ad573b6a620723526860b005bc99d1ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a272c60670090518f61174d244da42153" id="r_a272c60670090518f61174d244da42153"><td class="memItemLeft" align="right" valign="top">Access::AccessControl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a272c60670090518f61174d244da42153">mAccessControl</a></td></tr>
+<tr class="separator:a272c60670090518f61174d244da42153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5639b1c7ebba0527771dd1f066362bc1" id="r_a5639b1c7ebba0527771dd1f066362bc1"><td class="memItemLeft" align="right" valign="top">app::AclStorage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a5639b1c7ebba0527771dd1f066362bc1">mAclStorage</a></td></tr>
+<tr class="separator:a5639b1c7ebba0527771dd1f066362bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a6d7a44cab46474958e8e7b2e6e690f" id="r_a3a6d7a44cab46474958e8e7b2e6e690f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1TestEventTriggerDelegate.html">TestEventTriggerDelegate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a3a6d7a44cab46474958e8e7b2e6e690f">mTestEventTriggerDelegate</a></td></tr>
+<tr class="separator:a3a6d7a44cab46474958e8e7b2e6e690f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a3e7d1f0c15df9634782266c5075f8" id="r_a42a3e7d1f0c15df9634782266c5075f8"><td class="memItemLeft" align="right" valign="top">Crypto::OperationalKeystore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a42a3e7d1f0c15df9634782266c5075f8">mOperationalKeystore</a></td></tr>
+<tr class="separator:a42a3e7d1f0c15df9634782266c5075f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1fe5ebafd69b005e9999d68eb8a178" id="r_a0e1fe5ebafd69b005e9999d68eb8a178"><td class="memItemLeft" align="right" valign="top">Credentials::OperationalCertificateStore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a0e1fe5ebafd69b005e9999d68eb8a178">mOpCertStore</a></td></tr>
+<tr class="separator:a0e1fe5ebafd69b005e9999d68eb8a178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9acbdfa48b70e2f1489d02bc5acec847" id="r_a9acbdfa48b70e2f1489d02bc5acec847"><td class="memItemLeft" align="right" valign="top">app::FailSafeContext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a9acbdfa48b70e2f1489d02bc5acec847">mFailSafeContext</a></td></tr>
+<tr class="separator:a9acbdfa48b70e2f1489d02bc5acec847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396b98e0ed1b5f66878c76dade46b914" id="r_a396b98e0ed1b5f66878c76dade46b914"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a396b98e0ed1b5f66878c76dade46b914">mIsDnssdReady</a> = false</td></tr>
+<tr class="separator:a396b98e0ed1b5f66878c76dade46b914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a003831777771cf41ba309412b8c6a9ea" id="r_a003831777771cf41ba309412b8c6a9ea"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a003831777771cf41ba309412b8c6a9ea">mOperationalServicePort</a></td></tr>
+<tr class="separator:a003831777771cf41ba309412b8c6a9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81423926aadff5edf6ece1433709cf9c" id="r_a81423926aadff5edf6ece1433709cf9c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a81423926aadff5edf6ece1433709cf9c">mUserDirectedCommissioningPort</a></td></tr>
+<tr class="separator:a81423926aadff5edf6ece1433709cf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0bd3e9f371611699de72e064c9986f" id="r_a6d0bd3e9f371611699de72e064c9986f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a6d0bd3e9f371611699de72e064c9986f">mInterfaceId</a></td></tr>
+<tr class="separator:a6d0bd3e9f371611699de72e064c9986f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8f44273b09d2b76c626bd4ab718b32" id="r_a4b8f44273b09d2b76c626bd4ab718b32"><td class="memItemLeft" align="right" valign="top">System::Clock::Microseconds64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#a4b8f44273b09d2b76c626bd4ab718b32">mInitTimestamp</a></td></tr>
+<tr class="separator:a4b8f44273b09d2b76c626bd4ab718b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:add3810af8866f5c5b8cacad61ee4a565" id="r_add3810af8866f5c5b8cacad61ee4a565"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classchip_1_1Server.html">Server</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#add3810af8866f5c5b8cacad61ee4a565">sServer</a></td></tr>
+<tr class="separator:add3810af8866f5c5b8cacad61ee4a565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab690d2ef07d7d52155f8f20bfc2f28a" id="r_aab690d2ef07d7d52155f8f20bfc2f28a"><td class="memItemLeft" align="right" valign="top">static Credentials::IgnoreCertificateValidityPeriodPolicy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server.html#aab690d2ef07d7d52155f8f20bfc2f28a">sDefaultCertValidityPolicy</a></td></tr>
+<tr class="separator:aab690d2ef07d7d52155f8f20bfc2f28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>The <code><a class="el" href="classchip_1_1Server.html">Server</a></code> singleton class is an aggregate for all the resources needed to run a Node that is both Commissionable and mainly used as an end-node with server clusters. In other words, it aggregates the state needed for the type of Node used for most products that are not mainly controller/administrator role.</p>
+<p>This sington class expects <code><a class="el" href="structchip_1_1ServerInitParams.html">ServerInitParams</a></code> initialization parameters but does not own the resources injected from <code><a class="el" href="structchip_1_1ServerInitParams.html">ServerInitParams</a></code>. Any object pointers/references passed in <a class="el" href="structchip_1_1ServerInitParams.html">ServerInitParams</a> must be pre-initialized externally, and shutdown/finalized after <code><a class="el" href="classchip_1_1Server.html#a1182135f01c00fc0a8ebc9e8ef1d9e22">Server::Shutdown()</a></code> is called.</p>
+<p>TODO: Separate lifecycle ownership for some more capabilities that should not belong to common logic, such as <code>GenerateShutDownEvent</code>.</p>
+<p>TODO: Replace all uses of <a class="el" href="classchip_1_1Server.html#aebc85f8a7d702eb987e86f075f2119e8">GetInstance()</a> to "reach in" to this state from all cluster server common logic that deal with global node state with either a common NodeState compatible with OperationalDeviceProxy/DeviceProxy, or with injection at common SDK logic init. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="ab67a4e576b77c2a9947b837f41b40ca7" name="ab67a4e576b77c2a9947b837f41b40ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab67a4e576b77c2a9947b837f41b40ca7">&#9670;&#160;</a></span>Server()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::Server::Server </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="af179a8726f0283733c366f001e0e40eb" name="af179a8726f0283733c366f001e0e40eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af179a8726f0283733c366f001e0e40eb">&#9670;&#160;</a></span>CheckServerReadyEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Server::CheckServerReadyEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a19ddeb66b639f93d0ff613d4c04e3e" name="a8a19ddeb66b639f93d0ff613d4c04e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a19ddeb66b639f93d0ff613d4c04e3e">&#9670;&#160;</a></span>GenerateShutDownEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Server::GenerateShutDownEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function causes the ShutDown event to be generated async on the Matter event loop. Should be called before stopping the event loop. </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_a8a19ddeb66b639f93d0ff613d4c04e3e_icgraph.png" border="0" usemap="#aclasschip_1_1Server_a8a19ddeb66b639f93d0ff613d4c04e3e_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_a8a19ddeb66b639f93d0ff613d4c04e3e_icgraph" id="aclasschip_1_1Server_a8a19ddeb66b639f93d0ff613d4c04e3e_icgraph">
+<area shape="rect" title=" " alt="" coords="892,37,1088,77"/>
+<area shape="rect" href="classDefaultAppMainLoopImplementation.html#ab171fe3c33fc5e139b2b91ae00a2f6c8" title=" " alt="" coords="581,5,844,45"/>
+<area shape="poly" title=" " alt="" coords="878,47,844,43,844,38,879,42"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a7b5acccb085831d760d79051c6a63962" title=" " alt="" coords="581,69,844,109"/>
+<area shape="poly" title=" " alt="" coords="879,73,844,77,844,72,878,68"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,77,283,102"/>
+<area shape="poly" title=" " alt="" coords="567,85,533,84,432,82,331,84,283,86,283,81,331,79,432,77,533,79,568,80"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a648b20fe10e56b8bb136370b8654b461" title=" " alt="" coords="331,94,533,149"/>
+<area shape="poly" title=" " alt="" coords="568,109,534,112,533,107,567,103"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,77,60,102"/>
+<area shape="poly" title=" " alt="" coords="95,92,60,92,60,87,95,87"/>
+<area shape="poly" title=" " alt="" coords="317,108,282,104,283,98,317,103"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac73153de34e601aa0da18867b5e54357" name="ac73153de34e601aa0da18867b5e54357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73153de34e601aa0da18867b5e54357">&#9670;&#160;</a></span>GetCASESessionManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CASESessionManager * chip::Server::GetCASESessionManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a028441cde3dca084cad196dbab534a73" name="a028441cde3dca084cad196dbab534a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028441cde3dca084cad196dbab534a73">&#9670;&#160;</a></span>GetCommissioningWindowManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CommissioningWindowManager &amp; chip::Server::GetCommissioningWindowManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_a028441cde3dca084cad196dbab534a73_icgraph.png" border="0" usemap="#aclasschip_1_1Server_a028441cde3dca084cad196dbab534a73_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_a028441cde3dca084cad196dbab534a73_icgraph" id="aclasschip_1_1Server_a028441cde3dca084cad196dbab534a73_icgraph">
+<area shape="rect" title=" " alt="" coords="881,37,1112,77"/>
+<area shape="rect" href="namespacechip_1_1Shell.html#a63caa983b0e6ae4eb80991439f1bdcee" title=" " alt="" coords="633,5,827,45"/>
+<area shape="poly" title=" " alt="" coords="867,45,827,40,828,34,868,39"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html#a19d8d40984c68b27400702d9f4b6a9ab" title=" " alt="" coords="627,69,833,109"/>
+<area shape="poly" title=" " alt="" coords="868,75,834,80,833,74,867,70"/>
+<area shape="rect" href="namespacechip_1_1Shell.html#ae532786c8c06657dca496e305a3a4979" title=" " alt="" coords="331,5,579,45"/>
+<area shape="poly" title=" " alt="" coords="619,28,579,28,579,23,619,23"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,13,283,38"/>
+<area shape="poly" title=" " alt="" coords="317,28,283,28,283,23,317,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="95,28,60,28,60,23,95,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9bdbba6904ee2e3059aaee65064b3a82" name="a9bdbba6904ee2e3059aaee65064b3a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bdbba6904ee2e3059aaee65064b3a82">&#9670;&#160;</a></span>GetDefaultAttributePersister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">app::DefaultSafeAttributePersistenceProvider &amp; chip::Server::GetDefaultAttributePersister </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96a02e00e51fd6d9a94c30660e83be9c" name="a96a02e00e51fd6d9a94c30660e83be9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96a02e00e51fd6d9a94c30660e83be9c">&#9670;&#160;</a></span>GetExchangeManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Messaging::ExchangeManager &amp; chip::Server::GetExchangeManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a083be7c6cb9061ba50c3cdb09acb6f1c" name="a083be7c6cb9061ba50c3cdb09acb6f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083be7c6cb9061ba50c3cdb09acb6f1c">&#9670;&#160;</a></span>GetFabricTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FabricTable &amp; chip::Server::GetFabricTable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_a083be7c6cb9061ba50c3cdb09acb6f1c_icgraph.png" border="0" usemap="#aclasschip_1_1Server_a083be7c6cb9061ba50c3cdb09acb6f1c_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_a083be7c6cb9061ba50c3cdb09acb6f1c_icgraph" id="aclasschip_1_1Server_a083be7c6cb9061ba50c3cdb09acb6f1c_icgraph">
+<area shape="rect" title=" " alt="" coords="284,45,487,70"/>
+<area shape="rect" href="classchip_1_1Server_1_1GroupDataProviderListener.html#a3cc25288fa8aa29337aeb316c2c8e644" title=" " alt="" coords="5,5,236,45"/>
+<area shape="poly" title=" " alt="" coords="270,46,236,42,236,37,271,41"/>
+<area shape="rect" href="classchip_1_1Server_1_1GroupDataProviderListener.html#af75f70aa54f64445786b8c7cdd0791ed" title=" " alt="" coords="5,69,236,109"/>
+<area shape="poly" title=" " alt="" coords="271,74,236,78,236,73,270,69"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6c01e758bbc210f0530009d818cf6ba7" name="a6c01e758bbc210f0530009d818cf6ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c01e758bbc210f0530009d818cf6ba7">&#9670;&#160;</a></span>GetFailSafeContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">app::FailSafeContext &amp; chip::Server::GetFailSafeContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17700671882196b6ac7736ecc3f4e9f1" name="a17700671882196b6ac7736ecc3f4e9f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17700671882196b6ac7736ecc3f4e9f1">&#9670;&#160;</a></span>GetGroupDataProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Credentials::GroupDataProvider * chip::Server::GetGroupDataProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_a17700671882196b6ac7736ecc3f4e9f1_icgraph.png" border="0" usemap="#aclasschip_1_1Server_a17700671882196b6ac7736ecc3f4e9f1_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_a17700671882196b6ac7736ecc3f4e9f1_icgraph" id="aclasschip_1_1Server_a17700671882196b6ac7736ecc3f4e9f1_icgraph">
+<area shape="rect" title=" " alt="" coords="260,5,460,45"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html#a19d8d40984c68b27400702d9f4b6a9ab" title=" " alt="" coords="5,5,212,45"/>
+<area shape="poly" title=" " alt="" coords="246,28,212,28,212,23,246,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aebc85f8a7d702eb987e86f075f2119e8" name="aebc85f8a7d702eb987e86f075f2119e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc85f8a7d702eb987e86f075f2119e8">&#9670;&#160;</a></span>GetInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classchip_1_1Server.html">Server</a> &amp; chip::Server::GetInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_aebc85f8a7d702eb987e86f075f2119e8_icgraph.png" border="0" usemap="#aclasschip_1_1Server_aebc85f8a7d702eb987e86f075f2119e8_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_aebc85f8a7d702eb987e86f075f2119e8_icgraph" id="aclasschip_1_1Server_aebc85f8a7d702eb987e86f075f2119e8_icgraph">
+<area shape="rect" title=" " alt="" coords="937,88,1123,114"/>
+<area shape="rect" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="129,10,261,35"/>
+<area shape="poly" title=" " alt="" coords="993,84,945,62,889,44,802,28,713,17,537,9,380,11,262,19,261,13,380,6,537,3,713,12,803,23,890,38,947,57,995,79"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,88,283,114"/>
+<area shape="poly" title=" " alt="" coords="971,87,889,72,732,56,610,50,487,55,331,72,284,80,240,91,238,86,282,75,330,66,487,50,610,45,733,50,890,66,972,82"/>
+<area shape="rect" href="namespacechip_1_1Shell.html#a63caa983b0e6ae4eb80991439f1bdcee" title=" " alt="" coords="661,81,855,121"/>
+<area shape="poly" title=" " alt="" coords="923,104,856,104,856,98,923,98"/>
+<area shape="rect" href="classDefaultAppMainLoopImplementation.html#ab171fe3c33fc5e139b2b91ae00a2f6c8" title=" " alt="" coords="627,145,889,185"/>
+<area shape="poly" title=" " alt="" coords="962,120,844,148,843,142,961,114"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a7b5acccb085831d760d79051c6a63962" title=" " alt="" coords="627,209,889,249"/>
+<area shape="poly" title=" " alt="" coords="1005,125,954,163,890,199,858,211,857,206,888,195,951,158,1002,120"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,64,60,90"/>
+<area shape="poly" title=" " alt="" coords="145,42,61,71,60,65,143,37"/>
+<area shape="poly" title=" " alt="" coords="96,89,60,84,61,78,96,84"/>
+<area shape="rect" href="namespacechip_1_1Shell.html#ae532786c8c06657dca496e305a3a4979" title=" " alt="" coords="331,81,579,121"/>
+<area shape="poly" title=" " alt="" coords="647,104,579,104,579,98,647,98"/>
+<area shape="poly" title=" " alt="" coords="317,104,283,104,283,98,317,98"/>
+<area shape="poly" title=" " alt="" coords="654,209,330,136,249,116,250,111,331,130,655,203"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a648b20fe10e56b8bb136370b8654b461" title=" " alt="" coords="353,200,556,255"/>
+<area shape="poly" title=" " alt="" coords="613,231,556,231,556,225,613,226"/>
+<area shape="poly" title=" " alt="" coords="366,197,329,181,266,147,215,116,218,111,269,142,332,176,369,193"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac52a2465b08b830575fd20a9ed91c3d4" name="ac52a2465b08b830575fd20a9ed91c3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52a2465b08b830575fd20a9ed91c3d4">&#9670;&#160;</a></span>GetOpCertStore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Credentials::OperationalCertificateStore * chip::Server::GetOpCertStore </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac427f1a1bfe4a02fabc339ed9954efd" name="aac427f1a1bfe4a02fabc339ed9954efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac427f1a1bfe4a02fabc339ed9954efd">&#9670;&#160;</a></span>GetOperationalKeystore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Crypto::OperationalKeystore * chip::Server::GetOperationalKeystore </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a35951b1a202d4ddd33c6b4f196d042" name="a3a35951b1a202d4ddd33c6b4f196d042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a35951b1a202d4ddd33c6b4f196d042">&#9670;&#160;</a></span>GetPersistentStorage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PersistentStorageDelegate &amp; chip::Server::GetPersistentStorage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_a3a35951b1a202d4ddd33c6b4f196d042_icgraph.png" border="0" usemap="#aclasschip_1_1Server_a3a35951b1a202d4ddd33c6b4f196d042_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_a3a35951b1a202d4ddd33c6b4f196d042_icgraph" id="aclasschip_1_1Server_a3a35951b1a202d4ddd33c6b4f196d042_icgraph">
+<area shape="rect" title=" " alt="" coords="260,5,455,45"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html#a19d8d40984c68b27400702d9f4b6a9ab" title=" " alt="" coords="5,5,212,45"/>
+<area shape="poly" title=" " alt="" coords="246,28,212,28,212,23,246,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad8e7a864712cfb3f7796c19c28a23c46" name="ad8e7a864712cfb3f7796c19c28a23c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e7a864712cfb3f7796c19c28a23c46">&#9670;&#160;</a></span>GetReportScheduler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">app::reporting::ReportScheduler * chip::Server::GetReportScheduler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef8b2836d597c6770dbe284d07e088c8" name="aef8b2836d597c6770dbe284d07e088c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8b2836d597c6770dbe284d07e088c8">&#9670;&#160;</a></span>GetSecureSessionManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SessionManager &amp; chip::Server::GetSecureSessionManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac35709cca5f0720374d359bfc7e06e18" name="ac35709cca5f0720374d359bfc7e06e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35709cca5f0720374d359bfc7e06e18">&#9670;&#160;</a></span>GetSessionKeystore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Crypto::SessionKeystore * chip::Server::GetSessionKeystore </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc837a4eaca927b99edf6cc336cb25a7" name="acc837a4eaca927b99edf6cc336cb25a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc837a4eaca927b99edf6cc336cb25a7">&#9670;&#160;</a></span>GetSessionResumptionStorage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SessionResumptionStorage * chip::Server::GetSessionResumptionStorage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_acc837a4eaca927b99edf6cc336cb25a7_icgraph.png" border="0" usemap="#aclasschip_1_1Server_acc837a4eaca927b99edf6cc336cb25a7_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_acc837a4eaca927b99edf6cc336cb25a7_icgraph" id="aclasschip_1_1Server_acc837a4eaca927b99edf6cc336cb25a7_icgraph">
+<area shape="rect" title=" " alt="" coords="577,37,757,77"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html#aae1b44b3b5453cccc3de199b1aa5aed8" title=" " alt="" coords="260,30,529,85"/>
+<area shape="poly" title=" " alt="" coords="564,60,530,60,530,55,564,55"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html#a19d8d40984c68b27400702d9f4b6a9ab" title=" " alt="" coords="5,5,212,45"/>
+<area shape="poly" title=" " alt="" coords="246,43,212,40,212,34,247,38"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html#ab5915f373267cc4857de7aab95316c72" title=" " alt="" coords="9,69,209,109"/>
+<area shape="poly" title=" " alt="" coords="247,77,209,81,209,76,246,71"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abd460ae413187139cd4340cf50459c8f" name="abd460ae413187139cd4340cf50459c8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd460ae413187139cd4340cf50459c8f">&#9670;&#160;</a></span>GetSubscriptionResumptionStorage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">app::SubscriptionResumptionStorage * chip::Server::GetSubscriptionResumptionStorage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_abd460ae413187139cd4340cf50459c8f_icgraph.png" border="0" usemap="#aclasschip_1_1Server_abd460ae413187139cd4340cf50459c8f_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_abd460ae413187139cd4340cf50459c8f_icgraph" id="aclasschip_1_1Server_abd460ae413187139cd4340cf50459c8f_icgraph">
+<area shape="rect" title=" " alt="" coords="589,13,800,53"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html#a7262a713f72f55cc9d5bb671ebaa74df" title=" " alt="" coords="260,5,541,60"/>
+<area shape="poly" title=" " alt="" coords="576,35,542,35,542,30,576,30"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html#a19d8d40984c68b27400702d9f4b6a9ab" title=" " alt="" coords="5,13,212,53"/>
+<area shape="poly" title=" " alt="" coords="246,35,212,35,212,30,246,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a18c31f86a759bd668acb7ee63484f73c" name="a18c31f86a759bd668acb7ee63484f73c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18c31f86a759bd668acb7ee63484f73c">&#9670;&#160;</a></span>GetTestEventTriggerDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1TestEventTriggerDelegate.html">TestEventTriggerDelegate</a> * chip::Server::GetTestEventTriggerDelegate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab11d7410208d8b707a0b0ebe0a34f857" name="ab11d7410208d8b707a0b0ebe0a34f857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11d7410208d8b707a0b0ebe0a34f857">&#9670;&#160;</a></span>GetTransportManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TransportMgrBase &amp; chip::Server::GetTransportManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_ab11d7410208d8b707a0b0ebe0a34f857_icgraph.png" border="0" usemap="#aclasschip_1_1Server_ab11d7410208d8b707a0b0ebe0a34f857_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_ab11d7410208d8b707a0b0ebe0a34f857_icgraph" id="aclasschip_1_1Server_ab11d7410208d8b707a0b0ebe0a34f857_icgraph">
+<area shape="rect" title=" " alt="" coords="284,37,475,77"/>
+<area shape="rect" href="classchip_1_1Server_1_1GroupDataProviderListener.html#a3cc25288fa8aa29337aeb316c2c8e644" title=" " alt="" coords="5,5,236,45"/>
+<area shape="poly" title=" " alt="" coords="270,47,236,42,236,37,271,41"/>
+<area shape="rect" href="classchip_1_1Server_1_1GroupDataProviderListener.html#af75f70aa54f64445786b8c7cdd0791ed" title=" " alt="" coords="5,69,236,109"/>
+<area shape="poly" title=" " alt="" coords="271,73,236,78,236,72,270,68"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a15468bdd7924d29116dc04abab145da4" name="a15468bdd7924d29116dc04abab145da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15468bdd7924d29116dc04abab145da4">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Server::Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1ServerInitParams.html">ServerInitParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>initParams</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_a15468bdd7924d29116dc04abab145da4_icgraph.png" border="0" usemap="#aclasschip_1_1Server_a15468bdd7924d29116dc04abab145da4_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_a15468bdd7924d29116dc04abab145da4_icgraph" id="aclasschip_1_1Server_a15468bdd7924d29116dc04abab145da4_icgraph">
+<area shape="rect" title=" " alt="" coords="331,5,459,31"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="317,21,283,21,283,15,317,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1c36ee43b25ed57484c478dadc9fbfed" name="a1c36ee43b25ed57484c478dadc9fbfed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c36ee43b25ed57484c478dadc9fbfed">&#9670;&#160;</a></span>InitFailSafe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Server::InitFailSafe </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e3ca1dae42621f56add0d43fe99da14" name="a9e3ca1dae42621f56add0d43fe99da14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e3ca1dae42621f56add0d43fe99da14">&#9670;&#160;</a></span>OnPlatformEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Server::OnPlatformEvent </td>
+          <td>(</td>
+          <td class="paramtype">const DeviceLayer::ChipDeviceEvent &amp;&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af51fa108ae5a5ae622a58d21e907bb92" name="af51fa108ae5a5ae622a58d21e907bb92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af51fa108ae5a5ae622a58d21e907bb92">&#9670;&#160;</a></span>OnPlatformEventWrapper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void chip::Server::OnPlatformEventWrapper </td>
+          <td>(</td>
+          <td class="paramtype">const DeviceLayer::ChipDeviceEvent *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">intptr_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a779204e313bbae64d039b3db01ab6094" name="a779204e313bbae64d039b3db01ab6094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a779204e313bbae64d039b3db01ab6094">&#9670;&#160;</a></span>PostFactoryResetEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Server::PostFactoryResetEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a348bb49ab49a04d1cbf7cc8ce59dcfdb" name="a348bb49ab49a04d1cbf7cc8ce59dcfdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a348bb49ab49a04d1cbf7cc8ce59dcfdb">&#9670;&#160;</a></span>RejoinExistingMulticastGroups()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Server::RejoinExistingMulticastGroups </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call this function to rejoin existing groups found in the GroupDataProvider </p>
+
+</div>
+</div>
+<a id="a176aac49e891eea3c330fdb10df2d014" name="a176aac49e891eea3c330fdb10df2d014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a176aac49e891eea3c330fdb10df2d014">&#9670;&#160;</a></span>ScheduleFactoryReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Server::ScheduleFactoryReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1182135f01c00fc0a8ebc9e8ef1d9e22" name="a1182135f01c00fc0a8ebc9e8ef1d9e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1182135f01c00fc0a8ebc9e8ef1d9e22">&#9670;&#160;</a></span>Shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Server::Shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_a1182135f01c00fc0a8ebc9e8ef1d9e22_icgraph.png" border="0" usemap="#aclasschip_1_1Server_a1182135f01c00fc0a8ebc9e8ef1d9e22_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_a1182135f01c00fc0a8ebc9e8ef1d9e22_icgraph" id="aclasschip_1_1Server_a1182135f01c00fc0a8ebc9e8ef1d9e22_icgraph">
+<area shape="rect" title=" " alt="" coords="331,5,501,31"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="317,21,283,21,283,15,317,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa79d16ed3182aa6e1764aa3e56f0cd40" name="aa79d16ed3182aa6e1764aa3e56f0cd40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79d16ed3182aa6e1764aa3e56f0cd40">&#9670;&#160;</a></span>TimeSinceInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System::Clock::Microseconds64 chip::Server::TimeSinceInit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a272c60670090518f61174d244da42153" name="a272c60670090518f61174d244da42153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a272c60670090518f61174d244da42153">&#9670;&#160;</a></span>mAccessControl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Access::AccessControl chip::Server::mAccessControl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5639b1c7ebba0527771dd1f066362bc1" name="a5639b1c7ebba0527771dd1f066362bc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5639b1c7ebba0527771dd1f066362bc1">&#9670;&#160;</a></span>mAclStorage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">app::AclStorage* chip::Server::mAclStorage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b1875f5ff7ee99e024820585a9c544b" name="a7b1875f5ff7ee99e024820585a9c544b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1875f5ff7ee99e024820585a9c544b">&#9670;&#160;</a></span>mAttributePersister</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">app::DefaultSafeAttributePersistenceProvider chip::Server::mAttributePersister</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9597224e3c62e894534df7703320bd9d" name="a9597224e3c62e894534df7703320bd9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9597224e3c62e894534df7703320bd9d">&#9670;&#160;</a></span>mCASEClientPool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CASEClientPool&lt;<a class="el" href="CHIPConfig_8h.html#a4f427e8253f10eada4583275e85d7eda">CHIP_CONFIG_DEVICE_MAX_ACTIVE_CASE_CLIENTS</a>&gt; chip::Server::mCASEClientPool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29ae15a7a7c908fe7d3e3ed4668aaf90" name="a29ae15a7a7c908fe7d3e3ed4668aaf90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29ae15a7a7c908fe7d3e3ed4668aaf90">&#9670;&#160;</a></span>mCASEServer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CASEServer chip::Server::mCASEServer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bc59760b1f6d38b2ed4924462ed1e90" name="a8bc59760b1f6d38b2ed4924462ed1e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bc59760b1f6d38b2ed4924462ed1e90">&#9670;&#160;</a></span>mCASESessionManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CASESessionManager chip::Server::mCASESessionManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a709c1904b13039455be7161dbb802106" name="a709c1904b13039455be7161dbb802106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709c1904b13039455be7161dbb802106">&#9670;&#160;</a></span>mCertificateValidityPolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Server_1_1IgnoreRootExpirationValidityPolicy.html">IgnoreRootExpirationValidityPolicy</a> chip::Server::mCertificateValidityPolicy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9f46c83a66e0e2826ab2b47ace4457f" name="ae9f46c83a66e0e2826ab2b47ace4457f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f46c83a66e0e2826ab2b47ace4457f">&#9670;&#160;</a></span>mCommissioningWindowManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CommissioningWindowManager chip::Server::mCommissioningWindowManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbe09bd010b4e6a01513c4a77ec3ef0b" name="acbe09bd010b4e6a01513c4a77ec3ef0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe09bd010b4e6a01513c4a77ec3ef0b">&#9670;&#160;</a></span>mDeviceStorage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PersistentStorageDelegate* chip::Server::mDeviceStorage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26ec68925e8ccb230d8a21949cb26dd0" name="a26ec68925e8ccb230d8a21949cb26dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ec68925e8ccb230d8a21949cb26dd0">&#9670;&#160;</a></span>mExchangeMgr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Messaging::ExchangeManager chip::Server::mExchangeMgr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6a80bbfba3ee09cd340bf969b69cb67" name="af6a80bbfba3ee09cd340bf969b69cb67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a80bbfba3ee09cd340bf969b69cb67">&#9670;&#160;</a></span>mFabricDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Server_1_1ServerFabricDelegate.html">ServerFabricDelegate</a> chip::Server::mFabricDelegate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac95db88d6a2db212857f3f3b706ff332" name="ac95db88d6a2db212857f3f3b706ff332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac95db88d6a2db212857f3f3b706ff332">&#9670;&#160;</a></span>mFabrics</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FabricTable chip::Server::mFabrics</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9acbdfa48b70e2f1489d02bc5acec847" name="a9acbdfa48b70e2f1489d02bc5acec847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9acbdfa48b70e2f1489d02bc5acec847">&#9670;&#160;</a></span>mFailSafeContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">app::FailSafeContext chip::Server::mFailSafeContext</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21108bf94707c752c84eb900bddf888f" name="a21108bf94707c752c84eb900bddf888f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21108bf94707c752c84eb900bddf888f">&#9670;&#160;</a></span>mGroupsProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Credentials::GroupDataProvider* chip::Server::mGroupsProvider</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b8f44273b09d2b76c626bd4ab718b32" name="a4b8f44273b09d2b76c626bd4ab718b32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b8f44273b09d2b76c626bd4ab718b32">&#9670;&#160;</a></span>mInitTimestamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System::Clock::Microseconds64 chip::Server::mInitTimestamp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d0bd3e9f371611699de72e064c9986f" name="a6d0bd3e9f371611699de72e064c9986f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0bd3e9f371611699de72e064c9986f">&#9670;&#160;</a></span>mInterfaceId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a> chip::Server::mInterfaceId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a396b98e0ed1b5f66878c76dade46b914" name="a396b98e0ed1b5f66878c76dade46b914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a396b98e0ed1b5f66878c76dade46b914">&#9670;&#160;</a></span>mIsDnssdReady</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::Server::mIsDnssdReady = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a677c44eb363e3ebb66fc5d8a57c5b1f8" name="a677c44eb363e3ebb66fc5d8a57c5b1f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677c44eb363e3ebb66fc5d8a57c5b1f8">&#9670;&#160;</a></span>mListener</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Server_1_1GroupDataProviderListener.html">GroupDataProviderListener</a> chip::Server::mListener</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad831851e132a15805ca1449834235132" name="ad831851e132a15805ca1449834235132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad831851e132a15805ca1449834235132">&#9670;&#160;</a></span>mMessageCounterManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">secure_channel::MessageCounterManager chip::Server::mMessageCounterManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e1fe5ebafd69b005e9999d68eb8a178" name="a0e1fe5ebafd69b005e9999d68eb8a178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e1fe5ebafd69b005e9999d68eb8a178">&#9670;&#160;</a></span>mOpCertStore</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Credentials::OperationalCertificateStore* chip::Server::mOpCertStore</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42a3e7d1f0c15df9634782266c5075f8" name="a42a3e7d1f0c15df9634782266c5075f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a3e7d1f0c15df9634782266c5075f8">&#9670;&#160;</a></span>mOperationalKeystore</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Crypto::OperationalKeystore* chip::Server::mOperationalKeystore</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a003831777771cf41ba309412b8c6a9ea" name="a003831777771cf41ba309412b8c6a9ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a003831777771cf41ba309412b8c6a9ea">&#9670;&#160;</a></span>mOperationalServicePort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t chip::Server::mOperationalServicePort</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad573b6a620723526860b005bc99d1ec5" name="ad573b6a620723526860b005bc99d1ec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad573b6a620723526860b005bc99d1ec5">&#9670;&#160;</a></span>mReportScheduler</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">app::reporting::ReportScheduler* chip::Server::mReportScheduler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9cd1a89914274773a4fb2d24cb7519c" name="ad9cd1a89914274773a4fb2d24cb7519c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9cd1a89914274773a4fb2d24cb7519c">&#9670;&#160;</a></span>mSessionKeystore</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Crypto::SessionKeystore* chip::Server::mSessionKeystore</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1679bd0810118658beb87776be1893a1" name="a1679bd0810118658beb87776be1893a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1679bd0810118658beb87776be1893a1">&#9670;&#160;</a></span>mSessionResumptionStorage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SessionResumptionStorage* chip::Server::mSessionResumptionStorage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d50dfee735591af221f694ffb36c924" name="a1d50dfee735591af221f694ffb36c924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d50dfee735591af221f694ffb36c924">&#9670;&#160;</a></span>mSessions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SessionManager chip::Server::mSessions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae0e2e2b8da8eefa655780d016e045a5" name="aae0e2e2b8da8eefa655780d016e045a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae0e2e2b8da8eefa655780d016e045a5">&#9670;&#160;</a></span>mSessionSetupPool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OperationalSessionSetupPool&lt;<a class="el" href="CHIPConfig_8h.html#af09f09ca0948295ca305b1a119184785">CHIP_CONFIG_DEVICE_MAX_ACTIVE_DEVICES</a>&gt; chip::Server::mSessionSetupPool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb61f3beea4caf5a19f43a9f1668558a" name="afb61f3beea4caf5a19f43a9f1668558a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb61f3beea4caf5a19f43a9f1668558a">&#9670;&#160;</a></span>mSubscriptionResumptionStorage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">app::SubscriptionResumptionStorage* chip::Server::mSubscriptionResumptionStorage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a6d7a44cab46474958e8e7b2e6e690f" name="a3a6d7a44cab46474958e8e7b2e6e690f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a6d7a44cab46474958e8e7b2e6e690f">&#9670;&#160;</a></span>mTestEventTriggerDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1TestEventTriggerDelegate.html">TestEventTriggerDelegate</a>* chip::Server::mTestEventTriggerDelegate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05558beee3b849c19499882fd43a5e45" name="a05558beee3b849c19499882fd43a5e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05558beee3b849c19499882fd43a5e45">&#9670;&#160;</a></span>mTransports</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip.html#a0701d2adcf53e85d036cfe72735eb757">ServerTransportMgr</a> chip::Server::mTransports</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8924101f38b0446b2485ce2d3aadcb84" name="a8924101f38b0446b2485ce2d3aadcb84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8924101f38b0446b2485ce2d3aadcb84">&#9670;&#160;</a></span>mUnsolicitedStatusHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Protocols::SecureChannel::UnsolicitedStatusHandler chip::Server::mUnsolicitedStatusHandler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81423926aadff5edf6ece1433709cf9c" name="a81423926aadff5edf6ece1433709cf9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81423926aadff5edf6ece1433709cf9c">&#9670;&#160;</a></span>mUserDirectedCommissioningPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t chip::Server::mUserDirectedCommissioningPort</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab690d2ef07d7d52155f8f20bfc2f28a" name="aab690d2ef07d7d52155f8f20bfc2f28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab690d2ef07d7d52155f8f20bfc2f28a">&#9670;&#160;</a></span>sDefaultCertValidityPolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Credentials::IgnoreCertificateValidityPeriodPolicy chip::Server::sDefaultCertValidityPolicy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add3810af8866f5c5b8cacad61ee4a565" name="add3810af8866f5c5b8cacad61ee4a565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add3810af8866f5c5b8cacad61ee4a565">&#9670;&#160;</a></span>sServer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Server.html">Server</a> chip::Server::sServer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/app/server/<a class="el" href="Server_8h_source.html">Server.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

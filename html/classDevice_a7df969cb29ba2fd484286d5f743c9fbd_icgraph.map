@@ -1,0 +1,7 @@
+<map id="Device::GetZone" name="Device::GetZone">
+<area shape="rect" id="Node000001" title=" " alt="" coords="475,27,605,53"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#ae579118b6e30a9a0f9219e48f91ad5fb" title=" " alt="" coords="276,27,427,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="461,43,427,43,427,37,461,37"/>
+<area shape="rect" id="Node000003" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a5c4740fd4a4f26ccf02e2ae6b74883ac" title=" " alt="" coords="5,5,228,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="262,43,228,43,228,37,262,37"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="クラス階層図" name="クラス階層図">
+<area shape="rect" id="Node000000" href="$classchip_1_1TestEventTriggerDelegate.html" title=" " alt="" coords="5,13,228,38"/>
+<area shape="rect" id="Node000001" href="$classchip_1_1SimpleTestEventTriggerDelegate.html" title="TestEventTriggerDelegate that owns its enable key in RAM." alt="" coords="276,5,485,45"/>
+<area shape="poly" id="edge26_Node000000_Node000001" title=" " alt="" coords="241,23,276,23,276,28,241,28"/>
+</map>

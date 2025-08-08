@@ -1,0 +1,12 @@
+<map id="chip::examples::anonymous_namespace{CommissionableInit::cpp}::GetSpake2pSalt" name="chip::examples::anonymous_namespace{CommissionableInit::cpp}::GetSpake2pSalt">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,248,89"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="70,35,70,24,80,15,99,10,127,8,160,11,179,19,177,24,159,16,127,13,100,15,83,20,75,27,75,35"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="333,5,514,31"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="248,41,323,30,324,35,248,47"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#abca6b822857e69ab35229bc65f22c56c" title=" " alt="" coords="296,79,551,133"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="248,77,283,82,282,88,248,83"/>
+<area shape="poly" id="edge6_Node000003_Node000003" title=" " alt="" coords="366,79,367,68,377,59,396,54,423,52,456,55,475,63,473,68,455,60,423,57,397,59,379,64,371,71,372,79"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a886b4e0a44d9931604bf76c2a060a9cd" title=" " alt="" coords="599,79,841,133"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="551,103,585,103,585,109,551,109"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="663,79,663,68,673,59,692,54,720,52,753,55,772,63,770,68,752,60,720,57,693,59,676,64,668,71,668,79"/>
+</map>

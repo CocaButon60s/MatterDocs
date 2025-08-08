@@ -1,0 +1,12 @@
+<map id="chip::Crypto::AttestationCertVidPid" name="chip::Crypto::AttestationCertVidPid">
+<area shape="rect" id="Node000001" title="A data structure representing Attestation Certificate VID and PID attributes." alt="" coords="883,27,1063,67"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Optional.html" title=" " alt="" coords="557,9,756,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="770,28,883,37,882,43,770,34"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Optional_1_1ValueHolder.html" title=" " alt="" coords="261,27,412,67"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="425,38,557,27,557,32,426,43"/>
+<area shape="rect" id="Node000005" href="$classchip_1_1Optional.html" title=" " alt="" coords="559,59,754,84"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="426,63,436,65,559,71,559,76,436,70,425,69"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,212,89"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="226,45,261,45,261,50,226,50"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="767,70,858,65,882,62,883,67,859,70,768,75"/>
+</map>

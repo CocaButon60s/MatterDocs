@@ -1,0 +1,8 @@
+<map id="chip::Optional::std_optional" name="chip::Optional::std_optional">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,145,45"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="397,13,579,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,23,384,23,384,28,146,28"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="193,38,349,63"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,32,180,36,179,41,145,37"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="350,39,384,35,384,40,350,44"/>
+</map>

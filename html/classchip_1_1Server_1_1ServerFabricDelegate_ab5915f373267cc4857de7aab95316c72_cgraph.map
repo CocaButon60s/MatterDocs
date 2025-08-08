@@ -1,0 +1,9 @@
+<map id="chip::Server::ServerFabricDelegate::OnFabricUpdated" name="chip::Server::ServerFabricDelegate::OnFabricUpdated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,205,67"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Server_1_1ServerFabricDelegate.html#aae1b44b3b5453cccc3de199b1aa5aed8" title=" " alt="" coords="253,20,523,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,45,239,45,239,50,205,50"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61" title=" " alt="" coords="575,5,746,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="522,30,561,26,562,31,523,35"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Server.html#acc837a4eaca927b99edf6cc336cb25a7" title=" " alt="" coords="571,55,751,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="523,59,557,62,557,67,522,64"/>
+</map>

@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/core/Optional.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_36b9cabaeea5561ffd6db568f8d0cd67.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Optional.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Optional_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2020 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;new&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;lib/core/InPlace.h&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;<a class="code" href="CodeUtils_8h.html">lib/support/CodeUtils.h</a>&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structchip_1_1NullOptionalType.html">   37</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structchip_1_1NullOptionalType.html">NullOptionalType</a></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structchip_1_1NullOptionalType.html#a95d02fcf34b9e60bfe8bcebd80994c56">   39</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structchip_1_1NullOptionalType.html#a95d02fcf34b9e60bfe8bcebd80994c56">NullOptionalType</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">   41</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <a class="code hl_struct" href="structchip_1_1NullOptionalType.html">NullOptionalType</a> <a class="code hl_variable" href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">NullOptional</a>{};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html">   48</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1Optional.html">Optional</a></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a079c0497f86e65f1321e3d91085a6559">   51</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1Optional.html#a079c0497f86e65f1321e3d91085a6559">Optional</a>() {}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a7fbf535afa905dc0fc04918dac193c16">   52</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1Optional.html#a7fbf535afa905dc0fc04918dac193c16">Optional</a>(<a class="code hl_struct" href="structchip_1_1NullOptionalType.html">NullOptionalType</a>) {}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a1943b15247bb4c1ecce5ec369a05eda3">   54</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classchip_1_1Optional.html#a1943b15247bb4c1ecce5ec369a05eda3">Optional</a>(<span class="keyword">const</span> T &amp; value)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData) T(value);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Args&gt;</div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#abeac569e6c15abc1adec64d04ec1f53c">   61</a></span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> <a class="code hl_function" href="classchip_1_1Optional.html#abeac569e6c15abc1adec64d04ec1f53c">Optional</a>(InPlaceType, Args &amp;&amp;... args)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData) T(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a6ac159a6f31306cb65f881a66e6f6051">   67</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1Optional.html#a6ac159a6f31306cb65f881a66e6f6051">Optional</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional</a> &amp; other)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue = other.<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData) T(other.<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// Converts an Optional of an implicitly convertible type</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> U, std::enable_if_t&lt;!std::is_same_v&lt;T, U&gt; &amp;&amp; std::is_convertible_v&lt;const U, T&gt;, <span class="keywordtype">bool</span>&gt; = true&gt;</div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a5b4ccede0e294879f50eefc2d34efa63">   78</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1Optional.html#a5b4ccede0e294879f50eefc2d34efa63">Optional</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;U&gt;</a> &amp; other)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue = other.<a class="code hl_function" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a>();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData) T(other.<a class="code hl_function" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">Value</a>());</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">// Converts an Optional of a type that requires explicit conversion</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">template</span> &lt;<span class="keyword">class </span>U,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>              std::enable_if_t&lt;!std::is_same_v&lt;T, U&gt; &amp;&amp; !std::is_convertible_v&lt;const U, T&gt; &amp;&amp; std::is_constructible_v&lt;T, const U &amp;&gt;,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                               <span class="keywordtype">bool</span>&gt; = <span class="keyword">true</span>&gt;</div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a5b4ccede0e294879f50eefc2d34efa63">   91</a></span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> <a class="code hl_function" href="classchip_1_1Optional.html#a5b4ccede0e294879f50eefc2d34efa63">Optional</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;U&gt;</a> &amp; other)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue = other.<a class="code hl_function" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData) T(other.<a class="code hl_function" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">Value</a>());</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a3c1ae49e72482b283747dee0a62c6a9d">  100</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1Optional.html#a3c1ae49e72482b283747dee0a62c6a9d">Optional</a>(<a class="code hl_class" href="classchip_1_1Optional.html">Optional</a> &amp;&amp; other)</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue = other.mValueHolder.mHasValue;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData) T(std::move(other.mValueHolder.mValue.mData));</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            other.mValueHolder.mValue.mData.~T();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            other.mValueHolder.mHasValue = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a7f5c5a45381a8d03935abf38bab3e036">  111</a></span>    <span class="keyword">constexpr</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional</a> &amp; <a class="code hl_function" href="classchip_1_1Optional.html#a7f5c5a45381a8d03935abf38bab3e036">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional</a> &amp; other)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue)</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData.~T();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue = other.<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData) T(other.<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#ac2f0f3f636bae74e82023448bb11b1e2">  125</a></span>    <span class="keyword">constexpr</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional</a> &amp; <a class="code hl_function" href="classchip_1_1Optional.html#ac2f0f3f636bae74e82023448bb11b1e2">operator=</a>(<a class="code hl_class" href="classchip_1_1Optional.html">Optional</a> &amp;&amp; other)</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue)</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData.~T();</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue = other.mValueHolder.mHasValue;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue)</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData) T(std::move(other.mValueHolder.mValue.mData));</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            other.mValueHolder.mValue.mData.~T();</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            other.mValueHolder.mHasValue = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    }</div>
+</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Args&gt;</div>
+<div class="foldopen" id="foldopen00143" data-start="{" data-end="}">
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a3b10bfc8cf7c11d50b832dbf0faa4367">  143</a></span>    <span class="keyword">constexpr</span> T &amp; <a class="code hl_function" href="classchip_1_1Optional.html#a3b10bfc8cf7c11d50b832dbf0faa4367">Emplace</a>(Args &amp;&amp;... args)</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue)</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData.~T();</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        }</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData) T(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
+</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="foldopen" id="foldopen00155" data-start="{" data-end="}">
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a02d5932f37467d13f8bef21a41b1f391">  155</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1Optional.html#a02d5932f37467d13f8bef21a41b1f391">SetValue</a>(<span class="keyword">const</span> T &amp; value)</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue)</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData.~T();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData) T(value);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    }</div>
+</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="foldopen" id="foldopen00165" data-start="{" data-end="}">
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a5b9fe736c59b2a53a6283edc2b80f1dd">  165</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1Optional.html#a5b9fe736c59b2a53a6283edc2b80f1dd">SetValue</a>(std::optional&lt;T&gt; &amp; value)</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">if</span> (value.has_value())</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <a class="code hl_function" href="classchip_1_1Optional.html#a02d5932f37467d13f8bef21a41b1f391">SetValue</a>(*value);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        }</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <a class="code hl_function" href="classchip_1_1Optional.html#ac1f355df5cfcb005b1da512b61e6288a">ClearValue</a>();</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        }</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    }</div>
+</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="foldopen" id="foldopen00178" data-start="{" data-end="}">
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#aadf89fef2a4716fb4aa9eb4c25d9c5e1">  178</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1Optional.html#aadf89fef2a4716fb4aa9eb4c25d9c5e1">SetValue</a>(T &amp;&amp; value)</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    {</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue)</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        {</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData.~T();</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        }</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData) T(std::move(value));</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
+</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="foldopen" id="foldopen00189" data-start="{" data-end="}">
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#ac1f355df5cfcb005b1da512b61e6288a">  189</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1Optional.html#ac1f355df5cfcb005b1da512b61e6288a">ClearValue</a>()</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    {</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue)</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        {</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData.~T();</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
+</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="foldopen" id="foldopen00199" data-start="{" data-end="}">
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">  199</a></span>    T &amp; <a class="code hl_function" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">Value</a>() &amp;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    {</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <a class="code hl_define" href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a>(<a class="code hl_function" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a>());</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    }</div>
+</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="foldopen" id="foldopen00206" data-start="{" data-end="}">
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a1bb981d66c9f7063707396f4d2646a7a">  206</a></span>    <span class="keyword">const</span> T &amp; <a class="code hl_function" href="classchip_1_1Optional.html#a1bb981d66c9f7063707396f4d2646a7a">Value</a>() const &amp;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <a class="code hl_define" href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a>(<a class="code hl_function" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a>());</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    }</div>
+</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a4f92baa58b0f970e9301960c2ceaaa4e">  214</a></span>    <span class="keyword">const</span> T &amp; <a class="code hl_function" href="classchip_1_1Optional.html#a4f92baa58b0f970e9301960c2ceaaa4e">ValueOr</a>(<span class="keyword">const</span> T &amp; defaultValue)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a>() ? <a class="code hl_function" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">Value</a>() : defaultValue; }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">  217</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue; }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="foldopen" id="foldopen00219" data-start="{" data-end="}">
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a992f18d571460532feccf13e12b21479">  219</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1Optional.html#a992f18d571460532feccf13e12b21479">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional</a> &amp; other)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue == other.<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue) &amp;&amp;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            (!other.<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mHasValue || (<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData == other.<a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>.mValue.mData));</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    }</div>
+</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#ace6d4f91d5dccf3193a08ef198473912">  224</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1Optional.html#ace6d4f91d5dccf3193a08ef198473912">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional</a> &amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == other); }</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#aefeeeb9f4b6334b2de947a1f909c7496">  225</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1Optional.html#aefeeeb9f4b6334b2de947a1f909c7496">operator==</a>(<span class="keyword">const</span> T &amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a>() &amp;&amp; <a class="code hl_function" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">Value</a>() == other; }</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#aecf0256fc306a701adacbaaab5fcfff8">  226</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1Optional.html#aecf0256fc306a701adacbaaab5fcfff8">operator!=</a>(<span class="keyword">const</span> T &amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == other); }</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="foldopen" id="foldopen00228" data-start="{" data-end="}">
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a10fbed1c631f6736764e6e9dbbc25953">  228</a></span>    std::optional&lt;T&gt; <a class="code hl_function" href="classchip_1_1Optional.html#a10fbed1c631f6736764e6e9dbbc25953">std_optional</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <a class="code hl_define" href="CodeUtils_8h.html#a8517413961050a9e5d631f1214b8e65e">VerifyOrReturnValue</a>(<a class="code hl_function" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a>(), std::nullopt);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        <span class="keywordflow">return</span> std::make_optional(<a class="code hl_function" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">Value</a>());</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    }</div>
+</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a03b6433922ca965fe245eebec8365021">  235</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;T&gt;</a> <a class="code hl_function" href="classchip_1_1Optional.html#a03b6433922ca965fe245eebec8365021">Missing</a>() { <span class="keywordflow">return</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;T&gt;</a>(); }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Args&gt;</div>
+<div class="foldopen" id="foldopen00239" data-start="{" data-end="}">
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a73dd718d405f838a0c2d1b15b3850508">  239</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;T&gt;</a> <a class="code hl_function" href="classchip_1_1Optional.html#a73dd718d405f838a0c2d1b15b3850508">Value</a>(Args &amp;&amp;... args)</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    {</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1Optional.html#a079c0497f86e65f1321e3d91085a6559">Optional</a>(InPlace, std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    }</div>
+</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="comment">// A container of bool + value (without constructor/destructor) when the underlying</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="comment">// type has a trivial destructor</span></div>
+<div class="foldopen" id="foldopen00247" data-start="{" data-end="};">
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="classchip_1_1Optional_1_1TrivialDestructor.html">  247</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classchip_1_1Optional_1_1TrivialDestructor.html">TrivialDestructor</a></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    {</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="classchip_1_1Optional_1_1TrivialDestructor.html#a84bef1487ed198a76b11d4f926cbfddf">  250</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="classchip_1_1Optional_1_1TrivialDestructor.html#a84bef1487ed198a76b11d4f926cbfddf">mHasValue</a> = <span class="keyword">false</span>;</div>
+<div class="foldopen" id="foldopen00251" data-start="{" data-end="};">
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno"><a class="line" href="unionchip_1_1Optional_1_1TrivialDestructor_1_1Value.html">  251</a></span>        <span class="keyword">union </span><a class="code hl_union" href="unionchip_1_1Optional_1_1TrivialDestructor_1_1Value.html">Value</a></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        {</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="unionchip_1_1Optional_1_1TrivialDestructor_1_1Value.html#af97217df3dba804d01b74ebb6f419a1a">  253</a></span>            <a class="code hl_function" href="unionchip_1_1Optional_1_1TrivialDestructor_1_1Value.html#af97217df3dba804d01b74ebb6f419a1a">Value</a>() {}</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="unionchip_1_1Optional_1_1TrivialDestructor_1_1Value.html#a901538e96a29250e79102b5d64c30bd4">  254</a></span>            T <a class="code hl_variable" href="unionchip_1_1Optional_1_1TrivialDestructor_1_1Value.html#a901538e96a29250e79102b5d64c30bd4">mData</a>;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="classchip_1_1Optional_1_1TrivialDestructor.html#ad1b834ebb7c3ec1efb54cfd2d51f32fd">  255</a></span>        } <a class="code hl_variable" href="classchip_1_1Optional_1_1TrivialDestructor.html#ad1b834ebb7c3ec1efb54cfd2d51f32fd">mValue</a>;</div>
+</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    };</div>
+</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="comment">// A container of bool + value that destroys the underlying type when mHasValue is true.</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="comment">// To be used for non-trivial destructor classes.</span></div>
+<div class="foldopen" id="foldopen00260" data-start="{" data-end="};">
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="classchip_1_1Optional_1_1NonTrivialDestructor.html">  260</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classchip_1_1Optional_1_1NonTrivialDestructor.html">NonTrivialDestructor</a></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00263" data-start="{" data-end="}">
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="classchip_1_1Optional_1_1NonTrivialDestructor.html#a16441b2857525163e3665dadbc3100e7">  263</a></span>        <a class="code hl_function" href="classchip_1_1Optional_1_1NonTrivialDestructor.html#a16441b2857525163e3665dadbc3100e7">~NonTrivialDestructor</a>()</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        {</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            <span class="comment">// NOLINTNEXTLINE(clang-analyzer-core.uninitialized.Branch): mData is set when mHasValue</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classchip_1_1Optional_1_1NonTrivialDestructor.html#a1bba3ace1e9b8e656d64fc03f5ff596f">mHasValue</a>)</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            {</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                <a class="code hl_variable" href="classchip_1_1Optional_1_1NonTrivialDestructor.html#a8a7b68435b6d6bf4ac45d12de41d8696">mValue</a>.<a class="code hl_variable" href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html#a4020d9a069c100b9b9a08b27ec8985a3">mData</a>.~T();</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            }</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        }</div>
+</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="classchip_1_1Optional_1_1NonTrivialDestructor.html#a1bba3ace1e9b8e656d64fc03f5ff596f">  272</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="classchip_1_1Optional_1_1NonTrivialDestructor.html#a1bba3ace1e9b8e656d64fc03f5ff596f">mHasValue</a> = <span class="keyword">false</span>;</div>
+<div class="foldopen" id="foldopen00273" data-start="{" data-end="};">
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html">  273</a></span>        <span class="keyword">union </span><a class="code hl_union" href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html">Value</a></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        {</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html#a097e58f3f6e08935aac41d8a5dbd0759">  275</a></span>            <a class="code hl_function" href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html#a097e58f3f6e08935aac41d8a5dbd0759">Value</a>() {}</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html#a6911de919165c9ed9a4ea87cecbcc51e">  276</a></span>            <a class="code hl_function" href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html#a6911de919165c9ed9a4ea87cecbcc51e">~Value</a>() {}</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html#a4020d9a069c100b9b9a08b27ec8985a3">  277</a></span>            T <a class="code hl_variable" href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html#a4020d9a069c100b9b9a08b27ec8985a3">mData</a>;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="classchip_1_1Optional_1_1NonTrivialDestructor.html#a8a7b68435b6d6bf4ac45d12de41d8696">  278</a></span>        } <a class="code hl_variable" href="classchip_1_1Optional_1_1NonTrivialDestructor.html#a8a7b68435b6d6bf4ac45d12de41d8696">mValue</a>;</div>
+</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    };</div>
+</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="foldopen" id="foldopen00281" data-start="{" data-end="};">
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="classchip_1_1Optional_1_1ValueHolder.html">  281</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classchip_1_1Optional_1_1ValueHolder.html">ValueHolder</a> : <span class="keyword">public</span> std::conditional_t&lt;std::is_trivially_destructible_v&lt;T&gt;, TrivialDestructor, NonTrivialDestructor&gt;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    {</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    };</div>
+</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">  285</a></span>    <a class="code hl_class" href="classchip_1_1Optional_1_1ValueHolder.html">ValueHolder</a> <a class="code hl_variable" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a>;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>};</div>
+</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00289" data-start="{" data-end="}">
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="namespacechip.html#aedff250f2bda34c51e7b58b9e603f815">  289</a></span><span class="keyword">constexpr</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;std::decay_t&lt;T&gt;</a>&gt; <a class="code hl_function" href="namespacechip.html#aedff250f2bda34c51e7b58b9e603f815">MakeOptional</a>(T &amp;&amp; value)</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>{</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;std::decay_t&lt;T&gt;</a>&gt;(InPlace, std::forward&lt;T&gt;(value));</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>}</div>
+</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00295" data-start="{" data-end="}">
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="namespacechip.html#a4b2565ea7a316c18d609ac8ba53a218a">  295</a></span><span class="keyword">constexpr</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;T&gt;</a> <a class="code hl_function" href="namespacechip.html#a4b2565ea7a316c18d609ac8ba53a218a">FromStdOptional</a>(<span class="keyword">const</span> std::optional&lt;T&gt; &amp; value)</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>{</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <a class="code hl_define" href="CodeUtils_8h.html#a8517413961050a9e5d631f1214b8e65e">VerifyOrReturnValue</a>(value.has_value(), <a class="code hl_variable" href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">NullOptional</a>);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacechip.html#aedff250f2bda34c51e7b58b9e603f815">MakeOptional</a>(*value);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>}</div>
+</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>... Args&gt;</div>
+<div class="foldopen" id="foldopen00302" data-start="{" data-end="}">
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno"><a class="line" href="namespacechip.html#a9fa2027e59dfcd888b963dad80377df2">  302</a></span><span class="keyword">constexpr</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;T&gt;</a> <a class="code hl_function" href="namespacechip.html#aedff250f2bda34c51e7b58b9e603f815">MakeOptional</a>(Args &amp;&amp;... args)</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>{</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;T&gt;</a>(InPlace, std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>}</div>
+</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>} <span class="comment">// namespace chip</span></div>
+<div class="ttc" id="aCodeUtils_8h_html"><div class="ttname"><a href="CodeUtils_8h.html">CodeUtils.h</a></div></div>
+<div class="ttc" id="aCodeUtils_8h_html_a670a2aeb107e6cc4df69083384bd85d0"><div class="ttname"><a href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a></div><div class="ttdeci">#define VerifyOrDie(aCondition)</div><div class="ttdoc">This checks for the specified condition, which is expected to commonly be true and forces an immediat...</div><div class="ttdef"><b>Definition</b> CodeUtils.h:556</div></div>
+<div class="ttc" id="aCodeUtils_8h_html_a8517413961050a9e5d631f1214b8e65e"><div class="ttname"><a href="CodeUtils_8h.html#a8517413961050a9e5d631f1214b8e65e">VerifyOrReturnValue</a></div><div class="ttdeci">#define VerifyOrReturnValue(expr, value,...)</div><div class="ttdoc">Returns a specified value if expression evaluates to false</div><div class="ttdef"><b>Definition</b> CodeUtils.h:323</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_1_1NonTrivialDestructor_html"><div class="ttname"><a href="classchip_1_1Optional_1_1NonTrivialDestructor.html">chip::Optional::NonTrivialDestructor</a></div><div class="ttdef"><b>Definition</b> Optional.h:261</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_1_1NonTrivialDestructor_html_a16441b2857525163e3665dadbc3100e7"><div class="ttname"><a href="classchip_1_1Optional_1_1NonTrivialDestructor.html#a16441b2857525163e3665dadbc3100e7">chip::Optional::NonTrivialDestructor::~NonTrivialDestructor</a></div><div class="ttdeci">~NonTrivialDestructor()</div><div class="ttdef"><b>Definition</b> Optional.h:263</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_1_1NonTrivialDestructor_html_a1bba3ace1e9b8e656d64fc03f5ff596f"><div class="ttname"><a href="classchip_1_1Optional_1_1NonTrivialDestructor.html#a1bba3ace1e9b8e656d64fc03f5ff596f">chip::Optional::NonTrivialDestructor::mHasValue</a></div><div class="ttdeci">bool mHasValue</div><div class="ttdef"><b>Definition</b> Optional.h:272</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_1_1NonTrivialDestructor_html_a8a7b68435b6d6bf4ac45d12de41d8696"><div class="ttname"><a href="classchip_1_1Optional_1_1NonTrivialDestructor.html#a8a7b68435b6d6bf4ac45d12de41d8696">chip::Optional::NonTrivialDestructor::mValue</a></div><div class="ttdeci">union chip::Optional::NonTrivialDestructor::Value mValue</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_1_1TrivialDestructor_html"><div class="ttname"><a href="classchip_1_1Optional_1_1TrivialDestructor.html">chip::Optional::TrivialDestructor</a></div><div class="ttdef"><b>Definition</b> Optional.h:248</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_1_1TrivialDestructor_html_a84bef1487ed198a76b11d4f926cbfddf"><div class="ttname"><a href="classchip_1_1Optional_1_1TrivialDestructor.html#a84bef1487ed198a76b11d4f926cbfddf">chip::Optional::TrivialDestructor::mHasValue</a></div><div class="ttdeci">bool mHasValue</div><div class="ttdef"><b>Definition</b> Optional.h:250</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_1_1TrivialDestructor_html_ad1b834ebb7c3ec1efb54cfd2d51f32fd"><div class="ttname"><a href="classchip_1_1Optional_1_1TrivialDestructor.html#ad1b834ebb7c3ec1efb54cfd2d51f32fd">chip::Optional::TrivialDestructor::mValue</a></div><div class="ttdeci">union chip::Optional::TrivialDestructor::Value mValue</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_1_1ValueHolder_html"><div class="ttname"><a href="classchip_1_1Optional_1_1ValueHolder.html">chip::Optional::ValueHolder</a></div><div class="ttdef"><b>Definition</b> Optional.h:282</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html"><div class="ttname"><a href="classchip_1_1Optional.html">chip::Optional</a></div><div class="ttdef"><b>Definition</b> Optional.h:49</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a02d5932f37467d13f8bef21a41b1f391"><div class="ttname"><a href="classchip_1_1Optional.html#a02d5932f37467d13f8bef21a41b1f391">chip::Optional::SetValue</a></div><div class="ttdeci">constexpr void SetValue(const T &amp;value)</div><div class="ttdef"><b>Definition</b> Optional.h:155</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a03b6433922ca965fe245eebec8365021"><div class="ttname"><a href="classchip_1_1Optional.html#a03b6433922ca965fe245eebec8365021">chip::Optional::Missing</a></div><div class="ttdeci">static Optional&lt; T &gt; Missing()</div><div class="ttdef"><b>Definition</b> Optional.h:235</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a079c0497f86e65f1321e3d91085a6559"><div class="ttname"><a href="classchip_1_1Optional.html#a079c0497f86e65f1321e3d91085a6559">chip::Optional::Optional</a></div><div class="ttdeci">constexpr Optional()</div><div class="ttdef"><b>Definition</b> Optional.h:51</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a086c1d1081983bf3971a6f8b22a3b2b3"><div class="ttname"><a href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">chip::Optional::mValueHolder</a></div><div class="ttdeci">ValueHolder mValueHolder</div><div class="ttdef"><b>Definition</b> Optional.h:285</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a10fbed1c631f6736764e6e9dbbc25953"><div class="ttname"><a href="classchip_1_1Optional.html#a10fbed1c631f6736764e6e9dbbc25953">chip::Optional::std_optional</a></div><div class="ttdeci">std::optional&lt; T &gt; std_optional() const</div><div class="ttdef"><b>Definition</b> Optional.h:228</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a1943b15247bb4c1ecce5ec369a05eda3"><div class="ttname"><a href="classchip_1_1Optional.html#a1943b15247bb4c1ecce5ec369a05eda3">chip::Optional::Optional</a></div><div class="ttdeci">Optional(const T &amp;value)</div><div class="ttdef"><b>Definition</b> Optional.h:54</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a1bb981d66c9f7063707396f4d2646a7a"><div class="ttname"><a href="classchip_1_1Optional.html#a1bb981d66c9f7063707396f4d2646a7a">chip::Optional::Value</a></div><div class="ttdeci">const T &amp; Value() const &amp;</div><div class="ttdef"><b>Definition</b> Optional.h:206</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a3b10bfc8cf7c11d50b832dbf0faa4367"><div class="ttname"><a href="classchip_1_1Optional.html#a3b10bfc8cf7c11d50b832dbf0faa4367">chip::Optional::Emplace</a></div><div class="ttdeci">constexpr T &amp; Emplace(Args &amp;&amp;... args)</div><div class="ttdoc">Constructs the contained value in-place</div><div class="ttdef"><b>Definition</b> Optional.h:143</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a3c1ae49e72482b283747dee0a62c6a9d"><div class="ttname"><a href="classchip_1_1Optional.html#a3c1ae49e72482b283747dee0a62c6a9d">chip::Optional::Optional</a></div><div class="ttdeci">constexpr Optional(Optional &amp;&amp;other)</div><div class="ttdef"><b>Definition</b> Optional.h:100</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a4f92baa58b0f970e9301960c2ceaaa4e"><div class="ttname"><a href="classchip_1_1Optional.html#a4f92baa58b0f970e9301960c2ceaaa4e">chip::Optional::ValueOr</a></div><div class="ttdeci">const T &amp; ValueOr(const T &amp;defaultValue) const</div><div class="ttdef"><b>Definition</b> Optional.h:214</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a5b4ccede0e294879f50eefc2d34efa63"><div class="ttname"><a href="classchip_1_1Optional.html#a5b4ccede0e294879f50eefc2d34efa63">chip::Optional::Optional</a></div><div class="ttdeci">constexpr Optional(const Optional&lt; U &gt; &amp;other)</div><div class="ttdef"><b>Definition</b> Optional.h:78</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a5b9fe736c59b2a53a6283edc2b80f1dd"><div class="ttname"><a href="classchip_1_1Optional.html#a5b9fe736c59b2a53a6283edc2b80f1dd">chip::Optional::SetValue</a></div><div class="ttdeci">constexpr void SetValue(std::optional&lt; T &gt; &amp;value)</div><div class="ttdef"><b>Definition</b> Optional.h:165</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a5cd680378379844625c451dcacf2c87c"><div class="ttname"><a href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">chip::Optional::HasValue</a></div><div class="ttdeci">constexpr bool HasValue() const</div><div class="ttdef"><b>Definition</b> Optional.h:217</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a6ac159a6f31306cb65f881a66e6f6051"><div class="ttname"><a href="classchip_1_1Optional.html#a6ac159a6f31306cb65f881a66e6f6051">chip::Optional::Optional</a></div><div class="ttdeci">constexpr Optional(const Optional &amp;other)</div><div class="ttdef"><b>Definition</b> Optional.h:67</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a73dd718d405f838a0c2d1b15b3850508"><div class="ttname"><a href="classchip_1_1Optional.html#a73dd718d405f838a0c2d1b15b3850508">chip::Optional::Value</a></div><div class="ttdeci">static Optional&lt; T &gt; Value(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> Optional.h:239</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a7f5c5a45381a8d03935abf38bab3e036"><div class="ttname"><a href="classchip_1_1Optional.html#a7f5c5a45381a8d03935abf38bab3e036">chip::Optional::operator=</a></div><div class="ttdeci">constexpr Optional &amp; operator=(const Optional &amp;other)</div><div class="ttdef"><b>Definition</b> Optional.h:111</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a7fbf535afa905dc0fc04918dac193c16"><div class="ttname"><a href="classchip_1_1Optional.html#a7fbf535afa905dc0fc04918dac193c16">chip::Optional::Optional</a></div><div class="ttdeci">constexpr Optional(NullOptionalType)</div><div class="ttdef"><b>Definition</b> Optional.h:52</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a992f18d571460532feccf13e12b21479"><div class="ttname"><a href="classchip_1_1Optional.html#a992f18d571460532feccf13e12b21479">chip::Optional::operator==</a></div><div class="ttdeci">bool operator==(const Optional &amp;other) const</div><div class="ttdef"><b>Definition</b> Optional.h:219</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_aadf89fef2a4716fb4aa9eb4c25d9c5e1"><div class="ttname"><a href="classchip_1_1Optional.html#aadf89fef2a4716fb4aa9eb4c25d9c5e1">chip::Optional::SetValue</a></div><div class="ttdeci">constexpr void SetValue(T &amp;&amp;value)</div><div class="ttdef"><b>Definition</b> Optional.h:178</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_aaf7c61e9f1bdf79143adbd741b8d3ca7"><div class="ttname"><a href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">chip::Optional::Value</a></div><div class="ttdeci">T &amp; Value() &amp;</div><div class="ttdef"><b>Definition</b> Optional.h:199</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_abeac569e6c15abc1adec64d04ec1f53c"><div class="ttname"><a href="classchip_1_1Optional.html#abeac569e6c15abc1adec64d04ec1f53c">chip::Optional::Optional</a></div><div class="ttdeci">constexpr Optional(InPlaceType, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> Optional.h:61</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_ac1f355df5cfcb005b1da512b61e6288a"><div class="ttname"><a href="classchip_1_1Optional.html#ac1f355df5cfcb005b1da512b61e6288a">chip::Optional::ClearValue</a></div><div class="ttdeci">constexpr void ClearValue()</div><div class="ttdef"><b>Definition</b> Optional.h:189</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_ac2f0f3f636bae74e82023448bb11b1e2"><div class="ttname"><a href="classchip_1_1Optional.html#ac2f0f3f636bae74e82023448bb11b1e2">chip::Optional::operator=</a></div><div class="ttdeci">constexpr Optional &amp; operator=(Optional &amp;&amp;other)</div><div class="ttdef"><b>Definition</b> Optional.h:125</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_ace6d4f91d5dccf3193a08ef198473912"><div class="ttname"><a href="classchip_1_1Optional.html#ace6d4f91d5dccf3193a08ef198473912">chip::Optional::operator!=</a></div><div class="ttdeci">bool operator!=(const Optional &amp;other) const</div><div class="ttdef"><b>Definition</b> Optional.h:224</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_aecf0256fc306a701adacbaaab5fcfff8"><div class="ttname"><a href="classchip_1_1Optional.html#aecf0256fc306a701adacbaaab5fcfff8">chip::Optional::operator!=</a></div><div class="ttdeci">bool operator!=(const T &amp;other) const</div><div class="ttdef"><b>Definition</b> Optional.h:226</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_aefeeeb9f4b6334b2de947a1f909c7496"><div class="ttname"><a href="classchip_1_1Optional.html#aefeeeb9f4b6334b2de947a1f909c7496">chip::Optional::operator==</a></div><div class="ttdeci">bool operator==(const T &amp;other) const</div><div class="ttdef"><b>Definition</b> Optional.h:225</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+<div class="ttc" id="anamespacechip_html_a4b2565ea7a316c18d609ac8ba53a218a"><div class="ttname"><a href="namespacechip.html#a4b2565ea7a316c18d609ac8ba53a218a">chip::FromStdOptional</a></div><div class="ttdeci">constexpr Optional&lt; T &gt; FromStdOptional(const std::optional&lt; T &gt; &amp;value)</div><div class="ttdef"><b>Definition</b> Optional.h:295</div></div>
+<div class="ttc" id="anamespacechip_html_aaf771abf1db8295717d80349c7a62a6d"><div class="ttname"><a href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">chip::NullOptional</a></div><div class="ttdeci">constexpr NullOptionalType NullOptional</div><div class="ttdef"><b>Definition</b> Optional.h:41</div></div>
+<div class="ttc" id="anamespacechip_html_aedff250f2bda34c51e7b58b9e603f815"><div class="ttname"><a href="namespacechip.html#aedff250f2bda34c51e7b58b9e603f815">chip::MakeOptional</a></div><div class="ttdeci">constexpr Optional&lt; std::decay_t&lt; T &gt; &gt; MakeOptional(T &amp;&amp;value)</div><div class="ttdef"><b>Definition</b> Optional.h:289</div></div>
+<div class="ttc" id="astructchip_1_1NullOptionalType_html"><div class="ttname"><a href="structchip_1_1NullOptionalType.html">chip::NullOptionalType</a></div><div class="ttdoc">An empty class type used to indicate optional type with uninitialized state.</div><div class="ttdef"><b>Definition</b> Optional.h:38</div></div>
+<div class="ttc" id="astructchip_1_1NullOptionalType_html_a95d02fcf34b9e60bfe8bcebd80994c56"><div class="ttname"><a href="structchip_1_1NullOptionalType.html#a95d02fcf34b9e60bfe8bcebd80994c56">chip::NullOptionalType::NullOptionalType</a></div><div class="ttdeci">NullOptionalType()=default</div></div>
+<div class="ttc" id="aunionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value_html"><div class="ttname"><a href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html">chip::Optional::NonTrivialDestructor::Value</a></div><div class="ttdef"><b>Definition</b> Optional.h:274</div></div>
+<div class="ttc" id="aunionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value_html_a097e58f3f6e08935aac41d8a5dbd0759"><div class="ttname"><a href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html#a097e58f3f6e08935aac41d8a5dbd0759">chip::Optional::NonTrivialDestructor::Value::Value</a></div><div class="ttdeci">Value()</div><div class="ttdef"><b>Definition</b> Optional.h:275</div></div>
+<div class="ttc" id="aunionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value_html_a4020d9a069c100b9b9a08b27ec8985a3"><div class="ttname"><a href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html#a4020d9a069c100b9b9a08b27ec8985a3">chip::Optional::NonTrivialDestructor::Value::mData</a></div><div class="ttdeci">T mData</div><div class="ttdef"><b>Definition</b> Optional.h:277</div></div>
+<div class="ttc" id="aunionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value_html_a6911de919165c9ed9a4ea87cecbcc51e"><div class="ttname"><a href="unionchip_1_1Optional_1_1NonTrivialDestructor_1_1Value.html#a6911de919165c9ed9a4ea87cecbcc51e">chip::Optional::NonTrivialDestructor::Value::~Value</a></div><div class="ttdeci">~Value()</div><div class="ttdef"><b>Definition</b> Optional.h:276</div></div>
+<div class="ttc" id="aunionchip_1_1Optional_1_1TrivialDestructor_1_1Value_html"><div class="ttname"><a href="unionchip_1_1Optional_1_1TrivialDestructor_1_1Value.html">chip::Optional::TrivialDestructor::Value</a></div><div class="ttdef"><b>Definition</b> Optional.h:252</div></div>
+<div class="ttc" id="aunionchip_1_1Optional_1_1TrivialDestructor_1_1Value_html_a901538e96a29250e79102b5d64c30bd4"><div class="ttname"><a href="unionchip_1_1Optional_1_1TrivialDestructor_1_1Value.html#a901538e96a29250e79102b5d64c30bd4">chip::Optional::TrivialDestructor::Value::mData</a></div><div class="ttdeci">T mData</div><div class="ttdef"><b>Definition</b> Optional.h:254</div></div>
+<div class="ttc" id="aunionchip_1_1Optional_1_1TrivialDestructor_1_1Value_html_af97217df3dba804d01b74ebb6f419a1a"><div class="ttname"><a href="unionchip_1_1Optional_1_1TrivialDestructor_1_1Value.html#af97217df3dba804d01b74ebb6f419a1a">chip::Optional::TrivialDestructor::Value::Value</a></div><div class="ttdeci">Value()</div><div class="ttdef"><b>Definition</b> Optional.h:253</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

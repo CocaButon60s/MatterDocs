@@ -1,0 +1,27 @@
+<map id="anonymous_namespace{Options::cpp}::HandleOption" name="anonymous_namespace{Options::cpp}::HandleOption">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,186,221,226"/>
+<area shape="rect" id="Node000002" href="$namespaceanonymous__namespace_02Options_8cpp_03.html#a05b50851166c4f5681d49df450643448" title=" " alt="" coords="269,5,480,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,184,192,132,268,77,292,64,295,68,271,82,196,136,138,188"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="581,85,731,111"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="142,184,199,150,233,134,269,121,346,104,426,94,501,91,567,91,567,96,501,96,426,100,347,109,270,126,235,138,201,155,145,188"/>
+<area shape="rect" id="Node000006" href="$classchip_1_1Optional.html#a3b10bfc8cf7c11d50b832dbf0faa4367" title="Constructs the contained value in&#45;place" alt="" coords="287,136,463,161"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="205,183,302,162,303,167,206,189"/>
+<area shape="rect" id="Node000007" href="$structLinuxDeviceOptions.html#a80e54198d3e60b3a2c7d351683548d88" title=" " alt="" coords="299,186,451,226"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="221,203,285,203,285,209,221,209"/>
+<area shape="rect" id="Node000009" href="$namespacechip_1_1Encoding.html#a87906d824594de31ab0c568315067c75" title=" " alt="" coords="274,251,475,276"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="206,223,303,245,302,250,205,229"/>
+<area shape="rect" id="Node000010" href="$classchip_1_1Optional.html#a02d5932f37467d13f8bef21a41b1f391" title=" " alt="" coords="286,300,463,325"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="148,224,204,256,270,286,293,294,292,299,268,291,202,261,145,229"/>
+<area shape="rect" id="Node000011" href="$classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="297,349,453,375"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="134,225,191,280,229,310,271,336,286,342,284,347,268,340,226,315,188,284,131,228"/>
+<area shape="rect" id="Node000003" href="$namespacechip.html#a78131f019e0d9e00fc0b0ca265dad358" title=" " alt="" coords="571,12,741,37"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="480,27,557,25,557,30,480,32"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="481,54,588,80,587,85,480,60"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="611,87,602,77,607,67,625,61,656,59,696,63,707,68,710,74,706,77,703,72,695,68,656,64,626,66,610,71,607,76,615,83"/>
+<area shape="rect" id="Node000005" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="832,85,1039,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="731,95,818,95,818,101,731,101"/>
+<area shape="rect" id="Node000008" href="$namespacechip_1_1Credentials_1_1Examples.html#a392bf49f9b6ee815567a0d9bfaebf491" title="Get implementation of a sample DAC provider to validate device attestation procedure." alt="" coords="528,186,784,226"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="451,203,514,203,514,209,451,209"/>
+<area shape="rect" id="Node000012" href="$classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="565,349,747,375"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="453,359,552,359,552,365,453,365"/>
+</map>

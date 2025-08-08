@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: LinuxCommissionableDataProvider クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classLinuxCommissionableDataProvider-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">LinuxCommissionableDataProvider クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="LinuxCommissionableDataProvider_8h_source.html">LinuxCommissionableDataProvider.h</a>&gt;</code></p>
+<div class="dynheader">
+LinuxCommissionableDataProvider の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classLinuxCommissionableDataProvider__inherit__graph.png" border="0" usemap="#aLinuxCommissionableDataProvider_inherit__map" alt="Inheritance graph"/></div>
+<map name="aLinuxCommissionableDataProvider_inherit__map" id="aLinuxCommissionableDataProvider_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,93,256,119"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html" title=" " alt="" coords="23,5,239,45"/>
+<area shape="poly" title=" " alt="" coords="133,59,133,93,128,93,128,59"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+LinuxCommissionableDataProvider 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classLinuxCommissionableDataProvider__coll__graph.png" border="0" usemap="#aLinuxCommissionableDataProvider_coll__map" alt="Collaboration graph"/></div>
+<map name="aLinuxCommissionableDataProvider_coll__map" id="aLinuxCommissionableDataProvider_coll__map">
+<area shape="rect" title=" " alt="" coords="936,41,1187,66"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html" title=" " alt="" coords="557,5,773,45"/>
+<area shape="poly" title=" " alt="" coords="788,31,936,42,936,47,787,37"/>
+<area shape="rect" href="classchip_1_1Optional.html" title=" " alt="" coords="568,70,763,95"/>
+<area shape="poly" title=" " alt="" coords="776,72,936,60,936,65,777,77"/>
+<area shape="rect" href="classchip_1_1Optional_1_1ValueHolder.html" title=" " alt="" coords="261,63,412,103"/>
+<area shape="poly" title=" " alt="" coords="426,80,568,80,568,85,426,85"/>
+<area shape="rect" title=" " alt="" coords="5,41,212,125"/>
+<area shape="poly" title=" " alt="" coords="226,80,261,80,261,85,226,85"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a13fdb58e17156e925c7147983ea0eff3" id="r_a13fdb58e17156e925c7147983ea0eff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#a13fdb58e17156e925c7147983ea0eff3">LinuxCommissionableDataProvider</a> ()</td></tr>
+<tr class="separator:a13fdb58e17156e925c7147983ea0eff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3008625eeb7d169fa9fc74397227a7ef" id="r_a3008625eeb7d169fa9fc74397227a7ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#a3008625eeb7d169fa9fc74397227a7ef">Init</a> (<a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; std::vector&lt; uint8_t &gt; &gt; serializedSpake2pVerifier, <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; std::vector&lt; uint8_t &gt; &gt; spake2pSalt, uint32_t spake2pIterationCount, <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; uint32_t &gt; setupPasscode, uint16_t discriminator)</td></tr>
+<tr class="memdesc:a3008625eeb7d169fa9fc74397227a7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the commissionable Data provider for Linux samples  <br /></td></tr>
+<tr class="separator:a3008625eeb7d169fa9fc74397227a7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466ebd4f613d626e718cf8e6aaa235a2" id="r_a466ebd4f613d626e718cf8e6aaa235a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#a466ebd4f613d626e718cf8e6aaa235a2">GetSetupDiscriminator</a> (uint16_t &amp;setupDiscriminator) override</td></tr>
+<tr class="memdesc:a466ebd4f613d626e718cf8e6aaa235a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the default setup discriminator for the device used for commissionable advertising  <br /></td></tr>
+<tr class="separator:a466ebd4f613d626e718cf8e6aaa235a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4eb18ada47b40d3ecee7c8aaedb3a7" id="r_a1c4eb18ada47b40d3ecee7c8aaedb3a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#a1c4eb18ada47b40d3ecee7c8aaedb3a7">SetSetupDiscriminator</a> (uint16_t setupDiscriminator) override</td></tr>
+<tr class="memdesc:a1c4eb18ada47b40d3ecee7c8aaedb3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the setup discriminator <em>if supported</em>.  <br /></td></tr>
+<tr class="separator:a1c4eb18ada47b40d3ecee7c8aaedb3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18904f0378fa902139218c53a4b60e6f" id="r_a18904f0378fa902139218c53a4b60e6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#a18904f0378fa902139218c53a4b60e6f">GetSpake2pIterationCount</a> (uint32_t &amp;iterationCount) override</td></tr>
+<tr class="memdesc:a18904f0378fa902139218c53a4b60e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the default PAKE verifier's PBKDF2 iteration count  <br /></td></tr>
+<tr class="separator:a18904f0378fa902139218c53a4b60e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb5450a137d474ea45572283c358a99" id="r_a7cb5450a137d474ea45572283c358a99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#a7cb5450a137d474ea45572283c358a99">GetSpake2pSalt</a> (<a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">chip::MutableByteSpan</a> &amp;saltBuf) override</td></tr>
+<tr class="memdesc:a7cb5450a137d474ea45572283c358a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the default PAKE verifier's PBKDF2 salt in the provided <code>saltBuf</code>  <br /></td></tr>
+<tr class="separator:a7cb5450a137d474ea45572283c358a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cbfeca23399c635fcbaffbd16f77d9" id="r_a38cbfeca23399c635fcbaffbd16f77d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#a38cbfeca23399c635fcbaffbd16f77d9">GetSpake2pVerifier</a> (<a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">chip::MutableByteSpan</a> &amp;verifierBuf, size_t &amp;outVerifierLen) override</td></tr>
+<tr class="memdesc:a38cbfeca23399c635fcbaffbd16f77d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the default PAKE verifier in the provided <code>verifierBuf</code>  <br /></td></tr>
+<tr class="separator:a38cbfeca23399c635fcbaffbd16f77d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e223847f3c35b55a442342670862515" id="r_a2e223847f3c35b55a442342670862515"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#a2e223847f3c35b55a442342670862515">GetSetupPasscode</a> (uint32_t &amp;setupPasscode) override</td></tr>
+<tr class="memdesc:a2e223847f3c35b55a442342670862515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the default setup passcode for the device <em>if supported</em>  <br /></td></tr>
+<tr class="separator:a2e223847f3c35b55a442342670862515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32409ac0149100fe92b9adb199046f63" id="r_a32409ac0149100fe92b9adb199046f63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#a32409ac0149100fe92b9adb199046f63">SetSetupPasscode</a> (uint32_t setupPasscode) override</td></tr>
+<tr class="memdesc:a32409ac0149100fe92b9adb199046f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the setup discriminator <em>if supported</em>.  <br /></td></tr>
+<tr class="separator:a32409ac0149100fe92b9adb199046f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classchip_1_1DeviceLayer_1_1CommissionableDataProvider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classchip_1_1DeviceLayer_1_1CommissionableDataProvider')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html">chip::DeviceLayer::CommissionableDataProvider</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:aac9fb5d845733a6bf05d8c8f88d3e44b inherit pub_methods_classchip_1_1DeviceLayer_1_1CommissionableDataProvider" id="r_aac9fb5d845733a6bf05d8c8f88d3e44b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html#aac9fb5d845733a6bf05d8c8f88d3e44b">CommissionableDataProvider</a> ()=default</td></tr>
+<tr class="separator:aac9fb5d845733a6bf05d8c8f88d3e44b inherit pub_methods_classchip_1_1DeviceLayer_1_1CommissionableDataProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6f703583bbacc243ff0bf4a2637404 inherit pub_methods_classchip_1_1DeviceLayer_1_1CommissionableDataProvider" id="r_ace6f703583bbacc243ff0bf4a2637404"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html#ace6f703583bbacc243ff0bf4a2637404">~CommissionableDataProvider</a> ()=default</td></tr>
+<tr class="separator:ace6f703583bbacc243ff0bf4a2637404 inherit pub_methods_classchip_1_1DeviceLayer_1_1CommissionableDataProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f6d3bc4a95519332a8021c840d0494 inherit pub_methods_classchip_1_1DeviceLayer_1_1CommissionableDataProvider" id="r_a83f6d3bc4a95519332a8021c840d0494"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html#a83f6d3bc4a95519332a8021c840d0494">CommissionableDataProvider</a> (const <a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html">CommissionableDataProvider</a> &amp;)=delete</td></tr>
+<tr class="separator:a83f6d3bc4a95519332a8021c840d0494 inherit pub_methods_classchip_1_1DeviceLayer_1_1CommissionableDataProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a3e6fa5942a19a2dc1a4192289d571 inherit pub_methods_classchip_1_1DeviceLayer_1_1CommissionableDataProvider" id="r_ab6a3e6fa5942a19a2dc1a4192289d571"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html">CommissionableDataProvider</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html#ab6a3e6fa5942a19a2dc1a4192289d571">operator=</a> (const <a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html">CommissionableDataProvider</a> &amp;)=delete</td></tr>
+<tr class="separator:ab6a3e6fa5942a19a2dc1a4192289d571 inherit pub_methods_classchip_1_1DeviceLayer_1_1CommissionableDataProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:afae660292bd30beb100a9571c21d735a" id="r_afae660292bd30beb100a9571c21d735a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#afae660292bd30beb100a9571c21d735a">mIsInitialized</a> = false</td></tr>
+<tr class="separator:afae660292bd30beb100a9571c21d735a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9edf47feb4aa391b13df3450403a4883" id="r_a9edf47feb4aa391b13df3450403a4883"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#a9edf47feb4aa391b13df3450403a4883">mSerializedPaseVerifier</a></td></tr>
+<tr class="separator:a9edf47feb4aa391b13df3450403a4883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71188e4afc464fc07e98d7b4ea41832" id="r_ab71188e4afc464fc07e98d7b4ea41832"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#ab71188e4afc464fc07e98d7b4ea41832">mPaseSalt</a></td></tr>
+<tr class="separator:ab71188e4afc464fc07e98d7b4ea41832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360ee3dbd54ef3fed02ea5007ccfc02d" id="r_a360ee3dbd54ef3fed02ea5007ccfc02d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#a360ee3dbd54ef3fed02ea5007ccfc02d">mPaseIterationCount</a> = 0</td></tr>
+<tr class="separator:a360ee3dbd54ef3fed02ea5007ccfc02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492c0674d574c53079d0be9cf7cca996" id="r_a492c0674d574c53079d0be9cf7cca996"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#a492c0674d574c53079d0be9cf7cca996">mSetupPasscode</a></td></tr>
+<tr class="separator:a492c0674d574c53079d0be9cf7cca996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf076e97a22b0340a90fb6b12e7fe8f9" id="r_acf076e97a22b0340a90fb6b12e7fe8f9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinuxCommissionableDataProvider.html#acf076e97a22b0340a90fb6b12e7fe8f9">mDiscriminator</a> = 0</td></tr>
+<tr class="separator:acf076e97a22b0340a90fb6b12e7fe8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a13fdb58e17156e925c7147983ea0eff3" name="a13fdb58e17156e925c7147983ea0eff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13fdb58e17156e925c7147983ea0eff3">&#9670;&#160;</a></span>LinuxCommissionableDataProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinuxCommissionableDataProvider::LinuxCommissionableDataProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a466ebd4f613d626e718cf8e6aaa235a2" name="a466ebd4f613d626e718cf8e6aaa235a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a466ebd4f613d626e718cf8e6aaa235a2">&#9670;&#160;</a></span>GetSetupDiscriminator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> LinuxCommissionableDataProvider::GetSetupDiscriminator </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>setupDiscriminator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the default setup discriminator for the device used for commissionable advertising </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">setupDiscriminator</td><td>Reference to location where discriminator will be copied </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_NO_ERROR on success, or another CHIP_ERROR from the underlying implementation if access fails. </dd></dl>
+
+<p><a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html#abe5ac0aa7391d1aef19405c00f5d49cf">chip::DeviceLayer::CommissionableDataProvider</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a2e223847f3c35b55a442342670862515" name="a2e223847f3c35b55a442342670862515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e223847f3c35b55a442342670862515">&#9670;&#160;</a></span>GetSetupPasscode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> LinuxCommissionableDataProvider::GetSetupPasscode </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>setupPasscode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the default setup passcode for the device <em>if supported</em> </p>
+<p>This API is optional to support, but present to support integration with some examples which allow runtime setting of a passcode to generate onboarding payloads and QR codes as well as PAKE verifier. This is generally not applicable to production usecases of commissionable devices with nominal random verifier/passcode and with usage of verifier rather than passcode (which safeguards the passcode from ever leaking). There are no guarantees that this API, in general, will persist the passcode across restarts.</p>
+<p>If not supported, return CHIP_ERROR_NOT_IMPLEMENTED.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">setupPasscode</td><td>Reference to location where passcode will be copied </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_NO_ERROR on success, CHIP_ERROR_NOT_IMPLEMENTED if not implemented or not available, or another CHIP_ERROR from the underlying implementation if access fails. </dd></dl>
+
+<p><a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html#aa3709bdd06dd2cd93b683e8d94c82318">chip::DeviceLayer::CommissionableDataProvider</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLinuxCommissionableDataProvider_a2e223847f3c35b55a442342670862515_cgraph.png" border="0" usemap="#aclassLinuxCommissionableDataProvider_a2e223847f3c35b55a442342670862515_cgraph" alt=""/></div>
+<map name="aclassLinuxCommissionableDataProvider_a2e223847f3c35b55a442342670862515_cgraph" id="aclassLinuxCommissionableDataProvider_a2e223847f3c35b55a442342670862515_cgraph">
+<area shape="rect" title="Obtain the default setup passcode for the device if supported" alt="" coords="5,5,256,45"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="508,13,689,38"/>
+<area shape="poly" title=" " alt="" coords="256,23,494,23,494,28,256,28"/>
+<area shape="rect" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="304,38,460,63"/>
+<area shape="poly" title=" " alt="" coords="257,35,291,39,290,44,256,41"/>
+<area shape="poly" title=" " alt="" coords="460,39,494,35,495,40,461,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a18904f0378fa902139218c53a4b60e6f" name="a18904f0378fa902139218c53a4b60e6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18904f0378fa902139218c53a4b60e6f">&#9670;&#160;</a></span>GetSpake2pIterationCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> LinuxCommissionableDataProvider::GetSpake2pIterationCount </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>iterationCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the default PAKE verifier's PBKDF2 iteration count </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">iterationCount</td><td>Reference to location where the iteration count will be stored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_NO_ERROR on success, or another CHIP_ERROR from the underlying implementation if access fails. </dd></dl>
+
+<p><a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html#ae3362e26c79083405195f2d40b77c26a">chip::DeviceLayer::CommissionableDataProvider</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a7cb5450a137d474ea45572283c358a99" name="a7cb5450a137d474ea45572283c358a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb5450a137d474ea45572283c358a99">&#9670;&#160;</a></span>GetSpake2pSalt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> LinuxCommissionableDataProvider::GetSpake2pSalt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">chip::MutableByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>saltBuf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the default PAKE verifier's PBKDF2 salt in the provided <code>saltBuf</code> </p>
+<p>The <code>saltBuf</code> must be large enough to contain the salt. It will be resized on success to reflect the actual size of the salt.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">saltBuf</td><td>Reference to buffer where the salt value will be copied.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_NO_ERROR on success, CHIP_ERROR_BUFFER_TOO_SMALL if saltBuf was too small, or another CHIP_ERROR from the underlying implementation if access fails. </dd></dl>
+
+<p><a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html#a211bf01ffa02ff4fd4cd417595807cf5">chip::DeviceLayer::CommissionableDataProvider</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLinuxCommissionableDataProvider_a7cb5450a137d474ea45572283c358a99_cgraph.png" border="0" usemap="#aclassLinuxCommissionableDataProvider_a7cb5450a137d474ea45572283c358a99_cgraph" alt=""/></div>
+<map name="aclassLinuxCommissionableDataProvider_a7cb5450a137d474ea45572283c358a99_cgraph" id="aclassLinuxCommissionableDataProvider_a7cb5450a137d474ea45572283c358a99_cgraph">
+<area shape="rect" title="Obtain the default PAKE verifier&#39;s PBKDF2 salt in the provided saltBuf" alt="" coords="5,47,256,87"/>
+<area shape="rect" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097" title=" " alt="" coords="328,5,455,31"/>
+<area shape="poly" title=" " alt="" coords="236,45,314,30,315,35,237,50"/>
+<area shape="rect" href="classchip_1_1Span.html#a675272efc7d6fffcb1eb12ad749cb15e" title=" " alt="" coords="304,55,479,80"/>
+<area shape="poly" title=" " alt="" coords="256,65,290,65,290,70,256,70"/>
+<area shape="rect" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8" title=" " alt="" coords="527,80,649,105"/>
+<area shape="poly" title=" " alt="" coords="257,84,304,89,414,93,513,92,513,98,414,98,304,94,256,89"/>
+<area shape="poly" title=" " alt="" coords="479,76,513,80,513,86,479,81"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a38cbfeca23399c635fcbaffbd16f77d9" name="a38cbfeca23399c635fcbaffbd16f77d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cbfeca23399c635fcbaffbd16f77d9">&#9670;&#160;</a></span>GetSpake2pVerifier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> LinuxCommissionableDataProvider::GetSpake2pVerifier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">chip::MutableByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>verifierBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>outVerifierLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the default PAKE verifier in the provided <code>verifierBuf</code> </p>
+<p>The <code>verifierBuf</code> must be large enough to contain the verifier. It will be resized on success to reflect the actual size of the verifier and match the value in verifierLen.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">verifierBuf</td><td>Reference to buffer where the verifier value will be copied. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outVerifierLen</td><td>Reference to location where the length of the verifier will be stored, including if the buffer provided is too small. This value is valid if the return value is either CHIP_NO_ERROR or CHIP_ERROR_BUFFER_TOO_SMALL.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_NO_ERROR on success, CHIP_ERROR_BUFFER_TOO_SMALL if verifierBuf was too small, or another CHIP_ERROR from the underlying implementation if access fails. </dd></dl>
+
+<p><a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html#a5ae7816c355bda84764e70cb5c93bfe5">chip::DeviceLayer::CommissionableDataProvider</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLinuxCommissionableDataProvider_a38cbfeca23399c635fcbaffbd16f77d9_cgraph.png" border="0" usemap="#aclassLinuxCommissionableDataProvider_a38cbfeca23399c635fcbaffbd16f77d9_cgraph" alt=""/></div>
+<map name="aclassLinuxCommissionableDataProvider_a38cbfeca23399c635fcbaffbd16f77d9_cgraph" id="aclassLinuxCommissionableDataProvider_a38cbfeca23399c635fcbaffbd16f77d9_cgraph">
+<area shape="rect" title="Obtain the default PAKE verifier in the provided verifierBuf" alt="" coords="5,47,256,87"/>
+<area shape="rect" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097" title=" " alt="" coords="328,5,455,31"/>
+<area shape="poly" title=" " alt="" coords="236,45,314,30,315,35,237,50"/>
+<area shape="rect" href="classchip_1_1Span.html#a675272efc7d6fffcb1eb12ad749cb15e" title=" " alt="" coords="304,55,479,80"/>
+<area shape="poly" title=" " alt="" coords="256,65,290,65,290,70,256,70"/>
+<area shape="rect" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8" title=" " alt="" coords="527,80,649,105"/>
+<area shape="poly" title=" " alt="" coords="257,84,304,89,414,93,513,92,513,98,414,98,304,94,256,89"/>
+<area shape="poly" title=" " alt="" coords="479,76,513,80,513,86,479,81"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3008625eeb7d169fa9fc74397227a7ef" name="a3008625eeb7d169fa9fc74397227a7ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3008625eeb7d169fa9fc74397227a7ef">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> LinuxCommissionableDataProvider::Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; std::vector&lt; uint8_t &gt; &gt;&#160;</td>
+          <td class="paramname"><em>serializedSpake2pVerifier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; std::vector&lt; uint8_t &gt; &gt;&#160;</td>
+          <td class="paramname"><em>spake2pSalt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>spake2pIterationCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; uint32_t &gt;&#160;</td>
+          <td class="paramname"><em>setupPasscode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>discriminator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the commissionable Data provider for Linux samples </p>
+<p>This version attempts to properly make use of the different arguments to allow direct override of PASE verifier, and correct computation of the PAKE verifier based on configurable iteration counts.</p>
+<p>The setupPasscode is not required BUT if it is absent, it will read back as 0 and log a warning. This means testing assumptions of being able to generate a setup payload will be wrong, but it will allow testing configurations where the passcode is maintained separately than the verifier for security purposes.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializedSpake2pVerifier</td><td>- Optional serialized verifier that will override computation from setupPasscode if provided </td></tr>
+    <tr><td class="paramname">spake2pSalt</td><td>- Optional salt to use. A random one will be generated otherwise. </td></tr>
+    <tr><td class="paramname">spake2pIterationCount</td><td>- Iteration count to use. If not in range of the spec bounds, CHIP_ERROR_INVALID_ARGUMENT will be returned. </td></tr>
+    <tr><td class="paramname">setupPasscode</td><td>- Optional setup passcode to store, and to use to generate PASE verifier if <code>serializedSpake2pVerifier</code> argument empty. </td></tr>
+    <tr><td class="paramname">discriminator</td><td>- Discriminator to use for advertising. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_ERROR_OK on success, CHIP_ERROR_INVALID_ARGUMENT on any invalid argument combinations, CHIP_ERROR_INCORRECT_STATE if already initialized, or other CHIP_ERROR values if inner implementation dependencies fail. </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLinuxCommissionableDataProvider_a3008625eeb7d169fa9fc74397227a7ef_cgraph.png" border="0" usemap="#aclassLinuxCommissionableDataProvider_a3008625eeb7d169fa9fc74397227a7ef_cgraph" alt=""/></div>
+<map name="aclassLinuxCommissionableDataProvider_a3008625eeb7d169fa9fc74397227a7ef_cgraph" id="aclassLinuxCommissionableDataProvider_a3008625eeb7d169fa9fc74397227a7ef_cgraph">
+<area shape="rect" title="Initialize the commissionable Data provider for Linux samples" alt="" coords="5,199,256,239"/>
+<area shape="rect" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097" title=" " alt="" coords="345,5,472,31"/>
+<area shape="poly" title=" " alt="" coords="144,197,170,163,206,121,251,77,303,41,331,29,333,34,305,46,255,82,210,124,174,166,148,200"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1Spake2pVerifier.html#adf56bdeacb33433cb87f30f6d41b6311" title=" " alt="" coords="304,55,513,95"/>
+<area shape="poly" title=" " alt="" coords="157,197,221,151,303,105,320,98,322,103,305,110,224,156,160,201"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61" title=" " alt="" coords="323,120,494,145"/>
+<area shape="poly" title=" " alt="" coords="183,197,303,155,337,146,338,151,305,161,185,202"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1Spake2pVerifier.html#afc56f5a658c66aca84cb78a76e90fc9a" title="Generate the Spake2+ verifier." alt="" coords="304,170,513,210"/>
+<area shape="poly" title=" " alt="" coords="256,203,290,200,290,205,257,209"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="561,317,743,343"/>
+<area shape="poly" title=" " alt="" coords="257,226,382,242,514,270,567,288,614,309,612,314,565,293,513,275,381,247,256,231"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1Spake2pVerifier.html#a25c8a62cd0a49fe81567394373e25f6e" title=" " alt="" coords="304,285,513,325"/>
+<area shape="poly" title=" " alt="" coords="197,237,330,278,329,283,196,242"/>
+<area shape="rect" href="classchip_1_1Optional.html#a02d5932f37467d13f8bef21a41b1f391" title=" " alt="" coords="320,349,497,375"/>
+<area shape="poly" title=" " alt="" coords="157,237,221,286,262,312,305,334,328,343,326,348,303,339,260,317,218,290,154,242"/>
+<area shape="rect" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="331,399,487,424"/>
+<area shape="poly" title=" " alt="" coords="149,238,212,310,256,350,305,384,323,392,320,397,303,388,253,354,208,314,145,242"/>
+<area shape="poly" title=" " alt="" coords="468,396,512,383,609,346,611,351,514,389,469,401"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLinuxCommissionableDataProvider_a3008625eeb7d169fa9fc74397227a7ef_icgraph.png" border="0" usemap="#aclassLinuxCommissionableDataProvider_a3008625eeb7d169fa9fc74397227a7ef_icgraph" alt=""/></div>
+<map name="aclassLinuxCommissionableDataProvider_a3008625eeb7d169fa9fc74397227a7ef_icgraph" id="aclassLinuxCommissionableDataProvider_a3008625eeb7d169fa9fc74397227a7ef_icgraph">
+<area shape="rect" title="Initialize the commissionable Data provider for Linux samples" alt="" coords="595,5,845,45"/>
+<area shape="rect" href="namespacechip_1_1examples.html#a63149b00322319c60a17f0450b9e6af5" title="Initialize a LinuxCommissionableDataProvider from Linux common command&#45;line options,..." alt="" coords="288,5,547,45"/>
+<area shape="poly" title=" " alt="" coords="581,28,547,28,547,23,581,23"/>
+<area shape="rect" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="108,13,240,38"/>
+<area shape="poly" title=" " alt="" coords="275,28,241,28,241,23,275,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1c4eb18ada47b40d3ecee7c8aaedb3a7" name="a1c4eb18ada47b40d3ecee7c8aaedb3a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4eb18ada47b40d3ecee7c8aaedb3a7">&#9670;&#160;</a></span>SetSetupDiscriminator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> LinuxCommissionableDataProvider::SetSetupDiscriminator </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>setupDiscriminator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the setup discriminator <em>if supported</em>. </p>
+<p>This API is optional to support, but present to support integration with some examples which use a common test PAKE verifier but want to disambiguate multiple instances at runtime. This is generally not applicable to production usecases of commissionable devices with nominal random discriminator. There are no guarantees that this API, in general, will persist the discriminator across restarts.</p>
+<p>If not supported, return CHIP_ERROR_NOT_IMPLEMENTED.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">setupDiscriminator</td><td>Setup discriminator to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_NO_ERROR on success, CHIP_ERROR_INVALID_ARGUMENT if discriminator is out of range, CHIP_ERROR_NOT_IMPLEMENTED if not implemented, or another CHIP_ERROR from the underlying implementation if storage fails. </dd></dl>
+
+<p><a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html#a78532777b95898e1589760a01a3271e8">chip::DeviceLayer::CommissionableDataProvider</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a32409ac0149100fe92b9adb199046f63" name="a32409ac0149100fe92b9adb199046f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32409ac0149100fe92b9adb199046f63">&#9670;&#160;</a></span>SetSetupPasscode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> LinuxCommissionableDataProvider::SetSetupPasscode </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>setupPasscode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the setup discriminator <em>if supported</em>. </p>
+<p>This API is optional to support, but present to support integration with some examples which allow runtime setting of a passcode to generate onboarding payloads and QR codes as well as PAKE verifier. This is generally not applicable to production usecases of commissionable devices with nominal random verifier/passcode and with usage of verifier rather than passcode (which safeguards the passcode from ever leaking). There are no guarantees that this API, in general, will persist the passcode across restarts.</p>
+<p>If not supported, return CHIP_ERROR_NOT_IMPLEMENTED.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">setupPasscode</td><td>Setup passcode to set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_NO_ERROR on success, CHIP_ERROR_INVALID_ARGUMENT if discriminator is invalid according to spec (out of range or forbidden value), CHIP_ERROR_NOT_IMPLEMENTED if not implemented, or another CHIP_ERROR from the underlying implementation if storage fails. </dd></dl>
+
+<p><a class="el" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html#aeea530377b86a08cf000a4ca71e0bf03">chip::DeviceLayer::CommissionableDataProvider</a>を実装しています。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="acf076e97a22b0340a90fb6b12e7fe8f9" name="acf076e97a22b0340a90fb6b12e7fe8f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf076e97a22b0340a90fb6b12e7fe8f9">&#9670;&#160;</a></span>mDiscriminator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t LinuxCommissionableDataProvider::mDiscriminator = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afae660292bd30beb100a9571c21d735a" name="afae660292bd30beb100a9571c21d735a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae660292bd30beb100a9571c21d735a">&#9670;&#160;</a></span>mIsInitialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LinuxCommissionableDataProvider::mIsInitialized = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a360ee3dbd54ef3fed02ea5007ccfc02d" name="a360ee3dbd54ef3fed02ea5007ccfc02d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360ee3dbd54ef3fed02ea5007ccfc02d">&#9670;&#160;</a></span>mPaseIterationCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t LinuxCommissionableDataProvider::mPaseIterationCount = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab71188e4afc464fc07e98d7b4ea41832" name="ab71188e4afc464fc07e98d7b4ea41832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71188e4afc464fc07e98d7b4ea41832">&#9670;&#160;</a></span>mPaseSalt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint8_t&gt; LinuxCommissionableDataProvider::mPaseSalt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9edf47feb4aa391b13df3450403a4883" name="a9edf47feb4aa391b13df3450403a4883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9edf47feb4aa391b13df3450403a4883">&#9670;&#160;</a></span>mSerializedPaseVerifier</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint8_t&gt; LinuxCommissionableDataProvider::mSerializedPaseVerifier</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a492c0674d574c53079d0be9cf7cca996" name="a492c0674d574c53079d0be9cf7cca996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a492c0674d574c53079d0be9cf7cca996">&#9670;&#160;</a></span>mSetupPasscode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt;uint32_t&gt; LinuxCommissionableDataProvider::mSetupPasscode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/examples/platform/linux/<a class="el" href="LinuxCommissionableDataProvider_8h_source.html">LinuxCommissionableDataProvider.h</a></li>
+<li>connectedhomeip/examples/platform/linux/<a class="el" href="LinuxCommissionableDataProvider_8cpp.html">LinuxCommissionableDataProvider.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

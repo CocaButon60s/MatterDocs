@@ -1,0 +1,8 @@
+<map id="chip::Platform::MakeShared" name="chip::Platform::MakeShared">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,207,55"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="255,29,405,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,39,241,39,241,45,207,45"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="293,31,286,21,290,11,305,5,330,3,362,7,374,16,370,20,360,11,330,8,306,10,293,15,291,20,298,27"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="453,29,660,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="406,39,440,39,440,45,406,45"/>
+</map>

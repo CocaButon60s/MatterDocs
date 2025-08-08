@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/crypto/CHIPCryptoPAL.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_9c82e6a3f13e9306b38f5e0077e1fe34.html">crypto</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle"><div class="title">CHIPCryptoPAL.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;system/SystemConfig.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPError_8h_source.html">lib/core/CHIPError.h</a>&gt;</code><br />
+<code>#include &lt;lib/core/CHIPVendorIdentifiers.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="DataModelTypes_8h_source.html">lib/core/DataModelTypes.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Optional_8h_source.html">lib/core/Optional.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Base64_8h_source.html">lib/support/Base64.h</a>&gt;</code><br />
+<code>#include &lt;lib/support/BufferReader.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="CodeUtils_8h_source.html">lib/support/CodeUtils.h</a>&gt;</code><br />
+<code>#include &lt;lib/support/SafePointerCast.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="Span_8h_source.html">lib/support/Span.h</a>&gt;</code><br />
+<code>#include &lt;lib/support/StringBuilder.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+CHIPCryptoPAL.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="CHIPCryptoPAL_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2crypto_2CHIPCryptoPAL_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2crypto_2CHIPCryptoPAL_8h" id="aconnectedhomeip_2src_2crypto_2CHIPCryptoPAL_8h">
+<area shape="rect" title=" " alt="" coords="1217,5,1397,45"/>
+<area shape="rect" title=" " alt="" coords="144,401,320,427"/>
+<area shape="poly" title=" " alt="" coords="1216,30,903,39,704,48,500,61,311,81,154,106,93,122,46,139,18,158,10,168,8,178,8,261,12,288,23,311,40,331,61,349,112,377,164,395,163,400,110,382,58,353,36,335,18,314,7,289,3,262,3,178,6,166,14,154,44,134,91,117,152,101,310,75,500,56,703,42,902,33,1216,25"/>
+<area shape="rect" href="CHIPError_8h.html" title=" " alt="" coords="915,247,1061,273"/>
+<area shape="poly" title=" " alt="" coords="1217,40,1157,60,1129,75,1105,95,1090,118,1088,141,1086,166,1074,193,1049,221,1022,242,1018,238,1046,217,1070,191,1081,165,1082,140,1085,116,1101,92,1126,71,1155,55,1216,35"/>
+<area shape="rect" title=" " alt="" coords="43,167,285,192"/>
+<area shape="poly" title=" " alt="" coords="1217,29,1065,32,866,41,644,62,532,77,422,96,362,110,302,128,205,164,203,159,301,123,360,105,421,91,531,71,643,56,866,36,1064,26,1216,24"/>
+<area shape="rect" href="DataModelTypes_8h.html" title=" " alt="" coords="433,93,628,119"/>
+<area shape="poly" title=" " alt="" coords="1217,38,642,96,641,91,1216,33"/>
+<area shape="rect" href="Optional_8h.html" title=" " alt="" coords="899,93,1040,119"/>
+<area shape="poly" title=" " alt="" coords="1226,48,1032,93,1031,88,1225,43"/>
+<area shape="rect" href="CodeUtils_8h.html" title=" " alt="" coords="1333,167,1504,192"/>
+<area shape="poly" title=" " alt="" coords="1311,45,1318,80,1336,117,1358,140,1383,158,1380,162,1354,144,1331,120,1313,82,1306,46"/>
+<area shape="rect" href="Base64_8h.html" title=" " alt="" coords="1115,93,1269,119"/>
+<area shape="poly" title=" " alt="" coords="1280,48,1222,88,1219,83,1277,43"/>
+<area shape="rect" title=" " alt="" coords="1345,93,1535,119"/>
+<area shape="poly" title=" " alt="" coords="1340,43,1410,84,1407,89,1337,48"/>
+<area shape="rect" title=" " alt="" coords="1560,93,1771,119"/>
+<area shape="poly" title=" " alt="" coords="1393,43,1600,88,1599,93,1392,48"/>
+<area shape="rect" href="Span_8h.html" title=" " alt="" coords="1795,93,1933,119"/>
+<area shape="poly" title=" " alt="" coords="1397,37,1781,90,1780,96,1396,42"/>
+<area shape="rect" title=" " alt="" coords="1958,93,2149,119"/>
+<area shape="poly" title=" " alt="" coords="1397,33,1945,91,1944,96,1397,39"/>
+<area shape="rect" title=" " alt="" coords="2173,93,2248,119"/>
+<area shape="poly" title=" " alt="" coords="1397,27,1729,45,1942,63,2160,91,2159,96,1941,69,1729,50,1397,32"/>
+<area shape="rect" title=" " alt="" coords="2273,93,2343,119"/>
+<area shape="poly" title=" " alt="" coords="1397,25,1557,30,1770,41,2012,61,2259,91,2259,96,2011,66,1769,47,1557,36,1397,31"/>
+<area shape="rect" title=" " alt="" coords="942,328,1029,353"/>
+<area shape="poly" title=" " alt="" coords="990,273,989,314,984,314,985,273"/>
+<area shape="rect" title=" " alt="" coords="1053,328,1112,353"/>
+<area shape="poly" title=" " alt="" coords="1004,271,1060,317,1056,321,1000,275"/>
+<area shape="rect" title=" " alt="" coords="1137,328,1229,353"/>
+<area shape="poly" title=" " alt="" coords="1017,270,1143,320,1141,325,1015,275"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="557,328,715,353"/>
+<area shape="poly" title=" " alt="" coords="937,275,701,328,700,322,936,270"/>
+<area shape="rect" title=" " alt="" coords="746,328,918,353"/>
+<area shape="poly" title=" " alt="" coords="967,275,868,324,866,320,964,270"/>
+<area shape="poly" title=" " alt="" coords="572,356,311,402,310,396,571,351"/>
+<area shape="rect" title=" " alt="" coords="501,401,621,427"/>
+<area shape="poly" title=" " alt="" coords="626,355,585,394,582,390,622,351"/>
+<area shape="rect" title=" " alt="" coords="646,401,775,427"/>
+<area shape="poly" title=" " alt="" coords="650,351,690,390,687,394,646,355"/>
+<area shape="poly" title=" " alt="" coords="541,117,573,165,594,201,612,239,633,314,628,315,607,241,590,204,568,168,537,120"/>
+<area shape="poly" title=" " alt="" coords="472,121,237,167,236,161,471,116"/>
+<area shape="rect" title=" " alt="" coords="531,247,597,273"/>
+<area shape="poly" title=" " alt="" coords="537,118,552,166,564,233,558,234,547,167,532,120"/>
+<area shape="rect" title=" " alt="" coords="369,247,506,273"/>
+<area shape="poly" title=" " alt="" coords="531,120,523,154,506,193,487,219,465,240,461,236,483,215,502,191,518,152,526,118"/>
+<area shape="rect" href="NodeId_8h.html" title=" " alt="" coords="361,167,493,192"/>
+<area shape="poly" title=" " alt="" coords="515,121,457,161,454,156,512,116"/>
+<area shape="rect" title=" " alt="" coords="186,247,345,273"/>
+<area shape="poly" title=" " alt="" coords="470,121,410,140,378,153,350,169,311,202,283,237,278,234,307,198,346,164,376,148,408,135,469,116"/>
+<area shape="poly" title=" " alt="" coords="448,190,533,238,531,243,446,194"/>
+<area shape="poly" title=" " alt="" coords="431,192,437,233,431,234,426,193"/>
+<area shape="poly" title=" " alt="" coords="404,194,302,244,300,239,402,190"/>
+<area shape="poly" title=" " alt="" coords="1000,116,1038,136,1074,165,1094,194,1103,221,1110,248,1126,278,1160,317,1156,320,1122,282,1105,250,1098,222,1089,196,1070,168,1035,140,998,121"/>
+<area shape="rect" title=" " alt="" coords="827,167,877,192"/>
+<area shape="poly" title=" " alt="" coords="952,121,884,162,882,157,949,116"/>
+<area shape="rect" title=" " alt="" coords="901,167,976,192"/>
+<area shape="poly" title=" " alt="" coords="967,120,951,155,947,153,962,118"/>
+<area shape="rect" title=" " alt="" coords="1001,167,1061,192"/>
+<area shape="poly" title=" " alt="" coords="981,117,1014,154,1010,158,977,121"/>
+<area shape="rect" title=" " alt="" coords="669,167,803,192"/>
+<area shape="poly" title=" " alt="" coords="933,121,787,165,786,160,931,116"/>
+<area shape="poly" title=" " alt="" coords="1040,116,1334,162,1333,167,1040,121"/>
+<area shape="poly" title=" " alt="" coords="1357,195,1065,248,1064,242,1356,189"/>
+<area shape="poly" title=" " alt="" coords="1334,193,903,243,839,261,776,283,674,325,672,320,774,278,837,256,902,237,1333,188"/>
+<area shape="rect" title=" " alt="" coords="1610,247,1745,273"/>
+<area shape="poly" title=" " alt="" coords="1457,189,1628,241,1626,246,1456,195"/>
+<area shape="rect" title=" " alt="" coords="1769,247,1957,273"/>
+<area shape="poly" title=" " alt="" coords="1484,189,1758,237,1786,242,1785,248,1757,243,1483,195"/>
+<area shape="rect" title=" " alt="" coords="1136,240,1304,280"/>
+<area shape="poly" title=" " alt="" coords="1391,194,1281,238,1279,233,1389,190"/>
+<area shape="rect" title=" " alt="" coords="1328,240,1475,280"/>
+<area shape="poly" title=" " alt="" coords="1419,193,1411,227,1406,226,1414,192"/>
+<area shape="rect" title=" " alt="" coords="1499,247,1586,273"/>
+<area shape="poly" title=" " alt="" coords="1438,190,1514,238,1511,242,1436,194"/>
+<area shape="rect" title=" " alt="" coords="1187,167,1258,192"/>
+<area shape="poly" title=" " alt="" coords="1200,118,1215,153,1210,155,1195,120"/>
+<area shape="poly" title=" " alt="" coords="1923,116,2027,140,2070,153,2093,165,2098,179,2093,193,2070,229,2044,252,2011,267,1970,283,1907,299,1822,312,1616,330,1405,339,1243,342,1243,336,1405,333,1616,325,1822,307,1906,294,1969,277,2009,262,2041,247,2066,226,2088,191,2092,179,2089,168,2068,158,2026,145,1922,121"/>
+<area shape="poly" title=" " alt="" coords="1795,120,1783,121,1652,131,1550,133,1448,141,1390,152,1322,169,1297,182,1271,195,994,222,612,257,611,252,993,217,1270,189,1295,177,1320,164,1389,146,1448,136,1549,128,1652,126,1782,116,1794,115"/>
+<area shape="poly" title=" " alt="" coords="1795,121,1504,167,1504,162,1794,116"/>
+<area shape="rect" title=" " alt="" coords="1565,167,1621,192"/>
+<area shape="poly" title=" " alt="" coords="1820,121,1635,169,1635,169,1634,164,1634,164,1818,116"/>
+<area shape="rect" title=" " alt="" coords="1646,167,1717,192"/>
+<area shape="poly" title=" " alt="" coords="1836,121,1725,164,1723,159,1834,116"/>
+<area shape="rect" title=" " alt="" coords="1741,167,1806,192"/>
+<area shape="poly" title=" " alt="" coords="1851,121,1801,160,1797,156,1848,117"/>
+<area shape="rect" title=" " alt="" coords="1831,167,1897,192"/>
+<area shape="poly" title=" " alt="" coords="1867,119,1867,153,1861,153,1861,119"/>
+<area shape="rect" title=" " alt="" coords="1921,167,2079,192"/>
+<area shape="poly" title=" " alt="" coords="1887,116,1967,158,1965,163,1885,121"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="CHIPCryptoPAL_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2crypto_2CHIPCryptoPAL_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2crypto_2CHIPCryptoPAL_8hdep" id="aconnectedhomeip_2src_2crypto_2CHIPCryptoPAL_8hdep">
+<area shape="rect" title=" " alt="" coords="459,5,639,45"/>
+<area shape="rect" href="AppMain_8cpp.html" title=" " alt="" coords="555,401,761,441"/>
+<area shape="poly" title=" " alt="" coords="445,35,320,44,186,57,75,74,38,85,18,95,10,108,8,120,11,133,19,147,43,179,70,209,132,261,202,303,276,337,351,364,425,384,555,408,554,413,424,389,350,369,274,342,199,308,129,265,66,213,39,182,14,149,6,134,3,120,5,106,15,91,36,80,74,69,186,52,319,39,444,30"/>
+<area shape="rect" href="CommissionableInit_8cpp.html" title=" " alt="" coords="29,93,260,148"/>
+<area shape="poly" title=" " alt="" coords="454,51,259,96,257,91,453,46"/>
+<area shape="rect" href="LinuxCommissionableDataProvider_8cpp.html" title=" " alt="" coords="285,93,551,148"/>
+<area shape="poly" title=" " alt="" coords="513,55,456,95,453,91,509,51"/>
+<area shape="rect" href="Options_8cpp.html" title=" " alt="" coords="576,101,783,141"/>
+<area shape="poly" title=" " alt="" coords="588,51,654,98,651,103,585,56"/>
+<area shape="rect" href="TestGroupData_8h.html" title=" " alt="" coords="505,203,712,243"/>
+<area shape="poly" title=" " alt="" coords="653,39,740,60,775,75,797,92,806,106,809,120,806,135,797,150,779,165,750,180,679,206,677,201,748,176,776,161,793,146,801,133,803,120,801,108,793,95,772,79,738,65,652,44"/>
+<area shape="rect" href="RendezvousParameters_8h.html" title=" " alt="" coords="859,93,1049,148"/>
+<area shape="poly" title=" " alt="" coords="644,46,859,95,858,100,643,51"/>
+<area shape="poly" title=" " alt="" coords="619,256,656,400,651,402,614,257"/>
+<area shape="rect" href="ControllerShellCommands_8cpp.html" title=" " alt="" coords="737,196,955,251"/>
+<area shape="poly" title=" " alt="" coords="917,160,876,198,872,194,914,156"/>
+<area shape="rect" href="Server_8h.html" title=" " alt="" coords="980,203,1141,243"/>
+<area shape="poly" title=" " alt="" coords="994,156,1042,201,1038,205,990,159"/>
+<area shape="poly" title=" " alt="" coords="982,249,968,253,906,264,856,267,809,275,784,285,755,301,727,324,703,351,670,403,665,400,699,348,723,320,752,296,782,280,808,270,856,262,905,258,967,248,981,244"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="805,401,1012,441"/>
+<area shape="poly" title=" " alt="" coords="1048,257,1022,305,987,355,961,381,936,403,932,399,958,377,982,352,1017,302,1043,255"/>
+<area shape="rect" href="AppMain_8h.html" title=" " alt="" coords="765,306,972,346"/>
+<area shape="poly" title=" " alt="" coords="1014,252,906,308,903,304,1011,247"/>
+<area shape="rect" href="CommissioneeShellCommands_8cpp.html" title=" " alt="" coords="1047,299,1298,353"/>
+<area shape="poly" title=" " alt="" coords="1093,250,1145,296,1141,300,1090,254"/>
+<area shape="poly" title=" " alt="" coords="814,354,702,404,699,399,812,349"/>
+<area shape="poly" title=" " alt="" coords="884,357,903,400,898,402,880,359"/>
+</map>
+</div>
+</div>
+<p><a href="CHIPCryptoPAL_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html">chip::Crypto::ECPKey&lt; Sig &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1SensitiveDataBuffer.html">chip::Crypto::SensitiveDataBuffer&lt; kCapacity &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for holding sensitive data that should be erased from memory after use.  <a href="classchip_1_1Crypto_1_1SensitiveDataBuffer.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1SensitiveDataFixedBuffer.html">chip::Crypto::SensitiveDataFixedBuffer&lt; kCapacity &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for holding fixed-sized sensitive data that should be erased from memory after use.  <a href="classchip_1_1Crypto_1_1SensitiveDataFixedBuffer.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html">chip::Crypto::P256PublicKey</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">chip::Crypto::ECPKeypair&lt; PK, Secret, Sig &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1Crypto_1_1P256KeypairContext.html">chip::Crypto::P256KeypairContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256KeypairBase.html">chip::Crypto::P256KeypairBase</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256Keypair.html">chip::Crypto::P256Keypair</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyHandle.html">chip::Crypto::SymmetricKeyHandle&lt; ContextSize &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific symmetric key handle  <a href="classchip_1_1Crypto_1_1SymmetricKeyHandle.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1Crypto_1_1SymmetricKeyHandle_1_1OpaqueContext.html">chip::Crypto::SymmetricKeyHandle&lt; ContextSize &gt;::OpaqueContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1Symmetric128BitsKeyHandle.html">chip::Crypto::Symmetric128BitsKeyHandle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific 128-bit symmetric key handle  <a href="classchip_1_1Crypto_1_1Symmetric128BitsKeyHandle.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1Aes128KeyHandle.html">chip::Crypto::Aes128KeyHandle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific 128-bit AES key handle  <a href="classchip_1_1Crypto_1_1Aes128KeyHandle.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1Hmac128KeyHandle.html">chip::Crypto::Hmac128KeyHandle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific 128-bit HMAC key handle  <a href="classchip_1_1Crypto_1_1Hmac128KeyHandle.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1HkdfKeyHandle.html">chip::Crypto::HkdfKeyHandle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific HKDF key handle  <a href="classchip_1_1Crypto_1_1HkdfKeyHandle.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1Crypto_1_1HashSHA256OpaqueContext.html">chip::Crypto::HashSHA256OpaqueContext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that defines stream based implementation of SHA-256 hash It's expected that the object of this class can be safely copied. All implementations must check for std::is_trivially_copyable.  <a href="structchip_1_1Crypto_1_1HashSHA256OpaqueContext.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1Hash__SHA256__stream.html">chip::Crypto::Hash_SHA256_stream</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1HKDF__sha.html">chip::Crypto::HKDF_sha</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1HMAC__sha.html">chip::Crypto::HMAC_sha</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PBKDF2__sha256.html">chip::Crypto::PBKDF2_sha256</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1Spake2p.html">chip::Crypto::Spake2p</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1Crypto_1_1Spake2pOpaqueContext.html">chip::Crypto::Spake2pOpaqueContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1Spake2p__P256__SHA256__HKDF__HMAC.html">chip::Crypto::Spake2p_P256_SHA256_HKDF_HMAC</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1Spake2pVerifier.html">chip::Crypto::Spake2pVerifier</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class used for verifying PASE secure sessions.  <a href="classchip_1_1Crypto_1_1Spake2pVerifier.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html">chip::Crypto::PemEncoder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1KeyIdStringifier.html">chip::Crypto::KeyIdStringifier</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1Crypto_1_1AttestationCertVidPid.html">chip::Crypto::AttestationCertVidPid</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A data structure representing Attestation Certificate VID and PID attributes.  <a href="structchip_1_1Crypto_1_1AttestationCertVidPid.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1Crypto_1_1GroupOperationalCredentials.html">chip::Crypto::GroupOperationalCredentials</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The set of credentials needed to operate group message security with symmetric keys.  <a href="structchip_1_1Crypto_1_1GroupOperationalCredentials.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyContext.html">chip::Crypto::SymmetricKeyContext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque context used to protect a symmetric key. The key operations must be performed without exposing the protected key value.  <a href="classchip_1_1Crypto_1_1SymmetricKeyContext.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1Crypto" id="r_namespacechip_1_1Crypto"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html">chip::Crypto</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a2d59a8523f17a9f6b9807937e7ce8334" id="r_a2d59a8523f17a9f6b9807937e7ce8334"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a2d59a8523f17a9f6b9807937e7ce8334">chip::Crypto::P256ECDSASignature</a> = <a class="el" href="classchip_1_1Crypto_1_1SensitiveDataBuffer.html">SensitiveDataBuffer</a>&lt; <a class="el" href="namespacechip_1_1Crypto.html#a8f161388e940812be424c0746dfbabbe">kMax_ECDSA_Signature_Length</a> &gt;</td></tr>
+<tr class="separator:a2d59a8523f17a9f6b9807937e7ce8334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f60b13cd315536f473a264ad9e39d1" id="r_a62f60b13cd315536f473a264ad9e39d1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a62f60b13cd315536f473a264ad9e39d1">chip::Crypto::P256ECDHDerivedSecret</a> = <a class="el" href="classchip_1_1Crypto_1_1SensitiveDataBuffer.html">SensitiveDataBuffer</a>&lt; <a class="el" href="namespacechip_1_1Crypto.html#ab834d6fe7d39c4aac42fbfddc4c4e0b8">kMax_ECDH_Secret_Length</a> &gt;</td></tr>
+<tr class="separator:a62f60b13cd315536f473a264ad9e39d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba89769420f67fffa2c161a6438376ec" id="r_aba89769420f67fffa2c161a6438376ec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aba89769420f67fffa2c161a6438376ec">chip::Crypto::IdentityProtectionKey</a> = <a class="el" href="classchip_1_1Crypto_1_1SensitiveDataFixedBuffer.html">SensitiveDataFixedBuffer</a>&lt; <a class="el" href="namespacechip_1_1Crypto.html#a498768b0b6eb6b8a74e2c6c5087e8044">CHIP_CRYPTO_SYMMETRIC_KEY_LENGTH_BYTES</a> &gt;</td></tr>
+<tr class="separator:aba89769420f67fffa2c161a6438376ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e95c5fe25c5d648e9945f4c5c33668" id="r_a92e95c5fe25c5d648e9945f4c5c33668"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a92e95c5fe25c5d648e9945f4c5c33668">chip::Crypto::IdentityProtectionKeySpan</a> = <a class="el" href="namespacechip.html#a43f92c244158b5eeef1612561bd5620d">FixedByteSpan</a>&lt; <a class="el" href="namespacechip_1_1Crypto.html#a498768b0b6eb6b8a74e2c6c5087e8044">Crypto::CHIP_CRYPTO_SYMMETRIC_KEY_LENGTH_BYTES</a> &gt;</td></tr>
+<tr class="separator:a92e95c5fe25c5d648e9945f4c5c33668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc52741a3d98e2b30fab81069a0e854" id="r_aabc52741a3d98e2b30fab81069a0e854"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aabc52741a3d98e2b30fab81069a0e854">chip::Crypto::AttestationChallenge</a> = <a class="el" href="classchip_1_1Crypto_1_1SensitiveDataFixedBuffer.html">SensitiveDataFixedBuffer</a>&lt; <a class="el" href="namespacechip_1_1Crypto.html#a498768b0b6eb6b8a74e2c6c5087e8044">CHIP_CRYPTO_SYMMETRIC_KEY_LENGTH_BYTES</a> &gt;</td></tr>
+<tr class="separator:aabc52741a3d98e2b30fab81069a0e854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e74cf0298061c6c3a9b434edc214e34" id="r_a2e74cf0298061c6c3a9b434edc214e34"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a2e74cf0298061c6c3a9b434edc214e34">chip::Crypto::P256SerializedKeypair</a> = <a class="el" href="classchip_1_1Crypto_1_1SensitiveDataBuffer.html">SensitiveDataBuffer</a>&lt; <a class="el" href="namespacechip_1_1Crypto.html#aa0cece817f2925ac84285746bd195283">kP256_PublicKey_Length</a>+<a class="el" href="namespacechip_1_1Crypto.html#a2c88d656bf5dd4a30d70b69b05de8613">kP256_PrivateKey_Length</a> &gt;</td></tr>
+<tr class="separator:a2e74cf0298061c6c3a9b434edc214e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720487891f44fda65af2f0190c2b0205" id="r_a720487891f44fda65af2f0190c2b0205"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a720487891f44fda65af2f0190c2b0205">chip::Crypto::Symmetric128BitsKeyByteArray</a> = uint8_t[<a class="el" href="namespacechip_1_1Crypto.html#a498768b0b6eb6b8a74e2c6c5087e8044">CHIP_CRYPTO_SYMMETRIC_KEY_LENGTH_BYTES</a>]</td></tr>
+<tr class="separator:a720487891f44fda65af2f0190c2b0205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f393624333145c5e511369c2589724" id="r_a47f393624333145c5e511369c2589724"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a47f393624333145c5e511369c2589724">chip::Crypto::entropy_source</a>) (void *data, uint8_t *output, size_t len, size_t *olen)</td></tr>
+<tr class="memdesc:a47f393624333145c5e511369c2589724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entropy callback function  <br /></td></tr>
+<tr class="separator:a47f393624333145c5e511369c2589724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade266cab6397c1e701e00841e8f54a8c" id="r_ade266cab6397c1e701e00841e8f54a8c"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ade266cab6397c1e701e00841e8f54a8c">chip::Crypto::Spake2pVerifierSerialized</a>[<a class="el" href="namespacechip_1_1Crypto.html#a1846cd29ef0dfd0585415955822c97b8">kSpake2p_VerifierSerialized_Length</a>]</td></tr>
+<tr class="memdesc:ade266cab6397c1e701e00841e8f54a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialized format of the Spake2+ Verifier components.  <br /></td></tr>
+<tr class="separator:ade266cab6397c1e701e00841e8f54a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da154548aa2ed901eb5881b273ea0bb" id="r_a6da154548aa2ed901eb5881b273ea0bb"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structchip_1_1Crypto_1_1GroupOperationalCredentials.html">chip::Crypto::GroupOperationalCredentials</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a6da154548aa2ed901eb5881b273ea0bb">chip::Crypto::GroupOperationalCredentials</a></td></tr>
+<tr class="memdesc:a6da154548aa2ed901eb5881b273ea0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The set of credentials needed to operate group message security with symmetric keys.  <br /></td></tr>
+<tr class="separator:a6da154548aa2ed901eb5881b273ea0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:ae3211e7b653b1bd502b9ba30d329978c" id="r_ae3211e7b653b1bd502b9ba30d329978c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ae3211e7b653b1bd502b9ba30d329978c">chip::Crypto::FabricBindingVersion</a> : uint8_t { <a class="el" href="namespacechip_1_1Crypto.html#ae3211e7b653b1bd502b9ba30d329978ca44ec49f734015b5e667fb7c9633ae87f">chip::Crypto::kVersion1</a> = 0x01
+ }</td></tr>
+<tr class="separator:ae3211e7b653b1bd502b9ba30d329978c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c63afdd268c1e904e7f82f401a4a908" id="r_a7c63afdd268c1e904e7f82f401a4a908"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a7c63afdd268c1e904e7f82f401a4a908">chip::Crypto::VidVerificationStatementVersion</a> : uint8_t { <a class="el" href="namespacechip_1_1Crypto.html#a7c63afdd268c1e904e7f82f401a4a908a44ec49f734015b5e667fb7c9633ae87f">chip::Crypto::kVersion1</a> = 0x21
+ }</td></tr>
+<tr class="separator:a7c63afdd268c1e904e7f82f401a4a908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97433cd3171f1a9dca08f55c0a5533a" id="r_ab97433cd3171f1a9dca08f55c0a5533a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ab97433cd3171f1a9dca08f55c0a5533a">chip::Crypto::CHIP_SPAKE2P_STATE</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacechip_1_1Crypto.html#ab97433cd3171f1a9dca08f55c0a5533aa3639157c0c97cab3eadd57cd699ac5b9">chip::Crypto::PREINIT</a> = 0
+, <a class="el" href="namespacechip_1_1Crypto.html#ab97433cd3171f1a9dca08f55c0a5533aafaee4ca3c30ee18148ce3ada37466498">chip::Crypto::INIT</a>
+, <a class="el" href="namespacechip_1_1Crypto.html#ab97433cd3171f1a9dca08f55c0a5533aa17130e6c806885e23770df1519b18eb7">chip::Crypto::STARTED</a>
+, <a class="el" href="namespacechip_1_1Crypto.html#ab97433cd3171f1a9dca08f55c0a5533aacda522d4353b166cc2dee84673307b4e">chip::Crypto::R1</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacechip_1_1Crypto.html#ab97433cd3171f1a9dca08f55c0a5533aa8c6d22ff6f63fc6711cfa315cb80b314">chip::Crypto::R2</a>
+, <a class="el" href="namespacechip_1_1Crypto.html#ab97433cd3171f1a9dca08f55c0a5533aa7a23d93b4f1799cd39c11648b52f601a">chip::Crypto::KC</a>
+<br />
+ }</td></tr>
+<tr class="separator:ab97433cd3171f1a9dca08f55c0a5533a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d460d3af6280c5cff31d710d512b4a" id="r_a79d460d3af6280c5cff31d710d512b4a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a79d460d3af6280c5cff31d710d512b4a">chip::Crypto::CHIP_SPAKE2P_ROLE</a> : uint8_t { <a class="el" href="namespacechip_1_1Crypto.html#a79d460d3af6280c5cff31d710d512b4aa86a1b7a8a0174e8544b075c7d53529b3">chip::Crypto::VERIFIER</a> = 0
+, <a class="el" href="namespacechip_1_1Crypto.html#a79d460d3af6280c5cff31d710d512b4aaf211f39619fbfc08841012961ab5d67b">chip::Crypto::PROVER</a> = 1
+ }</td></tr>
+<tr class="separator:a79d460d3af6280c5cff31d710d512b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d012896aa9d0f5252d0e2471036be95" id="r_a2d012896aa9d0f5252d0e2471036be95"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a2d012896aa9d0f5252d0e2471036be95">chip::Crypto::SupportedECPKeyTypes</a> : uint8_t { <a class="el" href="namespacechip_1_1Crypto.html#a2d012896aa9d0f5252d0e2471036be95a5f04a71b93df312851026e2aeaea917a">chip::Crypto::ECP256R1</a> = 0
+ }</td></tr>
+<tr class="separator:a2d012896aa9d0f5252d0e2471036be95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ed3b72ba2a11565f9e42a6b471442b" id="r_a00ed3b72ba2a11565f9e42a6b471442b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a00ed3b72ba2a11565f9e42a6b471442b">chip::Crypto::ECPKeyTarget</a> : uint8_t { <a class="el" href="namespacechip_1_1Crypto.html#a00ed3b72ba2a11565f9e42a6b471442ba09346e6151a09444a4703931fb6e2c7b">chip::Crypto::ECDH</a> = 0
+, <a class="el" href="namespacechip_1_1Crypto.html#a00ed3b72ba2a11565f9e42a6b471442bab1870fa8801941a8b0faddfd614d3493">chip::Crypto::ECDSA</a> = 1
+ }</td></tr>
+<tr class="separator:a00ed3b72ba2a11565f9e42a6b471442b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af29688754f1f5935d97c2fe04480b8" id="r_a1af29688754f1f5935d97c2fe04480b8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a1af29688754f1f5935d97c2fe04480b8">chip::Crypto::CertificateChainValidationResult</a> { <br />
+&#160;&#160;<a class="el" href="namespacechip_1_1Crypto.html#a1af29688754f1f5935d97c2fe04480b8a8c632159fa131f09d04f94e3cbcd8782">chip::Crypto::kSuccess</a> = 0
+, <a class="el" href="namespacechip_1_1Crypto.html#a1af29688754f1f5935d97c2fe04480b8a91fa29985929b10db688803f6d99270c">chip::Crypto::kRootFormatInvalid</a> = 100
+, <a class="el" href="namespacechip_1_1Crypto.html#a1af29688754f1f5935d97c2fe04480b8a609aa7619fb460c45668d0ce89615010">chip::Crypto::kRootArgumentInvalid</a> = 101
+, <a class="el" href="namespacechip_1_1Crypto.html#a1af29688754f1f5935d97c2fe04480b8a03fbf717a9641933fa046d5c9f6faec7">chip::Crypto::kICAFormatInvalid</a> = 200
+, <br />
+&#160;&#160;<a class="el" href="namespacechip_1_1Crypto.html#a1af29688754f1f5935d97c2fe04480b8a135f11e626e42c58755fda12f0f62d88">chip::Crypto::kICAArgumentInvalid</a> = 201
+, <a class="el" href="namespacechip_1_1Crypto.html#a1af29688754f1f5935d97c2fe04480b8ad93addd9b10681e2e339694b6b20625b">chip::Crypto::kLeafFormatInvalid</a> = 300
+, <a class="el" href="namespacechip_1_1Crypto.html#a1af29688754f1f5935d97c2fe04480b8a8316611d470cab946a7af6c64a9ae54d">chip::Crypto::kLeafArgumentInvalid</a> = 301
+, <a class="el" href="namespacechip_1_1Crypto.html#a1af29688754f1f5935d97c2fe04480b8a4200e5c98b4335e814c95091c70deb8a">chip::Crypto::kChainInvalid</a> = 400
+, <br />
+&#160;&#160;<a class="el" href="namespacechip_1_1Crypto.html#a1af29688754f1f5935d97c2fe04480b8ad1a62b361f83b5d11c658d072672e751">chip::Crypto::kNoMemory</a> = 500
+, <a class="el" href="namespacechip_1_1Crypto.html#a1af29688754f1f5935d97c2fe04480b8a9629ef7544fc64245b7bd322fb396f00">chip::Crypto::kInternalFrameworkError</a> = 600
+<br />
+ }</td></tr>
+<tr class="separator:a1af29688754f1f5935d97c2fe04480b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710dac1711d406d21db4e9bb1a08670c" id="r_a710dac1711d406d21db4e9bb1a08670c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a710dac1711d406d21db4e9bb1a08670c">chip::Crypto::AttestationCertType</a> { <a class="el" href="namespacechip_1_1Crypto.html#a710dac1711d406d21db4e9bb1a08670ca570c12852cef778facb5e05ed296f33e">chip::Crypto::kPAA</a> = 0
+, <a class="el" href="namespacechip_1_1Crypto.html#a710dac1711d406d21db4e9bb1a08670caf9a9fed96c1a7e7978ed510598d35e8b">chip::Crypto::kPAI</a> = 1
+, <a class="el" href="namespacechip_1_1Crypto.html#a710dac1711d406d21db4e9bb1a08670ca995c741bdc022acb91465b1f417ff864">chip::Crypto::kDAC</a> = 2
+ }</td></tr>
+<tr class="separator:a710dac1711d406d21db4e9bb1a08670c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f2068609a3820f86a4f3ea96370044" id="r_a73f2068609a3820f86a4f3ea96370044"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a73f2068609a3820f86a4f3ea96370044">chip::Crypto::DNAttrType</a> { <a class="el" href="namespacechip_1_1Crypto.html#a73f2068609a3820f86a4f3ea96370044a8536661e94a42d4d95dcb9058b9936b5">chip::Crypto::kUnspecified</a> = 0
+, <a class="el" href="namespacechip_1_1Crypto.html#a73f2068609a3820f86a4f3ea96370044a0c2b5cb16e37f75b491d7fa4e63c3fdd">chip::Crypto::kCommonName</a> = 1
+, <a class="el" href="namespacechip_1_1Crypto.html#a73f2068609a3820f86a4f3ea96370044aeca78bfe4f192c43ddb8a3125a42dc80">chip::Crypto::kMatterVID</a> = 2
+, <a class="el" href="namespacechip_1_1Crypto.html#a73f2068609a3820f86a4f3ea96370044a686487bbd6e91c664972f79b33c692a0">chip::Crypto::kMatterPID</a> = 3
+ }</td></tr>
+<tr class="separator:a73f2068609a3820f86a4f3ea96370044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a048823cd189a7011cddffab929396fbc" id="r_a048823cd189a7011cddffab929396fbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a048823cd189a7011cddffab929396fbc">chip::Crypto::ClearSecretData</a> (uint8_t *buf, size_t len)</td></tr>
+<tr class="memdesc:a048823cd189a7011cddffab929396fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely clears the first <code>len</code> bytes of memory area <code>buf</code>.  <br /></td></tr>
+<tr class="separator:a048823cd189a7011cddffab929396fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1531fa42b018304d3e5b050392bad8b" id="r_ad1531fa42b018304d3e5b050392bad8b"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:ad1531fa42b018304d3e5b050392bad8b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ad1531fa42b018304d3e5b050392bad8b">chip::Crypto::ClearSecretData</a> (uint8_t(&amp;buf)[N])</td></tr>
+<tr class="separator:ad1531fa42b018304d3e5b050392bad8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ce685181471c2b7eedeb25b67ac58d" id="r_a17ce685181471c2b7eedeb25b67ac58d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a17ce685181471c2b7eedeb25b67ac58d">chip::Crypto::IsBufferContentEqualConstantTime</a> (const void *a, const void *b, size_t n)</td></tr>
+<tr class="memdesc:a17ce685181471c2b7eedeb25b67ac58d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant-time buffer comparison  <br /></td></tr>
+<tr class="separator:a17ce685181471c2b7eedeb25b67ac58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e93c57f377a8fb020ac7348c44a6339" id="r_a3e93c57f377a8fb020ac7348c44a6339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a3e93c57f377a8fb020ac7348c44a6339">chip::Crypto::EcdsaRawSignatureToAsn1</a> (size_t fe_length_bytes, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;raw_sig, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;out_asn1_sig)</td></tr>
+<tr class="memdesc:a3e93c57f377a8fb020ac7348c44a6339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a raw ECDSA signature to ASN.1 signature (per X9.62) as used by TLS libraries.  <br /></td></tr>
+<tr class="separator:a3e93c57f377a8fb020ac7348c44a6339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2657ee9f2b83908c4047012311c68d7e" id="r_a2657ee9f2b83908c4047012311c68d7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a2657ee9f2b83908c4047012311c68d7e">chip::Crypto::EcdsaAsn1SignatureToRaw</a> (size_t fe_length_bytes, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;asn1_sig, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;out_raw_sig)</td></tr>
+<tr class="memdesc:a2657ee9f2b83908c4047012311c68d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an ASN.1 DER signature (per X9.62) as used by TLS libraries to SEC1 raw format  <br /></td></tr>
+<tr class="separator:a2657ee9f2b83908c4047012311c68d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e0da19cba753670ea61705d1142e0c" id="r_a53e0da19cba753670ea61705d1142e0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a53e0da19cba753670ea61705d1142e0c">chip::Crypto::ReadDerLength</a> (chip::Encoding::LittleEndian::Reader &amp;reader, size_t &amp;length)</td></tr>
+<tr class="memdesc:a53e0da19cba753670ea61705d1142e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility to read a length field after a tag in a DER-encoded stream.  <br /></td></tr>
+<tr class="separator:a53e0da19cba753670ea61705d1142e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f7f2199b81353f903f679e5355dfab" id="r_a22f7f2199b81353f903f679e5355dfab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a22f7f2199b81353f903f679e5355dfab">chip::Crypto::ConvertIntegerRawToDer</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;raw_integer, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;out_der_integer)</td></tr>
+<tr class="memdesc:a22f7f2199b81353f903f679e5355dfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility to emit a DER-encoded INTEGER given a raw unsigned large integer in big-endian order. The <code>out_der_integer</code> span is updated to reflect the final variable length, including tag and length, and must have at least <code>kEmitDerIntegerOverhead</code> extra space in addition to the <code>raw_integer.size()</code>.  <br /></td></tr>
+<tr class="separator:a22f7f2199b81353f903f679e5355dfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba677c1395efbc3e3911c1edd46c1995" id="r_aba677c1395efbc3e3911c1edd46c1995"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aba677c1395efbc3e3911c1edd46c1995">chip::Crypto::ConvertIntegerRawToDerWithoutTag</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;raw_integer, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;out_der_integer)</td></tr>
+<tr class="memdesc:aba677c1395efbc3e3911c1edd46c1995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility to emit a DER-encoded INTEGER given a raw unsigned large integer in big-endian order. The <code>out_der_integer</code> span is updated to reflect the final variable length, excluding tag and length, and must have at least <code>kEmitDerIntegerWithoutTagOverhead</code> extra space in addition to the <code>raw_integer.size()</code>.  <br /></td></tr>
+<tr class="separator:aba677c1395efbc3e3911c1edd46c1995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a274a4d023fb5b3e324e7f35be7c5bf40" id="r_a274a4d023fb5b3e324e7f35be7c5bf40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a274a4d023fb5b3e324e7f35be7c5bf40">chip::Crypto::AES_CCM_encrypt</a> (const uint8_t *plaintext, size_t plaintext_length, const uint8_t *aad, size_t aad_length, const <a class="el" href="classchip_1_1Crypto_1_1Aes128KeyHandle.html">Aes128KeyHandle</a> &amp;key, const uint8_t *nonce, size_t nonce_length, uint8_t *ciphertext, uint8_t *tag, size_t tag_length)</td></tr>
+<tr class="memdesc:a274a4d023fb5b3e324e7f35be7c5bf40"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that implements AES-CCM encryption  <br /></td></tr>
+<tr class="separator:a274a4d023fb5b3e324e7f35be7c5bf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7277a731a2123f083fa7af3ecf695e01" id="r_a7277a731a2123f083fa7af3ecf695e01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a7277a731a2123f083fa7af3ecf695e01">chip::Crypto::AES_CCM_decrypt</a> (const uint8_t *ciphertext, size_t ciphertext_length, const uint8_t *aad, size_t aad_length, const uint8_t *tag, size_t tag_length, const <a class="el" href="classchip_1_1Crypto_1_1Aes128KeyHandle.html">Aes128KeyHandle</a> &amp;key, const uint8_t *nonce, size_t nonce_length, uint8_t *plaintext)</td></tr>
+<tr class="memdesc:a7277a731a2123f083fa7af3ecf695e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that implements AES-CCM decryption  <br /></td></tr>
+<tr class="separator:a7277a731a2123f083fa7af3ecf695e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524fd11c1a0be407b32a252c58001553" id="r_a524fd11c1a0be407b32a252c58001553"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a524fd11c1a0be407b32a252c58001553">chip::Crypto::AES_CTR_crypt</a> (const uint8_t *input, size_t input_length, const <a class="el" href="classchip_1_1Crypto_1_1Aes128KeyHandle.html">Aes128KeyHandle</a> &amp;key, const uint8_t *nonce, size_t nonce_length, uint8_t *output)</td></tr>
+<tr class="memdesc:a524fd11c1a0be407b32a252c58001553"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that implements AES-CTR encryption/decryption  <br /></td></tr>
+<tr class="separator:a524fd11c1a0be407b32a252c58001553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea826c63dc4e2fb8150d1d2f0bd9b0a" id="r_aeea826c63dc4e2fb8150d1d2f0bd9b0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aeea826c63dc4e2fb8150d1d2f0bd9b0a">chip::Crypto::GenerateCertificateSigningRequest</a> (const <a class="el" href="classchip_1_1Crypto_1_1P256Keypair.html">P256Keypair</a> *keypair, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;csr_span)</td></tr>
+<tr class="memdesc:aeea826c63dc4e2fb8150d1d2f0bd9b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a PKCS#10 CSR, usable for Matter, from a <a class="el" href="classchip_1_1Crypto_1_1P256Keypair.html">P256Keypair</a>.  <br /></td></tr>
+<tr class="separator:aeea826c63dc4e2fb8150d1d2f0bd9b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23db654bd9a3946ca359fc7cfd92e247" id="r_a23db654bd9a3946ca359fc7cfd92e247"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a23db654bd9a3946ca359fc7cfd92e247">chip::Crypto::VerifyCertificateSigningRequestFormat</a> (const uint8_t *csr, size_t csr_length)</td></tr>
+<tr class="memdesc:a23db654bd9a3946ca359fc7cfd92e247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common code to validate ASN.1 format/size of a CSR, used by VerifyCertificateSigningRequest.  <br /></td></tr>
+<tr class="separator:a23db654bd9a3946ca359fc7cfd92e247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada106466c4b8175f06193c4cb18b1c96" id="r_ada106466c4b8175f06193c4cb18b1c96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ada106466c4b8175f06193c4cb18b1c96">chip::Crypto::VerifyCertificateSigningRequest</a> (const uint8_t *csr, size_t csr_length, <a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html">P256PublicKey</a> &amp;pubkey)</td></tr>
+<tr class="memdesc:ada106466c4b8175f06193c4cb18b1c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify the Certificate Signing Request (CSR). If successfully verified, it outputs the public key from the CSR.  <br /></td></tr>
+<tr class="separator:ada106466c4b8175f06193c4cb18b1c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea28ff8c02e91b5cde20826153579fe8" id="r_aea28ff8c02e91b5cde20826153579fe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aea28ff8c02e91b5cde20826153579fe8">chip::Crypto::Hash_SHA256</a> (const uint8_t *data, size_t data_length, uint8_t *out_buffer)</td></tr>
+<tr class="memdesc:aea28ff8c02e91b5cde20826153579fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that implements SHA-256 hash  <br /></td></tr>
+<tr class="separator:aea28ff8c02e91b5cde20826153579fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ed0f8737718b4a9bff6d139bf54c6b" id="r_ab5ed0f8737718b4a9bff6d139bf54c6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ab5ed0f8737718b4a9bff6d139bf54c6b">chip::Crypto::Hash_SHA1</a> (const uint8_t *data, size_t data_length, uint8_t *out_buffer)</td></tr>
+<tr class="memdesc:ab5ed0f8737718b4a9bff6d139bf54c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that implements SHA-1 hash  <br /></td></tr>
+<tr class="separator:ab5ed0f8737718b4a9bff6d139bf54c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a2d8a47210c5b3160797828217a7a4" id="r_a55a2d8a47210c5b3160797828217a7a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a55a2d8a47210c5b3160797828217a7a4">chip::Crypto::DRBG_get_bytes</a> (uint8_t *out_buffer, size_t out_length)</td></tr>
+<tr class="memdesc:a55a2d8a47210c5b3160797828217a7a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cryptographically secure random number generator based on NIST SP800-90A  <br /></td></tr>
+<tr class="separator:a55a2d8a47210c5b3160797828217a7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91df8b59f28c2644ade1fde22df3ef2" id="r_ad91df8b59f28c2644ade1fde22df3ef2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ad91df8b59f28c2644ade1fde22df3ef2">chip::Crypto::add_entropy_source</a> (<a class="el" href="namespacechip_1_1Crypto.html#a47f393624333145c5e511369c2589724">entropy_source</a> fn_source, void *p_source, size_t threshold)</td></tr>
+<tr class="memdesc:ad91df8b59f28c2644ade1fde22df3ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to add entropy sources to crypto library  <br /></td></tr>
+<tr class="separator:ad91df8b59f28c2644ade1fde22df3ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3640cb24def1d53540c3897e4d3e862e" id="r_a3640cb24def1d53540c3897e4d3e862e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a3640cb24def1d53540c3897e4d3e862e">chip::Crypto::GenerateCompressedFabricId</a> (const <a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html">Crypto::P256PublicKey</a> &amp;root_public_key, uint64_t fabric_id, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;out_compressed_fabric_id)</td></tr>
+<tr class="memdesc:a3640cb24def1d53540c3897e4d3e862e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the compressed fabric identifier used for operational discovery service records from a Node's root public key and Fabric ID. On success, out_compressed_fabric_id will have a size of exactly kCompressedFabricIdentifierSize.  <br /></td></tr>
+<tr class="separator:a3640cb24def1d53540c3897e4d3e862e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43dde2171393582de176eaeff4f13bc6" id="r_a43dde2171393582de176eaeff4f13bc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a43dde2171393582de176eaeff4f13bc6">chip::Crypto::GenerateCompressedFabricId</a> (const <a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html">Crypto::P256PublicKey</a> &amp;rootPublicKey, uint64_t fabricId, uint64_t &amp;compressedFabricId)</td></tr>
+<tr class="memdesc:a43dde2171393582de176eaeff4f13bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the compressed fabric identifier used for operational discovery service records from a Node's root public key and Fabric ID. This is a conveniance overload that writes to a uint64_t (CompressedFabricId) type.  <br /></td></tr>
+<tr class="separator:a43dde2171393582de176eaeff4f13bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c950caa9ba28839e954c504c0dcad3" id="r_a33c950caa9ba28839e954c504c0dcad3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a33c950caa9ba28839e954c504c0dcad3">chip::Crypto::ValidateCertificateChain</a> (const uint8_t *rootCertificate, size_t rootCertificateLen, const uint8_t *caCertificate, size_t caCertificateLen, const uint8_t *leafCertificate, size_t leafCertificateLen, <a class="el" href="namespacechip_1_1Crypto.html#a1af29688754f1f5935d97c2fe04480b8">CertificateChainValidationResult</a> &amp;result)</td></tr>
+<tr class="separator:a33c950caa9ba28839e954c504c0dcad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a1dd14a9baedb19ac22ed9bf33f74c" id="r_ac8a1dd14a9baedb19ac22ed9bf33f74c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ac8a1dd14a9baedb19ac22ed9bf33f74c">chip::Crypto::VerifyAttestationCertificateFormat</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;cert, <a class="el" href="namespacechip_1_1Crypto.html#a710dac1711d406d21db4e9bb1a08670c">AttestationCertType</a> certType)</td></tr>
+<tr class="separator:ac8a1dd14a9baedb19ac22ed9bf33f74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a4a90b55935eda20471cbd42e966f8" id="r_af6a4a90b55935eda20471cbd42e966f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#af6a4a90b55935eda20471cbd42e966f8">chip::Crypto::GenerateVendorFabricBindingMessage</a> (<a class="el" href="namespacechip_1_1Crypto.html#ae3211e7b653b1bd502b9ba30d329978c">FabricBindingVersion</a> fabricBindingVersion, const <a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html">P256PublicKey</a> &amp;rootPublicKey, <a class="el" href="namespacechip.html#ab7688ed76c3e1a7ec2ea0a86ab10ed16">FabricId</a> fabricId, uint16_t vendorId, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;outputSpan)</td></tr>
+<tr class="memdesc:af6a4a90b55935eda20471cbd42e966f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a VendorFabricBindingMessage as used by the Fabric Table Vendor ID Verification Procedure.  <br /></td></tr>
+<tr class="separator:af6a4a90b55935eda20471cbd42e966f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ccd83d9377245428b1842ca054157ea" id="r_a7ccd83d9377245428b1842ca054157ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a7ccd83d9377245428b1842ca054157ea">chip::Crypto::GenerateVendorIdVerificationToBeSigned</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> fabricIndex, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;clientChallenge, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;attestationChallenge, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;vendorFabricBindingMessage, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;vidVerificationStatement, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;outputSpan)</td></tr>
+<tr class="memdesc:a7ccd83d9377245428b1842ca054157ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the message to be signed for the Fabric Table Vendor ID Verification Procedure.  <br /></td></tr>
+<tr class="separator:a7ccd83d9377245428b1842ca054157ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56dcfdd6b8c7430f3071fd3d29d7261c" id="r_a56dcfdd6b8c7430f3071fd3d29d7261c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a56dcfdd6b8c7430f3071fd3d29d7261c">chip::Crypto::IsCertificateValidAtIssuance</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;candidateCertificate, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;issuerCertificate)</td></tr>
+<tr class="memdesc:a56dcfdd6b8c7430f3071fd3d29d7261c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate notBefore timestamp of a certificate (candidateCertificate) against validity period of the issuer certificate (issuerCertificate).  <br /></td></tr>
+<tr class="separator:a56dcfdd6b8c7430f3071fd3d29d7261c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb0150ec5af4507fc7f2241e3be3d99" id="r_addb0150ec5af4507fc7f2241e3be3d99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#addb0150ec5af4507fc7f2241e3be3d99">chip::Crypto::IsCertificateValidAtCurrentTime</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;certificate)</td></tr>
+<tr class="memdesc:addb0150ec5af4507fc7f2241e3be3d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate a certificate's validity date against current time.  <br /></td></tr>
+<tr class="separator:addb0150ec5af4507fc7f2241e3be3d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54fd77e2abb5b63c796a10b72bb2278f" id="r_a54fd77e2abb5b63c796a10b72bb2278f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a54fd77e2abb5b63c796a10b72bb2278f">chip::Crypto::ExtractPubkeyFromX509Cert</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;certificate, <a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html">Crypto::P256PublicKey</a> &amp;pubkey)</td></tr>
+<tr class="separator:a54fd77e2abb5b63c796a10b72bb2278f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113317f2a3239e7db08641bff162843c" id="r_a113317f2a3239e7db08641bff162843c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a113317f2a3239e7db08641bff162843c">chip::Crypto::ExtractSKIDFromX509Cert</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;certificate, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;skid)</td></tr>
+<tr class="memdesc:a113317f2a3239e7db08641bff162843c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the Subject Key Identifier from an X509 Certificate.  <br /></td></tr>
+<tr class="separator:a113317f2a3239e7db08641bff162843c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e8e52e26847be0d89b1e307520890fe" id="r_a9e8e52e26847be0d89b1e307520890fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a9e8e52e26847be0d89b1e307520890fe">chip::Crypto::ExtractAKIDFromX509Cert</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;certificate, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;akid)</td></tr>
+<tr class="memdesc:a9e8e52e26847be0d89b1e307520890fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the Authority Key Identifier from an X509 Certificate.  <br /></td></tr>
+<tr class="separator:a9e8e52e26847be0d89b1e307520890fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6fc718e1c9b13ace683522687ad352b" id="r_aa6fc718e1c9b13ace683522687ad352b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aa6fc718e1c9b13ace683522687ad352b">chip::Crypto::ExtractCRLDistributionPointURIFromX509Cert</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;certificate, <a class="el" href="namespacechip.html#a328f22f6c63f2a8500d1dfd9a2c63676">MutableCharSpan</a> &amp;cdpurl)</td></tr>
+<tr class="memdesc:aa6fc718e1c9b13ace683522687ad352b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the CRL Distribution Point (CDP) extension from an X509 ASN.1 Encoded Certificate. The returned value only covers the URI of the CDP. Only a single URI distribution point GeneralName is supported, and only those that start with "http://" and "https://".  <br /></td></tr>
+<tr class="separator:aa6fc718e1c9b13ace683522687ad352b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a8e86cc26ecfceb7c7e0560ee642d5" id="r_ac5a8e86cc26ecfceb7c7e0560ee642d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ac5a8e86cc26ecfceb7c7e0560ee642d5">chip::Crypto::ExtractCDPExtensionCRLIssuerFromX509Cert</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;certificate, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;crlIssuer)</td></tr>
+<tr class="memdesc:ac5a8e86cc26ecfceb7c7e0560ee642d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the CRL Distribution Point (CDP) extension's cRLIssuer Name from an X509 ASN.1 Encoded Certificate. The value is copied into buffer in a raw ASN.1 X.509 format. This format should be directly comparable with the result of <a class="el" href="namespacechip_1_1Crypto.html#a40b898a981278c2656e0fbdb21ab41b6" title="Extracts Subject Distinguished Name from X509 Certificate. The value is copied into buffer in a raw A...">ExtractSubjectFromX509Cert()</a>.  <br /></td></tr>
+<tr class="separator:ac5a8e86cc26ecfceb7c7e0560ee642d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf56cc2745e81d7160348bc0caf11c8" id="r_afbf56cc2745e81d7160348bc0caf11c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#afbf56cc2745e81d7160348bc0caf11c8">chip::Crypto::ExtractSerialNumberFromX509Cert</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;certificate, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;serialNumber)</td></tr>
+<tr class="memdesc:afbf56cc2745e81d7160348bc0caf11c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts Serial Number from X509 Certificate.  <br /></td></tr>
+<tr class="separator:afbf56cc2745e81d7160348bc0caf11c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b898a981278c2656e0fbdb21ab41b6" id="r_a40b898a981278c2656e0fbdb21ab41b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a40b898a981278c2656e0fbdb21ab41b6">chip::Crypto::ExtractSubjectFromX509Cert</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;certificate, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;subject)</td></tr>
+<tr class="memdesc:a40b898a981278c2656e0fbdb21ab41b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts Subject Distinguished Name from X509 Certificate. The value is copied into buffer in a raw ASN.1 X.509 format.  <br /></td></tr>
+<tr class="separator:a40b898a981278c2656e0fbdb21ab41b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceab4333f17285c1276a4dd06fe450e6" id="r_aceab4333f17285c1276a4dd06fe450e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aceab4333f17285c1276a4dd06fe450e6">chip::Crypto::ExtractIssuerFromX509Cert</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;certificate, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;issuer)</td></tr>
+<tr class="memdesc:aceab4333f17285c1276a4dd06fe450e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts Issuer Distinguished Name from X509 Certificate. The value is copied into buffer in a raw ASN.1 X.509 format.  <br /></td></tr>
+<tr class="separator:aceab4333f17285c1276a4dd06fe450e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18dcdb957a1edbe5fe2da19c3d106290" id="r_a18dcdb957a1edbe5fe2da19c3d106290"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a18dcdb957a1edbe5fe2da19c3d106290">chip::Crypto::ReplaceCertIfResignedCertFound</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;referenceCertificate, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> *candidateCertificates, size_t candidateCertificatesCount, <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;outCertificate)</td></tr>
+<tr class="memdesc:a18dcdb957a1edbe5fe2da19c3d106290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for resigned version of the certificate in the list and returns it.  <br /></td></tr>
+<tr class="separator:a18dcdb957a1edbe5fe2da19c3d106290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5005fd10640c21c9d18c71ca5d320c" id="r_a7d5005fd10640c21c9d18c71ca5d320c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a7d5005fd10640c21c9d18c71ca5d320c">chip::Crypto::ExtractVIDPIDFromAttributeString</a> (<a class="el" href="namespacechip_1_1Crypto.html#a73f2068609a3820f86a4f3ea96370044">DNAttrType</a> attrType, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;attr, <a class="el" href="structchip_1_1Crypto_1_1AttestationCertVidPid.html">AttestationCertVidPid</a> &amp;vidpidFromMatterAttr, <a class="el" href="structchip_1_1Crypto_1_1AttestationCertVidPid.html">AttestationCertVidPid</a> &amp;vidpidFromCNAttr)</td></tr>
+<tr class="memdesc:a7d5005fd10640c21c9d18c71ca5d320c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts VID and PID attributes from the DN Attribute string. If attribute is not present the corresponding output value stays uninitialized.  <br /></td></tr>
+<tr class="separator:a7d5005fd10640c21c9d18c71ca5d320c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02cba9b20847930d1bcf024128937444" id="r_a02cba9b20847930d1bcf024128937444"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a02cba9b20847930d1bcf024128937444">chip::Crypto::ExtractVIDPIDFromX509Cert</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;x509Cert, <a class="el" href="structchip_1_1Crypto_1_1AttestationCertVidPid.html">AttestationCertVidPid</a> &amp;vidpid)</td></tr>
+<tr class="memdesc:a02cba9b20847930d1bcf024128937444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts VID and PID attributes from the Subject DN of an X509 Certificate. If attribute is not present the corresponding output value stays uninitialized.  <br /></td></tr>
+<tr class="separator:a02cba9b20847930d1bcf024128937444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffdfb2b5731ca9f27fb7e466f6af287" id="r_abffdfb2b5731ca9f27fb7e466f6af287"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#abffdfb2b5731ca9f27fb7e466f6af287">chip::Crypto::DeriveGroupOperationalKey</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;epoch_key, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;compressed_fabric_id, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;out_key)</td></tr>
+<tr class="memdesc:abffdfb2b5731ca9f27fb7e466f6af287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derives the Operational Group Key using the Key Derivation Function (KDF) from the given epoch key.  <br /></td></tr>
+<tr class="separator:abffdfb2b5731ca9f27fb7e466f6af287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a309b7d6f4c70ba95e5e53b3bfe4b1" id="r_a89a309b7d6f4c70ba95e5e53b3bfe4b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a89a309b7d6f4c70ba95e5e53b3bfe4b1">chip::Crypto::DeriveGroupSessionId</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;operational_key, uint16_t &amp;session_id)</td></tr>
+<tr class="memdesc:a89a309b7d6f4c70ba95e5e53b3bfe4b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derives the Group Session ID from a given operational group key using the Key Derivation Function (Group Key Hash)  <br /></td></tr>
+<tr class="separator:a89a309b7d6f4c70ba95e5e53b3bfe4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f814c78d09fe0fbb4972c3995be0a24" id="r_a5f814c78d09fe0fbb4972c3995be0a24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a5f814c78d09fe0fbb4972c3995be0a24">chip::Crypto::DeriveGroupPrivacyKey</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;epoch_key, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;out_key)</td></tr>
+<tr class="memdesc:a5f814c78d09fe0fbb4972c3995be0a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derives the Privacy Group Key using the Key Derivation Function (KDF) from the given epoch key.  <br /></td></tr>
+<tr class="separator:a5f814c78d09fe0fbb4972c3995be0a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24db238dc7bc4bca5491b540db145541" id="r_a24db238dc7bc4bca5491b540db145541"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a24db238dc7bc4bca5491b540db145541">chip::Crypto::DeriveGroupOperationalCredentials</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;epoch_key, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;compressed_fabric_id, <a class="el" href="structchip_1_1Crypto_1_1GroupOperationalCredentials.html">GroupOperationalCredentials</a> &amp;operational_credentials)</td></tr>
+<tr class="memdesc:a24db238dc7bc4bca5491b540db145541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derives the complete set of credentials needed for group security.  <br /></td></tr>
+<tr class="separator:a24db238dc7bc4bca5491b540db145541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a3d5d1d2abbdd484cd00e1dc538f657aa" id="r_a3d5d1d2abbdd484cd00e1dc538f657aa"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a3d5d1d2abbdd484cd00e1dc538f657aa">chip::Crypto::kMax_x509_Certificate_Length</a> = 600</td></tr>
+<tr class="separator:a3d5d1d2abbdd484cd00e1dc538f657aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f8ac127d2b8f5b09cd5055ec875bd5" id="r_a12f8ac127d2b8f5b09cd5055ec875bd5"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a12f8ac127d2b8f5b09cd5055ec875bd5">chip::Crypto::kP256_FE_Length</a> = 32</td></tr>
+<tr class="separator:a12f8ac127d2b8f5b09cd5055ec875bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1da3c43dff50773092c0bdc696133d7" id="r_ac1da3c43dff50773092c0bdc696133d7"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ac1da3c43dff50773092c0bdc696133d7">chip::Crypto::kP256_ECDSA_Signature_Length_Raw</a> = (2 * <a class="el" href="namespacechip_1_1Crypto.html#a12f8ac127d2b8f5b09cd5055ec875bd5">kP256_FE_Length</a>)</td></tr>
+<tr class="separator:ac1da3c43dff50773092c0bdc696133d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad9febebba320e2a307ec808b5e2db99" id="r_aad9febebba320e2a307ec808b5e2db99"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aad9febebba320e2a307ec808b5e2db99">chip::Crypto::kP256_Point_Length</a> = (2 * <a class="el" href="namespacechip_1_1Crypto.html#a12f8ac127d2b8f5b09cd5055ec875bd5">kP256_FE_Length</a> + 1)</td></tr>
+<tr class="separator:aad9febebba320e2a307ec808b5e2db99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82fb573b956b664f7e843771777acff5" id="r_a82fb573b956b664f7e843771777acff5"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a82fb573b956b664f7e843771777acff5">chip::Crypto::kSHA256_Hash_Length</a> = 32</td></tr>
+<tr class="separator:a82fb573b956b664f7e843771777acff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f4bcb26a869c5d927048e7ce671791" id="r_ad8f4bcb26a869c5d927048e7ce671791"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ad8f4bcb26a869c5d927048e7ce671791">chip::Crypto::kSHA1_Hash_Length</a> = 20</td></tr>
+<tr class="separator:ad8f4bcb26a869c5d927048e7ce671791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551fc1f4ef24260ae00522f1272ed087" id="r_a551fc1f4ef24260ae00522f1272ed087"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a551fc1f4ef24260ae00522f1272ed087">chip::Crypto::kSubjectKeyIdentifierLength</a> = <a class="el" href="namespacechip_1_1Crypto.html#ad8f4bcb26a869c5d927048e7ce671791">kSHA1_Hash_Length</a></td></tr>
+<tr class="separator:a551fc1f4ef24260ae00522f1272ed087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e65a7f36b5a345524db6205faa3d356" id="r_a6e65a7f36b5a345524db6205faa3d356"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a6e65a7f36b5a345524db6205faa3d356">chip::Crypto::kAuthorityKeyIdentifierLength</a> = <a class="el" href="namespacechip_1_1Crypto.html#ad8f4bcb26a869c5d927048e7ce671791">kSHA1_Hash_Length</a></td></tr>
+<tr class="separator:a6e65a7f36b5a345524db6205faa3d356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02985112ac60d98b928e0d105ddd239b" id="r_a02985112ac60d98b928e0d105ddd239b"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a02985112ac60d98b928e0d105ddd239b">chip::Crypto::kMaxCertificateSerialNumberLength</a> = 20</td></tr>
+<tr class="separator:a02985112ac60d98b928e0d105ddd239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1768b277509979bbbb75a76c365a36e" id="r_aa1768b277509979bbbb75a76c365a36e"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aa1768b277509979bbbb75a76c365a36e">chip::Crypto::kMaxCertificateDistinguishedNameLength</a> = 200</td></tr>
+<tr class="separator:aa1768b277509979bbbb75a76c365a36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e09c9f3cc6a2c657bfc3440ab3fdece" id="r_a5e09c9f3cc6a2c657bfc3440ab3fdece"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a5e09c9f3cc6a2c657bfc3440ab3fdece">chip::Crypto::kMaxCRLDistributionPointURLLength</a> = 100</td></tr>
+<tr class="separator:a5e09c9f3cc6a2c657bfc3440ab3fdece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b994854058f47b1c5a4c92b86dba4e6" id="r_a9b994854058f47b1c5a4c92b86dba4e6"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a9b994854058f47b1c5a4c92b86dba4e6">chip::Crypto::kValidCDPURIHttpPrefix</a> [] = &quot;http://&quot;</td></tr>
+<tr class="separator:a9b994854058f47b1c5a4c92b86dba4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5db5ba81cda5bb8587f8e2a8f93d17" id="r_abc5db5ba81cda5bb8587f8e2a8f93d17"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#abc5db5ba81cda5bb8587f8e2a8f93d17">chip::Crypto::kValidCDPURIHttpsPrefix</a> [] = &quot;https://&quot;</td></tr>
+<tr class="separator:abc5db5ba81cda5bb8587f8e2a8f93d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be5ed70d866485871605b9d493c85f7" id="r_a6be5ed70d866485871605b9d493c85f7"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a6be5ed70d866485871605b9d493c85f7">chip::Crypto::CHIP_CRYPTO_GROUP_SIZE_BYTES</a> = <a class="el" href="namespacechip_1_1Crypto.html#a12f8ac127d2b8f5b09cd5055ec875bd5">kP256_FE_Length</a></td></tr>
+<tr class="separator:a6be5ed70d866485871605b9d493c85f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f198f9c6140bee042007cd312320fa" id="r_a62f198f9c6140bee042007cd312320fa"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a62f198f9c6140bee042007cd312320fa">chip::Crypto::CHIP_CRYPTO_PUBLIC_KEY_SIZE_BYTES</a> = <a class="el" href="namespacechip_1_1Crypto.html#aad9febebba320e2a307ec808b5e2db99">kP256_Point_Length</a></td></tr>
+<tr class="separator:a62f198f9c6140bee042007cd312320fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7c024eebfe3a5e437d591482701217" id="r_aaf7c024eebfe3a5e437d591482701217"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aaf7c024eebfe3a5e437d591482701217">chip::Crypto::CHIP_CRYPTO_AEAD_MIC_LENGTH_BYTES</a> = 16</td></tr>
+<tr class="separator:aaf7c024eebfe3a5e437d591482701217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a498768b0b6eb6b8a74e2c6c5087e8044" id="r_a498768b0b6eb6b8a74e2c6c5087e8044"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a498768b0b6eb6b8a74e2c6c5087e8044">chip::Crypto::CHIP_CRYPTO_SYMMETRIC_KEY_LENGTH_BYTES</a> = 16</td></tr>
+<tr class="separator:a498768b0b6eb6b8a74e2c6c5087e8044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab834d6fe7d39c4aac42fbfddc4c4e0b8" id="r_ab834d6fe7d39c4aac42fbfddc4c4e0b8"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ab834d6fe7d39c4aac42fbfddc4c4e0b8">chip::Crypto::kMax_ECDH_Secret_Length</a> = <a class="el" href="namespacechip_1_1Crypto.html#a12f8ac127d2b8f5b09cd5055ec875bd5">kP256_FE_Length</a></td></tr>
+<tr class="separator:ab834d6fe7d39c4aac42fbfddc4c4e0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f161388e940812be424c0746dfbabbe" id="r_a8f161388e940812be424c0746dfbabbe"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a8f161388e940812be424c0746dfbabbe">chip::Crypto::kMax_ECDSA_Signature_Length</a> = <a class="el" href="namespacechip_1_1Crypto.html#ac1da3c43dff50773092c0bdc696133d7">kP256_ECDSA_Signature_Length_Raw</a></td></tr>
+<tr class="separator:a8f161388e940812be424c0746dfbabbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4d31c4ef78657fccadc79e103a9ee2" id="r_acc4d31c4ef78657fccadc79e103a9ee2"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#acc4d31c4ef78657fccadc79e103a9ee2">chip::Crypto::kMAX_FE_Length</a> = <a class="el" href="namespacechip_1_1Crypto.html#a12f8ac127d2b8f5b09cd5055ec875bd5">kP256_FE_Length</a></td></tr>
+<tr class="separator:acc4d31c4ef78657fccadc79e103a9ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5677debeb6e8c26ae1f89d90bfb9ee" id="r_a0d5677debeb6e8c26ae1f89d90bfb9ee"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a0d5677debeb6e8c26ae1f89d90bfb9ee">chip::Crypto::kMAX_Point_Length</a> = <a class="el" href="namespacechip_1_1Crypto.html#aad9febebba320e2a307ec808b5e2db99">kP256_Point_Length</a></td></tr>
+<tr class="separator:a0d5677debeb6e8c26ae1f89d90bfb9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ff0c096bded6a8850c634e7a397545" id="r_a46ff0c096bded6a8850c634e7a397545"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a46ff0c096bded6a8850c634e7a397545">chip::Crypto::kMAX_Hash_Length</a> = <a class="el" href="namespacechip_1_1Crypto.html#a82fb573b956b664f7e843771777acff5">kSHA256_Hash_Length</a></td></tr>
+<tr class="separator:a46ff0c096bded6a8850c634e7a397545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab75f1fe93fcc2553aa595d7ecb37ad" id="r_a1ab75f1fe93fcc2553aa595d7ecb37ad"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a1ab75f1fe93fcc2553aa595d7ecb37ad">chip::Crypto::kMIN_CSR_Buffer_Size</a> = 255</td></tr>
+<tr class="separator:a1ab75f1fe93fcc2553aa595d7ecb37ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d55e8c5e4eb9a7ffc47bcb5cc43b64" id="r_af2d55e8c5e4eb9a7ffc47bcb5cc43b64"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#af2d55e8c5e4eb9a7ffc47bcb5cc43b64">chip::Crypto::kMAX_CSR_Buffer_Size</a> = 255</td></tr>
+<tr class="separator:af2d55e8c5e4eb9a7ffc47bcb5cc43b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490c1e765b1e0d3cebf9d992264e663c" id="r_a490c1e765b1e0d3cebf9d992264e663c"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a490c1e765b1e0d3cebf9d992264e663c">chip::Crypto::CHIP_CRYPTO_HASH_LEN_BYTES</a> = <a class="el" href="namespacechip_1_1Crypto.html#a82fb573b956b664f7e843771777acff5">kSHA256_Hash_Length</a></td></tr>
+<tr class="separator:a490c1e765b1e0d3cebf9d992264e663c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf922bb75f69250c7ad8dfdb9007fa8a" id="r_acf922bb75f69250c7ad8dfdb9007fa8a"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#acf922bb75f69250c7ad8dfdb9007fa8a">chip::Crypto::kSpake2p_Min_PBKDF_Salt_Length</a> = 16</td></tr>
+<tr class="separator:acf922bb75f69250c7ad8dfdb9007fa8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e454e0659ffd2c0f0b00b2af9565136" id="r_a1e454e0659ffd2c0f0b00b2af9565136"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a1e454e0659ffd2c0f0b00b2af9565136">chip::Crypto::kSpake2p_Max_PBKDF_Salt_Length</a> = 32</td></tr>
+<tr class="separator:a1e454e0659ffd2c0f0b00b2af9565136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7f88da66678275825fae37d2b8f3c6" id="r_abb7f88da66678275825fae37d2b8f3c6"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#abb7f88da66678275825fae37d2b8f3c6">chip::Crypto::kSpake2p_Min_PBKDF_Iterations</a> = 1000</td></tr>
+<tr class="separator:abb7f88da66678275825fae37d2b8f3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abda5bbe8512cfafb1c1b05ed77961ac2" id="r_abda5bbe8512cfafb1c1b05ed77961ac2"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#abda5bbe8512cfafb1c1b05ed77961ac2">chip::Crypto::kSpake2p_Max_PBKDF_Iterations</a> = 100000</td></tr>
+<tr class="separator:abda5bbe8512cfafb1c1b05ed77961ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c88d656bf5dd4a30d70b69b05de8613" id="r_a2c88d656bf5dd4a30d70b69b05de8613"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a2c88d656bf5dd4a30d70b69b05de8613">chip::Crypto::kP256_PrivateKey_Length</a> = <a class="el" href="namespacechip_1_1Crypto.html#a6be5ed70d866485871605b9d493c85f7">CHIP_CRYPTO_GROUP_SIZE_BYTES</a></td></tr>
+<tr class="separator:a2c88d656bf5dd4a30d70b69b05de8613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0cece817f2925ac84285746bd195283" id="r_aa0cece817f2925ac84285746bd195283"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aa0cece817f2925ac84285746bd195283">chip::Crypto::kP256_PublicKey_Length</a> = <a class="el" href="namespacechip_1_1Crypto.html#a62f198f9c6140bee042007cd312320fa">CHIP_CRYPTO_PUBLIC_KEY_SIZE_BYTES</a></td></tr>
+<tr class="separator:aa0cece817f2925ac84285746bd195283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24856fbf0ebcc10c3146c95e0827019f" id="r_a24856fbf0ebcc10c3146c95e0827019f"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a24856fbf0ebcc10c3146c95e0827019f">chip::Crypto::kAES_CCM128_Key_Length</a> = 128u / 8u</td></tr>
+<tr class="separator:a24856fbf0ebcc10c3146c95e0827019f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52b654ddf3903a38e4ac1c7194a14b3" id="r_ae52b654ddf3903a38e4ac1c7194a14b3"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ae52b654ddf3903a38e4ac1c7194a14b3">chip::Crypto::kAES_CCM128_Block_Length</a> = <a class="el" href="namespacechip_1_1Crypto.html#a24856fbf0ebcc10c3146c95e0827019f">kAES_CCM128_Key_Length</a></td></tr>
+<tr class="separator:ae52b654ddf3903a38e4ac1c7194a14b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc6172008bb5fc4c36cdeebd89d7bb5" id="r_a5cc6172008bb5fc4c36cdeebd89d7bb5"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a5cc6172008bb5fc4c36cdeebd89d7bb5">chip::Crypto::kAES_CCM128_Nonce_Length</a> = 13</td></tr>
+<tr class="separator:a5cc6172008bb5fc4c36cdeebd89d7bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2057eccd4d580652d86479d84ac545d" id="r_ab2057eccd4d580652d86479d84ac545d"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ab2057eccd4d580652d86479d84ac545d">chip::Crypto::kAES_CCM128_Tag_Length</a> = 16</td></tr>
+<tr class="separator:ab2057eccd4d580652d86479d84ac545d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a5284b515c11352cb39094d61a1b77" id="r_a33a5284b515c11352cb39094d61a1b77"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a33a5284b515c11352cb39094d61a1b77">chip::Crypto::kHMAC_CCM128_Key_Length</a> = 128u / 8u</td></tr>
+<tr class="separator:a33a5284b515c11352cb39094d61a1b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4160b69f7c387f210e64c3e9a0b720a" id="r_ab4160b69f7c387f210e64c3e9a0b720a"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ab4160b69f7c387f210e64c3e9a0b720a">chip::Crypto::CHIP_CRYPTO_AEAD_NONCE_LENGTH_BYTES</a> = <a class="el" href="namespacechip_1_1Crypto.html#a5cc6172008bb5fc4c36cdeebd89d7bb5">kAES_CCM128_Nonce_Length</a></td></tr>
+<tr class="separator:ab4160b69f7c387f210e64c3e9a0b720a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b6587f0120c67a863530430334d86a" id="r_a19b6587f0120c67a863530430334d86a"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a19b6587f0120c67a863530430334d86a">chip::Crypto::kMAX_Spake2p_Context_Size</a> = 1024</td></tr>
+<tr class="separator:a19b6587f0120c67a863530430334d86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f5a8dd16836fdfac20eb34bf53a3b30" id="r_a3f5a8dd16836fdfac20eb34bf53a3b30"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a3f5a8dd16836fdfac20eb34bf53a3b30">chip::Crypto::kMAX_P256Keypair_Context_Size</a> = 512</td></tr>
+<tr class="separator:a3f5a8dd16836fdfac20eb34bf53a3b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed88998ba4afcae6d480d7b78da06f5e" id="r_aed88998ba4afcae6d480d7b78da06f5e"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aed88998ba4afcae6d480d7b78da06f5e">chip::Crypto::kEmitDerIntegerWithoutTagOverhead</a> = 1</td></tr>
+<tr class="separator:aed88998ba4afcae6d480d7b78da06f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82dabff978e41bf98502e75607a2018c" id="r_a82dabff978e41bf98502e75607a2018c"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a82dabff978e41bf98502e75607a2018c">chip::Crypto::kEmitDerIntegerOverhead</a> = 3</td></tr>
+<tr class="separator:a82dabff978e41bf98502e75607a2018c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af454fdf7b0cef17a1766d543a2fe32" id="r_a3af454fdf7b0cef17a1766d543a2fe32"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a3af454fdf7b0cef17a1766d543a2fe32">chip::Crypto::kMAX_Hash_SHA256_Context_Size</a> = <a class="el" href="CHIPConfig_8h.html#a5445c8834c7dd2166fd90900f77fdab3">CHIP_CONFIG_SHA256_CONTEXT_SIZE</a></td></tr>
+<tr class="separator:a3af454fdf7b0cef17a1766d543a2fe32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38932e5abd55c13d0f1324278f9c7ea4" id="r_a38932e5abd55c13d0f1324278f9c7ea4"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a38932e5abd55c13d0f1324278f9c7ea4">chip::Crypto::kSpake2p_WS_Length</a> = <a class="el" href="namespacechip_1_1Crypto.html#a12f8ac127d2b8f5b09cd5055ec875bd5">kP256_FE_Length</a> + 8</td></tr>
+<tr class="separator:a38932e5abd55c13d0f1324278f9c7ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1846cd29ef0dfd0585415955822c97b8" id="r_a1846cd29ef0dfd0585415955822c97b8"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a1846cd29ef0dfd0585415955822c97b8">chip::Crypto::kSpake2p_VerifierSerialized_Length</a> = <a class="el" href="namespacechip_1_1Crypto.html#a12f8ac127d2b8f5b09cd5055ec875bd5">kP256_FE_Length</a> + <a class="el" href="namespacechip_1_1Crypto.html#aad9febebba320e2a307ec808b5e2db99">kP256_Point_Length</a></td></tr>
+<tr class="separator:a1846cd29ef0dfd0585415955822c97b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de6421023435b226e028d91c8df9e02" id="r_a8de6421023435b226e028d91c8df9e02"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a8de6421023435b226e028d91c8df9e02">chip::Crypto::kVIDPrefixForCNEncoding</a> [] = &quot;Mvid:&quot;</td></tr>
+<tr class="separator:a8de6421023435b226e028d91c8df9e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f887b15cce227bd90b8acabc8acba0" id="r_a24f887b15cce227bd90b8acabc8acba0"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a24f887b15cce227bd90b8acabc8acba0">chip::Crypto::kPIDPrefixForCNEncoding</a> [] = &quot;Mpid:&quot;</td></tr>
+<tr class="separator:a24f887b15cce227bd90b8acabc8acba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b16bdd14d26bcb693a4c832c84be188" id="r_a8b16bdd14d26bcb693a4c832c84be188"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a8b16bdd14d26bcb693a4c832c84be188">chip::Crypto::kVIDandPIDHexLength</a> = sizeof(uint16_t) * 2</td></tr>
+<tr class="separator:a8b16bdd14d26bcb693a4c832c84be188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63aa7179ca5ec317fcf77b33f3b6691b" id="r_a63aa7179ca5ec317fcf77b33f3b6691b"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a63aa7179ca5ec317fcf77b33f3b6691b">chip::Crypto::kMax_CommonNameAttr_Length</a> = 64</td></tr>
+<tr class="separator:a63aa7179ca5ec317fcf77b33f3b6691b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0749b6c1ec27c70dfa9d7a2154907975" id="r_a0749b6c1ec27c70dfa9d7a2154907975"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a0749b6c1ec27c70dfa9d7a2154907975">chip::Crypto::kFabricBindingVersionV1</a> = 1u</td></tr>
+<tr class="separator:a0749b6c1ec27c70dfa9d7a2154907975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809d6bac5271558ec3460ee44b5c4388" id="r_a809d6bac5271558ec3460ee44b5c4388"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a809d6bac5271558ec3460ee44b5c4388">chip::Crypto::kVendorIdVerificationClientChallengeSize</a> = 32u</td></tr>
+<tr class="separator:a809d6bac5271558ec3460ee44b5c4388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a241f3c1957f49303962cf4f0e3558641" id="r_a241f3c1957f49303962cf4f0e3558641"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a241f3c1957f49303962cf4f0e3558641">chip::Crypto::kVendorIdVerificationStatementV1Size</a></td></tr>
+<tr class="separator:a241f3c1957f49303962cf4f0e3558641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59dcbcb3cc1837dce090fd7a713815b" id="r_ab59dcbcb3cc1837dce090fd7a713815b"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#ab59dcbcb3cc1837dce090fd7a713815b">chip::Crypto::kVendorFabricBindingMessageV1Size</a></td></tr>
+<tr class="separator:ab59dcbcb3cc1837dce090fd7a713815b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb029842303c1142f16ec0c79f3511c4" id="r_adb029842303c1142f16ec0c79f3511c4"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#adb029842303c1142f16ec0c79f3511c4">chip::Crypto::kVendorIdVerificationTbsV1MaxSize</a></td></tr>
+<tr class="separator:adb029842303c1142f16ec0c79f3511c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed94826bd381ca2bed674eb580852a3" id="r_aeed94826bd381ca2bed674eb580852a3"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#aeed94826bd381ca2bed674eb580852a3">chip::Crypto::kMax_ECDSA_X9Dot62_Asn1_Overhead</a> = 9</td></tr>
+<tr class="separator:aeed94826bd381ca2bed674eb580852a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9bf3397b83928f293c0e7b58336663" id="r_a0f9bf3397b83928f293c0e7b58336663"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a0f9bf3397b83928f293c0e7b58336663">chip::Crypto::kMax_ECDSA_Signature_Length_Der</a> = <a class="el" href="namespacechip_1_1Crypto.html#a8f161388e940812be424c0746dfbabbe">kMax_ECDSA_Signature_Length</a> + <a class="el" href="namespacechip_1_1Crypto.html#aeed94826bd381ca2bed674eb580852a3">kMax_ECDSA_X9Dot62_Asn1_Overhead</a></td></tr>
+<tr class="separator:a0f9bf3397b83928f293c0e7b58336663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda10cc75a9e9bfe875e4a31759aaae5" id="r_afda10cc75a9e9bfe875e4a31759aaae5"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#afda10cc75a9e9bfe875e4a31759aaae5">chip::Crypto::kCompressedFabricIdentifierSize</a> = 8</td></tr>
+<tr class="separator:afda10cc75a9e9bfe875e4a31759aaae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a315b34ca29812d4b1fe2fef67c052" id="r_a00a315b34ca29812d4b1fe2fef67c052"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a00a315b34ca29812d4b1fe2fef67c052">chip::Crypto::spake2p_M_p256</a> []</td></tr>
+<tr class="separator:a00a315b34ca29812d4b1fe2fef67c052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4098ff61896444bfba26b2966e52f4eb" id="r_a4098ff61896444bfba26b2966e52f4eb"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Crypto.html#a4098ff61896444bfba26b2966e52f4eb">chip::Crypto::spake2p_N_p256</a> []</td></tr>
+<tr class="separator:a4098ff61896444bfba26b2966e52f4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Header that exposes the platform agnostic CHIP crypto primitives </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

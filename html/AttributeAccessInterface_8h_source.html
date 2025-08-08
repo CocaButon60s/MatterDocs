@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/app/AttributeAccessInterface.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_a9aeb43d402f24b4c5513213743384b7.html">app</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">AttributeAccessInterface.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="AttributeAccessInterface_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2021-2022 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *    All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;app/AttributeReportBuilder.h&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;app/AttributeValueDecoder.h&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;app/AttributeValueEncoder.h&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;app/data-model-provider/OperationTypes.h&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPError_8h.html">lib/core/CHIPError.h</a>&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">namespace </span>app {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html">   40</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#a195c75011d86ee3dcc7d46285afbafa5">   47</a></span>    <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#a195c75011d86ee3dcc7d46285afbafa5">AttributeAccessInterface</a>(<a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;EndpointId&gt;</a> aEndpointId, <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId) :</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">mEndpointId</a>(aEndpointId), <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#acf82d548598113145df2c72827593e0a">mClusterId</a>(aClusterId)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    {}</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#ad3debdc4c20a59d1f72c8fa9304262be">   50</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#ad3debdc4c20a59d1f72c8fa9304262be">~AttributeAccessInterface</a>() {}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#afe26c2bc0004445e66b6731394453034">   70</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#afe26c2bc0004445e66b6731394453034">Read</a>(<span class="keyword">const</span> DataModel::ReadAttributeRequest &amp; aRequest, AttributeValueEncoder &amp; aEncoder)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#afe26c2bc0004445e66b6731394453034">Read</a>(aRequest.path, aEncoder);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#ad0f0ab79d0babc85a06582cb5ac2c079">   81</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#ad0f0ab79d0babc85a06582cb5ac2c079">Read</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> &amp; aPath, AttributeValueEncoder &amp; aEncoder) = 0;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#a68635af42764b78476ad22389b72a46c">  101</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#a68635af42764b78476ad22389b72a46c">Write</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteDataAttributePath.html">ConcreteDataAttributePath</a> &amp; aPath, AttributeValueDecoder &amp; aDecoder) { <span class="keywordflow">return</span> <a class="code hl_define" href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e">CHIP_NO_ERROR</a>; }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#a2899b330c9a67466175e52c1cd283d01">  113</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#a2899b330c9a67466175e52c1cd283d01">OnListWriteBegin</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp; aPath) {}</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#a47f352adf9b910be95fff8e8115aaa1d">  128</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#a47f352adf9b910be95fff8e8115aaa1d">OnListWriteEnd</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp; aPath, <span class="keywordtype">bool</span> aWriteWasSuccessful) {}</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#a2887025e5242bd397b3a8ce75f195cc5">  133</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#a2887025e5242bd397b3a8ce75f195cc5">SetNext</a>(<a class="code hl_class" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> * aNext) { <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#a759d699524f1c7800c41f58b76ede8f9">mNext</a> = aNext; }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#a7a30290cb829a015952e4c2860c8509b">  134</a></span>    <a class="code hl_class" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> * <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#a7a30290cb829a015952e4c2860c8509b">GetNext</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#a759d699524f1c7800c41f58b76ede8f9">mNext</a>; }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="}">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#aa465d39295b8fb8e06f34dcb93d2f74d">  142</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#aa465d39295b8fb8e06f34dcb93d2f74d">Matches</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keywordflow">return</span> (!<a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">mEndpointId</a>.<a class="code hl_function" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a>() || <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">mEndpointId</a>.<a class="code hl_function" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">Value</a>() == aEndpointId) &amp;&amp; <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#acf82d548598113145df2c72827593e0a">mClusterId</a> == aClusterId;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
+</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#adc37488d8b7dfdf0e04319e9fc5fda83">  152</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#adc37488d8b7dfdf0e04319e9fc5fda83">MatchesEndpoint</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">mEndpointId</a>.<a class="code hl_function" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a>() &amp;&amp; <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">mEndpointId</a>.<a class="code hl_function" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">Value</a>() == aEndpointId; }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="foldopen" id="foldopen00158" data-start="{" data-end="}">
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#a09843999b983d05e07a0be1e672a3af9">  158</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#a09843999b983d05e07a0be1e672a3af9">Matches</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> &amp; aOther)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#acf82d548598113145df2c72827593e0a">mClusterId</a> == aOther.<a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#acf82d548598113145df2c72827593e0a">mClusterId</a> &amp;&amp;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            (!<a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">mEndpointId</a>.<a class="code hl_function" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a>() || !aOther.<a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">mEndpointId</a>.<a class="code hl_function" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a>() || <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">mEndpointId</a>.<a class="code hl_function" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">Value</a>() == aOther.<a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">mEndpointId</a>.<a class="code hl_function" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">Value</a>());</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
+</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#a4dc4de909abf0275a299d014385d3a08">  165</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;EndpointId&gt;</a> <a class="code hl_function" href="classchip_1_1app_1_1AttributeAccessInterface.html#a4dc4de909abf0275a299d014385d3a08">GetEndpointId</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">mEndpointId</a>; }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">  168</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;EndpointId&gt;</a> <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">mEndpointId</a>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#acf82d548598113145df2c72827593e0a">  169</a></span>    <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#acf82d548598113145df2c72827593e0a">mClusterId</a>;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1AttributeAccessInterface.html#a759d699524f1c7800c41f58b76ede8f9">  170</a></span>    <a class="code hl_class" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> * <a class="code hl_variable" href="classchip_1_1app_1_1AttributeAccessInterface.html#a759d699524f1c7800c41f58b76ede8f9">mNext</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>};</div>
+</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>} <span class="comment">// namespace app</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>} <span class="comment">// namespace chip</span></div>
+<div class="ttc" id="aCHIPError_8h_html"><div class="ttname"><a href="CHIPError_8h.html">CHIPError.h</a></div></div>
+<div class="ttc" id="aCHIPError_8h_html_a255ed42b89227e34eef134084739716e"><div class="ttname"><a href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e">CHIP_NO_ERROR</a></div><div class="ttdeci">#define CHIP_NO_ERROR</div><div class="ttdoc">This defines the CHIP error code for success or no error.</div><div class="ttdef"><b>Definition</b> CHIPError.h:490</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html"><div class="ttname"><a href="classchip_1_1ChipError.html">chip::ChipError</a></div><div class="ttdef"><b>Definition</b> CHIPError.h:55</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html"><div class="ttname"><a href="classchip_1_1Optional.html">chip::Optional</a></div><div class="ttdef"><b>Definition</b> Optional.h:49</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a5cd680378379844625c451dcacf2c87c"><div class="ttname"><a href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">chip::Optional::HasValue</a></div><div class="ttdeci">constexpr bool HasValue() const</div><div class="ttdef"><b>Definition</b> Optional.h:217</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_aaf7c61e9f1bdf79143adbd741b8d3ca7"><div class="ttname"><a href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">chip::Optional::Value</a></div><div class="ttdeci">T &amp; Value() &amp;</div><div class="ttdef"><b>Definition</b> Optional.h:199</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html">chip::app::AttributeAccessInterface</a></div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:41</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_a09843999b983d05e07a0be1e672a3af9"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#a09843999b983d05e07a0be1e672a3af9">chip::app::AttributeAccessInterface::Matches</a></div><div class="ttdeci">bool Matches(const AttributeAccessInterface &amp;aOther) const</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:158</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_a195c75011d86ee3dcc7d46285afbafa5"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#a195c75011d86ee3dcc7d46285afbafa5">chip::app::AttributeAccessInterface::AttributeAccessInterface</a></div><div class="ttdeci">AttributeAccessInterface(Optional&lt; EndpointId &gt; aEndpointId, ClusterId aClusterId)</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:47</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_a2887025e5242bd397b3a8ce75f195cc5"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#a2887025e5242bd397b3a8ce75f195cc5">chip::app::AttributeAccessInterface::SetNext</a></div><div class="ttdeci">void SetNext(AttributeAccessInterface *aNext)</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:133</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_a2899b330c9a67466175e52c1cd283d01"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#a2899b330c9a67466175e52c1cd283d01">chip::app::AttributeAccessInterface::OnListWriteBegin</a></div><div class="ttdeci">virtual void OnListWriteBegin(const ConcreteAttributePath &amp;aPath)</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:113</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_a47f352adf9b910be95fff8e8115aaa1d"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#a47f352adf9b910be95fff8e8115aaa1d">chip::app::AttributeAccessInterface::OnListWriteEnd</a></div><div class="ttdeci">virtual void OnListWriteEnd(const ConcreteAttributePath &amp;aPath, bool aWriteWasSuccessful)</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:128</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_a4dc4de909abf0275a299d014385d3a08"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#a4dc4de909abf0275a299d014385d3a08">chip::app::AttributeAccessInterface::GetEndpointId</a></div><div class="ttdeci">Optional&lt; EndpointId &gt; GetEndpointId()</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:165</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_a68635af42764b78476ad22389b72a46c"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#a68635af42764b78476ad22389b72a46c">chip::app::AttributeAccessInterface::Write</a></div><div class="ttdeci">virtual CHIP_ERROR Write(const ConcreteDataAttributePath &amp;aPath, AttributeValueDecoder &amp;aDecoder)</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:101</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_a759d699524f1c7800c41f58b76ede8f9"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#a759d699524f1c7800c41f58b76ede8f9">chip::app::AttributeAccessInterface::mNext</a></div><div class="ttdeci">AttributeAccessInterface * mNext</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:170</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_a7a30290cb829a015952e4c2860c8509b"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#a7a30290cb829a015952e4c2860c8509b">chip::app::AttributeAccessInterface::GetNext</a></div><div class="ttdeci">AttributeAccessInterface * GetNext() const</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:134</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_aa465d39295b8fb8e06f34dcb93d2f74d"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#aa465d39295b8fb8e06f34dcb93d2f74d">chip::app::AttributeAccessInterface::Matches</a></div><div class="ttdeci">bool Matches(EndpointId aEndpointId, ClusterId aClusterId) const</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:142</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_aaccbd0a9f2758a4a2305649a0db52e06"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">chip::app::AttributeAccessInterface::mEndpointId</a></div><div class="ttdeci">Optional&lt; EndpointId &gt; mEndpointId</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:168</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_acf82d548598113145df2c72827593e0a"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#acf82d548598113145df2c72827593e0a">chip::app::AttributeAccessInterface::mClusterId</a></div><div class="ttdeci">ClusterId mClusterId</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:169</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_ad0f0ab79d0babc85a06582cb5ac2c079"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#ad0f0ab79d0babc85a06582cb5ac2c079">chip::app::AttributeAccessInterface::Read</a></div><div class="ttdeci">virtual CHIP_ERROR Read(const ConcreteReadAttributePath &amp;aPath, AttributeValueEncoder &amp;aEncoder)=0</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_ad3debdc4c20a59d1f72c8fa9304262be"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#ad3debdc4c20a59d1f72c8fa9304262be">chip::app::AttributeAccessInterface::~AttributeAccessInterface</a></div><div class="ttdeci">virtual ~AttributeAccessInterface()</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:50</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_adc37488d8b7dfdf0e04319e9fc5fda83"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#adc37488d8b7dfdf0e04319e9fc5fda83">chip::app::AttributeAccessInterface::MatchesEndpoint</a></div><div class="ttdeci">bool MatchesEndpoint(EndpointId aEndpointId) const</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:152</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1AttributeAccessInterface_html_afe26c2bc0004445e66b6731394453034"><div class="ttname"><a href="classchip_1_1app_1_1AttributeAccessInterface.html#afe26c2bc0004445e66b6731394453034">chip::app::AttributeAccessInterface::Read</a></div><div class="ttdeci">virtual CHIP_ERROR Read(const DataModel::ReadAttributeRequest &amp;aRequest, AttributeValueEncoder &amp;aEncoder)</div><div class="ttdef"><b>Definition</b> AttributeAccessInterface.h:70</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+<div class="ttc" id="anamespacechip_html_a167c692d0d28c8e6a7d0b2f0c50b290a"><div class="ttname"><a href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">chip::ClusterId</a></div><div class="ttdeci">uint32_t ClusterId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:32</div></div>
+<div class="ttc" id="anamespacechip_html_ae2e3807cea12f480cdb9c90c2cca56ef"><div class="ttname"><a href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a></div><div class="ttdeci">uint16_t EndpointId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:40</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteAttributePath_html"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteAttributePath.html">chip::app::ConcreteAttributePath</a></div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:35</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html">chip::app::ConcreteDataAttributePath</a></div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:103</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteReadAttributePath_html"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteReadAttributePath.html">chip::app::ConcreteReadAttributePath</a></div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:75</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<map id="BridgeAppCommandHandler::HandleCommand" name="BridgeAppCommandHandler::HandleCommand">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,93,212,133"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Platform.html#a43b3e4c947b3e37de31cb9c07c113592" title=" " alt="" coords="271,43,435,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,90,284,69,285,74,195,95"/>
+<area shape="rect" id="Node000006" href="$classDevice.html#aadf996f854bcc72ad490c631fa7bf39d" title=" " alt="" coords="260,93,445,133"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="212,110,246,110,246,115,212,115"/>
+<area shape="rect" id="Node000007" href="$classDevice.html#ac6120ec2389b1dbfe4fca66bf7090f14" title=" " alt="" coords="261,157,444,197"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="186,130,264,151,262,156,185,135"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Platform.html#a9a65a9cd65454203059a7878eb74ccc1" title=" " alt="" coords="499,5,702,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,40,502,30,503,35,435,46"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="525,79,676,104"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="435,65,512,76,512,81,434,70"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="560,80,552,70,556,60,573,54,601,52,636,56,646,61,649,66,645,69,642,65,634,61,601,57,574,59,560,64,557,70,564,77"/>
+<area shape="rect" id="Node000005" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="756,79,963,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="676,89,742,89,742,94,676,94"/>
+<area shape="rect" id="Node000008" href="$classDevice.html#a06599195755322100ae2e23b41a91bd2" title=" " alt="" coords="493,164,708,189"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="444,174,480,174,480,179,444,179"/>
+</map>

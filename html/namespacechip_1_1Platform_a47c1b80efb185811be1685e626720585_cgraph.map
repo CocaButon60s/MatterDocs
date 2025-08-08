@@ -1,0 +1,11 @@
+<map id="chip::Platform::CopyString" name="chip::Platform::CopyString">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,197,56"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d" title=" " alt="" coords="245,5,437,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,31,232,27,232,32,198,36"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="485,31,636,56"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="198,41,472,41,472,46,198,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="438,26,472,30,471,36,437,32"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="525,32,517,22,521,12,536,6,561,4,591,8,603,17,600,21,589,13,561,9,537,11,525,16,522,22,529,29"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="684,31,891,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="637,41,670,41,670,46,637,46"/>
+</map>

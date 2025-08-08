@@ -1,0 +1,873 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: DevicePowerSource クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classDevicePowerSource-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">DevicePowerSource クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Device_8h_source.html">Device.h</a>&gt;</code></p>
+<div class="dynheader">
+DevicePowerSource の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevicePowerSource__inherit__graph.png" border="0" usemap="#aDevicePowerSource_inherit__map" alt="Inheritance graph"/></div>
+<map name="aDevicePowerSource_inherit__map" id="aDevicePowerSource_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,79,156,104"/>
+<area shape="rect" href="classDevice.html" title=" " alt="" coords="47,5,114,31"/>
+<area shape="poly" title=" " alt="" coords="83,44,83,79,78,79,78,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+DevicePowerSource 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevicePowerSource__coll__graph.png" border="0" usemap="#aDevicePowerSource_coll__map" alt="Collaboration graph"/></div>
+<map name="aDevicePowerSource_coll__map" id="aDevicePowerSource_coll__map">
+<area shape="rect" title=" " alt="" coords="5,79,156,104"/>
+<area shape="rect" href="classDevice.html" title=" " alt="" coords="47,5,114,31"/>
+<area shape="poly" title=" " alt="" coords="83,44,83,79,78,79,78,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a4ba2435cd0cac2bb85de59c01fae798c" id="r_a4ba2435cd0cac2bb85de59c01fae798c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#a4ba2435cd0cac2bb85de59c01fae798c">Changed_t</a> { <a class="el" href="classDevicePowerSource.html#a4ba2435cd0cac2bb85de59c01fae798ca7c392a8742e0d3343c67c35231867760">kChanged_BatLevel</a> = kChanged_Last &lt;&lt; 1
+, <a class="el" href="classDevicePowerSource.html#a4ba2435cd0cac2bb85de59c01fae798cad37c54967174a16ba35b6665dfdba8c3">kChanged_Description</a> = kChanged_Last &lt;&lt; 2
+, <a class="el" href="classDevicePowerSource.html#a4ba2435cd0cac2bb85de59c01fae798ca9f1bffdcce4b696c67c0c151ae3e4702">kChanged_EndpointList</a> = kChanged_Last &lt;&lt; 3
+ }</td></tr>
+<tr class="separator:a4ba2435cd0cac2bb85de59c01fae798c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbeab8751e87d571121fe90d91f67457" id="r_abbeab8751e87d571121fe90d91f67457"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#abbeab8751e87d571121fe90d91f67457">DeviceCallback_fn</a> = std::function&lt; void(<a class="el" href="classDevicePowerSource.html">DevicePowerSource</a> *, <a class="el" href="classDevicePowerSource.html#a4ba2435cd0cac2bb85de59c01fae798c">DevicePowerSource::Changed_t</a>)&gt;</td></tr>
+<tr class="separator:abbeab8751e87d571121fe90d91f67457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classDevice"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classDevice')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classDevice.html">Device</a> に属する継承公開型</td></tr>
+<tr class="memitem:a4a93d064f1eb2587a12152ff79aa295c inherit pub_types_classDevice" id="r_a4a93d064f1eb2587a12152ff79aa295c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295c">Changed_t</a> { <br />
+&#160;&#160;<a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295caac5620970f0e7ade5b4629df25d55c43">kChanged_Reachable</a> = 1u &lt;&lt; 0
+, <a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295ca5b0c0c0a8f1219df319674bd3a37508c">kChanged_Location</a> = 1u &lt;&lt; 1
+, <a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295ca27a474d0af9e8fcac1703d93a10a682b">kChanged_Name</a> = 1u &lt;&lt; 2
+, <a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295ca1e1f2381db1aa694bb6d3ec234f10340">kChanged_ConfigurationVersion</a> = 1u &lt;&lt; 3
+, <br />
+&#160;&#160;<a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295ca93c16e2b8bb27dd628799d1ec2780944">kChanged_Last</a> = kChanged_ConfigurationVersion
+<br />
+ }</td></tr>
+<tr class="separator:a4a93d064f1eb2587a12152ff79aa295c inherit pub_types_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a34131ab1d7fb1d8c2b908ab48bba1155" id="r_a34131ab1d7fb1d8c2b908ab48bba1155"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#a34131ab1d7fb1d8c2b908ab48bba1155">DevicePowerSource</a> (const char *szDeviceName, std::string szLocation, chip::BitFlags&lt; chip::app::Clusters::PowerSource::Feature &gt; aFeatureMap)</td></tr>
+<tr class="separator:a34131ab1d7fb1d8c2b908ab48bba1155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70244b3d243c92bb7061c32aa8ae9d45" id="r_a70244b3d243c92bb7061c32aa8ae9d45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#a70244b3d243c92bb7061c32aa8ae9d45">SetChangeCallback</a> (<a class="el" href="classDevicePowerSource.html#abbeab8751e87d571121fe90d91f67457">DeviceCallback_fn</a> aChanged_CB)</td></tr>
+<tr class="separator:a70244b3d243c92bb7061c32aa8ae9d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba87d01562f8cd2cd4df59fb2082148c" id="r_aba87d01562f8cd2cd4df59fb2082148c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#aba87d01562f8cd2cd4df59fb2082148c">SetBatChargeLevel</a> (uint8_t aBatChargeLevel)</td></tr>
+<tr class="separator:aba87d01562f8cd2cd4df59fb2082148c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5b30c8055494c1ab0e58bde037ab25" id="r_acf5b30c8055494c1ab0e58bde037ab25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#acf5b30c8055494c1ab0e58bde037ab25">SetDescription</a> (std::string aDescription)</td></tr>
+<tr class="separator:acf5b30c8055494c1ab0e58bde037ab25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56409fb7b2a5efedd8f9c19a53235542" id="r_a56409fb7b2a5efedd8f9c19a53235542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#a56409fb7b2a5efedd8f9c19a53235542">SetEndpointList</a> (std::vector&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> &gt; <a class="el" href="classDevicePowerSource.html#a1579347856168c73dad02f0aa673002c">mEndpointList</a>)</td></tr>
+<tr class="separator:a56409fb7b2a5efedd8f9c19a53235542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e73ed5eac6558dd643534693f636ee" id="r_a91e73ed5eac6558dd643534693f636ee"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#a91e73ed5eac6558dd643534693f636ee">GetFeatureMap</a> ()</td></tr>
+<tr class="separator:a91e73ed5eac6558dd643534693f636ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12ce8c50b5d481f98c4515296850171" id="r_ab12ce8c50b5d481f98c4515296850171"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#ab12ce8c50b5d481f98c4515296850171">GetBatChargeLevel</a> ()</td></tr>
+<tr class="separator:ab12ce8c50b5d481f98c4515296850171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f15f0fbb02fd62aed59c6e313d4cce" id="r_a33f15f0fbb02fd62aed59c6e313d4cce"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#a33f15f0fbb02fd62aed59c6e313d4cce">GetOrder</a> ()</td></tr>
+<tr class="separator:a33f15f0fbb02fd62aed59c6e313d4cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31aba16f67c954b174608d32f90bc16" id="r_af31aba16f67c954b174608d32f90bc16"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#af31aba16f67c954b174608d32f90bc16">GetStatus</a> ()</td></tr>
+<tr class="separator:af31aba16f67c954b174608d32f90bc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29a8ebe42ab4fc596d4274c75312b19" id="r_ac29a8ebe42ab4fc596d4274c75312b19"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#ac29a8ebe42ab4fc596d4274c75312b19">GetDescription</a> ()</td></tr>
+<tr class="separator:ac29a8ebe42ab4fc596d4274c75312b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ebf901ffbc8294bc7e588fc03b0ca2" id="r_ac9ebf901ffbc8294bc7e588fc03b0ca2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#ac9ebf901ffbc8294bc7e588fc03b0ca2">GetEndpointList</a> ()</td></tr>
+<tr class="separator:ac9ebf901ffbc8294bc7e588fc03b0ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classDevice"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDevice')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classDevice.html">Device</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a9a1ae1ef68e404dc54b27c9263c5dfe8 inherit pub_methods_classDevice" id="r_a9a1ae1ef68e404dc54b27c9263c5dfe8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a9a1ae1ef68e404dc54b27c9263c5dfe8">Device</a> (const char *szDeviceName, std::string szLocation)</td></tr>
+<tr class="separator:a9a1ae1ef68e404dc54b27c9263c5dfe8 inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f3f693be6b0dbde83d03bf7a336d2c inherit pub_methods_classDevice" id="r_af5f3f693be6b0dbde83d03bf7a336d2c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#af5f3f693be6b0dbde83d03bf7a336d2c">~Device</a> ()</td></tr>
+<tr class="separator:af5f3f693be6b0dbde83d03bf7a336d2c inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad533e7e9c778c15d4ecbb9b99305bbb inherit pub_methods_classDevice" id="r_aad533e7e9c778c15d4ecbb9b99305bbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#aad533e7e9c778c15d4ecbb9b99305bbb">IsReachable</a> ()</td></tr>
+<tr class="separator:aad533e7e9c778c15d4ecbb9b99305bbb inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2b382654bcb2860b254bc48ab15319 inherit pub_methods_classDevice" id="r_a4c2b382654bcb2860b254bc48ab15319"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a4c2b382654bcb2860b254bc48ab15319">SetReachable</a> (bool aReachable)</td></tr>
+<tr class="separator:a4c2b382654bcb2860b254bc48ab15319 inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3cb2cf469424b7cbf9849f349af31a inherit pub_methods_classDevice" id="r_a8a3cb2cf469424b7cbf9849f349af31a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a8a3cb2cf469424b7cbf9849f349af31a">SetName</a> (const char *szDeviceName)</td></tr>
+<tr class="separator:a8a3cb2cf469424b7cbf9849f349af31a inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3362a850d2b78673376b8e0b1583c4f inherit pub_methods_classDevice" id="r_ad3362a850d2b78673376b8e0b1583c4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#ad3362a850d2b78673376b8e0b1583c4f">SetUniqueId</a> (const char *szDeviceUniqueId)</td></tr>
+<tr class="separator:ad3362a850d2b78673376b8e0b1583c4f inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698404e7cf63ed9210e86b7b4400c832 inherit pub_methods_classDevice" id="r_a698404e7cf63ed9210e86b7b4400c832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a698404e7cf63ed9210e86b7b4400c832">SetLocation</a> (std::string szLocation)</td></tr>
+<tr class="separator:a698404e7cf63ed9210e86b7b4400c832 inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98a2c4c280383bfd3dbcc676a1867cf7 inherit pub_methods_classDevice" id="r_a98a2c4c280383bfd3dbcc676a1867cf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a98a2c4c280383bfd3dbcc676a1867cf7">GenerateUniqueId</a> ()</td></tr>
+<tr class="separator:a98a2c4c280383bfd3dbcc676a1867cf7 inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf996f854bcc72ad490c631fa7bf39d inherit pub_methods_classDevice" id="r_aadf996f854bcc72ad490c631fa7bf39d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#aadf996f854bcc72ad490c631fa7bf39d">GetConfigurationVersion</a> ()</td></tr>
+<tr class="separator:aadf996f854bcc72ad490c631fa7bf39d inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6120ec2389b1dbfe4fca66bf7090f14 inherit pub_methods_classDevice" id="r_ac6120ec2389b1dbfe4fca66bf7090f14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#ac6120ec2389b1dbfe4fca66bf7090f14">SetConfigurationVersion</a> (uint32_t configurationVersion)</td></tr>
+<tr class="separator:ac6120ec2389b1dbfe4fca66bf7090f14 inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf116830d3dfda53a61a8a241d550d8 inherit pub_methods_classDevice" id="r_a8cf116830d3dfda53a61a8a241d550d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a8cf116830d3dfda53a61a8a241d550d8">SetEndpointId</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> id)</td></tr>
+<tr class="separator:a8cf116830d3dfda53a61a8a241d550d8 inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24eec7ca17d202f489ee2534a879fb08 inherit pub_methods_classDevice" id="r_a24eec7ca17d202f489ee2534a879fb08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a24eec7ca17d202f489ee2534a879fb08">GetEndpointId</a> ()</td></tr>
+<tr class="separator:a24eec7ca17d202f489ee2534a879fb08 inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c9045ae3f75ef445bd45d44968d052 inherit pub_methods_classDevice" id="r_ae1c9045ae3f75ef445bd45d44968d052"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#ae1c9045ae3f75ef445bd45d44968d052">SetParentEndpointId</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> id)</td></tr>
+<tr class="separator:ae1c9045ae3f75ef445bd45d44968d052 inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1001cc0de2b5e3c18794867a807970 inherit pub_methods_classDevice" id="r_acf1001cc0de2b5e3c18794867a807970"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#acf1001cc0de2b5e3c18794867a807970">GetParentEndpointId</a> ()</td></tr>
+<tr class="separator:acf1001cc0de2b5e3c18794867a807970 inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f11cf52d0929e177fe97aa1f2c281bc inherit pub_methods_classDevice" id="r_a8f11cf52d0929e177fe97aa1f2c281bc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a8f11cf52d0929e177fe97aa1f2c281bc">GetName</a> ()</td></tr>
+<tr class="separator:a8f11cf52d0929e177fe97aa1f2c281bc inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07cc81a6eec5a65be617602c5e246753 inherit pub_methods_classDevice" id="r_a07cc81a6eec5a65be617602c5e246753"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a07cc81a6eec5a65be617602c5e246753">GetUniqueId</a> ()</td></tr>
+<tr class="separator:a07cc81a6eec5a65be617602c5e246753 inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63fa54e386a433b158302146c1dea21 inherit pub_methods_classDevice" id="r_ac63fa54e386a433b158302146c1dea21"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#ac63fa54e386a433b158302146c1dea21">GetLocation</a> ()</td></tr>
+<tr class="separator:ac63fa54e386a433b158302146c1dea21 inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df969cb29ba2fd484286d5f743c9fbd inherit pub_methods_classDevice" id="r_a7df969cb29ba2fd484286d5f743c9fbd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a7df969cb29ba2fd484286d5f743c9fbd">GetZone</a> ()</td></tr>
+<tr class="separator:a7df969cb29ba2fd484286d5f743c9fbd inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f921cd54ef4c6ae4dd27b1426099be inherit pub_methods_classDevice" id="r_a68f921cd54ef4c6ae4dd27b1426099be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a68f921cd54ef4c6ae4dd27b1426099be">SetZone</a> (std::string zone)</td></tr>
+<tr class="separator:a68f921cd54ef4c6ae4dd27b1426099be inherit pub_methods_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a29796c66378f20fa31b3fa6a12683da4" id="r_a29796c66378f20fa31b3fa6a12683da4"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classDevicePowerSource.html#a4ba2435cd0cac2bb85de59c01fae798c">DevicePowerSource::Changed_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#a29796c66378f20fa31b3fa6a12683da4">Changed</a></td></tr>
+<tr class="separator:a29796c66378f20fa31b3fa6a12683da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classDevice"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classDevice')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classDevice.html">Device</a> に属する継承公開変数類</td></tr>
+<tr class="memitem:a16f777270f43a9c568626692ba1b8fca inherit pub_attribs_classDevice" id="r_a16f777270f43a9c568626692ba1b8fca"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295c">Device::Changed_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a16f777270f43a9c568626692ba1b8fca">Changed</a></td></tr>
+<tr class="separator:a16f777270f43a9c568626692ba1b8fca inherit pub_attribs_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2d5a3b3d6736153ff4a3f464390d726e" id="r_a2d5a3b3d6736153ff4a3f464390d726e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#a2d5a3b3d6736153ff4a3f464390d726e">HandleDeviceChange</a> (<a class="el" href="classDevice.html">Device</a> *device, <a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295c">Device::Changed_t</a> changeMask)</td></tr>
+<tr class="separator:a2d5a3b3d6736153ff4a3f464390d726e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:aa4df6bd3ece29add991d64ca4aac96ee" id="r_aa4df6bd3ece29add991d64ca4aac96ee"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#aa4df6bd3ece29add991d64ca4aac96ee">mBatChargeLevel</a> = 0</td></tr>
+<tr class="separator:aa4df6bd3ece29add991d64ca4aac96ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2819f4f1b82f3f1d0c61077b9512f7f0" id="r_a2819f4f1b82f3f1d0c61077b9512f7f0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#a2819f4f1b82f3f1d0c61077b9512f7f0">mOrder</a> = 0</td></tr>
+<tr class="separator:a2819f4f1b82f3f1d0c61077b9512f7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cfa341ed67592a6448f2ebd473dd39" id="r_a38cfa341ed67592a6448f2ebd473dd39"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#a38cfa341ed67592a6448f2ebd473dd39">mStatus</a> = 0</td></tr>
+<tr class="separator:a38cfa341ed67592a6448f2ebd473dd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15aae93ab62900c0e1b516a250f11c7" id="r_ab15aae93ab62900c0e1b516a250f11c7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#ab15aae93ab62900c0e1b516a250f11c7">mDescription</a> = &quot;Primary Battery&quot;</td></tr>
+<tr class="separator:ab15aae93ab62900c0e1b516a250f11c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34bc744ca60996644ee514729eae5d20" id="r_a34bc744ca60996644ee514729eae5d20"><td class="memItemLeft" align="right" valign="top">chip::BitFlags&lt; chip::app::Clusters::PowerSource::Feature &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#a34bc744ca60996644ee514729eae5d20">mFeatureMap</a></td></tr>
+<tr class="separator:a34bc744ca60996644ee514729eae5d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c60267d440c965eb44821c3081cb97" id="r_af8c60267d440c965eb44821c3081cb97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDevicePowerSource.html#abbeab8751e87d571121fe90d91f67457">DeviceCallback_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#af8c60267d440c965eb44821c3081cb97">mChanged_CB</a></td></tr>
+<tr class="separator:af8c60267d440c965eb44821c3081cb97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1579347856168c73dad02f0aa673002c" id="r_a1579347856168c73dad02f0aa673002c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevicePowerSource.html#a1579347856168c73dad02f0aa673002c">mEndpointList</a></td></tr>
+<tr class="separator:a1579347856168c73dad02f0aa673002c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_classDevice"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classDevice')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classDevice.html">Device</a> に属する継承静的公開変数類</td></tr>
+<tr class="memitem:aecad302bd3ed4ed9854f87875fbfa6e2 inherit pub_static_attribs_classDevice" id="r_aecad302bd3ed4ed9854f87875fbfa6e2"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#aecad302bd3ed4ed9854f87875fbfa6e2">kDeviceNameSize</a> = 32</td></tr>
+<tr class="separator:aecad302bd3ed4ed9854f87875fbfa6e2 inherit pub_static_attribs_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46edea3eb92414cdee8436102325b5f1 inherit pub_static_attribs_classDevice" id="r_a46edea3eb92414cdee8436102325b5f1"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a46edea3eb92414cdee8436102325b5f1">kDeviceUniqueIdSize</a> = 32</td></tr>
+<tr class="separator:a46edea3eb92414cdee8436102325b5f1 inherit pub_static_attribs_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classDevice"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDevice')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classDevice.html">Device</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:abd2a213a9679f8be5c89964ccd2bfddf inherit pro_attribs_classDevice" id="r_abd2a213a9679f8be5c89964ccd2bfddf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#abd2a213a9679f8be5c89964ccd2bfddf">mReachable</a> = false</td></tr>
+<tr class="separator:abd2a213a9679f8be5c89964ccd2bfddf inherit pro_attribs_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa9a520dc8c2973b6df6790fbe1ed0c inherit pro_attribs_classDevice" id="r_a4fa9a520dc8c2973b6df6790fbe1ed0c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a4fa9a520dc8c2973b6df6790fbe1ed0c">mName</a> [<a class="el" href="classDevice.html#aecad302bd3ed4ed9854f87875fbfa6e2">kDeviceNameSize</a>+1] = { 0 }</td></tr>
+<tr class="separator:a4fa9a520dc8c2973b6df6790fbe1ed0c inherit pro_attribs_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce0a87b461a95e9e381ddbd5c41888b inherit pro_attribs_classDevice" id="r_a5ce0a87b461a95e9e381ddbd5c41888b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a5ce0a87b461a95e9e381ddbd5c41888b">mUniqueId</a> [<a class="el" href="classDevice.html#a46edea3eb92414cdee8436102325b5f1">kDeviceUniqueIdSize</a>+1] = { 0 }</td></tr>
+<tr class="separator:a5ce0a87b461a95e9e381ddbd5c41888b inherit pro_attribs_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2fcf9495fb73e61e877ec9219d4e119 inherit pro_attribs_classDevice" id="r_ae2fcf9495fb73e61e877ec9219d4e119"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#ae2fcf9495fb73e61e877ec9219d4e119">mConfigurationVersion</a></td></tr>
+<tr class="separator:ae2fcf9495fb73e61e877ec9219d4e119 inherit pro_attribs_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2660c8069e8111dfedd3990b52b6454c inherit pro_attribs_classDevice" id="r_a2660c8069e8111dfedd3990b52b6454c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a2660c8069e8111dfedd3990b52b6454c">mLocation</a></td></tr>
+<tr class="separator:a2660c8069e8111dfedd3990b52b6454c inherit pro_attribs_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9280afaa4792f111aad55238a03676ba inherit pro_attribs_classDevice" id="r_a9280afaa4792f111aad55238a03676ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a9280afaa4792f111aad55238a03676ba">mEndpointId</a></td></tr>
+<tr class="separator:a9280afaa4792f111aad55238a03676ba inherit pro_attribs_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4da806022269292a1477cd30853f3e inherit pro_attribs_classDevice" id="r_aab4da806022269292a1477cd30853f3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#aab4da806022269292a1477cd30853f3e">mParentEndpointId</a></td></tr>
+<tr class="separator:aab4da806022269292a1477cd30853f3e inherit pro_attribs_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b64902e7e649d661f70b74d0457c0e inherit pro_attribs_classDevice" id="r_ad6b64902e7e649d661f70b74d0457c0e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#ad6b64902e7e649d661f70b74d0457c0e">mZone</a></td></tr>
+<tr class="separator:ad6b64902e7e649d661f70b74d0457c0e inherit pro_attribs_classDevice"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">型定義メンバ詳解</h2>
+<a id="abbeab8751e87d571121fe90d91f67457" name="abbeab8751e87d571121fe90d91f67457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbeab8751e87d571121fe90d91f67457">&#9670;&#160;</a></span>DeviceCallback_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classDevicePowerSource.html#abbeab8751e87d571121fe90d91f67457">DevicePowerSource::DeviceCallback_fn</a> =  std::function&lt;void(<a class="el" href="classDevicePowerSource.html">DevicePowerSource</a> *, <a class="el" href="classDevicePowerSource.html#a4ba2435cd0cac2bb85de59c01fae798c">DevicePowerSource::Changed_t</a>)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a4ba2435cd0cac2bb85de59c01fae798c" name="a4ba2435cd0cac2bb85de59c01fae798c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba2435cd0cac2bb85de59c01fae798c">&#9670;&#160;</a></span>Changed_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDevicePowerSource.html#a4ba2435cd0cac2bb85de59c01fae798c">DevicePowerSource::Changed_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a4ba2435cd0cac2bb85de59c01fae798ca7c392a8742e0d3343c67c35231867760" name="a4ba2435cd0cac2bb85de59c01fae798ca7c392a8742e0d3343c67c35231867760"></a>kChanged_BatLevel&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4ba2435cd0cac2bb85de59c01fae798cad37c54967174a16ba35b6665dfdba8c3" name="a4ba2435cd0cac2bb85de59c01fae798cad37c54967174a16ba35b6665dfdba8c3"></a>kChanged_Description&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4ba2435cd0cac2bb85de59c01fae798ca9f1bffdcce4b696c67c0c151ae3e4702" name="a4ba2435cd0cac2bb85de59c01fae798ca9f1bffdcce4b696c67c0c151ae3e4702"></a>kChanged_EndpointList&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a34131ab1d7fb1d8c2b908ab48bba1155" name="a34131ab1d7fb1d8c2b908ab48bba1155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34131ab1d7fb1d8c2b908ab48bba1155">&#9670;&#160;</a></span>DevicePowerSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DevicePowerSource::DevicePowerSource </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szDeviceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>szLocation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">chip::BitFlags&lt; chip::app::Clusters::PowerSource::Feature &gt;&#160;</td>
+          <td class="paramname"><em>aFeatureMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ab12ce8c50b5d481f98c4515296850171" name="ab12ce8c50b5d481f98c4515296850171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12ce8c50b5d481f98c4515296850171">&#9670;&#160;</a></span>GetBatChargeLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t DevicePowerSource::GetBatChargeLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevicePowerSource_ab12ce8c50b5d481f98c4515296850171_icgraph.png" border="0" usemap="#aclassDevicePowerSource_ab12ce8c50b5d481f98c4515296850171_icgraph" alt=""/></div>
+<map name="aclassDevicePowerSource_ab12ce8c50b5d481f98c4515296850171_icgraph" id="aclassDevicePowerSource_ab12ce8c50b5d481f98c4515296850171_icgraph">
+<area shape="rect" title=" " alt="" coords="279,5,437,45"/>
+<area shape="rect" href="classBridgedPowerSourceAttrAccess.html#ad470200ce9a3013304aa67d7db58d6e1" title=" " alt="" coords="5,5,231,45"/>
+<area shape="poly" title=" " alt="" coords="265,28,231,28,231,23,265,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac29a8ebe42ab4fc596d4274c75312b19" name="ac29a8ebe42ab4fc596d4274c75312b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac29a8ebe42ab4fc596d4274c75312b19">&#9670;&#160;</a></span>GetDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DevicePowerSource::GetDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevicePowerSource_ac29a8ebe42ab4fc596d4274c75312b19_icgraph.png" border="0" usemap="#aclassDevicePowerSource_ac29a8ebe42ab4fc596d4274c75312b19_icgraph" alt=""/></div>
+<map name="aclassDevicePowerSource_ac29a8ebe42ab4fc596d4274c75312b19_icgraph" id="aclassDevicePowerSource_ac29a8ebe42ab4fc596d4274c75312b19_icgraph">
+<area shape="rect" title=" " alt="" coords="279,5,437,45"/>
+<area shape="rect" href="classBridgedPowerSourceAttrAccess.html#ad470200ce9a3013304aa67d7db58d6e1" title=" " alt="" coords="5,5,231,45"/>
+<area shape="poly" title=" " alt="" coords="265,28,231,28,231,23,265,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac9ebf901ffbc8294bc7e588fc03b0ca2" name="ac9ebf901ffbc8294bc7e588fc03b0ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9ebf901ffbc8294bc7e588fc03b0ca2">&#9670;&#160;</a></span>GetEndpointList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> &gt; &amp; DevicePowerSource::GetEndpointList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevicePowerSource_ac9ebf901ffbc8294bc7e588fc03b0ca2_icgraph.png" border="0" usemap="#aclassDevicePowerSource_ac9ebf901ffbc8294bc7e588fc03b0ca2_icgraph" alt=""/></div>
+<map name="aclassDevicePowerSource_ac9ebf901ffbc8294bc7e588fc03b0ca2_icgraph" id="aclassDevicePowerSource_ac9ebf901ffbc8294bc7e588fc03b0ca2_icgraph">
+<area shape="rect" title=" " alt="" coords="279,5,437,45"/>
+<area shape="rect" href="classBridgedPowerSourceAttrAccess.html#ad470200ce9a3013304aa67d7db58d6e1" title=" " alt="" coords="5,5,231,45"/>
+<area shape="poly" title=" " alt="" coords="265,28,231,28,231,23,265,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a91e73ed5eac6558dd643534693f636ee" name="a91e73ed5eac6558dd643534693f636ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91e73ed5eac6558dd643534693f636ee">&#9670;&#160;</a></span>GetFeatureMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t DevicePowerSource::GetFeatureMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevicePowerSource_a91e73ed5eac6558dd643534693f636ee_icgraph.png" border="0" usemap="#aclassDevicePowerSource_a91e73ed5eac6558dd643534693f636ee_icgraph" alt=""/></div>
+<map name="aclassDevicePowerSource_a91e73ed5eac6558dd643534693f636ee_icgraph" id="aclassDevicePowerSource_a91e73ed5eac6558dd643534693f636ee_icgraph">
+<area shape="rect" title=" " alt="" coords="279,5,437,45"/>
+<area shape="rect" href="classBridgedPowerSourceAttrAccess.html#ad470200ce9a3013304aa67d7db58d6e1" title=" " alt="" coords="5,5,231,45"/>
+<area shape="poly" title=" " alt="" coords="265,28,231,28,231,23,265,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a33f15f0fbb02fd62aed59c6e313d4cce" name="a33f15f0fbb02fd62aed59c6e313d4cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f15f0fbb02fd62aed59c6e313d4cce">&#9670;&#160;</a></span>GetOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t DevicePowerSource::GetOrder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevicePowerSource_a33f15f0fbb02fd62aed59c6e313d4cce_icgraph.png" border="0" usemap="#aclassDevicePowerSource_a33f15f0fbb02fd62aed59c6e313d4cce_icgraph" alt=""/></div>
+<map name="aclassDevicePowerSource_a33f15f0fbb02fd62aed59c6e313d4cce_icgraph" id="aclassDevicePowerSource_a33f15f0fbb02fd62aed59c6e313d4cce_icgraph">
+<area shape="rect" title=" " alt="" coords="279,5,437,45"/>
+<area shape="rect" href="classBridgedPowerSourceAttrAccess.html#ad470200ce9a3013304aa67d7db58d6e1" title=" " alt="" coords="5,5,231,45"/>
+<area shape="poly" title=" " alt="" coords="265,28,231,28,231,23,265,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af31aba16f67c954b174608d32f90bc16" name="af31aba16f67c954b174608d32f90bc16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31aba16f67c954b174608d32f90bc16">&#9670;&#160;</a></span>GetStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t DevicePowerSource::GetStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevicePowerSource_af31aba16f67c954b174608d32f90bc16_icgraph.png" border="0" usemap="#aclassDevicePowerSource_af31aba16f67c954b174608d32f90bc16_icgraph" alt=""/></div>
+<map name="aclassDevicePowerSource_af31aba16f67c954b174608d32f90bc16_icgraph" id="aclassDevicePowerSource_af31aba16f67c954b174608d32f90bc16_icgraph">
+<area shape="rect" title=" " alt="" coords="279,5,437,45"/>
+<area shape="rect" href="classBridgedPowerSourceAttrAccess.html#ad470200ce9a3013304aa67d7db58d6e1" title=" " alt="" coords="5,5,231,45"/>
+<area shape="poly" title=" " alt="" coords="265,28,231,28,231,23,265,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2d5a3b3d6736153ff4a3f464390d726e" name="a2d5a3b3d6736153ff4a3f464390d726e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5a3b3d6736153ff4a3f464390d726e">&#9670;&#160;</a></span>HandleDeviceChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DevicePowerSource::HandleDeviceChange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDevice.html">Device</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295c">Device::Changed_t</a>&#160;</td>
+          <td class="paramname"><em>changeMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDevice.html#a06599195755322100ae2e23b41a91bd2">Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="aba87d01562f8cd2cd4df59fb2082148c" name="aba87d01562f8cd2cd4df59fb2082148c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba87d01562f8cd2cd4df59fb2082148c">&#9670;&#160;</a></span>SetBatChargeLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DevicePowerSource::SetBatChargeLevel </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>aBatChargeLevel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevicePowerSource_aba87d01562f8cd2cd4df59fb2082148c_icgraph.png" border="0" usemap="#aclassDevicePowerSource_aba87d01562f8cd2cd4df59fb2082148c_icgraph" alt=""/></div>
+<map name="aclassDevicePowerSource_aba87d01562f8cd2cd4df59fb2082148c_icgraph" id="aclassDevicePowerSource_aba87d01562f8cd2cd4df59fb2082148c_icgraph">
+<area shape="rect" title=" " alt="" coords="495,5,653,45"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,13,447,38"/>
+<area shape="poly" title=" " alt="" coords="481,28,447,28,447,23,481,23"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,13,283,38"/>
+<area shape="poly" title=" " alt="" coords="317,28,283,28,283,23,317,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="95,28,60,28,60,23,95,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a70244b3d243c92bb7061c32aa8ae9d45" name="a70244b3d243c92bb7061c32aa8ae9d45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70244b3d243c92bb7061c32aa8ae9d45">&#9670;&#160;</a></span>SetChangeCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DevicePowerSource::SetChangeCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDevicePowerSource.html#abbeab8751e87d571121fe90d91f67457">DeviceCallback_fn</a>&#160;</td>
+          <td class="paramname"><em>aChanged_CB</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevicePowerSource_a70244b3d243c92bb7061c32aa8ae9d45_icgraph.png" border="0" usemap="#aclassDevicePowerSource_a70244b3d243c92bb7061c32aa8ae9d45_icgraph" alt=""/></div>
+<map name="aclassDevicePowerSource_a70244b3d243c92bb7061c32aa8ae9d45_icgraph" id="aclassDevicePowerSource_a70244b3d243c92bb7061c32aa8ae9d45_icgraph">
+<area shape="rect" title=" " alt="" coords="495,5,653,45"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,13,447,38"/>
+<area shape="poly" title=" " alt="" coords="481,28,447,28,447,23,481,23"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,13,283,38"/>
+<area shape="poly" title=" " alt="" coords="317,28,283,28,283,23,317,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="95,28,60,28,60,23,95,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acf5b30c8055494c1ab0e58bde037ab25" name="acf5b30c8055494c1ab0e58bde037ab25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5b30c8055494c1ab0e58bde037ab25">&#9670;&#160;</a></span>SetDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DevicePowerSource::SetDescription </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>aDescription</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56409fb7b2a5efedd8f9c19a53235542" name="a56409fb7b2a5efedd8f9c19a53235542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56409fb7b2a5efedd8f9c19a53235542">&#9670;&#160;</a></span>SetEndpointList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DevicePowerSource::SetEndpointList </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> &gt;&#160;</td>
+          <td class="paramname"><em>mEndpointList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevicePowerSource_a56409fb7b2a5efedd8f9c19a53235542_icgraph.png" border="0" usemap="#aclassDevicePowerSource_a56409fb7b2a5efedd8f9c19a53235542_icgraph" alt=""/></div>
+<map name="aclassDevicePowerSource_a56409fb7b2a5efedd8f9c19a53235542_icgraph" id="aclassDevicePowerSource_a56409fb7b2a5efedd8f9c19a53235542_icgraph">
+<area shape="rect" title=" " alt="" coords="495,5,653,45"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,13,447,38"/>
+<area shape="poly" title=" " alt="" coords="481,28,447,28,447,23,481,23"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,13,283,38"/>
+<area shape="poly" title=" " alt="" coords="317,28,283,28,283,23,317,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="95,28,60,28,60,23,95,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a29796c66378f20fa31b3fa6a12683da4" name="a29796c66378f20fa31b3fa6a12683da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29796c66378f20fa31b3fa6a12683da4">&#9670;&#160;</a></span>Changed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDevicePowerSource.html#a4ba2435cd0cac2bb85de59c01fae798c">DevicePowerSource::Changed_t</a> DevicePowerSource::Changed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4df6bd3ece29add991d64ca4aac96ee" name="aa4df6bd3ece29add991d64ca4aac96ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4df6bd3ece29add991d64ca4aac96ee">&#9670;&#160;</a></span>mBatChargeLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t DevicePowerSource::mBatChargeLevel = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8c60267d440c965eb44821c3081cb97" name="af8c60267d440c965eb44821c3081cb97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8c60267d440c965eb44821c3081cb97">&#9670;&#160;</a></span>mChanged_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDevicePowerSource.html#abbeab8751e87d571121fe90d91f67457">DeviceCallback_fn</a> DevicePowerSource::mChanged_CB</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab15aae93ab62900c0e1b516a250f11c7" name="ab15aae93ab62900c0e1b516a250f11c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab15aae93ab62900c0e1b516a250f11c7">&#9670;&#160;</a></span>mDescription</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DevicePowerSource::mDescription = &quot;Primary Battery&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1579347856168c73dad02f0aa673002c" name="a1579347856168c73dad02f0aa673002c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1579347856168c73dad02f0aa673002c">&#9670;&#160;</a></span>mEndpointList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&gt; DevicePowerSource::mEndpointList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34bc744ca60996644ee514729eae5d20" name="a34bc744ca60996644ee514729eae5d20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34bc744ca60996644ee514729eae5d20">&#9670;&#160;</a></span>mFeatureMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::BitFlags&lt;chip::app::Clusters::PowerSource::Feature&gt; DevicePowerSource::mFeatureMap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2819f4f1b82f3f1d0c61077b9512f7f0" name="a2819f4f1b82f3f1d0c61077b9512f7f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2819f4f1b82f3f1d0c61077b9512f7f0">&#9670;&#160;</a></span>mOrder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t DevicePowerSource::mOrder = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38cfa341ed67592a6448f2ebd473dd39" name="a38cfa341ed67592a6448f2ebd473dd39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cfa341ed67592a6448f2ebd473dd39">&#9670;&#160;</a></span>mStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t DevicePowerSource::mStatus = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/examples/bridge-app/linux/include/<a class="el" href="Device_8h_source.html">Device.h</a></li>
+<li>connectedhomeip/examples/bridge-app/linux/<a class="el" href="Device_8cpp.html">Device.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

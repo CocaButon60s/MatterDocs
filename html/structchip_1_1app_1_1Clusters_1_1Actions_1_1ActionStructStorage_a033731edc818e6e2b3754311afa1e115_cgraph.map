@@ -1,0 +1,12 @@
+<map id="chip::app::Clusters::Actions::ActionStructStorage::Set" name="chip::app::Clusters::Actions::ActionStructStorage::Set">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,249,87"/>
+<area shape="rect" id="Node000002" href="$namespacechip.html#a009e55496d7397acfa5202bf871c9908" title=" " alt="" coords="297,47,516,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,65,284,65,284,70,250,70"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097" title=" " alt="" coords="588,5,715,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="506,45,574,31,575,36,507,50"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Span.html#a675272efc7d6fffcb1eb12ad749cb15e" title=" " alt="" coords="564,55,739,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="516,65,550,65,550,70,516,70"/>
+<area shape="rect" id="Node000005" href="$classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8" title=" " alt="" coords="787,80,909,105"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="516,83,564,89,674,93,773,93,773,98,673,99,564,94,516,89"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="739,76,773,80,773,86,739,81"/>
+</map>

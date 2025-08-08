@@ -1,0 +1,11 @@
+<map id="chip::IsValidVendorId" name="chip::IsValidVendorId">
+<area shape="rect" id="Node000001" title=" " alt="" coords="484,62,641,87"/>
+<area shape="rect" id="Node000002" href="$namespacechip.html#a793b88e663c13e4deba835fb5512254c" title=" " alt="" coords="262,13,431,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="493,62,403,41,404,35,494,56"/>
+<area shape="rect" id="Node000004" href="$namespacechip.html#a0add696d05aac55f86a4d664cdb37238" title=" " alt="" coords="267,62,426,87"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="470,77,426,77,426,72,470,72"/>
+<area shape="rect" id="Node000005" href="$namespacechip.html#a13acf9a860aae53fe107f2745562e450" title=" " alt="" coords="257,111,436,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="494,93,404,114,403,109,493,88"/>
+<area shape="rect" id="Node000003" href="$structchip_1_1app_1_1ConcreteAttributePath.html#a07de48632dba56cc39b36bfb28b233a4" title=" " alt="" coords="5,5,209,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="248,28,210,28,210,23,248,23"/>
+</map>

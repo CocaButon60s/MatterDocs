@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::DeviceLayer::NetworkInterface 構造体</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1DeviceLayer.html">DeviceLayer</a></li><li class="navelem"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html">NetworkInterface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="structchip_1_1DeviceLayer_1_1NetworkInterface-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::DeviceLayer::NetworkInterface 構造体</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="DiagnosticDataProvider_8h_source.html">DiagnosticDataProvider.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::DeviceLayer::NetworkInterface の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="structchip_1_1DeviceLayer_1_1NetworkInterface__inherit__graph.png" border="0" usemap="#achip_1_1DeviceLayer_1_1NetworkInterface_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1DeviceLayer_1_1NetworkInterface_inherit__map" id="achip_1_1DeviceLayer_1_1NetworkInterface_inherit__map">
+<area shape="rect" title=" " alt="" coords="53,93,200,133"/>
+<area shape="rect" title=" " alt="" coords="5,5,248,45"/>
+<area shape="poly" title=" " alt="" coords="129,59,129,93,124,93,124,59"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::DeviceLayer::NetworkInterface 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="structchip_1_1DeviceLayer_1_1NetworkInterface__coll__graph.png" border="0" usemap="#achip_1_1DeviceLayer_1_1NetworkInterface_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1DeviceLayer_1_1NetworkInterface_coll__map" id="achip_1_1DeviceLayer_1_1NetworkInterface_coll__map">
+<area shape="rect" title=" " alt="" coords="420,44,567,84"/>
+<area shape="poly" title=" " alt="" coords="464,28,474,20,493,17,510,19,521,25,525,34,524,44,518,43,520,35,517,29,508,25,493,23,477,25,467,32"/>
+<area shape="rect" title=" " alt="" coords="5,15,248,55"/>
+<area shape="poly" title=" " alt="" coords="262,40,396,51,420,53,419,58,396,56,262,46"/>
+<area shape="rect" href="classchip_1_1Span.html" title=" " alt="" coords="25,79,228,105"/>
+<area shape="poly" title=" " alt="" coords="242,89,318,86,396,80,419,77,420,82,396,85,318,92,242,95"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a765edd752fdc6ee98686a18767adc884" id="r_a765edd752fdc6ee98686a18767adc884"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html#a765edd752fdc6ee98686a18767adc884">Name</a> [Inet::InterfaceId::kMaxIfNameLength]</td></tr>
+<tr class="separator:a765edd752fdc6ee98686a18767adc884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf204283d69b4765d40dd556b9942ed1" id="r_adf204283d69b4765d40dd556b9942ed1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html#adf204283d69b4765d40dd556b9942ed1">MacAddress</a> [<a class="el" href="namespacechip_1_1DeviceLayer.html#af94fa9ba326b339facafbd7cc2e589cb">kMaxHardwareAddrSize</a>]</td></tr>
+<tr class="separator:adf204283d69b4765d40dd556b9942ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0625b944d38689a415dd696c24bb6b9c" id="r_a0625b944d38689a415dd696c24bb6b9c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html#a0625b944d38689a415dd696c24bb6b9c">Ipv4AddressesBuffer</a> [<a class="el" href="namespacechip_1_1DeviceLayer.html#ac0f15d7ecda126b65a015d88e6f15b6f">kMaxIPv4AddrCount</a>][<a class="el" href="namespacechip_1_1DeviceLayer.html#a5b092c5ba9d4e5af4c065561b6928b42">kMaxIPv4AddrSize</a>]</td></tr>
+<tr class="separator:a0625b944d38689a415dd696c24bb6b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198258a64678e223fe947fb19714dc15" id="r_a198258a64678e223fe947fb19714dc15"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html#a198258a64678e223fe947fb19714dc15">Ipv6AddressesBuffer</a> [<a class="el" href="namespacechip_1_1DeviceLayer.html#a88f7ce13188f6f973c9cb5482fef7179">kMaxIPv6AddrCount</a>][<a class="el" href="namespacechip_1_1DeviceLayer.html#ab229c4f750e60171d15477565b4c8d15">kMaxIPv6AddrSize</a>]</td></tr>
+<tr class="separator:a198258a64678e223fe947fb19714dc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a518b06c04db0f630f5731ebdb134d" id="r_a65a518b06c04db0f630f5731ebdb134d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">chip::ByteSpan</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html#a65a518b06c04db0f630f5731ebdb134d">Ipv4AddressSpans</a> [<a class="el" href="namespacechip_1_1DeviceLayer.html#ac0f15d7ecda126b65a015d88e6f15b6f">kMaxIPv4AddrCount</a>]</td></tr>
+<tr class="separator:a65a518b06c04db0f630f5731ebdb134d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0453b7285a9258de703b5db0e7c900b" id="r_af0453b7285a9258de703b5db0e7c900b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">chip::ByteSpan</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html#af0453b7285a9258de703b5db0e7c900b">Ipv6AddressSpans</a> [<a class="el" href="namespacechip_1_1DeviceLayer.html#a88f7ce13188f6f973c9cb5482fef7179">kMaxIPv6AddrCount</a>]</td></tr>
+<tr class="separator:af0453b7285a9258de703b5db0e7c900b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3092a336ae071288801b3be8c04615" id="r_add3092a336ae071288801b3be8c04615"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html">NetworkInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html#add3092a336ae071288801b3be8c04615">Next</a> = nullptr</td></tr>
+<tr class="separator:add3092a336ae071288801b3be8c04615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a0625b944d38689a415dd696c24bb6b9c" name="a0625b944d38689a415dd696c24bb6b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0625b944d38689a415dd696c24bb6b9c">&#9670;&#160;</a></span>Ipv4AddressesBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t chip::DeviceLayer::NetworkInterface::Ipv4AddressesBuffer[<a class="el" href="namespacechip_1_1DeviceLayer.html#ac0f15d7ecda126b65a015d88e6f15b6f">kMaxIPv4AddrCount</a>][<a class="el" href="namespacechip_1_1DeviceLayer.html#a5b092c5ba9d4e5af4c065561b6928b42">kMaxIPv4AddrSize</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65a518b06c04db0f630f5731ebdb134d" name="a65a518b06c04db0f630f5731ebdb134d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65a518b06c04db0f630f5731ebdb134d">&#9670;&#160;</a></span>Ipv4AddressSpans</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">chip::ByteSpan</a> chip::DeviceLayer::NetworkInterface::Ipv4AddressSpans[<a class="el" href="namespacechip_1_1DeviceLayer.html#ac0f15d7ecda126b65a015d88e6f15b6f">kMaxIPv4AddrCount</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a198258a64678e223fe947fb19714dc15" name="a198258a64678e223fe947fb19714dc15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198258a64678e223fe947fb19714dc15">&#9670;&#160;</a></span>Ipv6AddressesBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t chip::DeviceLayer::NetworkInterface::Ipv6AddressesBuffer[<a class="el" href="namespacechip_1_1DeviceLayer.html#a88f7ce13188f6f973c9cb5482fef7179">kMaxIPv6AddrCount</a>][<a class="el" href="namespacechip_1_1DeviceLayer.html#ab229c4f750e60171d15477565b4c8d15">kMaxIPv6AddrSize</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0453b7285a9258de703b5db0e7c900b" name="af0453b7285a9258de703b5db0e7c900b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0453b7285a9258de703b5db0e7c900b">&#9670;&#160;</a></span>Ipv6AddressSpans</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">chip::ByteSpan</a> chip::DeviceLayer::NetworkInterface::Ipv6AddressSpans[<a class="el" href="namespacechip_1_1DeviceLayer.html#a88f7ce13188f6f973c9cb5482fef7179">kMaxIPv6AddrCount</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf204283d69b4765d40dd556b9942ed1" name="adf204283d69b4765d40dd556b9942ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf204283d69b4765d40dd556b9942ed1">&#9670;&#160;</a></span>MacAddress</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t chip::DeviceLayer::NetworkInterface::MacAddress[<a class="el" href="namespacechip_1_1DeviceLayer.html#af94fa9ba326b339facafbd7cc2e589cb">kMaxHardwareAddrSize</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a765edd752fdc6ee98686a18767adc884" name="a765edd752fdc6ee98686a18767adc884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a765edd752fdc6ee98686a18767adc884">&#9670;&#160;</a></span>Name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char chip::DeviceLayer::NetworkInterface::Name[Inet::InterfaceId::kMaxIfNameLength]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add3092a336ae071288801b3be8c04615" name="add3092a336ae071288801b3be8c04615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add3092a336ae071288801b3be8c04615">&#9670;&#160;</a></span>Next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html">NetworkInterface</a>* chip::DeviceLayer::NetworkInterface::Next = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/include/platform/<a class="el" href="DiagnosticDataProvider_8h_source.html">DiagnosticDataProvider.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

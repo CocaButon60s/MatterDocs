@@ -1,0 +1,7 @@
+<map id="chip::app::InteractionModelEngine::GetGuaranteedReadRequestsPerFabric" name="chip::app::InteractionModelEngine::GetGuaranteedReadRequestsPerFabric">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,34,272,89"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1app_1_1InteractionModelEngine.html#a397d3ffd1319196e981d9a09e10854da" title=" " alt="" coords="348,5,559,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,43,334,36,334,42,273,49"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1app_1_1InteractionModelEngine.html#a74181176f5b483e24a374dc61360b150" title=" " alt="" coords="320,70,587,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="273,74,307,78,306,83,272,79"/>
+</map>

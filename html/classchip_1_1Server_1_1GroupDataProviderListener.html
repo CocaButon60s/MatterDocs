@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::Server::GroupDataProviderListener クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="classchip_1_1Server.html">Server</a></li><li class="navelem"><a class="el" href="classchip_1_1Server_1_1GroupDataProviderListener.html">GroupDataProviderListener</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classchip_1_1Server_1_1GroupDataProviderListener-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::Server::GroupDataProviderListener クラス<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+chip::Server::GroupDataProviderListener の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_1_1GroupDataProviderListener__inherit__graph.png" border="0" usemap="#achip_1_1Server_1_1GroupDataProviderListener_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1Server_1_1GroupDataProviderListener_inherit__map" id="achip_1_1Server_1_1GroupDataProviderListener_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,93,236,133"/>
+<area shape="rect" title=" " alt="" coords="7,5,235,45"/>
+<area shape="poly" title=" " alt="" coords="123,59,123,93,118,93,118,59"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::Server::GroupDataProviderListener 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_1_1GroupDataProviderListener__coll__graph.png" border="0" usemap="#achip_1_1Server_1_1GroupDataProviderListener_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1Server_1_1GroupDataProviderListener_coll__map" id="achip_1_1Server_1_1GroupDataProviderListener_coll__map">
+<area shape="rect" title=" " alt="" coords="283,248,513,288"/>
+<area shape="rect" href="classchip_1_1Server.html" title=" " alt="" coords="765,157,863,182"/>
+<area shape="poly" title=" " alt="" coords="526,253,623,237,720,212,758,197,790,180,793,184,760,202,722,217,624,242,527,258"/>
+<area shape="rect" title=" " alt="" coords="5,248,233,288"/>
+<area shape="poly" title=" " alt="" coords="247,265,282,265,282,271,247,271"/>
+<area shape="poly" title=" " alt="" coords="803,196,772,243,749,266,723,284,691,296,657,304,588,308,523,302,465,291,466,285,523,297,589,303,656,298,689,291,720,279,746,262,768,240,799,193"/>
+<area shape="poly" title=" " alt="" coords="784,142,793,134,814,130,831,132,842,139,845,148,839,158,835,155,839,148,838,142,829,137,814,135,796,138,788,146"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html" title=" " alt="" coords="1045,104,1232,144"/>
+<area shape="poly" title=" " alt="" coords="877,156,906,151,1045,132,1046,137,907,156,877,161"/>
+<area shape="rect" href="classchip_1_1TransportMgr.html" title=" " alt="" coords="307,5,489,45"/>
+<area shape="poly" title=" " alt="" coords="503,26,556,32,612,42,669,58,723,80,801,155,797,159,720,85,667,63,611,48,555,37,503,31"/>
+<area shape="rect" title=" " alt="" coords="50,13,189,38"/>
+<area shape="poly" title=" " alt="" coords="203,23,306,23,306,28,203,28"/>
+<area shape="rect" href="classchip_1_1Server_1_1IgnoreRootExpirationValidityPolicy.html" title=" " alt="" coords="309,69,487,109"/>
+<area shape="poly" title=" " alt="" coords="501,95,608,109,722,132,785,154,783,159,721,137,607,114,500,100"/>
+<area shape="rect" title=" " alt="" coords="34,69,205,109"/>
+<area shape="poly" title=" " alt="" coords="219,87,309,87,309,92,219,92"/>
+<area shape="poly" title=" " alt="" coords="1084,152,1022,171,938,178,864,176,864,171,938,173,1021,165,1082,147"/>
+<area shape="rect" title=" " alt="" coords="745,53,883,93"/>
+<area shape="poly" title=" " alt="" coords="897,83,1045,107,1044,112,896,89"/>
+<area shape="rect" href="classchip_1_1TestEventTriggerDelegate.html" title=" " alt="" coords="287,134,509,159"/>
+<area shape="poly" title=" " alt="" coords="523,151,765,164,764,169,523,156"/>
+<area shape="rect" href="classchip_1_1Inet_1_1InterfaceId.html" title=" " alt="" coords="318,183,478,209"/>
+<area shape="poly" title=" " alt="" coords="492,193,602,190,721,181,764,176,765,181,722,187,602,195,492,198"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0efb49502d143301ec756882921d1dbf" id="r_a0efb49502d143301ec756882921d1dbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server_1_1GroupDataProviderListener.html#a0efb49502d143301ec756882921d1dbf">GroupDataProviderListener</a> ()</td></tr>
+<tr class="separator:a0efb49502d143301ec756882921d1dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91de1f8ea9efa8255a07a6af7426da66" id="r_a91de1f8ea9efa8255a07a6af7426da66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server_1_1GroupDataProviderListener.html#a91de1f8ea9efa8255a07a6af7426da66">Init</a> (<a class="el" href="classchip_1_1Server.html">Server</a> *server)</td></tr>
+<tr class="separator:a91de1f8ea9efa8255a07a6af7426da66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc25288fa8aa29337aeb316c2c8e644" id="r_a3cc25288fa8aa29337aeb316c2c8e644"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server_1_1GroupDataProviderListener.html#a3cc25288fa8aa29337aeb316c2c8e644">OnGroupAdded</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">chip::FabricIndex</a> fabric_index, const Credentials::GroupDataProvider::GroupInfo &amp;new_group) override</td></tr>
+<tr class="separator:a3cc25288fa8aa29337aeb316c2c8e644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75f70aa54f64445786b8c7cdd0791ed" id="r_af75f70aa54f64445786b8c7cdd0791ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server_1_1GroupDataProviderListener.html#af75f70aa54f64445786b8c7cdd0791ed">OnGroupRemoved</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">chip::FabricIndex</a> fabric_index, const Credentials::GroupDataProvider::GroupInfo &amp;old_group) override</td></tr>
+<tr class="separator:af75f70aa54f64445786b8c7cdd0791ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:aeb67c2ecb29407ffb4cfe5bd148fb39a" id="r_aeb67c2ecb29407ffb4cfe5bd148fb39a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Server.html">Server</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Server_1_1GroupDataProviderListener.html#aeb67c2ecb29407ffb4cfe5bd148fb39a">mServer</a></td></tr>
+<tr class="separator:aeb67c2ecb29407ffb4cfe5bd148fb39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a0efb49502d143301ec756882921d1dbf" name="a0efb49502d143301ec756882921d1dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0efb49502d143301ec756882921d1dbf">&#9670;&#160;</a></span>GroupDataProviderListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::Server::GroupDataProviderListener::GroupDataProviderListener </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a91de1f8ea9efa8255a07a6af7426da66" name="a91de1f8ea9efa8255a07a6af7426da66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91de1f8ea9efa8255a07a6af7426da66">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Server::GroupDataProviderListener::Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Server.html">Server</a> *&#160;</td>
+          <td class="paramname"><em>server</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cc25288fa8aa29337aeb316c2c8e644" name="a3cc25288fa8aa29337aeb316c2c8e644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cc25288fa8aa29337aeb316c2c8e644">&#9670;&#160;</a></span>OnGroupAdded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Server::GroupDataProviderListener::OnGroupAdded </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">chip::FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>fabric_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Credentials::GroupDataProvider::GroupInfo &amp;&#160;</td>
+          <td class="paramname"><em>new_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_1_1GroupDataProviderListener_a3cc25288fa8aa29337aeb316c2c8e644_cgraph.png" border="0" usemap="#aclasschip_1_1Server_1_1GroupDataProviderListener_a3cc25288fa8aa29337aeb316c2c8e644_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_1_1GroupDataProviderListener_a3cc25288fa8aa29337aeb316c2c8e644_cgraph" id="aclasschip_1_1Server_1_1GroupDataProviderListener_a3cc25288fa8aa29337aeb316c2c8e644_cgraph">
+<area shape="rect" title=" " alt="" coords="5,27,236,67"/>
+<area shape="rect" href="classchip_1_1Server.html#a083be7c6cb9061ba50c3cdb09acb6f1c" title=" " alt="" coords="284,5,487,31"/>
+<area shape="poly" title=" " alt="" coords="236,32,270,28,271,33,236,37"/>
+<area shape="rect" href="classchip_1_1Server.html#ab11d7410208d8b707a0b0ebe0a34f857" title=" " alt="" coords="290,55,481,95"/>
+<area shape="poly" title=" " alt="" coords="236,57,276,61,276,66,236,62"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af75f70aa54f64445786b8c7cdd0791ed" name="af75f70aa54f64445786b8c7cdd0791ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75f70aa54f64445786b8c7cdd0791ed">&#9670;&#160;</a></span>OnGroupRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Server::GroupDataProviderListener::OnGroupRemoved </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">chip::FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>fabric_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Credentials::GroupDataProvider::GroupInfo &amp;&#160;</td>
+          <td class="paramname"><em>old_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Server_1_1GroupDataProviderListener_af75f70aa54f64445786b8c7cdd0791ed_cgraph.png" border="0" usemap="#aclasschip_1_1Server_1_1GroupDataProviderListener_af75f70aa54f64445786b8c7cdd0791ed_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Server_1_1GroupDataProviderListener_af75f70aa54f64445786b8c7cdd0791ed_cgraph" id="aclasschip_1_1Server_1_1GroupDataProviderListener_af75f70aa54f64445786b8c7cdd0791ed_cgraph">
+<area shape="rect" title=" " alt="" coords="5,27,236,67"/>
+<area shape="rect" href="classchip_1_1Server.html#a083be7c6cb9061ba50c3cdb09acb6f1c" title=" " alt="" coords="284,5,487,31"/>
+<area shape="poly" title=" " alt="" coords="236,32,270,28,271,33,236,37"/>
+<area shape="rect" href="classchip_1_1Server.html#ab11d7410208d8b707a0b0ebe0a34f857" title=" " alt="" coords="290,55,481,95"/>
+<area shape="poly" title=" " alt="" coords="236,57,276,61,276,66,236,62"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="aeb67c2ecb29407ffb4cfe5bd148fb39a" name="aeb67c2ecb29407ffb4cfe5bd148fb39a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb67c2ecb29407ffb4cfe5bd148fb39a">&#9670;&#160;</a></span>mServer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Server.html">Server</a>* chip::Server::GroupDataProviderListener::mServer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/app/server/<a class="el" href="Server_8h_source.html">Server.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

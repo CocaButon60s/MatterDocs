@@ -1,0 +1,9 @@
+<map id="chip::Platform::ScopedMemoryBufferWithSize::AllocatedSize" name="chip::Platform::ScopedMemoryBufferWithSize::AllocatedSize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="277,69,500,109"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Platform_1_1ScopedMemoryBufferWithSize.html#aee1aec6fabc60b929e30319e74bd8f5d" title=" " alt="" coords="5,5,229,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,69,202,48,203,43,290,63"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Platform_1_1ScopedMemoryBufferWithSize.html#a62dd439fe6aefa15b7944aa7bf8fc24e" title=" " alt="" coords="6,69,229,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="264,92,229,92,229,87,264,87"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Platform_1_1ScopedMemoryBufferWithSize.html#ab82cb35a2251b06bb30abf2616f24caf" title=" " alt="" coords="6,133,229,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="290,115,203,136,202,131,289,110"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="EmberAfEndpointType" name="EmberAfEndpointType">
+<area shape="rect" id="Node000001" title="Endpoint type struct describes clusters that are on the endpoint." alt="" coords="5,93,171,119"/>
+<area shape="rect" id="Node000002" href="$structEmberAfCluster.html" title="Struct describing cluster" alt="" coords="26,5,150,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,45,91,93,85,93,85,45"/>
+</map>

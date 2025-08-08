@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::Access::ExampleAccessRestrictionProvider クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1Access.html">Access</a></li><li class="navelem"><a class="el" href="classchip_1_1Access_1_1ExampleAccessRestrictionProvider.html">ExampleAccessRestrictionProvider</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="classchip_1_1Access_1_1ExampleAccessRestrictionProvider-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::Access::ExampleAccessRestrictionProvider クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="ExampleAccessRestrictionProvider_8h_source.html">ExampleAccessRestrictionProvider.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::Access::ExampleAccessRestrictionProvider の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Access_1_1ExampleAccessRestrictionProvider__inherit__graph.png" border="0" usemap="#achip_1_1Access_1_1ExampleAccessRestrictionProvider_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1Access_1_1ExampleAccessRestrictionProvider_inherit__map" id="achip_1_1Access_1_1ExampleAccessRestrictionProvider_inherit__map">
+<area shape="rect" title=" " alt="" coords="12,93,224,133"/>
+<area shape="rect" href="classchip_1_1Access_1_1AccessRestrictionProvider.html" title=" " alt="" coords="5,5,231,45"/>
+<area shape="poly" title=" " alt="" coords="121,59,121,93,115,93,115,59"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::Access::ExampleAccessRestrictionProvider 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Access_1_1ExampleAccessRestrictionProvider__coll__graph.png" border="0" usemap="#achip_1_1Access_1_1ExampleAccessRestrictionProvider_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1Access_1_1ExampleAccessRestrictionProvider_coll__map" id="achip_1_1Access_1_1ExampleAccessRestrictionProvider_coll__map">
+<area shape="rect" title=" " alt="" coords="1031,80,1243,120"/>
+<area shape="rect" href="classchip_1_1Access_1_1AccessRestrictionProvider.html" title=" " alt="" coords="756,80,981,120"/>
+<area shape="poly" title=" " alt="" coords="995,97,1031,97,1031,103,995,103"/>
+<area shape="rect" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1Listener.html" title=" " alt="" coords="333,44,559,84"/>
+<area shape="poly" title=" " alt="" coords="572,72,756,88,756,93,572,77"/>
+<area shape="poly" title=" " alt="" coords="418,28,428,20,446,17,462,19,472,25,477,34,475,44,470,43,472,35,469,29,460,25,446,23,430,25,421,32"/>
+<area shape="rect" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1StandardAccessRestrictionExceptionChecker.html" title=" " alt="" coords="317,109,575,163"/>
+<area shape="poly" title=" " alt="" coords="588,121,756,107,756,112,589,127"/>
+<area shape="rect" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1AccessRestrictionExceptionChecker.html" title=" " alt="" coords="5,109,268,163"/>
+<area shape="poly" title=" " alt="" coords="282,133,317,133,317,139,282,139"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a28defdbc6f58794554c834acd2c19bad" id="r_a28defdbc6f58794554c834acd2c19bad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1ExampleAccessRestrictionProvider.html#a28defdbc6f58794554c834acd2c19bad">ExampleAccessRestrictionProvider</a> ()</td></tr>
+<tr class="separator:a28defdbc6f58794554c834acd2c19bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c97be216e4c00c42454868571e4c22" id="r_ae1c97be216e4c00c42454868571e4c22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1ExampleAccessRestrictionProvider.html#ae1c97be216e4c00c42454868571e4c22">~ExampleAccessRestrictionProvider</a> ()</td></tr>
+<tr class="separator:ae1c97be216e4c00c42454868571e4c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">chip::Access::AccessRestrictionProvider</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a087adcad07ba32d25cae473afc11d226 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_a087adcad07ba32d25cae473afc11d226"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a087adcad07ba32d25cae473afc11d226">AccessRestrictionProvider</a> ()=default</td></tr>
+<tr class="separator:a087adcad07ba32d25cae473afc11d226 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0710c103cf928ea168a09f1a780182 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_a3e0710c103cf928ea168a09f1a780182"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a3e0710c103cf928ea168a09f1a780182">~AccessRestrictionProvider</a> ()=default</td></tr>
+<tr class="separator:a3e0710c103cf928ea168a09f1a780182 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed4f4375f88925dd06326af7b79d6fc inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_a9ed4f4375f88925dd06326af7b79d6fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a9ed4f4375f88925dd06326af7b79d6fc">AccessRestrictionProvider</a> (const <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">AccessRestrictionProvider</a> &amp;)=delete</td></tr>
+<tr class="separator:a9ed4f4375f88925dd06326af7b79d6fc inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d25dc5769f46a9003564d6a7ea478d9 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_a1d25dc5769f46a9003564d6a7ea478d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">AccessRestrictionProvider</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a1d25dc5769f46a9003564d6a7ea478d9">operator=</a> (const <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">AccessRestrictionProvider</a> &amp;)=delete</td></tr>
+<tr class="separator:a1d25dc5769f46a9003564d6a7ea478d9 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5346f080869d2f7e3381fa2615c742e inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_ac5346f080869d2f7e3381fa2615c742e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#ac5346f080869d2f7e3381fa2615c742e">SetCommissioningEntries</a> (const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;entries)</td></tr>
+<tr class="separator:ac5346f080869d2f7e3381fa2615c742e inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad1eb3fa3d0424fe9e27ecefc65eebe inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_a9ad1eb3fa3d0424fe9e27ecefc65eebe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a9ad1eb3fa3d0424fe9e27ecefc65eebe">SetEntries</a> (const <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>, const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;entries)</td></tr>
+<tr class="separator:a9ad1eb3fa3d0424fe9e27ecefc65eebe inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae932ff87e6ef11730020658171a2c723 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_ae932ff87e6ef11730020658171a2c723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#ae932ff87e6ef11730020658171a2c723">AddListener</a> (<a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1Listener.html">Listener</a> &amp;listener)</td></tr>
+<tr class="separator:ae932ff87e6ef11730020658171a2c723 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad793787e19e1b272023aececa7f203f1 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_ad793787e19e1b272023aececa7f203f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#ad793787e19e1b272023aececa7f203f1">RemoveListener</a> (<a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1Listener.html">Listener</a> &amp;listener)</td></tr>
+<tr class="separator:ad793787e19e1b272023aececa7f203f1 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3a7a51dca9a59e2170de77341d8631 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_aaa3a7a51dca9a59e2170de77341d8631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#aaa3a7a51dca9a59e2170de77341d8631">CheckForCommissioning</a> (const SubjectDescriptor &amp;subjectDescriptor, const RequestPath &amp;requestPath)</td></tr>
+<tr class="separator:aaa3a7a51dca9a59e2170de77341d8631 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae367a3233b715bafd18eb4b72ce8d4f0 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_ae367a3233b715bafd18eb4b72ce8d4f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#ae367a3233b715bafd18eb4b72ce8d4f0">Check</a> (const SubjectDescriptor &amp;subjectDescriptor, const RequestPath &amp;requestPath)</td></tr>
+<tr class="separator:ae367a3233b715bafd18eb4b72ce8d4f0 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a25bb1dabeef693db22d312a736d9c8 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_a7a25bb1dabeef693db22d312a736d9c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a7a25bb1dabeef693db22d312a736d9c8">RequestFabricRestrictionReview</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> fabricIndex, const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;arl, uint64_t &amp;token)</td></tr>
+<tr class="separator:a7a25bb1dabeef693db22d312a736d9c8 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d31bc96f7df50a1dd65680f96b9edcf inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_a8d31bc96f7df50a1dd65680f96b9edcf"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a8d31bc96f7df50a1dd65680f96b9edcf">GetCommissioningEntries</a> () const</td></tr>
+<tr class="separator:a8d31bc96f7df50a1dd65680f96b9edcf inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9163d2baed916c1953f7b887edad27 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_a2f9163d2baed916c1953f7b887edad27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2f9163d2baed916c1953f7b887edad27">GetEntries</a> (const <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> fabricIndex, std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;entries) const</td></tr>
+<tr class="separator:a2f9163d2baed916c1953f7b887edad27 inherit pub_methods_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a1027ffc6e69f0eedef868cfee0c4f21e" id="r_a1027ffc6e69f0eedef868cfee0c4f21e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1ExampleAccessRestrictionProvider.html#a1027ffc6e69f0eedef868cfee0c4f21e">DoRequestFabricRestrictionReview</a> (const <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> fabricIndex, uint64_t token, const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;arl)</td></tr>
+<tr class="separator:a1027ffc6e69f0eedef868cfee0c4f21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_types_classchip_1_1Access_1_1AccessRestrictionProvider"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classchip_1_1Access_1_1AccessRestrictionProvider')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">chip::Access::AccessRestrictionProvider</a> に属する継承公開型</td></tr>
+<tr class="memitem:a2a155501ffd0f22f2379008fef9cc9f7 inherit pub_types_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_a2a155501ffd0f22f2379008fef9cc9f7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2a155501ffd0f22f2379008fef9cc9f7">Type</a> : uint8_t { <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2a155501ffd0f22f2379008fef9cc9f7ae1cf92c39e7085818450fdc40f69cf20">kAttributeAccessForbidden</a> = 0
+, <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2a155501ffd0f22f2379008fef9cc9f7a692bacdfb359100d444eb77f54492cd2">kAttributeWriteForbidden</a> = 1
+, <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2a155501ffd0f22f2379008fef9cc9f7afaefaab2ab2106810b30b31ad2172706">kCommandForbidden</a> = 2
+, <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2a155501ffd0f22f2379008fef9cc9f7afcc6a2f36b3015b9eaf2f72cf8bbaee4">kEventForbidden</a> = 3
+ }</td></tr>
+<tr class="separator:a2a155501ffd0f22f2379008fef9cc9f7 inherit pub_types_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classchip_1_1Access_1_1AccessRestrictionProvider"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classchip_1_1Access_1_1AccessRestrictionProvider')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">chip::Access::AccessRestrictionProvider</a> に属する継承静的公開変数類</td></tr>
+<tr class="memitem:a403d6cb7256ff2fb2461346471e33e7c inherit pub_static_attribs_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_a403d6cb7256ff2fb2461346471e33e7c"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a403d6cb7256ff2fb2461346471e33e7c">kNumberOfFabrics</a> = <a class="el" href="CHIPConfig_8h.html#aa4ce0e44e78ed2dd3f279714c194279d">CHIP_CONFIG_MAX_FABRICS</a></td></tr>
+<tr class="separator:a403d6cb7256ff2fb2461346471e33e7c inherit pub_static_attribs_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fd3f5b0b2043ed92e113757f92c7a8 inherit pub_static_attribs_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_a06fd3f5b0b2043ed92e113757f92c7a8"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a06fd3f5b0b2043ed92e113757f92c7a8">kEntriesPerFabric</a> = <a class="el" href="CHIPConfig_8h.html#a14cdbfdc4282bd7f49296752afd4317a">CHIP_CONFIG_ACCESS_RESTRICTION_MAX_ENTRIES_PER_FABRIC</a></td></tr>
+<tr class="separator:a06fd3f5b0b2043ed92e113757f92c7a8 inherit pub_static_attribs_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad954066ba176977f88c44dcfdc13692d inherit pub_static_attribs_classchip_1_1Access_1_1AccessRestrictionProvider" id="r_ad954066ba176977f88c44dcfdc13692d"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#ad954066ba176977f88c44dcfdc13692d">kRestrictionsPerEntry</a> = <a class="el" href="CHIPConfig_8h.html#a15fa4ee4a481fb06e2e51293c2856c4b">CHIP_CONFIG_ACCESS_RESTRICTION_MAX_RESTRICTIONS_PER_ENTRY</a></td></tr>
+<tr class="separator:ad954066ba176977f88c44dcfdc13692d inherit pub_static_attribs_classchip_1_1Access_1_1AccessRestrictionProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a28defdbc6f58794554c834acd2c19bad" name="a28defdbc6f58794554c834acd2c19bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28defdbc6f58794554c834acd2c19bad">&#9670;&#160;</a></span>ExampleAccessRestrictionProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::Access::ExampleAccessRestrictionProvider::ExampleAccessRestrictionProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1c97be216e4c00c42454868571e4c22" name="ae1c97be216e4c00c42454868571e4c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c97be216e4c00c42454868571e4c22">&#9670;&#160;</a></span>~ExampleAccessRestrictionProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::Access::ExampleAccessRestrictionProvider::~ExampleAccessRestrictionProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a1027ffc6e69f0eedef868cfee0c4f21e" name="a1027ffc6e69f0eedef868cfee0c4f21e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1027ffc6e69f0eedef868cfee0c4f21e">&#9670;&#160;</a></span>DoRequestFabricRestrictionReview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Access::ExampleAccessRestrictionProvider::DoRequestFabricRestrictionReview </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>fabricIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initiate a review of the access restrictions for a fabric. This method should be implemented by the platform and be non-blocking.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fabricIndex</td><td>The index of the fabric requesting a review. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>The unique token for the review, which can be matched to a review update event. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arl</td><td>An optinal list of access restriction entries to review. If null, all entries will be reviewed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_NO_ERROR if the review was successfully requested, or an error code if the request failed. </dd></dl>
+
+<p><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a20935952ad311cdd8d15a02029ec97dd">chip::Access::AccessRestrictionProvider</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Access_1_1ExampleAccessRestrictionProvider_a1027ffc6e69f0eedef868cfee0c4f21e_cgraph.png" border="0" usemap="#aclasschip_1_1Access_1_1ExampleAccessRestrictionProvider_a1027ffc6e69f0eedef868cfee0c4f21e_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Access_1_1ExampleAccessRestrictionProvider_a1027ffc6e69f0eedef868cfee0c4f21e_cgraph" id="aclasschip_1_1Access_1_1ExampleAccessRestrictionProvider_a1027ffc6e69f0eedef868cfee0c4f21e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,268,60"/>
+<area shape="rect" href="namespacechip_1_1app.html#a7822a7eff2758653a1309c90c7144a7e" title="Log an event via a EventLoggingDelegate, with options." alt="" coords="316,20,465,45"/>
+<area shape="poly" title=" " alt="" coords="268,30,302,30,302,35,268,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/examples/platform/linux/<a class="el" href="ExampleAccessRestrictionProvider_8h_source.html">ExampleAccessRestrictionProvider.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

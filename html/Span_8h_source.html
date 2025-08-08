@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/support/Span.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_1d1f3af32c41ad09e7d154e58874adc8.html">support</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Span.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Span_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2021 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;lib/core/Unchecked.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="code" href="CodeUtils_8h.html">lib/support/CodeUtils.h</a>&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">class </span>FixedSpan;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html">   40</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1Span.html">Span</a></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a47840550e5bc12791bc5d2d28bb09bd0">   43</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classchip_1_1Span.html#a47840550e5bc12791bc5d2d28bb09bd0">pointer</a>   = T *;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#af6a2a251dea0e5ee157f031bd74f574a">   44</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classchip_1_1Span.html#af6a2a251dea0e5ee157f031bd74f574a">reference</a> = T &amp;;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#ab21bf9745daad52b8ae0344bd1a0827c">   46</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1Span.html#ab21bf9745daad52b8ae0344bd1a0827c">Span</a>() : <a class="code hl_variable" href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">mDataBuf</a>(nullptr), <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a>(0) {}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// Note: VerifyOrDie cannot be used inside a constexpr function, because it uses</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// &quot;static&quot; on some platforms (e.g. when CHIP_PW_TOKENIZER_LOGGING is true)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// and that&#39;s not allowed in constexpr functions.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#ac7bdcb071220cbc6af8623d84b32f085">   52</a></span>    <a class="code hl_function" href="classchip_1_1Span.html#ac7bdcb071220cbc6af8623d84b32f085">Span</a>(<a class="code hl_typedef" href="classchip_1_1Span.html#a47840550e5bc12791bc5d2d28bb09bd0">pointer</a> databuf, <span class="keywordtype">size_t</span> datalen) : <a class="code hl_variable" href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">mDataBuf</a>(databuf), <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a>(datalen)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_define" href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a>(databuf != <span class="keyword">nullptr</span> || datalen == 0); <span class="comment">// not constexpr on some platforms</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// The only valid length for a span pointing to null is 0 (i.e. it&#39;s an empty span).  Disallow</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// construction of spans from compile-time-known null.  The default constructor should be used</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// to construct empty Spans. All other cases involving null are invalid.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#ac6df70b658cb5b9d5e275a31802721e0">   60</a></span>    <a class="code hl_function" href="classchip_1_1Span.html#ac6df70b658cb5b9d5e275a31802721e0">Span</a>(std::nullptr_t null, <span class="keywordtype">size_t</span> <a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// Creates a Span view of a plain array.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// Note that this constructor template explicitly excludes `const char[]`, see below.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">template</span> &lt;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keyword">class </span>U, <span class="keywordtype">size_t</span> N,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        std::enable_if_t&lt;!std::is_same_v&lt;U, const char&gt; &amp;&amp; <span class="keyword">sizeof</span>(U) == <span class="keyword">sizeof</span>(T) &amp;&amp; std::is_convertible_v&lt;U *, T *&gt;, <span class="keywordtype">bool</span>&gt; = <span class="keyword">true</span>&gt;</div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#ae89ad9f56b40f1ce1e0b10f0a07ee270">   68</a></span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> <a class="code hl_function" href="classchip_1_1Span.html#ae89ad9f56b40f1ce1e0b10f0a07ee270">Span</a>(U (&amp;databuf)[N]) : <a class="code hl_variable" href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">mDataBuf</a>(databuf), <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a>(N)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    {}</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// Explicitly disallow the creation of a CharSpan from a `const char[]` to prevent the</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// creation of spans from string literals that incorrectly include the trailing &#39;\0&#39; byte.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// If CharSpan(&quot;Hi!&quot;) were allowed, it would be a span of length 4, not 3 as intended.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// To create a CharSpan literal, use the `_span` operator instead, e.g. &quot;Hi!&quot;_span.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">template</span> &lt;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keyword">class </span>U, <span class="keywordtype">size_t</span> N,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        std::enable_if_t&lt;std::is_same_v&lt;U, const char&gt; &amp;&amp; 1 == <span class="keyword">sizeof</span>(T) &amp;&amp; std::is_convertible_v&lt;const char *, T *&gt;, <span class="keywordtype">bool</span>&gt; = <span class="keyword">true</span>&gt;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#abea660f57265b60d49ea2c3abdb64366">   79</a></span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> <a class="code hl_function" href="classchip_1_1Span.html#abea660f57265b60d49ea2c3abdb64366">Span</a>(U (&amp;databuf)[N]) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">// Creates a (potentially mutable) Span view of an std::array</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> U, <span class="keywordtype">size_t</span> N, <span class="keyword">typename</span> = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt;</div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a804ad5fb3344747e805ceddd51926095">   83</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1Span.html#a804ad5fb3344747e805ceddd51926095">Span</a>(std::array&lt;U, N&gt; &amp; arr) : <a class="code hl_variable" href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">mDataBuf</a>(arr.<a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>()), <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a>(N)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    {}</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> U, <span class="keywordtype">size_t</span> N, <span class="keyword">typename</span> = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a08ae364e6b9a0c825c05aaeb80b5c950">   87</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1Span.html#a08ae364e6b9a0c825c05aaeb80b5c950">Span</a>(std::array&lt;U, N&gt; &amp;&amp; arr) = <span class="keyword">delete</span>; <span class="comment">// would be a view of an rvalue</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="comment">// Creates a Span view of an std::array</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> U, <span class="keywordtype">size_t</span> N, <span class="keyword">typename</span> = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;const U *, T *&gt;::value&gt;&gt;</div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a29ad5e705fdae24a0c470315c9197a2e">   91</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1Span.html#a29ad5e705fdae24a0c470315c9197a2e">Span</a>(<span class="keyword">const</span> std::array&lt;U, N&gt; &amp; arr) : <a class="code hl_variable" href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">mDataBuf</a>(arr.<a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>()), <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a>(N)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    {}</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#adaaf156ea517d2770440ac8a268f68d8">   95</a></span>    <span class="keyword">constexpr</span> <a class="code hl_class" href="classchip_1_1Span.html">Span</a> &amp; <a class="code hl_function" href="classchip_1_1Span.html#adaaf156ea517d2770440ac8a268f68d8">operator=</a>(T (&amp;databuf)[N])</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <a class="code hl_variable" href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">mDataBuf</a> = databuf;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a> = N;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">return</span> (*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">// Allow implicit construction from a Span over a type that matches our</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">// type&#39;s size, if a pointer to the other type can be treated as a pointer</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="comment">// to our type (e.g. other type is same as ours, or is a same-size</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">// subclass).  The size check is really important to make sure we don&#39;t get</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">// confused about where our object boundaries are.</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> U, <span class="keyword">typename</span> = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt;</div>
+<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#ad817b556c36ffcfeaa735430895553c0">  108</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1Span.html#ad817b556c36ffcfeaa735430895553c0">Span</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;U&gt;</a> &amp; other) : <a class="code hl_class" href="classchip_1_1Span.html">Span</a>(other.<a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>(), other.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>())</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    {}</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="comment">// Allow implicit construction from a FixedSpan over a type that matches our</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="comment">// type&#39;s size, if a pointer to the other type can be treated as a pointer</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">// to our type (e.g. other type is same as ours, or is a same-size</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="comment">// subclass).  The size check is really important to make sure we don&#39;t get</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">// confused about where our object boundaries are.</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> U, <span class="keywordtype">size_t</span> N, <span class="keyword">typename</span> = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt;</div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#aca3e640406fcd1538a9e4a988425a98d">  117</a></span>    <span class="keyword">constexpr</span> <span class="keyword">inline</span> <a class="code hl_function" href="classchip_1_1Span.html#aca3e640406fcd1538a9e4a988425a98d">Span</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1FixedSpan.html">FixedSpan&lt;U, N&gt;</a> &amp; other);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">  119</a></span>    <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1Span.html#a47840550e5bc12791bc5d2d28bb09bd0">pointer</a> <a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">mDataBuf</a>; }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">  120</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a>; }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#ac481725a5153dcf3459b35a62a4e6126">  121</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1Span.html#ac481725a5153dcf3459b35a62a4e6126">empty</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>() == 0; }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#ace0e3d33b7475a2a18a2f53085e5c3d6">  122</a></span>    <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1Span.html#a47840550e5bc12791bc5d2d28bb09bd0">pointer</a> <a class="code hl_function" href="classchip_1_1Span.html#ace0e3d33b7475a2a18a2f53085e5c3d6">begin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>(); }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a5a137e03170d651bd4570aeeb781a66b">  123</a></span>    <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1Span.html#a47840550e5bc12791bc5d2d28bb09bd0">pointer</a> <a class="code hl_function" href="classchip_1_1Span.html#a5a137e03170d651bd4570aeeb781a66b">end</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>() + <a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>(); }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="comment">// Element accessors, matching the std::span API.</span></div>
+<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#aeeb721c23934ee80e39c2aa3f354c53d">  126</a></span>    <a class="code hl_typedef" href="classchip_1_1Span.html#af6a2a251dea0e5ee157f031bd74f574a">reference</a> <a class="code hl_function" href="classchip_1_1Span.html#aeeb721c23934ee80e39c2aa3f354c53d">operator[]</a>(<span class="keywordtype">size_t</span> index)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <a class="code hl_define" href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a>(index &lt; <a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>()); <span class="comment">// not constexpr on some platforms</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>()[index];</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
+</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#ab89933b9b74bf625d7cf021fe2cafb40">  131</a></span>    <a class="code hl_typedef" href="classchip_1_1Span.html#af6a2a251dea0e5ee157f031bd74f574a">reference</a> <a class="code hl_function" href="classchip_1_1Span.html#ab89933b9b74bf625d7cf021fe2cafb40">front</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (*<span class="keyword">this</span>)[0]; }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a24ca1c168fcae67c684073fefbfe5b26">  132</a></span>    <a class="code hl_typedef" href="classchip_1_1Span.html#af6a2a251dea0e5ee157f031bd74f574a">reference</a> <a class="code hl_function" href="classchip_1_1Span.html#a24ca1c168fcae67c684073fefbfe5b26">back</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (*<span class="keyword">this</span>)[<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>() - 1]; }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a8e6c14f3b40bbc5e6331b2bd4fcfb9d8">  134</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1Span.html#a8e6c14f3b40bbc5e6331b2bd4fcfb9d8">data_equal</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;const T&gt;</a> &amp; other)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keywordflow">return</span> (<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>() == other.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>()) &amp;&amp; (<a class="code hl_function" href="classchip_1_1Span.html#ac481725a5153dcf3459b35a62a4e6126">empty</a>() || (memcmp(<a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>(), other.<a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>(), <a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>() * <span class="keyword">sizeof</span>(T)) == 0));</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
+</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#aef717fe2acc3794973e686fe25b780f6">  139</a></span>    <a class="code hl_class" href="classchip_1_1Span.html">Span</a> <a class="code hl_function" href="classchip_1_1Span.html#aef717fe2acc3794973e686fe25b780f6">SubSpan</a>(<span class="keywordtype">size_t</span> offset, <span class="keywordtype">size_t</span> length)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <a class="code hl_define" href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a>(offset &lt;= <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <a class="code hl_define" href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a>(length &lt;= <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a> - offset);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1Span.html#ab21bf9745daad52b8ae0344bd1a0827c">Span</a>(<a class="code hl_variable" href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">mDataBuf</a> + offset, length);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    }</div>
+</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="foldopen" id="foldopen00146" data-start="{" data-end="}">
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a48de8a80fdb01e73332755b9e0716775">  146</a></span>    <a class="code hl_class" href="classchip_1_1Span.html">Span</a> <a class="code hl_function" href="classchip_1_1Span.html#a48de8a80fdb01e73332755b9e0716775">SubSpan</a>(<span class="keywordtype">size_t</span> offset)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <a class="code hl_define" href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a>(offset &lt;= <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a>);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1Span.html#ab21bf9745daad52b8ae0344bd1a0827c">Span</a>(<a class="code hl_variable" href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">mDataBuf</a> + offset, <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a> - offset);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    }</div>
+</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="comment">// Allow reducing the size of a span.</span></div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a675272efc7d6fffcb1eb12ad749cb15e">  153</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1Span.html#a675272efc7d6fffcb1eb12ad749cb15e">reduce_size</a>(<span class="keywordtype">size_t</span> new_size)</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <a class="code hl_define" href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a>(new_size &lt;= <a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>());</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a> = new_size;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
+</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="comment">// Allow creating ByteSpans and CharSpans from ZCL octet strings, so we</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="comment">// don&#39;t have to reinvent it various places.</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">template</span> &lt;<span class="keyword">class </span>U,</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>              <span class="keyword">typename</span> = std::enable_if_t&lt;std::is_same&lt;uint8_t, std::remove_const_t&lt;U&gt;&gt;::value &amp;&amp;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                                          (std::is_same&lt;const uint8_t, T&gt;::value || std::is_same&lt;const char, T&gt;::value)&gt;&gt;</div>
+<div class="foldopen" id="foldopen00164" data-start="{" data-end="}">
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#aafe0e73fec20468d61dccf844a8c84cb">  164</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="classchip_1_1Span.html">Span</a> <a class="code hl_function" href="classchip_1_1Span.html#aafe0e73fec20468d61dccf844a8c84cb">fromZclString</a>(U * bytes)</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordtype">size_t</span> length = bytes[0];</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="comment">// Treat 0xFF (aka &quot;null string&quot;) as zero-length.</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keywordflow">if</span> (length == 0xFF)</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            length = 0;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="comment">// Need reinterpret_cast if we&#39;re a CharSpan.</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1Span.html#ab21bf9745daad52b8ae0344bd1a0827c">Span</a>(<span class="keyword">reinterpret_cast&lt;</span>T *<span class="keyword">&gt;</span>(&amp;bytes[1]), length);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    }</div>
+</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="comment">// Creates a CharSpan from a null-terminated C character string.</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="comment">// Note that for string literals, the user-defined `_span` string</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="comment">// literal operator should be used instead, e.g. `&quot;Hello&quot;_span`.</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    template &lt;class U, typename = std::enable_if_t&lt;std::is_same&lt;T, const U&gt;::value &amp;&amp; std::is_same&lt;const char, T&gt;::value&gt;&gt;</div>
+<div class="foldopen" id="foldopen00181" data-start="{" data-end="}">
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a2ca59742876e0718d416201f2e08788e">  181</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="classchip_1_1Span.html">Span</a> <a class="code hl_function" href="classchip_1_1Span.html#a2ca59742876e0718d416201f2e08788e">fromCharString</a>(U * chars)</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1Span.html#ab21bf9745daad52b8ae0344bd1a0827c">Span</a>(chars, strlen(chars));</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
+</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="comment">// operator== explicitly not implemented on Span, because its meaning</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="comment">// (equality of data, or pointing to the same buffer and same length) is</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="comment">// ambiguous.  Use data_equal if testing for equality of data.</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a9d9b89f0f47d1c44a0065514baa8da55">  190</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1Span.html#a9d9b89f0f47d1c44a0065514baa8da55">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;U&gt;</a> &amp; other) <span class="keyword">const</span> = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="comment">// Creates a Span without checking whether databuf is a null pointer.</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="comment">// Note: The normal (checked) constructor should be used for general use;</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="comment">// this overload exists for special use cases where databuf is guaranteed</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="comment">// to be valid (not null) and a constexpr constructor is required.</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="comment">// https://gcc.gnu.org/bugzilla/show_bug.cgi?id=61648 prevents making</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="comment">// operator&quot;&quot;_span a friend (and this constructor private).</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#aaa8995c41a3295e617273c4399f9de59">  201</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1Span.html#aaa8995c41a3295e617273c4399f9de59">Span</a>(UncheckedType tag, <a class="code hl_typedef" href="classchip_1_1Span.html#a47840550e5bc12791bc5d2d28bb09bd0">pointer</a> databuf, <span class="keywordtype">size_t</span> datalen) : <a class="code hl_variable" href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">mDataBuf</a>(databuf), <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a>(datalen) {}</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">  204</a></span>    <a class="code hl_typedef" href="classchip_1_1Span.html#a47840550e5bc12791bc5d2d28bb09bd0">pointer</a> <a class="code hl_variable" href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">mDataBuf</a>;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">  205</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">mDataLen</a>;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>};</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">// Template deduction guides to allow construction of Span from a pointer or</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">// array without having to specify the type of the entries explicitly.</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="namespacechip.html#a646a8709f354588fe710e566eebbbf86">  211</a></span><a class="code hl_class" href="classchip_1_1Span.html">Span</a>(T * data, <span class="keywordtype">size_t</span> size) -&gt; <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;T&gt;</a>;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="namespacechip.html#afb4d60f6b483d61460b1270799defdf2">  213</a></span><a class="code hl_class" href="classchip_1_1Span.html">Span</a>(T (&amp;databuf)[N]) -&gt; <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;T&gt;</a>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="namespacechip.html#a9ba27c65e39f6626068b1ac14236db87">  215</a></span><a class="code hl_class" href="classchip_1_1Span.html">Span</a>(std::array&lt;T, N&gt; &amp; data) -&gt; <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;T&gt;</a>;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="namespacechip.html#ab04200650534af0485c3e55a7074f4fd">  217</a></span><a class="code hl_class" href="classchip_1_1Span.html">Span</a>(<span class="keyword">const</span> std::array&lt;T, N&gt; &amp; data) -&gt; <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;const T&gt;</a>;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="foldopen" id="foldopen00219" data-start="{" data-end="}">
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="namespacechip_1_1literals.html">  219</a></span><span class="keyword">inline</span> <span class="keyword">namespace </span>literals {</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="foldopen" id="foldopen00221" data-start="{" data-end="}">
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="namespacechip_1_1literals.html#a0410d1d15f4c966a7e4677037fab3c63">  221</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;const char&gt;</a> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span>_span(<span class="keyword">const</span> <span class="keywordtype">char</span> * literal, <span class="keywordtype">size_t</span> size)</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>{</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;const char&gt;</a>(Unchecked, literal, size);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>}</div>
+</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>} <span class="comment">// namespace literals</span></div>
+</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="foldopen" id="foldopen00228" data-start="{" data-end="}">
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="namespacechip_1_1detail.html">  228</a></span><span class="keyword">namespace </span>detail {</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">// To make FixedSpan (specifically various FixedByteSpan types) default constructible</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">// without creating a weird &quot;empty() == true but size() != 0&quot; state, we need an</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">// appropriate sized array of zeroes. With a naive definition like</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">//      template &lt;class T, size_t N&gt; constexpr T kZero[N] {};</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">// we would end up with separate zero arrays for each size, and might also accidentally</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">// increase the read-only data size of the binary by a large amount. Instead, we define</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">// a per-type limit for the zero array, FixedSpan won&#39;t be default constructible for</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">// T / N combinations that exceed the limit. The default limit is 0.</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00239" data-start="{" data-end="};">
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="structchip_1_1detail_1_1zero__limit.html">  239</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structchip_1_1detail_1_1zero__limit.html">zero_limit</a> : std::integral_constant&lt;size_t, 0&gt;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>{</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>};</div>
+</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">// FixedByteSpan types up to N=65 currently need to be default-constructible.</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="keyword">template</span> &lt;&gt;</div>
+<div class="foldopen" id="foldopen00245" data-start="{" data-end="};">
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="structchip_1_1detail_1_1zero__limit_3_01uint8__t_01_4.html">  245</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structchip_1_1detail_1_1zero__limit.html">zero_limit</a>&lt;uint8_t&gt; : std::integral_constant&lt;size_t, 65&gt;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>{</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>};</div>
+</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="namespacechip_1_1detail.html#aa1337eb6fb491235a299f5d87dc3552f">  250</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_variable" href="namespacechip_1_1detail.html#aa1337eb6fb491235a299f5d87dc3552f">kZeroes</a>[<a class="code hl_struct" href="structchip_1_1detail_1_1zero__limit.html">zero_limit&lt;T&gt;::value</a>]{};</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="foldopen" id="foldopen00253" data-start="{" data-end="}">
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="namespacechip_1_1detail.html#a32b49f79d50fa238a4d293ed517e774d">  253</a></span><span class="keyword">constexpr</span> T <span class="keyword">const</span> * <a class="code hl_function" href="namespacechip_1_1detail.html#a32b49f79d50fa238a4d293ed517e774d">shared_zeroes</a>()</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>{</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keyword">static_assert</span>(N &lt;= zero_limit&lt;typename std::remove_const&lt;T&gt;::type&gt;::value, <span class="stringliteral">&quot;N exceeds zero_limit&lt;T&gt;&quot;</span>);</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <span class="keywordflow">return</span> kZeroes&lt;typename std::remove_const&lt;T&gt;::type&gt;;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>}</div>
+</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>} <span class="comment">// namespace detail</span></div>
+</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="foldopen" id="foldopen00265" data-start="{" data-end="};">
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html">  265</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1FixedSpan.html">FixedSpan</a></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>{</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">  268</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a>   = T *;</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">  269</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">reference</a> = T &amp;;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="comment">// Creates a FixedSpan pointing to a sequence of zeroes.</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a1b3cc7506fc191438bd3ee8ea07c1df3">  272</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a1b3cc7506fc191438bd3ee8ea07c1df3">FixedSpan</a>() : <a class="code hl_variable" href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">mDataBuf</a>(detail::shared_zeroes&lt;T, N&gt;()) {}</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="comment">// We want to allow construction from things that look like T*, but we want</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="comment">// to make construction from an array use the constructor that asserts the</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="comment">// array is big enough.  This requires that both constructors be templates</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="comment">// (because otherwise the non-template would be favored by overload</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="comment">// resolution, since due to decay to pointer it matches just as well as the</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="comment">// template).</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="comment">// To do that we have a template constructor enabled only when the type</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="comment">// passed to it is a pointer type, and that pointer is to a type that</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="comment">// matches T&#39;s size and can convert to T*.</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keyword">template</span> &lt;<span class="keyword">class </span>U,</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>              <span class="keyword">typename</span> = std::enable_if_t&lt;std::is_pointer&lt;U&gt;::value &amp;&amp; <span class="keyword">sizeof</span>(std::remove_pointer_t&lt;U&gt;) == <span class="keyword">sizeof</span>(T) &amp;&amp;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                                          std::is_convertible&lt;U, T *&gt;::value&gt;&gt;</div>
+<div class="foldopen" id="foldopen00287" data-start="{" data-end="}">
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#ab21d2b93f3bd80f7eeac83367b4df934">  287</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classchip_1_1FixedSpan.html#ab21d2b93f3bd80f7eeac83367b4df934">FixedSpan</a>(U databuf) : <a class="code hl_variable" href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">mDataBuf</a>(databuf)</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    {</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <a class="code hl_define" href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a>(databuf != <span class="keyword">nullptr</span> || N == 0); <span class="comment">// not constexpr on some platforms</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    }</div>
+</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="comment">// FixedSpan does not support an empty / null state.</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a1ff2a201223f406962496a91ed0ca855">  293</a></span>    <a class="code hl_function" href="classchip_1_1FixedSpan.html#a1ff2a201223f406962496a91ed0ca855">FixedSpan</a>(std::nullptr_t null) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> U, <span class="keywordtype">size_t</span> M, <span class="keyword">typename</span> = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt;</div>
+<div class="foldopen" id="foldopen00296" data-start="{" data-end="}">
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a4fed4eba72d4f7950caabe0bb59214b0">  296</a></span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a4fed4eba72d4f7950caabe0bb59214b0">FixedSpan</a>(U (&amp;databuf)[M]) : <a class="code hl_variable" href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">mDataBuf</a>(databuf)</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    {</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        <span class="keyword">static_assert</span>(M &gt;= N, <span class="stringliteral">&quot;Passed-in buffer too small for FixedSpan&quot;</span>);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    }</div>
+</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="comment">// Creates a (potentially mutable) FixedSpan view of an std::array</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> U, <span class="keyword">typename</span> = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt;</div>
+<div class="foldopen" id="foldopen00303" data-start="{" data-end="}">
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a4e7f2f7e65ada6c2bb136b326ffa6d49">  303</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a4e7f2f7e65ada6c2bb136b326ffa6d49">FixedSpan</a>(std::array&lt;U, N&gt; &amp; arr) : <a class="code hl_variable" href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">mDataBuf</a>(arr.<a class="code hl_function" href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33">data</a>())</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    {}</div>
+</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> U, <span class="keyword">typename</span> = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a7f25337214bc0cf3ea106b4c3042d6e2">  307</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a7f25337214bc0cf3ea106b4c3042d6e2">FixedSpan</a>(std::array&lt;U, N&gt; &amp;&amp; arr) = <span class="keyword">delete</span>; <span class="comment">// would be a view of an rvalue</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="comment">// Creates a FixedSpan view of an std::array</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> U, <span class="keyword">typename</span> = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;const U *, T *&gt;::value&gt;&gt;</div>
+<div class="foldopen" id="foldopen00311" data-start="{" data-end="}">
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a8441475f2a0d0c6ea47c71492c501d4d">  311</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a8441475f2a0d0c6ea47c71492c501d4d">FixedSpan</a>(<span class="keyword">const</span> std::array&lt;U, N&gt; &amp; arr) : <a class="code hl_variable" href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">mDataBuf</a>(arr.<a class="code hl_function" href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33">data</a>())</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    {}</div>
+</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <span class="comment">// Allow implicit construction from a FixedSpan of sufficient size over a</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <span class="comment">// type that has the same size as ours, as long as the pointers are convertible.</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> U, <span class="keywordtype">size_t</span> M, <span class="keyword">typename</span> = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt;</div>
+<div class="foldopen" id="foldopen00317" data-start="{" data-end="}">
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#afa036ec48ca589e599c656d1e692f268">  317</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1FixedSpan.html#afa036ec48ca589e599c656d1e692f268">FixedSpan</a>(<a class="code hl_class" href="classchip_1_1FixedSpan.html">FixedSpan&lt;U, M&gt;</a> <span class="keyword">const</span> &amp; other) : <a class="code hl_variable" href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">mDataBuf</a>(other.<a class="code hl_function" href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33">data</a>())</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    {</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <span class="keyword">static_assert</span>(M &gt;= N, <span class="stringliteral">&quot;Passed-in FixedSpan is smaller than we are&quot;</span>);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    }</div>
+</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33">  322</a></span>    <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33">data</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">mDataBuf</a>; }</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a1d4077e0775777dab6baaed9345b89fe">  323</a></span>    <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a1d4077e0775777dab6baaed9345b89fe">begin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">mDataBuf</a>; }</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#ad828dcfa23a8960c8ce6b006dc2487a6">  324</a></span>    <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a> <a class="code hl_function" href="classchip_1_1FixedSpan.html#ad828dcfa23a8960c8ce6b006dc2487a6">end</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">mDataBuf</a> + N; }</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="comment">// The size of a FixedSpan is always N. There is intentially no empty() method.</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a2d8af59ff7ab6ffd3e63b3cd711f34cc">  327</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a2d8af59ff7ab6ffd3e63b3cd711f34cc">size</a>() { <span class="keywordflow">return</span> N; }</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="comment">// Element accessors, matching the std::span API.</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="comment">// VerifyOrDie cannot be used inside a constexpr function, because it uses</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="comment">// &quot;static&quot; on some platforms (e.g. when CHIP_PW_TOKENIZER_LOGGING is true)</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="comment">// and that&#39;s not allowed in constexpr functions.</span></div>
+<div class="foldopen" id="foldopen00333" data-start="{" data-end="}">
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a6aa2794a2520be43e104e6d197452441">  333</a></span>    <a class="code hl_typedef" href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">reference</a> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a6aa2794a2520be43e104e6d197452441">operator[]</a>(<span class="keywordtype">size_t</span> index)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        <a class="code hl_define" href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a>(index &lt; N);</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33">data</a>()[index];</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    }</div>
+</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#af926bdbc37554b7730337ccf6cb31e9c">  338</a></span>    <a class="code hl_typedef" href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">reference</a> <a class="code hl_function" href="classchip_1_1FixedSpan.html#af926bdbc37554b7730337ccf6cb31e9c">front</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (*<span class="keyword">this</span>)[0]; }</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#afe405db027b4bd613ad4d41ecd3790c4">  339</a></span>    <a class="code hl_typedef" href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">reference</a> <a class="code hl_function" href="classchip_1_1FixedSpan.html#afe405db027b4bd613ad4d41ecd3790c4">back</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (*<span class="keyword">this</span>)[<a class="code hl_function" href="classchip_1_1FixedSpan.html#a2d8af59ff7ab6ffd3e63b3cd711f34cc">size</a>() - 1]; }</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
+<div class="foldopen" id="foldopen00341" data-start="{" data-end="}">
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a045c655f139d3969640d6a4c92e451e4">  341</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a045c655f139d3969640d6a4c92e451e4">data_equal</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;const T&gt;</a> &amp; other)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        <span class="keywordflow">return</span> (N == other.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>() &amp;&amp; memcmp(<a class="code hl_function" href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33">data</a>(), other.<a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>(), N * <span class="keyword">sizeof</span>(T)) == 0);</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    }</div>
+</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    <span class="comment">// operator== explicitly not implemented on FixedSpan, because its meaning</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    <span class="comment">// (equality of data, or pointing to the same buffer and same length) is</span></div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="comment">// ambiguous.  Use data_equal if testing for equality of data.</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a4705860ff3347b74e425390bee08e490">  350</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a4705860ff3347b74e425390bee08e490">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;U&gt;</a> &amp; other) <span class="keyword">const</span> = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U, <span class="keywordtype">size_t</span> M&gt;</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#a93a3fbe86a18e7f86746043c0dfbafa7">  352</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1FixedSpan.html#a93a3fbe86a18e7f86746043c0dfbafa7">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1FixedSpan.html">FixedSpan&lt;U, M&gt;</a> &amp; other) <span class="keyword">const</span> = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno"><a class="line" href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">  355</a></span>    <a class="code hl_typedef" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a> <a class="code hl_variable" href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">mDataBuf</a>;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>};</div>
+</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> U, <span class="keywordtype">size_t</span> N, <span class="keyword">typename</span>&gt;</div>
+<div class="foldopen" id="foldopen00360" data-start="{" data-end="}">
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="classchip_1_1Span.html#aca3e640406fcd1538a9e4a988425a98d">  360</a></span><span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1Span.html#ab21bf9745daad52b8ae0344bd1a0827c">Span&lt;T&gt;::Span</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1FixedSpan.html">FixedSpan&lt;U, N&gt;</a> &amp; other) : mDataBuf(other.data()), mDataLen(other.size())</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>{}</div>
+</div>
+</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00364" data-start="{" data-end="}">
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="namespacechip.html#a12d142ef51b455b3d56d5443383f6a8d">  364</a></span>[[deprecated(<span class="stringliteral">&quot;Use !empty()&quot;</span>)]] <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacechip.html#a12d142ef51b455b3d56d5443383f6a8d">IsSpanUsable</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;T&gt;</a> &amp; span)</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>{</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keywordflow">return</span> !span.<a class="code hl_function" href="classchip_1_1Span.html#ac481725a5153dcf3459b35a62a4e6126">empty</a>();</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>}</div>
+</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="foldopen" id="foldopen00370" data-start="{" data-end="}">
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="namespacechip.html#adf0a51f6aafe23fedbfb143a09b7ffa2">  370</a></span>[[deprecated(<span class="stringliteral">&quot;FixedSpan is always usable / non-empty if N &gt; 0&quot;</span>)]] <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacechip.html#a12d142ef51b455b3d56d5443383f6a8d">IsSpanUsable</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1FixedSpan.html">FixedSpan&lt;T, N&gt;</a> &amp; span)</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>{</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    <span class="keywordflow">return</span> N &gt; 0;</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>}</div>
+</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno"><a class="line" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">  375</a></span><span class="keyword">using </span><a class="code hl_class" href="classchip_1_1Span.html">ByteSpan</a>        = <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;const uint8_t&gt;</a>;</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno"><a class="line" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">  376</a></span><span class="keyword">using </span><a class="code hl_class" href="classchip_1_1Span.html">MutableByteSpan</a> = <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;uint8_t&gt;</a>;</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="namespacechip.html#a43f92c244158b5eeef1612561bd5620d">  378</a></span><span class="keyword">using </span><a class="code hl_class" href="classchip_1_1FixedSpan.html">FixedByteSpan</a> = <a class="code hl_class" href="classchip_1_1FixedSpan.html">FixedSpan&lt;const uint8_t, N&gt;</a>;</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno"><a class="line" href="namespacechip.html#a406dafe9f4bd5271b089b8e00703f3ae">  380</a></span><span class="keyword">using </span><a class="code hl_class" href="classchip_1_1FixedSpan.html">MutableFixedByteSpan</a> = <a class="code hl_class" href="classchip_1_1FixedSpan.html">FixedSpan&lt;uint8_t, N&gt;</a>;</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno"><a class="line" href="namespacechip.html#a1e3573497c78c87072da81c586330d62">  382</a></span><span class="keyword">using </span><a class="code hl_class" href="classchip_1_1Span.html">CharSpan</a>        = <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;const char&gt;</a>;</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno"><a class="line" href="namespacechip.html#a328f22f6c63f2a8500d1dfd9a2c63676">  383</a></span><span class="keyword">using </span><a class="code hl_class" href="classchip_1_1Span.html">MutableCharSpan</a> = <a class="code hl_class" href="classchip_1_1Span.html">Span&lt;char&gt;</a>;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
+<div class="foldopen" id="foldopen00385" data-start="{" data-end="}">
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno"><a class="line" href="namespacechip.html#a6f6da3ee0bd910685bf4de6bcaf103eb">  385</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="namespacechip.html#a6f6da3ee0bd910685bf4de6bcaf103eb">CopySpanToMutableSpan</a>(<a class="code hl_class" href="classchip_1_1Span.html">ByteSpan</a> span_to_copy, <a class="code hl_class" href="classchip_1_1Span.html">MutableByteSpan</a> &amp; out_buf)</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>{</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <a class="code hl_define" href="CodeUtils_8h.html#a87d6ca8bd6df53f66f84d1d0182ba649">VerifyOrReturnError</a>(out_buf.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>() &gt;= span_to_copy.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>(), <a class="code hl_define" href="CHIPError_8h.html#ac088b867f93d086a00c59c13d2833f24">CHIP_ERROR_BUFFER_TOO_SMALL</a>);</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="comment">// There is no guarantee that span_to_copy and out_buf don&#39;t overlap, so use memmove()</span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    memmove(out_buf.<a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>(), span_to_copy.<a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>(), span_to_copy.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>());</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    out_buf.<a class="code hl_function" href="classchip_1_1Span.html#a675272efc7d6fffcb1eb12ad749cb15e">reduce_size</a>(span_to_copy.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>());</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e">CHIP_NO_ERROR</a>;</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>}</div>
+</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
+<div class="foldopen" id="foldopen00396" data-start="{" data-end="}">
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno"><a class="line" href="namespacechip.html#a56ca9ce6ef00374c6b0458010ad5031f">  396</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="namespacechip.html#a56ca9ce6ef00374c6b0458010ad5031f">CopyCharSpanToMutableCharSpan</a>(<a class="code hl_class" href="classchip_1_1Span.html">CharSpan</a> cspan_to_copy, <a class="code hl_class" href="classchip_1_1Span.html">MutableCharSpan</a> &amp; out_buf)</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>{</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    <a class="code hl_define" href="CodeUtils_8h.html#a87d6ca8bd6df53f66f84d1d0182ba649">VerifyOrReturnError</a>(out_buf.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>() &gt;= cspan_to_copy.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>(), <a class="code hl_define" href="CHIPError_8h.html#ac088b867f93d086a00c59c13d2833f24">CHIP_ERROR_BUFFER_TOO_SMALL</a>);</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    <span class="comment">// There is no guarantee that cspan_to_copy and out_buf don&#39;t overlap, so use memmove()</span></div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    memmove(out_buf.<a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>(), cspan_to_copy.<a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>(), cspan_to_copy.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>());</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    out_buf.<a class="code hl_function" href="classchip_1_1Span.html#a675272efc7d6fffcb1eb12ad749cb15e">reduce_size</a>(cspan_to_copy.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>());</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e">CHIP_NO_ERROR</a>;</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>}</div>
+</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
+<div class="foldopen" id="foldopen00413" data-start="{" data-end="}">
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno"><a class="line" href="namespacechip.html#a009e55496d7397acfa5202bf871c9908">  413</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip.html#a009e55496d7397acfa5202bf871c9908">CopyCharSpanToMutableCharSpanWithTruncation</a>(<a class="code hl_class" href="classchip_1_1Span.html">CharSpan</a> span_to_copy, <a class="code hl_class" href="classchip_1_1Span.html">MutableCharSpan</a> &amp; out_span)</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>{</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    <span class="keywordtype">size_t</span> size_to_copy = std::min(span_to_copy.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>(), out_span.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>());</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <span class="comment">// There is no guarantee that span_to_copy and out_buf don&#39;t overlap, so use memmove()</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    memmove(out_span.<a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>(), span_to_copy.<a class="code hl_function" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">data</a>(), size_to_copy);</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    out_span.<a class="code hl_function" href="classchip_1_1Span.html#a675272efc7d6fffcb1eb12ad749cb15e">reduce_size</a>(size_to_copy);</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>}</div>
+</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>} <span class="comment">// namespace chip</span></div>
+</div>
+<div class="ttc" id="aCHIPError_8h_html_a255ed42b89227e34eef134084739716e"><div class="ttname"><a href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e">CHIP_NO_ERROR</a></div><div class="ttdeci">#define CHIP_NO_ERROR</div><div class="ttdoc">This defines the CHIP error code for success or no error.</div><div class="ttdef"><b>Definition</b> CHIPError.h:490</div></div>
+<div class="ttc" id="aCHIPError_8h_html_ac088b867f93d086a00c59c13d2833f24"><div class="ttname"><a href="CHIPError_8h.html#ac088b867f93d086a00c59c13d2833f24">CHIP_ERROR_BUFFER_TOO_SMALL</a></div><div class="ttdeci">#define CHIP_ERROR_BUFFER_TOO_SMALL</div><div class="ttdoc">A buffer is too small.</div><div class="ttdef"><b>Definition</b> CHIPError.h:715</div></div>
+<div class="ttc" id="aCodeUtils_8h_html"><div class="ttname"><a href="CodeUtils_8h.html">CodeUtils.h</a></div></div>
+<div class="ttc" id="aCodeUtils_8h_html_a670a2aeb107e6cc4df69083384bd85d0"><div class="ttname"><a href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a></div><div class="ttdeci">#define VerifyOrDie(aCondition)</div><div class="ttdoc">This checks for the specified condition, which is expected to commonly be true and forces an immediat...</div><div class="ttdef"><b>Definition</b> CodeUtils.h:556</div></div>
+<div class="ttc" id="aCodeUtils_8h_html_a87d6ca8bd6df53f66f84d1d0182ba649"><div class="ttname"><a href="CodeUtils_8h.html#a87d6ca8bd6df53f66f84d1d0182ba649">VerifyOrReturnError</a></div><div class="ttdeci">#define VerifyOrReturnError(expr, code,...)</div><div class="ttdoc">Returns a specified error code if expression evaluates to false</div><div class="ttdef"><b>Definition</b> CodeUtils.h:305</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html"><div class="ttname"><a href="classchip_1_1ChipError.html">chip::ChipError</a></div><div class="ttdef"><b>Definition</b> CHIPError.h:55</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html"><div class="ttname"><a href="classchip_1_1FixedSpan.html">chip::FixedSpan</a></div><div class="ttdef"><b>Definition</b> Span.h:266</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a045c655f139d3969640d6a4c92e451e4"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a045c655f139d3969640d6a4c92e451e4">chip::FixedSpan::data_equal</a></div><div class="ttdeci">bool data_equal(const Span&lt; const T &gt; &amp;other) const</div><div class="ttdef"><b>Definition</b> Span.h:341</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a0cdd80139de0323285f289fed30408cd"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">chip::FixedSpan::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition</b> Span.h:269</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a1b3cc7506fc191438bd3ee8ea07c1df3"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a1b3cc7506fc191438bd3ee8ea07c1df3">chip::FixedSpan::FixedSpan</a></div><div class="ttdeci">constexpr FixedSpan()</div><div class="ttdef"><b>Definition</b> Span.h:272</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a1d4077e0775777dab6baaed9345b89fe"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a1d4077e0775777dab6baaed9345b89fe">chip::FixedSpan::begin</a></div><div class="ttdeci">constexpr pointer begin() const</div><div class="ttdef"><b>Definition</b> Span.h:323</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a1ff2a201223f406962496a91ed0ca855"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a1ff2a201223f406962496a91ed0ca855">chip::FixedSpan::FixedSpan</a></div><div class="ttdeci">FixedSpan(std::nullptr_t null)=delete</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a2d8af59ff7ab6ffd3e63b3cd711f34cc"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a2d8af59ff7ab6ffd3e63b3cd711f34cc">chip::FixedSpan::size</a></div><div class="ttdeci">static constexpr size_t size()</div><div class="ttdef"><b>Definition</b> Span.h:327</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a4705860ff3347b74e425390bee08e490"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a4705860ff3347b74e425390bee08e490">chip::FixedSpan::operator==</a></div><div class="ttdeci">bool operator==(const Span&lt; U &gt; &amp;other) const =delete</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a4e7f2f7e65ada6c2bb136b326ffa6d49"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a4e7f2f7e65ada6c2bb136b326ffa6d49">chip::FixedSpan::FixedSpan</a></div><div class="ttdeci">constexpr FixedSpan(std::array&lt; U, N &gt; &amp;arr)</div><div class="ttdef"><b>Definition</b> Span.h:303</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a4fed4eba72d4f7950caabe0bb59214b0"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a4fed4eba72d4f7950caabe0bb59214b0">chip::FixedSpan::FixedSpan</a></div><div class="ttdeci">constexpr FixedSpan(U(&amp;databuf)[M])</div><div class="ttdef"><b>Definition</b> Span.h:296</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a6aa2794a2520be43e104e6d197452441"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a6aa2794a2520be43e104e6d197452441">chip::FixedSpan::operator[]</a></div><div class="ttdeci">reference operator[](size_t index) const</div><div class="ttdef"><b>Definition</b> Span.h:333</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a7f25337214bc0cf3ea106b4c3042d6e2"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a7f25337214bc0cf3ea106b4c3042d6e2">chip::FixedSpan::FixedSpan</a></div><div class="ttdeci">constexpr FixedSpan(std::array&lt; U, N &gt; &amp;&amp;arr)=delete</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a8441475f2a0d0c6ea47c71492c501d4d"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a8441475f2a0d0c6ea47c71492c501d4d">chip::FixedSpan::FixedSpan</a></div><div class="ttdeci">constexpr FixedSpan(const std::array&lt; U, N &gt; &amp;arr)</div><div class="ttdef"><b>Definition</b> Span.h:311</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a8a57787e85df3553e5767ceb52659c33"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33">chip::FixedSpan::data</a></div><div class="ttdeci">constexpr pointer data() const</div><div class="ttdef"><b>Definition</b> Span.h:322</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a915ce47cfbaf79c6f40a95caf7881ade"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">chip::FixedSpan::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition</b> Span.h:268</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_a93a3fbe86a18e7f86746043c0dfbafa7"><div class="ttname"><a href="classchip_1_1FixedSpan.html#a93a3fbe86a18e7f86746043c0dfbafa7">chip::FixedSpan::operator==</a></div><div class="ttdeci">bool operator==(const FixedSpan&lt; U, M &gt; &amp;other) const =delete</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_ab21d2b93f3bd80f7eeac83367b4df934"><div class="ttname"><a href="classchip_1_1FixedSpan.html#ab21d2b93f3bd80f7eeac83367b4df934">chip::FixedSpan::FixedSpan</a></div><div class="ttdeci">FixedSpan(U databuf)</div><div class="ttdef"><b>Definition</b> Span.h:287</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_ab95443937a889f2cf7320fd081fe5eae"><div class="ttname"><a href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">chip::FixedSpan::mDataBuf</a></div><div class="ttdeci">pointer mDataBuf</div><div class="ttdef"><b>Definition</b> Span.h:355</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_ad828dcfa23a8960c8ce6b006dc2487a6"><div class="ttname"><a href="classchip_1_1FixedSpan.html#ad828dcfa23a8960c8ce6b006dc2487a6">chip::FixedSpan::end</a></div><div class="ttdeci">constexpr pointer end() const</div><div class="ttdef"><b>Definition</b> Span.h:324</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_af926bdbc37554b7730337ccf6cb31e9c"><div class="ttname"><a href="classchip_1_1FixedSpan.html#af926bdbc37554b7730337ccf6cb31e9c">chip::FixedSpan::front</a></div><div class="ttdeci">reference front() const</div><div class="ttdef"><b>Definition</b> Span.h:338</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_afa036ec48ca589e599c656d1e692f268"><div class="ttname"><a href="classchip_1_1FixedSpan.html#afa036ec48ca589e599c656d1e692f268">chip::FixedSpan::FixedSpan</a></div><div class="ttdeci">constexpr FixedSpan(FixedSpan&lt; U, M &gt; const &amp;other)</div><div class="ttdef"><b>Definition</b> Span.h:317</div></div>
+<div class="ttc" id="aclasschip_1_1FixedSpan_html_afe405db027b4bd613ad4d41ecd3790c4"><div class="ttname"><a href="classchip_1_1FixedSpan.html#afe405db027b4bd613ad4d41ecd3790c4">chip::FixedSpan::back</a></div><div class="ttdeci">reference back() const</div><div class="ttdef"><b>Definition</b> Span.h:339</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html"><div class="ttname"><a href="classchip_1_1Span.html">chip::Span</a></div><div class="ttdoc">A wrapper class for holding objects and its length, without the ownership of it. We can use C++20 std...</div><div class="ttdef"><b>Definition</b> Span.h:41</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a08ae364e6b9a0c825c05aaeb80b5c950"><div class="ttname"><a href="classchip_1_1Span.html#a08ae364e6b9a0c825c05aaeb80b5c950">chip::Span::Span</a></div><div class="ttdeci">constexpr Span(std::array&lt; U, N &gt; &amp;&amp;arr)=delete</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a1d71c61752a48b7c6a5ff2612cc18097"><div class="ttname"><a href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097">chip::Span::data</a></div><div class="ttdeci">constexpr pointer data() const</div><div class="ttdef"><b>Definition</b> Span.h:119</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a24ca1c168fcae67c684073fefbfe5b26"><div class="ttname"><a href="classchip_1_1Span.html#a24ca1c168fcae67c684073fefbfe5b26">chip::Span::back</a></div><div class="ttdeci">reference back() const</div><div class="ttdef"><b>Definition</b> Span.h:132</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a29ad5e705fdae24a0c470315c9197a2e"><div class="ttname"><a href="classchip_1_1Span.html#a29ad5e705fdae24a0c470315c9197a2e">chip::Span::Span</a></div><div class="ttdeci">constexpr Span(const std::array&lt; U, N &gt; &amp;arr)</div><div class="ttdef"><b>Definition</b> Span.h:91</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a2ca59742876e0718d416201f2e08788e"><div class="ttname"><a href="classchip_1_1Span.html#a2ca59742876e0718d416201f2e08788e">chip::Span::fromCharString</a></div><div class="ttdeci">static Span fromCharString(U *chars)</div><div class="ttdef"><b>Definition</b> Span.h:181</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a472894a69af2f62cd45567362303180d"><div class="ttname"><a href="classchip_1_1Span.html#a472894a69af2f62cd45567362303180d">chip::Span::mDataLen</a></div><div class="ttdeci">size_t mDataLen</div><div class="ttdef"><b>Definition</b> Span.h:205</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a47840550e5bc12791bc5d2d28bb09bd0"><div class="ttname"><a href="classchip_1_1Span.html#a47840550e5bc12791bc5d2d28bb09bd0">chip::Span::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition</b> Span.h:43</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a48de8a80fdb01e73332755b9e0716775"><div class="ttname"><a href="classchip_1_1Span.html#a48de8a80fdb01e73332755b9e0716775">chip::Span::SubSpan</a></div><div class="ttdeci">Span SubSpan(size_t offset) const</div><div class="ttdef"><b>Definition</b> Span.h:146</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a5a137e03170d651bd4570aeeb781a66b"><div class="ttname"><a href="classchip_1_1Span.html#a5a137e03170d651bd4570aeeb781a66b">chip::Span::end</a></div><div class="ttdeci">constexpr pointer end() const</div><div class="ttdef"><b>Definition</b> Span.h:123</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a675272efc7d6fffcb1eb12ad749cb15e"><div class="ttname"><a href="classchip_1_1Span.html#a675272efc7d6fffcb1eb12ad749cb15e">chip::Span::reduce_size</a></div><div class="ttdeci">void reduce_size(size_t new_size)</div><div class="ttdef"><b>Definition</b> Span.h:153</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a7b92342295de7bf91dfd976f5a124aa8"><div class="ttname"><a href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">chip::Span::size</a></div><div class="ttdeci">constexpr size_t size() const</div><div class="ttdef"><b>Definition</b> Span.h:120</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a804ad5fb3344747e805ceddd51926095"><div class="ttname"><a href="classchip_1_1Span.html#a804ad5fb3344747e805ceddd51926095">chip::Span::Span</a></div><div class="ttdeci">constexpr Span(std::array&lt; U, N &gt; &amp;arr)</div><div class="ttdef"><b>Definition</b> Span.h:83</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a8e6c14f3b40bbc5e6331b2bd4fcfb9d8"><div class="ttname"><a href="classchip_1_1Span.html#a8e6c14f3b40bbc5e6331b2bd4fcfb9d8">chip::Span::data_equal</a></div><div class="ttdeci">bool data_equal(const Span&lt; const T &gt; &amp;other) const</div><div class="ttdef"><b>Definition</b> Span.h:134</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a9d9b89f0f47d1c44a0065514baa8da55"><div class="ttname"><a href="classchip_1_1Span.html#a9d9b89f0f47d1c44a0065514baa8da55">chip::Span::operator==</a></div><div class="ttdeci">bool operator==(const Span&lt; U &gt; &amp;other) const =delete</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_aaa8995c41a3295e617273c4399f9de59"><div class="ttname"><a href="classchip_1_1Span.html#aaa8995c41a3295e617273c4399f9de59">chip::Span::Span</a></div><div class="ttdeci">constexpr Span(UncheckedType tag, pointer databuf, size_t datalen)</div><div class="ttdef"><b>Definition</b> Span.h:201</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_aafe0e73fec20468d61dccf844a8c84cb"><div class="ttname"><a href="classchip_1_1Span.html#aafe0e73fec20468d61dccf844a8c84cb">chip::Span::fromZclString</a></div><div class="ttdeci">static Span fromZclString(U *bytes)</div><div class="ttdef"><b>Definition</b> Span.h:164</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_ab21bf9745daad52b8ae0344bd1a0827c"><div class="ttname"><a href="classchip_1_1Span.html#ab21bf9745daad52b8ae0344bd1a0827c">chip::Span::Span</a></div><div class="ttdeci">constexpr Span()</div><div class="ttdef"><b>Definition</b> Span.h:46</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_ab89933b9b74bf625d7cf021fe2cafb40"><div class="ttname"><a href="classchip_1_1Span.html#ab89933b9b74bf625d7cf021fe2cafb40">chip::Span::front</a></div><div class="ttdeci">reference front() const</div><div class="ttdef"><b>Definition</b> Span.h:131</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_abea660f57265b60d49ea2c3abdb64366"><div class="ttname"><a href="classchip_1_1Span.html#abea660f57265b60d49ea2c3abdb64366">chip::Span::Span</a></div><div class="ttdeci">constexpr Span(U(&amp;databuf)[N])=delete</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_ac481725a5153dcf3459b35a62a4e6126"><div class="ttname"><a href="classchip_1_1Span.html#ac481725a5153dcf3459b35a62a4e6126">chip::Span::empty</a></div><div class="ttdeci">constexpr bool empty() const</div><div class="ttdef"><b>Definition</b> Span.h:121</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_ac6df70b658cb5b9d5e275a31802721e0"><div class="ttname"><a href="classchip_1_1Span.html#ac6df70b658cb5b9d5e275a31802721e0">chip::Span::Span</a></div><div class="ttdeci">Span(std::nullptr_t null, size_t size)=delete</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_ac7bdcb071220cbc6af8623d84b32f085"><div class="ttname"><a href="classchip_1_1Span.html#ac7bdcb071220cbc6af8623d84b32f085">chip::Span::Span</a></div><div class="ttdeci">Span(pointer databuf, size_t datalen)</div><div class="ttdef"><b>Definition</b> Span.h:52</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_aca3e640406fcd1538a9e4a988425a98d"><div class="ttname"><a href="classchip_1_1Span.html#aca3e640406fcd1538a9e4a988425a98d">chip::Span::Span</a></div><div class="ttdeci">constexpr Span(const FixedSpan&lt; U, N &gt; &amp;other)</div><div class="ttdef"><b>Definition</b> Span.h:360</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_ace0e3d33b7475a2a18a2f53085e5c3d6"><div class="ttname"><a href="classchip_1_1Span.html#ace0e3d33b7475a2a18a2f53085e5c3d6">chip::Span::begin</a></div><div class="ttdeci">constexpr pointer begin() const</div><div class="ttdef"><b>Definition</b> Span.h:122</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_ad817b556c36ffcfeaa735430895553c0"><div class="ttname"><a href="classchip_1_1Span.html#ad817b556c36ffcfeaa735430895553c0">chip::Span::Span</a></div><div class="ttdeci">constexpr Span(const Span&lt; U &gt; &amp;other)</div><div class="ttdef"><b>Definition</b> Span.h:108</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_adaaf156ea517d2770440ac8a268f68d8"><div class="ttname"><a href="classchip_1_1Span.html#adaaf156ea517d2770440ac8a268f68d8">chip::Span::operator=</a></div><div class="ttdeci">constexpr Span &amp; operator=(T(&amp;databuf)[N])</div><div class="ttdef"><b>Definition</b> Span.h:95</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_ae89ad9f56b40f1ce1e0b10f0a07ee270"><div class="ttname"><a href="classchip_1_1Span.html#ae89ad9f56b40f1ce1e0b10f0a07ee270">chip::Span::Span</a></div><div class="ttdeci">constexpr Span(U(&amp;databuf)[N])</div><div class="ttdef"><b>Definition</b> Span.h:68</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_aeb5391b2eb95ea6f2f5639038d8bb247"><div class="ttname"><a href="classchip_1_1Span.html#aeb5391b2eb95ea6f2f5639038d8bb247">chip::Span::mDataBuf</a></div><div class="ttdeci">pointer mDataBuf</div><div class="ttdef"><b>Definition</b> Span.h:204</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_aeeb721c23934ee80e39c2aa3f354c53d"><div class="ttname"><a href="classchip_1_1Span.html#aeeb721c23934ee80e39c2aa3f354c53d">chip::Span::operator[]</a></div><div class="ttdeci">reference operator[](size_t index) const</div><div class="ttdef"><b>Definition</b> Span.h:126</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_aef717fe2acc3794973e686fe25b780f6"><div class="ttname"><a href="classchip_1_1Span.html#aef717fe2acc3794973e686fe25b780f6">chip::Span::SubSpan</a></div><div class="ttdeci">Span SubSpan(size_t offset, size_t length) const</div><div class="ttdef"><b>Definition</b> Span.h:139</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_af6a2a251dea0e5ee157f031bd74f574a"><div class="ttname"><a href="classchip_1_1Span.html#af6a2a251dea0e5ee157f031bd74f574a">chip::Span::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition</b> Span.h:44</div></div>
+<div class="ttc" id="anamespacechip_1_1detail_html_a32b49f79d50fa238a4d293ed517e774d"><div class="ttname"><a href="namespacechip_1_1detail.html#a32b49f79d50fa238a4d293ed517e774d">chip::detail::shared_zeroes</a></div><div class="ttdeci">constexpr T const * shared_zeroes()</div><div class="ttdef"><b>Definition</b> Span.h:253</div></div>
+<div class="ttc" id="anamespacechip_1_1detail_html_aa1337eb6fb491235a299f5d87dc3552f"><div class="ttname"><a href="namespacechip_1_1detail.html#aa1337eb6fb491235a299f5d87dc3552f">chip::detail::kZeroes</a></div><div class="ttdeci">constexpr T kZeroes[zero_limit&lt; T &gt;::value]</div><div class="ttdef"><b>Definition</b> Span.h:250</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+<div class="ttc" id="anamespacechip_html_a009e55496d7397acfa5202bf871c9908"><div class="ttname"><a href="namespacechip.html#a009e55496d7397acfa5202bf871c9908">chip::CopyCharSpanToMutableCharSpanWithTruncation</a></div><div class="ttdeci">void CopyCharSpanToMutableCharSpanWithTruncation(CharSpan span_to_copy, MutableCharSpan &amp;out_span)</div><div class="ttdef"><b>Definition</b> Span.h:413</div></div>
+<div class="ttc" id="anamespacechip_html_a12d142ef51b455b3d56d5443383f6a8d"><div class="ttname"><a href="namespacechip.html#a12d142ef51b455b3d56d5443383f6a8d">chip::IsSpanUsable</a></div><div class="ttdeci">bool IsSpanUsable(const Span&lt; T &gt; &amp;span)</div><div class="ttdef"><b>Definition</b> Span.h:364</div></div>
+<div class="ttc" id="anamespacechip_html_a56ca9ce6ef00374c6b0458010ad5031f"><div class="ttname"><a href="namespacechip.html#a56ca9ce6ef00374c6b0458010ad5031f">chip::CopyCharSpanToMutableCharSpan</a></div><div class="ttdeci">CHIP_ERROR CopyCharSpanToMutableCharSpan(CharSpan cspan_to_copy, MutableCharSpan &amp;out_buf)</div><div class="ttdef"><b>Definition</b> Span.h:396</div></div>
+<div class="ttc" id="anamespacechip_html_a6f6da3ee0bd910685bf4de6bcaf103eb"><div class="ttname"><a href="namespacechip.html#a6f6da3ee0bd910685bf4de6bcaf103eb">chip::CopySpanToMutableSpan</a></div><div class="ttdeci">CHIP_ERROR CopySpanToMutableSpan(ByteSpan span_to_copy, MutableByteSpan &amp;out_buf)</div><div class="ttdef"><b>Definition</b> Span.h:385</div></div>
+<div class="ttc" id="astructchip_1_1detail_1_1zero__limit_html"><div class="ttname"><a href="structchip_1_1detail_1_1zero__limit.html">chip::detail::zero_limit</a></div><div class="ttdef"><b>Definition</b> Span.h:240</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

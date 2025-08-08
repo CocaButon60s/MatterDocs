@@ -1,0 +1,7 @@
+<map id="chip::Crypto::SensitiveDataBuffer::ConstBytes" name="chip::Crypto::SensitiveDataBuffer::ConstBytes">
+<area shape="rect" id="Node000001" title="Returns const pointer to start of the underlying buffer" alt="" coords="252,37,451,77"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Crypto_1_1SensitiveDataBuffer.html#a53f2545117d8686f003850994fc2c3a3" title=" " alt="" coords="5,5,204,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,45,204,41,205,36,239,40"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Crypto_1_1SensitiveDataBuffer.html#a82e197c4b8198a14260cc597b0146e80" title="Constructs span from the underlying buffer" alt="" coords="5,69,204,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,75,205,79,204,74,238,69"/>
+</map>

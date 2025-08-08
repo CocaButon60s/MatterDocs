@@ -1,0 +1,8 @@
+<map id="chip::DeviceLayer::NetworkInterface" name="chip::DeviceLayer::NetworkInterface">
+<area shape="rect" id="Node000001" title=" " alt="" coords="420,44,567,84"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="464,28,474,20,493,17,510,19,521,25,525,34,524,44,518,43,520,35,517,29,508,25,493,23,477,25,467,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,15,248,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,40,396,51,420,53,419,58,396,56,262,46"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Span.html" title=" " alt="" coords="25,79,228,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,89,318,86,396,80,419,77,420,82,396,85,318,92,242,95"/>
+</map>

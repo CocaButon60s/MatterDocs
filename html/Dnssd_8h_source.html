@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/app/server/Dnssd.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_a9aeb43d402f24b4c5513213743384b7.html">app</a></li><li class="navelem"><a class="el" href="dir_05f9db9b48a89734c9815305b495e471.html">server</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Dnssd.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Dnssd_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2021 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;app/icd/server/ICDServerConfig.h&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#if CHIP_CONFIG_ENABLE_ICD_SERVER</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;app/icd/server/ICDManager.h&gt;</span> <span class="comment">// nogncheck</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;app/icd/server/ICDStateObserver.h&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;app/server/CommissioningModeProvider.h&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;credentials/FabricTable.h&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;inet/InetConfig.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPError_8h.html">lib/core/CHIPError.h</a>&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="code" href="Optional_8h.html">lib/core/Optional.h</a>&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;lib/dnssd/Advertiser.h&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPDeviceLayer_8h.html">platform/CHIPDeviceLayer.h</a>&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;system/TimeSource.h&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">namespace </span>app {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html">   38</a></span><span class="keyword">class </span>DLL_EXPORT <a class="code hl_class" href="classchip_1_1app_1_1DnssdServer.html">DnssdServer</a> : <span class="keyword">public</span> ICDStateObserver</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#ab45501cb45c134edbd50529926da998d">   41</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> System::Clock::Timestamp kTimeoutCleared = System::Clock::kZero;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a082e0a6e768395c9eaf50f948acbd4c7">   44</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="classchip_1_1app_1_1DnssdServer.html">DnssdServer</a> &amp; <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a082e0a6e768395c9eaf50f948acbd4c7">Instance</a>()</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">static</span> <a class="code hl_class" href="classchip_1_1app_1_1DnssdServer.html">DnssdServer</a> instance;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a66d778a8a2ae42ce43aeaf4a3e2759d9">   51</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a66d778a8a2ae42ce43aeaf4a3e2759d9">SetSecuredIPv6Port</a>(uint16_t port) { mSecuredIPv6Port = port; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#if INET_CONFIG_ENABLE_IPV4</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> SetSecuredIPv4Port(uint16_t port) { mSecuredIPv4Port = port; }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">// INET_CONFIG_ENABLE_IPV4</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a26f19cf06ca892efe616b5d8a3b70a92">   59</a></span>    uint16_t <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a26f19cf06ca892efe616b5d8a3b70a92">GetSecuredPort</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mSecuredIPv6Port; }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a9f759385123e4230000057478739d7e0">   62</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a9f759385123e4230000057478739d7e0">SetUnsecuredPort</a>(uint16_t port) { mUnsecuredPort = port; }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a59646d58feb06280b73ab61dcbf75178">   65</a></span>    uint16_t <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a59646d58feb06280b73ab61dcbf75178">GetUnsecuredPort</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mUnsecuredPort; }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a5c940ef0b002a681d9f66ea7d79b164a">   68</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a5c940ef0b002a681d9f66ea7d79b164a">SetInterfaceId</a>(<a class="code hl_class" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a> interfaceId) { mInterfaceId = interfaceId; }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#ad035bab831cb3bcc05b776f2f35c143c">   71</a></span>    <a class="code hl_class" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#ad035bab831cb3bcc05b776f2f35c143c">GetInterfaceId</a>() { <span class="keywordflow">return</span> mInterfaceId; }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// Set the fabric table the DnssdServer should use for operational</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// advertising.  This must be set before StartServer() is called for the</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// first time.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">//</span></div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#ae7fd545ae46c2a99d66366a2913cbf9d">   78</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#ae7fd545ae46c2a99d66366a2913cbf9d">SetFabricTable</a>(FabricTable * table)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_define" href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a>(table != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        mFabricTable = table;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">// Set the commissioning mode provider to use.  Null provider will mean we</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="comment">// assume the commissioning mode is kDisabled.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a4676f5232d056b04b7115d06c470cd48">   86</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a4676f5232d056b04b7115d06c470cd48">SetCommissioningModeProvider</a>(CommissioningModeProvider * provider) { mCommissioningModeProvider = provider; }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#if CHIP_DEVICE_CONFIG_ENABLE_EXTENDED_DISCOVERY</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">void</span> SetExtendedDiscoveryTimeoutSecs(int32_t secs);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">void</span> OnExtendedDiscoveryExpiration(System::Layer * aSystemLayer, <span class="keywordtype">void</span> * aAppState);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_DEVICE_CONFIG_ENABLE_EXTENDED_DISCOVERY</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#if CHIP_CONFIG_ENABLE_ICD_SERVER</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> AdvertisingParams&gt;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">void</span> AddICDKeyToAdvertisement(AdvertisingParams &amp; advParams);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">void</span> SetICDManager(ICDManager * manager) { mICDManager = manager; };</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#if INET_CONFIG_ENABLE_TCP_ENDPOINT</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">void</span> SetTCPServerEnabled(<span class="keywordtype">bool</span> serverEnabled) { mTCPServerEnabled = serverEnabled; };</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#endif </span><span class="comment">// INET_CONFIG_ENABLE_TCP_ENDPOINT</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a19a2de9dd032bb1a57b107900943d620">  111</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a19a2de9dd032bb1a57b107900943d620">AdvertiseOperational</a>();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a6a20c2a5830002513dd22e0c28d42041">  115</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a6a20c2a5830002513dd22e0c28d42041">StartServer</a>();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a2248c7d76712918c8ce395c8974216a9">  118</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a2248c7d76712918c8ce395c8974216a9">StartServer</a>(Dnssd::CommissioningMode mode);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a66e6636ea06879a3031e0db0c3839a08">  122</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a66e6636ea06879a3031e0db0c3839a08">StopServer</a>();</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a6986dc852b9de1d2e8b01907eeb72797">  124</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a6986dc852b9de1d2e8b01907eeb72797">GenerateRotatingDeviceId</a>(<span class="keywordtype">char</span> rotatingDeviceIdHexBuffer[], <span class="keywordtype">size_t</span> rotatingDeviceIdHexBufferSize);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a51c53dd43936055faf22a26196a89124">  127</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a51c53dd43936055faf22a26196a89124">GetCommissionableInstanceName</a>(<span class="keywordtype">char</span> * buffer, <span class="keywordtype">size_t</span> bufferLen);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#ad9616ae202d862605460ce42c3fe7bf7">  138</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#ad9616ae202d862605460ce42c3fe7bf7">SetEphemeralDiscriminator</a>(<a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;uint16_t&gt;</a> discriminator);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a4d8bce0ad38d54f234cfbcf5e9b30d13">  143</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a4d8bce0ad38d54f234cfbcf5e9b30d13">OnICDModeChange</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#ad1d86b86f106681d06c04d2a30a16e0e">  148</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#ad1d86b86f106681d06c04d2a30a16e0e">OnEnterActiveMode</a>()<span class="keyword"> override</span>{};</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a0de5a30d4aa7f72bae842ad7afb95b04">  153</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a0de5a30d4aa7f72bae842ad7afb95b04">OnTransitionToIdle</a>()<span class="keyword"> override</span>{};</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#ac66a5a156bdcef66f62324f277f4bdf1">  158</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#ac66a5a156bdcef66f62324f277f4bdf1">OnEnterIdleMode</a>()<span class="keyword"> override</span>{};</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a71b560e079346c27ce8a738f3498ab65">  166</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a71b560e079346c27ce8a738f3498ab65">Advertise</a>(<span class="keywordtype">bool</span> commissionableNode, chip::Dnssd::CommissioningMode mode);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a790970e40c2b303e2496169c8b9c2ca8">  169</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a790970e40c2b303e2496169c8b9c2ca8">AdvertiseCommissioner</a>();</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a328af8cbfced23c88aafb1623d7c9419">  172</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a328af8cbfced23c88aafb1623d7c9419">AdvertiseCommissionableNode</a>(chip::Dnssd::CommissioningMode mode);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="comment">// Our randomly-generated fallback &quot;MAC address&quot;, in case we don&#39;t have a real one.</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#ad0b83d16d4dc820add98fffe0f8eca38">  175</a></span>    uint8_t mFallbackMAC[<a class="code hl_enumvalue" href="classchip_1_1DeviceLayer_1_1ConfigurationManager.html#a66a0371723c28e67aed8f7e30371897fad1b2bedf92189ad1750c9db8760efe18">chip::DeviceLayer::ConfigurationManager::kPrimaryMACAddressLength</a>] = { 0 };</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a8c14e9a5dcdd95f2bc49b83be5919dee">  177</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a8c14e9a5dcdd95f2bc49b83be5919dee">GetPrimaryOrFallbackMACAddress</a>(<a class="code hl_class" href="classchip_1_1Span.html">MutableByteSpan</a> &amp; mac);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="comment">// Check if we have any valid operational credentials present in the fabric table and return true</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="comment">// if we do.</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#abb5f78f8f09b76528ab8e02fa7b93d65">  183</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#abb5f78f8f09b76528ab8e02fa7b93d65">HaveOperationalCredentials</a>();</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="comment">// Check whether the secured IPv4 port matches the secured IPv6 port.  If it</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="comment">// does not, we should not advertise our IPv4 bits, because we can only</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="comment">// advertise one port number.</span></div>
+<div class="foldopen" id="foldopen00188" data-start="{" data-end="}">
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a706eef18813150fc2661e47ab03950e7">  188</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1app_1_1DnssdServer.html#a706eef18813150fc2661e47ab03950e7">SecuredIPv4PortMatchesIPv6Port</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">#if INET_CONFIG_ENABLE_IPV4</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">return</span> mSecuredIPv4Port == mSecuredIPv6Port;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">#endif </span><span class="comment">// INET_CONFIG_ENABLE_IPV4</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    }</div>
+</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a7718517def401878ccadf176f3328471">  197</a></span>    FabricTable * mFabricTable                             = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#ae4aecbed8f96515c47616ce836fca840">  198</a></span>    CommissioningModeProvider * mCommissioningModeProvider = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">#if CHIP_CONFIG_ENABLE_ICD_SERVER</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    ICDManager * mICDManager = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_CONFIG_ENABLE_ICD_SERVER</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">#if INET_CONFIG_ENABLE_TCP_ENDPOINT</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordtype">bool</span> mTCPServerEnabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">#endif </span><span class="comment">// INET_CONFIG_ENABLE_TCP_ENDPOINT</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#abf5f7592dd58defdb5c0d1ed8a5db7b6">  208</a></span>    uint16_t mSecuredIPv6Port = <a class="code hl_define" href="CHIPConfig_8h.html#a6affe2b65fc2ab95d72bc782ab34908c">CHIP_PORT</a>;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">#if INET_CONFIG_ENABLE_IPV4</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    uint16_t mSecuredIPv4Port = <a class="code hl_define" href="CHIPConfig_8h.html#a6affe2b65fc2ab95d72bc782ab34908c">CHIP_PORT</a>;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">#endif </span><span class="comment">// INET_CONFIG_ENABLE_IPV4</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#ae96997c24e912789bb127b1c195409df">  212</a></span>    uint16_t mUnsecuredPort        = <a class="code hl_define" href="CHIPConfig_8h.html#a9d7f7b42cde77e003c383afaca573db5">CHIP_UDC_PORT</a>;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a89fd1de82cb3a83951b3f79590ce44e9">  213</a></span>    <a class="code hl_class" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a> mInterfaceId = Inet::InterfaceId::Null();</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="comment">// Ephemeral discriminator to use instead of the default if set</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="classchip_1_1app_1_1DnssdServer.html#a6511be100ae43270468dfdd2266116b2">  216</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;uint16_t&gt;</a> <a class="code hl_variable" href="classchip_1_1app_1_1DnssdServer.html#a6511be100ae43270468dfdd2266116b2">mEphemeralDiscriminator</a>;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">#if CHIP_DEVICE_CONFIG_ENABLE_EXTENDED_DISCOVERY</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    Time::TimeSource&lt;Time::Source::kSystem&gt; mTimeSource;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    int32_t GetExtendedDiscoveryTimeoutSecs();</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> ScheduleExtendedDiscoveryExpiration();</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="comment">// mExtendedDiscoveryExpiration, if not set to kTimeoutCleared, is used to</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="comment">// indicate that we should be advertising extended discovery right now.</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    System::Clock::Timestamp mExtendedDiscoveryExpiration = kTimeoutCleared;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;int32_t&gt;</a> mExtendedDiscoveryTimeoutSecs       = <a class="code hl_variable" href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">NullOptional</a>;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="comment">// The commissioning mode we are advertising right now.  Used to detect when</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="comment">// we need to start extended discovery advertisement.  We start this off as</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="comment">// kEnabledBasic, so that when we first start up we do extended discovery</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="comment">// advertisement if we don&#39;t enter commissioning mode.</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    Dnssd::CommissioningMode mCurrentCommissioningMode = Dnssd::CommissioningMode::kEnabledBasic;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_DEVICE_CONFIG_ENABLE_EXTENDED_DISCOVERY</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>};</div>
+</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>} <span class="comment">// namespace app</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>} <span class="comment">// namespace chip</span></div>
+<div class="ttc" id="aCHIPConfig_8h_html_a6affe2b65fc2ab95d72bc782ab34908c"><div class="ttname"><a href="CHIPConfig_8h.html#a6affe2b65fc2ab95d72bc782ab34908c">CHIP_PORT</a></div><div class="ttdeci">#define CHIP_PORT</div><div class="ttdoc">chip TCP/UDP port for secured chip traffic.</div><div class="ttdef"><b>Definition</b> CHIPConfig.h:335</div></div>
+<div class="ttc" id="aCHIPConfig_8h_html_a9d7f7b42cde77e003c383afaca573db5"><div class="ttname"><a href="CHIPConfig_8h.html#a9d7f7b42cde77e003c383afaca573db5">CHIP_UDC_PORT</a></div><div class="ttdeci">#define CHIP_UDC_PORT</div><div class="ttdoc">chip TCP/UDP port on commissioner for unsecured user-directed-commissioning traffic.</div><div class="ttdef"><b>Definition</b> CHIPConfig.h:346</div></div>
+<div class="ttc" id="aCHIPDeviceLayer_8h_html"><div class="ttname"><a href="CHIPDeviceLayer_8h.html">CHIPDeviceLayer.h</a></div></div>
+<div class="ttc" id="aCHIPError_8h_html"><div class="ttname"><a href="CHIPError_8h.html">CHIPError.h</a></div></div>
+<div class="ttc" id="aCodeUtils_8h_html_a670a2aeb107e6cc4df69083384bd85d0"><div class="ttname"><a href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">VerifyOrDie</a></div><div class="ttdeci">#define VerifyOrDie(aCondition)</div><div class="ttdoc">This checks for the specified condition, which is expected to commonly be true and forces an immediat...</div><div class="ttdef"><b>Definition</b> CodeUtils.h:556</div></div>
+<div class="ttc" id="aOptional_8h_html"><div class="ttname"><a href="Optional_8h.html">Optional.h</a></div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html"><div class="ttname"><a href="classchip_1_1ChipError.html">chip::ChipError</a></div><div class="ttdef"><b>Definition</b> CHIPError.h:55</div></div>
+<div class="ttc" id="aclasschip_1_1DeviceLayer_1_1ConfigurationManager_html_a66a0371723c28e67aed8f7e30371897fad1b2bedf92189ad1750c9db8760efe18"><div class="ttname"><a href="classchip_1_1DeviceLayer_1_1ConfigurationManager.html#a66a0371723c28e67aed8f7e30371897fad1b2bedf92189ad1750c9db8760efe18">chip::DeviceLayer::ConfigurationManager::kPrimaryMACAddressLength</a></div><div class="ttdeci">@ kPrimaryMACAddressLength</div><div class="ttdef"><b>Definition</b> ConfigurationManager.h:88</div></div>
+<div class="ttc" id="aclasschip_1_1Inet_1_1InterfaceId_html"><div class="ttname"><a href="classchip_1_1Inet_1_1InterfaceId.html">chip::Inet::InterfaceId</a></div><div class="ttdef"><b>Definition</b> InetInterface.h:77</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html"><div class="ttname"><a href="classchip_1_1Optional.html">chip::Optional</a></div><div class="ttdef"><b>Definition</b> Optional.h:49</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html"><div class="ttname"><a href="classchip_1_1Span.html">chip::Span</a></div><div class="ttdoc">A wrapper class for holding objects and its length, without the ownership of it. We can use C++20 std...</div><div class="ttdef"><b>Definition</b> Span.h:41</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html">chip::app::DnssdServer</a></div><div class="ttdef"><b>Definition</b> Dnssd.h:39</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a082e0a6e768395c9eaf50f948acbd4c7"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a082e0a6e768395c9eaf50f948acbd4c7">chip::app::DnssdServer::Instance</a></div><div class="ttdeci">static DnssdServer &amp; Instance()</div><div class="ttdoc">Provides the system-wide implementation of the service advertiser</div><div class="ttdef"><b>Definition</b> Dnssd.h:44</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a0de5a30d4aa7f72bae842ad7afb95b04"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a0de5a30d4aa7f72bae842ad7afb95b04">chip::app::DnssdServer::OnTransitionToIdle</a></div><div class="ttdeci">void OnTransitionToIdle() override</div><div class="ttdoc">dnssd server has no action to do on this ICD event. Do nothing.</div><div class="ttdef"><b>Definition</b> Dnssd.h:153</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a19a2de9dd032bb1a57b107900943d620"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a19a2de9dd032bb1a57b107900943d620">chip::app::DnssdServer::AdvertiseOperational</a></div><div class="ttdeci">CHIP_ERROR AdvertiseOperational()</div><div class="ttdoc">Start operational advertising</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a2248c7d76712918c8ce395c8974216a9"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a2248c7d76712918c8ce395c8974216a9">chip::app::DnssdServer::StartServer</a></div><div class="ttdeci">void StartServer(Dnssd::CommissioningMode mode)</div><div class="ttdoc">(Re-)starts the Dnssd server, using the provided commissioning mode.</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a26f19cf06ca892efe616b5d8a3b70a92"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a26f19cf06ca892efe616b5d8a3b70a92">chip::app::DnssdServer::GetSecuredPort</a></div><div class="ttdeci">uint16_t GetSecuredPort() const</div><div class="ttdoc">Gets the secure Matter port</div><div class="ttdef"><b>Definition</b> Dnssd.h:59</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a328af8cbfced23c88aafb1623d7c9419"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a328af8cbfced23c88aafb1623d7c9419">chip::app::DnssdServer::AdvertiseCommissionableNode</a></div><div class="ttdeci">CHIP_ERROR AdvertiseCommissionableNode(chip::Dnssd::CommissioningMode mode)</div><div class="ttdoc">Set MDNS commissionable node advertisement</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a4676f5232d056b04b7115d06c470cd48"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a4676f5232d056b04b7115d06c470cd48">chip::app::DnssdServer::SetCommissioningModeProvider</a></div><div class="ttdeci">void SetCommissioningModeProvider(CommissioningModeProvider *provider)</div><div class="ttdef"><b>Definition</b> Dnssd.h:86</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a4d8bce0ad38d54f234cfbcf5e9b30d13"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a4d8bce0ad38d54f234cfbcf5e9b30d13">chip::app::DnssdServer::OnICDModeChange</a></div><div class="ttdeci">void OnICDModeChange() override</div><div class="ttdoc">When the ICD changes operating mode, the dnssd server needs to restart its DNS-SD advertising to upda...</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a51c53dd43936055faf22a26196a89124"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a51c53dd43936055faf22a26196a89124">chip::app::DnssdServer::GetCommissionableInstanceName</a></div><div class="ttdeci">CHIP_ERROR GetCommissionableInstanceName(char *buffer, size_t bufferLen)</div><div class="ttdoc">Generates the (random) instance name that a CHIP device is to use for pre-commissioning DNS-SD</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a59646d58feb06280b73ab61dcbf75178"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a59646d58feb06280b73ab61dcbf75178">chip::app::DnssdServer::GetUnsecuredPort</a></div><div class="ttdeci">uint16_t GetUnsecuredPort() const</div><div class="ttdoc">Gets the unsecure Matter port</div><div class="ttdef"><b>Definition</b> Dnssd.h:65</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a5c940ef0b002a681d9f66ea7d79b164a"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a5c940ef0b002a681d9f66ea7d79b164a">chip::app::DnssdServer::SetInterfaceId</a></div><div class="ttdeci">void SetInterfaceId(Inet::InterfaceId interfaceId)</div><div class="ttdoc">Sets the interface id used for advertising</div><div class="ttdef"><b>Definition</b> Dnssd.h:68</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a6511be100ae43270468dfdd2266116b2"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a6511be100ae43270468dfdd2266116b2">chip::app::DnssdServer::mEphemeralDiscriminator</a></div><div class="ttdeci">Optional&lt; uint16_t &gt; mEphemeralDiscriminator</div><div class="ttdef"><b>Definition</b> Dnssd.h:216</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a66d778a8a2ae42ce43aeaf4a3e2759d9"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a66d778a8a2ae42ce43aeaf4a3e2759d9">chip::app::DnssdServer::SetSecuredIPv6Port</a></div><div class="ttdeci">void SetSecuredIPv6Port(uint16_t port)</div><div class="ttdoc">Sets the secure Matter IPv6 port</div><div class="ttdef"><b>Definition</b> Dnssd.h:51</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a66e6636ea06879a3031e0db0c3839a08"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a66e6636ea06879a3031e0db0c3839a08">chip::app::DnssdServer::StopServer</a></div><div class="ttdeci">void StopServer()</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a6986dc852b9de1d2e8b01907eeb72797"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a6986dc852b9de1d2e8b01907eeb72797">chip::app::DnssdServer::GenerateRotatingDeviceId</a></div><div class="ttdeci">CHIP_ERROR GenerateRotatingDeviceId(char rotatingDeviceIdHexBuffer[], size_t rotatingDeviceIdHexBufferSize)</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a6a20c2a5830002513dd22e0c28d42041"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a6a20c2a5830002513dd22e0c28d42041">chip::app::DnssdServer::StartServer</a></div><div class="ttdeci">void StartServer()</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a706eef18813150fc2661e47ab03950e7"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a706eef18813150fc2661e47ab03950e7">chip::app::DnssdServer::SecuredIPv4PortMatchesIPv6Port</a></div><div class="ttdeci">bool SecuredIPv4PortMatchesIPv6Port() const</div><div class="ttdef"><b>Definition</b> Dnssd.h:188</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a71b560e079346c27ce8a738f3498ab65"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a71b560e079346c27ce8a738f3498ab65">chip::app::DnssdServer::Advertise</a></div><div class="ttdeci">CHIP_ERROR Advertise(bool commissionableNode, chip::Dnssd::CommissioningMode mode)</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a790970e40c2b303e2496169c8b9c2ca8"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a790970e40c2b303e2496169c8b9c2ca8">chip::app::DnssdServer::AdvertiseCommissioner</a></div><div class="ttdeci">CHIP_ERROR AdvertiseCommissioner()</div><div class="ttdoc">Set MDNS commissioner advertisement</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a8c14e9a5dcdd95f2bc49b83be5919dee"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a8c14e9a5dcdd95f2bc49b83be5919dee">chip::app::DnssdServer::GetPrimaryOrFallbackMACAddress</a></div><div class="ttdeci">void GetPrimaryOrFallbackMACAddress(MutableByteSpan &amp;mac)</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_a9f759385123e4230000057478739d7e0"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#a9f759385123e4230000057478739d7e0">chip::app::DnssdServer::SetUnsecuredPort</a></div><div class="ttdeci">void SetUnsecuredPort(uint16_t port)</div><div class="ttdoc">Sets the unsecure Matter port</div><div class="ttdef"><b>Definition</b> Dnssd.h:62</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_abb5f78f8f09b76528ab8e02fa7b93d65"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#abb5f78f8f09b76528ab8e02fa7b93d65">chip::app::DnssdServer::HaveOperationalCredentials</a></div><div class="ttdeci">bool HaveOperationalCredentials()</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_ac66a5a156bdcef66f62324f277f4bdf1"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#ac66a5a156bdcef66f62324f277f4bdf1">chip::app::DnssdServer::OnEnterIdleMode</a></div><div class="ttdeci">void OnEnterIdleMode() override</div><div class="ttdoc">dnssd server has no action to do on this ICD event. Do nothing.</div><div class="ttdef"><b>Definition</b> Dnssd.h:158</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_ad035bab831cb3bcc05b776f2f35c143c"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#ad035bab831cb3bcc05b776f2f35c143c">chip::app::DnssdServer::GetInterfaceId</a></div><div class="ttdeci">Inet::InterfaceId GetInterfaceId()</div><div class="ttdoc">Gets the interface id used for advertising</div><div class="ttdef"><b>Definition</b> Dnssd.h:71</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_ad1d86b86f106681d06c04d2a30a16e0e"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#ad1d86b86f106681d06c04d2a30a16e0e">chip::app::DnssdServer::OnEnterActiveMode</a></div><div class="ttdeci">void OnEnterActiveMode() override</div><div class="ttdoc">dnssd server has no action to do on this ICD event. Do nothing.</div><div class="ttdef"><b>Definition</b> Dnssd.h:148</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_ad9616ae202d862605460ce42c3fe7bf7"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#ad9616ae202d862605460ce42c3fe7bf7">chip::app::DnssdServer::SetEphemeralDiscriminator</a></div><div class="ttdeci">CHIP_ERROR SetEphemeralDiscriminator(Optional&lt; uint16_t &gt; discriminator)</div><div class="ttdoc">Overrides configuration so that commissionable advertisement will use an ephemeral discriminator such...</div></div>
+<div class="ttc" id="aclasschip_1_1app_1_1DnssdServer_html_ae7fd545ae46c2a99d66366a2913cbf9d"><div class="ttname"><a href="classchip_1_1app_1_1DnssdServer.html#ae7fd545ae46c2a99d66366a2913cbf9d">chip::app::DnssdServer::SetFabricTable</a></div><div class="ttdeci">void SetFabricTable(FabricTable *table)</div><div class="ttdef"><b>Definition</b> Dnssd.h:78</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+<div class="ttc" id="anamespacechip_html_aaf771abf1db8295717d80349c7a62a6d"><div class="ttname"><a href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">chip::NullOptional</a></div><div class="ttdeci">constexpr NullOptionalType NullOptional</div><div class="ttdef"><b>Definition</b> Optional.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

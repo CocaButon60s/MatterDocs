@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/app/TestEventTriggerDelegate.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_a9aeb43d402f24b4c5513213743384b7.html">app</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TestEventTriggerDelegate.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="TestEventTriggerDelegate_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *    Copyright (c) 2022 Project CHIP Authors</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    All rights reserved.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPError_8h.html">lib/core/CHIPError.h</a>&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;lib/support/IntrusiveList.h&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="Span_8h.html">lib/support/Span.h</a>&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerHandler.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1TestEventTriggerHandler.html">TestEventTriggerHandler</a> : <span class="keyword">public</span> IntrusiveListNodeBase&lt;IntrusiveMode::AutoUnlink&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerHandler.html#a1538b7c120b3697fad146af6c56a445e">   32</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classchip_1_1TestEventTriggerHandler.html#a1538b7c120b3697fad146af6c56a445e">~TestEventTriggerHandler</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerHandler.html#abd7328eecb1f7151b06404138a885c9e">   41</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1TestEventTriggerHandler.html#abd7328eecb1f7151b06404138a885c9e">HandleEventTrigger</a>(uint64_t eventTrigger) = 0;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerHandler.html#a602ff6e212b24e814956fd3ff9d5f429">   43</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> uint64_t <a class="code hl_function" href="classchip_1_1TestEventTriggerHandler.html#a602ff6e212b24e814956fd3ff9d5f429">clearEndpointInEventTrigger</a>(uint64_t eventTrigger)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keyword">constexpr</span> uint64_t kEndpointMask = 0x0000FFFF00000000;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> eventTrigger &amp; ~kEndpointMask;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerDelegate.html">   50</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1TestEventTriggerDelegate.html">TestEventTriggerDelegate</a></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">/* Expected byte size of the EnableKey */</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerDelegate.html#a3bb32eea8569dc3ecc0ff49143d7dc2b">   54</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_variable" href="classchip_1_1TestEventTriggerDelegate.html#a3bb32eea8569dc3ecc0ff49143d7dc2b">kEnableKeyLength</a> = 16;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerDelegate.html#a414708d158bf02c91c390b5f399ca80f">   56</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classchip_1_1TestEventTriggerDelegate.html#a414708d158bf02c91c390b5f399ca80f">~TestEventTriggerDelegate</a>() {}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerDelegate.html#aa383bc9e186ef0031edafa8654a3c607">   62</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1TestEventTriggerDelegate.html#aa383bc9e186ef0031edafa8654a3c607">DoesEnableKeyMatch</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Span.html">ByteSpan</a> &amp; enableKey) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerDelegate.html#a577acfe0fe150911f21414589948e34a">   75</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1TestEventTriggerDelegate.html#a577acfe0fe150911f21414589948e34a">HandleEventTriggers</a>(uint64_t eventTrigger)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> last_error = <a class="code hl_define" href="CHIPError_8h.html#a16861ed332933820e629940561f47104">CHIP_ERROR_INVALID_ARGUMENT</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">for</span> (<a class="code hl_class" href="classchip_1_1TestEventTriggerHandler.html">TestEventTriggerHandler</a> &amp; handler : <a class="code hl_variable" href="classchip_1_1TestEventTriggerDelegate.html#a7764f51e620e6ebc7119f14fec6c881d">mHandlerList</a>)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            last_error = handler.HandleEventTrigger(eventTrigger);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">if</span> (last_error == <a class="code hl_define" href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e">CHIP_NO_ERROR</a>)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">return</span> last_error;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="foldopen" id="foldopen00090" data-start="{" data-end="}">
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerDelegate.html#a84ca283abe4937940d71567937ff2e7d">   90</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1TestEventTriggerDelegate.html#a84ca283abe4937940d71567937ff2e7d">AddHandler</a>(<a class="code hl_class" href="classchip_1_1TestEventTriggerHandler.html">TestEventTriggerHandler</a> * handler)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <a class="code hl_define" href="CodeUtils_8h.html#a87d6ca8bd6df53f66f84d1d0182ba649">VerifyOrReturnError</a>(!<a class="code hl_variable" href="classchip_1_1TestEventTriggerDelegate.html#a7764f51e620e6ebc7119f14fec6c881d">mHandlerList</a>.Contains(handler), <a class="code hl_define" href="CHIPError_8h.html#a16861ed332933820e629940561f47104">CHIP_ERROR_INVALID_ARGUMENT</a>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <a class="code hl_variable" href="classchip_1_1TestEventTriggerDelegate.html#a7764f51e620e6ebc7119f14fec6c881d">mHandlerList</a>.PushBack(handler);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e">CHIP_NO_ERROR</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerDelegate.html#a8e7f39ba007dbae33708d1ec4ed64918">   97</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1TestEventTriggerDelegate.html#a8e7f39ba007dbae33708d1ec4ed64918">RemoveHandler</a>(<a class="code hl_class" href="classchip_1_1TestEventTriggerHandler.html">TestEventTriggerHandler</a> * handler)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <a class="code hl_define" href="CodeUtils_8h.html#a037c2295bf352e271ab7aba5b4ef8b47">VerifyOrReturn</a>(<a class="code hl_variable" href="classchip_1_1TestEventTriggerDelegate.html#a7764f51e620e6ebc7119f14fec6c881d">mHandlerList</a>.Contains(handler));</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <a class="code hl_variable" href="classchip_1_1TestEventTriggerDelegate.html#a7764f51e620e6ebc7119f14fec6c881d">mHandlerList</a>.Remove(handler);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerDelegate.html#a52f908f75980e191d98864010fb5cb65">  103</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classchip_1_1TestEventTriggerDelegate.html#a52f908f75980e191d98864010fb5cb65">ClearAllHandlers</a>() { <a class="code hl_variable" href="classchip_1_1TestEventTriggerDelegate.html#a7764f51e620e6ebc7119f14fec6c881d">mHandlerList</a>.Clear(); }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classchip_1_1TestEventTriggerDelegate.html#a7764f51e620e6ebc7119f14fec6c881d">  106</a></span>    IntrusiveList&lt;TestEventTriggerHandler, IntrusiveMode::AutoUnlink&gt; <a class="code hl_variable" href="classchip_1_1TestEventTriggerDelegate.html#a7764f51e620e6ebc7119f14fec6c881d">mHandlerList</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>};</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="};">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classchip_1_1SimpleTestEventTriggerDelegate.html">  113</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1SimpleTestEventTriggerDelegate.html">SimpleTestEventTriggerDelegate</a> : <span class="keyword">public</span> <a class="code hl_class" href="classchip_1_1TestEventTriggerDelegate.html">TestEventTriggerDelegate</a></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>{</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classchip_1_1SimpleTestEventTriggerDelegate.html#a24394401286b368dafd6d81dbbe586b3">  116</a></span>    <a class="code hl_function" href="classchip_1_1SimpleTestEventTriggerDelegate.html#a24394401286b368dafd6d81dbbe586b3">SimpleTestEventTriggerDelegate</a>() { memset(&amp;<a class="code hl_variable" href="classchip_1_1SimpleTestEventTriggerDelegate.html#a9d194fac6319a33ab0519ad3b6cbbeed">mEnableKey</a>[0], 0, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="classchip_1_1SimpleTestEventTriggerDelegate.html#a9d194fac6319a33ab0519ad3b6cbbeed">mEnableKey</a>)); }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="classchip_1_1SimpleTestEventTriggerDelegate.html#a94fe201446956b228231d2c614dd6621">  124</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1SimpleTestEventTriggerDelegate.html#a94fe201446956b228231d2c614dd6621">Init</a>(<a class="code hl_class" href="classchip_1_1Span.html">ByteSpan</a> enableKey)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <a class="code hl_define" href="CodeUtils_8h.html#a87d6ca8bd6df53f66f84d1d0182ba649">VerifyOrReturnError</a>(enableKey.<a class="code hl_function" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">size</a>() == <span class="keyword">sizeof</span>(<a class="code hl_variable" href="classchip_1_1SimpleTestEventTriggerDelegate.html#a9d194fac6319a33ab0519ad3b6cbbeed">mEnableKey</a>), <a class="code hl_define" href="CHIPError_8h.html#a16861ed332933820e629940561f47104">CHIP_ERROR_INVALID_ARGUMENT</a>);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <a class="code hl_class" href="classchip_1_1Span.html">MutableByteSpan</a> ourEnableKeySpan(<a class="code hl_variable" href="classchip_1_1SimpleTestEventTriggerDelegate.html#a9d194fac6319a33ab0519ad3b6cbbeed">mEnableKey</a>);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacechip.html#a6f6da3ee0bd910685bf4de6bcaf103eb">CopySpanToMutableSpan</a>(enableKey, ourEnableKeySpan);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
+</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classchip_1_1SimpleTestEventTriggerDelegate.html#ad327c2529d530524d6c4cab75f7ff47a">  131</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1SimpleTestEventTriggerDelegate.html#ad327c2529d530524d6c4cab75f7ff47a">DoesEnableKeyMatch</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Span.html">ByteSpan</a> &amp; enableKey)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> enableKey.<a class="code hl_function" href="classchip_1_1Span.html#a8e6c14f3b40bbc5e6331b2bd4fcfb9d8">data_equal</a>(<a class="code hl_typedef" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a>(<a class="code hl_variable" href="classchip_1_1SimpleTestEventTriggerDelegate.html#a9d194fac6319a33ab0519ad3b6cbbeed">mEnableKey</a>)); }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="classchip_1_1SimpleTestEventTriggerDelegate.html#a9d194fac6319a33ab0519ad3b6cbbeed">  134</a></span>    uint8_t <a class="code hl_variable" href="classchip_1_1SimpleTestEventTriggerDelegate.html#a9d194fac6319a33ab0519ad3b6cbbeed">mEnableKey</a>[<a class="code hl_variable" href="classchip_1_1TestEventTriggerDelegate.html#a3bb32eea8569dc3ecc0ff49143d7dc2b">TestEventTriggerDelegate::kEnableKeyLength</a>];</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>};</div>
+</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>} <span class="comment">// namespace chip</span></div>
+<div class="ttc" id="aCHIPError_8h_html"><div class="ttname"><a href="CHIPError_8h.html">CHIPError.h</a></div></div>
+<div class="ttc" id="aCHIPError_8h_html_a16861ed332933820e629940561f47104"><div class="ttname"><a href="CHIPError_8h.html#a16861ed332933820e629940561f47104">CHIP_ERROR_INVALID_ARGUMENT</a></div><div class="ttdeci">#define CHIP_ERROR_INVALID_ARGUMENT</div><div class="ttdoc">An argument is invalid.</div><div class="ttdef"><b>Definition</b> CHIPError.h:919</div></div>
+<div class="ttc" id="aCHIPError_8h_html_a255ed42b89227e34eef134084739716e"><div class="ttname"><a href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e">CHIP_NO_ERROR</a></div><div class="ttdeci">#define CHIP_NO_ERROR</div><div class="ttdoc">This defines the CHIP error code for success or no error.</div><div class="ttdef"><b>Definition</b> CHIPError.h:490</div></div>
+<div class="ttc" id="aCodeUtils_8h_html_a037c2295bf352e271ab7aba5b4ef8b47"><div class="ttname"><a href="CodeUtils_8h.html#a037c2295bf352e271ab7aba5b4ef8b47">VerifyOrReturn</a></div><div class="ttdeci">#define VerifyOrReturn(expr,...)</div><div class="ttdoc">Returns from the void function if expression evaluates to false</div><div class="ttdef"><b>Definition</b> CodeUtils.h:279</div></div>
+<div class="ttc" id="aCodeUtils_8h_html_a87d6ca8bd6df53f66f84d1d0182ba649"><div class="ttname"><a href="CodeUtils_8h.html#a87d6ca8bd6df53f66f84d1d0182ba649">VerifyOrReturnError</a></div><div class="ttdeci">#define VerifyOrReturnError(expr, code,...)</div><div class="ttdoc">Returns a specified error code if expression evaluates to false</div><div class="ttdef"><b>Definition</b> CodeUtils.h:305</div></div>
+<div class="ttc" id="aSpan_8h_html"><div class="ttname"><a href="Span_8h.html">Span.h</a></div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html"><div class="ttname"><a href="classchip_1_1ChipError.html">chip::ChipError</a></div><div class="ttdef"><b>Definition</b> CHIPError.h:55</div></div>
+<div class="ttc" id="aclasschip_1_1SimpleTestEventTriggerDelegate_html"><div class="ttname"><a href="classchip_1_1SimpleTestEventTriggerDelegate.html">chip::SimpleTestEventTriggerDelegate</a></div><div class="ttdoc">TestEventTriggerDelegate that owns its enable key in RAM.</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:114</div></div>
+<div class="ttc" id="aclasschip_1_1SimpleTestEventTriggerDelegate_html_a24394401286b368dafd6d81dbbe586b3"><div class="ttname"><a href="classchip_1_1SimpleTestEventTriggerDelegate.html#a24394401286b368dafd6d81dbbe586b3">chip::SimpleTestEventTriggerDelegate::SimpleTestEventTriggerDelegate</a></div><div class="ttdeci">SimpleTestEventTriggerDelegate()</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:116</div></div>
+<div class="ttc" id="aclasschip_1_1SimpleTestEventTriggerDelegate_html_a94fe201446956b228231d2c614dd6621"><div class="ttname"><a href="classchip_1_1SimpleTestEventTriggerDelegate.html#a94fe201446956b228231d2c614dd6621">chip::SimpleTestEventTriggerDelegate::Init</a></div><div class="ttdeci">CHIP_ERROR Init(ByteSpan enableKey)</div><div class="ttdoc">Initialize the delegate with a key</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:124</div></div>
+<div class="ttc" id="aclasschip_1_1SimpleTestEventTriggerDelegate_html_a9d194fac6319a33ab0519ad3b6cbbeed"><div class="ttname"><a href="classchip_1_1SimpleTestEventTriggerDelegate.html#a9d194fac6319a33ab0519ad3b6cbbeed">chip::SimpleTestEventTriggerDelegate::mEnableKey</a></div><div class="ttdeci">uint8_t mEnableKey[TestEventTriggerDelegate::kEnableKeyLength]</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:134</div></div>
+<div class="ttc" id="aclasschip_1_1SimpleTestEventTriggerDelegate_html_ad327c2529d530524d6c4cab75f7ff47a"><div class="ttname"><a href="classchip_1_1SimpleTestEventTriggerDelegate.html#ad327c2529d530524d6c4cab75f7ff47a">chip::SimpleTestEventTriggerDelegate::DoesEnableKeyMatch</a></div><div class="ttdeci">bool DoesEnableKeyMatch(const ByteSpan &amp;enableKey) const override</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:131</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html"><div class="ttname"><a href="classchip_1_1Span.html">chip::Span&lt; const uint8_t &gt;</a></div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a7b92342295de7bf91dfd976f5a124aa8"><div class="ttname"><a href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8">chip::Span::size</a></div><div class="ttdeci">constexpr size_t size() const</div><div class="ttdef"><b>Definition</b> Span.h:120</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html_a8e6c14f3b40bbc5e6331b2bd4fcfb9d8"><div class="ttname"><a href="classchip_1_1Span.html#a8e6c14f3b40bbc5e6331b2bd4fcfb9d8">chip::Span::data_equal</a></div><div class="ttdeci">bool data_equal(const Span&lt; const T &gt; &amp;other) const</div><div class="ttdef"><b>Definition</b> Span.h:134</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerDelegate_html"><div class="ttname"><a href="classchip_1_1TestEventTriggerDelegate.html">chip::TestEventTriggerDelegate</a></div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:51</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerDelegate_html_a3bb32eea8569dc3ecc0ff49143d7dc2b"><div class="ttname"><a href="classchip_1_1TestEventTriggerDelegate.html#a3bb32eea8569dc3ecc0ff49143d7dc2b">chip::TestEventTriggerDelegate::kEnableKeyLength</a></div><div class="ttdeci">static constexpr size_t kEnableKeyLength</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:54</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerDelegate_html_a414708d158bf02c91c390b5f399ca80f"><div class="ttname"><a href="classchip_1_1TestEventTriggerDelegate.html#a414708d158bf02c91c390b5f399ca80f">chip::TestEventTriggerDelegate::~TestEventTriggerDelegate</a></div><div class="ttdeci">virtual ~TestEventTriggerDelegate()</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:56</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerDelegate_html_a52f908f75980e191d98864010fb5cb65"><div class="ttname"><a href="classchip_1_1TestEventTriggerDelegate.html#a52f908f75980e191d98864010fb5cb65">chip::TestEventTriggerDelegate::ClearAllHandlers</a></div><div class="ttdeci">void ClearAllHandlers()</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:103</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerDelegate_html_a577acfe0fe150911f21414589948e34a"><div class="ttname"><a href="classchip_1_1TestEventTriggerDelegate.html#a577acfe0fe150911f21414589948e34a">chip::TestEventTriggerDelegate::HandleEventTriggers</a></div><div class="ttdeci">virtual CHIP_ERROR HandleEventTriggers(uint64_t eventTrigger)</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:75</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerDelegate_html_a7764f51e620e6ebc7119f14fec6c881d"><div class="ttname"><a href="classchip_1_1TestEventTriggerDelegate.html#a7764f51e620e6ebc7119f14fec6c881d">chip::TestEventTriggerDelegate::mHandlerList</a></div><div class="ttdeci">IntrusiveList&lt; TestEventTriggerHandler, IntrusiveMode::AutoUnlink &gt; mHandlerList</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:106</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerDelegate_html_a84ca283abe4937940d71567937ff2e7d"><div class="ttname"><a href="classchip_1_1TestEventTriggerDelegate.html#a84ca283abe4937940d71567937ff2e7d">chip::TestEventTriggerDelegate::AddHandler</a></div><div class="ttdeci">CHIP_ERROR AddHandler(TestEventTriggerHandler *handler)</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:90</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerDelegate_html_a8e7f39ba007dbae33708d1ec4ed64918"><div class="ttname"><a href="classchip_1_1TestEventTriggerDelegate.html#a8e7f39ba007dbae33708d1ec4ed64918">chip::TestEventTriggerDelegate::RemoveHandler</a></div><div class="ttdeci">void RemoveHandler(TestEventTriggerHandler *handler)</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:97</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerDelegate_html_aa383bc9e186ef0031edafa8654a3c607"><div class="ttname"><a href="classchip_1_1TestEventTriggerDelegate.html#aa383bc9e186ef0031edafa8654a3c607">chip::TestEventTriggerDelegate::DoesEnableKeyMatch</a></div><div class="ttdeci">virtual bool DoesEnableKeyMatch(const ByteSpan &amp;enableKey) const =0</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerHandler_html"><div class="ttname"><a href="classchip_1_1TestEventTriggerHandler.html">chip::TestEventTriggerHandler</a></div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:30</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerHandler_html_a1538b7c120b3697fad146af6c56a445e"><div class="ttname"><a href="classchip_1_1TestEventTriggerHandler.html#a1538b7c120b3697fad146af6c56a445e">chip::TestEventTriggerHandler::~TestEventTriggerHandler</a></div><div class="ttdeci">virtual ~TestEventTriggerHandler()=default</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerHandler_html_a602ff6e212b24e814956fd3ff9d5f429"><div class="ttname"><a href="classchip_1_1TestEventTriggerHandler.html#a602ff6e212b24e814956fd3ff9d5f429">chip::TestEventTriggerHandler::clearEndpointInEventTrigger</a></div><div class="ttdeci">static constexpr uint64_t clearEndpointInEventTrigger(uint64_t eventTrigger)</div><div class="ttdef"><b>Definition</b> TestEventTriggerDelegate.h:43</div></div>
+<div class="ttc" id="aclasschip_1_1TestEventTriggerHandler_html_abd7328eecb1f7151b06404138a885c9e"><div class="ttname"><a href="classchip_1_1TestEventTriggerHandler.html#abd7328eecb1f7151b06404138a885c9e">chip::TestEventTriggerHandler::HandleEventTrigger</a></div><div class="ttdeci">virtual CHIP_ERROR HandleEventTrigger(uint64_t eventTrigger)=0</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+<div class="ttc" id="anamespacechip_html_a484ae57de38de1b6a4d136b125c1050d"><div class="ttname"><a href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">chip::ByteSpan</a></div><div class="ttdeci">Span&lt; const uint8_t &gt; ByteSpan</div><div class="ttdef"><b>Definition</b> Span.h:375</div></div>
+<div class="ttc" id="anamespacechip_html_a6f6da3ee0bd910685bf4de6bcaf103eb"><div class="ttname"><a href="namespacechip.html#a6f6da3ee0bd910685bf4de6bcaf103eb">chip::CopySpanToMutableSpan</a></div><div class="ttdeci">CHIP_ERROR CopySpanToMutableSpan(ByteSpan span_to_copy, MutableByteSpan &amp;out_buf)</div><div class="ttdef"><b>Definition</b> Span.h:385</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

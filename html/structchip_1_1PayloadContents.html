@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::PayloadContents 構造体</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="structchip_1_1PayloadContents.html">PayloadContents</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="structchip_1_1PayloadContents-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::PayloadContents 構造体</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="SetupPayload_8h_source.html">SetupPayload.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::PayloadContents の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="structchip_1_1PayloadContents__inherit__graph.png" border="0" usemap="#achip_1_1PayloadContents_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1PayloadContents_inherit__map" id="achip_1_1PayloadContents_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,5,172,31"/>
+<area shape="rect" href="classchip_1_1SetupPayload.html" title=" " alt="" coords="16,79,161,104"/>
+<area shape="poly" title=" " alt="" coords="91,44,91,79,86,79,86,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::PayloadContents 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="structchip_1_1PayloadContents__coll__graph.png" border="0" usemap="#achip_1_1PayloadContents_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1PayloadContents_coll__map" id="achip_1_1PayloadContents_coll__map">
+<area shape="rect" title=" " alt="" coords="968,35,1135,60"/>
+<area shape="rect" href="classchip_1_1Optional.html" title=" " alt="" coords="557,27,764,67"/>
+<area shape="poly" title=" " alt="" coords="778,45,968,45,968,50,778,50"/>
+<area shape="rect" href="classchip_1_1Optional_1_1ValueHolder.html" title=" " alt="" coords="261,27,412,67"/>
+<area shape="poly" title=" " alt="" coords="426,45,557,45,557,50,426,50"/>
+<area shape="rect" title=" " alt="" coords="5,5,212,89"/>
+<area shape="poly" title=" " alt="" coords="226,45,261,45,261,50,226,50"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a19f30488198c8f6a9721587cb8b62555" id="r_a19f30488198c8f6a9721587cb8b62555"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555">ValidationMode</a> : uint8_t { <a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555a778e08e88d04040a26ef80623953a98f">kProduce</a>
+, <a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555a785420181a82ba1a0e5e62a27cfb9361">kConsume</a>
+ }</td></tr>
+<tr class="separator:a19f30488198c8f6a9721587cb8b62555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aea38cf30bb62a4ea669d7e622f088903" id="r_aea38cf30bb62a4ea669d7e622f088903"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#aea38cf30bb62a4ea669d7e622f088903">isValidQRCodePayload</a> (<a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555">ValidationMode</a> mode=<a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555a778e08e88d04040a26ef80623953a98f">ValidationMode::kProduce</a>) const</td></tr>
+<tr class="separator:aea38cf30bb62a4ea669d7e622f088903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b60189051545894cd46652b9b82ba5" id="r_a62b60189051545894cd46652b9b82ba5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a62b60189051545894cd46652b9b82ba5">isValidManualCode</a> (<a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555">ValidationMode</a> mode=<a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555a778e08e88d04040a26ef80623953a98f">ValidationMode::kProduce</a>) const</td></tr>
+<tr class="separator:a62b60189051545894cd46652b9b82ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299ca137eaf19136b3c3994db9e2975b" id="r_a299ca137eaf19136b3c3994db9e2975b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a299ca137eaf19136b3c3994db9e2975b">operator==</a> (const <a class="el" href="structchip_1_1PayloadContents.html">PayloadContents</a> &amp;input) const</td></tr>
+<tr class="separator:a299ca137eaf19136b3c3994db9e2975b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2d6d07eac79faafac6a800639faa4fe9" id="r_a2d6d07eac79faafac6a800639faa4fe9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a2d6d07eac79faafac6a800639faa4fe9">IsValidSetupPIN</a> (uint32_t setupPIN)</td></tr>
+<tr class="separator:a2d6d07eac79faafac6a800639faa4fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a46a90435a54527b8dffd076b48dc009a" id="r_a46a90435a54527b8dffd076b48dc009a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a46a90435a54527b8dffd076b48dc009a">version</a> = 0</td></tr>
+<tr class="separator:a46a90435a54527b8dffd076b48dc009a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218f5f2e0eb89688225f803d2a4a013d" id="r_a218f5f2e0eb89688225f803d2a4a013d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a218f5f2e0eb89688225f803d2a4a013d">vendorID</a> = 0</td></tr>
+<tr class="separator:a218f5f2e0eb89688225f803d2a4a013d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453daefad62ab10900817367ae15d8ae" id="r_a453daefad62ab10900817367ae15d8ae"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a453daefad62ab10900817367ae15d8ae">productID</a> = 0</td></tr>
+<tr class="separator:a453daefad62ab10900817367ae15d8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e372106a9f3716dcc9a3711a9f2cad" id="r_a89e372106a9f3716dcc9a3711a9f2cad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a653451e4ce3766efe71692ad79a2788f">CommissioningFlow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a89e372106a9f3716dcc9a3711a9f2cad">commissioningFlow</a> = <a class="el" href="namespacechip.html#a653451e4ce3766efe71692ad79a2788fa821da62632c491ea619ead7b31c094bf">CommissioningFlow::kStandard</a></td></tr>
+<tr class="separator:a89e372106a9f3716dcc9a3711a9f2cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768b30adb6f04e0ee06212e7de7e1b3b" id="r_a768b30adb6f04e0ee06212e7de7e1b3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">RendezvousInformationFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a768b30adb6f04e0ee06212e7de7e1b3b">rendezvousInformation</a></td></tr>
+<tr class="separator:a768b30adb6f04e0ee06212e7de7e1b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1572562c7f671fa21494a0e25540e3" id="r_a4c1572562c7f671fa21494a0e25540e3"><td class="memItemLeft" align="right" valign="top">SetupDiscriminator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a4c1572562c7f671fa21494a0e25540e3">discriminator</a> {}</td></tr>
+<tr class="separator:a4c1572562c7f671fa21494a0e25540e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577d75a2acb86ffa12a0df5136f88239" id="r_a577d75a2acb86ffa12a0df5136f88239"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a577d75a2acb86ffa12a0df5136f88239">setUpPINCode</a> = 0</td></tr>
+<tr class="separator:a577d75a2acb86ffa12a0df5136f88239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:abf5e846c40adde77d24345964d048b4b" id="r_abf5e846c40adde77d24345964d048b4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#abf5e846c40adde77d24345964d048b4b">CheckPayloadCommonConstraints</a> () const</td></tr>
+<tr class="separator:abf5e846c40adde77d24345964d048b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>A parent struct to hold onboarding payload contents without optional info, for compatibility with devices that don't support std::string or STL. </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a19f30488198c8f6a9721587cb8b62555" name="a19f30488198c8f6a9721587cb8b62555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f30488198c8f6a9721587cb8b62555">&#9670;&#160;</a></span>ValidationMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555">chip::PayloadContents::ValidationMode</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a19f30488198c8f6a9721587cb8b62555a778e08e88d04040a26ef80623953a98f" name="a19f30488198c8f6a9721587cb8b62555a778e08e88d04040a26ef80623953a98f"></a>kProduce&#160;</td><td class="fielddoc"><p>Only flags or values allowed by the current spec version are allowed. Producers of a Setup Payload should use this mode to ensure the </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a19f30488198c8f6a9721587cb8b62555a785420181a82ba1a0e5e62a27cfb9361" name="a19f30488198c8f6a9721587cb8b62555a785420181a82ba1a0e5e62a27cfb9361"></a>kConsume&#160;</td><td class="fielddoc"><p>Flags or values that are reserved for future use, or were allowed in a previous spec version may be present. Consumers of a Setup Payload should use this mode to ensure they are forward and backwards compatible with payloads from older or newer Matter devices. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="abf5e846c40adde77d24345964d048b4b" name="abf5e846c40adde77d24345964d048b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5e846c40adde77d24345964d048b4b">&#9670;&#160;</a></span>CheckPayloadCommonConstraints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::PayloadContents::CheckPayloadCommonConstraints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62b60189051545894cd46652b9b82ba5" name="a62b60189051545894cd46652b9b82ba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62b60189051545894cd46652b9b82ba5">&#9670;&#160;</a></span>isValidManualCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::PayloadContents::isValidManualCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555">ValidationMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555a778e08e88d04040a26ef80623953a98f">ValidationMode::kProduce</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea38cf30bb62a4ea669d7e622f088903" name="aea38cf30bb62a4ea669d7e622f088903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea38cf30bb62a4ea669d7e622f088903">&#9670;&#160;</a></span>isValidQRCodePayload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::PayloadContents::isValidQRCodePayload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555">ValidationMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555a778e08e88d04040a26ef80623953a98f">ValidationMode::kProduce</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d6d07eac79faafac6a800639faa4fe9" name="a2d6d07eac79faafac6a800639faa4fe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d6d07eac79faafac6a800639faa4fe9">&#9670;&#160;</a></span>IsValidSetupPIN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool chip::PayloadContents::IsValidSetupPIN </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>setupPIN</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a299ca137eaf19136b3c3994db9e2975b" name="a299ca137eaf19136b3c3994db9e2975b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299ca137eaf19136b3c3994db9e2975b">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::PayloadContents::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1PayloadContents.html">PayloadContents</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a89e372106a9f3716dcc9a3711a9f2cad" name="a89e372106a9f3716dcc9a3711a9f2cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e372106a9f3716dcc9a3711a9f2cad">&#9670;&#160;</a></span>commissioningFlow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip.html#a653451e4ce3766efe71692ad79a2788f">CommissioningFlow</a> chip::PayloadContents::commissioningFlow = <a class="el" href="namespacechip.html#a653451e4ce3766efe71692ad79a2788fa821da62632c491ea619ead7b31c094bf">CommissioningFlow::kStandard</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c1572562c7f671fa21494a0e25540e3" name="a4c1572562c7f671fa21494a0e25540e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c1572562c7f671fa21494a0e25540e3">&#9670;&#160;</a></span>discriminator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SetupDiscriminator chip::PayloadContents::discriminator {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a453daefad62ab10900817367ae15d8ae" name="a453daefad62ab10900817367ae15d8ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453daefad62ab10900817367ae15d8ae">&#9670;&#160;</a></span>productID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t chip::PayloadContents::productID = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a768b30adb6f04e0ee06212e7de7e1b3b" name="a768b30adb6f04e0ee06212e7de7e1b3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a768b30adb6f04e0ee06212e7de7e1b3b">&#9670;&#160;</a></span>rendezvousInformation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt;<a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">RendezvousInformationFlags</a>&gt; chip::PayloadContents::rendezvousInformation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a577d75a2acb86ffa12a0df5136f88239" name="a577d75a2acb86ffa12a0df5136f88239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a577d75a2acb86ffa12a0df5136f88239">&#9670;&#160;</a></span>setUpPINCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t chip::PayloadContents::setUpPINCode = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a218f5f2e0eb89688225f803d2a4a013d" name="a218f5f2e0eb89688225f803d2a4a013d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218f5f2e0eb89688225f803d2a4a013d">&#9670;&#160;</a></span>vendorID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t chip::PayloadContents::vendorID = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46a90435a54527b8dffd076b48dc009a" name="a46a90435a54527b8dffd076b48dc009a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46a90435a54527b8dffd076b48dc009a">&#9670;&#160;</a></span>version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t chip::PayloadContents::version = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/setup_payload/<a class="el" href="SetupPayload_8h_source.html">SetupPayload.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

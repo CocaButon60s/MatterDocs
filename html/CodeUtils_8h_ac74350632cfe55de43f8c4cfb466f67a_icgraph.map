@@ -1,0 +1,5 @@
+<map id="DefaultStringWhenNull" name="DefaultStringWhenNull">
+<area shape="rect" id="Node000001" title="Ensures that if str is NULL, a non&#45;null default_str_value is provided" alt="" coords="200,5,371,31"/>
+<area shape="rect" id="Node000002" href="$CodeUtils_8h.html#a6f67c8ad78e853816ecd018753e32503" title="Ensure that a string for a s specifier is shown as &quot;(null)&quot; if null" alt="" coords="5,5,152,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,21,152,21,152,15,186,15"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="chip::Platform::Impl::ScopedMemoryBufferBase::Calloc" name="chip::Platform::Impl::ScopedMemoryBufferBase::Calloc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="547,5,749,60"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Platform_1_1ScopedMemoryBuffer.html#af43260d8019073d89210810cdc3a4b09" title=" " alt="" coords="276,13,499,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="533,35,499,35,499,30,533,30"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Platform_1_1ScopedMemoryBufferWithSize.html#a4308c73712fb458fea42da8c3e408306" title=" " alt="" coords="5,13,228,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="262,35,228,35,228,30,262,30"/>
+</map>

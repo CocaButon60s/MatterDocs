@@ -1,0 +1,9 @@
+<map id="GetActionListInfo" name="GetActionListInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="264,121,399,146"/>
+<area shape="rect" id="Node000002" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a40c81795ed59dad860acec7bbc2652c9" title="Callback that will be called to handle an InstantAction command." alt="" coords="5,5,216,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,118,192,77,194,72,289,113"/>
+<area shape="rect" id="Node000003" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#abef8c4a570d562b2053bb93dc136a2b3" title=" " alt="" coords="5,99,216,168"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,136,216,136,216,131,250,131"/>
+<area shape="rect" id="Node000004" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a1c188b1512454e8589c2396698570081" title=" " alt="" coords="5,192,216,261"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="289,154,194,194,192,190,287,149"/>
+</map>

@@ -1,0 +1,1524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::ChipError クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="classchip_1_1ChipError.html">ChipError</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-static-methods">静的非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="classchip_1_1ChipError-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::ChipError クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="CHIPError_8h_source.html">CHIPError.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ChipError_1_1MaskConstant.html">MaskConstant</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ChipError_1_1SdkErrorConstant.html">SdkErrorConstant</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a5cea3132e92d32e8590bf3a77780e01d" id="r_a5cea3132e92d32e8590bf3a77780e01d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da8635fb4ddf108701e76114d57e2753f5">kSDK</a> = 0x0
+, <a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01dab5afb310527a3ec216c7e3782104872d">kOS</a> = 0x1
+, <a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01daf685c0d60ac42661a3cad1fa8f76ecf3">kPOSIX</a> = 0x2
+, <a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da90af59bb4a58aaf6140101fb5d09d8d8">kLwIP</a> = 0x3
+, <br />
+&#160;&#160;<a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da048d24cf2be34000904b23eb2a249fc0">kOpenThread</a> = 0x4
+, <a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01daaa0c092e7769e59e3425838a5d9409dc">kPlatform</a> = 0x5
+, <a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da7cab1c8d19f96808795ed64395ae09bb">kLastRange</a> = kPlatform
+<br />
+ }</td></tr>
+<tr class="separator:a5cea3132e92d32e8590bf3a77780e01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ec991a41f971055317442769ae6d01" id="r_af5ec991a41f971055317442769ae6d01"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01ade8900e4c323b0c667bfd5ca5ecf9e5c">kCore</a> = 0
+, <a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01ae6cbf2ab03f7c67d3d0be39178529a00">kInet</a> = 1
+, <a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a040394711ad65e20323fe0114e507103">kDevice</a> = 2
+, <a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a355aaee592c8572685a144827b675db1">kASN1</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a94919bca50489b7b7d62eea68ab00899">kBLE</a> = 4
+, <a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a063bd39fa660e0d7ecaf6f826d7b1f77">kIMGlobalStatus</a> = 5
+, <a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01afdd2d7ed9584c10c043737a6b4e2778b">kIMClusterStatus</a> = 6
+, <a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a1b6ec7b97ae011119afe1762e70c992a">kApplication</a> = 7
+<br />
+ }</td></tr>
+<tr class="separator:af5ec991a41f971055317442769ae6d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11348c5986f6414064a12f669bcfc2a" id="r_ab11348c5986f6414064a12f669bcfc2a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> = uint32_t</td></tr>
+<tr class="memdesc:ab11348c5986f6414064a12f669bcfc2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal representation of an error.  <br /></td></tr>
+<tr class="separator:ab11348c5986f6414064a12f669bcfc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97fe0d8504444f399cfefdae91af907c" id="r_a97fe0d8504444f399cfefdae91af907c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">ValueType</a> = <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a></td></tr>
+<tr class="memdesc:a97fe0d8504444f399cfefdae91af907c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for encapsulated error values.  <br /></td></tr>
+<tr class="separator:a97fe0d8504444f399cfefdae91af907c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3384f4135b96b9ea5a81d14967e305a" id="r_ac3384f4135b96b9ea5a81d14967e305a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#ac3384f4135b96b9ea5a81d14967e305a">FormatType</a> = <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a></td></tr>
+<tr class="memdesc:ac3384f4135b96b9ea5a81d14967e305a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type returned by <a class="el" href="classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61">Format()</a>.  <br /></td></tr>
+<tr class="separator:ac3384f4135b96b9ea5a81d14967e305a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a517a8fc6834a0f9441feb7497eb7f73e" id="r_a517a8fc6834a0f9441feb7497eb7f73e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a517a8fc6834a0f9441feb7497eb7f73e">ChipError</a> ()=default</td></tr>
+<tr class="separator:a517a8fc6834a0f9441feb7497eb7f73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648cde69f812464525fe527490f2c510" id="r_a648cde69f812464525fe527490f2c510"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a648cde69f812464525fe527490f2c510">ChipError</a> (<a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a> range, <a class="el" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">ValueType</a> value)</td></tr>
+<tr class="separator:a648cde69f812464525fe527490f2c510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae614bf5e83f7a005df752973083a804b" id="r_ae614bf5e83f7a005df752973083a804b"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#ae614bf5e83f7a005df752973083a804b">ChipError</a> (<a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a> part, uint8_t code)</td></tr>
+<tr class="separator:ae614bf5e83f7a005df752973083a804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa847c6253f2a854ccac2e7ccff3e685f" id="r_aa847c6253f2a854ccac2e7ccff3e685f"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#aa847c6253f2a854ccac2e7ccff3e685f">ChipError</a> (<a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> error)</td></tr>
+<tr class="separator:aa847c6253f2a854ccac2e7ccff3e685f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f681971fc9488c4ef9b251c470f4543" id="r_a7f681971fc9488c4ef9b251c470f4543"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a7f681971fc9488c4ef9b251c470f4543">operator==</a> (const <a class="el" href="classchip_1_1ChipError.html">ChipError</a> &amp;other) const</td></tr>
+<tr class="separator:a7f681971fc9488c4ef9b251c470f4543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3c79221e490945cd5bbf050b5aa74f" id="r_abd3c79221e490945cd5bbf050b5aa74f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#abd3c79221e490945cd5bbf050b5aa74f">operator!=</a> (const <a class="el" href="classchip_1_1ChipError.html">ChipError</a> &amp;other) const</td></tr>
+<tr class="separator:abd3c79221e490945cd5bbf050b5aa74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42a8f9e612807fcdb4950df3a158f78" id="r_ae42a8f9e612807fcdb4950df3a158f78"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#ae42a8f9e612807fcdb4950df3a158f78">AsInteger</a> () const</td></tr>
+<tr class="separator:ae42a8f9e612807fcdb4950df3a158f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a06d58e69520364afdacd7caf9eed61" id="r_a3a06d58e69520364afdacd7caf9eed61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1ChipError.html#ac3384f4135b96b9ea5a81d14967e305a">FormatType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61">Format</a> () const</td></tr>
+<tr class="separator:a3a06d58e69520364afdacd7caf9eed61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab553ddc0146892e8b529ecfdac1140e1" id="r_ab553ddc0146892e8b529ecfdac1140e1"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#ab553ddc0146892e8b529ecfdac1140e1">AsString</a> (bool withSourceLocation=true) const</td></tr>
+<tr class="separator:ab553ddc0146892e8b529ecfdac1140e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b5f98d2d117be65be2a1779771029a" id="r_a36b5f98d2d117be65be2a1779771029a"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a36b5f98d2d117be65be2a1779771029a">IsRange</a> (<a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a> range) const</td></tr>
+<tr class="separator:a36b5f98d2d117be65be2a1779771029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6342d6f7fd361ab3f8b49d8b8dee1d39" id="r_a6342d6f7fd361ab3f8b49d8b8dee1d39"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a6342d6f7fd361ab3f8b49d8b8dee1d39">GetRange</a> () const</td></tr>
+<tr class="separator:a6342d6f7fd361ab3f8b49d8b8dee1d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04534f71ce26546ed69848e2963ddcd1" id="r_a04534f71ce26546ed69848e2963ddcd1"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">ValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a04534f71ce26546ed69848e2963ddcd1">GetValue</a> () const</td></tr>
+<tr class="separator:a04534f71ce26546ed69848e2963ddcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982b4916c50dc5b00982da0547aa3614" id="r_a982b4916c50dc5b00982da0547aa3614"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a982b4916c50dc5b00982da0547aa3614">IsPart</a> (<a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a> part) const</td></tr>
+<tr class="separator:a982b4916c50dc5b00982da0547aa3614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e30096a2869b2fb53cf24c33586cf82" id="r_a6e30096a2869b2fb53cf24c33586cf82"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a6e30096a2869b2fb53cf24c33586cf82">GetSdkCode</a> () const</td></tr>
+<tr class="separator:a6e30096a2869b2fb53cf24c33586cf82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886b316b1a8601a847d107027e83ae08" id="r_a886b316b1a8601a847d107027e83ae08"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a886b316b1a8601a847d107027e83ae08">IsIMStatus</a> () const</td></tr>
+<tr class="separator:a886b316b1a8601a847d107027e83ae08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a87972cb4a370f693e7bdddde0ac6ad81" id="r_a87972cb4a370f693e7bdddde0ac6ad81"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a87972cb4a370f693e7bdddde0ac6ad81">IsSuccess</a> (<a class="el" href="classchip_1_1ChipError.html">ChipError</a> error)</td></tr>
+<tr class="separator:a87972cb4a370f693e7bdddde0ac6ad81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c869727927ae905b546a8e092b597a" id="r_a10c869727927ae905b546a8e092b597a"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a10c869727927ae905b546a8e092b597a">IsSuccess</a> (<a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> error)</td></tr>
+<tr class="separator:a10c869727927ae905b546a8e092b597a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88d3be92773ce237bcc71e78650f740" id="r_ab88d3be92773ce237bcc71e78650f740"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab88d3be92773ce237bcc71e78650f740"><td class="memTemplItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#ab88d3be92773ce237bcc71e78650f740">CanEncapsulate</a> ()</td></tr>
+<tr class="separator:ab88d3be92773ce237bcc71e78650f740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5139a684a5107a10c7aab2c82d155976" id="r_a5139a684a5107a10c7aab2c82d155976"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5139a684a5107a10c7aab2c82d155976"><td class="memTemplItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a5139a684a5107a10c7aab2c82d155976">CanEncapsulate</a> (T value)</td></tr>
+<tr class="separator:a5139a684a5107a10c7aab2c82d155976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静的非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7c6b10e4205be670f328b2582bbcef64" id="r_a7c6b10e4205be670f328b2582bbcef64"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a7c6b10e4205be670f328b2582bbcef64">GetField</a> (unsigned int start, unsigned int length, <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> value)</td></tr>
+<tr class="separator:a7c6b10e4205be670f328b2582bbcef64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a140538856993f7e4c46613b523f935c0" id="r_a140538856993f7e4c46613b523f935c0"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0">MakeMask</a> (unsigned int start, unsigned int length)</td></tr>
+<tr class="separator:a140538856993f7e4c46613b523f935c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc906bafe4f1655e9786d9bf7269f59" id="r_a1dc906bafe4f1655e9786d9bf7269f59"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59">MakeField</a> (unsigned int start, <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> value)</td></tr>
+<tr class="separator:a1dc906bafe4f1655e9786d9bf7269f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d5da3c7d5abeb85eee39213dc24f56" id="r_a98d5da3c7d5abeb85eee39213dc24f56"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a98d5da3c7d5abeb85eee39213dc24f56">FitsInField</a> (unsigned int length, <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> value)</td></tr>
+<tr class="separator:a98d5da3c7d5abeb85eee39213dc24f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2231140be268f9d8d3ac60a87d2917bf" id="r_a2231140be268f9d8d3ac60a87d2917bf"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">MakeInteger</a> (<a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a> range, <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> value)</td></tr>
+<tr class="separator:a2231140be268f9d8d3ac60a87d2917bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec722d82e8f95bfb05bfb079dd7d6c07" id="r_aec722d82e8f95bfb05bfb079dd7d6c07"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#aec722d82e8f95bfb05bfb079dd7d6c07">MakeInteger</a> (<a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a> part, uint8_t code)</td></tr>
+<tr class="separator:aec722d82e8f95bfb05bfb079dd7d6c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ab815ecfceacf1c09589981cac36e1dcd" id="r_ab815ecfceacf1c09589981cac36e1dcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a></td></tr>
+<tr class="separator:ab815ecfceacf1c09589981cac36e1dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:ac3453beeedb11e576067be7d3c8d6dc3" id="r_ac3453beeedb11e576067be7d3c8d6dc3"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#ac3453beeedb11e576067be7d3c8d6dc3">kRangeStart</a> = 24</td></tr>
+<tr class="separator:ac3453beeedb11e576067be7d3c8d6dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46dbe68b03cbd6d1b8b8fa7fbdf27f2" id="r_ab46dbe68b03cbd6d1b8b8fa7fbdf27f2"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#ab46dbe68b03cbd6d1b8b8fa7fbdf27f2">kRangeLength</a> = 8</td></tr>
+<tr class="separator:ab46dbe68b03cbd6d1b8b8fa7fbdf27f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fc73cc958f21d700dde79e1cdadfea" id="r_a01fc73cc958f21d700dde79e1cdadfea"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a01fc73cc958f21d700dde79e1cdadfea">kValueStart</a> = 0</td></tr>
+<tr class="separator:a01fc73cc958f21d700dde79e1cdadfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29e35aa46a8bfca3cc210b5e86bb5fc" id="r_ab29e35aa46a8bfca3cc210b5e86bb5fc"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#ab29e35aa46a8bfca3cc210b5e86bb5fc">kValueLength</a> = 24</td></tr>
+<tr class="separator:ab29e35aa46a8bfca3cc210b5e86bb5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481a30245293d3e0a9a53f18c33dd8fe" id="r_a481a30245293d3e0a9a53f18c33dd8fe"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a481a30245293d3e0a9a53f18c33dd8fe">kSdkPartStart</a> = 8</td></tr>
+<tr class="separator:a481a30245293d3e0a9a53f18c33dd8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee354adbac5c52b17cd8cf60b01d5b7" id="r_a9ee354adbac5c52b17cd8cf60b01d5b7"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#a9ee354adbac5c52b17cd8cf60b01d5b7">kSdkPartLength</a> = 3</td></tr>
+<tr class="separator:a9ee354adbac5c52b17cd8cf60b01d5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3dba9c2e85ede61b1b86e928a3cb714" id="r_af3dba9c2e85ede61b1b86e928a3cb714"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#af3dba9c2e85ede61b1b86e928a3cb714">kSdkCodeStart</a> = 0</td></tr>
+<tr class="separator:af3dba9c2e85ede61b1b86e928a3cb714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e2304309f1dd262552adf0d327b900" id="r_ae7e2304309f1dd262552adf0d327b900"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1ChipError.html#ae7e2304309f1dd262552adf0d327b900">kSdkCodeLength</a> = 8</td></tr>
+<tr class="separator:ae7e2304309f1dd262552adf0d327b900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>This class represents CHIP errors.</p>
+<p>At the top level, an error belongs to a Range and has an integral Value whose meaning depends on the Range. One, <a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da8635fb4ddf108701e76114d57e2753f5" title="CHIP SDK errors.">Range::kSDK</a>, is used for the CHIP SDK's own errors; others encapsulate error codes from external sources (e.g. libraries, OS) into a CHIP_ERROR.</p>
+<p>CHIP SDK errors inside <a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da8635fb4ddf108701e76114d57e2753f5" title="CHIP SDK errors.">Range::kSDK</a> consist of a component identifier given by SdkPart and an arbitrary small integer Code. </p>
+</div><h2 class="groupheader">型定義メンバ詳解</h2>
+<a id="ac3384f4135b96b9ea5a81d14967e305a" name="ac3384f4135b96b9ea5a81d14967e305a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3384f4135b96b9ea5a81d14967e305a">&#9670;&#160;</a></span>FormatType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classchip_1_1ChipError.html#ac3384f4135b96b9ea5a81d14967e305a">chip::ChipError::FormatType</a> =  <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type returned by <a class="el" href="classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61">Format()</a>. </p>
+
+</div>
+</div>
+<a id="ab11348c5986f6414064a12f669bcfc2a" name="ab11348c5986f6414064a12f669bcfc2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11348c5986f6414064a12f669bcfc2a">&#9670;&#160;</a></span>StorageType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">chip::ChipError::StorageType</a> =  uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Internal representation of an error. </p>
+
+</div>
+</div>
+<a id="a97fe0d8504444f399cfefdae91af907c" name="a97fe0d8504444f399cfefdae91af907c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97fe0d8504444f399cfefdae91af907c">&#9670;&#160;</a></span>ValueType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">chip::ChipError::ValueType</a> =  <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type for encapsulated error values. </p>
+
+</div>
+</div>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a5cea3132e92d32e8590bf3a77780e01d" name="a5cea3132e92d32e8590bf3a77780e01d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cea3132e92d32e8590bf3a77780e01d">&#9670;&#160;</a></span>Range</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">chip::ChipError::Range</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Top-level error classification.</p>
+<p>Every error belongs to a Range and has an integral Value whose meaning depends on the Range. All native CHIP SDK errors belong to the kSDK range. Other ranges are used to encapsulate error codes from other subsystems (e.g. platform or library) used by the CHIP SDK. </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a5cea3132e92d32e8590bf3a77780e01da8635fb4ddf108701e76114d57e2753f5" name="a5cea3132e92d32e8590bf3a77780e01da8635fb4ddf108701e76114d57e2753f5"></a>kSDK&#160;</td><td class="fielddoc"><p>CHIP SDK errors. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cea3132e92d32e8590bf3a77780e01dab5afb310527a3ec216c7e3782104872d" name="a5cea3132e92d32e8590bf3a77780e01dab5afb310527a3ec216c7e3782104872d"></a>kOS&#160;</td><td class="fielddoc"><p>Encapsulated OS errors, other than POSIX errno. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cea3132e92d32e8590bf3a77780e01daf685c0d60ac42661a3cad1fa8f76ecf3" name="a5cea3132e92d32e8590bf3a77780e01daf685c0d60ac42661a3cad1fa8f76ecf3"></a>kPOSIX&#160;</td><td class="fielddoc"><p>Encapsulated POSIX errno values. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cea3132e92d32e8590bf3a77780e01da90af59bb4a58aaf6140101fb5d09d8d8" name="a5cea3132e92d32e8590bf3a77780e01da90af59bb4a58aaf6140101fb5d09d8d8"></a>kLwIP&#160;</td><td class="fielddoc"><p>Encapsulated LwIP errors. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cea3132e92d32e8590bf3a77780e01da048d24cf2be34000904b23eb2a249fc0" name="a5cea3132e92d32e8590bf3a77780e01da048d24cf2be34000904b23eb2a249fc0"></a>kOpenThread&#160;</td><td class="fielddoc"><p>Encapsulated OpenThread errors. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cea3132e92d32e8590bf3a77780e01daaa0c092e7769e59e3425838a5d9409dc" name="a5cea3132e92d32e8590bf3a77780e01daaa0c092e7769e59e3425838a5d9409dc"></a>kPlatform&#160;</td><td class="fielddoc"><p>Platform-defined encapsulation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cea3132e92d32e8590bf3a77780e01da7cab1c8d19f96808795ed64395ae09bb" name="a5cea3132e92d32e8590bf3a77780e01da7cab1c8d19f96808795ed64395ae09bb"></a>kLastRange&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="af5ec991a41f971055317442769ae6d01" name="af5ec991a41f971055317442769ae6d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ec991a41f971055317442769ae6d01">&#9670;&#160;</a></span>SdkPart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">chip::ChipError::SdkPart</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Secondary classification of CHIP SDK errors (<a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da8635fb4ddf108701e76114d57e2753f5" title="CHIP SDK errors.">Range::kSDK</a>). </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="af5ec991a41f971055317442769ae6d01ade8900e4c323b0c667bfd5ca5ecf9e5c" name="af5ec991a41f971055317442769ae6d01ade8900e4c323b0c667bfd5ca5ecf9e5c"></a>kCore&#160;</td><td class="fielddoc"><p>SDK core errors. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af5ec991a41f971055317442769ae6d01ae6cbf2ab03f7c67d3d0be39178529a00" name="af5ec991a41f971055317442769ae6d01ae6cbf2ab03f7c67d3d0be39178529a00"></a>kInet&#160;</td><td class="fielddoc"><p><a class="el" href="namespacechip_1_1Inet.html">Inet</a> layer errors; see &lt;inet/InetError.h&gt;. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af5ec991a41f971055317442769ae6d01a040394711ad65e20323fe0114e507103" name="af5ec991a41f971055317442769ae6d01a040394711ad65e20323fe0114e507103"></a>kDevice&#160;</td><td class="fielddoc"><p><a class="el" href="classDevice.html">Device</a> layer errors; see &lt;platform/CHIPDeviceError.h&gt;. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af5ec991a41f971055317442769ae6d01a355aaee592c8572685a144827b675db1" name="af5ec991a41f971055317442769ae6d01a355aaee592c8572685a144827b675db1"></a>kASN1&#160;</td><td class="fielddoc"><p>ASN1 errors; see &lt;asn1/ASN1Error.h&gt;. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af5ec991a41f971055317442769ae6d01a94919bca50489b7b7d62eea68ab00899" name="af5ec991a41f971055317442769ae6d01a94919bca50489b7b7d62eea68ab00899"></a>kBLE&#160;</td><td class="fielddoc"><p>BLE layer errors; see &lt;ble/BleError.h&gt;. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af5ec991a41f971055317442769ae6d01a063bd39fa660e0d7ecaf6f826d7b1f77" name="af5ec991a41f971055317442769ae6d01a063bd39fa660e0d7ecaf6f826d7b1f77"></a>kIMGlobalStatus&#160;</td><td class="fielddoc"><p>Interaction Model global status code. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af5ec991a41f971055317442769ae6d01afdd2d7ed9584c10c043737a6b4e2778b" name="af5ec991a41f971055317442769ae6d01afdd2d7ed9584c10c043737a6b4e2778b"></a>kIMClusterStatus&#160;</td><td class="fielddoc"><p>Interaction Model cluster-specific status code. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af5ec991a41f971055317442769ae6d01a1b6ec7b97ae011119afe1762e70c992a" name="af5ec991a41f971055317442769ae6d01a1b6ec7b97ae011119afe1762e70c992a"></a>kApplication&#160;</td><td class="fielddoc"><p>Application-defined errors; see CHIP_APPLICATION_ERROR </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a517a8fc6834a0f9441feb7497eb7f73e" name="a517a8fc6834a0f9441feb7497eb7f73e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a517a8fc6834a0f9441feb7497eb7f73e">&#9670;&#160;</a></span>ChipError() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::ChipError::ChipError </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a648cde69f812464525fe527490f2c510" name="a648cde69f812464525fe527490f2c510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a648cde69f812464525fe527490f2c510">&#9670;&#160;</a></span>ChipError() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr chip::ChipError::ChipError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a>&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">ValueType</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Construct a CHIP_ERROR encapsulating <em>value</em> inside the Range <em>range</em>.</p>
+<dl class="section note"><dt>覚え書き</dt><dd>The result is valid only if <a class="el" href="classchip_1_1ChipError.html#ab88d3be92773ce237bcc71e78650f740">CanEncapsulate()</a> is true. </dd></dl>
+
+</div>
+</div>
+<a id="ae614bf5e83f7a005df752973083a804b" name="ae614bf5e83f7a005df752973083a804b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae614bf5e83f7a005df752973083a804b">&#9670;&#160;</a></span>ChipError() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr chip::ChipError::ChipError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a>&#160;</td>
+          <td class="paramname"><em>part</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Construct a CHIP_ERROR for SdkPart <em>part</em> with <em>code</em>.</p>
+<dl class="section note"><dt>覚え書き</dt><dd>The macro version CHIP_SDK_ERROR checks that the numeric value is constant and well-formed. </dd></dl>
+
+</div>
+</div>
+<a id="aa847c6253f2a854ccac2e7ccff3e685f" name="aa847c6253f2a854ccac2e7ccff3e685f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa847c6253f2a854ccac2e7ccff3e685f">&#9670;&#160;</a></span>ChipError() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr chip::ChipError::ChipError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Construct a CHIP_ERROR from the underlying storage type.</p>
+<dl class="section note"><dt>覚え書き</dt><dd>This is intended to be used only in foreign function interfaces. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ae42a8f9e612807fcdb4950df3a158f78" name="ae42a8f9e612807fcdb4950df3a158f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae42a8f9e612807fcdb4950df3a158f78">&#9670;&#160;</a></span>AsInteger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> chip::ChipError::AsInteger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return an integer code for the error. </p>
+
+</div>
+</div>
+<a id="ab553ddc0146892e8b529ecfdac1140e1" name="ab553ddc0146892e8b529ecfdac1140e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab553ddc0146892e8b529ecfdac1140e1">&#9670;&#160;</a></span>AsString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * chip::ChipError::AsString </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>withSourceLocation</em> = <code>true</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Format an <em>error</em> as a string for printing.</p>
+<dl class="section note"><dt>覚え書き</dt><dd>Normally, prefer to use <a class="el" href="classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61">Format()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab88d3be92773ce237bcc71e78650f740" name="ab88d3be92773ce237bcc71e78650f740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab88d3be92773ce237bcc71e78650f740">&#9670;&#160;</a></span>CanEncapsulate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr bool chip::ChipError::CanEncapsulate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Test whether type <em>T</em> can always be losslessly encapsulated in a CHIP_ERROR. </p>
+
+</div>
+</div>
+<a id="a5139a684a5107a10c7aab2c82d155976" name="a5139a684a5107a10c7aab2c82d155976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5139a684a5107a10c7aab2c82d155976">&#9670;&#160;</a></span>CanEncapsulate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr bool chip::ChipError::CanEncapsulate </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Test whether if <em>value</em> can be losslessly encapsulated in a CHIP_ERROR. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a5139a684a5107a10c7aab2c82d155976_cgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a5139a684a5107a10c7aab2c82d155976_cgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a5139a684a5107a10c7aab2c82d155976_cgraph" id="aclasschip_1_1ChipError_a5139a684a5107a10c7aab2c82d155976_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,235,31"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a98d5da3c7d5abeb85eee39213dc24f56" title=" " alt="" coords="283,5,473,31"/>
+<area shape="poly" title=" " alt="" coords="235,15,269,15,269,21,235,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a98d5da3c7d5abeb85eee39213dc24f56" name="a98d5da3c7d5abeb85eee39213dc24f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d5da3c7d5abeb85eee39213dc24f56">&#9670;&#160;</a></span>FitsInField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr bool chip::ChipError::FitsInField </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a98d5da3c7d5abeb85eee39213dc24f56_icgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a98d5da3c7d5abeb85eee39213dc24f56_icgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a98d5da3c7d5abeb85eee39213dc24f56_icgraph" id="aclasschip_1_1ChipError_a98d5da3c7d5abeb85eee39213dc24f56_icgraph">
+<area shape="rect" title=" " alt="" coords="283,5,473,31"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a5139a684a5107a10c7aab2c82d155976" title=" " alt="" coords="5,5,235,31"/>
+<area shape="poly" title=" " alt="" coords="269,21,235,21,235,15,269,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3a06d58e69520364afdacd7caf9eed61" name="a3a06d58e69520364afdacd7caf9eed61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a06d58e69520364afdacd7caf9eed61">&#9670;&#160;</a></span>Format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1ChipError.html#ac3384f4135b96b9ea5a81d14967e305a">FormatType</a> chip::ChipError::Format </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Format an <em>error</em> for printing.</p>
+<p>Normally, this is used with the <code>printf()</code>-style macro CHIP_ERROR_FORMAT. For example, </p><div class="fragment"><div class="line">ChipLogError(subsystem, <span class="stringliteral">&quot;A bad thing happened! %&quot;</span> <a class="code hl_define" href="CHIPError_8h.html#adb3b345d518d3ee539f0ac7bfac802f5">CHIP_ERROR_FORMAT</a>, status.Format());</div>
+<div class="ttc" id="aCHIPError_8h_html_adb3b345d518d3ee539f0ac7bfac802f5"><div class="ttname"><a href="CHIPError_8h.html#adb3b345d518d3ee539f0ac7bfac802f5">CHIP_ERROR_FORMAT</a></div><div class="ttdeci">#define CHIP_ERROR_FORMAT</div><div class="ttdoc">printf format for Format(). This is a C macro in order to allow for string literal concatenation.</div><div class="ttdef"><b>Definition</b> CHIPError.h:78</div></div>
+</div><!-- fragment --> <div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a3a06d58e69520364afdacd7caf9eed61_icgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a3a06d58e69520364afdacd7caf9eed61_icgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a3a06d58e69520364afdacd7caf9eed61_icgraph" id="aclasschip_1_1ChipError_a3a06d58e69520364afdacd7caf9eed61_icgraph">
+<area shape="rect" title=" " alt="" coords="924,136,1095,162"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html#aae1b44b3b5453cccc3de199b1aa5aed8" title=" " alt="" coords="601,122,870,176"/>
+<area shape="poly" title=" " alt="" coords="910,152,870,152,870,146,910,146"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html#a19d8d40984c68b27400702d9f4b6a9ab" title=" " alt="" coords="314,50,521,90"/>
+<area shape="poly" title=" " alt="" coords="989,127,942,76,910,51,875,33,822,17,768,10,712,9,657,12,555,30,475,53,473,48,554,25,656,7,712,3,768,4,824,12,877,28,913,47,945,72,993,123"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html#a7262a713f72f55cc9d5bb671ebaa74df" title=" " alt="" coords="595,43,876,98"/>
+<area shape="poly" title=" " alt="" coords="951,135,875,113,832,100,833,95,877,108,952,130"/>
+<area shape="rect" href="classLinuxCommissionableDataProvider.html#a3008625eeb7d169fa9fc74397227a7ef" title="Initialize the commissionable Data provider for Linux samples" alt="" coords="610,201,861,241"/>
+<area shape="poly" title=" " alt="" coords="956,168,877,191,829,203,827,198,875,186,955,163"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a047ce7e7e2c66b7f6b485b062554768e" title=" " alt="" coords="631,266,839,320"/>
+<area shape="poly" title=" " alt="" coords="987,173,939,215,877,255,841,271,839,266,875,251,936,211,984,169"/>
+<area shape="poly" title=" " alt="" coords="610,121,499,93,500,88,612,116"/>
+<area shape="rect" href="classchip_1_1Server_1_1ServerFabricDelegate.html#ab5915f373267cc4857de7aab95316c72" title=" " alt="" coords="317,129,517,169"/>
+<area shape="poly" title=" " alt="" coords="587,152,518,152,518,146,587,146"/>
+<area shape="poly" title=" " alt="" coords="581,73,521,73,521,68,581,68"/>
+<area shape="rect" href="namespacechip_1_1examples.html#a63149b00322319c60a17f0450b9e6af5" title="Initialize a LinuxCommissionableDataProvider from Linux common command&#45;line options,..." alt="" coords="288,201,547,241"/>
+<area shape="poly" title=" " alt="" coords="596,224,547,224,547,218,596,218"/>
+<area shape="rect" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="108,208,240,234"/>
+<area shape="poly" title=" " alt="" coords="275,224,241,224,241,218,275,218"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,208,60,234"/>
+<area shape="poly" title=" " alt="" coords="94,224,60,224,60,218,94,218"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7c6b10e4205be670f328b2582bbcef64" name="a7c6b10e4205be670f328b2582bbcef64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c6b10e4205be670f328b2582bbcef64">&#9670;&#160;</a></span>GetField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> chip::ChipError::GetField </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a7c6b10e4205be670f328b2582bbcef64_icgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a7c6b10e4205be670f328b2582bbcef64_icgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a7c6b10e4205be670f328b2582bbcef64_icgraph" id="aclasschip_1_1ChipError_a7c6b10e4205be670f328b2582bbcef64_icgraph">
+<area shape="rect" title=" " alt="" coords="259,55,437,80"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a6342d6f7fd361ab3f8b49d8b8dee1d39" title=" " alt="" coords="13,5,203,31"/>
+<area shape="poly" title=" " alt="" coords="272,54,170,33,171,28,273,49"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a6e30096a2869b2fb53cf24c33586cf82" title=" " alt="" coords="5,55,211,80"/>
+<area shape="poly" title=" " alt="" coords="245,70,211,70,211,65,245,65"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a04534f71ce26546ed69848e2963ddcd1" title=" " alt="" coords="16,104,200,129"/>
+<area shape="poly" title=" " alt="" coords="273,85,171,107,170,101,272,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6342d6f7fd361ab3f8b49d8b8dee1d39" name="a6342d6f7fd361ab3f8b49d8b8dee1d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6342d6f7fd361ab3f8b49d8b8dee1d39">&#9670;&#160;</a></span>GetRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a> chip::ChipError::GetRange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the Range to which the <em>error</em> belongs. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a6342d6f7fd361ab3f8b49d8b8dee1d39_cgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a6342d6f7fd361ab3f8b49d8b8dee1d39_cgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a6342d6f7fd361ab3f8b49d8b8dee1d39_cgraph" id="aclasschip_1_1ChipError_a6342d6f7fd361ab3f8b49d8b8dee1d39_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,195,31"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a7c6b10e4205be670f328b2582bbcef64" title=" " alt="" coords="243,5,421,31"/>
+<area shape="poly" title=" " alt="" coords="195,15,229,15,229,21,195,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6e30096a2869b2fb53cf24c33586cf82" name="a6e30096a2869b2fb53cf24c33586cf82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e30096a2869b2fb53cf24c33586cf82">&#9670;&#160;</a></span>GetSdkCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t chip::ChipError::GetSdkCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the SDK code for an SDK error. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a6e30096a2869b2fb53cf24c33586cf82_cgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a6e30096a2869b2fb53cf24c33586cf82_cgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a6e30096a2869b2fb53cf24c33586cf82_cgraph" id="aclasschip_1_1ChipError_a6e30096a2869b2fb53cf24c33586cf82_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,211,31"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a7c6b10e4205be670f328b2582bbcef64" title=" " alt="" coords="259,5,437,31"/>
+<area shape="poly" title=" " alt="" coords="211,15,245,15,245,21,211,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a04534f71ce26546ed69848e2963ddcd1" name="a04534f71ce26546ed69848e2963ddcd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04534f71ce26546ed69848e2963ddcd1">&#9670;&#160;</a></span>GetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">ValueType</a> chip::ChipError::GetValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the encapsulated value of an <em>error</em>. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a04534f71ce26546ed69848e2963ddcd1_cgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a04534f71ce26546ed69848e2963ddcd1_cgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a04534f71ce26546ed69848e2963ddcd1_cgraph" id="aclasschip_1_1ChipError_a04534f71ce26546ed69848e2963ddcd1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,189,31"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a7c6b10e4205be670f328b2582bbcef64" title=" " alt="" coords="237,5,416,31"/>
+<area shape="poly" title=" " alt="" coords="190,15,223,15,223,21,190,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a886b316b1a8601a847d107027e83ae08" name="a886b316b1a8601a847d107027e83ae08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a886b316b1a8601a847d107027e83ae08">&#9670;&#160;</a></span>IsIMStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool chip::ChipError::IsIMStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Test whether <em>error</em> is an SDK error representing an Interaction Model status. If it is, it can be converted to/from an interaction model StatusIB struct. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a886b316b1a8601a847d107027e83ae08_cgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a886b316b1a8601a847d107027e83ae08_cgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a886b316b1a8601a847d107027e83ae08_cgraph" id="aclasschip_1_1ChipError_a886b316b1a8601a847d107027e83ae08_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,199,56"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a982b4916c50dc5b00982da0547aa3614" title=" " alt="" coords="247,31,408,56"/>
+<area shape="poly" title=" " alt="" coords="199,41,233,41,233,46,199,46"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59" title=" " alt="" coords="458,5,649,31"/>
+<area shape="poly" title=" " alt="" coords="408,32,444,28,445,33,408,37"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0" title=" " alt="" coords="456,55,651,80"/>
+<area shape="poly" title=" " alt="" coords="408,49,442,53,442,58,408,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a982b4916c50dc5b00982da0547aa3614" name="a982b4916c50dc5b00982da0547aa3614"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a982b4916c50dc5b00982da0547aa3614">&#9670;&#160;</a></span>IsPart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool chip::ChipError::IsPart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a>&#160;</td>
+          <td class="paramname"><em>part</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Test whether <em>error</em> is an SDK error belonging to the SdkPart <em>part</em>. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a982b4916c50dc5b00982da0547aa3614_cgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a982b4916c50dc5b00982da0547aa3614_cgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a982b4916c50dc5b00982da0547aa3614_cgraph" id="aclasschip_1_1ChipError_a982b4916c50dc5b00982da0547aa3614_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,167,56"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59" title=" " alt="" coords="217,5,407,31"/>
+<area shape="poly" title=" " alt="" coords="166,32,203,28,204,33,167,37"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0" title=" " alt="" coords="215,55,409,80"/>
+<area shape="poly" title=" " alt="" coords="167,49,201,53,201,58,166,55"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a982b4916c50dc5b00982da0547aa3614_icgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a982b4916c50dc5b00982da0547aa3614_icgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a982b4916c50dc5b00982da0547aa3614_icgraph" id="aclasschip_1_1ChipError_a982b4916c50dc5b00982da0547aa3614_icgraph">
+<area shape="rect" title=" " alt="" coords="247,5,408,31"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a886b316b1a8601a847d107027e83ae08" title=" " alt="" coords="5,5,199,31"/>
+<area shape="poly" title=" " alt="" coords="233,21,199,21,199,15,233,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a36b5f98d2d117be65be2a1779771029a" name="a36b5f98d2d117be65be2a1779771029a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36b5f98d2d117be65be2a1779771029a">&#9670;&#160;</a></span>IsRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool chip::ChipError::IsRange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a>&#160;</td>
+          <td class="paramname"><em>range</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Test whether <em>error</em> belongs to the Range <em>range</em>. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a36b5f98d2d117be65be2a1779771029a_cgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a36b5f98d2d117be65be2a1779771029a_cgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a36b5f98d2d117be65be2a1779771029a_cgraph" id="aclasschip_1_1ChipError_a36b5f98d2d117be65be2a1779771029a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,183,56"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59" title=" " alt="" coords="233,5,423,31"/>
+<area shape="poly" title=" " alt="" coords="183,31,219,27,219,32,183,36"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0" title=" " alt="" coords="231,55,425,80"/>
+<area shape="poly" title=" " alt="" coords="183,50,217,53,217,59,183,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a87972cb4a370f693e7bdddde0ac6ad81" name="a87972cb4a370f693e7bdddde0ac6ad81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87972cb4a370f693e7bdddde0ac6ad81">&#9670;&#160;</a></span>IsSuccess() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr bool chip::ChipError::IsSuccess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html">ChipError</a>&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10c869727927ae905b546a8e092b597a" name="a10c869727927ae905b546a8e092b597a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c869727927ae905b546a8e092b597a">&#9670;&#160;</a></span>IsSuccess() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr bool chip::ChipError::IsSuccess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1dc906bafe4f1655e9786d9bf7269f59" name="a1dc906bafe4f1655e9786d9bf7269f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc906bafe4f1655e9786d9bf7269f59">&#9670;&#160;</a></span>MakeField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> chip::ChipError::MakeField </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a1dc906bafe4f1655e9786d9bf7269f59_icgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a1dc906bafe4f1655e9786d9bf7269f59_icgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a1dc906bafe4f1655e9786d9bf7269f59_icgraph" id="aclasschip_1_1ChipError_a1dc906bafe4f1655e9786d9bf7269f59_icgraph">
+<area shape="rect" title=" " alt="" coords="515,80,705,105"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a982b4916c50dc5b00982da0547aa3614" title=" " alt="" coords="283,5,444,31"/>
+<area shape="poly" title=" " alt="" coords="563,78,466,45,423,33,424,28,467,39,565,73"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a36b5f98d2d117be65be2a1779771029a" title=" " alt="" coords="275,55,452,80"/>
+<area shape="poly" title=" " alt="" coords="501,84,452,79,453,74,501,79"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf" title=" " alt="" coords="260,104,467,129"/>
+<area shape="poly" title=" " alt="" coords="501,106,467,109,467,104,500,101"/>
+<area shape="rect" href="classchip_1_1ChipError.html#aec722d82e8f95bfb05bfb079dd7d6c07" title=" " alt="" coords="5,129,212,155"/>
+<area shape="poly" title=" " alt="" coords="570,113,521,131,467,145,401,153,335,156,212,154,212,148,334,151,401,147,466,139,520,126,568,108"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a886b316b1a8601a847d107027e83ae08" title=" " alt="" coords="12,5,205,31"/>
+<area shape="poly" title=" " alt="" coords="269,21,206,21,206,15,269,15"/>
+<area shape="poly" title=" " alt="" coords="247,131,213,134,212,129,246,126"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2231140be268f9d8d3ac60a87d2917bf" name="a2231140be268f9d8d3ac60a87d2917bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2231140be268f9d8d3ac60a87d2917bf">&#9670;&#160;</a></span>MakeInteger() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> chip::ChipError::MakeInteger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a>&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a2231140be268f9d8d3ac60a87d2917bf_cgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a2231140be268f9d8d3ac60a87d2917bf_cgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a2231140be268f9d8d3ac60a87d2917bf_cgraph" id="aclasschip_1_1ChipError_a2231140be268f9d8d3ac60a87d2917bf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,212,31"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59" title=" " alt="" coords="260,5,451,31"/>
+<area shape="poly" title=" " alt="" coords="212,15,246,15,246,21,212,21"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a2231140be268f9d8d3ac60a87d2917bf_icgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a2231140be268f9d8d3ac60a87d2917bf_icgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a2231140be268f9d8d3ac60a87d2917bf_icgraph" id="aclasschip_1_1ChipError_a2231140be268f9d8d3ac60a87d2917bf_icgraph">
+<area shape="rect" title=" " alt="" coords="260,5,467,31"/>
+<area shape="rect" href="classchip_1_1ChipError.html#aec722d82e8f95bfb05bfb079dd7d6c07" title=" " alt="" coords="5,5,212,31"/>
+<area shape="poly" title=" " alt="" coords="247,21,212,21,212,15,247,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec722d82e8f95bfb05bfb079dd7d6c07" name="aec722d82e8f95bfb05bfb079dd7d6c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec722d82e8f95bfb05bfb079dd7d6c07">&#9670;&#160;</a></span>MakeInteger() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> chip::ChipError::MakeInteger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a>&#160;</td>
+          <td class="paramname"><em>part</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_aec722d82e8f95bfb05bfb079dd7d6c07_cgraph.png" border="0" usemap="#aclasschip_1_1ChipError_aec722d82e8f95bfb05bfb079dd7d6c07_cgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_aec722d82e8f95bfb05bfb079dd7d6c07_cgraph" id="aclasschip_1_1ChipError_aec722d82e8f95bfb05bfb079dd7d6c07_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,212,31"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59" title=" " alt="" coords="515,5,705,31"/>
+<area shape="poly" title=" " alt="" coords="212,15,501,15,501,21,212,21"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf" title=" " alt="" coords="260,31,467,56"/>
+<area shape="poly" title=" " alt="" coords="212,26,247,29,246,34,212,31"/>
+<area shape="poly" title=" " alt="" coords="466,30,501,27,501,32,467,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a140538856993f7e4c46613b523f935c0" name="a140538856993f7e4c46613b523f935c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a140538856993f7e4c46613b523f935c0">&#9670;&#160;</a></span>MakeMask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> chip::ChipError::MakeMask </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1ChipError_a140538856993f7e4c46613b523f935c0_icgraph.png" border="0" usemap="#aclasschip_1_1ChipError_a140538856993f7e4c46613b523f935c0_icgraph" alt=""/></div>
+<map name="aclasschip_1_1ChipError_a140538856993f7e4c46613b523f935c0_icgraph" id="aclasschip_1_1ChipError_a140538856993f7e4c46613b523f935c0_icgraph">
+<area shape="rect" title=" " alt="" coords="472,31,667,56"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a982b4916c50dc5b00982da0547aa3614" title=" " alt="" coords="255,5,416,31"/>
+<area shape="poly" title=" " alt="" coords="458,34,416,29,417,24,459,29"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a36b5f98d2d117be65be2a1779771029a" title=" " alt="" coords="247,55,424,80"/>
+<area shape="poly" title=" " alt="" coords="459,57,425,61,424,56,458,52"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a886b316b1a8601a847d107027e83ae08" title=" " alt="" coords="5,5,199,31"/>
+<area shape="poly" title=" " alt="" coords="241,21,199,21,199,15,241,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abd3c79221e490945cd5bbf050b5aa74f" name="abd3c79221e490945cd5bbf050b5aa74f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3c79221e490945cd5bbf050b5aa74f">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::ChipError::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1ChipError.html">ChipError</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f681971fc9488c4ef9b251c470f4543" name="a7f681971fc9488c4ef9b251c470f4543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f681971fc9488c4ef9b251c470f4543">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::ChipError::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1ChipError.html">ChipError</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compare errors for equality.</p>
+<dl class="section note"><dt>覚え書き</dt><dd>This only compares the error code. Under the CHIP_CONFIG_ERROR_SOURCE configuration, errors compare equal if they have the same error code, even if they have different source locations. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ab46dbe68b03cbd6d1b8b8fa7fbdf27f2" name="ab46dbe68b03cbd6d1b8b8fa7fbdf27f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46dbe68b03cbd6d1b8b8fa7fbdf27f2">&#9670;&#160;</a></span>kRangeLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int chip::ChipError::kRangeLength = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3453beeedb11e576067be7d3c8d6dc3" name="ac3453beeedb11e576067be7d3c8d6dc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3453beeedb11e576067be7d3c8d6dc3">&#9670;&#160;</a></span>kRangeStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int chip::ChipError::kRangeStart = 24</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7e2304309f1dd262552adf0d327b900" name="ae7e2304309f1dd262552adf0d327b900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7e2304309f1dd262552adf0d327b900">&#9670;&#160;</a></span>kSdkCodeLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int chip::ChipError::kSdkCodeLength = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3dba9c2e85ede61b1b86e928a3cb714" name="af3dba9c2e85ede61b1b86e928a3cb714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3dba9c2e85ede61b1b86e928a3cb714">&#9670;&#160;</a></span>kSdkCodeStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int chip::ChipError::kSdkCodeStart = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ee354adbac5c52b17cd8cf60b01d5b7" name="a9ee354adbac5c52b17cd8cf60b01d5b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee354adbac5c52b17cd8cf60b01d5b7">&#9670;&#160;</a></span>kSdkPartLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int chip::ChipError::kSdkPartLength = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a481a30245293d3e0a9a53f18c33dd8fe" name="a481a30245293d3e0a9a53f18c33dd8fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a481a30245293d3e0a9a53f18c33dd8fe">&#9670;&#160;</a></span>kSdkPartStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int chip::ChipError::kSdkPartStart = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab29e35aa46a8bfca3cc210b5e86bb5fc" name="ab29e35aa46a8bfca3cc210b5e86bb5fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab29e35aa46a8bfca3cc210b5e86bb5fc">&#9670;&#160;</a></span>kValueLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int chip::ChipError::kValueLength = 24</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01fc73cc958f21d700dde79e1cdadfea" name="a01fc73cc958f21d700dde79e1cdadfea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01fc73cc958f21d700dde79e1cdadfea">&#9670;&#160;</a></span>kValueStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int chip::ChipError::kValueStart = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab815ecfceacf1c09589981cac36e1dcd" name="ab815ecfceacf1c09589981cac36e1dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab815ecfceacf1c09589981cac36e1dcd">&#9670;&#160;</a></span>mError</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> chip::ChipError::mError</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/lib/core/<a class="el" href="CHIPError_8h_source.html">CHIPError.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

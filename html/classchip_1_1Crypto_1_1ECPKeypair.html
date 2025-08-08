@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::Crypto::ECPKeypair&lt; PK, Secret, Sig &gt; クラステンプレート</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1Crypto.html">Crypto</a></li><li class="navelem"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">ECPKeypair</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="classchip_1_1Crypto_1_1ECPKeypair-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::Crypto::ECPKeypair&lt; PK, Secret, Sig &gt; クラステンプレート<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="CHIPCryptoPAL_8h_source.html">CHIPCryptoPAL.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ac49fae3b68fe0d4bf19a13aa0cd374da" id="r_ac49fae3b68fe0d4bf19a13aa0cd374da"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html#ac49fae3b68fe0d4bf19a13aa0cd374da">~ECPKeypair</a> ()=default</td></tr>
+<tr class="separator:ac49fae3b68fe0d4bf19a13aa0cd374da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56859ba41327766982e211a7aa146368" id="r_a56859ba41327766982e211a7aa146368"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html#a56859ba41327766982e211a7aa146368">NewCertificateSigningRequest</a> (uint8_t *csr, size_t &amp;csr_length) const =0</td></tr>
+<tr class="memdesc:a56859ba41327766982e211a7aa146368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a new Certificate Signing Request (CSR).  <br /></td></tr>
+<tr class="separator:a56859ba41327766982e211a7aa146368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8942dbced06f2b58f8cd968dc1a43275" id="r_a8942dbced06f2b58f8cd968dc1a43275"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html#a8942dbced06f2b58f8cd968dc1a43275">ECDSA_sign_msg</a> (const uint8_t *msg, size_t msg_length, Sig &amp;out_signature) const =0</td></tr>
+<tr class="memdesc:a8942dbced06f2b58f8cd968dc1a43275"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to sign a msg using ECDSA  <br /></td></tr>
+<tr class="separator:a8942dbced06f2b58f8cd968dc1a43275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60aedcf4c50aab3eba21eb67284652a2" id="r_a60aedcf4c50aab3eba21eb67284652a2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html#a60aedcf4c50aab3eba21eb67284652a2">ECDH_derive_secret</a> (const PK &amp;remote_public_key, Secret &amp;out_secret) const =0</td></tr>
+<tr class="memdesc:a60aedcf4c50aab3eba21eb67284652a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to derive a shared secret using ECDH  <br /></td></tr>
+<tr class="separator:a60aedcf4c50aab3eba21eb67284652a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334833019ed47b45accc3152fdedddff" id="r_a334833019ed47b45accc3152fdedddff"><td class="memItemLeft" align="right" valign="top">virtual const PK &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html#a334833019ed47b45accc3152fdedddff">Pubkey</a> () const =0</td></tr>
+<tr class="separator:a334833019ed47b45accc3152fdedddff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a35caa22295c2b2c18ea38327b33a5dd1" id="r_a35caa22295c2b2c18ea38327b33a5dd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html#a35caa22295c2b2c18ea38327b33a5dd1">ECPKeypair</a> ()=default</td></tr>
+<tr class="separator:a35caa22295c2b2c18ea38327b33a5dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e4c63cbf1c2db6496214edd4997c8c" id="r_a64e4c63cbf1c2db6496214edd4997c8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html#a64e4c63cbf1c2db6496214edd4997c8c">ECPKeypair</a> (const <a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">ECPKeypair</a> &amp;)=default</td></tr>
+<tr class="separator:a64e4c63cbf1c2db6496214edd4997c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e2a6fbb70584e17e946d810fd68ed0" id="r_a17e2a6fbb70584e17e946d810fd68ed0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">ECPKeypair</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html#a17e2a6fbb70584e17e946d810fd68ed0">operator=</a> (const <a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">ECPKeypair</a> &amp;)=default</td></tr>
+<tr class="separator:a17e2a6fbb70584e17e946d810fd68ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a35caa22295c2b2c18ea38327b33a5dd1" name="a35caa22295c2b2c18ea38327b33a5dd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35caa22295c2b2c18ea38327b33a5dd1">&#9670;&#160;</a></span>ECPKeypair() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PK , typename Secret , typename Sig &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">chip::Crypto::ECPKeypair</a>&lt; PK, Secret, Sig &gt;::ECPKeypair </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64e4c63cbf1c2db6496214edd4997c8c" name="a64e4c63cbf1c2db6496214edd4997c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64e4c63cbf1c2db6496214edd4997c8c">&#9670;&#160;</a></span>ECPKeypair() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PK , typename Secret , typename Sig &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">chip::Crypto::ECPKeypair</a>&lt; PK, Secret, Sig &gt;::ECPKeypair </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">ECPKeypair</a>&lt; PK, Secret, Sig &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac49fae3b68fe0d4bf19a13aa0cd374da" name="ac49fae3b68fe0d4bf19a13aa0cd374da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49fae3b68fe0d4bf19a13aa0cd374da">&#9670;&#160;</a></span>~ECPKeypair()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PK , typename Secret , typename Sig &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">chip::Crypto::ECPKeypair</a>&lt; PK, Secret, Sig &gt;::~<a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">ECPKeypair</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a60aedcf4c50aab3eba21eb67284652a2" name="a60aedcf4c50aab3eba21eb67284652a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60aedcf4c50aab3eba21eb67284652a2">&#9670;&#160;</a></span>ECDH_derive_secret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PK , typename Secret , typename Sig &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> <a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">chip::Crypto::ECPKeypair</a>&lt; PK, Secret, Sig &gt;::ECDH_derive_secret </td>
+          <td>(</td>
+          <td class="paramtype">const PK &amp;&#160;</td>
+          <td class="paramname"><em>remote_public_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Secret &amp;&#160;</td>
+          <td class="paramname"><em>out_secret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A function to derive a shared secret using ECDH </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">remote_public_key</td><td>Public key of remote peer with which we are trying to establish secure channel. remote_public_key is ASN.1 DER encoded as padded big-endian field elements as described in SEC 1: Elliptic Curve Cryptography [<a href="https://www.secg.org/sec1-v2.pdf">https://www.secg.org/sec1-v2.pdf</a>] </td></tr>
+    <tr><td class="paramname">out_secret</td><td>Buffer to write out secret into. This is a byte array representing the x coordinate of the shared secret. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+<p><a class="el" href="classchip_1_1Crypto_1_1P256Keypair.html#a6972c885afcbd406dd4ee1409bda3d46">chip::Crypto::P256Keypair</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="a8942dbced06f2b58f8cd968dc1a43275" name="a8942dbced06f2b58f8cd968dc1a43275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8942dbced06f2b58f8cd968dc1a43275">&#9670;&#160;</a></span>ECDSA_sign_msg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PK , typename Secret , typename Sig &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> <a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">chip::Crypto::ECPKeypair</a>&lt; PK, Secret, Sig &gt;::ECDSA_sign_msg </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>msg_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Sig &amp;&#160;</td>
+          <td class="paramname"><em>out_signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A function to sign a msg using ECDSA </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>Message that needs to be signed </td></tr>
+    <tr><td class="paramname">msg_length</td><td>Length of message </td></tr>
+    <tr><td class="paramname">out_signature</td><td>Buffer that will hold the output signature. The signature consists of: 2 EC elements (r and s), in raw &lt;r,s&gt; point form (see SEC1). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+<p><a class="el" href="classchip_1_1Crypto_1_1P256Keypair.html#a2a9cdadbdee0cb0b87a47163f3f7c5d6">chip::Crypto::P256Keypair</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="a56859ba41327766982e211a7aa146368" name="a56859ba41327766982e211a7aa146368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56859ba41327766982e211a7aa146368">&#9670;&#160;</a></span>NewCertificateSigningRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PK , typename Secret , typename Sig &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> <a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">chip::Crypto::ECPKeypair</a>&lt; PK, Secret, Sig &gt;::NewCertificateSigningRequest </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>csr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>csr_length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a new Certificate Signing Request (CSR). </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">csr</td><td>Newly generated CSR in DER format </td></tr>
+    <tr><td class="paramname">csr_length</td><td>The caller provides the length of input buffer (csr). The function returns the actual length of generated CSR. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+<p><a class="el" href="classchip_1_1Crypto_1_1P256Keypair.html#ac9c7b9369a330e1be72ed2fe84cd0217">chip::Crypto::P256Keypair</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="a17e2a6fbb70584e17e946d810fd68ed0" name="a17e2a6fbb70584e17e946d810fd68ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e2a6fbb70584e17e946d810fd68ed0">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PK , typename Secret , typename Sig &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">ECPKeypair</a> &amp; <a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">chip::Crypto::ECPKeypair</a>&lt; PK, Secret, Sig &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">ECPKeypair</a>&lt; PK, Secret, Sig &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a334833019ed47b45accc3152fdedddff" name="a334833019ed47b45accc3152fdedddff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a334833019ed47b45accc3152fdedddff">&#9670;&#160;</a></span>Pubkey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PK , typename Secret , typename Sig &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const PK &amp; <a class="el" href="classchip_1_1Crypto_1_1ECPKeypair.html">chip::Crypto::ECPKeypair</a>&lt; PK, Secret, Sig &gt;::Pubkey </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classchip_1_1Crypto_1_1P256Keypair.html#af84d1e3ce59e8b51df1df905c05aa98a">chip::Crypto::P256Keypair</a>で実装されています。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/crypto/<a class="el" href="CHIPCryptoPAL_8h_source.html">CHIPCryptoPAL.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

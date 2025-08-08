@@ -1,0 +1,31 @@
+<map id="chip::Span::reduce_size" name="chip::Span::reduce_size">
+<area shape="rect" id="Node000001" title=" " alt="" coords="868,368,1043,393"/>
+<area shape="rect" id="Node000002" href="$namespacechip.html#a56ca9ce6ef00374c6b0458010ad5031f" title=" " alt="" coords="585,239,804,279"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="926,361,878,327,819,294,787,282,789,277,821,289,881,322,929,357"/>
+<area shape="rect" id="Node000003" href="$namespacechip.html#a009e55496d7397acfa5202bf871c9908" title=" " alt="" coords="585,303,804,343"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="883,368,785,346,787,341,884,362"/>
+<area shape="rect" id="Node000012" href="$namespacechip.html#a6f6da3ee0bd910685bf4de6bcaf103eb" title=" " alt="" coords="584,368,805,393"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="854,383,806,383,806,378,854,378"/>
+<area shape="rect" id="Node000014" href="$classLinuxCommissionableDataProvider.html#a7cb5450a137d474ea45572283c358a99" title="Obtain the default PAKE verifier&#39;s PBKDF2 salt in the provided saltBuf" alt="" coords="569,418,820,458"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="884,399,787,421,785,415,883,394"/>
+<area shape="rect" id="Node000015" href="$classLinuxCommissionableDataProvider.html#a38cbfeca23399c635fcbaffbd16f77d9" title="Obtain the default PAKE verifier in the provided verifierBuf" alt="" coords="569,482,820,522"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="929,404,881,439,821,472,789,484,787,479,819,468,878,435,926,400"/>
+<area shape="rect" id="Node000004" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1ActionStructStorage.html#a033731edc818e6e2b3754311afa1e115" title=" " alt="" coords="277,135,521,175"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="585,301,568,294,523,267,481,235,418,178,421,174,484,231,526,262,571,289,587,296"/>
+<area shape="rect" id="Node000008" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1EndpointListStorage.html#ab341d31476cd18cbd77ac0bc70277f5c" title=" " alt="" coords="276,303,521,343"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="571,326,522,326,522,321,571,321"/>
+<area shape="rect" id="Node000005" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1ActionStructStorage.html#a5ff5406a5b90072abf05dfca50198ef9" title=" " alt="" coords="9,5,224,60"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="347,131,227,74,199,63,201,58,229,69,349,127"/>
+<area shape="rect" id="Node000006" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1ActionStructStorage.html#af85296832949fe5ce36c40d52cb95ae4" title=" " alt="" coords="9,84,224,139"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="263,137,224,131,225,125,263,132"/>
+<area shape="rect" id="Node000007" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a1c188b1512454e8589c2396698570081" title=" " alt="" coords="11,163,222,233"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="263,179,223,185,222,179,262,173"/>
+<area shape="rect" id="Node000009" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1EndpointListStorage.html#a988d49081792fe5954a8c4770182f877" title=" " alt="" coords="9,257,225,312"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="262,307,224,302,225,297,262,302"/>
+<area shape="rect" id="Node000010" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1EndpointListStorage.html#a7fc768aae27f74de9aba6110d426459d" title=" " alt="" coords="9,336,225,391"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="262,345,225,351,224,345,262,340"/>
+<area shape="rect" id="Node000011" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a5c4740fd4a4f26ccf02e2ae6b74883ac" title=" " alt="" coords="5,415,228,485"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="291,351,277,358,263,368,254,380,244,392,230,404,207,417,205,413,226,400,240,388,249,376,259,365,275,353,288,346"/>
+<area shape="rect" id="Node000013" href="$classchip_1_1SimpleTestEventTriggerDelegate.html#a94fe201446956b228231d2c614dd6621" title="Initialize the delegate with a key" alt="" coords="294,367,503,407"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="570,386,504,388,504,382,570,381"/>
+</map>

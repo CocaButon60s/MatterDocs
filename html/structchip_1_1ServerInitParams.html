@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::ServerInitParams 構造体</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="structchip_1_1ServerInitParams.html">ServerInitParams</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="structchip_1_1ServerInitParams-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::ServerInitParams 構造体</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Server_8h_source.html">Server.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::ServerInitParams の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="structchip_1_1ServerInitParams__inherit__graph.png" border="0" usemap="#achip_1_1ServerInitParams_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1ServerInitParams_inherit__map" id="achip_1_1ServerInitParams_inherit__map">
+<area shape="rect" title=" " alt="" coords="39,5,207,31"/>
+<area shape="rect" href="structchip_1_1CommonCaseDeviceServerInitParams.html" title=" " alt="" coords="5,79,240,119"/>
+<area shape="poly" title=" " alt="" coords="125,44,125,79,120,79,120,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::ServerInitParams 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="structchip_1_1ServerInitParams__coll__graph.png" border="0" usemap="#achip_1_1ServerInitParams_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1ServerInitParams_coll__map" id="achip_1_1ServerInitParams_coll__map">
+<area shape="rect" title=" " alt="" coords="109,93,277,119"/>
+<area shape="rect" href="classchip_1_1Inet_1_1InterfaceId.html" title=" " alt="" coords="5,5,165,31"/>
+<area shape="poly" title=" " alt="" coords="112,37,180,91,177,95,109,41"/>
+<area shape="rect" href="classchip_1_1TestEventTriggerDelegate.html" title=" " alt="" coords="190,5,413,31"/>
+<area shape="poly" title=" " alt="" coords="278,41,210,95,206,91,274,37"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa226a2f5d60cd1ef05c669a33c92ac18" id="r_aa226a2f5d60cd1ef05c669a33c92ac18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#aa226a2f5d60cd1ef05c669a33c92ac18">ServerInitParams</a> ()=default</td></tr>
+<tr class="separator:aa226a2f5d60cd1ef05c669a33c92ac18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f47cad0f31c4909d947391b8fa7dc2d" id="r_a4f47cad0f31c4909d947391b8fa7dc2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a4f47cad0f31c4909d947391b8fa7dc2d">ServerInitParams</a> (const <a class="el" href="structchip_1_1ServerInitParams.html">ServerInitParams</a> &amp;)=delete</td></tr>
+<tr class="separator:a4f47cad0f31c4909d947391b8fa7dc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d8370b7ce6125538811bb6863297a8" id="r_a42d8370b7ce6125538811bb6863297a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchip_1_1ServerInitParams.html">ServerInitParams</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a42d8370b7ce6125538811bb6863297a8">operator=</a> (const <a class="el" href="structchip_1_1ServerInitParams.html">ServerInitParams</a> &amp;)=delete</td></tr>
+<tr class="separator:a42d8370b7ce6125538811bb6863297a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a713309ba934aff9684dcc2d05d4ea92f" id="r_a713309ba934aff9684dcc2d05d4ea92f"><td class="memItemLeft" align="right" valign="top">AppDelegate *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a713309ba934aff9684dcc2d05d4ea92f">appDelegate</a> = nullptr</td></tr>
+<tr class="separator:a713309ba934aff9684dcc2d05d4ea92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630f557cf8608b18efe3bf7c76bb4ce1" id="r_a630f557cf8608b18efe3bf7c76bb4ce1"><td class="memItemLeft" align="right" valign="top">System::Clock::Seconds32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a630f557cf8608b18efe3bf7c76bb4ce1">discoveryTimeout</a> = System::Clock::Seconds32(<a class="el" href="CHIPDeviceConfig_8h.html#a8f6aa3ea9ab41db0156f2e874f534068">CHIP_DEVICE_CONFIG_DISCOVERY_TIMEOUT_SECS</a>)</td></tr>
+<tr class="separator:a630f557cf8608b18efe3bf7c76bb4ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91ed6213815d8de05de1560855aaec4" id="r_ad91ed6213815d8de05de1560855aaec4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#ad91ed6213815d8de05de1560855aaec4">operationalServicePort</a> = <a class="el" href="CHIPConfig_8h.html#a6affe2b65fc2ab95d72bc782ab34908c">CHIP_PORT</a></td></tr>
+<tr class="separator:ad91ed6213815d8de05de1560855aaec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61443eb224537bbb0b4e920d03f2861" id="r_ae61443eb224537bbb0b4e920d03f2861"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#ae61443eb224537bbb0b4e920d03f2861">userDirectedCommissioningPort</a> = <a class="el" href="CHIPConfig_8h.html#a9d7f7b42cde77e003c383afaca573db5">CHIP_UDC_PORT</a></td></tr>
+<tr class="separator:ae61443eb224537bbb0b4e920d03f2861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af497ed4098701aa116c906eb77e521e6" id="r_af497ed4098701aa116c906eb77e521e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#af497ed4098701aa116c906eb77e521e6">interfaceId</a> = <a class="el" href="classchip_1_1Inet_1_1InterfaceId.html#af5af583e6c6d8343374241114077999d">Inet::InterfaceId::Null</a>()</td></tr>
+<tr class="separator:af497ed4098701aa116c906eb77e521e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52800701a39e12135f8d2219fc5c072" id="r_ad52800701a39e12135f8d2219fc5c072"><td class="memItemLeft" align="right" valign="top">PersistentStorageDelegate *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#ad52800701a39e12135f8d2219fc5c072">persistentStorageDelegate</a> = nullptr</td></tr>
+<tr class="separator:ad52800701a39e12135f8d2219fc5c072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c0371e56c7d6279f3e3c99353bfdda" id="r_a88c0371e56c7d6279f3e3c99353bfdda"><td class="memItemLeft" align="right" valign="top">SessionResumptionStorage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a88c0371e56c7d6279f3e3c99353bfdda">sessionResumptionStorage</a> = nullptr</td></tr>
+<tr class="separator:a88c0371e56c7d6279f3e3c99353bfdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743fe94110e3d6eca47920e58f10b0d6" id="r_a743fe94110e3d6eca47920e58f10b0d6"><td class="memItemLeft" align="right" valign="top">app::SubscriptionResumptionStorage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a743fe94110e3d6eca47920e58f10b0d6">subscriptionResumptionStorage</a> = nullptr</td></tr>
+<tr class="separator:a743fe94110e3d6eca47920e58f10b0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f741907bf1e1f3e35cf417f82c1042b" id="r_a7f741907bf1e1f3e35cf417f82c1042b"><td class="memItemLeft" align="right" valign="top">Credentials::CertificateValidityPolicy *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a7f741907bf1e1f3e35cf417f82c1042b">certificateValidityPolicy</a> = nullptr</td></tr>
+<tr class="separator:a7f741907bf1e1f3e35cf417f82c1042b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0dc6e476e19d09115dba94d361eab2c" id="r_ac0dc6e476e19d09115dba94d361eab2c"><td class="memItemLeft" align="right" valign="top">Credentials::GroupDataProvider *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#ac0dc6e476e19d09115dba94d361eab2c">groupDataProvider</a> = nullptr</td></tr>
+<tr class="separator:ac0dc6e476e19d09115dba94d361eab2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656e683fd8fb806547ce61797b96dcca" id="r_a656e683fd8fb806547ce61797b96dcca"><td class="memItemLeft" align="right" valign="top">Crypto::SessionKeystore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a656e683fd8fb806547ce61797b96dcca">sessionKeystore</a> = nullptr</td></tr>
+<tr class="separator:a656e683fd8fb806547ce61797b96dcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92840e32bc0c962876707bd6fb155929" id="r_a92840e32bc0c962876707bd6fb155929"><td class="memItemLeft" align="right" valign="top">Access::AccessControl::Delegate *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a92840e32bc0c962876707bd6fb155929">accessDelegate</a> = nullptr</td></tr>
+<tr class="separator:a92840e32bc0c962876707bd6fb155929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13cdbcb1f5eea7bd14af7ac4fa2200b5" id="r_a13cdbcb1f5eea7bd14af7ac4fa2200b5"><td class="memItemLeft" align="right" valign="top">app::AclStorage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a13cdbcb1f5eea7bd14af7ac4fa2200b5">aclStorage</a> = nullptr</td></tr>
+<tr class="separator:a13cdbcb1f5eea7bd14af7ac4fa2200b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36770bf43f7ef736694cae2fece20537" id="r_a36770bf43f7ef736694cae2fece20537"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a36770bf43f7ef736694cae2fece20537">endpointNativeParams</a> = nullptr</td></tr>
+<tr class="separator:a36770bf43f7ef736694cae2fece20537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda9b03d6c423172752967a37f32b16f" id="r_acda9b03d6c423172752967a37f32b16f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1TestEventTriggerDelegate.html">TestEventTriggerDelegate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#acda9b03d6c423172752967a37f32b16f">testEventTriggerDelegate</a> = nullptr</td></tr>
+<tr class="separator:acda9b03d6c423172752967a37f32b16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f62f9b1dfa0b704e565c7f635ba0b34" id="r_a6f62f9b1dfa0b704e565c7f635ba0b34"><td class="memItemLeft" align="right" valign="top">Crypto::OperationalKeystore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a6f62f9b1dfa0b704e565c7f635ba0b34">operationalKeystore</a> = nullptr</td></tr>
+<tr class="separator:a6f62f9b1dfa0b704e565c7f635ba0b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5f2d5a311e95d5ccdac3dff9ff28fe" id="r_a3c5f2d5a311e95d5ccdac3dff9ff28fe"><td class="memItemLeft" align="right" valign="top">Credentials::OperationalCertificateStore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a3c5f2d5a311e95d5ccdac3dff9ff28fe">opCertStore</a> = nullptr</td></tr>
+<tr class="separator:a3c5f2d5a311e95d5ccdac3dff9ff28fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af509cf3e28d9508ed3961033029c9371" id="r_af509cf3e28d9508ed3961033029c9371"><td class="memItemLeft" align="right" valign="top">app::reporting::ReportScheduler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#af509cf3e28d9508ed3961033029c9371">reportScheduler</a> = nullptr</td></tr>
+<tr class="separator:af509cf3e28d9508ed3961033029c9371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058d08ee5e01d39c0525a1b22e68b97c" id="r_a058d08ee5e01d39c0525a1b22e68b97c"><td class="memItemLeft" align="right" valign="top">chip::app::DataModel::Provider *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1ServerInitParams.html#a058d08ee5e01d39c0525a1b22e68b97c">dataModelProvider</a> = nullptr</td></tr>
+<tr class="separator:a058d08ee5e01d39c0525a1b22e68b97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="aa226a2f5d60cd1ef05c669a33c92ac18" name="aa226a2f5d60cd1ef05c669a33c92ac18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa226a2f5d60cd1ef05c669a33c92ac18">&#9670;&#160;</a></span>ServerInitParams() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::ServerInitParams::ServerInitParams </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f47cad0f31c4909d947391b8fa7dc2d" name="a4f47cad0f31c4909d947391b8fa7dc2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f47cad0f31c4909d947391b8fa7dc2d">&#9670;&#160;</a></span>ServerInitParams() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::ServerInitParams::ServerInitParams </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1ServerInitParams.html">ServerInitParams</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a42d8370b7ce6125538811bb6863297a8" name="a42d8370b7ce6125538811bb6863297a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42d8370b7ce6125538811bb6863297a8">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structchip_1_1ServerInitParams.html">ServerInitParams</a> &amp; chip::ServerInitParams::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1ServerInitParams.html">ServerInitParams</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a92840e32bc0c962876707bd6fb155929" name="a92840e32bc0c962876707bd6fb155929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92840e32bc0c962876707bd6fb155929">&#9670;&#160;</a></span>accessDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Access::AccessControl::Delegate* chip::ServerInitParams::accessDelegate = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13cdbcb1f5eea7bd14af7ac4fa2200b5" name="a13cdbcb1f5eea7bd14af7ac4fa2200b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13cdbcb1f5eea7bd14af7ac4fa2200b5">&#9670;&#160;</a></span>aclStorage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">app::AclStorage* chip::ServerInitParams::aclStorage = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a713309ba934aff9684dcc2d05d4ea92f" name="a713309ba934aff9684dcc2d05d4ea92f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713309ba934aff9684dcc2d05d4ea92f">&#9670;&#160;</a></span>appDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AppDelegate* chip::ServerInitParams::appDelegate = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f741907bf1e1f3e35cf417f82c1042b" name="a7f741907bf1e1f3e35cf417f82c1042b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f741907bf1e1f3e35cf417f82c1042b">&#9670;&#160;</a></span>certificateValidityPolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Credentials::CertificateValidityPolicy* chip::ServerInitParams::certificateValidityPolicy = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a058d08ee5e01d39c0525a1b22e68b97c" name="a058d08ee5e01d39c0525a1b22e68b97c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a058d08ee5e01d39c0525a1b22e68b97c">&#9670;&#160;</a></span>dataModelProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::app::DataModel::Provider* chip::ServerInitParams::dataModelProvider = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a630f557cf8608b18efe3bf7c76bb4ce1" name="a630f557cf8608b18efe3bf7c76bb4ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630f557cf8608b18efe3bf7c76bb4ce1">&#9670;&#160;</a></span>discoveryTimeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">System::Clock::Seconds32 chip::ServerInitParams::discoveryTimeout = System::Clock::Seconds32(<a class="el" href="CHIPDeviceConfig_8h.html#a8f6aa3ea9ab41db0156f2e874f534068">CHIP_DEVICE_CONFIG_DISCOVERY_TIMEOUT_SECS</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36770bf43f7ef736694cae2fece20537" name="a36770bf43f7ef736694cae2fece20537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36770bf43f7ef736694cae2fece20537">&#9670;&#160;</a></span>endpointNativeParams</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* chip::ServerInitParams::endpointNativeParams = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0dc6e476e19d09115dba94d361eab2c" name="ac0dc6e476e19d09115dba94d361eab2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0dc6e476e19d09115dba94d361eab2c">&#9670;&#160;</a></span>groupDataProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Credentials::GroupDataProvider* chip::ServerInitParams::groupDataProvider = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af497ed4098701aa116c906eb77e521e6" name="af497ed4098701aa116c906eb77e521e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af497ed4098701aa116c906eb77e521e6">&#9670;&#160;</a></span>interfaceId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a> chip::ServerInitParams::interfaceId = <a class="el" href="classchip_1_1Inet_1_1InterfaceId.html#af5af583e6c6d8343374241114077999d">Inet::InterfaceId::Null</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c5f2d5a311e95d5ccdac3dff9ff28fe" name="a3c5f2d5a311e95d5ccdac3dff9ff28fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c5f2d5a311e95d5ccdac3dff9ff28fe">&#9670;&#160;</a></span>opCertStore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Credentials::OperationalCertificateStore* chip::ServerInitParams::opCertStore = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f62f9b1dfa0b704e565c7f635ba0b34" name="a6f62f9b1dfa0b704e565c7f635ba0b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f62f9b1dfa0b704e565c7f635ba0b34">&#9670;&#160;</a></span>operationalKeystore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Crypto::OperationalKeystore* chip::ServerInitParams::operationalKeystore = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad91ed6213815d8de05de1560855aaec4" name="ad91ed6213815d8de05de1560855aaec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91ed6213815d8de05de1560855aaec4">&#9670;&#160;</a></span>operationalServicePort</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t chip::ServerInitParams::operationalServicePort = <a class="el" href="CHIPConfig_8h.html#a6affe2b65fc2ab95d72bc782ab34908c">CHIP_PORT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad52800701a39e12135f8d2219fc5c072" name="ad52800701a39e12135f8d2219fc5c072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad52800701a39e12135f8d2219fc5c072">&#9670;&#160;</a></span>persistentStorageDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PersistentStorageDelegate* chip::ServerInitParams::persistentStorageDelegate = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af509cf3e28d9508ed3961033029c9371" name="af509cf3e28d9508ed3961033029c9371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af509cf3e28d9508ed3961033029c9371">&#9670;&#160;</a></span>reportScheduler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">app::reporting::ReportScheduler* chip::ServerInitParams::reportScheduler = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a656e683fd8fb806547ce61797b96dcca" name="a656e683fd8fb806547ce61797b96dcca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a656e683fd8fb806547ce61797b96dcca">&#9670;&#160;</a></span>sessionKeystore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Crypto::SessionKeystore* chip::ServerInitParams::sessionKeystore = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88c0371e56c7d6279f3e3c99353bfdda" name="a88c0371e56c7d6279f3e3c99353bfdda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c0371e56c7d6279f3e3c99353bfdda">&#9670;&#160;</a></span>sessionResumptionStorage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SessionResumptionStorage* chip::ServerInitParams::sessionResumptionStorage = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a743fe94110e3d6eca47920e58f10b0d6" name="a743fe94110e3d6eca47920e58f10b0d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743fe94110e3d6eca47920e58f10b0d6">&#9670;&#160;</a></span>subscriptionResumptionStorage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">app::SubscriptionResumptionStorage* chip::ServerInitParams::subscriptionResumptionStorage = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acda9b03d6c423172752967a37f32b16f" name="acda9b03d6c423172752967a37f32b16f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda9b03d6c423172752967a37f32b16f">&#9670;&#160;</a></span>testEventTriggerDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1TestEventTriggerDelegate.html">TestEventTriggerDelegate</a>* chip::ServerInitParams::testEventTriggerDelegate = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae61443eb224537bbb0b4e920d03f2861" name="ae61443eb224537bbb0b4e920d03f2861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae61443eb224537bbb0b4e920d03f2861">&#9670;&#160;</a></span>userDirectedCommissioningPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t chip::ServerInitParams::userDirectedCommissioningPort = <a class="el" href="CHIPConfig_8h.html#a9d7f7b42cde77e003c383afaca573db5">CHIP_UDC_PORT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/app/server/<a class="el" href="Server_8h_source.html">Server.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

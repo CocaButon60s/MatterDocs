@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/app/util/af-types.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_a9aeb43d402f24b4c5513213743384b7.html">app</a></li><li class="navelem"><a class="el" href="dir_0abad3d09830a2b55ef14697754b3fac.html">util</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">af-types.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="af-types_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span> <span class="comment">// For bool</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;stdint.h&gt;</span>  <span class="comment">// For various uint*_t types</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;app/util/AttributesChangedListener.h&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;app/util/MarkAttributeDirty.h&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;app/util/basic-types.h&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;app/util/types_stub.h&gt;</span> <span class="comment">// For various types.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;app/util/attribute-metadata.h&gt;</span> <span class="comment">// EmberAfAttributeMetadata</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;app/AttributePathParams.h&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;<a class="code" href="ConcreteAttributePath_8h.html">app/ConcreteAttributePath.h</a>&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;app/data-model-provider/MetadataTypes.h&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;app/data-model/Nullable.h&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;<a class="code" href="DataModelTypes_8h.html">lib/core/DataModelTypes.h</a>&gt;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;lib/support/Variant.h&gt;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;messaging/ExchangeContext.h&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;app-common/zap-generated/cluster-enums.h&gt;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &lt;app-common/zap-generated/cluster-objects.h&gt;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &lt;protocols/interaction_model/StatusCode.h&gt;</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="group__aftypes.html#gac8c0386b5f46e3bd66f2d69a9fb467e0">   54</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="group__aftypes.html#gac8c0386b5f46e3bd66f2d69a9fb467e0">EmberAfGenericClusterFunction</a>)(void);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="group__aftypes.html#gab7af38a1efc051858b69ecb1ddbf29d0">   60</a></span><span class="preprocessor">#define MATTER_DM_NULL_MANUFACTURER_CODE 0x0000</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// The following define names are relevant to the ZAP_CLUSTER_MASK macro.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="group__aftypes.html#ga47a31f9406382b29cabc0aba10ba0730">   63</a></span><span class="preprocessor">#define MATTER_CLUSTER_FLAG_INIT_FUNCTION 0x01</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="group__aftypes.html#ga40970fefa224f92fe0bb75544fbef9d6">   64</a></span><span class="preprocessor">#define MATTER_CLUSTER_FLAG_ATTRIBUTE_CHANGED_FUNCTION 0x02</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">// Bit 2 (0x04)  and Bit3 (0x08) are free.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="group__aftypes.html#gaab09382486adc869c602c4cc19718130">   66</a></span><span class="preprocessor">#define MATTER_CLUSTER_FLAG_SHUTDOWN_FUNCTION 0x10</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="group__aftypes.html#gaa39bb009c865fed0deb12489a8d5cdd4">   67</a></span><span class="preprocessor">#define MATTER_CLUSTER_FLAG_PRE_ATTRIBUTE_CHANGED_FUNCTION 0x20</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="group__aftypes.html#gac914442f4f55a9a6def80a45d9d8c785">   68</a></span><span class="preprocessor">#define MATTER_CLUSTER_FLAG_SERVER 0x40</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="group__aftypes.html#ga745c8650cf678f11910826e3651b3694">   69</a></span><span class="preprocessor">#define MATTER_CLUSTER_FLAG_CLIENT 0x80</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="group__aftypes.html#ga27636778bff20877775dd3bfe1390c05">   75</a></span><span class="keyword">typedef</span> uint8_t <a class="code hl_typedef" href="group__aftypes.html#ga27636778bff20877775dd3bfe1390c05">EmberAfClusterMask</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="};">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html">   80</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structEmberAfCluster.html">EmberAfCluster</a></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>{</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html#aca818aa052df99de6c61062125c6e6f9">   85</a></span>    <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">chip::ClusterId</a> <a class="code hl_variable" href="structEmberAfCluster.html#aca818aa052df99de6c61062125c6e6f9">clusterId</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html#a761d22428a6404e5bbb3f9013eb8ce8c">   89</a></span>    <span class="keyword">const</span> EmberAfAttributeMetadata * <a class="code hl_variable" href="structEmberAfCluster.html#a761d22428a6404e5bbb3f9013eb8ce8c">attributes</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html#a61387c45742119332cd7e93312bbf10d">   93</a></span>    uint16_t <a class="code hl_variable" href="structEmberAfCluster.html#a61387c45742119332cd7e93312bbf10d">attributeCount</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html#ac873e09d224653990dd0771b0f7adc1b">   97</a></span>    uint16_t <a class="code hl_variable" href="structEmberAfCluster.html#ac873e09d224653990dd0771b0f7adc1b">clusterSize</a>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html#a27bea3d1cd019aa022d51e1f6cfe773b">  102</a></span>    <a class="code hl_typedef" href="group__aftypes.html#ga27636778bff20877775dd3bfe1390c05">EmberAfClusterMask</a> <a class="code hl_variable" href="structEmberAfCluster.html#a27bea3d1cd019aa022d51e1f6cfe773b">mask</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html#abcf6b689018d9631ee614618916f9055">  109</a></span>    <span class="keyword">const</span> <a class="code hl_typedef" href="group__aftypes.html#gac8c0386b5f46e3bd66f2d69a9fb467e0">EmberAfGenericClusterFunction</a> * <a class="code hl_variable" href="structEmberAfCluster.html#abcf6b689018d9631ee614618916f9055">functions</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html#ad3835d4edfa1fe98686e5c311f1f2fd5">  115</a></span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacechip.html#a41a2c26a7133fc357423dbe0ab77e58a">chip::CommandId</a> * <a class="code hl_variable" href="structEmberAfCluster.html#ad3835d4edfa1fe98686e5c311f1f2fd5">acceptedCommandList</a>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html#a9c66a19f59308bdccaa69502410012a6">  121</a></span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacechip.html#a41a2c26a7133fc357423dbe0ab77e58a">chip::CommandId</a> * <a class="code hl_variable" href="structEmberAfCluster.html#a9c66a19f59308bdccaa69502410012a6">generatedCommandList</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html#ad44ece806f5a511abf01b3cab8811a84">  127</a></span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacechip.html#a1d3cf96f5ac9b4b586f568c522c89ab4">chip::EventId</a> * <a class="code hl_variable" href="structEmberAfCluster.html#ad44ece806f5a511abf01b3cab8811a84">eventList</a>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html#a14a0f0d9fa24ecc586f24d353f3227a9">  132</a></span>    uint16_t <a class="code hl_variable" href="structEmberAfCluster.html#a14a0f0d9fa24ecc586f24d353f3227a9">eventCount</a>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html#ab8042911a9c119addfbccb74496a5619">  134</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structEmberAfCluster.html#ab8042911a9c119addfbccb74496a5619">IsServer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="structEmberAfCluster.html#a27bea3d1cd019aa022d51e1f6cfe773b">mask</a> &amp; <a class="code hl_define" href="group__aftypes.html#gac914442f4f55a9a6def80a45d9d8c785">MATTER_CLUSTER_FLAG_SERVER</a>) != 0; }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="structEmberAfCluster.html#a9b60dd3f76fda66d09c37bc3d94f2dc1">  136</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structEmberAfCluster.html#a9b60dd3f76fda66d09c37bc3d94f2dc1">IsClient</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="structEmberAfCluster.html#a27bea3d1cd019aa022d51e1f6cfe773b">mask</a> &amp; <a class="code hl_define" href="group__aftypes.html#ga745c8650cf678f11910826e3651b3694">MATTER_CLUSTER_FLAG_CLIENT</a>) != 0; }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>};</div>
+</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="group__aftypes.html#ga808704f6934efcd01f31bfabf8927f2b">  139</a></span><span class="keyword">using </span><a class="code hl_typedef" href="group__aftypes.html#ga808704f6934efcd01f31bfabf8927f2b">EmberAfDeviceType</a> = chip::app::DataModel::DeviceTypeEntry;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="foldopen" id="foldopen00146" data-start="{" data-end="};">
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="structEmberAfAttributeSearchRecord.html">  146</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>{</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="structEmberAfAttributeSearchRecord.html#ac82705ac05d874b0d5719bf560af1877">  151</a></span>    <a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> <a class="code hl_variable" href="structEmberAfAttributeSearchRecord.html#ac82705ac05d874b0d5719bf560af1877">endpoint</a>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="structEmberAfAttributeSearchRecord.html#ad0f1fdaccc8eb06e3be31cbc2c95d004">  156</a></span>    <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">chip::ClusterId</a> <a class="code hl_variable" href="structEmberAfAttributeSearchRecord.html#ad0f1fdaccc8eb06e3be31cbc2c95d004">clusterId</a>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="structEmberAfAttributeSearchRecord.html#abb9c00b3b1a4286e7cab963fb39987c1">  161</a></span>    <a class="code hl_typedef" href="namespacechip.html#a9679009d83716300aae025b8a172c401">chip::AttributeId</a> <a class="code hl_variable" href="structEmberAfAttributeSearchRecord.html#abb9c00b3b1a4286e7cab963fb39987c1">attributeId</a>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>} <a class="code hl_struct" href="structEmberAfAttributeSearchRecord.html">EmberAfAttributeSearchRecord</a>;</div>
+</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="preprocessor">#ifdef HAL_HAS_INT64</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="keyword">typedef</span> uint64_t <a class="code hl_typedef" href="group__aftypes.html#ga0a252b0584f821bb2802ed9b2bf6d186">EmberAfDifferenceType</a>;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="group__aftypes.html#ga0a252b0584f821bb2802ed9b2bf6d186">  171</a></span><span class="keyword">typedef</span> uint32_t <a class="code hl_typedef" href="group__aftypes.html#ga0a252b0584f821bb2802ed9b2bf6d186">EmberAfDifferenceType</a>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="foldopen" id="foldopen00177" data-start="{" data-end="};">
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="structEmberAfEndpointType.html">  177</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>{</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="structEmberAfEndpointType.html#a5ddeaf630eddab68d9fc3fa7bb37a436">  183</a></span>    <span class="keyword">const</span> <a class="code hl_struct" href="structEmberAfCluster.html">EmberAfCluster</a> * <a class="code hl_variable" href="structEmberAfEndpointType.html#a5ddeaf630eddab68d9fc3fa7bb37a436">cluster</a>;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="structEmberAfEndpointType.html#abfb13919ab6d0e1461968e0b795aa69f">  187</a></span>    uint8_t <a class="code hl_variable" href="structEmberAfEndpointType.html#abfb13919ab6d0e1461968e0b795aa69f">clusterCount</a>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="structEmberAfEndpointType.html#a0012080f3f13d1ab436da38fc9a64339">  191</a></span>    uint16_t <a class="code hl_variable" href="structEmberAfEndpointType.html#a0012080f3f13d1ab436da38fc9a64339">endpointSize</a>;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>} <a class="code hl_struct" href="structEmberAfEndpointType.html">EmberAfEndpointType</a>;</div>
+</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="foldopen" id="foldopen00194" data-start="{" data-end="};">
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="group__aftypes.html#gabd6467c1cc49bb6d58d4fb90fff6a1f3">  194</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="group__aftypes.html#gabd6467c1cc49bb6d58d4fb90fff6a1f3">EmberAfEndpointOptions</a> : uint8_t</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>{</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <a class="code hl_enumvalue" href="group__aftypes.html#ggabd6467c1cc49bb6d58d4fb90fff6a1f3ad97a94e6c10d324fbb3c5f3a1c4a12d5">isEnabled</a>         = 0x1,</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <a class="code hl_enumvalue" href="group__aftypes.html#ggabd6467c1cc49bb6d58d4fb90fff6a1f3ad58d3ada2e463d9e6648529240e7dfd1">isFlatComposition</a> = 0x2,</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>};</div>
+</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="foldopen" id="foldopen00203" data-start="{" data-end="};">
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="structEmberAfDefinedEndpoint.html">  203</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structEmberAfDefinedEndpoint.html">EmberAfDefinedEndpoint</a></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>{</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="structEmberAfDefinedEndpoint.html#a9a88b7fca58e928ff878484bcee67208">  208</a></span>    <a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> <a class="code hl_variable" href="structEmberAfDefinedEndpoint.html#a9a88b7fca58e928ff878484bcee67208">endpoint</a> = <a class="code hl_variable" href="namespacechip.html#a60363f0ed4c6c716469a119aa17afe95">chip::kInvalidEndpointId</a>;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="structEmberAfDefinedEndpoint.html#a3a8c696e40a87cb12c956e93e1c59d34">  213</a></span>    <a class="code hl_class" href="classchip_1_1Span.html">chip::Span&lt;const EmberAfDeviceType&gt;</a> <a class="code hl_variable" href="structEmberAfDefinedEndpoint.html#a3a8c696e40a87cb12c956e93e1c59d34">deviceTypeList</a>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="structEmberAfDefinedEndpoint.html#a0f631f3ecda1e04a8685c8dbee7c2628">  218</a></span>    chip::BitMask&lt;EmberAfEndpointOptions&gt; <a class="code hl_variable" href="structEmberAfDefinedEndpoint.html#a0f631f3ecda1e04a8685c8dbee7c2628">bitmask</a>;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="structEmberAfDefinedEndpoint.html#a10634b72723196e68b822a0e0f232d11">  222</a></span>    <span class="keyword">const</span> <a class="code hl_struct" href="structEmberAfEndpointType.html">EmberAfEndpointType</a> * <a class="code hl_variable" href="structEmberAfDefinedEndpoint.html#a10634b72723196e68b822a0e0f232d11">endpointType</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="structEmberAfDefinedEndpoint.html#a17080cac2019351480895fd31537bf78">  227</a></span>    <a class="code hl_typedef" href="namespacechip.html#a7c303d8822f2cfe11937234b285a5a4d">chip::DataVersion</a> * <a class="code hl_variable" href="structEmberAfDefinedEndpoint.html#a17080cac2019351480895fd31537bf78">dataVersions</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="structEmberAfDefinedEndpoint.html#aa47d527d7c1f749ff7f096e251026f3c">  232</a></span>    <a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> <a class="code hl_variable" href="structEmberAfDefinedEndpoint.html#aa47d527d7c1f749ff7f096e251026f3c">parentEndpointId</a> = <a class="code hl_variable" href="namespacechip.html#a60363f0ed4c6c716469a119aa17afe95">chip::kInvalidEndpointId</a>;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="structEmberAfDefinedEndpoint.html#a4aafadaf6b9bcdef78f889fc7f0aedd5">  237</a></span>    <a class="code hl_class" href="classchip_1_1Span.html">chip::Span&lt;const chip::app::Clusters::Descriptor::Structs::SemanticTagStruct::Type&gt;</a> <a class="code hl_variable" href="structEmberAfDefinedEndpoint.html#a4aafadaf6b9bcdef78f889fc7f0aedd5">tagList</a>;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">#if CHIP_CONFIG_USE_ENDPOINT_UNIQUE_ID</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordtype">char</span> endpointUniqueId[chip::app::Clusters::Descriptor::Attributes::EndpointUniqueID::TypeInfo::MaxLength()] = { 0 };</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    uint8_t endpointUniqueIdSize = 0;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>};</div>
+</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="group__aftypes.html#gac84765cbe5d408d562ca5b8b5220e340">  256</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="group__aftypes.html#gac84765cbe5d408d562ca5b8b5220e340">EmberAfTickFunction</a>)(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> endpoint);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="group__aftypes.html#gad22ee22e0abacffdb5573a8b11f626a4">  264</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="group__aftypes.html#gad22ee22e0abacffdb5573a8b11f626a4">EmberAfInitFunction</a>)(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> endpoint);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="group__aftypes.html#ga65780260913dfcc85a0c09141490ff57">  272</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="group__aftypes.html#ga65780260913dfcc85a0c09141490ff57">EmberAfShutdownFunction</a>)(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> endpoint);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="group__aftypes.html#gae23ad3e458573f9b45052fd08733831f">  279</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="group__aftypes.html#gae23ad3e458573f9b45052fd08733831f">EmberAfClusterAttributeChangedCallback</a>)(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">chip::app::ConcreteAttributePath</a> &amp; attributePath);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="group__aftypes.html#ga2a4db6c758dba1550d845865fbaee9f5">  286</a></span><span class="keyword">typedef</span> chip::Protocols::InteractionModel::Status (*<a class="code hl_typedef" href="group__aftypes.html#ga2a4db6c758dba1550d845865fbaee9f5">EmberAfClusterPreAttributeChangedCallback</a>)(</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">chip::app::ConcreteAttributePath</a> &amp; attributePath, EmberAfAttributeType attributeType, uint16_t size, uint8_t * value);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="group__aftypes.html#ga7f25400a597f9329241df095431792a3">  289</a></span><span class="preprocessor">#define MAX_INT32U_VALUE (0xFFFFFFFFUL)</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="group__aftypes.html#ga4148a761b1307b024e44a0e2bd40f6e7">  290</a></span><span class="preprocessor">#define MAX_INT16U_VALUE (0xFFFF)</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="ttc" id="aConcreteAttributePath_8h_html"><div class="ttname"><a href="ConcreteAttributePath_8h.html">ConcreteAttributePath.h</a></div></div>
+<div class="ttc" id="aDataModelTypes_8h_html"><div class="ttname"><a href="DataModelTypes_8h.html">DataModelTypes.h</a></div></div>
+<div class="ttc" id="aclasschip_1_1Span_html"><div class="ttname"><a href="classchip_1_1Span.html">chip::Span</a></div><div class="ttdoc">A wrapper class for holding objects and its length, without the ownership of it. We can use C++20 std...</div><div class="ttdef"><b>Definition</b> Span.h:41</div></div>
+<div class="ttc" id="agroup__aftypes_html_ga0a252b0584f821bb2802ed9b2bf6d186"><div class="ttname"><a href="group__aftypes.html#ga0a252b0584f821bb2802ed9b2bf6d186">EmberAfDifferenceType</a></div><div class="ttdeci">uint32_t EmberAfDifferenceType</div><div class="ttdef"><b>Definition</b> af-types.h:171</div></div>
+<div class="ttc" id="agroup__aftypes_html_ga27636778bff20877775dd3bfe1390c05"><div class="ttname"><a href="group__aftypes.html#ga27636778bff20877775dd3bfe1390c05">EmberAfClusterMask</a></div><div class="ttdeci">uint8_t EmberAfClusterMask</div><div class="ttdoc">Type for the cluster mask Value of the mask represents a single, or aggregated, MATTER_CLUSTER_FLAG_X</div><div class="ttdef"><b>Definition</b> af-types.h:75</div></div>
+<div class="ttc" id="agroup__aftypes_html_ga2a4db6c758dba1550d845865fbaee9f5"><div class="ttname"><a href="group__aftypes.html#ga2a4db6c758dba1550d845865fbaee9f5">EmberAfClusterPreAttributeChangedCallback</a></div><div class="ttdeci">chip::Protocols::InteractionModel::Status(* EmberAfClusterPreAttributeChangedCallback)(const chip::app::ConcreteAttributePath &amp;attributePath, EmberAfAttributeType attributeType, uint16_t size, uint8_t *value)</div><div class="ttdoc">Type for referring to the pre-attribute changed callback function.</div><div class="ttdef"><b>Definition</b> af-types.h:286</div></div>
+<div class="ttc" id="agroup__aftypes_html_ga65780260913dfcc85a0c09141490ff57"><div class="ttname"><a href="group__aftypes.html#ga65780260913dfcc85a0c09141490ff57">EmberAfShutdownFunction</a></div><div class="ttdeci">void(* EmberAfShutdownFunction)(chip::EndpointId endpoint)</div><div class="ttdoc">Type for referring to the shutdown callback for cluster.</div><div class="ttdef"><b>Definition</b> af-types.h:272</div></div>
+<div class="ttc" id="agroup__aftypes_html_ga745c8650cf678f11910826e3651b3694"><div class="ttname"><a href="group__aftypes.html#ga745c8650cf678f11910826e3651b3694">MATTER_CLUSTER_FLAG_CLIENT</a></div><div class="ttdeci">#define MATTER_CLUSTER_FLAG_CLIENT</div><div class="ttdef"><b>Definition</b> af-types.h:69</div></div>
+<div class="ttc" id="agroup__aftypes_html_ga808704f6934efcd01f31bfabf8927f2b"><div class="ttname"><a href="group__aftypes.html#ga808704f6934efcd01f31bfabf8927f2b">EmberAfDeviceType</a></div><div class="ttdeci">chip::app::DataModel::DeviceTypeEntry EmberAfDeviceType</div><div class="ttdef"><b>Definition</b> af-types.h:139</div></div>
+<div class="ttc" id="agroup__aftypes_html_gabd6467c1cc49bb6d58d4fb90fff6a1f3"><div class="ttname"><a href="group__aftypes.html#gabd6467c1cc49bb6d58d4fb90fff6a1f3">EmberAfEndpointOptions</a></div><div class="ttdeci">EmberAfEndpointOptions</div><div class="ttdef"><b>Definition</b> af-types.h:195</div></div>
+<div class="ttc" id="agroup__aftypes_html_gac84765cbe5d408d562ca5b8b5220e340"><div class="ttname"><a href="group__aftypes.html#gac84765cbe5d408d562ca5b8b5220e340">EmberAfTickFunction</a></div><div class="ttdeci">void(* EmberAfTickFunction)(chip::EndpointId endpoint)</div><div class="ttdoc">Type for referring to the tick callback for cluster.</div><div class="ttdef"><b>Definition</b> af-types.h:256</div></div>
+<div class="ttc" id="agroup__aftypes_html_gac8c0386b5f46e3bd66f2d69a9fb467e0"><div class="ttname"><a href="group__aftypes.html#gac8c0386b5f46e3bd66f2d69a9fb467e0">EmberAfGenericClusterFunction</a></div><div class="ttdeci">void(* EmberAfGenericClusterFunction)(void)</div><div class="ttdoc">Generic function type, used for either of the cluster function.</div><div class="ttdef"><b>Definition</b> af-types.h:54</div></div>
+<div class="ttc" id="agroup__aftypes_html_gac914442f4f55a9a6def80a45d9d8c785"><div class="ttname"><a href="group__aftypes.html#gac914442f4f55a9a6def80a45d9d8c785">MATTER_CLUSTER_FLAG_SERVER</a></div><div class="ttdeci">#define MATTER_CLUSTER_FLAG_SERVER</div><div class="ttdef"><b>Definition</b> af-types.h:68</div></div>
+<div class="ttc" id="agroup__aftypes_html_gad22ee22e0abacffdb5573a8b11f626a4"><div class="ttname"><a href="group__aftypes.html#gad22ee22e0abacffdb5573a8b11f626a4">EmberAfInitFunction</a></div><div class="ttdeci">void(* EmberAfInitFunction)(chip::EndpointId endpoint)</div><div class="ttdoc">Type for referring to the init callback for cluster.</div><div class="ttdef"><b>Definition</b> af-types.h:264</div></div>
+<div class="ttc" id="agroup__aftypes_html_gae23ad3e458573f9b45052fd08733831f"><div class="ttname"><a href="group__aftypes.html#gae23ad3e458573f9b45052fd08733831f">EmberAfClusterAttributeChangedCallback</a></div><div class="ttdeci">void(* EmberAfClusterAttributeChangedCallback)(const chip::app::ConcreteAttributePath &amp;attributePath)</div><div class="ttdoc">Type for referring to the attribute changed callback function.</div><div class="ttdef"><b>Definition</b> af-types.h:279</div></div>
+<div class="ttc" id="agroup__aftypes_html_ggabd6467c1cc49bb6d58d4fb90fff6a1f3ad58d3ada2e463d9e6648529240e7dfd1"><div class="ttname"><a href="group__aftypes.html#ggabd6467c1cc49bb6d58d4fb90fff6a1f3ad58d3ada2e463d9e6648529240e7dfd1">EmberAfEndpointOptions::isFlatComposition</a></div><div class="ttdeci">@ isFlatComposition</div></div>
+<div class="ttc" id="agroup__aftypes_html_ggabd6467c1cc49bb6d58d4fb90fff6a1f3ad97a94e6c10d324fbb3c5f3a1c4a12d5"><div class="ttname"><a href="group__aftypes.html#ggabd6467c1cc49bb6d58d4fb90fff6a1f3ad97a94e6c10d324fbb3c5f3a1c4a12d5">EmberAfEndpointOptions::isEnabled</a></div><div class="ttdeci">@ isEnabled</div></div>
+<div class="ttc" id="anamespacechip_html_a167c692d0d28c8e6a7d0b2f0c50b290a"><div class="ttname"><a href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">chip::ClusterId</a></div><div class="ttdeci">uint32_t ClusterId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:32</div></div>
+<div class="ttc" id="anamespacechip_html_a1d3cf96f5ac9b4b586f568c522c89ab4"><div class="ttname"><a href="namespacechip.html#a1d3cf96f5ac9b4b586f568c522c89ab4">chip::EventId</a></div><div class="ttdeci">uint32_t EventId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:41</div></div>
+<div class="ttc" id="anamespacechip_html_a41a2c26a7133fc357423dbe0ab77e58a"><div class="ttname"><a href="namespacechip.html#a41a2c26a7133fc357423dbe0ab77e58a">chip::CommandId</a></div><div class="ttdeci">uint32_t CommandId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:34</div></div>
+<div class="ttc" id="anamespacechip_html_a60363f0ed4c6c716469a119aa17afe95"><div class="ttname"><a href="namespacechip.html#a60363f0ed4c6c716469a119aa17afe95">chip::kInvalidEndpointId</a></div><div class="ttdeci">constexpr EndpointId kInvalidEndpointId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:73</div></div>
+<div class="ttc" id="anamespacechip_html_a7c303d8822f2cfe11937234b285a5a4d"><div class="ttname"><a href="namespacechip.html#a7c303d8822f2cfe11937234b285a5a4d">chip::DataVersion</a></div><div class="ttdeci">uint32_t DataVersion</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:37</div></div>
+<div class="ttc" id="anamespacechip_html_a9679009d83716300aae025b8a172c401"><div class="ttname"><a href="namespacechip.html#a9679009d83716300aae025b8a172c401">chip::AttributeId</a></div><div class="ttdeci">uint32_t AttributeId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:31</div></div>
+<div class="ttc" id="anamespacechip_html_ae2e3807cea12f480cdb9c90c2cca56ef"><div class="ttname"><a href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a></div><div class="ttdeci">uint16_t EndpointId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:40</div></div>
+<div class="ttc" id="astructEmberAfAttributeSearchRecord_html"><div class="ttname"><a href="structEmberAfAttributeSearchRecord.html">EmberAfAttributeSearchRecord</a></div><div class="ttdoc">Struct used to find an attribute in storage. Together the elements in this search record constitute t...</div><div class="ttdef"><b>Definition</b> af-types.h:147</div></div>
+<div class="ttc" id="astructEmberAfAttributeSearchRecord_html_abb9c00b3b1a4286e7cab963fb39987c1"><div class="ttname"><a href="structEmberAfAttributeSearchRecord.html#abb9c00b3b1a4286e7cab963fb39987c1">EmberAfAttributeSearchRecord::attributeId</a></div><div class="ttdeci">chip::AttributeId attributeId</div><div class="ttdef"><b>Definition</b> af-types.h:161</div></div>
+<div class="ttc" id="astructEmberAfAttributeSearchRecord_html_ac82705ac05d874b0d5719bf560af1877"><div class="ttname"><a href="structEmberAfAttributeSearchRecord.html#ac82705ac05d874b0d5719bf560af1877">EmberAfAttributeSearchRecord::endpoint</a></div><div class="ttdeci">chip::EndpointId endpoint</div><div class="ttdef"><b>Definition</b> af-types.h:151</div></div>
+<div class="ttc" id="astructEmberAfAttributeSearchRecord_html_ad0f1fdaccc8eb06e3be31cbc2c95d004"><div class="ttname"><a href="structEmberAfAttributeSearchRecord.html#ad0f1fdaccc8eb06e3be31cbc2c95d004">EmberAfAttributeSearchRecord::clusterId</a></div><div class="ttdeci">chip::ClusterId clusterId</div><div class="ttdef"><b>Definition</b> af-types.h:156</div></div>
+<div class="ttc" id="astructEmberAfCluster_html"><div class="ttname"><a href="structEmberAfCluster.html">EmberAfCluster</a></div><div class="ttdoc">Struct describing cluster</div><div class="ttdef"><b>Definition</b> af-types.h:81</div></div>
+<div class="ttc" id="astructEmberAfCluster_html_a14a0f0d9fa24ecc586f24d353f3227a9"><div class="ttname"><a href="structEmberAfCluster.html#a14a0f0d9fa24ecc586f24d353f3227a9">EmberAfCluster::eventCount</a></div><div class="ttdeci">uint16_t eventCount</div><div class="ttdef"><b>Definition</b> af-types.h:132</div></div>
+<div class="ttc" id="astructEmberAfCluster_html_a27bea3d1cd019aa022d51e1f6cfe773b"><div class="ttname"><a href="structEmberAfCluster.html#a27bea3d1cd019aa022d51e1f6cfe773b">EmberAfCluster::mask</a></div><div class="ttdeci">EmberAfClusterMask mask</div><div class="ttdef"><b>Definition</b> af-types.h:102</div></div>
+<div class="ttc" id="astructEmberAfCluster_html_a61387c45742119332cd7e93312bbf10d"><div class="ttname"><a href="structEmberAfCluster.html#a61387c45742119332cd7e93312bbf10d">EmberAfCluster::attributeCount</a></div><div class="ttdeci">uint16_t attributeCount</div><div class="ttdef"><b>Definition</b> af-types.h:93</div></div>
+<div class="ttc" id="astructEmberAfCluster_html_a761d22428a6404e5bbb3f9013eb8ce8c"><div class="ttname"><a href="structEmberAfCluster.html#a761d22428a6404e5bbb3f9013eb8ce8c">EmberAfCluster::attributes</a></div><div class="ttdeci">const EmberAfAttributeMetadata * attributes</div><div class="ttdef"><b>Definition</b> af-types.h:89</div></div>
+<div class="ttc" id="astructEmberAfCluster_html_a9b60dd3f76fda66d09c37bc3d94f2dc1"><div class="ttname"><a href="structEmberAfCluster.html#a9b60dd3f76fda66d09c37bc3d94f2dc1">EmberAfCluster::IsClient</a></div><div class="ttdeci">bool IsClient() const</div><div class="ttdef"><b>Definition</b> af-types.h:136</div></div>
+<div class="ttc" id="astructEmberAfCluster_html_a9c66a19f59308bdccaa69502410012a6"><div class="ttname"><a href="structEmberAfCluster.html#a9c66a19f59308bdccaa69502410012a6">EmberAfCluster::generatedCommandList</a></div><div class="ttdeci">const chip::CommandId * generatedCommandList</div><div class="ttdef"><b>Definition</b> af-types.h:121</div></div>
+<div class="ttc" id="astructEmberAfCluster_html_ab8042911a9c119addfbccb74496a5619"><div class="ttname"><a href="structEmberAfCluster.html#ab8042911a9c119addfbccb74496a5619">EmberAfCluster::IsServer</a></div><div class="ttdeci">bool IsServer() const</div><div class="ttdef"><b>Definition</b> af-types.h:134</div></div>
+<div class="ttc" id="astructEmberAfCluster_html_abcf6b689018d9631ee614618916f9055"><div class="ttname"><a href="structEmberAfCluster.html#abcf6b689018d9631ee614618916f9055">EmberAfCluster::functions</a></div><div class="ttdeci">const EmberAfGenericClusterFunction * functions</div><div class="ttdef"><b>Definition</b> af-types.h:109</div></div>
+<div class="ttc" id="astructEmberAfCluster_html_ac873e09d224653990dd0771b0f7adc1b"><div class="ttname"><a href="structEmberAfCluster.html#ac873e09d224653990dd0771b0f7adc1b">EmberAfCluster::clusterSize</a></div><div class="ttdeci">uint16_t clusterSize</div><div class="ttdef"><b>Definition</b> af-types.h:97</div></div>
+<div class="ttc" id="astructEmberAfCluster_html_aca818aa052df99de6c61062125c6e6f9"><div class="ttname"><a href="structEmberAfCluster.html#aca818aa052df99de6c61062125c6e6f9">EmberAfCluster::clusterId</a></div><div class="ttdeci">chip::ClusterId clusterId</div><div class="ttdef"><b>Definition</b> af-types.h:85</div></div>
+<div class="ttc" id="astructEmberAfCluster_html_ad3835d4edfa1fe98686e5c311f1f2fd5"><div class="ttname"><a href="structEmberAfCluster.html#ad3835d4edfa1fe98686e5c311f1f2fd5">EmberAfCluster::acceptedCommandList</a></div><div class="ttdeci">const chip::CommandId * acceptedCommandList</div><div class="ttdef"><b>Definition</b> af-types.h:115</div></div>
+<div class="ttc" id="astructEmberAfCluster_html_ad44ece806f5a511abf01b3cab8811a84"><div class="ttname"><a href="structEmberAfCluster.html#ad44ece806f5a511abf01b3cab8811a84">EmberAfCluster::eventList</a></div><div class="ttdeci">const chip::EventId * eventList</div><div class="ttdef"><b>Definition</b> af-types.h:127</div></div>
+<div class="ttc" id="astructEmberAfDefinedEndpoint_html"><div class="ttname"><a href="structEmberAfDefinedEndpoint.html">EmberAfDefinedEndpoint</a></div><div class="ttdoc">Struct that maps actual endpoint type, onto a specific endpoint.</div><div class="ttdef"><b>Definition</b> af-types.h:204</div></div>
+<div class="ttc" id="astructEmberAfDefinedEndpoint_html_a0f631f3ecda1e04a8685c8dbee7c2628"><div class="ttname"><a href="structEmberAfDefinedEndpoint.html#a0f631f3ecda1e04a8685c8dbee7c2628">EmberAfDefinedEndpoint::bitmask</a></div><div class="ttdeci">chip::BitMask&lt; EmberAfEndpointOptions &gt; bitmask</div><div class="ttdef"><b>Definition</b> af-types.h:218</div></div>
+<div class="ttc" id="astructEmberAfDefinedEndpoint_html_a10634b72723196e68b822a0e0f232d11"><div class="ttname"><a href="structEmberAfDefinedEndpoint.html#a10634b72723196e68b822a0e0f232d11">EmberAfDefinedEndpoint::endpointType</a></div><div class="ttdeci">const EmberAfEndpointType * endpointType</div><div class="ttdef"><b>Definition</b> af-types.h:222</div></div>
+<div class="ttc" id="astructEmberAfDefinedEndpoint_html_a17080cac2019351480895fd31537bf78"><div class="ttname"><a href="structEmberAfDefinedEndpoint.html#a17080cac2019351480895fd31537bf78">EmberAfDefinedEndpoint::dataVersions</a></div><div class="ttdeci">chip::DataVersion * dataVersions</div><div class="ttdef"><b>Definition</b> af-types.h:227</div></div>
+<div class="ttc" id="astructEmberAfDefinedEndpoint_html_a3a8c696e40a87cb12c956e93e1c59d34"><div class="ttname"><a href="structEmberAfDefinedEndpoint.html#a3a8c696e40a87cb12c956e93e1c59d34">EmberAfDefinedEndpoint::deviceTypeList</a></div><div class="ttdeci">chip::Span&lt; const EmberAfDeviceType &gt; deviceTypeList</div><div class="ttdef"><b>Definition</b> af-types.h:213</div></div>
+<div class="ttc" id="astructEmberAfDefinedEndpoint_html_a4aafadaf6b9bcdef78f889fc7f0aedd5"><div class="ttname"><a href="structEmberAfDefinedEndpoint.html#a4aafadaf6b9bcdef78f889fc7f0aedd5">EmberAfDefinedEndpoint::tagList</a></div><div class="ttdeci">chip::Span&lt; const chip::app::Clusters::Descriptor::Structs::SemanticTagStruct::Type &gt; tagList</div><div class="ttdef"><b>Definition</b> af-types.h:237</div></div>
+<div class="ttc" id="astructEmberAfDefinedEndpoint_html_a9a88b7fca58e928ff878484bcee67208"><div class="ttname"><a href="structEmberAfDefinedEndpoint.html#a9a88b7fca58e928ff878484bcee67208">EmberAfDefinedEndpoint::endpoint</a></div><div class="ttdeci">chip::EndpointId endpoint</div><div class="ttdef"><b>Definition</b> af-types.h:208</div></div>
+<div class="ttc" id="astructEmberAfDefinedEndpoint_html_aa47d527d7c1f749ff7f096e251026f3c"><div class="ttname"><a href="structEmberAfDefinedEndpoint.html#aa47d527d7c1f749ff7f096e251026f3c">EmberAfDefinedEndpoint::parentEndpointId</a></div><div class="ttdeci">chip::EndpointId parentEndpointId</div><div class="ttdef"><b>Definition</b> af-types.h:232</div></div>
+<div class="ttc" id="astructEmberAfEndpointType_html"><div class="ttname"><a href="structEmberAfEndpointType.html">EmberAfEndpointType</a></div><div class="ttdoc">Endpoint type struct describes clusters that are on the endpoint.</div><div class="ttdef"><b>Definition</b> af-types.h:178</div></div>
+<div class="ttc" id="astructEmberAfEndpointType_html_a0012080f3f13d1ab436da38fc9a64339"><div class="ttname"><a href="structEmberAfEndpointType.html#a0012080f3f13d1ab436da38fc9a64339">EmberAfEndpointType::endpointSize</a></div><div class="ttdeci">uint16_t endpointSize</div><div class="ttdef"><b>Definition</b> af-types.h:191</div></div>
+<div class="ttc" id="astructEmberAfEndpointType_html_a5ddeaf630eddab68d9fc3fa7bb37a436"><div class="ttname"><a href="structEmberAfEndpointType.html#a5ddeaf630eddab68d9fc3fa7bb37a436">EmberAfEndpointType::cluster</a></div><div class="ttdeci">const EmberAfCluster * cluster</div><div class="ttdef"><b>Definition</b> af-types.h:183</div></div>
+<div class="ttc" id="astructEmberAfEndpointType_html_abfb13919ab6d0e1461968e0b795aa69f"><div class="ttname"><a href="structEmberAfEndpointType.html#abfb13919ab6d0e1461968e0b795aa69f">EmberAfEndpointType::clusterCount</a></div><div class="ttdeci">uint8_t clusterCount</div><div class="ttdef"><b>Definition</b> af-types.h:187</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteAttributePath_html"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteAttributePath.html">chip::app::ConcreteAttributePath</a></div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

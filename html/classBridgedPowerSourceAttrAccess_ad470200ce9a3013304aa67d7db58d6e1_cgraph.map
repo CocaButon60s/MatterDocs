@@ -1,0 +1,17 @@
+<map id="BridgedPowerSourceAttrAccess::Read" name="BridgedPowerSourceAttrAccess::Read">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,184,231,224"/>
+<area shape="rect" id="Node000002" href="$classDevicePowerSource.html#ab12ce8c50b5d481f98c4515296850171" title=" " alt="" coords="283,5,441,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,182,194,121,234,86,277,55,288,49,290,54,280,60,237,90,198,125,138,186"/>
+<area shape="rect" id="Node000003" href="$classDevicePowerSource.html#ac29a8ebe42ab4fc596d4274c75312b19" title=" " alt="" coords="283,69,441,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,181,278,119,293,112,295,117,280,124,157,186"/>
+<area shape="rect" id="Node000004" href="$classDevice.html#a24eec7ca17d202f489ee2534a879fb08" title=" " alt="" coords="279,134,445,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,181,293,160,295,165,204,187"/>
+<area shape="rect" id="Node000005" href="$classDevicePowerSource.html#ac9ebf901ffbc8294bc7e588fc03b0ca2" title=" " alt="" coords="283,184,441,224"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="231,201,269,201,269,207,231,207"/>
+<area shape="rect" id="Node000006" href="$classDevicePowerSource.html#a91e73ed5eac6558dd643534693f636ee" title=" " alt="" coords="283,248,441,288"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="196,221,273,242,272,247,194,227"/>
+<area shape="rect" id="Node000007" href="$classDevicePowerSource.html#a33f15f0fbb02fd62aed59c6e313d4cce" title=" " alt="" coords="283,312,441,352"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="151,222,210,259,280,298,294,304,292,309,277,302,207,264,148,227"/>
+<area shape="rect" id="Node000008" href="$classDevicePowerSource.html#af31aba16f67c954b174608d32f90bc16" title=" " alt="" coords="283,376,441,416"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="137,223,196,290,236,328,280,362,290,368,287,372,277,366,232,332,192,294,133,226"/>
+</map>

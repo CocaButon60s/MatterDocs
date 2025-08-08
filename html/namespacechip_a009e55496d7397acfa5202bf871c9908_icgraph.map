@@ -1,0 +1,19 @@
+<map id="chip::CopyCharSpanToMutableCharSpanWithTruncation" name="chip::CopyCharSpanToMutableCharSpanWithTruncation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="569,261,788,301"/>
+<area shape="rect" id="Node000002" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1ActionStructStorage.html#a033731edc818e6e2b3754311afa1e115" title=" " alt="" coords="277,135,521,175"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="619,257,443,178,446,173,621,252"/>
+<area shape="rect" id="Node000006" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1EndpointListStorage.html#ab341d31476cd18cbd77ac0bc70277f5c" title=" " alt="" coords="276,303,521,343"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="556,302,522,307,521,302,556,297"/>
+<area shape="rect" id="Node000003" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1ActionStructStorage.html#a5ff5406a5b90072abf05dfca50198ef9" title=" " alt="" coords="9,5,224,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,131,227,74,199,63,201,58,229,69,349,127"/>
+<area shape="rect" id="Node000004" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1ActionStructStorage.html#af85296832949fe5ce36c40d52cb95ae4" title=" " alt="" coords="9,84,224,139"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="263,137,224,131,225,125,263,132"/>
+<area shape="rect" id="Node000005" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a1c188b1512454e8589c2396698570081" title=" " alt="" coords="11,163,222,233"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="263,179,223,185,222,179,262,173"/>
+<area shape="rect" id="Node000007" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1EndpointListStorage.html#a988d49081792fe5954a8c4770182f877" title=" " alt="" coords="9,257,225,312"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="262,307,224,302,225,297,262,302"/>
+<area shape="rect" id="Node000008" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1EndpointListStorage.html#a7fc768aae27f74de9aba6110d426459d" title=" " alt="" coords="9,336,225,391"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="262,345,225,351,224,345,262,340"/>
+<area shape="rect" id="Node000009" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a5c4740fd4a4f26ccf02e2ae6b74883ac" title=" " alt="" coords="5,415,228,485"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="345,352,229,406,202,418,200,413,227,401,343,347"/>
+</map>

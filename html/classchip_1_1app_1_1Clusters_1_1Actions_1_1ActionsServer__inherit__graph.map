@@ -1,0 +1,7 @@
+<map id="chip::app::Clusters::Actions::ActionsServer" name="chip::app::Clusters::Actions::ActionsServer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="122,93,298,133"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1app_1_1AttributeAccessInterface.html" title=" " alt="" coords="5,5,196,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,52,187,91,184,95,134,56"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="220,13,419,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="295,49,236,95,232,91,292,45"/>
+</map>

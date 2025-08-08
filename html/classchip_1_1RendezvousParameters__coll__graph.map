@@ -1,0 +1,11 @@
+<map id="chip::RendezvousParameters" name="chip::RendezvousParameters">
+<area shape="rect" id="Node000001" title=" " alt="" coords="911,33,1121,59"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Crypto_1_1Spake2pVerifier.html" title="Class used for verifying PASE secure sessions." alt="" coords="557,5,767,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="780,25,910,35,910,40,780,30"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Optional.html" title=" " alt="" coords="567,55,757,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="770,64,910,52,910,57,771,69"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Optional_1_1ValueHolder.html" title=" " alt="" coords="261,55,412,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="426,73,567,73,567,78,426,78"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,33,212,117"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="226,73,261,73,261,78,226,78"/>
+</map>

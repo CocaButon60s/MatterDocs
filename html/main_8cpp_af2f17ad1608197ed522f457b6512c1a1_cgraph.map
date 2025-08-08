@@ -1,0 +1,13 @@
+<map id="HandleReadBridgedDeviceBasicAttribute" name="HandleReadBridgedDeviceBasicAttribute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,112,236,152"/>
+<area shape="rect" id="Node000002" href="$classDevice.html#aadf996f854bcc72ad490c631fa7bf39d" title=" " alt="" coords="284,5,469,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,109,283,55,302,48,304,53,285,60,164,114"/>
+<area shape="rect" id="Node000003" href="$classDevice.html#a8f11cf52d0929e177fe97aa1f2c281bc" title=" " alt="" coords="308,70,445,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,109,297,95,298,101,226,115"/>
+<area shape="rect" id="Node000004" href="$classDevice.html#a07cc81a6eec5a65be617602c5e246753" title=" " alt="" coords="299,119,455,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="236,129,285,129,285,135,236,135"/>
+<area shape="rect" id="Node000005" href="$classDevice.html#aad533e7e9c778c15d4ecbb9b99305bbb" title=" " alt="" coords="299,169,454,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="226,149,298,163,297,169,225,155"/>
+<area shape="rect" id="Node000006" href="$namespacechip.html#a4d5608ded23ea2c06e67c78f4d57d7ff" title="Create ZCL string (pascal string) from char string. The maximum size of the ZCL string is defined by ..." alt="" coords="287,218,467,243"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="163,150,220,176,285,203,312,212,310,217,283,208,218,181,161,155"/>
+</map>

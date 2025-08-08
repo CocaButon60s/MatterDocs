@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/support/TestGroupData.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_1d1f3af32c41ad09e7d154e58874adc8.html">support</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TestGroupData.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="TestGroupData_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2022 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *    All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;credentials/GroupDataProvider.h&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPCryptoPAL_8h.html">crypto/CHIPCryptoPAL.h</a>&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacechip_1_1GroupTesting.html">   26</a></span><span class="keyword">namespace </span>GroupTesting {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classchip_1_1GroupTesting_1_1DefaultIpkValue.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1GroupTesting_1_1DefaultIpkValue.html">DefaultIpkValue</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classchip_1_1GroupTesting_1_1DefaultIpkValue.html#a62e2a3ba72b18db5cf54e2abe192cb0b">   31</a></span>    <a class="code hl_function" href="classchip_1_1GroupTesting_1_1DefaultIpkValue.html#a62e2a3ba72b18db5cf54e2abe192cb0b">DefaultIpkValue</a>() {}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classchip_1_1GroupTesting_1_1DefaultIpkValue.html#a111c04fddae4a125505081df06141add">   33</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="classchip_1_1Span.html">ByteSpan</a> <a class="code hl_function" href="classchip_1_1GroupTesting_1_1DefaultIpkValue.html#a111c04fddae4a125505081df06141add">GetDefaultIpk</a>()</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">static</span> <span class="keyword">const</span> uint8_t mDefaultIpk[<a class="code hl_variable" href="namespacechip_1_1Crypto.html#a498768b0b6eb6b8a74e2c6c5087e8044">Crypto::CHIP_CRYPTO_SYMMETRIC_KEY_LENGTH_BYTES</a>] = {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="charliteral">&#39;t&#39;</span>, <span class="charliteral">&#39;e&#39;</span>, <span class="charliteral">&#39;m&#39;</span>, <span class="charliteral">&#39;p&#39;</span>, <span class="charliteral">&#39;o&#39;</span>, <span class="charliteral">&#39;r&#39;</span>, <span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;r&#39;</span>, <span class="charliteral">&#39;y&#39;</span>, <span class="charliteral">&#39; &#39;</span>, <span class="charliteral">&#39;i&#39;</span>, <span class="charliteral">&#39;p&#39;</span>, <span class="charliteral">&#39;k&#39;</span>, <span class="charliteral">&#39; &#39;</span>, <span class="charliteral">&#39;0&#39;</span>, <span class="charliteral">&#39;1&#39;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        };</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a>(mDefaultIpk);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespacechip_1_1GroupTesting.html#ada344c30fc6ae7a9c68a69d6baabf63e">   42</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="namespacechip_1_1GroupTesting.html#ada344c30fc6ae7a9c68a69d6baabf63e">InitData</a>(chip::Credentials::GroupDataProvider * provider, <a class="code hl_typedef" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">chip::FabricIndex</a> fabric_index,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                           <span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Span.html">ByteSpan</a> &amp; compressed_fabric_id)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">static</span> <span class="keyword">const</span> chip::GroupId kGroup1   = 0x0101;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">static</span> <span class="keyword">const</span> chip::GroupId kGroup2   = 0x0102;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">static</span> <span class="keyword">const</span> chip::GroupId kGroup3   = 0x0103;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacechip.html#abe77b777e11684ff81ad71f8fd419efe">chip::KeysetId</a> kKeySet1 = 0x01a1;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacechip.html#abe77b777e11684ff81ad71f8fd419efe">chip::KeysetId</a> kKeySet2 = 0x01a2;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacechip.html#abe77b777e11684ff81ad71f8fd419efe">chip::KeysetId</a> kKeySet3 = 0x01a3;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// Groups</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">const</span> chip::Credentials::GroupDataProvider::GroupInfo group1(kGroup1, <span class="stringliteral">&quot;Group #1&quot;</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_define" href="CodeUtils_8h.html#ab7eac32a4eff11925cac2aea1eaee6e0">ReturnErrorOnFailure</a>(provider-&gt;SetGroupInfo(fabric_index, group1));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_define" href="CodeUtils_8h.html#ab7eac32a4eff11925cac2aea1eaee6e0">ReturnErrorOnFailure</a>(provider-&gt;AddEndpoint(fabric_index, group1.group_id, 1));</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">const</span> chip::Credentials::GroupDataProvider::GroupInfo group2(kGroup2, <span class="stringliteral">&quot;Group #2&quot;</span>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_define" href="CodeUtils_8h.html#ab7eac32a4eff11925cac2aea1eaee6e0">ReturnErrorOnFailure</a>(provider-&gt;SetGroupInfo(fabric_index, group2));</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_define" href="CodeUtils_8h.html#ab7eac32a4eff11925cac2aea1eaee6e0">ReturnErrorOnFailure</a>(provider-&gt;AddEndpoint(fabric_index, group2.group_id, 0));</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">const</span> chip::Credentials::GroupDataProvider::GroupInfo group3(kGroup3, <span class="stringliteral">&quot;Group #3&quot;</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_define" href="CodeUtils_8h.html#ab7eac32a4eff11925cac2aea1eaee6e0">ReturnErrorOnFailure</a>(provider-&gt;SetGroupInfo(fabric_index, group3));</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_define" href="CodeUtils_8h.html#ab7eac32a4eff11925cac2aea1eaee6e0">ReturnErrorOnFailure</a>(provider-&gt;AddEndpoint(fabric_index, group3.group_id, 0));</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// Key Sets</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    chip::Credentials::GroupDataProvider::KeySet keyset1(kKeySet1,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                                                         chip::Credentials::GroupDataProvider::SecurityPolicy::kCacheAndSync, 3);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">const</span> chip::Credentials::GroupDataProvider::EpochKey epoch_keys1[] = {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        { 1110000, { 0xa0, 0xa1, 0xa2, 0xa3, 0xa4, 0xa5, 0xa6, 0xa7, 0xa8, 0xa9, 0xaa, 0xab, 0xac, 0xad, 0xae, 0xaf } },</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        { 1110001, { 0xb0, 0xb1, 0xb2, 0xb3, 0xb4, 0xb5, 0xb6, 0xb7, 0xb8, 0xb9, 0xba, 0xbb, 0xbc, 0xbd, 0xbe, 0xbf } },</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        { 1110002, { 0xc0, 0xc1, 0xc2, 0xc3, 0xc4, 0xc5, 0xc6, 0xc7, 0xc8, 0xc9, 0xca, 0xcb, 0xcc, 0xcd, 0xce, 0xcf } },</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    };</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    memcpy(keyset1.epoch_keys, epoch_keys1, <span class="keyword">sizeof</span>(epoch_keys1));</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> err = provider-&gt;SetKeySet(fabric_index, compressed_fabric_id, keyset1);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_define" href="CodeUtils_8h.html#ab7eac32a4eff11925cac2aea1eaee6e0">ReturnErrorOnFailure</a>(err);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    chip::Credentials::GroupDataProvider::KeySet keyset2(kKeySet2,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                                                         chip::Credentials::GroupDataProvider::SecurityPolicy::kCacheAndSync, 3);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">const</span> chip::Credentials::GroupDataProvider::EpochKey epoch_keys2[] = {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        { 2220000, { 0xd0, 0xd1, 0xd2, 0xd3, 0xd4, 0xd5, 0xd6, 0xd7, 0xd8, 0xd9, 0xda, 0xdb, 0xdc, 0xdd, 0xde, 0xdf } },</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        { 2220001, { 0xe0, 0xe1, 0xe2, 0xe3, 0xe4, 0xe5, 0xe6, 0xe7, 0xe8, 0xe9, 0xea, 0xeb, 0xec, 0xed, 0xee, 0xef } },</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        { 2220002, { 0xf0, 0xf1, 0xf2, 0xf3, 0xf4, 0xf5, 0xf6, 0xf7, 0xf8, 0xf9, 0xfa, 0xfb, 0xfc, 0xfd, 0xfe, 0xff } },</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    };</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    memcpy(keyset2.epoch_keys, epoch_keys2, <span class="keyword">sizeof</span>(epoch_keys2));</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    err = provider-&gt;SetKeySet(fabric_index, compressed_fabric_id, keyset2);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_define" href="CodeUtils_8h.html#ab7eac32a4eff11925cac2aea1eaee6e0">ReturnErrorOnFailure</a>(err);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    chip::Credentials::GroupDataProvider::KeySet keyset3(kKeySet3,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                                                         chip::Credentials::GroupDataProvider::SecurityPolicy::kTrustFirst, 3);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">const</span> chip::Credentials::GroupDataProvider::EpochKey epoch_keys3[] = {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        { 2220000, { 0xd0, 0xd1, 0xd2, 0xd3, 0xd4, 0xd5, 0xd6, 0xd7, 0xd8, 0xd9, 0xda, 0xdb, 0xdc, 0xdd, 0xde, 0xdf } },</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        { 2220001, { 0xd1, 0xd1, 0xd2, 0xd3, 0xd4, 0xd5, 0xd6, 0xd7, 0xd8, 0xd9, 0xda, 0xdb, 0xdc, 0xdd, 0xde, 0xdf } },</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        { 2220002, { 0xd2, 0xd1, 0xd2, 0xd3, 0xd4, 0xd5, 0xd6, 0xd7, 0xd8, 0xd9, 0xda, 0xdb, 0xdc, 0xdd, 0xde, 0xdf } },</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    };</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    memcpy(keyset3.epoch_keys, epoch_keys3, <span class="keyword">sizeof</span>(epoch_keys3));</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    err = provider-&gt;SetKeySet(fabric_index, compressed_fabric_id, keyset3);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_define" href="CodeUtils_8h.html#ab7eac32a4eff11925cac2aea1eaee6e0">ReturnErrorOnFailure</a>(err);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    provider-&gt;SetGroupKeyAt(fabric_index, 0, chip::Credentials::GroupDataProvider::GroupKey(kGroup1, kKeySet1));</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    provider-&gt;SetGroupKeyAt(fabric_index, 1, chip::Credentials::GroupDataProvider::GroupKey(kGroup2, kKeySet2));</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    provider-&gt;SetGroupKeyAt(fabric_index, 2, chip::Credentials::GroupDataProvider::GroupKey(kGroup3, kKeySet3));</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e">CHIP_NO_ERROR</a>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>} <span class="comment">// namespace GroupTesting</span></div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>} <span class="comment">// namespace chip</span></div>
+<div class="ttc" id="aCHIPCryptoPAL_8h_html"><div class="ttname"><a href="CHIPCryptoPAL_8h.html">CHIPCryptoPAL.h</a></div></div>
+<div class="ttc" id="aCHIPError_8h_html_a255ed42b89227e34eef134084739716e"><div class="ttname"><a href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e">CHIP_NO_ERROR</a></div><div class="ttdeci">#define CHIP_NO_ERROR</div><div class="ttdoc">This defines the CHIP error code for success or no error.</div><div class="ttdef"><b>Definition</b> CHIPError.h:490</div></div>
+<div class="ttc" id="aCodeUtils_8h_html_ab7eac32a4eff11925cac2aea1eaee6e0"><div class="ttname"><a href="CodeUtils_8h.html#ab7eac32a4eff11925cac2aea1eaee6e0">ReturnErrorOnFailure</a></div><div class="ttdeci">#define ReturnErrorOnFailure(expr)</div><div class="ttdoc">Returns the error code if the expression returns an error. For a CHIP_ERROR expression,...</div><div class="ttdef"><b>Definition</b> CodeUtils.h:149</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html"><div class="ttname"><a href="classchip_1_1ChipError.html">chip::ChipError</a></div><div class="ttdef"><b>Definition</b> CHIPError.h:55</div></div>
+<div class="ttc" id="aclasschip_1_1GroupTesting_1_1DefaultIpkValue_html"><div class="ttname"><a href="classchip_1_1GroupTesting_1_1DefaultIpkValue.html">chip::GroupTesting::DefaultIpkValue</a></div><div class="ttdef"><b>Definition</b> TestGroupData.h:29</div></div>
+<div class="ttc" id="aclasschip_1_1GroupTesting_1_1DefaultIpkValue_html_a111c04fddae4a125505081df06141add"><div class="ttname"><a href="classchip_1_1GroupTesting_1_1DefaultIpkValue.html#a111c04fddae4a125505081df06141add">chip::GroupTesting::DefaultIpkValue::GetDefaultIpk</a></div><div class="ttdeci">static ByteSpan GetDefaultIpk()</div><div class="ttdef"><b>Definition</b> TestGroupData.h:33</div></div>
+<div class="ttc" id="aclasschip_1_1GroupTesting_1_1DefaultIpkValue_html_a62e2a3ba72b18db5cf54e2abe192cb0b"><div class="ttname"><a href="classchip_1_1GroupTesting_1_1DefaultIpkValue.html#a62e2a3ba72b18db5cf54e2abe192cb0b">chip::GroupTesting::DefaultIpkValue::DefaultIpkValue</a></div><div class="ttdeci">DefaultIpkValue()</div><div class="ttdef"><b>Definition</b> TestGroupData.h:31</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html"><div class="ttname"><a href="classchip_1_1Span.html">chip::Span&lt; const uint8_t &gt;</a></div></div>
+<div class="ttc" id="anamespacechip_1_1Crypto_html_a498768b0b6eb6b8a74e2c6c5087e8044"><div class="ttname"><a href="namespacechip_1_1Crypto.html#a498768b0b6eb6b8a74e2c6c5087e8044">chip::Crypto::CHIP_CRYPTO_SYMMETRIC_KEY_LENGTH_BYTES</a></div><div class="ttdeci">constexpr size_t CHIP_CRYPTO_SYMMETRIC_KEY_LENGTH_BYTES</div><div class="ttdef"><b>Definition</b> CHIPCryptoPAL.h:68</div></div>
+<div class="ttc" id="anamespacechip_1_1GroupTesting_html_ada344c30fc6ae7a9c68a69d6baabf63e"><div class="ttname"><a href="namespacechip_1_1GroupTesting.html#ada344c30fc6ae7a9c68a69d6baabf63e">chip::GroupTesting::InitData</a></div><div class="ttdeci">CHIP_ERROR InitData(chip::Credentials::GroupDataProvider *provider, chip::FabricIndex fabric_index, const ByteSpan &amp;compressed_fabric_id)</div><div class="ttdef"><b>Definition</b> TestGroupData.h:42</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+<div class="ttc" id="anamespacechip_html_a484ae57de38de1b6a4d136b125c1050d"><div class="ttname"><a href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">chip::ByteSpan</a></div><div class="ttdeci">Span&lt; const uint8_t &gt; ByteSpan</div><div class="ttdef"><b>Definition</b> Span.h:375</div></div>
+<div class="ttc" id="anamespacechip_html_a4b9cd819dd784f7e7389b65e53d005c4"><div class="ttname"><a href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">chip::FabricIndex</a></div><div class="ttdeci">uint8_t FabricIndex</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:44</div></div>
+<div class="ttc" id="anamespacechip_html_abe77b777e11684ff81ad71f8fd419efe"><div class="ttname"><a href="namespacechip.html#abe77b777e11684ff81ad71f8fd419efe">chip::KeysetId</a></div><div class="ttdeci">uint16_t KeysetId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:49</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

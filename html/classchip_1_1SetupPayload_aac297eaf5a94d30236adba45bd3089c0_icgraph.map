@@ -1,0 +1,5 @@
+<map id="chip::SetupPayload::IsCommonTag" name="chip::SetupPayload::IsCommonTag">
+<area shape="rect" id="Node000001" title="Checks if the tag is CHIP Common type" alt="" coords="199,5,344,45"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1SetupPayload.html#ace838f39c263477b5c32bc87cde69933" title="Checks if the tag is vendor&#45;specific" alt="" coords="5,5,151,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,28,151,28,151,23,185,23"/>
+</map>

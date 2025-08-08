@@ -1,0 +1,2875 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/include/platform/CHIPDeviceConfig.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_b0f90f4333c67a01e325f678b62f2fa5.html">include</a></li><li class="navelem"><a class="el" href="dir_a8b5684028953e02e2b85543d315d797.html">platform</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a>  </div>
+  <div class="headertitle"><div class="title">CHIPDeviceConfig.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="CHIPConfig_8h_source.html">lib/core/CHIPConfig.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+CHIPDeviceConfig.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="CHIPDeviceConfig_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2include_2platform_2CHIPDeviceConfig_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2include_2platform_2CHIPDeviceConfig_8h" id="aconnectedhomeip_2src_2include_2platform_2CHIPDeviceConfig_8h">
+<area shape="rect" title=" " alt="" coords="131,5,344,60"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="158,108,317,133"/>
+<area shape="poly" title=" " alt="" coords="240,60,240,94,235,94,235,60"/>
+<area shape="rect" title=" " alt="" coords="5,181,125,207"/>
+<area shape="poly" title=" " alt="" coords="211,136,107,178,105,174,209,131"/>
+<area shape="rect" title=" " alt="" coords="149,181,325,207"/>
+<area shape="poly" title=" " alt="" coords="240,134,240,168,235,168,235,134"/>
+<area shape="rect" title=" " alt="" coords="350,181,479,207"/>
+<area shape="poly" title=" " alt="" coords="267,131,374,174,372,179,265,136"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="CHIPDeviceConfig_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2include_2platform_2CHIPDeviceConfig_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2include_2platform_2CHIPDeviceConfig_8hdep" id="aconnectedhomeip_2src_2include_2platform_2CHIPDeviceConfig_8hdep">
+<area shape="rect" title=" " alt="" coords="1512,5,1725,60"/>
+<area shape="rect" href="CommissionerMain_8h.html" title=" " alt="" coords="187,115,447,155"/>
+<area shape="poly" title=" " alt="" coords="1498,46,448,127,447,121,1498,41"/>
+<area shape="rect" href="Options_8h.html" title=" " alt="" coords="1683,321,1890,361"/>
+<area shape="poly" title=" " alt="" coords="1739,39,1774,48,1807,62,1837,81,1862,106,1876,134,1880,164,1876,194,1866,225,1836,280,1806,322,1801,318,1832,277,1861,222,1870,193,1874,164,1871,136,1858,110,1834,85,1805,66,1772,53,1738,44"/>
+<area shape="rect" href="CHIPDeviceLayer_8h.html" title=" " alt="" coords="1120,211,1333,265"/>
+<area shape="poly" title=" " alt="" coords="1503,67,1448,86,1395,110,1355,134,1317,161,1256,212,1253,208,1314,157,1352,130,1392,106,1446,81,1501,62"/>
+<area shape="rect" href="ConfigurationManager_8h.html" title=" " alt="" coords="1624,108,1848,163"/>
+<area shape="poly" title=" " alt="" coords="1662,67,1707,106,1704,110,1658,71"/>
+<area shape="rect" href="DiagnosticDataProvider_8h.html" title=" " alt="" coords="2025,211,2231,265"/>
+<area shape="poly" title=" " alt="" coords="1740,55,1822,77,1905,106,1957,129,2008,157,2091,208,2089,213,2005,161,1955,134,1903,110,1821,82,1739,60"/>
+<area shape="rect" href="PlatformManager_8h.html" title=" " alt="" coords="1406,108,1599,163"/>
+<area shape="poly" title=" " alt="" coords="1580,71,1535,110,1531,106,1576,67"/>
+<area shape="rect" href="CommissionerMain_8cpp.html" title=" " alt="" coords="5,218,280,258"/>
+<area shape="poly" title=" " alt="" coords="274,165,177,220,174,216,271,160"/>
+<area shape="rect" href="ControllerShellCommands_8cpp.html" title=" " alt="" coords="160,313,379,368"/>
+<area shape="poly" title=" " alt="" coords="315,169,295,266,281,314,276,312,289,265,309,168"/>
+<area shape="rect" href="AppMain_8h.html" title=" " alt="" coords="1307,423,1514,463"/>
+<area shape="poly" title=" " alt="" coords="1704,367,1482,426,1481,421,1703,362"/>
+<area shape="rect" href="CommissionableInit_8h.html" title=" " alt="" coords="1769,416,1999,471"/>
+<area shape="poly" title=" " alt="" coords="1816,369,1860,414,1857,418,1813,372"/>
+<area shape="rect" href="Options_8cpp.html" title=" " alt="" coords="1538,423,1745,463"/>
+<area shape="poly" title=" " alt="" coords="1750,371,1670,425,1667,421,1747,366"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="835,526,1042,566"/>
+<area shape="poly" title=" " alt="" coords="1310,469,1027,529,1026,523,1309,464"/>
+<area shape="rect" href="AppMain_8cpp.html" title=" " alt="" coords="1422,526,1629,566"/>
+<area shape="poly" title=" " alt="" coords="1444,470,1506,524,1502,528,1441,474"/>
+<area shape="poly" title=" " alt="" coords="1756,473,1554,499,1357,518,1043,542,1042,536,1357,513,1554,493,1755,468"/>
+<area shape="poly" title=" " alt="" coords="1778,477,1593,528,1592,523,1777,472"/>
+<area shape="rect" href="CommissionableInit_8cpp.html" title=" " alt="" coords="1769,519,1999,573"/>
+<area shape="poly" title=" " alt="" coords="1887,484,1887,519,1881,519,1881,484"/>
+<area shape="poly" title=" " alt="" coords="1106,252,807,278,448,316,379,325,378,320,448,311,806,273,1106,246"/>
+<area shape="poly" title=" " alt="" coords="1348,256,1671,311,1706,318,1705,323,1670,316,1347,261"/>
+<area shape="poly" title=" " alt="" coords="1262,274,1396,421,1392,425,1258,278"/>
+<area shape="poly" title=" " alt="" coords="1106,248,943,257,763,272,611,292,558,303,530,316,495,351,484,370,477,389,474,409,476,429,484,449,498,469,519,486,551,500,638,521,739,533,835,540,835,545,739,539,637,526,550,505,517,490,494,472,480,451,471,430,469,409,471,388,479,367,491,348,526,311,557,298,610,286,763,267,942,252,1106,242"/>
+<area shape="poly" title=" " alt="" coords="1239,278,1269,392,1284,443,1297,469,1324,491,1355,509,1388,521,1422,531,1421,536,1387,527,1353,513,1321,496,1293,472,1279,445,1263,394,1234,279"/>
+<area shape="rect" href="Device_8cpp.html" title=" " alt="" coords="741,321,949,361"/>
+<area shape="poly" title=" " alt="" coords="1115,271,918,323,916,318,1114,266"/>
+<area shape="rect" href="CommissioneeShellCommands_8cpp.html" title=" " alt="" coords="508,416,759,471"/>
+<area shape="poly" title=" " alt="" coords="1106,246,945,255,769,269,621,289,571,301,544,315,537,327,535,339,545,367,564,393,588,414,585,418,560,397,540,369,530,339,532,326,541,311,569,296,620,284,768,264,945,250,1106,241"/>
+<area shape="rect" href="RpcClientProcessor_8h.html" title=" " alt="" coords="973,321,1232,361"/>
+<area shape="poly" title=" " alt="" coords="1185,276,1128,323,1124,318,1182,272"/>
+<area shape="rect" href="Dnssd_8h.html" title=" " alt="" coords="555,321,717,361"/>
+<area shape="poly" title=" " alt="" coords="1107,256,928,280,730,316,700,323,698,318,729,311,927,275,1106,250"/>
+<area shape="rect" href="CommissionerDiscoveryController_8h.html" title=" " alt="" coords="1408,313,1659,368"/>
+<area shape="poly" title=" " alt="" coords="1320,267,1454,311,1453,316,1319,272"/>
+<area shape="rect" href="RpcClientProcessor_8cpp.html" title=" " alt="" coords="958,423,1231,463"/>
+<area shape="poly" title=" " alt="" coords="1103,374,1099,423,1094,423,1097,374"/>
+<area shape="poly" title=" " alt="" coords="685,364,802,418,873,445,946,468,1073,496,1201,516,1321,529,1422,537,1421,542,1320,535,1200,521,1072,501,945,473,872,450,800,423,683,369"/>
+<area shape="poly" title=" " alt="" coords="638,374,637,416,631,416,632,374"/>
+<area shape="poly" title=" " alt="" coords="1492,379,1435,425,1432,421,1489,375"/>
+<area shape="poly" title=" " alt="" coords="1805,167,1846,193,1887,226,1923,266,1949,312,1956,341,1949,369,1935,395,1916,418,1912,414,1930,392,1944,367,1950,341,1944,314,1919,269,1883,230,1843,197,1802,172"/>
+<area shape="poly" title=" " alt="" coords="1612,165,1611,165,1334,219,1333,214,1610,160,1611,160"/>
+<area shape="poly" title=" " alt="" coords="2130,279,2126,325,2115,377,2093,429,2077,453,2057,473,2004,486,1893,503,1629,536,1628,530,1892,498,2003,481,2055,468,2073,449,2088,427,2110,376,2121,324,2125,279"/>
+<area shape="poly" title=" " alt="" coords="1435,172,1414,190,1398,212,1388,239,1382,268,1383,328,1393,382,1406,422,1401,424,1388,383,1377,328,1377,268,1382,238,1394,209,1410,186,1432,168"/>
+<area shape="poly" title=" " alt="" coords="1392,142,1166,155,1031,167,893,183,760,206,641,235,589,252,545,271,508,292,481,315,452,353,444,372,440,391,440,411,445,430,454,449,469,469,492,487,527,502,571,514,622,523,732,535,835,541,835,546,731,541,621,529,570,519,525,507,489,492,465,473,450,452,440,432,435,411,435,391,439,371,448,351,477,312,505,288,542,266,587,247,639,230,759,201,892,178,1031,161,1166,149,1392,137"/>
+<area shape="poly" title=" " alt="" coords="1614,160,1806,208,1908,262,1955,291,1996,322,2026,355,2036,373,2041,392,2043,411,2039,431,2029,451,2014,473,1967,487,1868,503,1629,535,1628,530,1867,498,1966,481,2010,468,2025,449,2034,429,2037,411,2036,393,2031,375,2021,359,1992,326,1952,295,1905,266,1804,213,1612,166"/>
+<area shape="poly" title=" " alt="" coords="1603,164,1690,194,1781,231,1858,271,1886,291,1905,312,1915,338,1915,366,1909,393,1900,417,1895,415,1904,392,1910,365,1909,339,1900,315,1882,295,1855,275,1778,236,1688,199,1601,169"/>
+<area shape="poly" title=" " alt="" coords="1419,170,1299,213,1298,208,1417,165"/>
+<area shape="poly" title=" " alt="" coords="1587,167,1610,186,1629,209,1638,238,1629,267,1609,294,1584,315,1580,311,1605,290,1624,264,1632,238,1624,212,1607,190,1584,172"/>
+<area shape="rect" href="Rpc_8cpp.html" title=" " alt="" coords="1409,218,1615,258"/>
+<area shape="poly" title=" " alt="" coords="1509,176,1513,217,1508,218,1504,177"/>
+</map>
+</div>
+</div>
+<p><a href="CHIPDeviceConfig_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a7845d97884f3a31de9c7438915054f01" id="r_a7845d97884f3a31de9c7438915054f01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a7845d97884f3a31de9c7438915054f01">CHIP_DEVICE_CONFIG_CHIP_TASK_NAME</a>&#160;&#160;&#160;&quot;CHIP&quot;</td></tr>
+<tr class="separator:a7845d97884f3a31de9c7438915054f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a594dfc267fc3e383e768e05a2ebf9ab8" id="r_a594dfc267fc3e383e768e05a2ebf9ab8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a594dfc267fc3e383e768e05a2ebf9ab8">CHIP_DEVICE_CONFIG_CHIP_TASK_STACK_SIZE</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="separator:a594dfc267fc3e383e768e05a2ebf9ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900305532bdf6e3b4b2d8edc306d43bb" id="r_a900305532bdf6e3b4b2d8edc306d43bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a900305532bdf6e3b4b2d8edc306d43bb">CHIP_DEVICE_CONFIG_CHIP_TASK_PRIORITY</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a900305532bdf6e3b4b2d8edc306d43bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93a8e595f5571df77ed9a9a98d7827a" id="r_ac93a8e595f5571df77ed9a9a98d7827a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ac93a8e595f5571df77ed9a9a98d7827a">CHIP_DEVICE_CONFIG_MAX_EVENT_QUEUE_SIZE</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:ac93a8e595f5571df77ed9a9a98d7827a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1722575f6cd4dfc108213a6cc77ad40d" id="r_a1722575f6cd4dfc108213a6cc77ad40d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a1722575f6cd4dfc108213a6cc77ad40d">CHIP_DEVICE_CONFIG_ENABLE_BG_EVENT_PROCESSING</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a1722575f6cd4dfc108213a6cc77ad40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9adb0c691aee2d055ddf5847493b7f4" id="r_ab9adb0c691aee2d055ddf5847493b7f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ab9adb0c691aee2d055ddf5847493b7f4">CHIP_DEVICE_CONFIG_BG_TASK_NAME</a>&#160;&#160;&#160;&quot;BG&quot;</td></tr>
+<tr class="separator:ab9adb0c691aee2d055ddf5847493b7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5d0bc591fc5db0e238e8c82381d0ba" id="r_acc5d0bc591fc5db0e238e8c82381d0ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#acc5d0bc591fc5db0e238e8c82381d0ba">CHIP_DEVICE_CONFIG_BG_TASK_STACK_SIZE</a>&#160;&#160;&#160;(6 * 1024)</td></tr>
+<tr class="separator:acc5d0bc591fc5db0e238e8c82381d0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2adb860f05d747107ee9b4b922436d9a" id="r_a2adb860f05d747107ee9b4b922436d9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a2adb860f05d747107ee9b4b922436d9a">CHIP_DEVICE_CONFIG_BG_TASK_PRIORITY</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a2adb860f05d747107ee9b4b922436d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e12bab3c122c9bb56b63823c5fc8c6" id="r_a86e12bab3c122c9bb56b63823c5fc8c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a86e12bab3c122c9bb56b63823c5fc8c6">CHIP_DEVICE_CONFIG_BG_MAX_EVENT_QUEUE_SIZE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a86e12bab3c122c9bb56b63823c5fc8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62a1d8984a79e7e4eddd2a647eb9372" id="r_ad62a1d8984a79e7e4eddd2a647eb9372"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ad62a1d8984a79e7e4eddd2a647eb9372">CHIP_DEVICE_CONFIG_ICD_SLOW_POLL_INTERVAL</a>&#160;&#160;&#160;System::Clock::Milliseconds32(5000)</td></tr>
+<tr class="separator:ad62a1d8984a79e7e4eddd2a647eb9372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ae6c562c790bcfae92d7637801c10e" id="r_ad2ae6c562c790bcfae92d7637801c10e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ad2ae6c562c790bcfae92d7637801c10e">CHIP_DEVICE_CONFIG_ICD_SIT_SLOW_POLL_LIMIT</a>&#160;&#160;&#160;System::Clock::Milliseconds32(15000)</td></tr>
+<tr class="separator:ad2ae6c562c790bcfae92d7637801c10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83489bba076206ea1488a29ae8ea9385" id="r_a83489bba076206ea1488a29ae8ea9385"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a83489bba076206ea1488a29ae8ea9385">CHIP_DEVICE_CONFIG_ICD_SIT_POLLING_INTERVAL</a>&#160;&#160;&#160;<a class="el" href="CHIPDeviceConfig_8h.html#ad2ae6c562c790bcfae92d7637801c10e">CHIP_DEVICE_CONFIG_ICD_SIT_SLOW_POLL_LIMIT</a></td></tr>
+<tr class="separator:a83489bba076206ea1488a29ae8ea9385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b568e72acd1c3f15011f1ffb02a59ff" id="r_a4b568e72acd1c3f15011f1ffb02a59ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a4b568e72acd1c3f15011f1ffb02a59ff">CHIP_DEVICE_CONFIG_ICD_FAST_POLL_INTERVAL</a>&#160;&#160;&#160;System::Clock::Milliseconds32(200)</td></tr>
+<tr class="separator:a4b568e72acd1c3f15011f1ffb02a59ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa612fd082d19dcc97a2a8e33eaf97da4" id="r_aa612fd082d19dcc97a2a8e33eaf97da4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#aa612fd082d19dcc97a2a8e33eaf97da4">CHIP_DEVICE_CONFIG_SED_ACTIVE_THRESHOLD</a>&#160;&#160;&#160;System::Clock::Milliseconds32(4000)</td></tr>
+<tr class="separator:aa612fd082d19dcc97a2a8e33eaf97da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d1a8c2fc43688e70616803f78d66a3" id="r_ac1d1a8c2fc43688e70616803f78d66a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ac1d1a8c2fc43688e70616803f78d66a3">CHIP_DEVICE_CONFIG_DEVICE_VENDOR_NAME</a>&#160;&#160;&#160;&quot;TEST_VENDOR&quot;</td></tr>
+<tr class="separator:ac1d1a8c2fc43688e70616803f78d66a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abef9e3d99bcbbbdf79a340ad3465cc" id="r_a2abef9e3d99bcbbbdf79a340ad3465cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a2abef9e3d99bcbbbdf79a340ad3465cc">CHIP_DEVICE_CONFIG_DEVICE_VENDOR_ID</a>&#160;&#160;&#160;0xFFF1</td></tr>
+<tr class="separator:a2abef9e3d99bcbbbdf79a340ad3465cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd231322b81161e91e3c1b868f998d8d" id="r_acd231322b81161e91e3c1b868f998d8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#acd231322b81161e91e3c1b868f998d8d">CHIP_DEVICE_CONFIG_DEVICE_PRODUCT_NAME</a>&#160;&#160;&#160;&quot;TEST_PRODUCT&quot;</td></tr>
+<tr class="separator:acd231322b81161e91e3c1b868f998d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd348c4551d05c630645358da5b24ac" id="r_afcd348c4551d05c630645358da5b24ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#afcd348c4551d05c630645358da5b24ac">CHIP_DEVICE_CONFIG_DEVICE_PRODUCT_ID</a>&#160;&#160;&#160;0x8001</td></tr>
+<tr class="separator:afcd348c4551d05c630645358da5b24ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9006aff63ca8cb7037dd7b4fa11c63a7" id="r_a9006aff63ca8cb7037dd7b4fa11c63a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a9006aff63ca8cb7037dd7b4fa11c63a7">CHIP_DEVICE_CONFIG_DEFAULT_DEVICE_HARDWARE_VERSION_STRING</a>&#160;&#160;&#160;&quot;TEST_VERSION&quot;</td></tr>
+<tr class="separator:a9006aff63ca8cb7037dd7b4fa11c63a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204f3b0d97718cd26d39c117d0c119dc" id="r_a204f3b0d97718cd26d39c117d0c119dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a204f3b0d97718cd26d39c117d0c119dc">CHIP_DEVICE_CONFIG_DEFAULT_DEVICE_HARDWARE_VERSION</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a204f3b0d97718cd26d39c117d0c119dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc4fea6b7e1ab2cd1ace347da0a9ffaa" id="r_abc4fea6b7e1ab2cd1ace347da0a9ffaa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#abc4fea6b7e1ab2cd1ace347da0a9ffaa">CHIP_DEVICE_CONFIG_DEVICE_SOFTWARE_VERSION_STRING</a>&#160;&#160;&#160;&quot;1.0&quot;</td></tr>
+<tr class="separator:abc4fea6b7e1ab2cd1ace347da0a9ffaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c64818357640acb040d83ec6370e092" id="r_a2c64818357640acb040d83ec6370e092"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a2c64818357640acb040d83ec6370e092">CHIP_DEVICE_CONFIG_DEVICE_SOFTWARE_VERSION</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a2c64818357640acb040d83ec6370e092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d45aa777823b8c7d5481c74431c718" id="r_aa1d45aa777823b8c7d5481c74431c718"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#aa1d45aa777823b8c7d5481c74431c718">CHIP_DEVICE_CONFIG_DEVICE_CONFIGURATION_VERSION</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aa1d45aa777823b8c7d5481c74431c718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae79d5e66e856f8a9650a0d9167b15848" id="r_ae79d5e66e856f8a9650a0d9167b15848"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ae79d5e66e856f8a9650a0d9167b15848">CHIP_DEVICE_CONFIG_TEST_SERIAL_NUMBER</a>&#160;&#160;&#160;&quot;TEST_SN&quot;</td></tr>
+<tr class="separator:ae79d5e66e856f8a9650a0d9167b15848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8dd73ecba07f069e42b0253d67a20f9" id="r_ab8dd73ecba07f069e42b0253d67a20f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ab8dd73ecba07f069e42b0253d67a20f9">CHIP_DEVICE_CONFIG_FAILSAFE_EXPIRY_LENGTH_SEC</a>&#160;&#160;&#160;60</td></tr>
+<tr class="separator:ab8dd73ecba07f069e42b0253d67a20f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7bac384ae4f6e72ad7333e5a89ccf1" id="r_a6b7bac384ae4f6e72ad7333e5a89ccf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a6b7bac384ae4f6e72ad7333e5a89ccf1">CHIP_DEVICE_CONFIG_MAX_CUMULATIVE_FAILSAFE_SEC</a>&#160;&#160;&#160;900</td></tr>
+<tr class="separator:a6b7bac384ae4f6e72ad7333e5a89ccf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff392dfffa95bdae91b83c33ef4d5cb7" id="r_aff392dfffa95bdae91b83c33ef4d5cb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#aff392dfffa95bdae91b83c33ef4d5cb7">CHIP_DEVICE_CONFIG_SUPPORTS_CONCURRENT_CONNECTION</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aff392dfffa95bdae91b83c33ef4d5cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a315dcd4514f330dac44bd9366ae4dc34" id="r_a315dcd4514f330dac44bd9366ae4dc34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a315dcd4514f330dac44bd9366ae4dc34">WIFI_START_CHECK_TIME_USEC</a>&#160;&#160;&#160;100000</td></tr>
+<tr class="separator:a315dcd4514f330dac44bd9366ae4dc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46d4ea1b4bc24086c966b399979cf54" id="r_ad46d4ea1b4bc24086c966b399979cf54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ad46d4ea1b4bc24086c966b399979cf54">WIFI_START_CHECK_ATTEMPTS</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ad46d4ea1b4bc24086c966b399979cf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79f373b4f6a7d8303869a3043972981" id="r_ab79f373b4f6a7d8303869a3043972981"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ab79f373b4f6a7d8303869a3043972981">CHIP_DEVICE_CONFIG_USER_SELECTED_MODE_TIMEOUT_SEC</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:ab79f373b4f6a7d8303869a3043972981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a523537bdedf8806e8a0d08db220ac1ec" id="r_a523537bdedf8806e8a0d08db220ac1ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a523537bdedf8806e8a0d08db220ac1ec">CHIP_DEVICE_CONFIG_ROTATING_DEVICE_ID_UNIQUE_ID</a></td></tr>
+<tr class="separator:a523537bdedf8806e8a0d08db220ac1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e566731446ead205f33646ba0e4b9d" id="r_ae2e566731446ead205f33646ba0e4b9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ae2e566731446ead205f33646ba0e4b9d">CHIP_DEVICE_CONFIG_ROTATING_DEVICE_ID_UNIQUE_ID_LENGTH</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:ae2e566731446ead205f33646ba0e4b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a20364371553a6de171ff402117fbf7" id="r_a0a20364371553a6de171ff402117fbf7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a0a20364371553a6de171ff402117fbf7">CHIP_DEVICE_CONFIG_ENABLE_WIFI_STATION</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a0a20364371553a6de171ff402117fbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc30ffe9641da700c0292288c2dec5f" id="r_a3bc30ffe9641da700c0292288c2dec5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a3bc30ffe9641da700c0292288c2dec5f">CHIP_DEVICE_CONFIG_ENABLE_WIFI_PDC</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a3bc30ffe9641da700c0292288c2dec5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad432aab478a95ce7be50aed2c89b23a1" id="r_ad432aab478a95ce7be50aed2c89b23a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ad432aab478a95ce7be50aed2c89b23a1">CHIP_DEVICE_CONFIG_WIFI_STATION_RECONNECT_INTERVAL</a>&#160;&#160;&#160;5000</td></tr>
+<tr class="separator:ad432aab478a95ce7be50aed2c89b23a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05064919d42eb56139dec1af3eeec6bf" id="r_a05064919d42eb56139dec1af3eeec6bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a05064919d42eb56139dec1af3eeec6bf">CHIP_DEVICE_CONFIG_MAX_SCAN_NETWORKS_RESULTS</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a05064919d42eb56139dec1af3eeec6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a087e091adae8e9476414deda0a512d56" id="r_a087e091adae8e9476414deda0a512d56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a087e091adae8e9476414deda0a512d56">CHIP_DEVICE_CONFIG_WIFI_SCAN_COMPLETION_TIMEOUT</a>&#160;&#160;&#160;10000</td></tr>
+<tr class="separator:a087e091adae8e9476414deda0a512d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a05089cb958f2d90a7979fb7175308" id="r_a35a05089cb958f2d90a7979fb7175308"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a35a05089cb958f2d90a7979fb7175308">CHIP_DEVICE_CONFIG_WIFI_CONNECTIVITY_TIMEOUT</a>&#160;&#160;&#160;30000</td></tr>
+<tr class="separator:a35a05089cb958f2d90a7979fb7175308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5c4f72801c0af330bf3739cae2dafe" id="r_ada5c4f72801c0af330bf3739cae2dafe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ada5c4f72801c0af330bf3739cae2dafe">CHIP_DEVICE_CONFIG_LWIP_WIFI_STATION_IF_NAME</a>&#160;&#160;&#160;&quot;wl&quot;</td></tr>
+<tr class="separator:ada5c4f72801c0af330bf3739cae2dafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7eac9e450a7627e6a7acd6aa244e7ab" id="r_ad7eac9e450a7627e6a7acd6aa244e7ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ad7eac9e450a7627e6a7acd6aa244e7ab">CHIP_DEVICE_CONFIG_WIFI_STATION_IF_NAME</a>&#160;&#160;&#160;&quot;wlan0&quot;</td></tr>
+<tr class="separator:ad7eac9e450a7627e6a7acd6aa244e7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc946238a9db995d8f1e89b002479159" id="r_afc946238a9db995d8f1e89b002479159"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#afc946238a9db995d8f1e89b002479159">CHIP_DEVICE_CONFIG_ENABLE_WIFIPAF</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:afc946238a9db995d8f1e89b002479159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e03c94445c9e79ba2a9ba73bab656a0" id="r_a2e03c94445c9e79ba2a9ba73bab656a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a2e03c94445c9e79ba2a9ba73bab656a0">CHIP_DEVICE_CONFIG_ENABLE_JOINT_FABRIC</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a2e03c94445c9e79ba2a9ba73bab656a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e47c7328b0383e0ea0d95f4b05bd2f" id="r_af3e47c7328b0383e0ea0d95f4b05bd2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#af3e47c7328b0383e0ea0d95f4b05bd2f">CHIP_DEVICE_CONFIG_WIFIPAF_MIN_ADVERTISING_TIMEOUT_SECS</a>&#160;&#160;&#160;(3 * 60)</td></tr>
+<tr class="separator:af3e47c7328b0383e0ea0d95f4b05bd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc92cebbc9b86998857be684110013f" id="r_a0cc92cebbc9b86998857be684110013f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a0cc92cebbc9b86998857be684110013f">CHIP_DEVICE_CONFIG_WIFIPAF_MAX_ADVERTISING_TIMEOUT_SECS</a>&#160;&#160;&#160;(15 * 60)</td></tr>
+<tr class="separator:a0cc92cebbc9b86998857be684110013f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563268e75bff5669ec25398983aaad13" id="r_a563268e75bff5669ec25398983aaad13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a563268e75bff5669ec25398983aaad13">CHIP_DEVICE_CONFIG_WIFIPAF_DISCOVERY_TIMEOUT_SECS</a>&#160;&#160;&#160;(15 * 60)</td></tr>
+<tr class="separator:a563268e75bff5669ec25398983aaad13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8980228848bd7bbbe19608d138197b56" id="r_a8980228848bd7bbbe19608d138197b56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a8980228848bd7bbbe19608d138197b56">CHIP_DEVICE_CONFIG_WIFIPAF_24G_DEFAUTL_CHNL</a>&#160;&#160;&#160;2437</td></tr>
+<tr class="separator:a8980228848bd7bbbe19608d138197b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e20eb9d30764baf93878e8e513cec7" id="r_a31e20eb9d30764baf93878e8e513cec7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a31e20eb9d30764baf93878e8e513cec7">CHIP_DEVICE_CONFIG_WIFIPAF_5G_LOW_DEFAUTL_CHNL</a>&#160;&#160;&#160;5220</td></tr>
+<tr class="separator:a31e20eb9d30764baf93878e8e513cec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfaa25c3fb7b9264d5564a469edec85e" id="r_adfaa25c3fb7b9264d5564a469edec85e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#adfaa25c3fb7b9264d5564a469edec85e">CHIP_DEVICE_CONFIG_WIFIPAF_5G_UP_DEFAUTL_CHNL</a>&#160;&#160;&#160;5745</td></tr>
+<tr class="separator:adfaa25c3fb7b9264d5564a469edec85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0549bd8a7ac13d3811c5bcd5435b13d" id="r_ac0549bd8a7ac13d3811c5bcd5435b13d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ac0549bd8a7ac13d3811c5bcd5435b13d">CHIP_DEVICE_CONFIG_ENABLE_WIFI_AP</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ac0549bd8a7ac13d3811c5bcd5435b13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47697684558834017494951e557d9fbe" id="r_a47697684558834017494951e557d9fbe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a47697684558834017494951e557d9fbe">CHIP_DEVICE_CONFIG_WIFI_AP_SSID_PREFIX</a>&#160;&#160;&#160;&quot;MATTER-&quot;</td></tr>
+<tr class="separator:a47697684558834017494951e557d9fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa296d20b60a42cdfd9e5032d5d34e73" id="r_afa296d20b60a42cdfd9e5032d5d34e73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#afa296d20b60a42cdfd9e5032d5d34e73">CHIP_DEVICE_CONFIG_WIFI_AP_CHANNEL</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:afa296d20b60a42cdfd9e5032d5d34e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9786db5dfc21e735970fc0fc7d9c69ac" id="r_a9786db5dfc21e735970fc0fc7d9c69ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a9786db5dfc21e735970fc0fc7d9c69ac">CHIP_DEVICE_CONFIG_WIFI_AP_MAX_STATIONS</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a9786db5dfc21e735970fc0fc7d9c69ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf4883003a8662304bd246902794ebc1" id="r_acf4883003a8662304bd246902794ebc1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#acf4883003a8662304bd246902794ebc1">CHIP_DEVICE_CONFIG_WIFI_AP_BEACON_INTERVAL</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:acf4883003a8662304bd246902794ebc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7039418f59daf3e009a9c0f1897de3" id="r_a8a7039418f59daf3e009a9c0f1897de3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a8a7039418f59daf3e009a9c0f1897de3">CHIP_DEVICE_CONFIG_WIFI_AP_IDLE_TIMEOUT</a>&#160;&#160;&#160;120000</td></tr>
+<tr class="separator:a8a7039418f59daf3e009a9c0f1897de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210d96b6b8ebec5b87f9eec1b3db4a3c" id="r_a210d96b6b8ebec5b87f9eec1b3db4a3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a210d96b6b8ebec5b87f9eec1b3db4a3c">CHIP_DEVICE_CONFIG_LWIP_WIFI_AP_IF_NAME</a>&#160;&#160;&#160;&quot;ap&quot;</td></tr>
+<tr class="separator:a210d96b6b8ebec5b87f9eec1b3db4a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa71f419a95fade17a1b128b19fd578" id="r_a9aa71f419a95fade17a1b128b19fd578"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a9aa71f419a95fade17a1b128b19fd578">CHIP_DEVICE_CONFIG_ENABLE_NFC_BASED_COMMISSIONING</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a9aa71f419a95fade17a1b128b19fd578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb537e0f4aa1407f231867b27e798bc" id="r_a7eb537e0f4aa1407f231867b27e798bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a7eb537e0f4aa1407f231867b27e798bc">CHIP_DEVICE_CONFIG_ENABLE_CHIPOBLE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a7eb537e0f4aa1407f231867b27e798bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af208201041d2136b01c9062b1460651c" id="r_af208201041d2136b01c9062b1460651c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#af208201041d2136b01c9062b1460651c">CHIP_DEVICE_CONFIG_CHIPOBLE_SINGLE_CONNECTION</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:af208201041d2136b01c9062b1460651c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66145c1b40a752120e05ce2ed15249af" id="r_a66145c1b40a752120e05ce2ed15249af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a66145c1b40a752120e05ce2ed15249af">CHIP_DEVICE_CONFIG_CHIPOBLE_ENABLE_ADVERTISING_AUTOSTART</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a66145c1b40a752120e05ce2ed15249af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b1b0bd39deaca1675c4353a35d4e398" id="r_a1b1b0bd39deaca1675c4353a35d4e398"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a1b1b0bd39deaca1675c4353a35d4e398">CHIP_DEVICE_CONFIG_ENABLE_PAIRING_AUTOSTART</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a1b1b0bd39deaca1675c4353a35d4e398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a57965efec9eee144b77c18706002a" id="r_a06a57965efec9eee144b77c18706002a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a06a57965efec9eee144b77c18706002a">CHIP_DEVICE_CONFIG_BLE_DEVICE_NAME_PREFIX</a>&#160;&#160;&#160;&quot;MATTER-&quot;</td></tr>
+<tr class="separator:a06a57965efec9eee144b77c18706002a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7077975fa78cacdfba2e66b6c23a585" id="r_af7077975fa78cacdfba2e66b6c23a585"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#af7077975fa78cacdfba2e66b6c23a585">CHIP_DEVICE_CONFIG_BLE_FAST_ADVERTISING_INTERVAL_MIN</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:af7077975fa78cacdfba2e66b6c23a585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d93590f25ff351de91d577287b321be" id="r_a6d93590f25ff351de91d577287b321be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a6d93590f25ff351de91d577287b321be">CHIP_DEVICE_CONFIG_BLE_FAST_ADVERTISING_INTERVAL_MAX</a>&#160;&#160;&#160;96</td></tr>
+<tr class="separator:a6d93590f25ff351de91d577287b321be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98344879243755d79c3d590ddda25fff" id="r_a98344879243755d79c3d590ddda25fff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a98344879243755d79c3d590ddda25fff">CHIP_DEVICE_CONFIG_BLE_SLOW_ADVERTISING_INTERVAL_MIN</a>&#160;&#160;&#160;240</td></tr>
+<tr class="separator:a98344879243755d79c3d590ddda25fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f17adc59c48ce77ca360e617837170" id="r_af4f17adc59c48ce77ca360e617837170"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#af4f17adc59c48ce77ca360e617837170">CHIP_DEVICE_CONFIG_BLE_SLOW_ADVERTISING_INTERVAL_MAX</a>&#160;&#160;&#160;1920</td></tr>
+<tr class="separator:af4f17adc59c48ce77ca360e617837170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2af703ef83fd54ecd7591f3f7c49786" id="r_af2af703ef83fd54ecd7591f3f7c49786"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#af2af703ef83fd54ecd7591f3f7c49786">CHIP_DEVICE_CONFIG_BLE_ADVERTISING_INTERVAL_CHANGE_TIME</a>&#160;&#160;&#160;30000</td></tr>
+<tr class="separator:af2af703ef83fd54ecd7591f3f7c49786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee18d1e73a03bc9ac8ed8c56dc33e530" id="r_aee18d1e73a03bc9ac8ed8c56dc33e530"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#aee18d1e73a03bc9ac8ed8c56dc33e530">CHIP_DEVICE_CONFIG_EXT_ADVERTISING</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aee18d1e73a03bc9ac8ed8c56dc33e530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1909d0b6d29ecca1bc84445c1a9ddb16" id="r_a1909d0b6d29ecca1bc84445c1a9ddb16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a1909d0b6d29ecca1bc84445c1a9ddb16">CHIP_DEVICE_CONFIG_SERVICE_PROVISIONING_ENDPOINT_ID</a>&#160;&#160;&#160;0x18B4300200000010ULL</td></tr>
+<tr class="separator:a1909d0b6d29ecca1bc84445c1a9ddb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8080a7bfc22d55b3823318210bca61ca" id="r_a8080a7bfc22d55b3823318210bca61ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a8080a7bfc22d55b3823318210bca61ca">CHIP_DEVICE_CONFIG_SERVICE_PROVISIONING_CONNECTIVITY_TIMEOUT</a>&#160;&#160;&#160;10000</td></tr>
+<tr class="separator:a8080a7bfc22d55b3823318210bca61ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221e4c185f68e800d0b405ffec7cb56a" id="r_a221e4c185f68e800d0b405ffec7cb56a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a221e4c185f68e800d0b405ffec7cb56a">CHIP_DEVICE_CONFIG_SERVICE_PROVISIONING_REQUEST_TIMEOUT</a>&#160;&#160;&#160;10000</td></tr>
+<tr class="separator:a221e4c185f68e800d0b405ffec7cb56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6aa3ea9ab41db0156f2e874f534068" id="r_a8f6aa3ea9ab41db0156f2e874f534068"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a8f6aa3ea9ab41db0156f2e874f534068">CHIP_DEVICE_CONFIG_DISCOVERY_TIMEOUT_SECS</a>&#160;&#160;&#160;(15 * 60)</td></tr>
+<tr class="separator:a8f6aa3ea9ab41db0156f2e874f534068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87721a44d64695cb6178fa55e57a5600" id="r_a87721a44d64695cb6178fa55e57a5600"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a87721a44d64695cb6178fa55e57a5600">CHIP_DEVICE_CONFIG_MAX_DISCOVERED_NODES</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a87721a44d64695cb6178fa55e57a5600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502e7c454de99dbb006f736e7992de7e" id="r_a502e7c454de99dbb006f736e7992de7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a502e7c454de99dbb006f736e7992de7e">CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_DISCOVERY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a502e7c454de99dbb006f736e7992de7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8a654519f93da0cc83198948c28e61" id="r_a3d8a654519f93da0cc83198948c28e61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a3d8a654519f93da0cc83198948c28e61">CHIP_DEVICE_CONFIG_UDC_MAX_TARGET_APPS</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a3d8a654519f93da0cc83198948c28e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae416513dc42434b77f519668712a1c17" id="r_ae416513dc42434b77f519668712a1c17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ae416513dc42434b77f519668712a1c17">CHIP_DEVICE_CONFIG_ENABLE_BOTH_COMMISSIONER_AND_COMMISSIONEE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ae416513dc42434b77f519668712a1c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ba524b6ec3bdc7e43c1d833f0d402e" id="r_ad7ba524b6ec3bdc7e43c1d833f0d402e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ad7ba524b6ec3bdc7e43c1d833f0d402e">CHIP_CONFIG_UNSAFE_SUBSCRIPTION_EXCHANGE_MANAGER_USE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ad7ba524b6ec3bdc7e43c1d833f0d402e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4631b35db9b6b57bc78fbbb2588e40ca" id="r_a4631b35db9b6b57bc78fbbb2588e40ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a4631b35db9b6b57bc78fbbb2588e40ca">CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_DISCOVERY_CLIENT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a4631b35db9b6b57bc78fbbb2588e40ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40085e8f02a94dec41e9231b1744f3b1" id="r_a40085e8f02a94dec41e9231b1744f3b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a40085e8f02a94dec41e9231b1744f3b1">CHIP_DEVICE_CONFIG_ENABLE_EXTENDED_DISCOVERY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a40085e8f02a94dec41e9231b1744f3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1034585ff3668e50b4ca6bb247b3e1e2" id="r_a1034585ff3668e50b4ca6bb247b3e1e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a1034585ff3668e50b4ca6bb247b3e1e2">CHIP_DEVICE_CONFIG_DISCOVERY_DISABLED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a1034585ff3668e50b4ca6bb247b3e1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ba499bd0ad30c32b8c4b0e226f5976" id="r_a32ba499bd0ad30c32b8c4b0e226f5976"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a32ba499bd0ad30c32b8c4b0e226f5976">CHIP_DEVICE_CONFIG_DISCOVERY_NO_TIMEOUT</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="separator:a32ba499bd0ad30c32b8c4b0e226f5976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f761c93f8241fd71c5a6322493d4b9" id="r_a78f761c93f8241fd71c5a6322493d4b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a78f761c93f8241fd71c5a6322493d4b9">CHIP_DEVICE_CONFIG_EXTENDED_DISCOVERY_TIMEOUT_SECS</a>&#160;&#160;&#160;(15 * 60)</td></tr>
+<tr class="separator:a78f761c93f8241fd71c5a6322493d4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b0a746a7e139e7a871c92a997dfa22" id="r_aa5b0a746a7e139e7a871c92a997dfa22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#aa5b0a746a7e139e7a871c92a997dfa22">CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONABLE_DEVICE_TYPE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aa5b0a746a7e139e7a871c92a997dfa22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5703e07494ec0d0a5b67c9e4d1a4d992" id="r_a5703e07494ec0d0a5b67c9e4d1a4d992"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a5703e07494ec0d0a5b67c9e4d1a4d992">CHIP_DEVICE_CONFIG_DEVICE_TYPE</a>&#160;&#160;&#160;65535</td></tr>
+<tr class="separator:a5703e07494ec0d0a5b67c9e4d1a4d992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e2ce9580ae9d6e0e145488a1f26458" id="r_af0e2ce9580ae9d6e0e145488a1f26458"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#af0e2ce9580ae9d6e0e145488a1f26458">CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONABLE_DEVICE_NAME</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:af0e2ce9580ae9d6e0e145488a1f26458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374abd9472c88f2d68ad7a9c742cb574" id="r_a374abd9472c88f2d68ad7a9c742cb574"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a374abd9472c88f2d68ad7a9c742cb574">CHIP_DEVICE_CONFIG_DEVICE_NAME</a>&#160;&#160;&#160;&quot;Test Kitchen&quot;</td></tr>
+<tr class="separator:a374abd9472c88f2d68ad7a9c742cb574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fffd0f0bcd78c77a3972861d95fc479" id="r_a4fffd0f0bcd78c77a3972861d95fc479"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a4fffd0f0bcd78c77a3972861d95fc479">CHIP_DEVICE_CONFIG_PAIRING_INITIAL_HINT</a>&#160;&#160;&#160;    (1 &lt;&lt; <a class="el" href="CHIPConfig_8h.html#a6bc94c445cffada644739548fc28b8b5">CHIP_COMMISSIONING_HINT_INDEX_POWER_CYCLE</a> | 1 &lt;&lt; <a class="el" href="CHIPConfig_8h.html#aea8e3bcd748857657a498d2183890de7">CHIP_COMMISSIONING_HINT_INDEX_SEE_MANUAL</a>)</td></tr>
+<tr class="separator:a4fffd0f0bcd78c77a3972861d95fc479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10839254ac83e592337ba6545b6045bb" id="r_a10839254ac83e592337ba6545b6045bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a10839254ac83e592337ba6545b6045bb">CHIP_DEVICE_CONFIG_PAIRING_INITIAL_INSTRUCTION</a>&#160;&#160;&#160;&quot;&quot;</td></tr>
+<tr class="separator:a10839254ac83e592337ba6545b6045bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed801e3ccd7c3740d05eca1672b4500" id="r_a1ed801e3ccd7c3740d05eca1672b4500"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a1ed801e3ccd7c3740d05eca1672b4500">CHIP_DEVICE_CONFIG_PAIRING_SECONDARY_HINT</a>&#160;&#160;&#160;    (1 &lt;&lt; <a class="el" href="CHIPConfig_8h.html#a9189599e231613affe24da3ea9aca1ba">CHIP_COMMISSIONING_HINT_INDEX_SEE_ADMINISTRATOR_UX</a> | 1 &lt;&lt; <a class="el" href="CHIPConfig_8h.html#aea8e3bcd748857657a498d2183890de7">CHIP_COMMISSIONING_HINT_INDEX_SEE_MANUAL</a>)</td></tr>
+<tr class="separator:a1ed801e3ccd7c3740d05eca1672b4500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab61744f5649f56287e83696f3ace785e" id="r_ab61744f5649f56287e83696f3ace785e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ab61744f5649f56287e83696f3ace785e">CHIP_DEVICE_CONFIG_PAIRING_SECONDARY_INSTRUCTION</a>&#160;&#160;&#160;&quot;&quot;</td></tr>
+<tr class="separator:ab61744f5649f56287e83696f3ace785e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a2e98031f9e99fb7fa9243356dbac5" id="r_a65a2e98031f9e99fb7fa9243356dbac5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a65a2e98031f9e99fb7fa9243356dbac5">CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_PASSCODE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a65a2e98031f9e99fb7fa9243356dbac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034d03cc01b1cb09f3f85767fce8b11b" id="r_a034d03cc01b1cb09f3f85767fce8b11b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a034d03cc01b1cb09f3f85767fce8b11b">CHIP_DEVICE_CONFIG_ENABLE_THREAD</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a034d03cc01b1cb09f3f85767fce8b11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756d1617d7a9b4b471711fc3dee3f3ab" id="r_a756d1617d7a9b4b471711fc3dee3f3ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a756d1617d7a9b4b471711fc3dee3f3ab">CHIP_DEVICE_CONFIG_THREAD_FTD</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a756d1617d7a9b4b471711fc3dee3f3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea3a0d781534ed3ef20167f32effa6d" id="r_aaea3a0d781534ed3ef20167f32effa6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#aaea3a0d781534ed3ef20167f32effa6d">CHIP_DEVICE_CONFIG_THREAD_SSED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aaea3a0d781534ed3ef20167f32effa6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5915e8c20b6ee6d5c12c7c851bb51a" id="r_a0b5915e8c20b6ee6d5c12c7c851bb51a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a0b5915e8c20b6ee6d5c12c7c851bb51a">CHIP_DEVICE_CONFIG_THREAD_BORDER_ROUTER</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a0b5915e8c20b6ee6d5c12c7c851bb51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c19336ce3762eb71f1f08fd51a6690" id="r_a21c19336ce3762eb71f1f08fd51a6690"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a21c19336ce3762eb71f1f08fd51a6690">CHIP_DEVICE_CONFIG_USES_OTBR_POSIX_DBUS_STACK</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a21c19336ce3762eb71f1f08fd51a6690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a24f49cf82ab8f756f036f7cb7524d" id="r_a02a24f49cf82ab8f756f036f7cb7524d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a02a24f49cf82ab8f756f036f7cb7524d">CHIP_DEVICE_CONFIG_THREAD_TASK_NAME</a>&#160;&#160;&#160;&quot;THREAD&quot;</td></tr>
+<tr class="separator:a02a24f49cf82ab8f756f036f7cb7524d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f0c36e9f8810fff719653ab3e94883" id="r_ae2f0c36e9f8810fff719653ab3e94883"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ae2f0c36e9f8810fff719653ab3e94883">CHIP_DEVICE_CONFIG_THREAD_TASK_STACK_SIZE</a>&#160;&#160;&#160;8192</td></tr>
+<tr class="separator:ae2f0c36e9f8810fff719653ab3e94883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ddbe69365c8dadefa7e2c63217fb03" id="r_a99ddbe69365c8dadefa7e2c63217fb03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a99ddbe69365c8dadefa7e2c63217fb03">CHIP_DEVICE_CONFIG_THREAD_TASK_PRIORITY</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a99ddbe69365c8dadefa7e2c63217fb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d86d4dfb4ade83802c1d6ad9272122" id="r_a43d86d4dfb4ade83802c1d6ad9272122"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a43d86d4dfb4ade83802c1d6ad9272122">CHIP_DEVICE_CONFIG_LWIP_THREAD_IF_NAME</a>&#160;&#160;&#160;&quot;th&quot;</td></tr>
+<tr class="separator:a43d86d4dfb4ade83802c1d6ad9272122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3deefb6a1b7079fa20fad7890f06db54" id="r_a3deefb6a1b7079fa20fad7890f06db54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a3deefb6a1b7079fa20fad7890f06db54">CHIP_DEVICE_CONFIG_THREAD_IF_MTU</a>&#160;&#160;&#160;1280</td></tr>
+<tr class="separator:a3deefb6a1b7079fa20fad7890f06db54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f91758aff7d3a7acccd1dd83991727a" id="r_a3f91758aff7d3a7acccd1dd83991727a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a3f91758aff7d3a7acccd1dd83991727a">CHIP_DEVICE_CONFIG_DEFAULT_THREAD_NETWORK_NAME_PREFIX</a>&#160;&#160;&#160;&quot;CHIP-PAN-&quot;</td></tr>
+<tr class="separator:a3f91758aff7d3a7acccd1dd83991727a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011c0553246ac8255672464353a94f57" id="r_a011c0553246ac8255672464353a94f57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a011c0553246ac8255672464353a94f57">CHIP_DEVICE_CONFIG_THREAD_CONNECTIVITY_TIMEOUT</a>&#160;&#160;&#160;30000</td></tr>
+<tr class="separator:a011c0553246ac8255672464353a94f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251731ac16e20687975cc2a086be63bf" id="r_a251731ac16e20687975cc2a086be63bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a251731ac16e20687975cc2a086be63bf">CHIP_DEVICE_CONFIG_THREAD_ENABLE_CLI</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a251731ac16e20687975cc2a086be63bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc41f873239ec77215bec5351d471c6" id="r_aebc41f873239ec77215bec5351d471c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#aebc41f873239ec77215bec5351d471c6">CHIP_DEVICE_CONFIG_ENABLE_THREAD_SRP_CLIENT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aebc41f873239ec77215bec5351d471c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ddd5aa8f5572a09996051460193f8ad" id="r_a3ddd5aa8f5572a09996051460193f8ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a3ddd5aa8f5572a09996051460193f8ad">CHIP_DEVICE_CONFIG_THREAD_SRP_MAX_SERVICES</a>&#160;&#160;&#160;(<a class="el" href="CHIPConfig_8h.html#aa4ce0e44e78ed2dd3f279714c194279d">CHIP_CONFIG_MAX_FABRICS</a> + 1)</td></tr>
+<tr class="separator:a3ddd5aa8f5572a09996051460193f8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aabc7179cc0b379f884f2851fd5e03a" id="r_a8aabc7179cc0b379f884f2851fd5e03a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a8aabc7179cc0b379f884f2851fd5e03a">CHIP_DEVICE_CONFIG_ENABLE_THREAD_COMMISSIONABLE_DISCOVERY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a8aabc7179cc0b379f884f2851fd5e03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f5a18211dd5023f58245eef8c2bea7" id="r_ab0f5a18211dd5023f58245eef8c2bea7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ab0f5a18211dd5023f58245eef8c2bea7">CHIP_DEVICE_CONFIG_ENABLE_THREAD_DNS_CLIENT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ab0f5a18211dd5023f58245eef8c2bea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1005951fc16332fb878ab8e23dd7eb89" id="r_a1005951fc16332fb878ab8e23dd7eb89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a1005951fc16332fb878ab8e23dd7eb89">CHIP_DEVICE_CONFIG_ENABLE_THREAD_AUTOSTART</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a1005951fc16332fb878ab8e23dd7eb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad19e7385da5f597eb0fee94773aed3" id="r_acad19e7385da5f597eb0fee94773aed3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#acad19e7385da5f597eb0fee94773aed3">CHIP_DEVICE_CONFIG_ENABLE_WIFI_TELEMETRY</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:acad19e7385da5f597eb0fee94773aed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable automatically uploading Wi-Fi telemetry via trait on an interval.  <br /></td></tr>
+<tr class="separator:acad19e7385da5f597eb0fee94773aed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0e2d7e88fb0465575b2b6697dbf831" id="r_a2e0e2d7e88fb0465575b2b6697dbf831"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a2e0e2d7e88fb0465575b2b6697dbf831">CHIP_DEVICE_CONFIG_ENABLE_THREAD_TELEMETRY</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:a2e0e2d7e88fb0465575b2b6697dbf831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable automatically uploading minimal Thread telemetry and topology via trait on an interval.  <br /></td></tr>
+<tr class="separator:a2e0e2d7e88fb0465575b2b6697dbf831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a08e34432ba21fab7d9c754f9b3ef85" id="r_a1a08e34432ba21fab7d9c754f9b3ef85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a1a08e34432ba21fab7d9c754f9b3ef85">CHIP_DEVICE_CONFIG_ENABLE_THREAD_TELEMETRY_FULL</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:a1a08e34432ba21fab7d9c754f9b3ef85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable automatically uploading all Thread telemetry and topology via trait on an interval. This is suitable for products that have router capability.  <br /></td></tr>
+<tr class="separator:a1a08e34432ba21fab7d9c754f9b3ef85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5807fbba29597af696bf8671501b61" id="r_a2e5807fbba29597af696bf8671501b61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a2e5807fbba29597af696bf8671501b61">CHIP_DEVICE_CONFIG_ENABLE_NETWORK_TELEMETRY</a>&#160;&#160;&#160;    (<a class="el" href="CHIPDeviceConfig_8h.html#acad19e7385da5f597eb0fee94773aed3">CHIP_DEVICE_CONFIG_ENABLE_WIFI_TELEMETRY</a> || <a class="el" href="CHIPDeviceConfig_8h.html#a2e0e2d7e88fb0465575b2b6697dbf831">CHIP_DEVICE_CONFIG_ENABLE_THREAD_TELEMETRY</a>)</td></tr>
+<tr class="separator:a2e5807fbba29597af696bf8671501b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af107289963ac86b868271d4beff6bca6" id="r_af107289963ac86b868271d4beff6bca6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#af107289963ac86b868271d4beff6bca6">CHIP_DEVICE_CONFIG_DEFAULT_TELEMETRY_INTERVAL_MS</a>&#160;&#160;&#160;90000</td></tr>
+<tr class="memdesc:af107289963ac86b868271d4beff6bca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This sets the default interval at which network telemetry events will be logged to chip buffers. This can be overwritten at runtime with a trait.  <br /></td></tr>
+<tr class="separator:af107289963ac86b868271d4beff6bca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48424b39bdbde85bfa4991c9c7e5a61f" id="r_a48424b39bdbde85bfa4991c9c7e5a61f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a48424b39bdbde85bfa4991c9c7e5a61f">CHIP_DEVICE_CONFIG_ENABLE_TEST_SETUP_PARAMS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a48424b39bdbde85bfa4991c9c7e5a61f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable use of test setup parameters for testing purposes only.  <br /></td></tr>
+<tr class="separator:a48424b39bdbde85bfa4991c9c7e5a61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0ff90cda205a3bbbf7cd2a14b85236" id="r_a9f0ff90cda205a3bbbf7cd2a14b85236"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a9f0ff90cda205a3bbbf7cd2a14b85236">CHIP_DEVICE_CONFIG_USE_TEST_SETUP_PIN_CODE</a>&#160;&#160;&#160;20202021</td></tr>
+<tr class="memdesc:a9f0ff90cda205a3bbbf7cd2a14b85236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test Spake2p passcode to use if actual passcode value is not provisioned in the device memory.  <br /></td></tr>
+<tr class="separator:a9f0ff90cda205a3bbbf7cd2a14b85236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44384f98aee26c598fb584d691adbe3" id="r_ad44384f98aee26c598fb584d691adbe3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ad44384f98aee26c598fb584d691adbe3">CHIP_DEVICE_CONFIG_USE_TEST_SETUP_DISCRIMINATOR</a>&#160;&#160;&#160;0xF00</td></tr>
+<tr class="memdesc:ad44384f98aee26c598fb584d691adbe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test setup discriminator to use if actual discriminator value is not provisioned in the device memory.  <br /></td></tr>
+<tr class="separator:ad44384f98aee26c598fb584d691adbe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2597ffa2d35404effdd85157a9f7d89e" id="r_a2597ffa2d35404effdd85157a9f7d89e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a2597ffa2d35404effdd85157a9f7d89e">CHIP_DEVICE_CONFIG_USE_TEST_SPAKE2P_ITERATION_COUNT</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memdesc:a2597ffa2d35404effdd85157a9f7d89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test Spake2p iteration count to use if actual iteration count value is not provisioned in the device memory.  <br /></td></tr>
+<tr class="separator:a2597ffa2d35404effdd85157a9f7d89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9338cf489dd75b6f2aa24e4bc7d194" id="r_a0b9338cf489dd75b6f2aa24e4bc7d194"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a0b9338cf489dd75b6f2aa24e4bc7d194">CHIP_DEVICE_CONFIG_USE_TEST_SPAKE2P_SALT</a>&#160;&#160;&#160;&quot;U1BBS0UyUCBLZXkgU2FsdA==&quot;</td></tr>
+<tr class="memdesc:a0b9338cf489dd75b6f2aa24e4bc7d194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test Spake2p Salt to use if actual salt value is not provisioned in the device memory.  <br /></td></tr>
+<tr class="separator:a0b9338cf489dd75b6f2aa24e4bc7d194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4fbc541d90a8d20f789fb14b7ba262" id="r_a6a4fbc541d90a8d20f789fb14b7ba262"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a6a4fbc541d90a8d20f789fb14b7ba262">CHIP_DEVICE_CONFIG_USE_TEST_SPAKE2P_SALT_DEFAULT</a></td></tr>
+<tr class="separator:a6a4fbc541d90a8d20f789fb14b7ba262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a753bfbfef7683758e82517bc14185ca1" id="r_a753bfbfef7683758e82517bc14185ca1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a753bfbfef7683758e82517bc14185ca1">CHIP_DEVICE_CONFIG_USE_TEST_SPAKE2P_VERIFIER</a></td></tr>
+<tr class="memdesc:a753bfbfef7683758e82517bc14185ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test Spake2p Verifier to use if actual verifier value is not provisioned in the device memory.  <br /></td></tr>
+<tr class="separator:a753bfbfef7683758e82517bc14185ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96c32acdda5b4159686e88105eae377" id="r_ac96c32acdda5b4159686e88105eae377"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ac96c32acdda5b4159686e88105eae377">CHIP_DEVICE_CONFIG_EVENT_LOGGING_CRIT_BUFFER_SIZE</a>&#160;&#160;&#160;(1024)</td></tr>
+<tr class="memdesc:ac96c32acdda5b4159686e88105eae377"><td class="mdescLeft">&#160;</td><td class="mdescRight">A size, in bytes, of the buffer reserved for storing CRITICAL events and no other events. CRITICAL events will never be evicted until this buffer is full, so its size and the sizes of events determine how many of the last N CRITICAL events are guaranteed to be available.  <br /></td></tr>
+<tr class="separator:ac96c32acdda5b4159686e88105eae377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e42896da5958ced01b7e2c2cbafdd2" id="r_ac4e42896da5958ced01b7e2c2cbafdd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ac4e42896da5958ced01b7e2c2cbafdd2">CHIP_DEVICE_CONFIG_EVENT_LOGGING_INFO_BUFFER_SIZE</a>&#160;&#160;&#160;(512)</td></tr>
+<tr class="memdesc:ac4e42896da5958ced01b7e2c2cbafdd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A size, in bytes, of the buffer reserved for storing events at INFO priority and higher. INFO-priority events will not be evicted until this buffer is full (with INFO and CRITICAL events in it) and the oldest event in the buffer is an INFO-priority event (which cannot be evicted into the CRITICAL event buffer).  <br /></td></tr>
+<tr class="separator:ac4e42896da5958ced01b7e2c2cbafdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ae0d2e7642d0354a86904f0601e261" id="r_a48ae0d2e7642d0354a86904f0601e261"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a48ae0d2e7642d0354a86904f0601e261">CHIP_DEVICE_CONFIG_EVENT_LOGGING_DEBUG_BUFFER_SIZE</a>&#160;&#160;&#160;(512)</td></tr>
+<tr class="memdesc:a48ae0d2e7642d0354a86904f0601e261"><td class="mdescLeft">&#160;</td><td class="mdescRight">A size, in bytes, of the buffer used for storing newly generated events, and the only buffer in which DEBUG-priority events are allowed. DEBUG-priority events will start getting evicted when this buffer is full (with DEBUG, INFO, and CRITICAL events in it) and the oldest event in the buffer is a DEBUG-priority event, which cannot be evicted into the INFO event buffer.  <br /></td></tr>
+<tr class="separator:a48ae0d2e7642d0354a86904f0601e261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eec42409c5be61762b33ab08d393afb" id="r_a2eec42409c5be61762b33ab08d393afb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a2eec42409c5be61762b33ab08d393afb">CHIP_DEVICE_CONFIG_EVENT_ID_COUNTER_EPOCH</a>&#160;&#160;&#160;(0x10000)</td></tr>
+<tr class="memdesc:a2eec42409c5be61762b33ab08d393afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event id counter persisted storage epoch.  <br /></td></tr>
+<tr class="separator:a2eec42409c5be61762b33ab08d393afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3bae7e490f692413e782a1c6521365" id="r_add3bae7e490f692413e782a1c6521365"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#add3bae7e490f692413e782a1c6521365">CHIP_DEVICE_CONFIG_EVENT_LOGGING_UTC_TIMESTAMPS</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:add3bae7e490f692413e782a1c6521365"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default, don't record UTC timestamps.  <br /></td></tr>
+<tr class="separator:add3bae7e490f692413e782a1c6521365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb118a1cca6d244a3a4f0e8ee4254791" id="r_abb118a1cca6d244a3a4f0e8ee4254791"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#abb118a1cca6d244a3a4f0e8ee4254791">CHIP_DEVICE_CONFIG_ENABLE_SOFTWARE_UPDATE_MANAGER</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:abb118a1cca6d244a3a4f0e8ee4254791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30918440005df2737588a4abc9022762" id="r_a30918440005df2737588a4abc9022762"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a30918440005df2737588a4abc9022762">CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_URI_LEN</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:a30918440005df2737588a4abc9022762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6d420ff8c610f84456bcbff1def17c0" id="r_af6d420ff8c610f84456bcbff1def17c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#af6d420ff8c610f84456bcbff1def17c0">CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_ENDPOINT_ID</a>&#160;&#160;&#160;0x18B4300200000002ULL</td></tr>
+<tr class="separator:af6d420ff8c610f84456bcbff1def17c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88088f88170ed6532f7ab91df1911d2" id="r_aa88088f88170ed6532f7ab91df1911d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#aa88088f88170ed6532f7ab91df1911d2">CHIP_DEVICE_CONFIG_FILE_DOWNLOAD_ENDPOINT_ID</a>&#160;&#160;&#160;0x18B4300200000013ULL</td></tr>
+<tr class="separator:aa88088f88170ed6532f7ab91df1911d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aff2e1bcfe11618206a23f2349cb1a6" id="r_a9aff2e1bcfe11618206a23f2349cb1a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a9aff2e1bcfe11618206a23f2349cb1a6">CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_RESPONSE_TIMEOUT</a>&#160;&#160;&#160;10000</td></tr>
+<tr class="separator:a9aff2e1bcfe11618206a23f2349cb1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96056d7db7be93147c2e2b1ac596d14f" id="r_a96056d7db7be93147c2e2b1ac596d14f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a96056d7db7be93147c2e2b1ac596d14f">CHIP_DEVICE_CONFIG_FILE_DOWNLOAD_RESPONSE_TIMEOUT</a>&#160;&#160;&#160;10000</td></tr>
+<tr class="separator:a96056d7db7be93147c2e2b1ac596d14f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8beeaa4bf8ac22b6f2d083d00b8a09" id="r_aee8beeaa4bf8ac22b6f2d083d00b8a09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#aee8beeaa4bf8ac22b6f2d083d00b8a09">CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_MAX_RETRIES</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:aee8beeaa4bf8ac22b6f2d083d00b8a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a6763ea0801dc71acc54bc4d9a6e36" id="r_ac7a6763ea0801dc71acc54bc4d9a6e36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ac7a6763ea0801dc71acc54bc4d9a6e36">CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_MAX_WAIT_TIME_INTERVAL_MS</a>&#160;&#160;&#160;1 * 60 * 60 * 1000</td></tr>
+<tr class="separator:ac7a6763ea0801dc71acc54bc4d9a6e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae53038ff4009af57d0623db0ddd0eb" id="r_a2ae53038ff4009af57d0623db0ddd0eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a2ae53038ff4009af57d0623db0ddd0eb">CHIP_DEVICE_CONFIG_SWU_MIN_WAIT_TIME_INTERVAL_PERCENT_PER_STEP</a>&#160;&#160;&#160;50</td></tr>
+<tr class="memdesc:a2ae53038ff4009af57d0623db0ddd0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If default software update retry policy is used, specify the minimum wait time as a percentage of the max wait interval for that step.  <br /></td></tr>
+<tr class="separator:a2ae53038ff4009af57d0623db0ddd0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef2b946a5fa9217742e06898fe9d104" id="r_a8ef2b946a5fa9217742e06898fe9d104"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a8ef2b946a5fa9217742e06898fe9d104">CHIP_DEVICE_CONFIG_SWU_WAIT_TIME_MULTIPLIER_MS</a>&#160;&#160;&#160;1 * 60 * 1000</td></tr>
+<tr class="memdesc:a8ef2b946a5fa9217742e06898fe9d104"><td class="mdescLeft">&#160;</td><td class="mdescRight">If default software update retry policy is used, specify the multiplier that multiplies the result of a Fibonacci computation based on a specific index to provide a max wait time for a step.  <br /></td></tr>
+<tr class="separator:a8ef2b946a5fa9217742e06898fe9d104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544f3da800d071b1611322100bd1f976" id="r_a544f3da800d071b1611322100bd1f976"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a544f3da800d071b1611322100bd1f976">CHIP_DEVICE_CONFIG_SWU_BDX_BLOCK_SIZE</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="separator:a544f3da800d071b1611322100bd1f976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768322a49998e8f90697f01749148aba" id="r_a768322a49998e8f90697f01749148aba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a768322a49998e8f90697f01749148aba">CHIP_DEVICE_CONFIG_FIRMWARE_BUILD_DATE</a>&#160;&#160;&#160;__DATE__</td></tr>
+<tr class="separator:a768322a49998e8f90697f01749148aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5598ac87257179cf89e366d89196b582" id="r_a5598ac87257179cf89e366d89196b582"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a5598ac87257179cf89e366d89196b582">CHIP_DEVICE_CONFIG_FIRMWARE_BUILD_TIME</a>&#160;&#160;&#160;__TIME__</td></tr>
+<tr class="separator:a5598ac87257179cf89e366d89196b582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a918c71529f45eabffdc36f31fad57a4a" id="r_a918c71529f45eabffdc36f31fad57a4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a918c71529f45eabffdc36f31fad57a4a">CHIP_DEVICE_CONFIG_APP_PLATFORM_ENABLED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a918c71529f45eabffdc36f31fad57a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4823f4513a2aaac2fed2fad2fc13eda" id="r_af4823f4513a2aaac2fed2fad2fc13eda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#af4823f4513a2aaac2fed2fad2fc13eda">CHIP_DEVICE_CONFIG_DYNAMIC_ENDPOINT_COUNT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:af4823f4513a2aaac2fed2fad2fc13eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec4592fff6f4ca3036a3de6b5e151d6" id="r_aeec4592fff6f4ca3036a3de6b5e151d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#aeec4592fff6f4ca3036a3de6b5e151d6">CHIP_DISPATCH_EVENT_LONG_DISPATCH_TIME_WARNING_THRESHOLD_MS</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:aeec4592fff6f4ca3036a3de6b5e151d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b177febd2fb01e55b9e1c9f75cd6333" id="r_a6b177febd2fb01e55b9e1c9f75cd6333"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a6b177febd2fb01e55b9e1c9f75cd6333">CHIP_DEVICE_CONFIG_ENABLE_AUTOMATIC_CASE_RETRIES</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a6b177febd2fb01e55b9e1c9f75cd6333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83b4f78da28cee2c44272cd02e48bee" id="r_ab83b4f78da28cee2c44272cd02e48bee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ab83b4f78da28cee2c44272cd02e48bee">CHIP_DEVICE_CONFIG_AUTOMATIC_CASE_RETRY_INITIAL_DELAY_SECONDS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ab83b4f78da28cee2c44272cd02e48bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac507f75954cb283de9dca92d1e7a41b4" id="r_ac507f75954cb283de9dca92d1e7a41b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ac507f75954cb283de9dca92d1e7a41b4">CHIP_DEVICE_CONFIG_AUTOMATIC_CASE_RETRY_MAX_BACKOFF</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ac507f75954cb283de9dca92d1e7a41b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede6c7864ef1316616a4d3a45b5f31eb" id="r_aede6c7864ef1316616a4d3a45b5f31eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#aede6c7864ef1316616a4d3a45b5f31eb">CHIP_DEVICE_LAYER_NONE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aede6c7864ef1316616a4d3a45b5f31eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358f29ffdd277536489cbca2e5976b39" id="r_a358f29ffdd277536489cbca2e5976b39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#a358f29ffdd277536489cbca2e5976b39">CHIP_DEVICE_CONFIG_ENABLE_NFC_ONBOARDING_PAYLOAD</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a358f29ffdd277536489cbca2e5976b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c0fc760cda7314aa16b18b2466bf46" id="r_ad5c0fc760cda7314aa16b18b2466bf46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPDeviceConfig_8h.html#ad5c0fc760cda7314aa16b18b2466bf46">CHIP_DEVICE_ENABLE_PORT_PARAMS</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ad5c0fc760cda7314aa16b18b2466bf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Defines compile-time configuration values for the chip <a class="el" href="classDevice.html">Device</a> Layer. </p>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a id="ad7ba524b6ec3bdc7e43c1d833f0d402e" name="ad7ba524b6ec3bdc7e43c1d833f0d402e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7ba524b6ec3bdc7e43c1d833f0d402e">&#9670;&#160;</a></span>CHIP_CONFIG_UNSAFE_SUBSCRIPTION_EXCHANGE_MANAGER_USE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_CONFIG_UNSAFE_SUBSCRIPTION_EXCHANGE_MANAGER_USE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_CONFIG_UNSAFE_SUBSCRIPTION_EXCHANGE_MANAGER_USE</p>
+<p>See issue 23625.</p>
+<p>Needs to be 1 when the following is 1: CHIP_DEVICE_CONFIG_ENABLE_BOTH_COMMISSIONER_AND_COMMISSIONEE </p>
+
+</div>
+</div>
+<a id="a918c71529f45eabffdc36f31fad57a4a" name="a918c71529f45eabffdc36f31fad57a4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a918c71529f45eabffdc36f31fad57a4a">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_APP_PLATFORM_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_APP_PLATFORM_ENABLED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_APP_PLATFORM_ENABLED</p>
+<p>Does this device support an app platform 1=Yes, 0=No </p>
+
+</div>
+</div>
+<a id="ab83b4f78da28cee2c44272cd02e48bee" name="ab83b4f78da28cee2c44272cd02e48bee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83b4f78da28cee2c44272cd02e48bee">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_AUTOMATIC_CASE_RETRY_INITIAL_DELAY_SECONDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_AUTOMATIC_CASE_RETRY_INITIAL_DELAY_SECONDS&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_AUTOMATIC_CASE_RETRY_INITIAL_DELAY_SECONDS</p>
+<p>The initial retry delay, in seconds, for our automatic CASE retries. </p>
+
+</div>
+</div>
+<a id="ac507f75954cb283de9dca92d1e7a41b4" name="ac507f75954cb283de9dca92d1e7a41b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac507f75954cb283de9dca92d1e7a41b4">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_AUTOMATIC_CASE_RETRY_MAX_BACKOFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_AUTOMATIC_CASE_RETRY_MAX_BACKOFF&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_AUTOMATIC_CASE_RETRY_MAX_BACKOFF</p>
+<p>The maximum number of times we back off, by a factor of 2 each time, from our initial CASE retry interval before we plateau. </p>
+
+</div>
+</div>
+<a id="a86e12bab3c122c9bb56b63823c5fc8c6" name="a86e12bab3c122c9bb56b63823c5fc8c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e12bab3c122c9bb56b63823c5fc8c6">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_BG_MAX_EVENT_QUEUE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_BG_MAX_EVENT_QUEUE_SIZE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_BG_MAX_EVENT_QUEUE_SIZE</p>
+<p>The maximum number of events that can be held in the chip background event queue. </p>
+
+</div>
+</div>
+<a id="ab9adb0c691aee2d055ddf5847493b7f4" name="ab9adb0c691aee2d055ddf5847493b7f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9adb0c691aee2d055ddf5847493b7f4">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_BG_TASK_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_BG_TASK_NAME&#160;&#160;&#160;&quot;BG&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_BG_TASK_NAME</p>
+<p>The name of the background task. </p>
+
+</div>
+</div>
+<a id="a2adb860f05d747107ee9b4b922436d9a" name="a2adb860f05d747107ee9b4b922436d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2adb860f05d747107ee9b4b922436d9a">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_BG_TASK_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_BG_TASK_PRIORITY&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_BG_TASK_PRIORITY</p>
+<p>The priority of the background task. </p>
+
+</div>
+</div>
+<a id="acc5d0bc591fc5db0e238e8c82381d0ba" name="acc5d0bc591fc5db0e238e8c82381d0ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5d0bc591fc5db0e238e8c82381d0ba">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_BG_TASK_STACK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_BG_TASK_STACK_SIZE&#160;&#160;&#160;(6 * 1024)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_BG_TASK_STACK_SIZE</p>
+<p>The size (in bytes) of the background task stack. </p>
+
+</div>
+</div>
+<a id="af2af703ef83fd54ecd7591f3f7c49786" name="af2af703ef83fd54ecd7591f3f7c49786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2af703ef83fd54ecd7591f3f7c49786">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_BLE_ADVERTISING_INTERVAL_CHANGE_TIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_BLE_ADVERTISING_INTERVAL_CHANGE_TIME&#160;&#160;&#160;30000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_BLE_ADVERTISING_INTERVAL_CHANGE_TIME</p>
+<p>The amount of time in miliseconds after which BLE advertisement should be switched from the fast advertising to the slow advertising, counting from the moment of advertisement commencement.</p>
+<p>Defaults to 30000 (30 seconds). </p>
+
+</div>
+</div>
+<a id="a06a57965efec9eee144b77c18706002a" name="a06a57965efec9eee144b77c18706002a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a57965efec9eee144b77c18706002a">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_BLE_DEVICE_NAME_PREFIX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_BLE_DEVICE_NAME_PREFIX&#160;&#160;&#160;&quot;MATTER-&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_BLE_DEVICE_NAME_PREFIX</p>
+<p>A prefix string used in forming the BLE device name. The remainder of the name typically contains the setup discriminator as a 4-digit decimal number.</p>
+<p>NOTE: The device layer limits the total length of a device name to 16 characters. However, due to other data sent in CHIPoBLE advertise packets, the device name may need to be shorter. </p>
+
+</div>
+</div>
+<a id="a6d93590f25ff351de91d577287b321be" name="a6d93590f25ff351de91d577287b321be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d93590f25ff351de91d577287b321be">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_BLE_FAST_ADVERTISING_INTERVAL_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_BLE_FAST_ADVERTISING_INTERVAL_MAX&#160;&#160;&#160;96</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_BLE_FAST_ADVERTISING_INTERVAL_MAX</p>
+<p>The maximum interval (in units of 0.625ms) at which the device will send BLE advertisements while in fast advertising mode. The maximum interval should be greater and not equal to the CHIP_DEVICE_CONFIG_BLE_FAST_ADVERTISING_INTERVAL_MIN.</p>
+<p>Defaults to 96 (60 ms). </p>
+
+</div>
+</div>
+<a id="af7077975fa78cacdfba2e66b6c23a585" name="af7077975fa78cacdfba2e66b6c23a585"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7077975fa78cacdfba2e66b6c23a585">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_BLE_FAST_ADVERTISING_INTERVAL_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_BLE_FAST_ADVERTISING_INTERVAL_MIN&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_BLE_FAST_ADVERTISING_INTERVAL_MIN</p>
+<p>The minimum interval (in units of 0.625ms) at which the device will send BLE advertisements while in fast advertising mode. The minimum interval should be less and not equal to the CHIP_DEVICE_CONFIG_BLE_FAST_ADVERTISING_INTERVAL_MAX.</p>
+<p>Defaults to 32 (20 ms). </p>
+
+</div>
+</div>
+<a id="af4f17adc59c48ce77ca360e617837170" name="af4f17adc59c48ce77ca360e617837170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f17adc59c48ce77ca360e617837170">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_BLE_SLOW_ADVERTISING_INTERVAL_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_BLE_SLOW_ADVERTISING_INTERVAL_MAX&#160;&#160;&#160;1920</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_BLE_SLOW_ADVERTISING_INTERVAL_MAX</p>
+<p>The maximum interval (in units of 0.625ms) at which the device will send BLE advertisements while in slow advertising mode. The maximum interval should be greater and not equal to the CHIP_DEVICE_CONFIG_BLE_SLOW_ADVERTISING_INTERVAL_MIN.</p>
+<p>Defaults to 1920 (1200 ms). </p>
+
+</div>
+</div>
+<a id="a98344879243755d79c3d590ddda25fff" name="a98344879243755d79c3d590ddda25fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98344879243755d79c3d590ddda25fff">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_BLE_SLOW_ADVERTISING_INTERVAL_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_BLE_SLOW_ADVERTISING_INTERVAL_MIN&#160;&#160;&#160;240</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_BLE_SLOW_ADVERTISING_INTERVAL_MIN</p>
+<p>The minimum interval (in units of 0.625ms) at which the device will send BLE advertisements while in slow advertising mode. The minimum interval should be greater and not equal to the CHIP_DEVICE_CONFIG_BLE_SLOW_ADVERTISING_INTERVAL_MAX.</p>
+<p>Defaults to 240 (150 ms). </p>
+
+</div>
+</div>
+<a id="a7845d97884f3a31de9c7438915054f01" name="a7845d97884f3a31de9c7438915054f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7845d97884f3a31de9c7438915054f01">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_CHIP_TASK_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_CHIP_TASK_NAME&#160;&#160;&#160;&quot;CHIP&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_CHIP_TASK_NAME</p>
+<p>The name of the chip task. </p>
+
+</div>
+</div>
+<a id="a900305532bdf6e3b4b2d8edc306d43bb" name="a900305532bdf6e3b4b2d8edc306d43bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900305532bdf6e3b4b2d8edc306d43bb">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_CHIP_TASK_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_CHIP_TASK_PRIORITY&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_CHIP_TASK_PRIORITY</p>
+<p>The priority of the chip task. </p>
+
+</div>
+</div>
+<a id="a594dfc267fc3e383e768e05a2ebf9ab8" name="a594dfc267fc3e383e768e05a2ebf9ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a594dfc267fc3e383e768e05a2ebf9ab8">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_CHIP_TASK_STACK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_CHIP_TASK_STACK_SIZE&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_CHIP_TASK_STACK_SIZE</p>
+<p>The size (in bytes) of the chip task stack. </p>
+
+</div>
+</div>
+<a id="a66145c1b40a752120e05ce2ed15249af" name="a66145c1b40a752120e05ce2ed15249af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66145c1b40a752120e05ce2ed15249af">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_CHIPOBLE_ENABLE_ADVERTISING_AUTOSTART</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_CHIPOBLE_ENABLE_ADVERTISING_AUTOSTART&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_CHIPOBLE_ENABLE_ADVERTISING_AUTOSTART</p>
+<p>Enable CHIPoBLE advertising start automatically after device power-up.</p>
+<p>CHIP's device may start advertising automatically only if its all primary device functions are within a CHIP network. <a class="el" href="classDevice.html">Device</a> providing unrelated to CHIP functionalities should not start advertising automatically after power-up.</p>
+<p>TODO: Default value should be changed to 0, after all platforms will implement enabling advertisement in their own way. </p>
+
+</div>
+</div>
+<a id="af208201041d2136b01c9062b1460651c" name="af208201041d2136b01c9062b1460651c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af208201041d2136b01c9062b1460651c">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_CHIPOBLE_SINGLE_CONNECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_CHIPOBLE_SINGLE_CONNECTION&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_SINGLE_CHIPOBLE_CONNECTION</p>
+<p>Limit support for chip-over-BLE (CHIPoBLE) to a single connection. When set, CHIPoBLE advertisements will stop while a CHIPoBLE connection is active. </p>
+
+</div>
+</div>
+<a id="a204f3b0d97718cd26d39c117d0c119dc" name="a204f3b0d97718cd26d39c117d0c119dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204f3b0d97718cd26d39c117d0c119dc">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEFAULT_DEVICE_HARDWARE_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEFAULT_DEVICE_HARDWARE_VERSION&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DEFAULT_DEVICE_HARDWARE_VERSION</p>
+<p>The default hardware version number assigned to the device or product by the device vendor.</p>
+<p>Hardware versions are specific to a particular device vendor and product id, and typically correspond to a revision of the physical device, a change to its packaging, and/or a change to its marketing presentation. This value is generally <em>not</em> incremented for device software revisions.</p>
+<p>This is a default value which is used when a hardware version has not been stored in device persistent storage (e.g. by a factory provisioning process). </p>
+
+</div>
+</div>
+<a id="a9006aff63ca8cb7037dd7b4fa11c63a7" name="a9006aff63ca8cb7037dd7b4fa11c63a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9006aff63ca8cb7037dd7b4fa11c63a7">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEFAULT_DEVICE_HARDWARE_VERSION_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEFAULT_DEVICE_HARDWARE_VERSION_STRING&#160;&#160;&#160;&quot;TEST_VERSION&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DEFAULT_DEVICE_HARDWARE_VERSION_STRING</p>
+<p>Human readable string identifying version of the product assigned by the device vendor. </p>
+
+</div>
+</div>
+<a id="af107289963ac86b868271d4beff6bca6" name="af107289963ac86b868271d4beff6bca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af107289963ac86b868271d4beff6bca6">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEFAULT_TELEMETRY_INTERVAL_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEFAULT_TELEMETRY_INTERVAL_MS&#160;&#160;&#160;90000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This sets the default interval at which network telemetry events will be logged to chip buffers. This can be overwritten at runtime with a trait. </p>
+
+</div>
+</div>
+<a id="a3f91758aff7d3a7acccd1dd83991727a" name="a3f91758aff7d3a7acccd1dd83991727a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f91758aff7d3a7acccd1dd83991727a">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEFAULT_THREAD_NETWORK_NAME_PREFIX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEFAULT_THREAD_NETWORK_NAME_PREFIX&#160;&#160;&#160;&quot;CHIP-PAN-&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DEFAULT_THREAD_NETWORK_NAME_PREFIX</p>
+<p>A prefix string to be used when forming a default Thread network name. </p>
+
+</div>
+</div>
+<a id="aa1d45aa777823b8c7d5481c74431c718" name="aa1d45aa777823b8c7d5481c74431c718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d45aa777823b8c7d5481c74431c718">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEVICE_CONFIGURATION_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEVICE_CONFIGURATION_VERSION&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DEVICE_CONFIGURATION_VERSION</p>
+<p>A monothonic number identifying the configuration version running on the device. </p>
+
+</div>
+</div>
+<a id="a374abd9472c88f2d68ad7a9c742cb574" name="a374abd9472c88f2d68ad7a9c742cb574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a374abd9472c88f2d68ad7a9c742cb574">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEVICE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEVICE_NAME&#160;&#160;&#160;&quot;Test Kitchen&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DEVICE_NAME</p>
+<p>Name of device. </p>
+
+</div>
+</div>
+<a id="afcd348c4551d05c630645358da5b24ac" name="afcd348c4551d05c630645358da5b24ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd348c4551d05c630645358da5b24ac">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEVICE_PRODUCT_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEVICE_PRODUCT_ID&#160;&#160;&#160;0x8001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DEVICE_PRODUCT_ID</p>
+<p>The unique id assigned by the device vendor to identify the product or device type. This number is scoped to the device vendor id.</p>
+<p>Un-overridden default must either match one of the given development certs or have a DeviceAttestationCredentialsProvider implemented. (see src/credentials/examples/DeviceAttestationCredsExample.cpp) </p>
+
+</div>
+</div>
+<a id="acd231322b81161e91e3c1b868f998d8d" name="acd231322b81161e91e3c1b868f998d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd231322b81161e91e3c1b868f998d8d">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEVICE_PRODUCT_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEVICE_PRODUCT_NAME&#160;&#160;&#160;&quot;TEST_PRODUCT&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DEVICE_PRODUCT_NAME</p>
+<p>Human readable name of the device model. </p>
+
+</div>
+</div>
+<a id="a2c64818357640acb040d83ec6370e092" name="a2c64818357640acb040d83ec6370e092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c64818357640acb040d83ec6370e092">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEVICE_SOFTWARE_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEVICE_SOFTWARE_VERSION&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DEVICE_SOFTWARE_VERSION</p>
+<p>A monothonic number identifying the software version running on the device. </p>
+
+</div>
+</div>
+<a id="abc4fea6b7e1ab2cd1ace347da0a9ffaa" name="abc4fea6b7e1ab2cd1ace347da0a9ffaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc4fea6b7e1ab2cd1ace347da0a9ffaa">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEVICE_SOFTWARE_VERSION_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEVICE_SOFTWARE_VERSION_STRING&#160;&#160;&#160;&quot;1.0&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DEVICE_SOFTWARE_VERSION_STRING</p>
+<p>A string identifying the software version running on the device. </p>
+
+</div>
+</div>
+<a id="a5703e07494ec0d0a5b67c9e4d1a4d992" name="a5703e07494ec0d0a5b67c9e4d1a4d992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5703e07494ec0d0a5b67c9e4d1a4d992">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEVICE_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEVICE_TYPE&#160;&#160;&#160;65535</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DEVICE_TYPE</p>
+<p>Type of device using the CHIP <a class="el" href="classDevice.html">Device</a> Type Identifier.</p>
+<p>Examples: 0xFFFF = 65535 = Invalid <a class="el" href="classDevice.html">Device</a> Type 0x0051 = 81 = Smart Plug 0x0022 = 34 = Speaker 0x0023 = 35 = Video Player </p>
+
+</div>
+</div>
+<a id="a2abef9e3d99bcbbbdf79a340ad3465cc" name="a2abef9e3d99bcbbbdf79a340ad3465cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2abef9e3d99bcbbbdf79a340ad3465cc">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEVICE_VENDOR_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEVICE_VENDOR_ID&#160;&#160;&#160;0xFFF1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DEVICE_VENDOR_ID</p>
+<p>The CHIP-assigned vendor id for the organization responsible for producing the device.</p>
+<p>Default is the Test VendorID of 0xFFF1.</p>
+<p>Un-overridden default must match the default test DAC (see src/credentials/examples/DeviceAttestationCredsExample.cpp). </p>
+
+</div>
+</div>
+<a id="ac1d1a8c2fc43688e70616803f78d66a3" name="ac1d1a8c2fc43688e70616803f78d66a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1d1a8c2fc43688e70616803f78d66a3">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DEVICE_VENDOR_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DEVICE_VENDOR_NAME&#160;&#160;&#160;&quot;TEST_VENDOR&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DEVICE_VENDOR_NAME</p>
+<p>Human readable vendor name for the organization responsible for producing the device. </p>
+
+</div>
+</div>
+<a id="a1034585ff3668e50b4ca6bb247b3e1e2" name="a1034585ff3668e50b4ca6bb247b3e1e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1034585ff3668e50b4ca6bb247b3e1e2">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DISCOVERY_DISABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DISCOVERY_DISABLED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_EXTENDED_DISCOVERY_TIMEOUT_SECS</p>
+<p>Default time in seconds that a device will advertise commissionable node discovery after commissioning mode ends. This value can be overridden by the user.</p>
+<p>Only valid when CHIP_DEVICE_CONFIG_ENABLE_EXTENDED_DISCOVERY==1 </p>
+
+</div>
+</div>
+<a id="a32ba499bd0ad30c32b8c4b0e226f5976" name="a32ba499bd0ad30c32b8c4b0e226f5976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32ba499bd0ad30c32b8c4b0e226f5976">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DISCOVERY_NO_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DISCOVERY_NO_TIMEOUT&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f6aa3ea9ab41db0156f2e874f534068" name="a8f6aa3ea9ab41db0156f2e874f534068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f6aa3ea9ab41db0156f2e874f534068">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DISCOVERY_TIMEOUT_SECS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DISCOVERY_TIMEOUT_SECS&#160;&#160;&#160;(15 * 60)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DISCOVERY_TIMEOUT_SECS</p>
+<p>Time in seconds that a factory new device will advertise commissionable node discovery. </p>
+
+</div>
+</div>
+<a id="af4823f4513a2aaac2fed2fad2fc13eda" name="af4823f4513a2aaac2fed2fad2fc13eda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4823f4513a2aaac2fed2fad2fc13eda">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_DYNAMIC_ENDPOINT_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_DYNAMIC_ENDPOINT_COUNT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_DYNAMIC_ENDPOINT_COUNT</p>
+<p>When app platform is enabled, max number of endpoints </p>
+
+</div>
+</div>
+<a id="a6b177febd2fb01e55b9e1c9f75cd6333" name="a6b177febd2fb01e55b9e1c9f75cd6333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b177febd2fb01e55b9e1c9f75cd6333">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_AUTOMATIC_CASE_RETRIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_AUTOMATIC_CASE_RETRIES&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_AUTOMATIC_CASE_RETRIES</p>
+<p>If 1, enable support for automatic CASE establishment retries. </p>
+
+</div>
+</div>
+<a id="a1722575f6cd4dfc108213a6cc77ad40d" name="a1722575f6cd4dfc108213a6cc77ad40d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1722575f6cd4dfc108213a6cc77ad40d">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_BG_EVENT_PROCESSING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_BG_EVENT_PROCESSING&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_BG_EVENT_PROCESSING</p>
+<p>Enable support for background event processing. </p>
+
+</div>
+</div>
+<a id="ae416513dc42434b77f519668712a1c17" name="ae416513dc42434b77f519668712a1c17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae416513dc42434b77f519668712a1c17">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_BOTH_COMMISSIONER_AND_COMMISSIONEE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_BOTH_COMMISSIONER_AND_COMMISSIONEE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_BOTH_COMMISSIONER_AND_COMMISSIONEE</p>
+<p>Enable including commissioner code (CHIPDeviceController.cpp) in the commissionee (Server.cpp) code.</p>
+<p>For Video Players, this value will be 1 </p>
+
+</div>
+</div>
+<a id="a7eb537e0f4aa1407f231867b27e798bc" name="a7eb537e0f4aa1407f231867b27e798bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb537e0f4aa1407f231867b27e798bc">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_CHIPOBLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_CHIPOBLE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_CHIPOBLE</p>
+<p>Enable support for chip-over-BLE (CHIPoBLE). </p>
+
+</div>
+</div>
+<a id="af0e2ce9580ae9d6e0e145488a1f26458" name="af0e2ce9580ae9d6e0e145488a1f26458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0e2ce9580ae9d6e0e145488a1f26458">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONABLE_DEVICE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONABLE_DEVICE_NAME&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONABLE_DEVICE_NAME</p>
+<p>Enable or disable including device name in commissionable node discovery.</p>
+<p>For Video Players, this value will often be 1 </p>
+
+</div>
+</div>
+<a id="aa5b0a746a7e139e7a871c92a997dfa22" name="aa5b0a746a7e139e7a871c92a997dfa22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5b0a746a7e139e7a871c92a997dfa22">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONABLE_DEVICE_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONABLE_DEVICE_TYPE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONABLE_DEVICE_TYPE</p>
+<p>Enable or disable including device type in commissionable node discovery.</p>
+<p>For Video Players, this value will often be 1 </p>
+
+</div>
+</div>
+<a id="a502e7c454de99dbb006f736e7992de7e" name="a502e7c454de99dbb006f736e7992de7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502e7c454de99dbb006f736e7992de7e">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_DISCOVERY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_DISCOVERY&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_DISCOVERY</p>
+<p>Enable or disable whether this device advertises as a commissioner.</p>
+<p>Depends upon CHIP_DEVICE_CONFIG_ENABLE_BOTH_COMMISSIONER_AND_COMMISSIONEE set to 1</p>
+<p>For Video Players, this value will be 1 </p>
+
+</div>
+</div>
+<a id="a4631b35db9b6b57bc78fbbb2588e40ca" name="a4631b35db9b6b57bc78fbbb2588e40ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4631b35db9b6b57bc78fbbb2588e40ca">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_DISCOVERY_CLIENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_DISCOVERY_CLIENT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_DISCOVERY_CLIENT</p>
+<p>Enable or disable whether this device will attempt to discover commissioners and send Uder Directed Commissioning messages to them.</p>
+<p>For Video Player Clients, this value will be 1 </p>
+
+</div>
+</div>
+<a id="a65a2e98031f9e99fb7fa9243356dbac5" name="a65a2e98031f9e99fb7fa9243356dbac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65a2e98031f9e99fb7fa9243356dbac5">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_PASSCODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_PASSCODE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_PASSCODE</p>
+<p>Enable or disable commissioner passcode feature. With this feature enabled, the commissioner can generate a commissioning passcode and display it to the user so that the user can enter it into a commissionable node, such as a phone app, during user directed commissioning.</p>
+<p>For Video Players, this value will often be 1 </p>
+
+</div>
+</div>
+<a id="a40085e8f02a94dec41e9231b1744f3b1" name="a40085e8f02a94dec41e9231b1744f3b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40085e8f02a94dec41e9231b1744f3b1">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_EXTENDED_DISCOVERY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_EXTENDED_DISCOVERY&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_EXTENDED_DISCOVERY</p>
+<p>Enable or disable whether this device advertises when not in commissioning mode. </p>
+
+</div>
+</div>
+<a id="a2e03c94445c9e79ba2a9ba73bab656a0" name="a2e03c94445c9e79ba2a9ba73bab656a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e03c94445c9e79ba2a9ba73bab656a0">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_JOINT_FABRIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_JOINT_FABRIC&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_JOINT_FABRIC</p>
+<p>Enable support for Joint Fabric in core SDK. </p>
+
+</div>
+</div>
+<a id="a2e5807fbba29597af696bf8671501b61" name="a2e5807fbba29597af696bf8671501b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e5807fbba29597af696bf8671501b61">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_NETWORK_TELEMETRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_NETWORK_TELEMETRY&#160;&#160;&#160;    (<a class="el" href="CHIPDeviceConfig_8h.html#acad19e7385da5f597eb0fee94773aed3">CHIP_DEVICE_CONFIG_ENABLE_WIFI_TELEMETRY</a> || <a class="el" href="CHIPDeviceConfig_8h.html#a2e0e2d7e88fb0465575b2b6697dbf831">CHIP_DEVICE_CONFIG_ENABLE_THREAD_TELEMETRY</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9aa71f419a95fade17a1b128b19fd578" name="a9aa71f419a95fade17a1b128b19fd578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa71f419a95fade17a1b128b19fd578">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_NFC_BASED_COMMISSIONING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_NFC_BASED_COMMISSIONING&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_NFC_BASED_COMMISSIONING</p>
+<p>Enable support for NFC Commissioning (chip-over-NFC). </p>
+
+</div>
+</div>
+<a id="a358f29ffdd277536489cbca2e5976b39" name="a358f29ffdd277536489cbca2e5976b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a358f29ffdd277536489cbca2e5976b39">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_NFC_ONBOARDING_PAYLOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_NFC_ONBOARDING_PAYLOAD&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_NFC_ONBOARDING_PAYLOAD enables configuration of NFC onboarding payload. </p>
+
+</div>
+</div>
+<a id="a1b1b0bd39deaca1675c4353a35d4e398" name="a1b1b0bd39deaca1675c4353a35d4e398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b1b0bd39deaca1675c4353a35d4e398">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_PAIRING_AUTOSTART</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_PAIRING_AUTOSTART&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_PAIRING_AUTOSTART</p>
+<p>Enable opening pairing window automatically after device power-up. </p>
+
+</div>
+</div>
+<a id="abb118a1cca6d244a3a4f0e8ee4254791" name="abb118a1cca6d244a3a4f0e8ee4254791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb118a1cca6d244a3a4f0e8ee4254791">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_SOFTWARE_UPDATE_MANAGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_SOFTWARE_UPDATE_MANAGER&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_SOFTWARE_UPDATE_MANAGER</p>
+<p>Enable or disable the chip Software Update Manager. </p>
+
+</div>
+</div>
+<a id="a48424b39bdbde85bfa4991c9c7e5a61f" name="a48424b39bdbde85bfa4991c9c7e5a61f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48424b39bdbde85bfa4991c9c7e5a61f">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_TEST_SETUP_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_TEST_SETUP_PARAMS&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable use of test setup parameters for testing purposes only. </p>
+<dl class="section note"><dt>覚え書き</dt><dd>WARNING: This option makes it possible to circumvent basic chip security functionality. Because of this it SHOULD NEVER BE ENABLED IN PRODUCTION BUILDS. </dd></dl>
+
+</div>
+</div>
+<a id="a034d03cc01b1cb09f3f85767fce8b11b" name="a034d03cc01b1cb09f3f85767fce8b11b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034d03cc01b1cb09f3f85767fce8b11b">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_THREAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_THREAD&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_THREAD</p>
+<p>Enable support for Thread in the chip <a class="el" href="classDevice.html">Device</a> Layer. </p>
+
+</div>
+</div>
+<a id="a1005951fc16332fb878ab8e23dd7eb89" name="a1005951fc16332fb878ab8e23dd7eb89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1005951fc16332fb878ab8e23dd7eb89">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_THREAD_AUTOSTART</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_THREAD_AUTOSTART&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_THREAD_AUTOSTART</p>
+<p>Enable starting provisioned Thread network automatically after device power-up. </p>
+
+</div>
+</div>
+<a id="a8aabc7179cc0b379f884f2851fd5e03a" name="a8aabc7179cc0b379f884f2851fd5e03a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aabc7179cc0b379f884f2851fd5e03a">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_THREAD_COMMISSIONABLE_DISCOVERY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_THREAD_COMMISSIONABLE_DISCOVERY&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_THREAD_COMMISSIONABLE_DISCOVERY</p>
+<p>Enable support to Commissionable Discovery for Thread devices. </p>
+
+</div>
+</div>
+<a id="ab0f5a18211dd5023f58245eef8c2bea7" name="ab0f5a18211dd5023f58245eef8c2bea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f5a18211dd5023f58245eef8c2bea7">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_THREAD_DNS_CLIENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_THREAD_DNS_CLIENT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_THREAD_DNS_CLIENT</p>
+<p>Enable support to DNS client usage for resolving and browsing services in CHIP. </p>
+
+</div>
+</div>
+<a id="aebc41f873239ec77215bec5351d471c6" name="aebc41f873239ec77215bec5351d471c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc41f873239ec77215bec5351d471c6">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_THREAD_SRP_CLIENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_THREAD_SRP_CLIENT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_THREAD_SRP_CLIENT</p>
+<p>Enable support to DNS-SD SRP client usage for service advertising and discovery in CHIP. </p>
+
+</div>
+</div>
+<a id="a2e0e2d7e88fb0465575b2b6697dbf831" name="a2e0e2d7e88fb0465575b2b6697dbf831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e0e2d7e88fb0465575b2b6697dbf831">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_THREAD_TELEMETRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_THREAD_TELEMETRY&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable automatically uploading minimal Thread telemetry and topology via trait on an interval. </p>
+
+</div>
+</div>
+<a id="a1a08e34432ba21fab7d9c754f9b3ef85" name="a1a08e34432ba21fab7d9c754f9b3ef85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a08e34432ba21fab7d9c754f9b3ef85">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_THREAD_TELEMETRY_FULL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_THREAD_TELEMETRY_FULL&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable automatically uploading all Thread telemetry and topology via trait on an interval. This is suitable for products that have router capability. </p>
+<dl class="section note"><dt>覚え書き</dt><dd>If set, CHIP_DEVICE_CONFIG_ENABLE_THREAD_TELEMETRY must also be set. </dd></dl>
+
+</div>
+</div>
+<a id="ac0549bd8a7ac13d3811c5bcd5435b13d" name="ac0549bd8a7ac13d3811c5bcd5435b13d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0549bd8a7ac13d3811c5bcd5435b13d">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_WIFI_AP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_WIFI_AP&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_WIFI_AP</p>
+<p>Enable support for a WiFi AP interface. </p>
+
+</div>
+</div>
+<a id="a3bc30ffe9641da700c0292288c2dec5f" name="a3bc30ffe9641da700c0292288c2dec5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc30ffe9641da700c0292288c2dec5f">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_WIFI_PDC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_WIFI_PDC&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_WIFI_PDC</p>
+<p>Enable support for WiFi Per-Device Credentials </p>
+
+</div>
+</div>
+<a id="a0a20364371553a6de171ff402117fbf7" name="a0a20364371553a6de171ff402117fbf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a20364371553a6de171ff402117fbf7">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_WIFI_STATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_WIFI_STATION&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_WIFI_STATION</p>
+<p>Enable support for a WiFi station interface. </p>
+
+</div>
+</div>
+<a id="acad19e7385da5f597eb0fee94773aed3" name="acad19e7385da5f597eb0fee94773aed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad19e7385da5f597eb0fee94773aed3">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_WIFI_TELEMETRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_WIFI_TELEMETRY&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable automatically uploading Wi-Fi telemetry via trait on an interval. </p>
+
+</div>
+</div>
+<a id="afc946238a9db995d8f1e89b002479159" name="afc946238a9db995d8f1e89b002479159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc946238a9db995d8f1e89b002479159">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ENABLE_WIFIPAF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ENABLE_WIFIPAF&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ENABLE_WIFIPAF</p>
+<p>Enable support for commissioning using Wi-Fi Public <a class="el" href="classAction.html">Action</a> Frame as the transport. </p>
+
+</div>
+</div>
+<a id="a2eec42409c5be61762b33ab08d393afb" name="a2eec42409c5be61762b33ab08d393afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eec42409c5be61762b33ab08d393afb">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_EVENT_ID_COUNTER_EPOCH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_EVENT_ID_COUNTER_EPOCH&#160;&#160;&#160;(0x10000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event id counter persisted storage epoch. </p>
+
+</div>
+</div>
+<a id="ac96c32acdda5b4159686e88105eae377" name="ac96c32acdda5b4159686e88105eae377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96c32acdda5b4159686e88105eae377">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_EVENT_LOGGING_CRIT_BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_EVENT_LOGGING_CRIT_BUFFER_SIZE&#160;&#160;&#160;(1024)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A size, in bytes, of the buffer reserved for storing CRITICAL events and no other events. CRITICAL events will never be evicted until this buffer is full, so its size and the sizes of events determine how many of the last N CRITICAL events are guaranteed to be available. </p>
+<p>Note: this number must be nonzero. </p>
+
+</div>
+</div>
+<a id="a48ae0d2e7642d0354a86904f0601e261" name="a48ae0d2e7642d0354a86904f0601e261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ae0d2e7642d0354a86904f0601e261">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_EVENT_LOGGING_DEBUG_BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_EVENT_LOGGING_DEBUG_BUFFER_SIZE&#160;&#160;&#160;(512)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A size, in bytes, of the buffer used for storing newly generated events, and the only buffer in which DEBUG-priority events are allowed. DEBUG-priority events will start getting evicted when this buffer is full (with DEBUG, INFO, and CRITICAL events in it) and the oldest event in the buffer is a DEBUG-priority event, which cannot be evicted into the INFO event buffer. </p>
+<p>Note: set to 0 to disable storing DEBUG events. </p>
+
+</div>
+</div>
+<a id="ac4e42896da5958ced01b7e2c2cbafdd2" name="ac4e42896da5958ced01b7e2c2cbafdd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e42896da5958ced01b7e2c2cbafdd2">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_EVENT_LOGGING_INFO_BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_EVENT_LOGGING_INFO_BUFFER_SIZE&#160;&#160;&#160;(512)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A size, in bytes, of the buffer reserved for storing events at INFO priority and higher. INFO-priority events will not be evicted until this buffer is full (with INFO and CRITICAL events in it) and the oldest event in the buffer is an INFO-priority event (which cannot be evicted into the CRITICAL event buffer). </p>
+<p>Note: set to 0 to treat INFO events as effectively equivalent to DEBUG events. </p>
+
+</div>
+</div>
+<a id="add3bae7e490f692413e782a1c6521365" name="add3bae7e490f692413e782a1c6521365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add3bae7e490f692413e782a1c6521365">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_EVENT_LOGGING_UTC_TIMESTAMPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_EVENT_LOGGING_UTC_TIMESTAMPS&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>By default, don't record UTC timestamps. </p>
+
+</div>
+</div>
+<a id="aee18d1e73a03bc9ac8ed8c56dc33e530" name="aee18d1e73a03bc9ac8ed8c56dc33e530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee18d1e73a03bc9ac8ed8c56dc33e530">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_EXT_ADVERTISING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_EXT_ADVERTISING&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_EXT_ADVERTISING</p>
+<p>Optional configuration to enable Extended Announcement Duration up to 48h. Should be used together with extending CHIP_DEVICE_CONFIG_DISCOVERY_TIMEOUT_SECS past 15 minutes. Disabled by default. </p>
+
+</div>
+</div>
+<a id="a78f761c93f8241fd71c5a6322493d4b9" name="a78f761c93f8241fd71c5a6322493d4b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f761c93f8241fd71c5a6322493d4b9">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_EXTENDED_DISCOVERY_TIMEOUT_SECS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_EXTENDED_DISCOVERY_TIMEOUT_SECS&#160;&#160;&#160;(15 * 60)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8dd73ecba07f069e42b0253d67a20f9" name="ab8dd73ecba07f069e42b0253d67a20f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8dd73ecba07f069e42b0253d67a20f9">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_FAILSAFE_EXPIRY_LENGTH_SEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_FAILSAFE_EXPIRY_LENGTH_SEC&#160;&#160;&#160;60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_FAILSAFE_EXPIRY_LENGTH_SEC</p>
+<p>The default conservative initial duration (in seconds) to set in the FailSafe for the commissioning flow to complete successfully. This may vary depending on the speed or sleepiness of the Commissionee. </p>
+
+</div>
+</div>
+<a id="aa88088f88170ed6532f7ab91df1911d2" name="aa88088f88170ed6532f7ab91df1911d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88088f88170ed6532f7ab91df1911d2">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_FILE_DOWNLOAD_ENDPOINT_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_FILE_DOWNLOAD_ENDPOINT_ID&#160;&#160;&#160;0x18B4300200000013ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_FILE_DOWNLOAD_ENDPOINT_ID</p>
+<p>Specifies the service endpoint id of the chip File Download service. When a device attempts file download over BDX, this is the endpoint to which it will send its BDX request. </p>
+
+</div>
+</div>
+<a id="a96056d7db7be93147c2e2b1ac596d14f" name="a96056d7db7be93147c2e2b1ac596d14f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96056d7db7be93147c2e2b1ac596d14f">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_FILE_DOWNLOAD_RESPONSE_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_FILE_DOWNLOAD_RESPONSE_TIMEOUT&#160;&#160;&#160;10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_FILE_DOWNLOAD_RESPONSE_TIMEOUT</p>
+<p>Specifies the maximum amount of time (in milliseconds) to wait for a response from a chip File Download service. </p>
+
+</div>
+</div>
+<a id="a768322a49998e8f90697f01749148aba" name="a768322a49998e8f90697f01749148aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a768322a49998e8f90697f01749148aba">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_FIRMWARE_BUILD_DATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_FIRMWARE_BUILD_DATE&#160;&#160;&#160;__DATE__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_FIRWMARE_BUILD_DATE</p>
+<p>Specifies the date of the build. Useful for deterministic builds. </p>
+
+</div>
+</div>
+<a id="a5598ac87257179cf89e366d89196b582" name="a5598ac87257179cf89e366d89196b582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5598ac87257179cf89e366d89196b582">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_FIRMWARE_BUILD_TIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_FIRMWARE_BUILD_TIME&#160;&#160;&#160;__TIME__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_FIRMWARE_BUILD_TIME</p>
+<p>Specifies the time of the build. Useful for deterministic builds. </p>
+
+</div>
+</div>
+<a id="a4b568e72acd1c3f15011f1ffb02a59ff" name="a4b568e72acd1c3f15011f1ffb02a59ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b568e72acd1c3f15011f1ffb02a59ff">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ICD_FAST_POLL_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ICD_FAST_POLL_INTERVAL&#160;&#160;&#160;System::Clock::Milliseconds32(200)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ICD_FAST_POLL_INTERVAL</p>
+<p>The default amount of time in milliseconds that the sleepy end device will use as an active interval. This interval is used by the device to periodically wake up and poll the data in the active mode. </p>
+
+</div>
+</div>
+<a id="a83489bba076206ea1488a29ae8ea9385" name="a83489bba076206ea1488a29ae8ea9385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83489bba076206ea1488a29ae8ea9385">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ICD_SIT_POLLING_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ICD_SIT_POLLING_INTERVAL&#160;&#160;&#160;<a class="el" href="CHIPDeviceConfig_8h.html#ad2ae6c562c790bcfae92d7637801c10e">CHIP_DEVICE_CONFIG_ICD_SIT_SLOW_POLL_LIMIT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ICD_SIT_POLLING_INTERVAL</p>
+<p>The SIT slow polling interval (in milliseconds) is a configuration that allows LIT capable devices operating in SIT mode to use a shorter slow polling interval than their typical Slow polling interval.</p>
+<p>The SIT slow polling interval cannot be set to a value greater than CHIP_DEVICE_CONFIG_ICD_SIT_SLOW_POLL_LIMIT </p>
+
+</div>
+</div>
+<a id="ad2ae6c562c790bcfae92d7637801c10e" name="ad2ae6c562c790bcfae92d7637801c10e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2ae6c562c790bcfae92d7637801c10e">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ICD_SIT_SLOW_POLL_LIMIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ICD_SIT_SLOW_POLL_LIMIT&#160;&#160;&#160;System::Clock::Milliseconds32(15000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ICD_SIT_SLOW_POLL_LIMIT</p>
+<p>The maximum value of time in milliseconds that the sleepy end device can use as an idle interval in the SIT mode. The Matter spec does not allow this value to exceed 15s (spec 9.16.1.5). For the SIT device, the usability of this value is arguable, as slow poll interval can be configured using CHIP_DEVICE_CONFIG_ICD_SLOW_POLL_INTERVAL. This value can be used for the LIT device, to limit the slow poll interval used while temporarily working in the SIT mode. </p>
+
+</div>
+</div>
+<a id="ad62a1d8984a79e7e4eddd2a647eb9372" name="ad62a1d8984a79e7e4eddd2a647eb9372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad62a1d8984a79e7e4eddd2a647eb9372">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ICD_SLOW_POLL_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ICD_SLOW_POLL_INTERVAL&#160;&#160;&#160;System::Clock::Milliseconds32(5000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ICD_SLOW_POLL_INTERVAL</p>
+<p>The default amount of time in milliseconds that the sleepy end device will use as an idle interval. This interval is used by the device to periodically wake up and poll the data in the idle mode. </p>
+
+</div>
+</div>
+<a id="a43d86d4dfb4ade83802c1d6ad9272122" name="a43d86d4dfb4ade83802c1d6ad9272122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43d86d4dfb4ade83802c1d6ad9272122">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_LWIP_THREAD_IF_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_LWIP_THREAD_IF_NAME&#160;&#160;&#160;&quot;th&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_LWIP_THREAD_IF_NAME</p>
+<p>Name of the Thread interface on LwIP-based platforms. </p>
+
+</div>
+</div>
+<a id="a210d96b6b8ebec5b87f9eec1b3db4a3c" name="a210d96b6b8ebec5b87f9eec1b3db4a3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a210d96b6b8ebec5b87f9eec1b3db4a3c">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_LWIP_WIFI_AP_IF_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_LWIP_WIFI_AP_IF_NAME&#160;&#160;&#160;&quot;ap&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_LWIP_WIFI_AP_IF_NAME</p>
+<p>Name of the WiFi AP interface on LwIP-based platforms. </p>
+
+</div>
+</div>
+<a id="ada5c4f72801c0af330bf3739cae2dafe" name="ada5c4f72801c0af330bf3739cae2dafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada5c4f72801c0af330bf3739cae2dafe">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_LWIP_WIFI_STATION_IF_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_LWIP_WIFI_STATION_IF_NAME&#160;&#160;&#160;&quot;wl&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_LWIP_WIFI_STATION_IF_NAME</p>
+<p>Name of the WiFi station interface on LwIP-based platforms. </p>
+
+</div>
+</div>
+<a id="a6b7bac384ae4f6e72ad7333e5a89ccf1" name="a6b7bac384ae4f6e72ad7333e5a89ccf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b7bac384ae4f6e72ad7333e5a89ccf1">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_MAX_CUMULATIVE_FAILSAFE_SEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_MAX_CUMULATIVE_FAILSAFE_SEC&#160;&#160;&#160;900</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_MAX_CUMULATIVE_FAILSAFE_SEC</p>
+<p>The default conservative value in seconds denoting the maximum total duration for which a fail safe timer can be re-armed. </p>
+
+</div>
+</div>
+<a id="a87721a44d64695cb6178fa55e57a5600" name="a87721a44d64695cb6178fa55e57a5600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87721a44d64695cb6178fa55e57a5600">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_MAX_DISCOVERED_NODES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_MAX_DISCOVERED_NODES&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_MAX_DISCOVERED_NODES</p>
+<p>Maximum number of CHIP Commissioners or Commissionable Nodes that can be discovered </p>
+
+</div>
+</div>
+<a id="ac93a8e595f5571df77ed9a9a98d7827a" name="ac93a8e595f5571df77ed9a9a98d7827a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93a8e595f5571df77ed9a9a98d7827a">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_MAX_EVENT_QUEUE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_MAX_EVENT_QUEUE_SIZE&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_MAX_EVENT_QUEUE_SIZE</p>
+<p>The maximum number of events that can be held in the chip Platform event queue. </p>
+
+</div>
+</div>
+<a id="a05064919d42eb56139dec1af3eeec6bf" name="a05064919d42eb56139dec1af3eeec6bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05064919d42eb56139dec1af3eeec6bf">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_MAX_SCAN_NETWORKS_RESULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_MAX_SCAN_NETWORKS_RESULTS&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_MAX_SCAN_NETWORKS_RESULTS</p>
+<p>The maximum number of networks to return as a result of a NetworkProvisioning:ScanNetworks request. </p>
+
+</div>
+</div>
+<a id="a4fffd0f0bcd78c77a3972861d95fc479" name="a4fffd0f0bcd78c77a3972861d95fc479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fffd0f0bcd78c77a3972861d95fc479">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_PAIRING_INITIAL_HINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_PAIRING_INITIAL_HINT&#160;&#160;&#160;    (1 &lt;&lt; <a class="el" href="CHIPConfig_8h.html#a6bc94c445cffada644739548fc28b8b5">CHIP_COMMISSIONING_HINT_INDEX_POWER_CYCLE</a> | 1 &lt;&lt; <a class="el" href="CHIPConfig_8h.html#aea8e3bcd748857657a498d2183890de7">CHIP_COMMISSIONING_HINT_INDEX_SEE_MANUAL</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_PAIRING_INITIAL_HINT</p>
+<p>Pairing Hint, bitmap value of methods to put device into pairing mode when it has not yet been commissioned.</p>
+<p>Bits: 0 - Power Cycle 5 - See <a class="el" href="classDevice.html">Device</a> Manual </p>
+
+</div>
+</div>
+<a id="a10839254ac83e592337ba6545b6045bb" name="a10839254ac83e592337ba6545b6045bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10839254ac83e592337ba6545b6045bb">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_PAIRING_INITIAL_INSTRUCTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_PAIRING_INITIAL_INSTRUCTION&#160;&#160;&#160;&quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_PAIRING_INITIAL_INSTRUCTION</p>
+<p>Pairing Instruction, when device has not yet been commissioned</p>
+<p>Meaning is depedent upon pairing hint value. </p>
+
+</div>
+</div>
+<a id="a1ed801e3ccd7c3740d05eca1672b4500" name="a1ed801e3ccd7c3740d05eca1672b4500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ed801e3ccd7c3740d05eca1672b4500">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_PAIRING_SECONDARY_HINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_PAIRING_SECONDARY_HINT&#160;&#160;&#160;    (1 &lt;&lt; <a class="el" href="CHIPConfig_8h.html#a9189599e231613affe24da3ea9aca1ba">CHIP_COMMISSIONING_HINT_INDEX_SEE_ADMINISTRATOR_UX</a> | 1 &lt;&lt; <a class="el" href="CHIPConfig_8h.html#aea8e3bcd748857657a498d2183890de7">CHIP_COMMISSIONING_HINT_INDEX_SEE_MANUAL</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_PAIRING_SECONDARY_HINT</p>
+<p>Pairing Hint, bitmap value of methods to put device into pairing mode when it has already been commissioned.</p>
+<p>Bits: 2 - Visit Administrator UX (always true for secondary) 5 - See <a class="el" href="classDevice.html">Device</a> Manual </p>
+
+</div>
+</div>
+<a id="ab61744f5649f56287e83696f3ace785e" name="ab61744f5649f56287e83696f3ace785e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab61744f5649f56287e83696f3ace785e">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_PAIRING_SECONDARY_INSTRUCTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_PAIRING_SECONDARY_INSTRUCTION&#160;&#160;&#160;&quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_PAIRING_SECONDARY_INSTRUCTION</p>
+<p>Pairing Instruction, when device has not yet been commissioned</p>
+<p>Meaning is depedent upon pairing hint value. </p>
+
+</div>
+</div>
+<a id="a523537bdedf8806e8a0d08db220ac1ec" name="a523537bdedf8806e8a0d08db220ac1ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a523537bdedf8806e8a0d08db220ac1ec">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ROTATING_DEVICE_ID_UNIQUE_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ROTATING_DEVICE_ID_UNIQUE_ID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">    {                                                                                                                              \</div>
+<div class="line">        0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, 0xaa, 0xbb, 0xcc, 0xdd, 0xee, 0xff                             \</div>
+<div class="line">    }</div>
+</div><!-- fragment --><p>CHIP_DEVICE_CONFIG_ROTATING_DEVICE_ID_UNIQUE_ID</p>
+<p>Enables the use of a hard-coded default unique ID utilized for the rotating device ID calculation. </p>
+
+</div>
+</div>
+<a id="ae2e566731446ead205f33646ba0e4b9d" name="ae2e566731446ead205f33646ba0e4b9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e566731446ead205f33646ba0e4b9d">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_ROTATING_DEVICE_ID_UNIQUE_ID_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_ROTATING_DEVICE_ID_UNIQUE_ID_LENGTH&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_ROTATING_DEVICE_ID_UNIQUE_ID_LENGTH</p>
+<p>Unique ID length in bytes. The value should be 16-bytes or longer. </p>
+
+</div>
+</div>
+<a id="aa612fd082d19dcc97a2a8e33eaf97da4" name="aa612fd082d19dcc97a2a8e33eaf97da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa612fd082d19dcc97a2a8e33eaf97da4">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SED_ACTIVE_THRESHOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SED_ACTIVE_THRESHOLD&#160;&#160;&#160;System::Clock::Milliseconds32(4000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_SED_ACTIVE_THRESHOLD</p>
+<p>Minimum amount the node SHOULD stay awake after network activity. Spec section 2.12.5 </p>
+
+</div>
+</div>
+<a id="a8080a7bfc22d55b3823318210bca61ca" name="a8080a7bfc22d55b3823318210bca61ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8080a7bfc22d55b3823318210bca61ca">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SERVICE_PROVISIONING_CONNECTIVITY_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SERVICE_PROVISIONING_CONNECTIVITY_TIMEOUT&#160;&#160;&#160;10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_SERVICE_PROVISIONING_CONNECTIVITY_TIMEOUT</p>
+<p>The maximum amount of time (in milliseconds) to wait for service connectivity during the device service provisioning step. More specifically, this is the maximum amount of time the device will wait for connectivity to be established with the service at the point where the device waiting to send a Pair <a class="el" href="classDevice.html">Device</a> to Account request to the Service Provisioning service. </p>
+
+</div>
+</div>
+<a id="a1909d0b6d29ecca1bc84445c1a9ddb16" name="a1909d0b6d29ecca1bc84445c1a9ddb16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1909d0b6d29ecca1bc84445c1a9ddb16">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SERVICE_PROVISIONING_ENDPOINT_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SERVICE_PROVISIONING_ENDPOINT_ID&#160;&#160;&#160;0x18B4300200000010ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_SERVICE_PROVISIONING_ENDPOINT_ID</p>
+<p>Specifies the service endpoint id of the chip Service Provisioning service. When a device undergoes service provisioning, this is the endpoint to which it will send its Pair <a class="el" href="classDevice.html">Device</a> to Account request. </p>
+
+</div>
+</div>
+<a id="a221e4c185f68e800d0b405ffec7cb56a" name="a221e4c185f68e800d0b405ffec7cb56a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a221e4c185f68e800d0b405ffec7cb56a">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SERVICE_PROVISIONING_REQUEST_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SERVICE_PROVISIONING_REQUEST_TIMEOUT&#160;&#160;&#160;10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_SERVICE_PROVISIONING_REQUEST_TIMEOUT</p>
+<p>Specifies the maximum amount of time (in milliseconds) to wait for a response from the Service Provisioning service. </p>
+
+</div>
+</div>
+<a id="af6d420ff8c610f84456bcbff1def17c0" name="af6d420ff8c610f84456bcbff1def17c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6d420ff8c610f84456bcbff1def17c0">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_ENDPOINT_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_ENDPOINT_ID&#160;&#160;&#160;0x18B4300200000002ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_ENDPOINT_ID</p>
+<p>Specifies the service endpoint id of the chip Software Update service. When a device attempts software update, this is the endpoint to which it will send its Software Update Query request. </p>
+
+</div>
+</div>
+<a id="aee8beeaa4bf8ac22b6f2d083d00b8a09" name="aee8beeaa4bf8ac22b6f2d083d00b8a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8beeaa4bf8ac22b6f2d083d00b8a09">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_MAX_RETRIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_MAX_RETRIES&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_MAX_RETRIES</p>
+<p>Specifies the maximum number of times a failed software is retried. </p>
+
+</div>
+</div>
+<a id="ac7a6763ea0801dc71acc54bc4d9a6e36" name="ac7a6763ea0801dc71acc54bc4d9a6e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a6763ea0801dc71acc54bc4d9a6e36">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_MAX_WAIT_TIME_INTERVAL_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_MAX_WAIT_TIME_INTERVAL_MS&#160;&#160;&#160;1 * 60 * 60 * 1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_MAX_WAIT_TIME_INTERVAL_MS</p>
+<p>If scheduled software update check is disabled &amp; default retry policy is used, specify the max wait time interval to be used (in milliseconds) </p>
+
+</div>
+</div>
+<a id="a9aff2e1bcfe11618206a23f2349cb1a6" name="a9aff2e1bcfe11618206a23f2349cb1a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aff2e1bcfe11618206a23f2349cb1a6">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_RESPONSE_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_RESPONSE_TIMEOUT&#160;&#160;&#160;10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_RESPONSE_TIMEOUT</p>
+<p>Specifies the maximum amount of time (in milliseconds) to wait for a response from a chip Software Update service. </p>
+
+</div>
+</div>
+<a id="a30918440005df2737588a4abc9022762" name="a30918440005df2737588a4abc9022762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30918440005df2737588a4abc9022762">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_URI_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_URI_LEN&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_SOFTWARE_UPDATE_URI_LEN</p>
+<p>Specifies the size in bytes of the buffer that stores the URI </p>
+
+</div>
+</div>
+<a id="aff392dfffa95bdae91b83c33ef4d5cb7" name="aff392dfffa95bdae91b83c33ef4d5cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff392dfffa95bdae91b83c33ef4d5cb7">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SUPPORTS_CONCURRENT_CONNECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SUPPORTS_CONCURRENT_CONNECTION&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_SUPPORTS_CONCURRENT_CONNECTION</p>
+<p>Whether a device supports "concurrent connection commissioning mode" (1) or or "non-concurrenct connection commissioning mode" (0).</p>
+<p>See section "5.5. Commissioning Flows" in spec for definition.</p>
+<p>The default value is to support concurrent connection. </p>
+
+</div>
+</div>
+<a id="a544f3da800d071b1611322100bd1f976" name="a544f3da800d071b1611322100bd1f976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544f3da800d071b1611322100bd1f976">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SWU_BDX_BLOCK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SWU_BDX_BLOCK_SIZE&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_SWU_BDX_BLOCK_SIZE</p>
+<p>Specifies the block size to be used during software download over BDX. </p>
+
+</div>
+</div>
+<a id="a2ae53038ff4009af57d0623db0ddd0eb" name="a2ae53038ff4009af57d0623db0ddd0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae53038ff4009af57d0623db0ddd0eb">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SWU_MIN_WAIT_TIME_INTERVAL_PERCENT_PER_STEP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SWU_MIN_WAIT_TIME_INTERVAL_PERCENT_PER_STEP&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If default software update retry policy is used, specify the minimum wait time as a percentage of the max wait interval for that step. </p>
+
+</div>
+</div>
+<a id="a8ef2b946a5fa9217742e06898fe9d104" name="a8ef2b946a5fa9217742e06898fe9d104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef2b946a5fa9217742e06898fe9d104">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_SWU_WAIT_TIME_MULTIPLIER_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_SWU_WAIT_TIME_MULTIPLIER_MS&#160;&#160;&#160;1 * 60 * 1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If default software update retry policy is used, specify the multiplier that multiplies the result of a Fibonacci computation based on a specific index to provide a max wait time for a step. </p>
+
+</div>
+</div>
+<a id="ae79d5e66e856f8a9650a0d9167b15848" name="ae79d5e66e856f8a9650a0d9167b15848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae79d5e66e856f8a9650a0d9167b15848">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_TEST_SERIAL_NUMBER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_TEST_SERIAL_NUMBER&#160;&#160;&#160;&quot;TEST_SN&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_TEST_SERIAL_NUMBER</p>
+<p>Enables the use of a hard-coded default serial number if none is found in Chip NV storage. </p>
+
+</div>
+</div>
+<a id="a0b5915e8c20b6ee6d5c12c7c851bb51a" name="a0b5915e8c20b6ee6d5c12c7c851bb51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5915e8c20b6ee6d5c12c7c851bb51a">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_THREAD_BORDER_ROUTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_THREAD_BORDER_ROUTER&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_THREAD_BORDER_ROUTER</p>
+<p>Enable Thread Border Router service. Users should ensure OPENTHREAD_CONFIG_BORDER_ROUTER_ENABLE is set accordingly within their thread stack </p>
+
+</div>
+</div>
+<a id="a011c0553246ac8255672464353a94f57" name="a011c0553246ac8255672464353a94f57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a011c0553246ac8255672464353a94f57">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_THREAD_CONNECTIVITY_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_THREAD_CONNECTIVITY_TIMEOUT&#160;&#160;&#160;30000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_THREAD_CONNECTIVITY_TIMEOUT</p>
+<p>The amount of time (in milliseconds) to wait for connectivity with a Thread mesh to be established on during a Network Provisioning TestConnectivity operation. </p>
+
+</div>
+</div>
+<a id="a251731ac16e20687975cc2a086be63bf" name="a251731ac16e20687975cc2a086be63bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251731ac16e20687975cc2a086be63bf">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_THREAD_ENABLE_CLI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_THREAD_ENABLE_CLI&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_THREAD_ENABLE_CLI</p>
+<p>Enable Thread CLI interface at initialisation. </p>
+
+</div>
+</div>
+<a id="a756d1617d7a9b4b471711fc3dee3f3ab" name="a756d1617d7a9b4b471711fc3dee3f3ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a756d1617d7a9b4b471711fc3dee3f3ab">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_THREAD_FTD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_THREAD_FTD&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_THREAD_FTD</p>
+<p>Enable Full Thread <a class="el" href="classDevice.html">Device</a> features </p>
+
+</div>
+</div>
+<a id="a3deefb6a1b7079fa20fad7890f06db54" name="a3deefb6a1b7079fa20fad7890f06db54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3deefb6a1b7079fa20fad7890f06db54">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_THREAD_IF_MTU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_THREAD_IF_MTU&#160;&#160;&#160;1280</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_THREAD_IF_MTU</p>
+<p>Default MTU for Thread interface </p>
+
+</div>
+</div>
+<a id="a3ddd5aa8f5572a09996051460193f8ad" name="a3ddd5aa8f5572a09996051460193f8ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ddd5aa8f5572a09996051460193f8ad">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_THREAD_SRP_MAX_SERVICES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_THREAD_SRP_MAX_SERVICES&#160;&#160;&#160;(<a class="el" href="CHIPConfig_8h.html#aa4ce0e44e78ed2dd3f279714c194279d">CHIP_CONFIG_MAX_FABRICS</a> + 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_THREAD_SRP_MAX_SERVICES</p>
+<p>Amount of services available for advertising using SRP. </p>
+
+</div>
+</div>
+<a id="aaea3a0d781534ed3ef20167f32effa6d" name="aaea3a0d781534ed3ef20167f32effa6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea3a0d781534ed3ef20167f32effa6d">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_THREAD_SSED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_THREAD_SSED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_THREAD_SSED</p>
+<p>Enable support for Thread Synchronized Sleepy End <a class="el" href="classDevice.html">Device</a> behavior. </p>
+
+</div>
+</div>
+<a id="a02a24f49cf82ab8f756f036f7cb7524d" name="a02a24f49cf82ab8f756f036f7cb7524d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02a24f49cf82ab8f756f036f7cb7524d">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_THREAD_TASK_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_THREAD_TASK_NAME&#160;&#160;&#160;&quot;THREAD&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_THREAD_TASK_NAME</p>
+<p>The name of the Thread task. </p>
+
+</div>
+</div>
+<a id="a99ddbe69365c8dadefa7e2c63217fb03" name="a99ddbe69365c8dadefa7e2c63217fb03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ddbe69365c8dadefa7e2c63217fb03">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_THREAD_TASK_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_THREAD_TASK_PRIORITY&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_THREAD_TASK_PRIORITY</p>
+<p>The priority of the OpenThread task. </p>
+
+</div>
+</div>
+<a id="ae2f0c36e9f8810fff719653ab3e94883" name="ae2f0c36e9f8810fff719653ab3e94883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f0c36e9f8810fff719653ab3e94883">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_THREAD_TASK_STACK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_THREAD_TASK_STACK_SIZE&#160;&#160;&#160;8192</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_THREAD_TASK_STACK_SIZE</p>
+<p>The size (in bytes) of the OpenThread task stack. </p>
+
+</div>
+</div>
+<a id="a3d8a654519f93da0cc83198948c28e61" name="a3d8a654519f93da0cc83198948c28e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8a654519f93da0cc83198948c28e61">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_UDC_MAX_TARGET_APPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_UDC_MAX_TARGET_APPS&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_UDC_MAX_TARGET_APPS</p>
+<p>The number of target apps that a client can include in a UDC message.</p>
+<p>Depends upon CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONER_DISCOVERY set to 1</p>
+<p>For Video Players, this value should be set to 10 </p>
+
+</div>
+</div>
+<a id="ad44384f98aee26c598fb584d691adbe3" name="ad44384f98aee26c598fb584d691adbe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad44384f98aee26c598fb584d691adbe3">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_USE_TEST_SETUP_DISCRIMINATOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_USE_TEST_SETUP_DISCRIMINATOR&#160;&#160;&#160;0xF00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test setup discriminator to use if actual discriminator value is not provisioned in the device memory. </p>
+
+</div>
+</div>
+<a id="a9f0ff90cda205a3bbbf7cd2a14b85236" name="a9f0ff90cda205a3bbbf7cd2a14b85236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f0ff90cda205a3bbbf7cd2a14b85236">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_USE_TEST_SETUP_PIN_CODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_USE_TEST_SETUP_PIN_CODE&#160;&#160;&#160;20202021</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test Spake2p passcode to use if actual passcode value is not provisioned in the device memory. </p>
+
+</div>
+</div>
+<a id="a2597ffa2d35404effdd85157a9f7d89e" name="a2597ffa2d35404effdd85157a9f7d89e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2597ffa2d35404effdd85157a9f7d89e">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_USE_TEST_SPAKE2P_ITERATION_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_USE_TEST_SPAKE2P_ITERATION_COUNT&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test Spake2p iteration count to use if actual iteration count value is not provisioned in the device memory. </p>
+
+</div>
+</div>
+<a id="a0b9338cf489dd75b6f2aa24e4bc7d194" name="a0b9338cf489dd75b6f2aa24e4bc7d194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b9338cf489dd75b6f2aa24e4bc7d194">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_USE_TEST_SPAKE2P_SALT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_USE_TEST_SPAKE2P_SALT&#160;&#160;&#160;&quot;U1BBS0UyUCBLZXkgU2FsdA==&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test Spake2p Salt to use if actual salt value is not provisioned in the device memory. </p>
+<dl class="section note"><dt>覚え書き</dt><dd>The value is base-64 encoded string. </dd></dl>
+
+</div>
+</div>
+<a id="a6a4fbc541d90a8d20f789fb14b7ba262" name="a6a4fbc541d90a8d20f789fb14b7ba262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a4fbc541d90a8d20f789fb14b7ba262">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_USE_TEST_SPAKE2P_SALT_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_USE_TEST_SPAKE2P_SALT_DEFAULT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a753bfbfef7683758e82517bc14185ca1" name="a753bfbfef7683758e82517bc14185ca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a753bfbfef7683758e82517bc14185ca1">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_USE_TEST_SPAKE2P_VERIFIER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_USE_TEST_SPAKE2P_VERIFIER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">    <span class="stringliteral">&quot;uWFwqugDNGiEck/po7KHwwMwwqZgN10XuyBajPGuyzUEV/iree4lOrao5GuwnlQ65CJzbeUB49s31EH+NEkg0JVI5MGCQGMMT/SRPFNRODm3wH/MBiehuFc6FJ/&quot;</span>  \</div>
+<div class="line">    <span class="stringliteral">&quot;NH6Rmzw==&quot;</span></div>
+</div><!-- fragment -->
+<p>Test Spake2p Verifier to use if actual verifier value is not provisioned in the device memory. </p>
+<dl class="section note"><dt>覚え書き</dt><dd>The value is base-64 encoded string. </dd></dl>
+
+</div>
+</div>
+<a id="ab79f373b4f6a7d8303869a3043972981" name="ab79f373b4f6a7d8303869a3043972981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79f373b4f6a7d8303869a3043972981">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_USER_SELECTED_MODE_TIMEOUT_SEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_USER_SELECTED_MODE_TIMEOUT_SEC&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_USER_SELECTED_MODE_TIMEOUT_SEC</p>
+<p>The default amount of time (in whole seconds) that the device will remain in "user selected" mode. User selected mode is typically initiated by a button press, or other direct interaction by a user. While in user selected mode, the device will respond to <a class="el" href="classDevice.html">Device</a> Identify Requests that have the UserSelectedMode flag set. </p>
+
+</div>
+</div>
+<a id="a21c19336ce3762eb71f1f08fd51a6690" name="a21c19336ce3762eb71f1f08fd51a6690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21c19336ce3762eb71f1f08fd51a6690">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_USES_OTBR_POSIX_DBUS_STACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_USES_OTBR_POSIX_DBUS_STACK&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_USES_OTBR_POSIX_DBUS_STACK</p>
+<p>Indicate if the matter device thread stack is implemented using the ot-br-posix dbus API Rather than the standard openthread stack api </p>
+
+</div>
+</div>
+<a id="acf4883003a8662304bd246902794ebc1" name="acf4883003a8662304bd246902794ebc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf4883003a8662304bd246902794ebc1">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFI_AP_BEACON_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFI_AP_BEACON_INTERVAL&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFI_AP_BEACON_INTERVAL</p>
+<p>The beacon interval (in milliseconds) for the WiFi soft-AP. </p>
+
+</div>
+</div>
+<a id="afa296d20b60a42cdfd9e5032d5d34e73" name="afa296d20b60a42cdfd9e5032d5d34e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa296d20b60a42cdfd9e5032d5d34e73">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFI_AP_CHANNEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFI_AP_CHANNEL&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFI_AP_CHANNEL</p>
+<p>The WiFi channel number to be used by the soft-AP. </p>
+
+</div>
+</div>
+<a id="a8a7039418f59daf3e009a9c0f1897de3" name="a8a7039418f59daf3e009a9c0f1897de3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a7039418f59daf3e009a9c0f1897de3">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFI_AP_IDLE_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFI_AP_IDLE_TIMEOUT&#160;&#160;&#160;120000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFI_AP_IDLE_TIMEOUT</p>
+<p>The amount of time (in milliseconds) after which the chip platform will deactivate the soft-AP if it has been idle. </p>
+
+</div>
+</div>
+<a id="a9786db5dfc21e735970fc0fc7d9c69ac" name="a9786db5dfc21e735970fc0fc7d9c69ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9786db5dfc21e735970fc0fc7d9c69ac">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFI_AP_MAX_STATIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFI_AP_MAX_STATIONS&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFI_AP_MAX_STATIONS</p>
+<p>The maximum number of stations allowed to connect to the soft-AP. </p>
+
+</div>
+</div>
+<a id="a47697684558834017494951e557d9fbe" name="a47697684558834017494951e557d9fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47697684558834017494951e557d9fbe">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFI_AP_SSID_PREFIX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFI_AP_SSID_PREFIX&#160;&#160;&#160;&quot;MATTER-&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFI_AP_SSID_PREFIX</p>
+<p>A prefix string used in forming the WiFi soft-AP SSID. The remainder of the SSID consists of the final two bytes of the device's primary WiFi MAC address in hex. </p>
+
+</div>
+</div>
+<a id="a35a05089cb958f2d90a7979fb7175308" name="a35a05089cb958f2d90a7979fb7175308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35a05089cb958f2d90a7979fb7175308">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFI_CONNECTIVITY_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFI_CONNECTIVITY_TIMEOUT&#160;&#160;&#160;30000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFI_CONNECTIVITY_TIMEOUT</p>
+<p>The amount of time (in milliseconds) to wait for Internet connectivity to be established on the device's WiFi station interface during a Network Provisioning TestConnectivity operation. </p>
+
+</div>
+</div>
+<a id="a087e091adae8e9476414deda0a512d56" name="a087e091adae8e9476414deda0a512d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087e091adae8e9476414deda0a512d56">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFI_SCAN_COMPLETION_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFI_SCAN_COMPLETION_TIMEOUT&#160;&#160;&#160;10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFI_SCAN_COMPLETION_TIMEOUT</p>
+<p>The amount of time (in milliseconds) after which the chip platform will timeout a WiFi scan operation that hasn't completed. A value of 0 will disable the timeout logic. </p>
+
+</div>
+</div>
+<a id="ad7eac9e450a7627e6a7acd6aa244e7ab" name="ad7eac9e450a7627e6a7acd6aa244e7ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7eac9e450a7627e6a7acd6aa244e7ab">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFI_STATION_IF_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFI_STATION_IF_NAME&#160;&#160;&#160;&quot;wlan0&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFI_STATION_IF_NAME</p>
+<p>Name of the WiFi station interface </p>
+
+</div>
+</div>
+<a id="ad432aab478a95ce7be50aed2c89b23a1" name="ad432aab478a95ce7be50aed2c89b23a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad432aab478a95ce7be50aed2c89b23a1">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFI_STATION_RECONNECT_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFI_STATION_RECONNECT_INTERVAL&#160;&#160;&#160;5000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFI_STATION_RECONNECT_INTERVAL</p>
+<p>The interval at which the chip platform will attempt to reconnect to the configured WiFi network (in milliseconds). </p>
+
+</div>
+</div>
+<a id="a8980228848bd7bbbe19608d138197b56" name="a8980228848bd7bbbe19608d138197b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8980228848bd7bbbe19608d138197b56">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFIPAF_24G_DEFAUTL_CHNL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFIPAF_24G_DEFAUTL_CHNL&#160;&#160;&#160;2437</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFIPAF_24G_DEFAUTL_CHNL</p>
+<p>The default channel of Wi-Fi PAF in 2.4G band (channel#6) </p>
+
+</div>
+</div>
+<a id="a31e20eb9d30764baf93878e8e513cec7" name="a31e20eb9d30764baf93878e8e513cec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31e20eb9d30764baf93878e8e513cec7">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFIPAF_5G_LOW_DEFAUTL_CHNL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFIPAF_5G_LOW_DEFAUTL_CHNL&#160;&#160;&#160;5220</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFIPAF_5G_LOW_DEFAUTL_CHNL</p>
+<p>The default channel of Wi-Fi PAF in 5G lower band (channel#44) </p>
+
+</div>
+</div>
+<a id="adfaa25c3fb7b9264d5564a469edec85e" name="adfaa25c3fb7b9264d5564a469edec85e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfaa25c3fb7b9264d5564a469edec85e">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFIPAF_5G_UP_DEFAUTL_CHNL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFIPAF_5G_UP_DEFAUTL_CHNL&#160;&#160;&#160;5745</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFIPAF_5G_HI_DEFAUTL_CHNL</p>
+<p>The default channel of Wi-Fi PAF in 5G upper band (channel#149) </p>
+
+</div>
+</div>
+<a id="a563268e75bff5669ec25398983aaad13" name="a563268e75bff5669ec25398983aaad13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a563268e75bff5669ec25398983aaad13">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFIPAF_DISCOVERY_TIMEOUT_SECS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFIPAF_DISCOVERY_TIMEOUT_SECS&#160;&#160;&#160;(15 * 60)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFIPAF_DISCOVERY_TIMEOUT_SECS</p>
+<p>The max amount of time (in seconds) the chip controller will discovery Wi-Fi PAF </p>
+
+</div>
+</div>
+<a id="a0cc92cebbc9b86998857be684110013f" name="a0cc92cebbc9b86998857be684110013f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc92cebbc9b86998857be684110013f">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFIPAF_MAX_ADVERTISING_TIMEOUT_SECS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFIPAF_MAX_ADVERTISING_TIMEOUT_SECS&#160;&#160;&#160;(15 * 60)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFIPAF_MAX_ADVERTISING_TIMEOUT_SECS</p>
+<p>The max amount of time (in seconds) after which the chip platform will stop PAF advertisement </p>
+
+</div>
+</div>
+<a id="af3e47c7328b0383e0ea0d95f4b05bd2f" name="af3e47c7328b0383e0ea0d95f4b05bd2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e47c7328b0383e0ea0d95f4b05bd2f">&#9670;&#160;</a></span>CHIP_DEVICE_CONFIG_WIFIPAF_MIN_ADVERTISING_TIMEOUT_SECS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_CONFIG_WIFIPAF_MIN_ADVERTISING_TIMEOUT_SECS&#160;&#160;&#160;(3 * 60)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_CONFIG_WIFIPAF_MIN_ADVERTISING_TIMEOUT_SECS</p>
+<p>The min amount of time (in seconds) after which the chip platform will stop PAF advertisement </p>
+
+</div>
+</div>
+<a id="ad5c0fc760cda7314aa16b18b2466bf46" name="ad5c0fc760cda7314aa16b18b2466bf46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5c0fc760cda7314aa16b18b2466bf46">&#9670;&#160;</a></span>CHIP_DEVICE_ENABLE_PORT_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_ENABLE_PORT_PARAMS&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_ENABLE_PORT_PARAMS enables command-line parameters to set the port to use for POSIX example applications. </p>
+
+</div>
+</div>
+<a id="aede6c7864ef1316616a4d3a45b5f31eb" name="aede6c7864ef1316616a4d3a45b5f31eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede6c7864ef1316616a4d3a45b5f31eb">&#9670;&#160;</a></span>CHIP_DEVICE_LAYER_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DEVICE_LAYER_NONE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DEVICE_LAYER_NONE aims to turn off the device layer, for platforms that implement that in some alternate way. </p>
+
+</div>
+</div>
+<a id="aeec4592fff6f4ca3036a3de6b5e151d6" name="aeec4592fff6f4ca3036a3de6b5e151d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec4592fff6f4ca3036a3de6b5e151d6">&#9670;&#160;</a></span>CHIP_DISPATCH_EVENT_LONG_DISPATCH_TIME_WARNING_THRESHOLD_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_DISPATCH_EVENT_LONG_DISPATCH_TIME_WARNING_THRESHOLD_MS&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CHIP_DISPATCH_EVENT_LONG_DISPATCH_TIME_WARNING_THRESHOLD_MS</p>
+<p>Time threshold for events dispatching Set 0 to disable event dispatching time measurement </p>
+
+</div>
+</div>
+<a id="ad46d4ea1b4bc24086c966b399979cf54" name="ad46d4ea1b4bc24086c966b399979cf54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad46d4ea1b4bc24086c966b399979cf54">&#9670;&#160;</a></span>WIFI_START_CHECK_ATTEMPTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WIFI_START_CHECK_ATTEMPTS&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a315dcd4514f330dac44bd9366ae4dc34" name="a315dcd4514f330dac44bd9366ae4dc34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a315dcd4514f330dac44bd9366ae4dc34">&#9670;&#160;</a></span>WIFI_START_CHECK_TIME_USEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WIFI_START_CHECK_TIME_USEC&#160;&#160;&#160;100000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The device shall check every WIFI_START_CHECK_TIME_USEC whether Wi-Fi management has been fully initialized. If after WIFI_START_CHECK_ATTEMPTS Wi-Fi management still hasn't been initialized, the device configuration is reset, and device needs to be paired again. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

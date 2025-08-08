@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::app::AttributeAccessInterfaceRegistry クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1app.html">app</a></li><li class="navelem"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry.html">AttributeAccessInterfaceRegistry</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::app::AttributeAccessInterfaceRegistry クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="AttributeAccessInterfaceRegistry_8h_source.html">AttributeAccessInterfaceRegistry.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::app::AttributeAccessInterfaceRegistry 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1AttributeAccessInterfaceRegistry__coll__graph.png" border="0" usemap="#achip_1_1app_1_1AttributeAccessInterfaceRegistry_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1app_1_1AttributeAccessInterfaceRegistry_coll__map" id="achip_1_1app_1_1AttributeAccessInterfaceRegistry_coll__map">
+<area shape="rect" title=" " alt="" coords="1324,44,1515,84"/>
+<area shape="rect" href="classchip_1_1app_1_1AttributeAccessInterface.html" title=" " alt="" coords="903,44,1093,84"/>
+<area shape="poly" title=" " alt="" coords="1107,61,1324,61,1324,67,1107,67"/>
+<area shape="poly" title=" " alt="" coords="968,28,979,20,998,17,1015,19,1026,25,1031,34,1029,44,1024,43,1026,35,1022,29,1013,25,998,23,981,25,971,32"/>
+<area shape="rect" href="classchip_1_1Optional.html" title=" " alt="" coords="557,51,768,77"/>
+<area shape="poly" title=" " alt="" coords="782,61,902,61,902,67,782,67"/>
+<area shape="rect" href="classchip_1_1Optional_1_1ValueHolder.html" title=" " alt="" coords="261,44,412,84"/>
+<area shape="poly" title=" " alt="" coords="426,61,557,61,557,67,426,67"/>
+<area shape="rect" title=" " alt="" coords="5,22,212,106"/>
+<area shape="poly" title=" " alt="" coords="226,61,261,61,261,67,226,67"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a33d5636fa277d361bcaa894f39771780" id="r_a33d5636fa277d361bcaa894f39771780"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry.html#a33d5636fa277d361bcaa894f39771780">Register</a> (<a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> *attrOverride)</td></tr>
+<tr class="separator:a33d5636fa277d361bcaa894f39771780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a139985fb8c2a7f25a9cb55cf28be6f64" id="r_a139985fb8c2a7f25a9cb55cf28be6f64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry.html#a139985fb8c2a7f25a9cb55cf28be6f64">Unregister</a> (<a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> *attrOverride)</td></tr>
+<tr class="separator:a139985fb8c2a7f25a9cb55cf28be6f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac62713ef2296286c750539f1e0ef93a" id="r_aac62713ef2296286c750539f1e0ef93a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry.html#aac62713ef2296286c750539f1e0ef93a">UnregisterAllForEndpoint</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> endpointId)</td></tr>
+<tr class="separator:aac62713ef2296286c750539f1e0ef93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad445046518514264ddd02a0da73660e9" id="r_ad445046518514264ddd02a0da73660e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry.html#ad445046518514264ddd02a0da73660e9">Get</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId)</td></tr>
+<tr class="separator:ad445046518514264ddd02a0da73660e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa4e3edad3303139bbb176dddc9cdbd9e" id="r_aa4e3edad3303139bbb176dddc9cdbd9e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry.html">AttributeAccessInterfaceRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry.html#aa4e3edad3303139bbb176dddc9cdbd9e">Instance</a> ()</td></tr>
+<tr class="separator:aa4e3edad3303139bbb176dddc9cdbd9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ad4d61ab7c4016812cb983a1dd0d4fc60" id="r_ad4d61ab7c4016812cb983a1dd0d4fc60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry.html#ad4d61ab7c4016812cb983a1dd0d4fc60">mAttributeAccessOverrides</a> = nullptr</td></tr>
+<tr class="separator:ad4d61ab7c4016812cb983a1dd0d4fc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71c83cdd2e528bdec36222d0794207e" id="r_ae71c83cdd2e528bdec36222d0794207e"><td class="memItemLeft" align="right" valign="top">AttributeAccessInterfaceCache&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry.html#ae71c83cdd2e528bdec36222d0794207e">mAttributeAccessInterfaceCache</a></td></tr>
+<tr class="separator:ae71c83cdd2e528bdec36222d0794207e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ad445046518514264ddd02a0da73660e9" name="ad445046518514264ddd02a0da73660e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad445046518514264ddd02a0da73660e9">&#9670;&#160;</a></span>Get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> * chip::app::AttributeAccessInterfaceRegistry::Get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td>
+          <td class="paramname"><em>aEndpointId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a>&#160;</td>
+          <td class="paramname"><em>aClusterId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the registered attribute access override. nullptr when attribute access override is not found. </p>
+
+</div>
+</div>
+<a id="aa4e3edad3303139bbb176dddc9cdbd9e" name="aa4e3edad3303139bbb176dddc9cdbd9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4e3edad3303139bbb176dddc9cdbd9e">&#9670;&#160;</a></span>Instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry.html">AttributeAccessInterfaceRegistry</a> &amp; chip::app::AttributeAccessInterfaceRegistry::Instance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1AttributeAccessInterfaceRegistry_aa4e3edad3303139bbb176dddc9cdbd9e_icgraph.png" border="0" usemap="#aclasschip_1_1app_1_1AttributeAccessInterfaceRegistry_aa4e3edad3303139bbb176dddc9cdbd9e_icgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1AttributeAccessInterfaceRegistry_aa4e3edad3303139bbb176dddc9cdbd9e_icgraph" id="aclasschip_1_1app_1_1AttributeAccessInterfaceRegistry_aa4e3edad3303139bbb176dddc9cdbd9e_icgraph">
+<area shape="rect" title=" " alt="" coords="495,5,691,45"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,13,447,38"/>
+<area shape="poly" title=" " alt="" coords="481,28,447,28,447,23,481,23"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,13,283,38"/>
+<area shape="poly" title=" " alt="" coords="317,28,283,28,283,23,317,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="95,28,60,28,60,23,95,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a33d5636fa277d361bcaa894f39771780" name="a33d5636fa277d361bcaa894f39771780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d5636fa277d361bcaa894f39771780">&#9670;&#160;</a></span>Register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::AttributeAccessInterfaceRegistry::Register </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> *&#160;</td>
+          <td class="paramname"><em>attrOverride</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Register an attribute access override. It will remain registered until the endpoint it's registered for is disabled (or until shutdown if it's registered for all endpoints) or until it is explicitly unregistered. Registration will fail if there is an already-registered override for the same set of attributes.</p>
+<dl class="section return"><dt>戻り値</dt><dd>false if there is an existing override that the new one would conflict with. In this case the override is not registered. </dd>
+<dd>
+true if registration was successful. </dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1AttributeAccessInterfaceRegistry_a33d5636fa277d361bcaa894f39771780_icgraph.png" border="0" usemap="#aclasschip_1_1app_1_1AttributeAccessInterfaceRegistry_a33d5636fa277d361bcaa894f39771780_icgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1AttributeAccessInterfaceRegistry_a33d5636fa277d361bcaa894f39771780_icgraph" id="aclasschip_1_1app_1_1AttributeAccessInterfaceRegistry_a33d5636fa277d361bcaa894f39771780_icgraph">
+<area shape="rect" title=" " alt="" coords="495,5,689,45"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,13,447,38"/>
+<area shape="poly" title=" " alt="" coords="481,28,447,28,447,23,481,23"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,13,283,38"/>
+<area shape="poly" title=" " alt="" coords="317,28,283,28,283,23,317,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="95,28,60,28,60,23,95,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a139985fb8c2a7f25a9cb55cf28be6f64" name="a139985fb8c2a7f25a9cb55cf28be6f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a139985fb8c2a7f25a9cb55cf28be6f64">&#9670;&#160;</a></span>Unregister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::AttributeAccessInterfaceRegistry::Unregister </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> *&#160;</td>
+          <td class="paramname"><em>attrOverride</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unregister an attribute access override (for example if the object implementing <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> is being destroyed). </p>
+
+</div>
+</div>
+<a id="aac62713ef2296286c750539f1e0ef93a" name="aac62713ef2296286c750539f1e0ef93a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac62713ef2296286c750539f1e0ef93a">&#9670;&#160;</a></span>UnregisterAllForEndpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::AttributeAccessInterfaceRegistry::UnregisterAllForEndpoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td>
+          <td class="paramname"><em>endpointId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unregister all attribute access interfaces that match this given endpoint. </p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ae71c83cdd2e528bdec36222d0794207e" name="ae71c83cdd2e528bdec36222d0794207e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71c83cdd2e528bdec36222d0794207e">&#9670;&#160;</a></span>mAttributeAccessInterfaceCache</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AttributeAccessInterfaceCache chip::app::AttributeAccessInterfaceRegistry::mAttributeAccessInterfaceCache</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4d61ab7c4016812cb983a1dd0d4fc60" name="ad4d61ab7c4016812cb983a1dd0d4fc60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4d61ab7c4016812cb983a1dd0d4fc60">&#9670;&#160;</a></span>mAttributeAccessOverrides</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a>* chip::app::AttributeAccessInterfaceRegistry::mAttributeAccessOverrides = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/app/<a class="el" href="AttributeAccessInterfaceRegistry_8h_source.html">AttributeAccessInterfaceRegistry.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

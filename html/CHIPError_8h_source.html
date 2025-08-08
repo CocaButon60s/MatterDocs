@@ -1,0 +1,938 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/core/CHIPError.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_36b9cabaeea5561ffd6db568f8d0cd67.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">CHIPError.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="CHIPError_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2020-2022 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *    Copyright (c) 2013-2017 Nest Labs, Inc.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;inttypes.h&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPConfig_8h.html">lib/core/CHIPConfig.h</a>&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;lib/support/TypeTraits.h&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_SOURCE &amp;&amp; CHIP_CONFIG_ERROR_STD_SOURCE_LOCATION</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;source_location&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="};">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html">   54</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1ChipError.html">ChipError</a></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">   58</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> = uint32_t;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">   61</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">ValueType</a> = <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ab9d494f3dec7fa97acc652b7427a330a">   64</a></span><span class="preprocessor">#define CHIP_ERROR_INTEGER_FORMAT PRIx32</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_FORMAT_AS_STRING</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">using </span><a class="code hl_typedef" href="classchip_1_1ChipError.html#ac3384f4135b96b9ea5a81d14967e305a">FormatType</a> = <span class="keyword">const</span> <span class="keywordtype">char</span> *;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#define CHIP_ERROR_FORMAT &quot;s&quot;</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#else </span><span class="comment">// CHIP_CONFIG_ERROR_FORMAT_AS_STRING</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#ac3384f4135b96b9ea5a81d14967e305a">   76</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classchip_1_1ChipError.html#ac3384f4135b96b9ea5a81d14967e305a">FormatType</a> = <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#adb3b345d518d3ee539f0ac7bfac802f5">   78</a></span><span class="preprocessor">#define CHIP_ERROR_FORMAT CHIP_ERROR_INTEGER_FORMAT</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_CONFIG_ERROR_FORMAT_AS_STRING</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="};">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">   89</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a> : uint8_t</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da8635fb4ddf108701e76114d57e2753f5">kSDK</a>        = 0x0, </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01dab5afb310527a3ec216c7e3782104872d">kOS</a>         = 0x1, </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01daf685c0d60ac42661a3cad1fa8f76ecf3">kPOSIX</a>      = 0x2, </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da90af59bb4a58aaf6140101fb5d09d8d8">kLwIP</a>       = 0x3, </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da048d24cf2be34000904b23eb2a249fc0">kOpenThread</a> = 0x4, </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01daaa0c092e7769e59e3425838a5d9409dc">kPlatform</a>   = 0x5, </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da7cab1c8d19f96808795ed64395ae09bb">kLastRange</a>  = <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01daaa0c092e7769e59e3425838a5d9409dc">kPlatform</a>,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    };</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="};">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">  103</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a> : uint8_t</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01ade8900e4c323b0c667bfd5ca5ecf9e5c">kCore</a>            = 0, </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01ae6cbf2ab03f7c67d3d0be39178529a00">kInet</a>            = 1, </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a040394711ad65e20323fe0114e507103">kDevice</a>          = 2, </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a355aaee592c8572685a144827b675db1">kASN1</a>            = 3, </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a94919bca50489b7b7d62eea68ab00899">kBLE</a>             = 4, </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a063bd39fa660e0d7ecaf6f826d7b1f77">kIMGlobalStatus</a>  = 5, </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01afdd2d7ed9584c10c043737a6b4e2778b">kIMClusterStatus</a> = 6, </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <a class="code hl_enumvalue" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a1b6ec7b97ae011119afe1762e70c992a">kApplication</a>     = 7, </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    };</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a517a8fc6834a0f9441feb7497eb7f73e">  115</a></span>    <a class="code hl_function" href="classchip_1_1ChipError.html#a517a8fc6834a0f9441feb7497eb7f73e">ChipError</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_SOURCE &amp;&amp; CHIP_CONFIG_ERROR_STD_SOURCE_LOCATION</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">#define CHIP_ERROR_SOURCE_LOCATION_NULL , std::source_location()</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#define CHIP_ERROR_SOURCE_LOCATION , std::source_location::current()</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#elif CHIP_CONFIG_ERROR_SOURCE</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#define CHIP_ERROR_SOURCE_LOCATION_NULL , nullptr, 0</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#define CHIP_ERROR_SOURCE_LOCATION , __FILE__, __LINE__</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#afc4e94e4e678bee40abbaa5a5b8f75c6">  127</a></span><span class="preprocessor">#define CHIP_ERROR_SOURCE_LOCATION_NULL</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a09d88b021b146d4fbe0bf1f2f1745c2e">  128</a></span><span class="preprocessor">#define CHIP_ERROR_SOURCE_LOCATION</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_SOURCE &amp;&amp; CHIP_CONFIG_ERROR_STD_SOURCE_LOCATION</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a517a8fc6834a0f9441feb7497eb7f73e">ChipError</a>(<a class="code hl_enumeration" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a> range, <a class="code hl_typedef" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">ValueType</a> value, std::source_location location = std::source_location()) :</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>(<a class="code hl_function" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">MakeInteger</a>(range, (value &amp; <a class="code hl_function" href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0">MakeMask</a>(0, <a class="code hl_variable" href="classchip_1_1ChipError.html#ab29e35aa46a8bfca3cc210b5e86bb5fc">kValueLength</a>)))), mSourceLocation(location)</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    {}</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="preprocessor">#elif CHIP_CONFIG_ERROR_SOURCE</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a517a8fc6834a0f9441feb7497eb7f73e">ChipError</a>(<a class="code hl_enumeration" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a> range, <a class="code hl_typedef" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">ValueType</a> value, <span class="keyword">const</span> <span class="keywordtype">char</span> * file = <span class="keyword">nullptr</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> line = 0) :</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>(<a class="code hl_function" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">MakeInteger</a>(range, (value &amp; <a class="code hl_function" href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0">MakeMask</a>(0, <a class="code hl_variable" href="classchip_1_1ChipError.html#ab29e35aa46a8bfca3cc210b5e86bb5fc">kValueLength</a>)))), mLine(line), mFile(file)</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    {}</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a648cde69f812464525fe527490f2c510">  146</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a648cde69f812464525fe527490f2c510">ChipError</a>(<a class="code hl_enumeration" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a> range, <a class="code hl_typedef" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">ValueType</a> value) : <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>(<a class="code hl_function" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">MakeInteger</a>(range, (value &amp; <a class="code hl_function" href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0">MakeMask</a>(0, <a class="code hl_variable" href="classchip_1_1ChipError.html#ab29e35aa46a8bfca3cc210b5e86bb5fc">kValueLength</a>)))) {}</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a9bb2e2c440fa48c2ca8d8300269d33a6">  152</a></span><span class="preprocessor">#define CHIP_GENERIC_ERROR(range, value) ::chip::ChipError(range, value CHIP_ERROR_SOURCE_LOCATION)</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_SOURCE &amp;&amp; CHIP_CONFIG_ERROR_STD_SOURCE_LOCATION</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a517a8fc6834a0f9441feb7497eb7f73e">ChipError</a>(<a class="code hl_enumeration" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a> part, uint8_t code, std::source_location location = std::source_location()) :</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>(<a class="code hl_function" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">MakeInteger</a>(part, code)), mSourceLocation(location)</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    {}</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="preprocessor">#elif CHIP_CONFIG_ERROR_SOURCE</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a517a8fc6834a0f9441feb7497eb7f73e">ChipError</a>(<a class="code hl_enumeration" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a> part, uint8_t code, <span class="keyword">const</span> <span class="keywordtype">char</span> * file = <span class="keyword">nullptr</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> line = 0) :</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>(<a class="code hl_function" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">MakeInteger</a>(part, code)), mLine(line), mFile(file)</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    {}</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#ae614bf5e83f7a005df752973083a804b">  169</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1ChipError.html#ae614bf5e83f7a005df752973083a804b">ChipError</a>(<a class="code hl_enumeration" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a> part, uint8_t code) : <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>(<a class="code hl_function" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">MakeInteger</a>(part, code)) {}</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="foldopen" id="foldopen00177" data-start="" data-end="">
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a1f378cbd25d9a8ce8e9c9de8cb00a222">  177</a></span><span class="preprocessor">#define CHIP_SDK_ERROR(part, code)                                                                                                 \</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="preprocessor">    (::chip::ChipError(::chip::ChipError::SdkErrorConstant&lt;(part), (code)&gt;::value CHIP_ERROR_SOURCE_LOCATION))</span></div>
+</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_SOURCE &amp;&amp; CHIP_CONFIG_ERROR_STD_SOURCE_LOCATION</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keyword">explicit</span> <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a517a8fc6834a0f9441feb7497eb7f73e">ChipError</a>(<a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> error, std::source_location location = std::source_location()) :</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>(error), mSourceLocation(location)</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    {}</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">#elif CHIP_CONFIG_ERROR_SOURCE</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keyword">explicit</span> <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a517a8fc6834a0f9441feb7497eb7f73e">ChipError</a>(<a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> error, <span class="keyword">const</span> <span class="keywordtype">char</span> * file = <span class="keyword">nullptr</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> line = 0) :</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>(error), mLine(line), mFile(file)</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    {}</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#aa847c6253f2a854ccac2e7ccff3e685f">  195</a></span>    <span class="keyword">explicit</span> <span class="keyword">constexpr</span> <a class="code hl_function" href="classchip_1_1ChipError.html#aa847c6253f2a854ccac2e7ccff3e685f">ChipError</a>(<a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> error) : <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>(error) {}</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a7f681971fc9488c4ef9b251c470f4543">  205</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a7f681971fc9488c4ef9b251c470f4543">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1ChipError.html">ChipError</a> &amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a> == other.<a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>; }</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#abd3c79221e490945cd5bbf050b5aa74f">  206</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1ChipError.html#abd3c79221e490945cd5bbf050b5aa74f">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1ChipError.html">ChipError</a> &amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a> != other.<a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>; }</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#ae42a8f9e612807fcdb4950df3a158f78">  211</a></span>    <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> <a class="code hl_function" href="classchip_1_1ChipError.html#ae42a8f9e612807fcdb4950df3a158f78">AsInteger</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>; }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">     * IsSuccess() is intended to support macros that can take either a ChipError or an integer error code.</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">     * The latter follows the C convention that a non-zero integer indicates an error.</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">     * @note</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">     *  Normal code should use `status == CHIP_NO_ERROR` rather than `IsSuccess(status)`.</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a87972cb4a370f693e7bdddde0ac6ad81">  220</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a87972cb4a370f693e7bdddde0ac6ad81">IsSuccess</a>(<a class="code hl_class" href="classchip_1_1ChipError.html">ChipError</a> error) { <span class="keywordflow">return</span> error.<a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a> == 0; }</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a10c869727927ae905b546a8e092b597a">  221</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a10c869727927ae905b546a8e092b597a">IsSuccess</a>(<a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> error) { <span class="keywordflow">return</span> error == 0; }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_FORMAT_AS_STRING</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <a class="code hl_typedef" href="classchip_1_1ChipError.html#ac3384f4135b96b9ea5a81d14967e305a">FormatType</a> <a class="code hl_function" href="classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61">Format</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1ChipError.html#ab553ddc0146892e8b529ecfdac1140e1">AsString</a>(); }</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="preprocessor">#else  </span><span class="comment">// CHIP_CONFIG_ERROR_FORMAT_AS_STRING</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61">  235</a></span>    <a class="code hl_typedef" href="classchip_1_1ChipError.html#ac3384f4135b96b9ea5a81d14967e305a">FormatType</a> <a class="code hl_function" href="classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61">Format</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>; }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_CONFIG_ERROR_FORMAT_AS_STRING</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="foldopen" id="foldopen00244" data-start="{" data-end="}">
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#ab553ddc0146892e8b529ecfdac1140e1">  244</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code hl_function" href="classchip_1_1ChipError.html#ab553ddc0146892e8b529ecfdac1140e1">AsString</a>(<span class="keywordtype">bool</span> withSourceLocation = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * ErrorStr(<a class="code hl_class" href="classchip_1_1ChipError.html">ChipError</a>, <span class="keywordtype">bool</span>);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keywordflow">return</span> ErrorStr(*<span class="keyword">this</span>, withSourceLocation);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    }</div>
+</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="foldopen" id="foldopen00253" data-start="{" data-end="}">
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a36b5f98d2d117be65be2a1779771029a">  253</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a36b5f98d2d117be65be2a1779771029a">IsRange</a>(<a class="code hl_enumeration" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a> range)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a> &amp; <a class="code hl_function" href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0">MakeMask</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#ac3453beeedb11e576067be7d3c8d6dc3">kRangeStart</a>, <a class="code hl_variable" href="classchip_1_1ChipError.html#ab46dbe68b03cbd6d1b8b8fa7fbdf27f2">kRangeLength</a>)) == <a class="code hl_function" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59">MakeField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#ac3453beeedb11e576067be7d3c8d6dc3">kRangeStart</a>, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a><span class="keyword">&gt;</span>(range));</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    }</div>
+</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a6342d6f7fd361ab3f8b49d8b8dee1d39">  261</a></span>    <span class="keyword">constexpr</span> <a class="code hl_enumeration" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a> <a class="code hl_function" href="classchip_1_1ChipError.html#a6342d6f7fd361ab3f8b49d8b8dee1d39">GetRange</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="classchip_1_1ChipError.html#a7c6b10e4205be670f328b2582bbcef64">GetField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#ac3453beeedb11e576067be7d3c8d6dc3">kRangeStart</a>, <a class="code hl_variable" href="classchip_1_1ChipError.html#ab46dbe68b03cbd6d1b8b8fa7fbdf27f2">kRangeLength</a>, <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>)); }</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a04534f71ce26546ed69848e2963ddcd1">  266</a></span>    <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">ValueType</a> <a class="code hl_function" href="classchip_1_1ChipError.html#a04534f71ce26546ed69848e2963ddcd1">GetValue</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a7c6b10e4205be670f328b2582bbcef64">GetField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#a01fc73cc958f21d700dde79e1cdadfea">kValueStart</a>, <a class="code hl_variable" href="classchip_1_1ChipError.html#ab29e35aa46a8bfca3cc210b5e86bb5fc">kValueLength</a>, <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>); }</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00272" data-start="{" data-end="}">
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#ab88d3be92773ce237bcc71e78650f740">  272</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1ChipError.html#ab88d3be92773ce237bcc71e78650f740">CanEncapsulate</a>()</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    {</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keywordflow">return</span> std::numeric_limits&lt;typename std::make_unsigned_t&lt;T&gt;&gt;::digits &lt;= <a class="code hl_variable" href="classchip_1_1ChipError.html#ab29e35aa46a8bfca3cc210b5e86bb5fc">kValueLength</a>;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    }</div>
+</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00281" data-start="{" data-end="}">
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a5139a684a5107a10c7aab2c82d155976">  281</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a5139a684a5107a10c7aab2c82d155976">CanEncapsulate</a>(T value)</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    {</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        <span class="keywordflow">return</span> CanEncapsulate&lt;T&gt;() || <a class="code hl_function" href="classchip_1_1ChipError.html#a98d5da3c7d5abeb85eee39213dc24f56">FitsInField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#ab29e35aa46a8bfca3cc210b5e86bb5fc">kValueLength</a>, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">ValueType</a><span class="keyword">&gt;</span>(value));</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    }</div>
+</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
+<div class="foldopen" id="foldopen00289" data-start="{" data-end="}">
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a982b4916c50dc5b00982da0547aa3614">  289</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a982b4916c50dc5b00982da0547aa3614">IsPart</a>(<a class="code hl_enumeration" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a> part)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a> &amp; (<a class="code hl_function" href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0">MakeMask</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#ac3453beeedb11e576067be7d3c8d6dc3">kRangeStart</a>, <a class="code hl_variable" href="classchip_1_1ChipError.html#ab46dbe68b03cbd6d1b8b8fa7fbdf27f2">kRangeLength</a>) | <a class="code hl_function" href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0">MakeMask</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#a481a30245293d3e0a9a53f18c33dd8fe">kSdkPartStart</a>, <a class="code hl_variable" href="classchip_1_1ChipError.html#a9ee354adbac5c52b17cd8cf60b01d5b7">kSdkPartLength</a>))) ==</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            (<a class="code hl_function" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59">MakeField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#ac3453beeedb11e576067be7d3c8d6dc3">kRangeStart</a>, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a><span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da8635fb4ddf108701e76114d57e2753f5">Range::kSDK</a>)) |</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>             <a class="code hl_function" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59">MakeField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#a481a30245293d3e0a9a53f18c33dd8fe">kSdkPartStart</a>, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a><span class="keyword">&gt;</span>(part)));</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    }</div>
+</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a6e30096a2869b2fb53cf24c33586cf82">  299</a></span>    <span class="keyword">constexpr</span> uint8_t <a class="code hl_function" href="classchip_1_1ChipError.html#a6e30096a2869b2fb53cf24c33586cf82">GetSdkCode</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="classchip_1_1ChipError.html#a7c6b10e4205be670f328b2582bbcef64">GetField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#af3dba9c2e85ede61b1b86e928a3cb714">kSdkCodeStart</a>, <a class="code hl_variable" href="classchip_1_1ChipError.html#ae7e2304309f1dd262552adf0d327b900">kSdkCodeLength</a>, <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>)); }</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="foldopen" id="foldopen00306" data-start="{" data-end="}">
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a886b316b1a8601a847d107027e83ae08">  306</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a886b316b1a8601a847d107027e83ae08">IsIMStatus</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        <span class="comment">// Open question: should CHIP_NO_ERROR be treated as an IM status for</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        <span class="comment">// purposes of this test?</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a982b4916c50dc5b00982da0547aa3614">IsPart</a>(<a class="code hl_enumvalue" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a063bd39fa660e0d7ecaf6f826d7b1f77">SdkPart::kIMGlobalStatus</a>) || <a class="code hl_function" href="classchip_1_1ChipError.html#a982b4916c50dc5b00982da0547aa3614">IsPart</a>(<a class="code hl_enumvalue" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01afdd2d7ed9584c10c043737a6b4e2778b">SdkPart::kIMClusterStatus</a>);</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    }</div>
+</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_SOURCE</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * GetFile()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_STD_SOURCE_LOCATION</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        <span class="keywordflow">return</span> mSourceLocation.file_name();</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        <span class="keywordflow">return</span> mFile;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    }</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetLine()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_STD_SOURCE_LOCATION</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        <span class="keywordflow">return</span> mSourceLocation.line();</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <span class="keywordflow">return</span> mLine;</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    }</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_STD_SOURCE_LOCATION</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="keyword">const</span> std::source_location &amp; GetSourceLocation() { <span class="keywordflow">return</span> mSourceLocation; }</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_CONFIG_ERROR_STD_SOURCE_LOCATION</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_CONFIG_ERROR_SOURCE</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="comment">     * The representation of a CHIP_ERROR is structured so that SDK error code constants are small, in order to improve code</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="comment">     * density on embedded builds. Arm 32, Xtensa, and RISC-V can all handle 11-bit values in a move-immediate instruction.</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="comment">     * Further, SdkPart::kCore is 0 so that the most common errors fit in 8 bits for additional density on some processors.</span></div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="comment">     *  31    28      24      20      16      12       8       4       0    Bit</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="comment">     *  |       |       |       |       |       |       |       |       |</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="comment">     *  |     range     |                     value                     |</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="comment">     *  |    kSdk==0    |       0               |0| part|    code       |   SDK error</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="comment">     *  |    01 - FF    |          encapsulated error code              |   Encapsulated error</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#ac3453beeedb11e576067be7d3c8d6dc3">  366</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classchip_1_1ChipError.html#ac3453beeedb11e576067be7d3c8d6dc3">kRangeStart</a>  = 24;</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#ab46dbe68b03cbd6d1b8b8fa7fbdf27f2">  367</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classchip_1_1ChipError.html#ab46dbe68b03cbd6d1b8b8fa7fbdf27f2">kRangeLength</a> = 8;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a01fc73cc958f21d700dde79e1cdadfea">  368</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classchip_1_1ChipError.html#a01fc73cc958f21d700dde79e1cdadfea">kValueStart</a>  = 0;</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#ab29e35aa46a8bfca3cc210b5e86bb5fc">  369</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classchip_1_1ChipError.html#ab29e35aa46a8bfca3cc210b5e86bb5fc">kValueLength</a> = 24;</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a481a30245293d3e0a9a53f18c33dd8fe">  371</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classchip_1_1ChipError.html#a481a30245293d3e0a9a53f18c33dd8fe">kSdkPartStart</a>  = 8;</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a9ee354adbac5c52b17cd8cf60b01d5b7">  372</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classchip_1_1ChipError.html#a9ee354adbac5c52b17cd8cf60b01d5b7">kSdkPartLength</a> = 3;</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#af3dba9c2e85ede61b1b86e928a3cb714">  373</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classchip_1_1ChipError.html#af3dba9c2e85ede61b1b86e928a3cb714">kSdkCodeStart</a>  = 0;</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#ae7e2304309f1dd262552adf0d327b900">  374</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classchip_1_1ChipError.html#ae7e2304309f1dd262552adf0d327b900">kSdkCodeLength</a> = 8;</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="foldopen" id="foldopen00376" data-start="{" data-end="}">
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a7c6b10e4205be670f328b2582bbcef64">  376</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> <a class="code hl_function" href="classchip_1_1ChipError.html#a7c6b10e4205be670f328b2582bbcef64">GetField</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> start, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> length, <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> value)</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    {</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>        <span class="keywordflow">return</span> (value &gt;&gt; start) &amp; ((1u &lt;&lt; length) - 1);</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    }</div>
+</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0">  380</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> <a class="code hl_function" href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0">MakeMask</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> start, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> length) { <span class="keywordflow">return</span> ((1u &lt;&lt; length) - 1) &lt;&lt; start; }</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59">  381</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> <a class="code hl_function" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59">MakeField</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> start, <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> value) { <span class="keywordflow">return</span> value &lt;&lt; start; }</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a98d5da3c7d5abeb85eee39213dc24f56">  382</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a98d5da3c7d5abeb85eee39213dc24f56">FitsInField</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> length, <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> value) { <span class="keywordflow">return</span> value &lt; (1u &lt;&lt; length); }</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
+<div class="foldopen" id="foldopen00384" data-start="{" data-end="}">
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">  384</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> <a class="code hl_function" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">MakeInteger</a>(<a class="code hl_enumeration" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">Range</a> range, <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> value)</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    {</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59">MakeField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#ac3453beeedb11e576067be7d3c8d6dc3">kRangeStart</a>, to_underlying(range)) | <a class="code hl_function" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59">MakeField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#a01fc73cc958f21d700dde79e1cdadfea">kValueStart</a>, value);</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00388" data-start="{" data-end="}">
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#aec722d82e8f95bfb05bfb079dd7d6c07">  388</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> <a class="code hl_function" href="classchip_1_1ChipError.html#aec722d82e8f95bfb05bfb079dd7d6c07">MakeInteger</a>(<a class="code hl_enumeration" href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">SdkPart</a> part, uint8_t code)</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    {</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">MakeInteger</a>(<a class="code hl_enumvalue" href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da8635fb4ddf108701e76114d57e2753f5">Range::kSDK</a>, <a class="code hl_function" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59">MakeField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#a481a30245293d3e0a9a53f18c33dd8fe">kSdkPartStart</a>, to_underlying(part)) | <a class="code hl_function" href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59">MakeField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#af3dba9c2e85ede61b1b86e928a3cb714">kSdkCodeStart</a>, code));</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    }</div>
+</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> START, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> LENGTH&gt;</div>
+<div class="foldopen" id="foldopen00393" data-start="{" data-end="};">
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno"><a class="line" href="structchip_1_1ChipError_1_1MaskConstant.html">  393</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structchip_1_1ChipError_1_1MaskConstant.html">MaskConstant</a></div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    {</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno"><a class="line" href="structchip_1_1ChipError_1_1MaskConstant.html#a6184ec438370357f239877de65e63071">  395</a></span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> <a class="code hl_variable" href="structchip_1_1ChipError_1_1MaskConstant.html#a6184ec438370357f239877de65e63071">value</a> = ((1u &lt;&lt; LENGTH) - 1) &lt;&lt; START;</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    };</div>
+</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    <span class="comment">// Assert that Range and Value fields fit in StorageType and don&#39;t overlap.</span></div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <span class="keyword">static_assert</span>(<a class="code hl_variable" href="classchip_1_1ChipError.html#ac3453beeedb11e576067be7d3c8d6dc3">kRangeStart</a> + kRangeLength &lt;= std::numeric_limits&lt;StorageType&gt;::digits, <span class="stringliteral">&quot;Range does not fit in StorageType&quot;</span>);</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    <span class="keyword">static_assert</span>(<a class="code hl_variable" href="classchip_1_1ChipError.html#a01fc73cc958f21d700dde79e1cdadfea">kValueStart</a> + kValueLength &lt;= std::numeric_limits&lt;StorageType&gt;::digits, <span class="stringliteral">&quot;Value does not fit in StorageType&quot;</span>);</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    <span class="keyword">static_assert</span>((<a class="code hl_struct" href="structchip_1_1ChipError_1_1MaskConstant.html">MaskConstant&lt;kRangeStart, kRangeLength&gt;::value</a> &amp; <a class="code hl_struct" href="structchip_1_1ChipError_1_1MaskConstant.html">MaskConstant&lt;kValueStart, kValueLength&gt;::value</a>) == 0,</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>                  <span class="stringliteral">&quot;Range and Value overlap&quot;</span>);</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <span class="comment">// Assert that SDK Part and Code fields fit in SdkCode field and don&#39;t overlap.</span></div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    <span class="keyword">static_assert</span>(<a class="code hl_variable" href="classchip_1_1ChipError.html#a481a30245293d3e0a9a53f18c33dd8fe">kSdkPartStart</a> + <a class="code hl_variable" href="classchip_1_1ChipError.html#a9ee354adbac5c52b17cd8cf60b01d5b7">kSdkPartLength</a> &lt;= <a class="code hl_variable" href="classchip_1_1ChipError.html#ab29e35aa46a8bfca3cc210b5e86bb5fc">kValueLength</a>, <span class="stringliteral">&quot;SdkPart does not fit in Value&quot;</span>);</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    <span class="keyword">static_assert</span>(<a class="code hl_variable" href="classchip_1_1ChipError.html#af3dba9c2e85ede61b1b86e928a3cb714">kSdkCodeStart</a> + <a class="code hl_variable" href="classchip_1_1ChipError.html#ae7e2304309f1dd262552adf0d327b900">kSdkCodeLength</a> &lt;= <a class="code hl_variable" href="classchip_1_1ChipError.html#ab29e35aa46a8bfca3cc210b5e86bb5fc">kValueLength</a>, <span class="stringliteral">&quot;SdkCode does not fit in Value&quot;</span>);</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    <span class="keyword">static_assert</span>((<a class="code hl_struct" href="structchip_1_1ChipError_1_1MaskConstant.html">MaskConstant&lt;kSdkPartStart, kSdkPartLength&gt;::value</a> &amp; <a class="code hl_struct" href="structchip_1_1ChipError_1_1MaskConstant.html">MaskConstant&lt;kSdkCodeStart, kSdkCodeLength&gt;::value</a>) == 0,</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>                  <span class="stringliteral">&quot;SdkPart and SdkCode overlap&quot;</span>);</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span> </div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    <span class="comment">// Assert that Value fits in ValueType.</span></div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    <span class="keyword">static_assert</span>(<a class="code hl_variable" href="classchip_1_1ChipError.html#a01fc73cc958f21d700dde79e1cdadfea">kValueStart</a> + kValueLength &lt;= std::numeric_limits&lt;ValueType&gt;::digits, <span class="stringliteral">&quot;Value does not fit in ValueType&quot;</span>);</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno"><a class="line" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">  413</a></span>    <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> <a class="code hl_variable" href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">mError</a>;</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_SOURCE &amp;&amp; CHIP_CONFIG_ERROR_STD_SOURCE_LOCATION</span></div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    std::source_location mSourceLocation;</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="preprocessor">#elif CHIP_CONFIG_ERROR_SOURCE</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mLine;</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * mFile;</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    <span class="keyword">template</span> &lt;SdkPart PART, StorageType SCODE&gt;</div>
+<div class="foldopen" id="foldopen00429" data-start="{" data-end="};">
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno"><a class="line" href="structchip_1_1ChipError_1_1SdkErrorConstant.html">  429</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structchip_1_1ChipError_1_1SdkErrorConstant.html">SdkErrorConstant</a></div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    {</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>        <span class="keyword">static_assert</span>(<a class="code hl_function" href="classchip_1_1ChipError.html#a98d5da3c7d5abeb85eee39213dc24f56">FitsInField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#a9ee354adbac5c52b17cd8cf60b01d5b7">kSdkPartLength</a>, to_underlying(PART)), <span class="stringliteral">&quot;part is too large&quot;</span>);</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>        <span class="keyword">static_assert</span>(<a class="code hl_function" href="classchip_1_1ChipError.html#a98d5da3c7d5abeb85eee39213dc24f56">FitsInField</a>(<a class="code hl_variable" href="classchip_1_1ChipError.html#ae7e2304309f1dd262552adf0d327b900">kSdkCodeLength</a>, SCODE), <span class="stringliteral">&quot;code is too large&quot;</span>);</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>        <span class="keyword">static_assert</span>(<a class="code hl_function" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">MakeInteger</a>(PART, SCODE) != 0, <span class="stringliteral">&quot;value is zero&quot;</span>);</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno"><a class="line" href="structchip_1_1ChipError_1_1SdkErrorConstant.html#affb6e0c2629b5be3694b63d99466c5d7">  434</a></span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">StorageType</a> <a class="code hl_variable" href="structchip_1_1ChipError_1_1SdkErrorConstant.html#affb6e0c2629b5be3694b63d99466c5d7">value</a> = <a class="code hl_function" href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">MakeInteger</a>(PART, SCODE);</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    };</div>
+</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>};</div>
+</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span> </div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>} <span class="comment">// namespace chip</span></div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span> </div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">  443</a></span><span class="keyword">using </span><a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> = <a class="code hl_class" href="classchip_1_1ChipError.html">::chip::ChipError</a>;</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span> </div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a333a1e982e6271afd59f46579c22da9a">  450</a></span><span class="preprocessor">#define CHIP_APPLICATION_ERROR(e) CHIP_SDK_ERROR(::chip::ChipError::SdkPart::kApplication, (e))</span></div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span> </div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#af90b634ff12e7540e7a50dc1727942dc">  452</a></span><span class="preprocessor">#define CHIP_CORE_ERROR(e) CHIP_SDK_ERROR(::chip::ChipError::SdkPart::kCore, (e))</span></div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span> </div>
+<div class="foldopen" id="foldopen00454" data-start="" data-end="">
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ad39e80391c7e311d8acb7b2376e8248a">  454</a></span><span class="preprocessor">#define CHIP_IM_GLOBAL_STATUS(type)                                                                                                \</span></div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span><span class="preprocessor">    CHIP_SDK_ERROR(::chip::ChipError::SdkPart::kIMGlobalStatus,                                                                    \</span></div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span><span class="preprocessor">                   ::chip::to_underlying(::chip::Protocols::InteractionModel::Status::type))</span></div>
+</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span> </div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span><span class="comment">// Defines a runtime-value for a chip-error that contains a global IM Status.</span></div>
+<div class="foldopen" id="foldopen00459" data-start="" data-end="">
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a0b999870f8a87ba6060e41875eec1430">  459</a></span><span class="preprocessor">#define CHIP_ERROR_IM_GLOBAL_STATUS_VALUE(status_value)                                                                            \</span></div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span><span class="preprocessor">    CHIP_GENERIC_ERROR(::chip::ChipError::SdkPart::kIMGlobalStatus, ::chip::to_underlying(status_value))</span></div>
+</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span> </div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span><span class="comment">//</span></div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span><span class="comment">// type must be a compile-time constant as mandated by CHIP_SDK_ERROR.</span></div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span><span class="comment">//</span></div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a4ef29805d48acb841585d9536b895384">  465</a></span><span class="preprocessor">#define CHIP_IM_CLUSTER_STATUS(type) CHIP_SDK_ERROR(::chip::ChipError::SdkPart::kIMClusterStatus, type)</span></div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span> </div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span><span class="comment">// Defines a runtime-value for a chip-error that contains a cluster-specific error status.</span></div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span><span class="comment">// Must not be used with cluster-specific success status codes.</span></div>
+<div class="foldopen" id="foldopen00469" data-start="" data-end="">
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a5855b84a4668ad10d46f3af9bb7e0f78">  469</a></span><span class="preprocessor">#define CHIP_ERROR_IM_CLUSTER_STATUS_VALUE(status_value)                                                                           \</span></div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span><span class="preprocessor">    CHIP_GENERIC_ERROR(::chip::ChipError::SdkPart::kIMClusterStatus, status_value)</span></div>
+</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span> </div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span> </div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_SOURCE &amp;&amp; CHIP_CONFIG_ERROR_SOURCE_NO_ERROR</span></div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span><span class="preprocessor">#define CHIP_NO_ERROR                                          CHIP_ERROR(0 CHIP_ERROR_SOURCE_LOCATION)</span></div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span><span class="preprocessor">#else </span><span class="comment">// CHIP_CONFIG_ERROR_SOURCE &amp;&amp; CHIP_CONFIG_ERROR_SOURCE_NO_ERROR</span></div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e">  490</a></span><span class="preprocessor">#define CHIP_NO_ERROR                                          CHIP_ERROR(0 CHIP_ERROR_SOURCE_LOCATION_NULL)</span></div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_CONFIG_ERROR_SOURCE &amp;&amp; CHIP_CONFIG_ERROR_SOURCE_NO_ERROR</span></div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span> </div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a7c1886a064d9ff6564f271d0c665638e">  500</a></span><span class="preprocessor">#define CHIP_ERROR_SENDING_BLOCKED                             CHIP_CORE_ERROR(0x01)</span></div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span> </div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ac6362e43816e81b76d65c27e00818d09">  509</a></span><span class="preprocessor">#define CHIP_ERROR_CONNECTION_ABORTED                          CHIP_CORE_ERROR(0x02)</span></div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span> </div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ad7f63dcefd7fd49a239dec500bce1ec7">  518</a></span><span class="preprocessor">#define CHIP_ERROR_INCORRECT_STATE                             CHIP_CORE_ERROR(0x03)</span></div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span> </div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ab6d00c860bcc203ca2553ec4c278374c">  527</a></span><span class="preprocessor">#define CHIP_ERROR_MESSAGE_TOO_LONG                            CHIP_CORE_ERROR(0x04)</span></div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span> </div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a4da385abdf0c4d4d60a7a94aff8e76c4">  532</a></span><span class="preprocessor">#define CHIP_ERROR_RECURSION_DEPTH_LIMIT                       CHIP_CORE_ERROR(0x05)</span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span> </div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a944242906c2d81de6ec82c17b820759c">  542</a></span><span class="preprocessor">#define CHIP_ERROR_TOO_MANY_UNSOLICITED_MESSAGE_HANDLERS       CHIP_CORE_ERROR(0x06)</span></div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span> </div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a40868abadeda5c14c8f44aa7eb5884d4">  552</a></span><span class="preprocessor">#define CHIP_ERROR_NO_UNSOLICITED_MESSAGE_HANDLER              CHIP_CORE_ERROR(0x07)</span></div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span> </div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a0df22f9db8666f534f5ef78c805b2b63">  561</a></span><span class="preprocessor">#define CHIP_ERROR_NO_CONNECTION_HANDLER                       CHIP_CORE_ERROR(0x08)</span></div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span> </div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a0af9dce4a9d1b94c6c4c2aae69f2edbc">  570</a></span><span class="preprocessor">#define CHIP_ERROR_TOO_MANY_PEER_NODES                         CHIP_CORE_ERROR(0x09)</span></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span> </div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a5c1c8a1bca1f884e718a0656aa401926">  579</a></span><span class="preprocessor">#define CHIP_ERROR_SENTINEL                                    CHIP_CORE_ERROR(0x0a)</span></div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span> </div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a54dff71a2a2b567789ca4ba4c0fa1495">  588</a></span><span class="preprocessor">#define CHIP_ERROR_NO_MEMORY                                   CHIP_CORE_ERROR(0x0b)</span></div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aac245d51976f620a111a2ee1b8ca458c">  597</a></span><span class="preprocessor">#define CHIP_ERROR_NO_MESSAGE_HANDLER                          CHIP_CORE_ERROR(0x0c)</span></div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span> </div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a4ce52c44b6a031b7e901b631e2c3e1d4">  606</a></span><span class="preprocessor">#define CHIP_ERROR_MESSAGE_INCOMPLETE                          CHIP_CORE_ERROR(0x0d)</span></div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span> </div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ac26354ae01694e2e17e55cc239c9bfa1">  615</a></span><span class="preprocessor">#define CHIP_ERROR_DATA_NOT_ALIGNED                            CHIP_CORE_ERROR(0x0e)</span></div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span> </div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a217cad2ba2462f8ac70df2385e22d066">  624</a></span><span class="preprocessor">#define CHIP_ERROR_UNKNOWN_KEY_TYPE                            CHIP_CORE_ERROR(0x0f)</span></div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aa8348b4d6de3e6d8f6e45cc9a0a9e228">  633</a></span><span class="preprocessor">#define CHIP_ERROR_KEY_NOT_FOUND                               CHIP_CORE_ERROR(0x10)</span></div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a04820831c88ac98525c047be99c032b4">  642</a></span><span class="preprocessor">#define CHIP_ERROR_WRONG_ENCRYPTION_TYPE                       CHIP_CORE_ERROR(0x11)</span></div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a25027b95c8186e37651f79e41d2232df">  651</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_UTF8                                CHIP_CORE_ERROR(0x12)</span></div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span> </div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a74faf033657ed058ff5e7674eb912e9d">  661</a></span><span class="preprocessor">#define CHIP_ERROR_INTEGRITY_CHECK_FAILED                      CHIP_CORE_ERROR(0x13)</span></div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a1e3af6ae980be3b6539ae74e29734950">  670</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_SIGNATURE                           CHIP_CORE_ERROR(0x14)</span></div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a0992ce53ba3495beaeeb37acf148ef6e">  679</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_TLV_CHAR_STRING                     CHIP_CORE_ERROR(0x15)</span></div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span> </div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a9fe99688cd5e5648c676d038e195b72e">  688</a></span><span class="preprocessor">#define CHIP_ERROR_LIT_SUBSCRIBE_INACTIVE_TIMEOUT              CHIP_CORE_ERROR(0x16)</span></div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span> </div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#af408a40bf6b52018d033b37ed6bacd80">  697</a></span><span class="preprocessor">#define CHIP_ERROR_UNSUPPORTED_SIGNATURE_TYPE                  CHIP_CORE_ERROR(0x17)</span></div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span> </div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ad1b06f08b761f83c4ab819990123f058">  706</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_MESSAGE_LENGTH                      CHIP_CORE_ERROR(0x18)</span></div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span> </div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ac088b867f93d086a00c59c13d2833f24">  715</a></span><span class="preprocessor">#define CHIP_ERROR_BUFFER_TOO_SMALL                            CHIP_CORE_ERROR(0x19)</span></div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span> </div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ab66027ffdc643c94f0291a428e8e42a3">  724</a></span><span class="preprocessor">#define CHIP_ERROR_DUPLICATE_KEY_ID                            CHIP_CORE_ERROR(0x1a)</span></div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span> </div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a382b01ab90a4c72bb6ebe0a9b1da2396">  733</a></span><span class="preprocessor">#define CHIP_ERROR_WRONG_KEY_TYPE                              CHIP_CORE_ERROR(0x1b)</span></div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aa982fc51b871c533b4f2ab7b33804f64">  742</a></span><span class="preprocessor">#define CHIP_ERROR_UNINITIALIZED                               CHIP_CORE_ERROR(0x1c)</span></div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span> </div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a4b2a01e2f0999be8d152e5c55faa07cd">  751</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_IPK                                 CHIP_CORE_ERROR(0x1d)</span></div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span> </div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a7d4c5ed1094f2e8978187839e760d078">  760</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_STRING_LENGTH                       CHIP_CORE_ERROR(0x1e)</span></div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span> </div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a0fcb54c276601c87dff6fa3e08445aa1">  769</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_LIST_LENGTH                         CHIP_CORE_ERROR(0x1f)</span></div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span> </div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#af9cf67262462f776399354d626a8d952">  778</a></span><span class="preprocessor">#define CHIP_ERROR_FAILED_DEVICE_ATTESTATION                   CHIP_CORE_ERROR(0x20)</span></div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span> </div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#adcdf3ffa4cd9dea26374e29fef3bdcc0">  788</a></span><span class="preprocessor">#define CHIP_ERROR_END_OF_TLV                                  CHIP_CORE_ERROR(0x21)</span></div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aaa8331c1c73530a7a39956d9286cc293">  789</a></span><span class="preprocessor">#define CHIP_END_OF_TLV CHIP_ERROR_END_OF_TLV</span></div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span> </div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a72ca657466737dfe9207c27ff5f624af">  798</a></span><span class="preprocessor">#define CHIP_ERROR_TLV_UNDERRUN                                CHIP_CORE_ERROR(0x22)</span></div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span> </div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a86edc61574d83fbbfc3c61f07aaaf09f">  807</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_TLV_ELEMENT                         CHIP_CORE_ERROR(0x23)</span></div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span> </div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a120527de8385cf7075a7cef90f6a65a4">  816</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_TLV_TAG                             CHIP_CORE_ERROR(0x24)</span></div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span> </div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a8f24b3b66671cad06308728749d5d0d1">  826</a></span><span class="preprocessor">#define CHIP_ERROR_UNKNOWN_IMPLICIT_TLV_TAG                    CHIP_CORE_ERROR(0x25)</span></div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span> </div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aa1aae374407bf7be8fe1ca34ed7bc85c">  835</a></span><span class="preprocessor">#define CHIP_ERROR_WRONG_TLV_TYPE                              CHIP_CORE_ERROR(0x26)</span></div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span> </div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a799cc9cb44b59131f3e6120c590d396c">  844</a></span><span class="preprocessor">#define CHIP_ERROR_TLV_CONTAINER_OPEN                          CHIP_CORE_ERROR(0x27)</span></div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span> </div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a31523b2a5fd8d16f97b76381a5b9812d">  854</a></span><span class="preprocessor">#define CHIP_ERROR_IN_USE                                      CHIP_CORE_ERROR(0x28)</span></div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span> </div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a36d441e35899c0acc735ae2cd65e24a1">  864</a></span><span class="preprocessor">#define CHIP_ERROR_HAD_FAILURES                                CHIP_CORE_ERROR(0x29)</span></div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span> </div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ad9d470c5b231f307a3e6c7c580a2dd22">  873</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_MESSAGE_TYPE                        CHIP_CORE_ERROR(0x2a)</span></div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span> </div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a3b16d17c61905a42b5d9c1248ec487f8">  882</a></span><span class="preprocessor">#define CHIP_ERROR_UNEXPECTED_TLV_ELEMENT                      CHIP_CORE_ERROR(0x2b)</span></div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span> </div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a50b5a48f7a24d3bbe6502a3b3c7e00ca">  892</a></span><span class="preprocessor">#define CHIP_ERROR_ALREADY_INITIALIZED                        CHIP_CORE_ERROR(0x2c)</span></div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span> </div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a0cb04b2f9a17c93b4e8166abad17958f">  901</a></span><span class="preprocessor">#define CHIP_ERROR_NOT_IMPLEMENTED                             CHIP_CORE_ERROR(0x2d)</span></div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span> </div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a8db5570bedb6aebdfe76a686a8102891">  910</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_ADDRESS                             CHIP_CORE_ERROR(0x2e)</span></div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span> </div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a16861ed332933820e629940561f47104">  919</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_ARGUMENT                            CHIP_CORE_ERROR(0x2f)</span></div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span> </div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#af12f3581136e5e29f3024e1bb9e0761c">  928</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_PATH_LIST                           CHIP_CORE_ERROR(0x30)</span></div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span> </div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a5fc3478c885fb42575e5eea845ceba79">  937</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_DATA_LIST                           CHIP_CORE_ERROR(0x31)</span></div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span> </div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a4d18d6c92497375867938902c0f29415">  946</a></span><span class="preprocessor">#define CHIP_ERROR_TIMEOUT                                     CHIP_CORE_ERROR(0x32)</span></div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span> </div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a54b6692a8340399db7ef19550f6fc2fd">  955</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_DEVICE_DESCRIPTOR                   CHIP_CORE_ERROR(0x33)</span></div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span> </div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span><span class="comment">// AVAILABLE: 0x34</span></div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span><span class="comment">// AVAILABLE: 0x35</span></div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span><span class="comment">// AVAILABLE: 0x36</span></div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span><span class="comment">// AVAILABLE: 0x37</span></div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span> </div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a4dc6b1a8eb6bd24f3808362f17b6c7b9">  969</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_PASE_PARAMETER                      CHIP_CORE_ERROR(0x38)</span></div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span> </div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span><span class="comment">// AVAILABLE: 0x39</span></div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span><span class="comment">// AVAILABLE: 0x3a</span></div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span> </div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#af44d19e2a795c36e0b649309dbf7241e">  981</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_USE_OF_SESSION_KEY                  CHIP_CORE_ERROR(0x3b)</span></div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span> </div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a3de2936aad336a60565f86c581d0adf1">  990</a></span><span class="preprocessor">#define CHIP_ERROR_CONNECTION_CLOSED_UNEXPECTEDLY              CHIP_CORE_ERROR(0x3c)</span></div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span> </div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a67356d4ea3e95889f28e02ac930c92ca">  999</a></span><span class="preprocessor">#define CHIP_ERROR_MISSING_TLV_ELEMENT                         CHIP_CORE_ERROR(0x3d)</span></div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span> </div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a886bbb4af7ef4fb94057d41d3f4b1a62"> 1008</a></span><span class="preprocessor">#define CHIP_ERROR_RANDOM_DATA_UNAVAILABLE                     CHIP_CORE_ERROR(0x3e)</span></div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span> </div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span><span class="comment">// AVAILABLE: 0x3f</span></div>
+<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span><span class="comment">// AVAILABLE: 0x40</span></div>
+<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span> </div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ad06f083949d8bb7f102b783e421c2e08"> 1020</a></span><span class="preprocessor">#define CHIP_ERROR_HOST_PORT_LIST_EMPTY                        CHIP_CORE_ERROR(0x41)</span></div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span> </div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span><span class="comment">// AVAILABLE: 0x42</span></div>
+<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span><span class="comment">// AVAILABLE: 0x43</span></div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span><span class="comment">// AVAILABLE: 0x44</span></div>
+<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span> </div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a9f7f0cb013aaecddc0dd277097391bd3"> 1033</a></span><span class="preprocessor">#define CHIP_ERROR_FORCED_RESET                                CHIP_CORE_ERROR(0x45)</span></div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span> </div>
+<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a9bb18fd82782d177daaf4f2252f76b8d"> 1042</a></span><span class="preprocessor">#define CHIP_ERROR_NO_ENDPOINT                                 CHIP_CORE_ERROR(0x46)</span></div>
+<div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span> </div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a4b56cd7567e59c1ad13d54276d5a5cd1"> 1051</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_DESTINATION_NODE_ID                 CHIP_CORE_ERROR(0x47)</span></div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span> </div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a1a69dbfce1247c2f4caf2496854ea73c"> 1061</a></span><span class="preprocessor">#define CHIP_ERROR_NOT_CONNECTED                               CHIP_CORE_ERROR(0x48)</span></div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span> </div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span><span class="comment">// AVAILABLE: 0x49</span></div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span> </div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ac422ca489f1bc8dc4b31cb01009472a2"> 1072</a></span><span class="preprocessor">#define CHIP_ERROR_CA_CERT_NOT_FOUND                           CHIP_CORE_ERROR(0x4a)</span></div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span> </div>
+<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a1ce5b88d004b1fd333b6843fba2eb019"> 1081</a></span><span class="preprocessor">#define CHIP_ERROR_CERT_PATH_LEN_CONSTRAINT_EXCEEDED           CHIP_CORE_ERROR(0x4b)</span></div>
+<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span> </div>
+<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a4ab9dc08e586790462f37974793276bb"> 1090</a></span><span class="preprocessor">#define CHIP_ERROR_CERT_PATH_TOO_LONG                          CHIP_CORE_ERROR(0x4c)</span></div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span> </div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a3e98ea7f322306af817edb9dd601d662"> 1099</a></span><span class="preprocessor">#define CHIP_ERROR_CERT_USAGE_NOT_ALLOWED                      CHIP_CORE_ERROR(0x4d)</span></div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span> </div>
+<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ad26d23919b61ac5b79318009579d060b"> 1108</a></span><span class="preprocessor">#define CHIP_ERROR_CERT_EXPIRED                                CHIP_CORE_ERROR(0x4e)</span></div>
+<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span> </div>
+<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a7133a2606d50a0ad586d1e4c8565c81d"> 1117</a></span><span class="preprocessor">#define CHIP_ERROR_CERT_NOT_VALID_YET                          CHIP_CORE_ERROR(0x4f)</span></div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span> </div>
+<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aa2b97e7992128fc258ee6992ef85c85f"> 1126</a></span><span class="preprocessor">#define CHIP_ERROR_UNSUPPORTED_CERT_FORMAT                     CHIP_CORE_ERROR(0x50)</span></div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span> </div>
+<div class="line"><a id="l01135" name="l01135"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a6aed1f77f0c0cd1adf753f6c11e12b47"> 1135</a></span><span class="preprocessor">#define CHIP_ERROR_UNSUPPORTED_ELLIPTIC_CURVE                  CHIP_CORE_ERROR(0x51)</span></div>
+<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span> </div>
+<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span><span class="comment">// AVAILABLE: 0x52</span></div>
+<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span> </div>
+<div class="line"><a id="l01146" name="l01146"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a8a7ab664c6ead702e34e57725338d2e2"> 1146</a></span><span class="preprocessor">#define CHIP_ERROR_CERT_NOT_FOUND                              CHIP_CORE_ERROR(0x53)</span></div>
+<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span> </div>
+<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a4f072896d49f43d952f0f70bb9b49d5d"> 1155</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_CASE_PARAMETER                      CHIP_CORE_ERROR(0x54)</span></div>
+<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span> </div>
+<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span><span class="comment">// AVAILABLE: 0x55</span></div>
+<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span> </div>
+<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a2c6f273ecbe49a1feefbbfac7abbcb43"> 1166</a></span><span class="preprocessor">#define CHIP_ERROR_CERT_LOAD_FAILED                            CHIP_CORE_ERROR(0x56)</span></div>
+<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span> </div>
+<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a2d2d0a082cd7e5187fd7829cee9b7b8d"> 1175</a></span><span class="preprocessor">#define CHIP_ERROR_CERT_NOT_TRUSTED                            CHIP_CORE_ERROR(0x57)</span></div>
+<div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span> </div>
+<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span><span class="comment">// AVAILABLE: 0x58</span></div>
+<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span> </div>
+<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aba16772b9ae7389a095412d7da3d9c71"> 1186</a></span><span class="preprocessor">#define CHIP_ERROR_WRONG_CERT_DN                               CHIP_CORE_ERROR(0x59)</span></div>
+<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span> </div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span><span class="comment">// AVAILABLE: 0x5a</span></div>
+<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span><span class="comment">// AVAILABLE: 0x5b</span></div>
+<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span> </div>
+<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a51564301aba0caf348552dc1ba291b2a"> 1198</a></span><span class="preprocessor">#define CHIP_ERROR_WRONG_NODE_ID                               CHIP_CORE_ERROR(0x5c)</span></div>
+<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span> </div>
+<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span><span class="comment">// AVAILABLE: 0x5d</span></div>
+<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span><span class="comment">// AVAILABLE: 0x5e</span></div>
+<div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span><span class="comment">// AVAILABLE: 0x5f</span></div>
+<div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span><span class="comment">// AVAILABLE: 0x60</span></div>
+<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span><span class="comment">// AVAILABLE: 0x61</span></div>
+<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span><span class="comment">// AVAILABLE: 0x62</span></div>
+<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span><span class="comment">// AVAILABLE: 0x63</span></div>
+<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span> </div>
+<div class="line"><a id="l01215" name="l01215"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#abe6af3b7677624c4b5eb74c480e8be59"> 1215</a></span><span class="preprocessor">#define CHIP_ERROR_RETRANS_TABLE_FULL                          CHIP_CORE_ERROR(0x64)</span></div>
+<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span> </div>
+<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span><span class="comment">// AVAILABLE: 0x65</span></div>
+<div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span><span class="comment">// AVAILABLE: 0x66</span></div>
+<div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span><span class="comment">// AVAILABLE: 0x67</span></div>
+<div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span> </div>
+<div class="line"><a id="l01228" name="l01228"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#adfd6008ccf55d700673cc8d22224b71b"> 1228</a></span><span class="preprocessor">#define CHIP_ERROR_TRANSACTION_CANCELED                        CHIP_CORE_ERROR(0x68)</span></div>
+<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span> </div>
+<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span><span class="comment">// AVAILABLE: 0x69</span></div>
+<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span><span class="comment">// AVAILABLE: 0x6a</span></div>
+<div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span> </div>
+<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ae08b1a19b5750b1dae2dcf90802ed8c9"> 1240</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_SUBSCRIPTION                               CHIP_CORE_ERROR(0x6b)</span></div>
+<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span> </div>
+<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a32a2b01641d1e6470873e126c639a54d"> 1249</a></span><span class="preprocessor">#define CHIP_ERROR_UNSUPPORTED_CHIP_FEATURE                    CHIP_CORE_ERROR(0x6c)</span></div>
+<div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span> </div>
+<div class="line"><a id="l01258" name="l01258"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a9c27233d3ed5f11667838c4f902cdcaf"> 1258</a></span><span class="preprocessor">#define CHIP_ERROR_UNSOLICITED_MSG_NO_ORIGINATOR               CHIP_CORE_ERROR(0x70)</span></div>
+<div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span> </div>
+<div class="line"><a id="l01267" name="l01267"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a5e1f8b21a18ddeb5b7275a0a3e5cb2fb"> 1267</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_FABRIC_INDEX                        CHIP_CORE_ERROR(0x71)</span></div>
+<div class="line"><a id="l01268" name="l01268"></a><span class="lineno"> 1268</span> </div>
+<div class="line"><a id="l01277" name="l01277"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a48bd5bf6bc826b6fca20353d8c345465"> 1277</a></span><span class="preprocessor">#define CHIP_ERROR_TOO_MANY_CONNECTIONS                        CHIP_CORE_ERROR(0x72)</span></div>
+<div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span> </div>
+<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#abadbe2f567ffc859753bd2ae5f261f66"> 1285</a></span><span class="preprocessor">#define CHIP_ERROR_SHUT_DOWN                                   CHIP_CORE_ERROR(0x73)</span></div>
+<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span> </div>
+<div class="line"><a id="l01293" name="l01293"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a7968c7f2b092d77f1cff1a4c5d4c0ab3"> 1293</a></span><span class="preprocessor">#define CHIP_ERROR_CANCELLED                                   CHIP_CORE_ERROR(0x74)</span></div>
+<div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span> </div>
+<div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span><span class="comment">// AVAILABLE: 0x75</span></div>
+<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span> </div>
+<div class="line"><a id="l01304" name="l01304"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a6d10ca7be6d5f54f063c007955d353e5"> 1304</a></span><span class="preprocessor">#define CHIP_ERROR_TLV_TAG_NOT_FOUND                           CHIP_CORE_ERROR(0x76)</span></div>
+<div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span> </div>
+<div class="line"><a id="l01313" name="l01313"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aca1c1bcd9a7844248c6f03668284254f"> 1313</a></span><span class="preprocessor">#define CHIP_ERROR_MISSING_SECURE_SESSION                      CHIP_CORE_ERROR(0x77)</span></div>
+<div class="line"><a id="l01314" name="l01314"></a><span class="lineno"> 1314</span> </div>
+<div class="line"><a id="l01322" name="l01322"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a38e2e9fb427940a04cf1be10ab281cd0"> 1322</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_ADMIN_SUBJECT                      CHIP_CORE_ERROR(0x78)</span></div>
+<div class="line"><a id="l01323" name="l01323"></a><span class="lineno"> 1323</span> </div>
+<div class="line"><a id="l01331" name="l01331"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a529b54e5a775a8f6f82c7d6511970abf"> 1331</a></span><span class="preprocessor">#define CHIP_ERROR_INSUFFICIENT_PRIVILEGE                          CHIP_CORE_ERROR(0x79)</span></div>
+<div class="line"><a id="l01332" name="l01332"></a><span class="lineno"> 1332</span> </div>
+<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span><span class="comment">// AVAILABLE: 0x7a</span></div>
+<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span><span class="comment">// AVAILABLE: 0x7b</span></div>
+<div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span><span class="comment">// AVAILABLE: 0x7c</span></div>
+<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span> </div>
+<div class="line"><a id="l01343" name="l01343"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a20c84f369608f2e118a6592a718879e9"> 1343</a></span><span class="preprocessor">#define CHIP_ERROR_MESSAGE_COUNTER_EXHAUSTED                 CHIP_CORE_ERROR(0x7d)</span></div>
+<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span> </div>
+<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a38864e4dd7470ca1393ea8d8a014ca51"> 1352</a></span><span class="preprocessor">#define CHIP_ERROR_FABRIC_EXISTS                               CHIP_CORE_ERROR(0x7e)</span></div>
+<div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span> </div>
+<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a974ee36d9ec749eb76e2ff9d1d49511f"> 1361</a></span><span class="preprocessor">#define CHIP_ERROR_ENDPOINT_EXISTS                               CHIP_CORE_ERROR(0x7f)</span></div>
+<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span> </div>
+<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a958f21617403112a920c34037796d61c"> 1370</a></span><span class="preprocessor">#define CHIP_ERROR_WRONG_ENCRYPTION_TYPE_FROM_PEER             CHIP_CORE_ERROR(0x80)</span></div>
+<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span> </div>
+<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span><span class="comment">// AVAILABLE: 0x81</span></div>
+<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span><span class="comment">// AVAILABLE: 0x82</span></div>
+<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span><span class="comment">// AVAILABLE: 0x83</span></div>
+<div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span><span class="comment">// AVAILABLE: 0x84</span></div>
+<div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span> </div>
+<div class="line"><a id="l01384" name="l01384"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a831054161e17d151daa758b1ac75b3fd"> 1384</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_KEY_ID                              CHIP_CORE_ERROR(0x85)</span></div>
+<div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span> </div>
+<div class="line"><a id="l01393" name="l01393"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a7af09baa109b06349a495d38b4debe3e"> 1393</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_TIME                                CHIP_CORE_ERROR(0x86)</span></div>
+<div class="line"><a id="l01394" name="l01394"></a><span class="lineno"> 1394</span> </div>
+<div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span><span class="comment">// AVAILABLE: 0x87</span></div>
+<div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span><span class="comment">// AVAILABLE: 0x88</span></div>
+<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span><span class="comment">// AVAILABLE: 0x89</span></div>
+<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span><span class="comment">// AVAILABLE: 0x8a</span></div>
+<div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span><span class="comment">// AVAILABLE: 0x8b</span></div>
+<div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span><span class="comment">// AVAILABLE: 0x8c</span></div>
+<div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span><span class="comment">// AVAILABLE: 0x8d</span></div>
+<div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span> </div>
+<div class="line"><a id="l01410" name="l01410"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a93fc6207a8a449f3c5a9bc9e3b3a8efb"> 1410</a></span><span class="preprocessor">#define CHIP_ERROR_SCHEMA_MISMATCH                             CHIP_CORE_ERROR(0x8e)</span></div>
+<div class="line"><a id="l01411" name="l01411"></a><span class="lineno"> 1411</span> </div>
+<div class="line"><a id="l01419" name="l01419"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aafc918042ad8924b18aa295ddd7d95cd"> 1419</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_INTEGER_VALUE                       CHIP_CORE_ERROR(0x8f)</span></div>
+<div class="line"><a id="l01420" name="l01420"></a><span class="lineno"> 1420</span> </div>
+<div class="line"><a id="l01421" name="l01421"></a><span class="lineno"> 1421</span><span class="comment">// AVAILABLE: 0x90</span></div>
+<div class="line"><a id="l01422" name="l01422"></a><span class="lineno"> 1422</span><span class="comment">// AVAILABLE: 0x91</span></div>
+<div class="line"><a id="l01423" name="l01423"></a><span class="lineno"> 1423</span> </div>
+<div class="line"><a id="l01431" name="l01431"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ad1379d3c4d1dda4f3fea09d860dbfd79"> 1431</a></span><span class="preprocessor">#define CHIP_ERROR_BAD_REQUEST                                 CHIP_CORE_ERROR(0x92)</span></div>
+<div class="line"><a id="l01432" name="l01432"></a><span class="lineno"> 1432</span> </div>
+<div class="line"><a id="l01433" name="l01433"></a><span class="lineno"> 1433</span><span class="comment">// AVAILABLE: 0x93</span></div>
+<div class="line"><a id="l01434" name="l01434"></a><span class="lineno"> 1434</span><span class="comment">// AVAILABLE: 0x94</span></div>
+<div class="line"><a id="l01435" name="l01435"></a><span class="lineno"> 1435</span><span class="comment">// AVAILABLE: 0x95</span></div>
+<div class="line"><a id="l01436" name="l01436"></a><span class="lineno"> 1436</span><span class="comment">// AVAILABLE: 0x96</span></div>
+<div class="line"><a id="l01437" name="l01437"></a><span class="lineno"> 1437</span><span class="comment">// AVAILABLE: 0x97</span></div>
+<div class="line"><a id="l01438" name="l01438"></a><span class="lineno"> 1438</span><span class="comment">// AVAILABLE: 0x98</span></div>
+<div class="line"><a id="l01439" name="l01439"></a><span class="lineno"> 1439</span><span class="comment">// AVAILABLE: 0x99</span></div>
+<div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span><span class="comment">// AVAILABLE: 0x9a</span></div>
+<div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span><span class="comment">// AVAILABLE: 0x9b</span></div>
+<div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span><span class="comment">// AVAILABLE: 0x9c</span></div>
+<div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span> </div>
+<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a9c0c2c621251f3acfb5d57a969f651b0"> 1450</a></span><span class="preprocessor">#define CHIP_ERROR_WRONG_CERT_TYPE                             CHIP_CORE_ERROR(0x9d)</span></div>
+<div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span> </div>
+<div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span><span class="comment">// AVAILABLE: 0x9e</span></div>
+<div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span> </div>
+<div class="line"><a id="l01461" name="l01461"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a4f592a1858b95dbdcff28a8508ef1bfb"> 1461</a></span><span class="preprocessor">#define CHIP_ERROR_PERSISTED_STORAGE_FAILED                    CHIP_CORE_ERROR(0x9f)</span></div>
+<div class="line"><a id="l01462" name="l01462"></a><span class="lineno"> 1462</span> </div>
+<div class="line"><a id="l01470" name="l01470"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a3faf7ae931d14a0e58d3cb6fe68c01b1"> 1470</a></span><span class="preprocessor">#define CHIP_ERROR_PERSISTED_STORAGE_VALUE_NOT_FOUND           CHIP_CORE_ERROR(0xa0)</span></div>
+<div class="line"><a id="l01471" name="l01471"></a><span class="lineno"> 1471</span> </div>
+<div class="line"><a id="l01478" name="l01478"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a615f6120b3d96c0ca996742821d95956"> 1478</a></span><span class="preprocessor">#define CHIP_ERROR_IM_FABRIC_DELETED                            CHIP_CORE_ERROR(0xa1)</span></div>
+<div class="line"><a id="l01479" name="l01479"></a><span class="lineno"> 1479</span> </div>
+<div class="line"><a id="l01480" name="l01480"></a><span class="lineno"> 1480</span><span class="comment">// AVAILABLE: 0xa2</span></div>
+<div class="line"><a id="l01481" name="l01481"></a><span class="lineno"> 1481</span><span class="comment">// AVAILABLE: 0xa3</span></div>
+<div class="line"><a id="l01482" name="l01482"></a><span class="lineno"> 1482</span> </div>
+<div class="line"><a id="l01489" name="l01489"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a9365a02d8056a7db0546a12c406de02b"> 1489</a></span><span class="preprocessor">#define CHIP_ERROR_IN_PROGRESS                                 CHIP_CORE_ERROR(0xa4)</span></div>
+<div class="line"><a id="l01490" name="l01490"></a><span class="lineno"> 1490</span> </div>
+<div class="line"><a id="l01497" name="l01497"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#afa63f2b57a1851560080305db3fba92a"> 1497</a></span><span class="preprocessor">#define CHIP_ERROR_ACCESS_DENIED                               CHIP_CORE_ERROR(0xa5)</span></div>
+<div class="line"><a id="l01498" name="l01498"></a><span class="lineno"> 1498</span> </div>
+<div class="line"><a id="l01506" name="l01506"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ae3bc10b8e3d7c66314cbefc839daff7d"> 1506</a></span><span class="preprocessor">#define CHIP_ERROR_UNKNOWN_RESOURCE_ID                         CHIP_CORE_ERROR(0xa6)</span></div>
+<div class="line"><a id="l01507" name="l01507"></a><span class="lineno"> 1507</span> </div>
+<div class="line"><a id="l01516" name="l01516"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a9a8037607041633a622c66a73d5d9431"> 1516</a></span><span class="preprocessor">#define CHIP_ERROR_VERSION_MISMATCH                            CHIP_CORE_ERROR(0xa7)</span></div>
+<div class="line"><a id="l01517" name="l01517"></a><span class="lineno"> 1517</span> </div>
+<div class="line"><a id="l01524" name="l01524"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a342dbe837d92209999ca8b7b00d52d97"> 1524</a></span><span class="preprocessor">#define CHIP_ERROR_ACCESS_RESTRICTED_BY_ARL                    CHIP_CORE_ERROR(0xa8)</span></div>
+<div class="line"><a id="l01525" name="l01525"></a><span class="lineno"> 1525</span> </div>
+<div class="line"><a id="l01526" name="l01526"></a><span class="lineno"> 1526</span><span class="comment">// AVAILABLE: 0xa9</span></div>
+<div class="line"><a id="l01527" name="l01527"></a><span class="lineno"> 1527</span><span class="comment">// AVAILABLE: 0xaa</span></div>
+<div class="line"><a id="l01528" name="l01528"></a><span class="lineno"> 1528</span> </div>
+<div class="line"><a id="l01535" name="l01535"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a209e04dcdc90602d8813ed463207c84e"> 1535</a></span><span class="preprocessor">#define CHIP_ERROR_EVENT_ID_FOUND                              CHIP_CORE_ERROR(0xab)</span></div>
+<div class="line"><a id="l01536" name="l01536"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a6c77ede6445ffd6e729b3cd831df8dc7"> 1536</a></span><span class="preprocessor">#define CHIP_EVENT_ID_FOUND CHIP_ERROR_EVENT_ID_FOUND</span></div>
+<div class="line"><a id="l01537" name="l01537"></a><span class="lineno"> 1537</span> </div>
+<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a68c26998d841bb7b34f0d32093957a78"> 1544</a></span><span class="preprocessor">#define CHIP_ERROR_INTERNAL                                    CHIP_CORE_ERROR(0xac)</span></div>
+<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span> </div>
+<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a8bb30cb19f4c6d2919eceb4109aaa0b8"> 1552</a></span><span class="preprocessor">#define CHIP_ERROR_OPEN_FAILED                                 CHIP_CORE_ERROR(0xad)</span></div>
+<div class="line"><a id="l01553" name="l01553"></a><span class="lineno"> 1553</span> </div>
+<div class="line"><a id="l01560" name="l01560"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a6d4a14a911b8b65954ec31cf5797f76c"> 1560</a></span><span class="preprocessor">#define CHIP_ERROR_READ_FAILED                                 CHIP_CORE_ERROR(0xae)</span></div>
+<div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span> </div>
+<div class="line"><a id="l01568" name="l01568"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a5ef72192d0fb238b79329fbc500f724f"> 1568</a></span><span class="preprocessor">#define CHIP_ERROR_WRITE_FAILED                                CHIP_CORE_ERROR(0xaf)</span></div>
+<div class="line"><a id="l01569" name="l01569"></a><span class="lineno"> 1569</span> </div>
+<div class="line"><a id="l01576" name="l01576"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a66927a9a471cfbfae8ade3b3e5d427a5"> 1576</a></span><span class="preprocessor">#define CHIP_ERROR_DECODE_FAILED                               CHIP_CORE_ERROR(0xb0)</span></div>
+<div class="line"><a id="l01577" name="l01577"></a><span class="lineno"> 1577</span> </div>
+<div class="line"><a id="l01578" name="l01578"></a><span class="lineno"> 1578</span><span class="comment">// AVAILABLE: 0xb1</span></div>
+<div class="line"><a id="l01579" name="l01579"></a><span class="lineno"> 1579</span><span class="comment">// AVAILABLE: 0xb2</span></div>
+<div class="line"><a id="l01580" name="l01580"></a><span class="lineno"> 1580</span> </div>
+<div class="line"><a id="l01588" name="l01588"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a5ae6054f41e3e81727bdc59389d76a77"> 1588</a></span><span class="preprocessor">#define CHIP_ERROR_DNS_SD_UNAUTHORIZED                        CHIP_CORE_ERROR(0xb3)</span></div>
+<div class="line"><a id="l01589" name="l01589"></a><span class="lineno"> 1589</span> </div>
+<div class="line"><a id="l01597" name="l01597"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a975173fff1c5bd1fc424294d4dc9416b"> 1597</a></span><span class="preprocessor">#define CHIP_ERROR_MDNS_COLLISION                             CHIP_CORE_ERROR(0xb4)</span></div>
+<div class="line"><a id="l01598" name="l01598"></a><span class="lineno"> 1598</span> </div>
+<div class="line"><a id="l01606" name="l01606"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a2b060640c58c42aa5030b4f4740d3e02"> 1606</a></span><span class="preprocessor">#define CHIP_ERROR_IM_MALFORMED_ATTRIBUTE_PATH_IB                CHIP_CORE_ERROR(0xb5)</span></div>
+<div class="line"><a id="l01607" name="l01607"></a><span class="lineno"> 1607</span> </div>
+<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#acd475d06be5de7e19c80d89da0fde606"> 1615</a></span><span class="preprocessor">#define CHIP_ERROR_IM_MALFORMED_EVENT_PATH_IB                     CHIP_CORE_ERROR(0xb6)</span></div>
+<div class="line"><a id="l01616" name="l01616"></a><span class="lineno"> 1616</span> </div>
+<div class="line"><a id="l01617" name="l01617"></a><span class="lineno"> 1617</span><span class="comment">// AVAILABLE: 0xb7</span></div>
+<div class="line"><a id="l01618" name="l01618"></a><span class="lineno"> 1618</span><span class="comment">// AVAILABLE: 0xb8</span></div>
+<div class="line"><a id="l01619" name="l01619"></a><span class="lineno"> 1619</span> </div>
+<div class="line"><a id="l01627" name="l01627"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a5284bb9260ef0dac1284abf3904b1787"> 1627</a></span><span class="preprocessor">#define CHIP_ERROR_IM_MALFORMED_COMMAND_DATA_IB           CHIP_CORE_ERROR(0xb9)</span></div>
+<div class="line"><a id="l01628" name="l01628"></a><span class="lineno"> 1628</span> </div>
+<div class="line"><a id="l01636" name="l01636"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ad0fe15c36f8aa0561bd948bec92ec844"> 1636</a></span><span class="preprocessor">#define CHIP_ERROR_IM_MALFORMED_EVENT_DATA_IB             CHIP_CORE_ERROR(0xba)</span></div>
+<div class="line"><a id="l01637" name="l01637"></a><span class="lineno"> 1637</span> </div>
+<div class="line"><a id="l01645" name="l01645"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#acf8e05727f5e2f6ac410875443a5f9b3"> 1645</a></span><span class="preprocessor">#define CHIP_ERROR_MAXIMUM_PATHS_PER_INVOKE_EXCEEDED           CHIP_CORE_ERROR(0xbb)</span></div>
+<div class="line"><a id="l01646" name="l01646"></a><span class="lineno"> 1646</span> </div>
+<div class="line"><a id="l01653" name="l01653"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a3df9762e342cce88f72fe0c303a70390"> 1653</a></span><span class="preprocessor">#define CHIP_ERROR_PEER_NODE_NOT_FOUND                         CHIP_CORE_ERROR(0xbc)</span></div>
+<div class="line"><a id="l01654" name="l01654"></a><span class="lineno"> 1654</span> </div>
+<div class="line"><a id="l01661" name="l01661"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#add41eba1d5ecd92d6408675126e0056d"> 1661</a></span><span class="preprocessor">#define CHIP_ERROR_HSM                                         CHIP_CORE_ERROR(0xbd)</span></div>
+<div class="line"><a id="l01662" name="l01662"></a><span class="lineno"> 1662</span> </div>
+<div class="line"><a id="l01663" name="l01663"></a><span class="lineno"> 1663</span><span class="comment">// AVAILABLE: 0xbe</span></div>
+<div class="line"><a id="l01664" name="l01664"></a><span class="lineno"> 1664</span> </div>
+<div class="line"><a id="l01671" name="l01671"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a24ec9001afebe4f5710469a355e00a7c"> 1671</a></span><span class="preprocessor">#define CHIP_ERROR_REAL_TIME_NOT_SYNCED                        CHIP_CORE_ERROR(0xbf)</span></div>
+<div class="line"><a id="l01672" name="l01672"></a><span class="lineno"> 1672</span> </div>
+<div class="line"><a id="l01679" name="l01679"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a8dee0a80b0b78c8ca9f803e0162d35c2"> 1679</a></span><span class="preprocessor">#define CHIP_ERROR_UNEXPECTED_EVENT                            CHIP_CORE_ERROR(0xc0)</span></div>
+<div class="line"><a id="l01680" name="l01680"></a><span class="lineno"> 1680</span> </div>
+<div class="line"><a id="l01688" name="l01688"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a69d7945591a926893199a06778bffa8d"> 1688</a></span><span class="preprocessor">#define CHIP_ERROR_ENDPOINT_POOL_FULL                          CHIP_CORE_ERROR(0xc1)</span></div>
+<div class="line"><a id="l01689" name="l01689"></a><span class="lineno"> 1689</span> </div>
+<div class="line"><a id="l01697" name="l01697"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aa8d893b55d45ec69c0a3844daf71fec5"> 1697</a></span><span class="preprocessor">#define CHIP_ERROR_INBOUND_MESSAGE_TOO_BIG                     CHIP_CORE_ERROR(0xc2)</span></div>
+<div class="line"><a id="l01698" name="l01698"></a><span class="lineno"> 1698</span> </div>
+<div class="line"><a id="l01706" name="l01706"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aebfbafe53f3df6fbfd3e9726c74cbabd"> 1706</a></span><span class="preprocessor">#define CHIP_ERROR_OUTBOUND_MESSAGE_TOO_BIG                    CHIP_CORE_ERROR(0xc3)</span></div>
+<div class="line"><a id="l01707" name="l01707"></a><span class="lineno"> 1707</span> </div>
+<div class="line"><a id="l01714" name="l01714"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a9ba3f83f0c2b4b7ab9c1ae22b280ab2d"> 1714</a></span><span class="preprocessor">#define CHIP_ERROR_DUPLICATE_MESSAGE_RECEIVED                  CHIP_CORE_ERROR(0xc4)</span></div>
+<div class="line"><a id="l01715" name="l01715"></a><span class="lineno"> 1715</span> </div>
+<div class="line"><a id="l01722" name="l01722"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a894295e17f4eef732e066b25259fa393"> 1722</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_PUBLIC_KEY                          CHIP_CORE_ERROR(0xc5)</span></div>
+<div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span> </div>
+<div class="line"><a id="l01730" name="l01730"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a14ced4471d37b86769cba64325cb0be5"> 1730</a></span><span class="preprocessor">#define CHIP_ERROR_FABRIC_MISMATCH_ON_ICA                      CHIP_CORE_ERROR(0xc6)</span></div>
+<div class="line"><a id="l01731" name="l01731"></a><span class="lineno"> 1731</span> </div>
+<div class="line"><a id="l01732" name="l01732"></a><span class="lineno"> 1732</span><span class="comment">// AVAILABLE: 0xc7</span></div>
+<div class="line"><a id="l01733" name="l01733"></a><span class="lineno"> 1733</span><span class="comment">// AVAILABLE: 0xc8</span></div>
+<div class="line"><a id="l01734" name="l01734"></a><span class="lineno"> 1734</span> </div>
+<div class="line"><a id="l01742" name="l01742"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a0e9ee88e0ecb98b8ad659ca75d88af13"> 1742</a></span><span class="preprocessor">#define CHIP_ERROR_NO_SHARED_TRUSTED_ROOT                      CHIP_CORE_ERROR(0xc9)</span></div>
+<div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span> </div>
+<div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span><span class="comment">/*</span></div>
+<div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span><span class="comment"> * @def CHIP_ERROR_IM_STATUS_CODE_RECEIVED</span></div>
+<div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span><span class="comment"> *</span></div>
+<div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span><span class="comment"> * @brief</span></div>
+<div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span><span class="comment"> *   Indicates an IM status code was received. Usually accompanied with</span></div>
+<div class="line"><a id="l01749" name="l01749"></a><span class="lineno"> 1749</span><span class="comment"> *   the actual IM status code.</span></div>
+<div class="line"><a id="l01750" name="l01750"></a><span class="lineno"> 1750</span><span class="comment"> */</span></div>
+<div class="line"><a id="l01751" name="l01751"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aa000942583b9ebf5be2ace81d5bd3316"> 1751</a></span><span class="preprocessor">#define CHIP_ERROR_IM_STATUS_CODE_RECEIVED                     CHIP_CORE_ERROR(0xca)</span></div>
+<div class="line"><a id="l01752" name="l01752"></a><span class="lineno"> 1752</span> </div>
+<div class="line"><a id="l01753" name="l01753"></a><span class="lineno"> 1753</span><span class="comment">// AVAILABLE 0xcb</span></div>
+<div class="line"><a id="l01754" name="l01754"></a><span class="lineno"> 1754</span><span class="comment">// AVAILABLE 0xcc</span></div>
+<div class="line"><a id="l01755" name="l01755"></a><span class="lineno"> 1755</span><span class="comment">// AVAILABLE 0xcd</span></div>
+<div class="line"><a id="l01756" name="l01756"></a><span class="lineno"> 1756</span><span class="comment">// AVAILABLE 0xce</span></div>
+<div class="line"><a id="l01757" name="l01757"></a><span class="lineno"> 1757</span><span class="comment">// AVAILABLE 0xcf</span></div>
+<div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span><span class="comment">// AVAILABLE 0xd0</span></div>
+<div class="line"><a id="l01759" name="l01759"></a><span class="lineno"> 1759</span><span class="comment">// AVAILABLE 0xd1</span></div>
+<div class="line"><a id="l01760" name="l01760"></a><span class="lineno"> 1760</span><span class="comment">// AVAILABLE 0xd2</span></div>
+<div class="line"><a id="l01761" name="l01761"></a><span class="lineno"> 1761</span><span class="comment">// AVAILABLE 0xd3</span></div>
+<div class="line"><a id="l01762" name="l01762"></a><span class="lineno"> 1762</span><span class="comment">// AVAILABLE 0xd4</span></div>
+<div class="line"><a id="l01763" name="l01763"></a><span class="lineno"> 1763</span><span class="comment">// AVAILABLE 0xd5</span></div>
+<div class="line"><a id="l01764" name="l01764"></a><span class="lineno"> 1764</span><span class="comment">// AVAILABLE 0xd6</span></div>
+<div class="line"><a id="l01765" name="l01765"></a><span class="lineno"> 1765</span> </div>
+<div class="line"><a id="l01773" name="l01773"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ab9b4e38561380adeb35ff5f8c68d9bc5"> 1773</a></span><span class="preprocessor">#define CHIP_ERROR_IM_MALFORMED_DATA_VERSION_FILTER_IB             CHIP_CORE_ERROR(0xd7)</span></div>
+<div class="line"><a id="l01774" name="l01774"></a><span class="lineno"> 1774</span> </div>
+<div class="line"><a id="l01781" name="l01781"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ac120358afb7341e37792bbe9aaa512cb"> 1781</a></span><span class="preprocessor">#define CHIP_ERROR_NOT_FOUND                                       CHIP_CORE_ERROR(0xd8)</span></div>
+<div class="line"><a id="l01782" name="l01782"></a><span class="lineno"> 1782</span> </div>
+<div class="line"><a id="l01783" name="l01783"></a><span class="lineno"> 1783</span><span class="comment">// AVAILABLE: 0xd9</span></div>
+<div class="line"><a id="l01784" name="l01784"></a><span class="lineno"> 1784</span> </div>
+<div class="line"><a id="l01792" name="l01792"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a61696c06a96e8f6c82e3b1082dfba475"> 1792</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_FILE_IDENTIFIER                     CHIP_CORE_ERROR(0xda)</span></div>
+<div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span> </div>
+<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#adb993124dc1708fff1238c869e98c9f0"> 1800</a></span><span class="preprocessor">#define CHIP_ERROR_BUSY                                        CHIP_CORE_ERROR(0xdb)</span></div>
+<div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span> </div>
+<div class="line"><a id="l01808" name="l01808"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a15ce7948881f33530f89219bd737792a"> 1808</a></span><span class="preprocessor"> #define CHIP_ERROR_MAX_RETRY_EXCEEDED                         CHIP_CORE_ERROR(0xdc)</span></div>
+<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span> </div>
+<div class="line"><a id="l01816" name="l01816"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a327c94d81070e70635aa78609d4f9a3b"> 1816</a></span><span class="preprocessor"> #define CHIP_ERROR_PROVIDER_LIST_EXHAUSTED                    CHIP_CORE_ERROR(0xdd)</span></div>
+<div class="line"><a id="l01817" name="l01817"></a><span class="lineno"> 1817</span> </div>
+<div class="line"><a id="l01818" name="l01818"></a><span class="lineno"> 1818</span><span class="comment">// AVAILABLE: 0xde</span></div>
+<div class="line"><a id="l01819" name="l01819"></a><span class="lineno"> 1819</span> </div>
+<div class="line"><a id="l01826" name="l01826"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#ae01c5186928ef8d04453a694287b07b3"> 1826</a></span><span class="preprocessor">#define CHIP_ERROR_INVALID_SCHEME_PREFIX                      CHIP_CORE_ERROR(0xdf)</span></div>
+<div class="line"><a id="l01827" name="l01827"></a><span class="lineno"> 1827</span> </div>
+<div class="line"><a id="l01834" name="l01834"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#aa63d6dfbc422e5dac8f212c764d860ac"> 1834</a></span><span class="preprocessor">#define CHIP_ERROR_MISSING_URI_SEPARATOR                      CHIP_CORE_ERROR(0xe0)</span></div>
+<div class="line"><a id="l01835" name="l01835"></a><span class="lineno"> 1835</span> </div>
+<div class="line"><a id="l01842" name="l01842"></a><span class="lineno"><a class="line" href="CHIPError_8h.html#a3424b14c5f2b11c7cfd3eca58d44aea4"> 1842</a></span><span class="preprocessor">#define CHIP_ERROR_HANDLER_NOT_SET                            CHIP_CORE_ERROR(0xe1)</span></div>
+<div class="line"><a id="l01843" name="l01843"></a><span class="lineno"> 1843</span> </div>
+<div class="line"><a id="l01844" name="l01844"></a><span class="lineno"> 1844</span><span class="comment">// WHEN ADDING A NEW ERROR CODE: Look for &quot;AVAILABLE&quot; comments above and fill in gaps.</span></div>
+<div class="line"><a id="l01845" name="l01845"></a><span class="lineno"> 1845</span> </div>
+<div class="line"><a id="l01846" name="l01846"></a><span class="lineno"> 1846</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l01847" name="l01847"></a><span class="lineno"> 1847</span> </div>
+<div class="line"><a id="l01848" name="l01848"></a><span class="lineno"> 1848</span><span class="comment">// !!!!! IMPORTANT !!!!!  If you add new CHIP errors, please update the translation</span></div>
+<div class="line"><a id="l01849" name="l01849"></a><span class="lineno"> 1849</span><span class="comment">// of error codes to strings in CHIPError.cpp, and add them to kTestElements[]</span></div>
+<div class="line"><a id="l01850" name="l01850"></a><span class="lineno"> 1850</span><span class="comment">// in core/tests/TestCHIPErrorStr.cpp</span></div>
+<div class="line"><a id="l01851" name="l01851"></a><span class="lineno"> 1851</span> </div>
+<div class="line"><a id="l01852" name="l01852"></a><span class="lineno"> 1852</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l01853" name="l01853"></a><span class="lineno"> 1853</span> </div>
+<div class="line"><a id="l01854" name="l01854"></a><span class="lineno"><a class="line" href="namespacechip.html#a742bd0319b9d21abf37e45db9fc5322b"> 1854</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip.html#a742bd0319b9d21abf37e45db9fc5322b">RegisterCHIPLayerErrorFormatter</a>();</div>
+<div class="line"><a id="l01855" name="l01855"></a><span class="lineno"><a class="line" href="namespacechip.html#a37b58ae1c6cb4d2fb06cfdfd272b0435"> 1855</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip.html#a37b58ae1c6cb4d2fb06cfdfd272b0435">DeregisterCHIPLayerErrorFormatter</a>();</div>
+<div class="line"><a id="l01856" name="l01856"></a><span class="lineno"><a class="line" href="namespacechip.html#aa935e096726f6621e6185a22466beea0"> 1856</a></span><span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacechip.html#aa935e096726f6621e6185a22466beea0">FormatCHIPError</a>(<span class="keywordtype">char</span> * buf, uint16_t bufSize, <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> err);</div>
+<div class="line"><a id="l01857" name="l01857"></a><span class="lineno"> 1857</span> </div>
+<div class="line"><a id="l01858" name="l01858"></a><span class="lineno"> 1858</span>} <span class="comment">// namespace chip</span></div>
+<div class="ttc" id="aCHIPConfig_8h_html"><div class="ttname"><a href="CHIPConfig_8h.html">CHIPConfig.h</a></div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html"><div class="ttname"><a href="classchip_1_1ChipError.html">chip::ChipError</a></div><div class="ttdef"><b>Definition</b> CHIPError.h:55</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a01fc73cc958f21d700dde79e1cdadfea"><div class="ttname"><a href="classchip_1_1ChipError.html#a01fc73cc958f21d700dde79e1cdadfea">chip::ChipError::kValueStart</a></div><div class="ttdeci">static constexpr int kValueStart</div><div class="ttdef"><b>Definition</b> CHIPError.h:368</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a04534f71ce26546ed69848e2963ddcd1"><div class="ttname"><a href="classchip_1_1ChipError.html#a04534f71ce26546ed69848e2963ddcd1">chip::ChipError::GetValue</a></div><div class="ttdeci">constexpr ValueType GetValue() const</div><div class="ttdef"><b>Definition</b> CHIPError.h:266</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a10c869727927ae905b546a8e092b597a"><div class="ttname"><a href="classchip_1_1ChipError.html#a10c869727927ae905b546a8e092b597a">chip::ChipError::IsSuccess</a></div><div class="ttdeci">static constexpr bool IsSuccess(StorageType error)</div><div class="ttdef"><b>Definition</b> CHIPError.h:221</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a140538856993f7e4c46613b523f935c0"><div class="ttname"><a href="classchip_1_1ChipError.html#a140538856993f7e4c46613b523f935c0">chip::ChipError::MakeMask</a></div><div class="ttdeci">static constexpr StorageType MakeMask(unsigned int start, unsigned int length)</div><div class="ttdef"><b>Definition</b> CHIPError.h:380</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a1dc906bafe4f1655e9786d9bf7269f59"><div class="ttname"><a href="classchip_1_1ChipError.html#a1dc906bafe4f1655e9786d9bf7269f59">chip::ChipError::MakeField</a></div><div class="ttdeci">static constexpr StorageType MakeField(unsigned int start, StorageType value)</div><div class="ttdef"><b>Definition</b> CHIPError.h:381</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a2231140be268f9d8d3ac60a87d2917bf"><div class="ttname"><a href="classchip_1_1ChipError.html#a2231140be268f9d8d3ac60a87d2917bf">chip::ChipError::MakeInteger</a></div><div class="ttdeci">static constexpr StorageType MakeInteger(Range range, StorageType value)</div><div class="ttdef"><b>Definition</b> CHIPError.h:384</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a36b5f98d2d117be65be2a1779771029a"><div class="ttname"><a href="classchip_1_1ChipError.html#a36b5f98d2d117be65be2a1779771029a">chip::ChipError::IsRange</a></div><div class="ttdeci">constexpr bool IsRange(Range range) const</div><div class="ttdef"><b>Definition</b> CHIPError.h:253</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a3a06d58e69520364afdacd7caf9eed61"><div class="ttname"><a href="classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61">chip::ChipError::Format</a></div><div class="ttdeci">FormatType Format() const</div><div class="ttdef"><b>Definition</b> CHIPError.h:235</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a481a30245293d3e0a9a53f18c33dd8fe"><div class="ttname"><a href="classchip_1_1ChipError.html#a481a30245293d3e0a9a53f18c33dd8fe">chip::ChipError::kSdkPartStart</a></div><div class="ttdeci">static constexpr int kSdkPartStart</div><div class="ttdef"><b>Definition</b> CHIPError.h:371</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a5139a684a5107a10c7aab2c82d155976"><div class="ttname"><a href="classchip_1_1ChipError.html#a5139a684a5107a10c7aab2c82d155976">chip::ChipError::CanEncapsulate</a></div><div class="ttdeci">static constexpr bool CanEncapsulate(T value)</div><div class="ttdef"><b>Definition</b> CHIPError.h:281</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a517a8fc6834a0f9441feb7497eb7f73e"><div class="ttname"><a href="classchip_1_1ChipError.html#a517a8fc6834a0f9441feb7497eb7f73e">chip::ChipError::ChipError</a></div><div class="ttdeci">ChipError()=default</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a5cea3132e92d32e8590bf3a77780e01d"><div class="ttname"><a href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01d">chip::ChipError::Range</a></div><div class="ttdeci">Range</div><div class="ttdef"><b>Definition</b> CHIPError.h:90</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a5cea3132e92d32e8590bf3a77780e01da048d24cf2be34000904b23eb2a249fc0"><div class="ttname"><a href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da048d24cf2be34000904b23eb2a249fc0">chip::ChipError::Range::kOpenThread</a></div><div class="ttdeci">@ kOpenThread</div><div class="ttdoc">Encapsulated OpenThread errors.</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a5cea3132e92d32e8590bf3a77780e01da7cab1c8d19f96808795ed64395ae09bb"><div class="ttname"><a href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da7cab1c8d19f96808795ed64395ae09bb">chip::ChipError::Range::kLastRange</a></div><div class="ttdeci">@ kLastRange</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a5cea3132e92d32e8590bf3a77780e01da8635fb4ddf108701e76114d57e2753f5"><div class="ttname"><a href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da8635fb4ddf108701e76114d57e2753f5">chip::ChipError::Range::kSDK</a></div><div class="ttdeci">@ kSDK</div><div class="ttdoc">CHIP SDK errors.</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a5cea3132e92d32e8590bf3a77780e01da90af59bb4a58aaf6140101fb5d09d8d8"><div class="ttname"><a href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01da90af59bb4a58aaf6140101fb5d09d8d8">chip::ChipError::Range::kLwIP</a></div><div class="ttdeci">@ kLwIP</div><div class="ttdoc">Encapsulated LwIP errors.</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a5cea3132e92d32e8590bf3a77780e01daaa0c092e7769e59e3425838a5d9409dc"><div class="ttname"><a href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01daaa0c092e7769e59e3425838a5d9409dc">chip::ChipError::Range::kPlatform</a></div><div class="ttdeci">@ kPlatform</div><div class="ttdoc">Platform-defined encapsulation.</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a5cea3132e92d32e8590bf3a77780e01dab5afb310527a3ec216c7e3782104872d"><div class="ttname"><a href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01dab5afb310527a3ec216c7e3782104872d">chip::ChipError::Range::kOS</a></div><div class="ttdeci">@ kOS</div><div class="ttdoc">Encapsulated OS errors, other than POSIX errno.</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a5cea3132e92d32e8590bf3a77780e01daf685c0d60ac42661a3cad1fa8f76ecf3"><div class="ttname"><a href="classchip_1_1ChipError.html#a5cea3132e92d32e8590bf3a77780e01daf685c0d60ac42661a3cad1fa8f76ecf3">chip::ChipError::Range::kPOSIX</a></div><div class="ttdeci">@ kPOSIX</div><div class="ttdoc">Encapsulated POSIX errno values.</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a6342d6f7fd361ab3f8b49d8b8dee1d39"><div class="ttname"><a href="classchip_1_1ChipError.html#a6342d6f7fd361ab3f8b49d8b8dee1d39">chip::ChipError::GetRange</a></div><div class="ttdeci">constexpr Range GetRange() const</div><div class="ttdef"><b>Definition</b> CHIPError.h:261</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a648cde69f812464525fe527490f2c510"><div class="ttname"><a href="classchip_1_1ChipError.html#a648cde69f812464525fe527490f2c510">chip::ChipError::ChipError</a></div><div class="ttdeci">constexpr ChipError(Range range, ValueType value)</div><div class="ttdef"><b>Definition</b> CHIPError.h:146</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a6e30096a2869b2fb53cf24c33586cf82"><div class="ttname"><a href="classchip_1_1ChipError.html#a6e30096a2869b2fb53cf24c33586cf82">chip::ChipError::GetSdkCode</a></div><div class="ttdeci">constexpr uint8_t GetSdkCode() const</div><div class="ttdef"><b>Definition</b> CHIPError.h:299</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a7c6b10e4205be670f328b2582bbcef64"><div class="ttname"><a href="classchip_1_1ChipError.html#a7c6b10e4205be670f328b2582bbcef64">chip::ChipError::GetField</a></div><div class="ttdeci">static constexpr StorageType GetField(unsigned int start, unsigned int length, StorageType value)</div><div class="ttdef"><b>Definition</b> CHIPError.h:376</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a7f681971fc9488c4ef9b251c470f4543"><div class="ttname"><a href="classchip_1_1ChipError.html#a7f681971fc9488c4ef9b251c470f4543">chip::ChipError::operator==</a></div><div class="ttdeci">bool operator==(const ChipError &amp;other) const</div><div class="ttdef"><b>Definition</b> CHIPError.h:205</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a87972cb4a370f693e7bdddde0ac6ad81"><div class="ttname"><a href="classchip_1_1ChipError.html#a87972cb4a370f693e7bdddde0ac6ad81">chip::ChipError::IsSuccess</a></div><div class="ttdeci">static constexpr bool IsSuccess(ChipError error)</div><div class="ttdef"><b>Definition</b> CHIPError.h:220</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a886b316b1a8601a847d107027e83ae08"><div class="ttname"><a href="classchip_1_1ChipError.html#a886b316b1a8601a847d107027e83ae08">chip::ChipError::IsIMStatus</a></div><div class="ttdeci">constexpr bool IsIMStatus() const</div><div class="ttdef"><b>Definition</b> CHIPError.h:306</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a97fe0d8504444f399cfefdae91af907c"><div class="ttname"><a href="classchip_1_1ChipError.html#a97fe0d8504444f399cfefdae91af907c">chip::ChipError::ValueType</a></div><div class="ttdeci">StorageType ValueType</div><div class="ttdoc">Type for encapsulated error values.</div><div class="ttdef"><b>Definition</b> CHIPError.h:61</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a982b4916c50dc5b00982da0547aa3614"><div class="ttname"><a href="classchip_1_1ChipError.html#a982b4916c50dc5b00982da0547aa3614">chip::ChipError::IsPart</a></div><div class="ttdeci">constexpr bool IsPart(SdkPart part) const</div><div class="ttdef"><b>Definition</b> CHIPError.h:289</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a98d5da3c7d5abeb85eee39213dc24f56"><div class="ttname"><a href="classchip_1_1ChipError.html#a98d5da3c7d5abeb85eee39213dc24f56">chip::ChipError::FitsInField</a></div><div class="ttdeci">static constexpr bool FitsInField(unsigned int length, StorageType value)</div><div class="ttdef"><b>Definition</b> CHIPError.h:382</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_a9ee354adbac5c52b17cd8cf60b01d5b7"><div class="ttname"><a href="classchip_1_1ChipError.html#a9ee354adbac5c52b17cd8cf60b01d5b7">chip::ChipError::kSdkPartLength</a></div><div class="ttdeci">static constexpr int kSdkPartLength</div><div class="ttdef"><b>Definition</b> CHIPError.h:372</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_aa847c6253f2a854ccac2e7ccff3e685f"><div class="ttname"><a href="classchip_1_1ChipError.html#aa847c6253f2a854ccac2e7ccff3e685f">chip::ChipError::ChipError</a></div><div class="ttdeci">constexpr ChipError(StorageType error)</div><div class="ttdef"><b>Definition</b> CHIPError.h:195</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_ab11348c5986f6414064a12f669bcfc2a"><div class="ttname"><a href="classchip_1_1ChipError.html#ab11348c5986f6414064a12f669bcfc2a">chip::ChipError::StorageType</a></div><div class="ttdeci">uint32_t StorageType</div><div class="ttdoc">Internal representation of an error.</div><div class="ttdef"><b>Definition</b> CHIPError.h:58</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_ab29e35aa46a8bfca3cc210b5e86bb5fc"><div class="ttname"><a href="classchip_1_1ChipError.html#ab29e35aa46a8bfca3cc210b5e86bb5fc">chip::ChipError::kValueLength</a></div><div class="ttdeci">static constexpr int kValueLength</div><div class="ttdef"><b>Definition</b> CHIPError.h:369</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_ab46dbe68b03cbd6d1b8b8fa7fbdf27f2"><div class="ttname"><a href="classchip_1_1ChipError.html#ab46dbe68b03cbd6d1b8b8fa7fbdf27f2">chip::ChipError::kRangeLength</a></div><div class="ttdeci">static constexpr int kRangeLength</div><div class="ttdef"><b>Definition</b> CHIPError.h:367</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_ab553ddc0146892e8b529ecfdac1140e1"><div class="ttname"><a href="classchip_1_1ChipError.html#ab553ddc0146892e8b529ecfdac1140e1">chip::ChipError::AsString</a></div><div class="ttdeci">const char * AsString(bool withSourceLocation=true) const</div><div class="ttdef"><b>Definition</b> CHIPError.h:244</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_ab815ecfceacf1c09589981cac36e1dcd"><div class="ttname"><a href="classchip_1_1ChipError.html#ab815ecfceacf1c09589981cac36e1dcd">chip::ChipError::mError</a></div><div class="ttdeci">StorageType mError</div><div class="ttdef"><b>Definition</b> CHIPError.h:413</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_ab88d3be92773ce237bcc71e78650f740"><div class="ttname"><a href="classchip_1_1ChipError.html#ab88d3be92773ce237bcc71e78650f740">chip::ChipError::CanEncapsulate</a></div><div class="ttdeci">static constexpr bool CanEncapsulate()</div><div class="ttdef"><b>Definition</b> CHIPError.h:272</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_abd3c79221e490945cd5bbf050b5aa74f"><div class="ttname"><a href="classchip_1_1ChipError.html#abd3c79221e490945cd5bbf050b5aa74f">chip::ChipError::operator!=</a></div><div class="ttdeci">bool operator!=(const ChipError &amp;other) const</div><div class="ttdef"><b>Definition</b> CHIPError.h:206</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_ac3384f4135b96b9ea5a81d14967e305a"><div class="ttname"><a href="classchip_1_1ChipError.html#ac3384f4135b96b9ea5a81d14967e305a">chip::ChipError::FormatType</a></div><div class="ttdeci">StorageType FormatType</div><div class="ttdoc">Type returned by Format().</div><div class="ttdef"><b>Definition</b> CHIPError.h:76</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_ac3453beeedb11e576067be7d3c8d6dc3"><div class="ttname"><a href="classchip_1_1ChipError.html#ac3453beeedb11e576067be7d3c8d6dc3">chip::ChipError::kRangeStart</a></div><div class="ttdeci">static constexpr int kRangeStart</div><div class="ttdef"><b>Definition</b> CHIPError.h:366</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_ae42a8f9e612807fcdb4950df3a158f78"><div class="ttname"><a href="classchip_1_1ChipError.html#ae42a8f9e612807fcdb4950df3a158f78">chip::ChipError::AsInteger</a></div><div class="ttdeci">constexpr StorageType AsInteger() const</div><div class="ttdef"><b>Definition</b> CHIPError.h:211</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_ae614bf5e83f7a005df752973083a804b"><div class="ttname"><a href="classchip_1_1ChipError.html#ae614bf5e83f7a005df752973083a804b">chip::ChipError::ChipError</a></div><div class="ttdeci">constexpr ChipError(SdkPart part, uint8_t code)</div><div class="ttdef"><b>Definition</b> CHIPError.h:169</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_ae7e2304309f1dd262552adf0d327b900"><div class="ttname"><a href="classchip_1_1ChipError.html#ae7e2304309f1dd262552adf0d327b900">chip::ChipError::kSdkCodeLength</a></div><div class="ttdeci">static constexpr int kSdkCodeLength</div><div class="ttdef"><b>Definition</b> CHIPError.h:374</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_aec722d82e8f95bfb05bfb079dd7d6c07"><div class="ttname"><a href="classchip_1_1ChipError.html#aec722d82e8f95bfb05bfb079dd7d6c07">chip::ChipError::MakeInteger</a></div><div class="ttdeci">static constexpr StorageType MakeInteger(SdkPart part, uint8_t code)</div><div class="ttdef"><b>Definition</b> CHIPError.h:388</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_af3dba9c2e85ede61b1b86e928a3cb714"><div class="ttname"><a href="classchip_1_1ChipError.html#af3dba9c2e85ede61b1b86e928a3cb714">chip::ChipError::kSdkCodeStart</a></div><div class="ttdeci">static constexpr int kSdkCodeStart</div><div class="ttdef"><b>Definition</b> CHIPError.h:373</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_af5ec991a41f971055317442769ae6d01"><div class="ttname"><a href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01">chip::ChipError::SdkPart</a></div><div class="ttdeci">SdkPart</div><div class="ttdef"><b>Definition</b> CHIPError.h:104</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_af5ec991a41f971055317442769ae6d01a040394711ad65e20323fe0114e507103"><div class="ttname"><a href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a040394711ad65e20323fe0114e507103">chip::ChipError::SdkPart::kDevice</a></div><div class="ttdeci">@ kDevice</div><div class="ttdoc">Device layer errors; see &lt;platform/CHIPDeviceError.h&gt;.</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_af5ec991a41f971055317442769ae6d01a063bd39fa660e0d7ecaf6f826d7b1f77"><div class="ttname"><a href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a063bd39fa660e0d7ecaf6f826d7b1f77">chip::ChipError::SdkPart::kIMGlobalStatus</a></div><div class="ttdeci">@ kIMGlobalStatus</div><div class="ttdoc">Interaction Model global status code.</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_af5ec991a41f971055317442769ae6d01a1b6ec7b97ae011119afe1762e70c992a"><div class="ttname"><a href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a1b6ec7b97ae011119afe1762e70c992a">chip::ChipError::SdkPart::kApplication</a></div><div class="ttdeci">@ kApplication</div><div class="ttdoc">Application-defined errors; see CHIP_APPLICATION_ERROR</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_af5ec991a41f971055317442769ae6d01a355aaee592c8572685a144827b675db1"><div class="ttname"><a href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a355aaee592c8572685a144827b675db1">chip::ChipError::SdkPart::kASN1</a></div><div class="ttdeci">@ kASN1</div><div class="ttdoc">ASN1 errors; see &lt;asn1/ASN1Error.h&gt;.</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_af5ec991a41f971055317442769ae6d01a94919bca50489b7b7d62eea68ab00899"><div class="ttname"><a href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01a94919bca50489b7b7d62eea68ab00899">chip::ChipError::SdkPart::kBLE</a></div><div class="ttdeci">@ kBLE</div><div class="ttdoc">BLE layer errors; see &lt;ble/BleError.h&gt;.</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_af5ec991a41f971055317442769ae6d01ade8900e4c323b0c667bfd5ca5ecf9e5c"><div class="ttname"><a href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01ade8900e4c323b0c667bfd5ca5ecf9e5c">chip::ChipError::SdkPart::kCore</a></div><div class="ttdeci">@ kCore</div><div class="ttdoc">SDK core errors.</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_af5ec991a41f971055317442769ae6d01ae6cbf2ab03f7c67d3d0be39178529a00"><div class="ttname"><a href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01ae6cbf2ab03f7c67d3d0be39178529a00">chip::ChipError::SdkPart::kInet</a></div><div class="ttdeci">@ kInet</div><div class="ttdoc">Inet layer errors; see &lt;inet/InetError.h&gt;.</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html_af5ec991a41f971055317442769ae6d01afdd2d7ed9584c10c043737a6b4e2778b"><div class="ttname"><a href="classchip_1_1ChipError.html#af5ec991a41f971055317442769ae6d01afdd2d7ed9584c10c043737a6b4e2778b">chip::ChipError::SdkPart::kIMClusterStatus</a></div><div class="ttdeci">@ kIMClusterStatus</div><div class="ttdoc">Interaction Model cluster-specific status code.</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+<div class="ttc" id="anamespacechip_html_a37b58ae1c6cb4d2fb06cfdfd272b0435"><div class="ttname"><a href="namespacechip.html#a37b58ae1c6cb4d2fb06cfdfd272b0435">chip::DeregisterCHIPLayerErrorFormatter</a></div><div class="ttdeci">void DeregisterCHIPLayerErrorFormatter()</div></div>
+<div class="ttc" id="anamespacechip_html_a742bd0319b9d21abf37e45db9fc5322b"><div class="ttname"><a href="namespacechip.html#a742bd0319b9d21abf37e45db9fc5322b">chip::RegisterCHIPLayerErrorFormatter</a></div><div class="ttdeci">void RegisterCHIPLayerErrorFormatter()</div></div>
+<div class="ttc" id="anamespacechip_html_aa935e096726f6621e6185a22466beea0"><div class="ttname"><a href="namespacechip.html#aa935e096726f6621e6185a22466beea0">chip::FormatCHIPError</a></div><div class="ttdeci">bool FormatCHIPError(char *buf, uint16_t bufSize, CHIP_ERROR err)</div></div>
+<div class="ttc" id="astructchip_1_1ChipError_1_1MaskConstant_html"><div class="ttname"><a href="structchip_1_1ChipError_1_1MaskConstant.html">chip::ChipError::MaskConstant</a></div><div class="ttdef"><b>Definition</b> CHIPError.h:394</div></div>
+<div class="ttc" id="astructchip_1_1ChipError_1_1MaskConstant_html_a6184ec438370357f239877de65e63071"><div class="ttname"><a href="structchip_1_1ChipError_1_1MaskConstant.html#a6184ec438370357f239877de65e63071">chip::ChipError::MaskConstant::value</a></div><div class="ttdeci">static constexpr StorageType value</div><div class="ttdef"><b>Definition</b> CHIPError.h:395</div></div>
+<div class="ttc" id="astructchip_1_1ChipError_1_1SdkErrorConstant_html"><div class="ttname"><a href="structchip_1_1ChipError_1_1SdkErrorConstant.html">chip::ChipError::SdkErrorConstant</a></div><div class="ttdef"><b>Definition</b> CHIPError.h:430</div></div>
+<div class="ttc" id="astructchip_1_1ChipError_1_1SdkErrorConstant_html_affb6e0c2629b5be3694b63d99466c5d7"><div class="ttname"><a href="structchip_1_1ChipError_1_1SdkErrorConstant.html#affb6e0c2629b5be3694b63d99466c5d7">chip::ChipError::SdkErrorConstant::value</a></div><div class="ttdeci">static constexpr StorageType value</div><div class="ttdef"><b>Definition</b> CHIPError.h:434</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/app/util/endpoint-config-api.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_a9aeb43d402f24b4c5513213743384b7.html">app</a></li><li class="navelem"><a class="el" href="dir_0abad3d09830a2b55ef14697754b3fac.html">util</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">endpoint-config-api.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="endpoint-config-api_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="af-types_8h.html">app/util/af-types.h</a>&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="endpoint-config-api_8h.html#a4daf3087191de83ea8e27acf13a11d88">   33</a></span>uint16_t <a class="code hl_function" href="endpoint-config-api_8h.html#a4daf3087191de83ea8e27acf13a11d88">emberAfEndpointCount</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="endpoint-config-api_8h.html#ab2030cb8a85f4fe96c84316b62604ff1">   38</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="endpoint-config-api_8h.html#ab2030cb8a85f4fe96c84316b62604ff1">emberAfEndpointEnableDisable</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> endpoint, <span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="endpoint-config-api_8h.html#a8334f14f378ef4dbfecca10cc3e69828">   45</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="endpoint-config-api_8h.html#a8334f14f378ef4dbfecca10cc3e69828">emberAfEndpointIndexIsEnabled</a>(uint16_t index);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="endpoint-config-api_8h.html#aca1103fbff91f47b3e299cb9bd62a0b1">   51</a></span><a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> <a class="code hl_function" href="endpoint-config-api_8h.html#aca1103fbff91f47b3e299cb9bd62a0b1">emberAfEndpointFromIndex</a>(uint16_t index);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="endpoint-config-api_8h.html#a65415890b977234106713f3cb76f2aab">   57</a></span><span class="keyword">const</span> <a class="code hl_struct" href="structEmberAfEndpointType.html">EmberAfEndpointType</a> * <a class="code hl_function" href="endpoint-config-api_8h.html#a65415890b977234106713f3cb76f2aab">emberAfFindEndpointType</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> endpointId);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="endpoint-config-api_8h.html#ad95735616dfd89fac5b419abee7e40bf">   66</a></span><span class="keyword">const</span> <a class="code hl_struct" href="structEmberAfCluster.html">EmberAfCluster</a> * <a class="code hl_function" href="endpoint-config-api_8h.html#ad95735616dfd89fac5b419abee7e40bf">emberAfFindServerCluster</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> endpoint, <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">chip::ClusterId</a> clusterId);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="endpoint-config-api_8h.html#a5ab3d050819894b3cab54fb361c12ffa">   72</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="endpoint-config-api_8h.html#a5ab3d050819894b3cab54fb361c12ffa">emberAfContainsAttribute</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> endpoint, <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">chip::ClusterId</a> clusterId, <a class="code hl_typedef" href="namespacechip.html#a9679009d83716300aae025b8a172c401">chip::AttributeId</a> attributeId);</div>
+<div class="ttc" id="aaf-types_8h_html"><div class="ttname"><a href="af-types_8h.html">af-types.h</a></div></div>
+<div class="ttc" id="aendpoint-config-api_8h_html_a4daf3087191de83ea8e27acf13a11d88"><div class="ttname"><a href="endpoint-config-api_8h.html#a4daf3087191de83ea8e27acf13a11d88">emberAfEndpointCount</a></div><div class="ttdeci">uint16_t emberAfEndpointCount()</div></div>
+<div class="ttc" id="aendpoint-config-api_8h_html_a5ab3d050819894b3cab54fb361c12ffa"><div class="ttname"><a href="endpoint-config-api_8h.html#a5ab3d050819894b3cab54fb361c12ffa">emberAfContainsAttribute</a></div><div class="ttdeci">bool emberAfContainsAttribute(chip::EndpointId endpoint, chip::ClusterId clusterId, chip::AttributeId attributeId)</div></div>
+<div class="ttc" id="aendpoint-config-api_8h_html_a65415890b977234106713f3cb76f2aab"><div class="ttname"><a href="endpoint-config-api_8h.html#a65415890b977234106713f3cb76f2aab">emberAfFindEndpointType</a></div><div class="ttdeci">const EmberAfEndpointType * emberAfFindEndpointType(chip::EndpointId endpointId)</div></div>
+<div class="ttc" id="aendpoint-config-api_8h_html_a8334f14f378ef4dbfecca10cc3e69828"><div class="ttname"><a href="endpoint-config-api_8h.html#a8334f14f378ef4dbfecca10cc3e69828">emberAfEndpointIndexIsEnabled</a></div><div class="ttdeci">bool emberAfEndpointIndexIsEnabled(uint16_t index)</div></div>
+<div class="ttc" id="aendpoint-config-api_8h_html_ab2030cb8a85f4fe96c84316b62604ff1"><div class="ttname"><a href="endpoint-config-api_8h.html#ab2030cb8a85f4fe96c84316b62604ff1">emberAfEndpointEnableDisable</a></div><div class="ttdeci">bool emberAfEndpointEnableDisable(chip::EndpointId endpoint, bool enable)</div><div class="ttdoc">Enable/disable endpoints</div></div>
+<div class="ttc" id="aendpoint-config-api_8h_html_aca1103fbff91f47b3e299cb9bd62a0b1"><div class="ttname"><a href="endpoint-config-api_8h.html#aca1103fbff91f47b3e299cb9bd62a0b1">emberAfEndpointFromIndex</a></div><div class="ttdeci">chip::EndpointId emberAfEndpointFromIndex(uint16_t index)</div></div>
+<div class="ttc" id="aendpoint-config-api_8h_html_ad95735616dfd89fac5b419abee7e40bf"><div class="ttname"><a href="endpoint-config-api_8h.html#ad95735616dfd89fac5b419abee7e40bf">emberAfFindServerCluster</a></div><div class="ttdeci">const EmberAfCluster * emberAfFindServerCluster(chip::EndpointId endpoint, chip::ClusterId clusterId)</div></div>
+<div class="ttc" id="anamespacechip_html_a167c692d0d28c8e6a7d0b2f0c50b290a"><div class="ttname"><a href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">chip::ClusterId</a></div><div class="ttdeci">uint32_t ClusterId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:32</div></div>
+<div class="ttc" id="anamespacechip_html_a9679009d83716300aae025b8a172c401"><div class="ttname"><a href="namespacechip.html#a9679009d83716300aae025b8a172c401">chip::AttributeId</a></div><div class="ttdeci">uint32_t AttributeId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:31</div></div>
+<div class="ttc" id="anamespacechip_html_ae2e3807cea12f480cdb9c90c2cca56ef"><div class="ttname"><a href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a></div><div class="ttdeci">uint16_t EndpointId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:40</div></div>
+<div class="ttc" id="astructEmberAfCluster_html"><div class="ttname"><a href="structEmberAfCluster.html">EmberAfCluster</a></div><div class="ttdoc">Struct describing cluster</div><div class="ttdef"><b>Definition</b> af-types.h:81</div></div>
+<div class="ttc" id="astructEmberAfEndpointType_html"><div class="ttname"><a href="structEmberAfEndpointType.html">EmberAfEndpointType</a></div><div class="ttdoc">Endpoint type struct describes clusters that are on the endpoint.</div><div class="ttdef"><b>Definition</b> af-types.h:178</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

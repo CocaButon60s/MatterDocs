@@ -1,0 +1,9 @@
+<map id="chip::app::Clusters::Actions::ActionStructStorage::Set" name="chip::app::Clusters::Actions::ActionStructStorage::Set">
+<area shape="rect" id="Node000001" title=" " alt="" coords="268,91,512,131"/>
+<area shape="rect" id="Node000002" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1ActionStructStorage.html#a5ff5406a5b90072abf05dfca50198ef9" title=" " alt="" coords="5,5,220,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="305,90,209,63,211,58,306,85"/>
+<area shape="rect" id="Node000003" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1ActionStructStorage.html#af85296832949fe5ce36c40d52cb95ae4" title=" " alt="" coords="5,84,220,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="254,114,220,114,220,109,254,109"/>
+<area shape="rect" id="Node000004" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a1c188b1512454e8589c2396698570081" title=" " alt="" coords="7,163,218,233"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="313,138,219,168,217,163,311,133"/>
+</map>

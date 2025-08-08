@@ -1,0 +1,7 @@
+<map id="chip::Crypto::SensitiveDataBuffer::Span" name="chip::Crypto::SensitiveDataBuffer::Span">
+<area shape="rect" id="Node000001" title="Constructs span from the underlying buffer" alt="" coords="5,37,204,77"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Crypto_1_1SensitiveDataBuffer.html#adba4fa820735a6e3ae65de9635a4ce9a" title="Returns const pointer to start of the underlying buffer" alt="" coords="252,5,451,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,42,238,37,239,43,205,47"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Crypto_1_1SensitiveDataBuffer.html#a9ad86a5922f2ab06cc2cbaa64c5f7793" title="Returns current length of the buffer" alt="" coords="252,69,451,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,68,239,72,238,77,204,73"/>
+</map>

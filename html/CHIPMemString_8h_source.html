@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/support/CHIPMemString.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_1d1f3af32c41ad09e7d154e58874adc8.html">support</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">CHIPMemString.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="CHIPMemString_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2020 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *    All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;<a class="code" href="ScopedBuffer_8h.html">lib/support/ScopedBuffer.h</a>&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;<a class="code" href="Span_8h.html">lib/support/Span.h</a>&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span>Platform {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">   53</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">CopyString</a>(<span class="keywordtype">char</span> * <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>, <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">destLength</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a> &amp;&amp; <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">destLength</a>)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">strncpy</a>(<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>, <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>, <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">destLength</a>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>[<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">destLength</a> - 1] = 0;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="namespacechip_1_1Platform.html#a47c1b80efb185811be1685e626720585">   66</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">CopyString</a>(<span class="keywordtype">char</span> (&amp;<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>)[N], <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_function" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">CopyString</a>(<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>, N, <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="namespacechip_1_1Platform.html#ad6ac3ef911fef426215f6a5c4a7c5804">   83</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">CopyString</a>(<span class="keywordtype">char</span> * <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>, <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">destLength</a>, <a class="code hl_class" href="classchip_1_1Span.html">ByteSpan</a> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span> ((<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a> == <span class="keyword">nullptr</span>) || (<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">destLength</a> == 0))</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">return</span>; <span class="comment">// no space to copy anything, not even a null terminator</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>.empty())</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        *<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a> = <span class="charliteral">&#39;\0&#39;</span>; <span class="comment">// just a null terminator, we are copying empty data</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">maxChars</a> = std::min(<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">destLength</a> - 1, <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>.size());</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">memcpy</a>(<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>, <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>.data(), <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">maxChars</a>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>[<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">maxChars</a>] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="namespacechip_1_1Platform.html#a4d3604fc3bc05b0b6dbed72e0b2cfc34">  105</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">CopyString</a>(<span class="keywordtype">char</span> (&amp;<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>)[N], <a class="code hl_class" href="classchip_1_1Span.html">ByteSpan</a> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>{</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_function" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">CopyString</a>(<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>, N, <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="namespacechip_1_1Platform.html#a5a854f397f9095e97091125b0282cbad">  122</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">CopyString</a>(<span class="keywordtype">char</span> * <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>, <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">destLength</a>, <a class="code hl_class" href="classchip_1_1Span.html">CharSpan</a> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>{</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">if</span> ((<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a> == <span class="keyword">nullptr</span>) || (<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">destLength</a> == 0))</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">return</span>; <span class="comment">// no space to copy anything, not even a null terminator</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>.empty())</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        *<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a> = <span class="charliteral">&#39;\0&#39;</span>; <span class="comment">// just a null terminator, we are copying empty data</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">maxChars</a> = std::min(<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">destLength</a> - 1, <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>.size());</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">memcpy</a>(<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>, <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>.data(), <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">maxChars</a>);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>[<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">maxChars</a>] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
+</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="foldopen" id="foldopen00144" data-start="{" data-end="}">
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="namespacechip_1_1Platform.html#a70d40d3f0e6bf06ec107f1ba4a8cfec3">  144</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">CopyString</a>(<span class="keywordtype">char</span> (&amp;<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>)[N], <a class="code hl_class" href="classchip_1_1Span.html">CharSpan</a> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>)</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>{</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <a class="code hl_function" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">CopyString</a>(<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">dest</a>, N, <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">source</a>);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
+</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="foldopen" id="foldopen00163" data-start="{" data-end="}">
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="namespacechip_1_1Platform.html#a4a5809899f1d42e5442d7fa2b537784b">  163</a></span><span class="keyword">inline</span> <span class="keywordtype">char</span> * <a class="code hl_function" href="namespacechip_1_1Platform.html#a4a5809899f1d42e5442d7fa2b537784b">MemoryAllocString</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keywordtype">string</span>, <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">length</a>)</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>{</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">lengthWithNull</a> = <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">length</a> + 1;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordtype">char</span> * <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">result</a>         = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1">MemoryAlloc</a>(<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">lengthWithNull</a>));</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <a class="code hl_function" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">CopyString</a>(<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">result</a>, <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">lengthWithNull</a>, <span class="keywordtype">string</span>);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">result</a>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>
+</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="foldopen" id="foldopen00175" data-start="{" data-end="};">
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="classchip_1_1Platform_1_1ScopedMemoryString.html">  175</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1Platform_1_1ScopedMemoryString.html">ScopedMemoryString</a> : <span class="keyword">public</span> <a class="code hl_class" href="classchip_1_1Platform_1_1ScopedMemoryBuffer.html">ScopedMemoryBuffer</a>&lt;char&gt;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>{</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00187" data-start="{" data-end="}">
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="classchip_1_1Platform_1_1ScopedMemoryString.html#acd7a925f1ba15550c5ef872e967427ef">  187</a></span>    <a class="code hl_function" href="classchip_1_1Platform_1_1ScopedMemoryString.html#acd7a925f1ba15550c5ef872e967427ef">ScopedMemoryString</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keywordtype">string</span>, <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">length</a>)</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">lengthWithNull</a> = <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">length</a> + 1;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="comment">// We must convert the source string to a CharSpan, so we call the</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <span class="comment">// version of CopyString that handles unterminated strings.</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <a class="code hl_function" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">CopyString</a>(<a class="code hl_function" href="classchip_1_1Platform_1_1ScopedMemoryBuffer.html#a6cce8bc251e52b3d7530986449ca810f">Alloc</a>(<a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">lengthWithNull</a>).<a class="code hl_function" href="classchip_1_1Platform_1_1ScopedMemoryBuffer.html#ab99324da623be53017336a4dd71b7aaf">Get</a>(), <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">lengthWithNull</a>, <a class="code hl_typedef" href="namespacechip.html#a1e3573497c78c87072da81c586330d62">CharSpan</a>(<span class="keywordtype">string</span>, <a class="code hl_function" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">length</a>));</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    }</div>
+</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>};</div>
+</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>} <span class="comment">// namespace Platform</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>} <span class="comment">// namespace chip</span></div>
+<div class="ttc" id="aScopedBuffer_8h_html"><div class="ttname"><a href="ScopedBuffer_8h.html">ScopedBuffer.h</a></div></div>
+<div class="ttc" id="aSpan_8h_html"><div class="ttname"><a href="Span_8h.html">Span.h</a></div></div>
+<div class="ttc" id="aclasschip_1_1Platform_1_1ScopedMemoryBuffer_html"><div class="ttname"><a href="classchip_1_1Platform_1_1ScopedMemoryBuffer.html">chip::Platform::ScopedMemoryBuffer</a></div><div class="ttdef"><b>Definition</b> ScopedBuffer.h:140</div></div>
+<div class="ttc" id="aclasschip_1_1Platform_1_1ScopedMemoryBuffer_html_a6cce8bc251e52b3d7530986449ca810f"><div class="ttname"><a href="classchip_1_1Platform_1_1ScopedMemoryBuffer.html#a6cce8bc251e52b3d7530986449ca810f">chip::Platform::ScopedMemoryBuffer&lt; char &gt;::Alloc</a></div><div class="ttdeci">ScopedMemoryBuffer &amp; Alloc(size_t elementCount)</div><div class="ttdef"><b>Definition</b> ScopedBuffer.h:168</div></div>
+<div class="ttc" id="aclasschip_1_1Platform_1_1ScopedMemoryBuffer_html_ab99324da623be53017336a4dd71b7aaf"><div class="ttname"><a href="classchip_1_1Platform_1_1ScopedMemoryBuffer.html#ab99324da623be53017336a4dd71b7aaf">chip::Platform::ScopedMemoryBuffer&lt; char &gt;::Get</a></div><div class="ttdeci">char * Get()</div><div class="ttdef"><b>Definition</b> ScopedBuffer.h:148</div></div>
+<div class="ttc" id="aclasschip_1_1Platform_1_1ScopedMemoryString_html"><div class="ttname"><a href="classchip_1_1Platform_1_1ScopedMemoryString.html">chip::Platform::ScopedMemoryString</a></div><div class="ttdef"><b>Definition</b> CHIPMemString.h:176</div></div>
+<div class="ttc" id="aclasschip_1_1Platform_1_1ScopedMemoryString_html_acd7a925f1ba15550c5ef872e967427ef"><div class="ttname"><a href="classchip_1_1Platform_1_1ScopedMemoryString.html#acd7a925f1ba15550c5ef872e967427ef">chip::Platform::ScopedMemoryString::ScopedMemoryString</a></div><div class="ttdeci">ScopedMemoryString(const char *string, size_t length)</div><div class="ttdef"><b>Definition</b> CHIPMemString.h:187</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html"><div class="ttname"><a href="classchip_1_1Span.html">chip::Span&lt; const uint8_t &gt;</a></div></div>
+<div class="ttc" id="anamespacechip_1_1Platform_html_a4a5809899f1d42e5442d7fa2b537784b"><div class="ttname"><a href="namespacechip_1_1Platform.html#a4a5809899f1d42e5442d7fa2b537784b">chip::Platform::MemoryAllocString</a></div><div class="ttdeci">char * MemoryAllocString(const char *string, size_t length)</div><div class="ttdef"><b>Definition</b> CHIPMemString.h:163</div></div>
+<div class="ttc" id="anamespacechip_1_1Platform_html_abe7cb069f46f06b0312657d2db12a9d9"><div class="ttname"><a href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">chip::Platform::New</a></div><div class="ttdeci">T * New(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> CHIPMem.h:143</div></div>
+<div class="ttc" id="anamespacechip_1_1Platform_html_aea7c95adcc593e92ebc13c88833c430d"><div class="ttname"><a href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d">chip::Platform::CopyString</a></div><div class="ttdeci">void CopyString(char *dest, size_t destLength, const char *source)</div><div class="ttdef"><b>Definition</b> CHIPMemString.h:53</div></div>
+<div class="ttc" id="anamespacechip_1_1Platform_html_af1a25352e7486414fa03671cb9da8af1"><div class="ttname"><a href="namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1">chip::Platform::MemoryAlloc</a></div><div class="ttdeci">void * MemoryAlloc(size_t size)</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+<div class="ttc" id="anamespacechip_html_a1e3573497c78c87072da81c586330d62"><div class="ttname"><a href="namespacechip.html#a1e3573497c78c87072da81c586330d62">chip::CharSpan</a></div><div class="ttdeci">Span&lt; const char &gt; CharSpan</div><div class="ttdef"><b>Definition</b> Span.h:382</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

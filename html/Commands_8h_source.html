@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/shell/Commands.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_b23e84231b7baea6e6d11220a7d55eb9.html">shell</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Commands.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Commands_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2021 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>Shell {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespacechip_1_1Shell.html#a27bc71ee776790e0ba8a634bdb9e23e0">   27</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Shell.html#a27bc71ee776790e0ba8a634bdb9e23e0">RegisterBLECommands</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespacechip_1_1Shell.html#a83fcd8f854b6497520485447309f0cd9">   33</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Shell.html#a83fcd8f854b6497520485447309f0cd9">RegisterMetaCommands</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespacechip_1_1Shell.html#a7968b412704d4acc80da79f21c974668">   39</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Shell.html#a7968b412704d4acc80da79f21c974668">RegisterConfigCommands</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespacechip_1_1Shell.html#a1071048e3c42eaed1f23af1ebd5250b3">   45</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Shell.html#a1071048e3c42eaed1f23af1ebd5250b3">RegisterDeviceCommands</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespacechip_1_1Shell.html#a1ac81a3b071b1ebb4de4d97457aef22a">   51</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Shell.html#a1ac81a3b071b1ebb4de4d97457aef22a">RegisterOtaCommands</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespacechip_1_1Shell.html#aaa9d84ffcd754dc63153771da85e37f6">   57</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Shell.html#aaa9d84ffcd754dc63153771da85e37f6">RegisterStatCommands</a>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="namespacechip_1_1Shell.html#a6c7d3929a5c7022ad856ddebaa601765">   63</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Shell.html#a6c7d3929a5c7022ad856ddebaa601765">RegisterOnboardingCodesCommands</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="namespacechip_1_1Shell.html#ab5ceb433968c8323ddd387a23cb47525">   69</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Shell.html#ab5ceb433968c8323ddd387a23cb47525">RegisterWiFiCommands</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="namespacechip_1_1Shell.html#ace4782c8b025fbb9b6b0c8e26a055ecb">   75</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Shell.html#ace4782c8b025fbb9b6b0c8e26a055ecb">RegisterCommissioningCommands</a>();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="namespacechip_1_1Shell.html#ac3f41fee7d77e5bdb36aa62dda120535">   81</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Shell.html#ac3f41fee7d77e5bdb36aa62dda120535">RegisterNFCCommands</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="namespacechip_1_1Shell.html#aef16001a5f704283b0cd18cb56938b64">   87</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Shell.html#aef16001a5f704283b0cd18cb56938b64">RegisterDnsCommands</a>();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>} <span class="comment">// namespace Shell</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>} <span class="comment">// namespace chip</span></div>
+<div class="ttc" id="anamespacechip_1_1Shell_html_a1071048e3c42eaed1f23af1ebd5250b3"><div class="ttname"><a href="namespacechip_1_1Shell.html#a1071048e3c42eaed1f23af1ebd5250b3">chip::Shell::RegisterDeviceCommands</a></div><div class="ttdeci">void RegisterDeviceCommands()</div></div>
+<div class="ttc" id="anamespacechip_1_1Shell_html_a1ac81a3b071b1ebb4de4d97457aef22a"><div class="ttname"><a href="namespacechip_1_1Shell.html#a1ac81a3b071b1ebb4de4d97457aef22a">chip::Shell::RegisterOtaCommands</a></div><div class="ttdeci">void RegisterOtaCommands()</div></div>
+<div class="ttc" id="anamespacechip_1_1Shell_html_a27bc71ee776790e0ba8a634bdb9e23e0"><div class="ttname"><a href="namespacechip_1_1Shell.html#a27bc71ee776790e0ba8a634bdb9e23e0">chip::Shell::RegisterBLECommands</a></div><div class="ttdeci">void RegisterBLECommands()</div></div>
+<div class="ttc" id="anamespacechip_1_1Shell_html_a6c7d3929a5c7022ad856ddebaa601765"><div class="ttname"><a href="namespacechip_1_1Shell.html#a6c7d3929a5c7022ad856ddebaa601765">chip::Shell::RegisterOnboardingCodesCommands</a></div><div class="ttdeci">void RegisterOnboardingCodesCommands()</div></div>
+<div class="ttc" id="anamespacechip_1_1Shell_html_a7968b412704d4acc80da79f21c974668"><div class="ttname"><a href="namespacechip_1_1Shell.html#a7968b412704d4acc80da79f21c974668">chip::Shell::RegisterConfigCommands</a></div><div class="ttdeci">void RegisterConfigCommands()</div></div>
+<div class="ttc" id="anamespacechip_1_1Shell_html_a83fcd8f854b6497520485447309f0cd9"><div class="ttname"><a href="namespacechip_1_1Shell.html#a83fcd8f854b6497520485447309f0cd9">chip::Shell::RegisterMetaCommands</a></div><div class="ttdeci">void RegisterMetaCommands()</div></div>
+<div class="ttc" id="anamespacechip_1_1Shell_html_aaa9d84ffcd754dc63153771da85e37f6"><div class="ttname"><a href="namespacechip_1_1Shell.html#aaa9d84ffcd754dc63153771da85e37f6">chip::Shell::RegisterStatCommands</a></div><div class="ttdeci">void RegisterStatCommands()</div></div>
+<div class="ttc" id="anamespacechip_1_1Shell_html_ab5ceb433968c8323ddd387a23cb47525"><div class="ttname"><a href="namespacechip_1_1Shell.html#ab5ceb433968c8323ddd387a23cb47525">chip::Shell::RegisterWiFiCommands</a></div><div class="ttdeci">void RegisterWiFiCommands()</div></div>
+<div class="ttc" id="anamespacechip_1_1Shell_html_ac3f41fee7d77e5bdb36aa62dda120535"><div class="ttname"><a href="namespacechip_1_1Shell.html#ac3f41fee7d77e5bdb36aa62dda120535">chip::Shell::RegisterNFCCommands</a></div><div class="ttdeci">void RegisterNFCCommands()</div></div>
+<div class="ttc" id="anamespacechip_1_1Shell_html_ace4782c8b025fbb9b6b0c8e26a055ecb"><div class="ttname"><a href="namespacechip_1_1Shell.html#ace4782c8b025fbb9b6b0c8e26a055ecb">chip::Shell::RegisterCommissioningCommands</a></div><div class="ttdeci">void RegisterCommissioningCommands()</div></div>
+<div class="ttc" id="anamespacechip_1_1Shell_html_aef16001a5f704283b0cd18cb56938b64"><div class="ttname"><a href="namespacechip_1_1Shell.html#aef16001a5f704283b0cd18cb56938b64">chip::Shell::RegisterDnsCommands</a></div><div class="ttdeci">void RegisterDnsCommands()</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

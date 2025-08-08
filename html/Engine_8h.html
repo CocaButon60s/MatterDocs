@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/shell/Engine.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_b23e84231b7baea6e6d11220a7d55eb9.html">shell</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a>  </div>
+  <div class="headertitle"><div class="title">Engine.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;streamer.h&quot;</code><br />
+<code>#include &lt;<a class="el" href="CHIPError_8h_source.html">lib/core/CHIPError.h</a>&gt;</code><br />
+<code>#include &lt;lib/shell/Command.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Engine.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="Engine_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2lib_2shell_2Engine_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2lib_2shell_2Engine_8h" id="aconnectedhomeip_2src_2lib_2shell_2Engine_8h">
+<area shape="rect" title=" " alt="" coords="341,5,503,45"/>
+<area shape="rect" title=" " alt="" coords="56,93,148,119"/>
+<area shape="poly" title=" " alt="" coords="346,48,162,93,161,88,345,43"/>
+<area shape="rect" href="CHIPError_8h.html" title=" " alt="" coords="173,93,319,119"/>
+<area shape="poly" title=" " alt="" coords="381,48,286,90,283,85,379,43"/>
+<area shape="rect" title=" " alt="" coords="344,93,500,119"/>
+<area shape="poly" title=" " alt="" coords="425,46,425,79,419,79,419,46"/>
+<area shape="rect" title=" " alt="" coords="525,93,599,119"/>
+<area shape="poly" title=" " alt="" coords="457,43,530,84,528,89,454,48"/>
+<area shape="rect" title=" " alt="" coords="623,93,698,119"/>
+<area shape="poly" title=" " alt="" coords="480,43,614,87,612,92,478,48"/>
+<area shape="rect" title=" " alt="" coords="5,167,92,192"/>
+<area shape="poly" title=" " alt="" coords="215,121,95,164,93,159,213,116"/>
+<area shape="rect" title=" " alt="" coords="117,167,175,192"/>
+<area shape="poly" title=" " alt="" coords="231,121,175,161,172,156,228,117"/>
+<area shape="rect" title=" " alt="" coords="200,167,292,192"/>
+<area shape="poly" title=" " alt="" coords="249,119,249,153,243,153,243,119"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="316,167,475,192"/>
+<area shape="poly" title=" " alt="" coords="271,116,360,158,357,163,269,121"/>
+<area shape="rect" title=" " alt="" coords="499,167,671,192"/>
+<area shape="poly" title=" " alt="" coords="301,116,517,161,516,166,300,121"/>
+<area shape="rect" title=" " alt="" coords="163,240,283,265"/>
+<area shape="poly" title=" " alt="" coords="369,194,265,237,263,232,367,190"/>
+<area shape="rect" title=" " alt="" coords="307,240,483,265"/>
+<area shape="poly" title=" " alt="" coords="398,192,398,226,393,226,393,192"/>
+<area shape="rect" title=" " alt="" coords="508,240,637,265"/>
+<area shape="poly" title=" " alt="" coords="425,190,532,232,530,237,423,194"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="Engine_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2lib_2shell_2Engine_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2lib_2shell_2Engine_8hdep" id="aconnectedhomeip_2src_2lib_2shell_2Engine_8hdep">
+<area shape="rect" title=" " alt="" coords="185,5,346,45"/>
+<area shape="rect" href="CommissioneeShellCommands_8cpp.html" title=" " alt="" coords="5,196,256,251"/>
+<area shape="poly" title=" " alt="" coords="219,55,195,73,174,95,160,120,149,146,137,196,132,195,144,145,155,117,170,92,191,69,215,51"/>
+<area shape="rect" href="ControllerShellCommands_8cpp.html" title=" " alt="" coords="280,196,499,251"/>
+<area shape="poly" title=" " alt="" coords="317,51,341,69,361,92,374,118,383,145,391,195,386,196,378,146,369,120,356,95,337,73,314,55"/>
+<area shape="rect" href="Help_8h.html" title=" " alt="" coords="185,93,346,148"/>
+<area shape="poly" title=" " alt="" coords="268,59,268,93,263,93,263,59"/>
+<area shape="poly" title=" " alt="" coords="221,158,168,198,164,194,218,154"/>
+<area shape="poly" title=" " alt="" coords="310,155,359,194,355,198,307,159"/>
+</map>
+</div>
+</div>
+<p><a href="Engine_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Shell_1_1Engine.html">chip::Shell::Engine</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1Shell" id="r_namespacechip_1_1Shell"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Shell.html">chip::Shell</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a05fc14fb72373470f040c879d3446ed8" id="r_a05fc14fb72373470f040c879d3446ed8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a05fc14fb72373470f040c879d3446ed8">CHIP_SHELL_PROMPT</a>&#160;&#160;&#160;&quot;&gt; &quot;</td></tr>
+<tr class="separator:a05fc14fb72373470f040c879d3446ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ae54b782309af9dbf7c2c9d6bfa22a" id="r_a77ae54b782309af9dbf7c2c9d6bfa22a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a77ae54b782309af9dbf7c2c9d6bfa22a">CHIP_SHELL_MAX_MODULES</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a77ae54b782309af9dbf7c2c9d6bfa22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b29096c6c67027244a3bc1a9fff699" id="r_a03b29096c6c67027244a3bc1a9fff699"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a03b29096c6c67027244a3bc1a9fff699">CHIP_SHELL_MAX_LINE_SIZE</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:a03b29096c6c67027244a3bc1a9fff699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67c2fe547c0a09481b8a94065232494" id="r_ad67c2fe547c0a09481b8a94065232494"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#ad67c2fe547c0a09481b8a94065232494">CHIP_SHELL_MAX_TOKENS</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:ad67c2fe547c0a09481b8a94065232494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a5580eb2ff3dfd7be174b108cce93d466" id="r_a5580eb2ff3dfd7be174b108cce93d466"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Shell.html#a5580eb2ff3dfd7be174b108cce93d466">chip::Shell::shell_command_iterator_t</a>(shell_command_t *command, void *arg)</td></tr>
+<tr class="separator:a5580eb2ff3dfd7be174b108cce93d466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Header that defines a generic shell API for CHIP examples </p>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a03b29096c6c67027244a3bc1a9fff699" name="a03b29096c6c67027244a3bc1a9fff699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b29096c6c67027244a3bc1a9fff699">&#9670;&#160;</a></span>CHIP_SHELL_MAX_LINE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_SHELL_MAX_LINE_SIZE&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77ae54b782309af9dbf7c2c9d6bfa22a" name="a77ae54b782309af9dbf7c2c9d6bfa22a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ae54b782309af9dbf7c2c9d6bfa22a">&#9670;&#160;</a></span>CHIP_SHELL_MAX_MODULES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_SHELL_MAX_MODULES&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad67c2fe547c0a09481b8a94065232494" name="ad67c2fe547c0a09481b8a94065232494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad67c2fe547c0a09481b8a94065232494">&#9670;&#160;</a></span>CHIP_SHELL_MAX_TOKENS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_SHELL_MAX_TOKENS&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05fc14fb72373470f040c879d3446ed8" name="a05fc14fb72373470f040c879d3446ed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05fc14fb72373470f040c879d3446ed8">&#9670;&#160;</a></span>CHIP_SHELL_PROMPT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_SHELL_PROMPT&#160;&#160;&#160;&quot;&gt; &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

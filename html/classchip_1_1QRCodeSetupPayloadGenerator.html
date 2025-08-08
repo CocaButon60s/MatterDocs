@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::QRCodeSetupPayloadGenerator クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="classchip_1_1QRCodeSetupPayloadGenerator.html">QRCodeSetupPayloadGenerator</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classchip_1_1QRCodeSetupPayloadGenerator-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::QRCodeSetupPayloadGenerator クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="QRCodeSetupPayloadGenerator_8h_source.html">QRCodeSetupPayloadGenerator.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::QRCodeSetupPayloadGenerator 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1QRCodeSetupPayloadGenerator__coll__graph.png" border="0" usemap="#achip_1_1QRCodeSetupPayloadGenerator_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1QRCodeSetupPayloadGenerator_coll__map" id="achip_1_1QRCodeSetupPayloadGenerator_coll__map">
+<area shape="rect" title=" " alt="" coords="1447,27,1644,67"/>
+<area shape="rect" href="classchip_1_1SetupPayload.html" title=" " alt="" coords="1184,35,1329,60"/>
+<area shape="poly" title=" " alt="" coords="1343,45,1447,45,1447,50,1343,50"/>
+<area shape="rect" href="structchip_1_1PayloadContents.html" title=" " alt="" coords="968,35,1135,60"/>
+<area shape="poly" title=" " alt="" coords="1149,45,1183,45,1183,50,1149,50"/>
+<area shape="rect" href="classchip_1_1Optional.html" title=" " alt="" coords="557,27,764,67"/>
+<area shape="poly" title=" " alt="" coords="778,45,968,45,968,50,778,50"/>
+<area shape="rect" href="classchip_1_1Optional_1_1ValueHolder.html" title=" " alt="" coords="261,27,412,67"/>
+<area shape="poly" title=" " alt="" coords="426,45,557,45,557,50,426,50"/>
+<area shape="rect" title=" " alt="" coords="5,5,212,89"/>
+<area shape="poly" title=" " alt="" coords="226,45,261,45,261,50,226,50"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a836021ecdda075944c25a64defdbe8b0" id="r_a836021ecdda075944c25a64defdbe8b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a836021ecdda075944c25a64defdbe8b0">QRCodeSetupPayloadGenerator</a> (const <a class="el" href="classchip_1_1SetupPayload.html">SetupPayload</a> &amp;setupPayload)</td></tr>
+<tr class="separator:a836021ecdda075944c25a64defdbe8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0661bdf9e8b0a409f51c392881fbd5f0" id="r_a0661bdf9e8b0a409f51c392881fbd5f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a0661bdf9e8b0a409f51c392881fbd5f0">payloadBase38Representation</a> (std::string &amp;base38Representation)</td></tr>
+<tr class="separator:a0661bdf9e8b0a409f51c392881fbd5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e564a3ecd93a6c86ef44112faa19f7f" id="r_a4e564a3ecd93a6c86ef44112faa19f7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a4e564a3ecd93a6c86ef44112faa19f7f">payloadBase38RepresentationWithAutoTLVBuffer</a> (std::string &amp;base38Representation)</td></tr>
+<tr class="separator:a4e564a3ecd93a6c86ef44112faa19f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f91c9565194d2b46e2b9f3c3bfbd39b" id="r_a6f91c9565194d2b46e2b9f3c3bfbd39b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a6f91c9565194d2b46e2b9f3c3bfbd39b">payloadBase38Representation</a> (std::string &amp;base38Representation, uint8_t *tlvDataStart, uint32_t tlvDataStartSize)</td></tr>
+<tr class="separator:a6f91c9565194d2b46e2b9f3c3bfbd39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466c054b81da849057111f429262ee10" id="r_a466c054b81da849057111f429262ee10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a466c054b81da849057111f429262ee10">SetAllowInvalidPayload</a> (bool allow)</td></tr>
+<tr class="separator:a466c054b81da849057111f429262ee10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a361c639838b368b70fea174c25510044" id="r_a361c639838b368b70fea174c25510044"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a361c639838b368b70fea174c25510044">generateTLVFromOptionalData</a> (<a class="el" href="classchip_1_1SetupPayload.html">SetupPayload</a> &amp;outPayload, uint8_t *tlvDataStart, uint32_t maxLen, size_t &amp;tlvDataLengthInBytes)</td></tr>
+<tr class="separator:a361c639838b368b70fea174c25510044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a77099bf45e98e87153854ef55649419c" id="r_a77099bf45e98e87153854ef55649419c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1SetupPayload.html">SetupPayload</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a77099bf45e98e87153854ef55649419c">mPayload</a></td></tr>
+<tr class="separator:a77099bf45e98e87153854ef55649419c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b62bbc72cfb0db469e90ebe8e0cccf" id="r_a20b62bbc72cfb0db469e90ebe8e0cccf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1QRCodeSetupPayloadGenerator.html#a20b62bbc72cfb0db469e90ebe8e0cccf">mAllowInvalidPayload</a> = false</td></tr>
+<tr class="separator:a20b62bbc72cfb0db469e90ebe8e0cccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a836021ecdda075944c25a64defdbe8b0" name="a836021ecdda075944c25a64defdbe8b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a836021ecdda075944c25a64defdbe8b0">&#9670;&#160;</a></span>QRCodeSetupPayloadGenerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::QRCodeSetupPayloadGenerator::QRCodeSetupPayloadGenerator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1SetupPayload.html">SetupPayload</a> &amp;&#160;</td>
+          <td class="paramname"><em>setupPayload</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a361c639838b368b70fea174c25510044" name="a361c639838b368b70fea174c25510044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a361c639838b368b70fea174c25510044">&#9670;&#160;</a></span>generateTLVFromOptionalData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::QRCodeSetupPayloadGenerator::generateTLVFromOptionalData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1SetupPayload.html">SetupPayload</a> &amp;&#160;</td>
+          <td class="paramname"><em>outPayload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>tlvDataStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>maxLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>tlvDataLengthInBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0661bdf9e8b0a409f51c392881fbd5f0" name="a0661bdf9e8b0a409f51c392881fbd5f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0661bdf9e8b0a409f51c392881fbd5f0">&#9670;&#160;</a></span>payloadBase38Representation() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::QRCodeSetupPayloadGenerator::payloadBase38Representation </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>base38Representation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function is called to encode the binary data of a payload to a base38 null-terminated string.</p>
+<p>If the payload has any optional data that needs to be TLV encoded, this function will fail.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">base38Representation</td><td>The string to copy the base38 to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e" title="This defines the CHIP error code for success or no error.">CHIP_NO_ERROR</a></td><td>if the method succeeded. </td></tr>
+    <tr><td class="paramname"><a class="el" href="CHIPError_8h.html#a16861ed332933820e629940561f47104" title="An argument is invalid.">CHIP_ERROR_INVALID_ARGUMENT</a></td><td>if the payload is invalid. </td></tr>
+    <tr><td class="paramname">other</td><td>Other CHIP or platform-specific error codes indicating that an error occurred preventing the function from producing the requested string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f91c9565194d2b46e2b9f3c3bfbd39b" name="a6f91c9565194d2b46e2b9f3c3bfbd39b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f91c9565194d2b46e2b9f3c3bfbd39b">&#9670;&#160;</a></span>payloadBase38Representation() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::QRCodeSetupPayloadGenerator::payloadBase38Representation </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>base38Representation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>tlvDataStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>tlvDataStartSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function is called to encode the binary data of a payload to a base38 null-terminated string, using the caller-provided buffer as temporary scratch space for optional data that needs to be TLV-encoded. If that buffer is not big enough to hold the TLV-encoded part of the payload, this function will fail.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">base38Representation</td><td>The string to copy the base38 to. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataStart</td><td>A pointer to an uint8_t buffer into which the TLV should be written. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataStartSize</td><td>The maximum number of bytes that should be written to the output buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e" title="This defines the CHIP error code for success or no error.">CHIP_NO_ERROR</a></td><td>if the method succeeded. </td></tr>
+    <tr><td class="paramname"><a class="el" href="CHIPError_8h.html#a16861ed332933820e629940561f47104" title="An argument is invalid.">CHIP_ERROR_INVALID_ARGUMENT</a></td><td>if the payload is invalid. </td></tr>
+    <tr><td class="paramname">other</td><td>Other CHIP or platform-specific error codes indicating that an error occurred preventing the function from producing the requested string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4e564a3ecd93a6c86ef44112faa19f7f" name="a4e564a3ecd93a6c86ef44112faa19f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e564a3ecd93a6c86ef44112faa19f7f">&#9670;&#160;</a></span>payloadBase38RepresentationWithAutoTLVBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::QRCodeSetupPayloadGenerator::payloadBase38RepresentationWithAutoTLVBuffer </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>base38Representation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function is called to encode the binary data of a payload to a base38 null-terminated string.</p>
+<p>If the payload has any optional data that needs to be TLV encoded, this function will allocate a scratch heap buffer to hold the TLV data while encoding.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">base38Representation</td><td>The string to copy the base38 to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="CHIPError_8h.html#a255ed42b89227e34eef134084739716e" title="This defines the CHIP error code for success or no error.">CHIP_NO_ERROR</a></td><td>if the method succeeded. </td></tr>
+    <tr><td class="paramname"><a class="el" href="CHIPError_8h.html#a16861ed332933820e629940561f47104" title="An argument is invalid.">CHIP_ERROR_INVALID_ARGUMENT</a></td><td>if the payload is invalid. </td></tr>
+    <tr><td class="paramname">other</td><td>Other CHIP or platform-specific error codes indicating that an error occurred preventing the function from producing the requested string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a466c054b81da849057111f429262ee10" name="a466c054b81da849057111f429262ee10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a466c054b81da849057111f429262ee10">&#9670;&#160;</a></span>SetAllowInvalidPayload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::QRCodeSetupPayloadGenerator::SetAllowInvalidPayload </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function disables internal checks about the validity of the generated payload. It allows using the generator to generate invalid payloads. Default is false. </p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a20b62bbc72cfb0db469e90ebe8e0cccf" name="a20b62bbc72cfb0db469e90ebe8e0cccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b62bbc72cfb0db469e90ebe8e0cccf">&#9670;&#160;</a></span>mAllowInvalidPayload</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::QRCodeSetupPayloadGenerator::mAllowInvalidPayload = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77099bf45e98e87153854ef55649419c" name="a77099bf45e98e87153854ef55649419c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77099bf45e98e87153854ef55649419c">&#9670;&#160;</a></span>mPayload</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1SetupPayload.html">SetupPayload</a> chip::QRCodeSetupPayloadGenerator::mPayload</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/setup_payload/<a class="el" href="QRCodeSetupPayloadGenerator_8h_source.html">QRCodeSetupPayloadGenerator.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

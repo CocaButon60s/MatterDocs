@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: LinuxDeviceOptions 構造体</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="structLinuxDeviceOptions-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">LinuxDeviceOptions 構造体</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Options_8h_source.html">Options.h</a>&gt;</code></p>
+<div class="dynheader">
+LinuxDeviceOptions 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="structLinuxDeviceOptions__coll__graph.png" border="0" usemap="#aLinuxDeviceOptions_coll__map" alt="Collaboration graph"/></div>
+<map name="aLinuxDeviceOptions_coll__map" id="aLinuxDeviceOptions_coll__map">
+<area shape="rect" title=" " alt="" coords="1349,207,1501,233"/>
+<area shape="rect" href="structchip_1_1PayloadContents.html" title=" " alt="" coords="1030,10,1197,35"/>
+<area shape="poly" title=" " alt="" coords="1211,18,1271,29,1300,39,1327,54,1347,70,1365,90,1393,133,1412,175,1423,206,1418,208,1407,177,1388,135,1360,93,1343,74,1324,58,1298,44,1269,34,1210,23"/>
+<area shape="rect" href="classchip_1_1Optional.html" title=" " alt="" coords="557,5,764,45"/>
+<area shape="poly" title=" " alt="" coords="778,22,1030,20,1030,26,778,27"/>
+<area shape="rect" href="classchip_1_1Optional_1_1ValueHolder.html" title=" " alt="" coords="261,96,412,136"/>
+<area shape="poly" title=" " alt="" coords="382,87,435,63,496,46,557,34,558,40,497,51,437,68,384,92"/>
+<area shape="rect" href="classchip_1_1Optional.html" title=" " alt="" coords="788,67,983,93"/>
+<area shape="poly" title=" " alt="" coords="426,108,788,84,788,89,426,113"/>
+<area shape="rect" href="classchip_1_1Optional.html" title=" " alt="" coords="805,132,966,172"/>
+<area shape="poly" title=" " alt="" coords="426,127,436,128,635,142,805,148,804,153,635,147,436,133,425,132"/>
+<area shape="rect" href="classchip_1_1Optional.html" title=" " alt="" coords="587,223,734,263"/>
+<area shape="poly" title=" " alt="" coords="373,142,403,164,437,183,514,211,588,228,587,234,512,216,435,188,401,168,370,147"/>
+<area shape="rect" title=" " alt="" coords="5,74,212,158"/>
+<area shape="poly" title=" " alt="" coords="226,113,261,113,261,119,226,119"/>
+<area shape="poly" title=" " alt="" coords="997,88,1106,105,1221,131,1322,168,1401,205,1398,210,1320,173,1219,136,1105,110,996,93"/>
+<area shape="poly" title=" " alt="" coords="981,161,1350,208,1349,213,980,166"/>
+<area shape="poly" title=" " alt="" coords="748,259,845,276,963,290,1092,294,1156,291,1220,284,1268,274,1316,259,1394,230,1396,235,1318,264,1270,279,1220,289,1157,297,1092,300,963,295,844,281,747,264"/>
+<area shape="rect" href="classchip_1_1Inet_1_1InterfaceId.html" title=" " alt="" coords="1033,337,1193,362"/>
+<area shape="poly" title=" " alt="" coords="1207,347,1267,339,1324,319,1353,300,1379,276,1414,231,1418,235,1382,279,1357,304,1327,324,1268,344,1208,353"/>
+<area shape="rect" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html" title=" " alt="" coords="1007,386,1220,441"/>
+<area shape="poly" title=" " alt="" coords="1232,400,1280,386,1324,363,1358,332,1385,296,1417,232,1422,234,1389,298,1362,336,1327,368,1282,391,1234,405"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a80e54198d3e60b3a2c7d351683548d88" id="r_a80e54198d3e60b3a2c7d351683548d88"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structLinuxDeviceOptions.html">LinuxDeviceOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a80e54198d3e60b3a2c7d351683548d88">GetInstance</a> ()</td></tr>
+<tr class="separator:a80e54198d3e60b3a2c7d351683548d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a5e38ea9b54c27c22531bdfe7ec7af533" id="r_a5e38ea9b54c27c22531bdfe7ec7af533"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a5e38ea9b54c27c22531bdfe7ec7af533">payload</a></td></tr>
+<tr class="separator:a5e38ea9b54c27c22531bdfe7ec7af533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d9c01f695d07a693c981930f36111f" id="r_a12d9c01f695d07a693c981930f36111f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a12d9c01f695d07a693c981930f36111f">discriminator</a></td></tr>
+<tr class="separator:a12d9c01f695d07a693c981930f36111f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc6e117921c899ed5dd8b176867af57" id="r_a5cc6e117921c899ed5dd8b176867af57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; std::vector&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a5cc6e117921c899ed5dd8b176867af57">spake2pVerifier</a></td></tr>
+<tr class="separator:a5cc6e117921c899ed5dd8b176867af57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df9fe9a82b4d17d2b9ac882b3154c80" id="r_a6df9fe9a82b4d17d2b9ac882b3154c80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; std::vector&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a6df9fe9a82b4d17d2b9ac882b3154c80">spake2pSalt</a></td></tr>
+<tr class="separator:a6df9fe9a82b4d17d2b9ac882b3154c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad907bbbced7b6763d4142f206f06adc" id="r_aad907bbbced7b6763d4142f206f06adc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#aad907bbbced7b6763d4142f206f06adc">dacProviderFile</a></td></tr>
+<tr class="separator:aad907bbbced7b6763d4142f206f06adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a019d8aa96c4b1594e28e7949b8d98e98" id="r_a019d8aa96c4b1594e28e7949b8d98e98"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a019d8aa96c4b1594e28e7949b8d98e98">spake2pIterations</a> = 0</td></tr>
+<tr class="separator:a019d8aa96c4b1594e28e7949b8d98e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34240a1a81f38483250d9feebe606e03" id="r_a34240a1a81f38483250d9feebe606e03"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a34240a1a81f38483250d9feebe606e03">mBleDevice</a> = 0</td></tr>
+<tr class="separator:a34240a1a81f38483250d9feebe606e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b4fd7740769081a25eea1362c6042f" id="r_af6b4fd7740769081a25eea1362c6042f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#af6b4fd7740769081a25eea1362c6042f">wifiSupports5g</a> = false</td></tr>
+<tr class="separator:af6b4fd7740769081a25eea1362c6042f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ff5862258c00a61e9098aba7bf006c" id="r_ad3ff5862258c00a61e9098aba7bf006c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#ad3ff5862258c00a61e9098aba7bf006c">mWiFi</a> = false</td></tr>
+<tr class="separator:ad3ff5862258c00a61e9098aba7bf006c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b2d2dfa28c02fcaa7109c0568bb467" id="r_a20b2d2dfa28c02fcaa7109c0568bb467"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a20b2d2dfa28c02fcaa7109c0568bb467">mThread</a> = false</td></tr>
+<tr class="separator:a20b2d2dfa28c02fcaa7109c0568bb467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d03f904507dada02f41c6d260f66e70" id="r_a5d03f904507dada02f41c6d260f66e70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a5d03f904507dada02f41c6d260f66e70">cameraDeferredOffer</a> = false</td></tr>
+<tr class="separator:a5d03f904507dada02f41c6d260f66e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8867ffc4f12e40ddb995a5cac8b9a386" id="r_a8867ffc4f12e40ddb995a5cac8b9a386"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a8867ffc4f12e40ddb995a5cac8b9a386">cameraVideoDevice</a></td></tr>
+<tr class="separator:a8867ffc4f12e40ddb995a5cac8b9a386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f1b849f1bab9aeccf3c694b58bf8f1" id="r_a83f1b849f1bab9aeccf3c694b58bf8f1"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a83f1b849f1bab9aeccf3c694b58bf8f1">command</a> = nullptr</td></tr>
+<tr class="separator:a83f1b849f1bab9aeccf3c694b58bf8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd1cf2449fcd422cb9a78b9f9d08659" id="r_acbd1cf2449fcd422cb9a78b9f9d08659"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#acbd1cf2449fcd422cb9a78b9f9d08659">PICS</a> = nullptr</td></tr>
+<tr class="separator:acbd1cf2449fcd422cb9a78b9f9d08659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0661dfcdf5331ea1d42849ae71e67a8" id="r_ac0661dfcdf5331ea1d42849ae71e67a8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#ac0661dfcdf5331ea1d42849ae71e67a8">KVS</a> = nullptr</td></tr>
+<tr class="separator:ac0661dfcdf5331ea1d42849ae71e67a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2cdf44ece8d7a92fb6a23af8447af0" id="r_a8e2cdf44ece8d7a92fb6a23af8447af0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a8e2cdf44ece8d7a92fb6a23af8447af0">app_pipe</a> = &quot;&quot;</td></tr>
+<tr class="separator:a8e2cdf44ece8d7a92fb6a23af8447af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3a1c09edc173c6f65441fd00525cd1" id="r_a7e3a1c09edc173c6f65441fd00525cd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">chip::Inet::InterfaceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a7e3a1c09edc173c6f65441fd00525cd1">interfaceId</a> = <a class="el" href="classchip_1_1Inet_1_1InterfaceId.html#af5af583e6c6d8343374241114077999d">chip::Inet::InterfaceId::Null</a>()</td></tr>
+<tr class="separator:a7e3a1c09edc173c6f65441fd00525cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d2285cd105579d4d4a4be9840dbe566" id="r_a1d2285cd105579d4d4a4be9840dbe566"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html">chip::Credentials::DeviceAttestationCredentialsProvider</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a1d2285cd105579d4d4a4be9840dbe566">dacProvider</a> = nullptr</td></tr>
+<tr class="separator:a1d2285cd105579d4d4a4be9840dbe566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d01206e3f8be2e4ece219b8b72787ff" id="r_a3d01206e3f8be2e4ece219b8b72787ff"><td class="memItemLeft" align="right" valign="top">chip::CSRResponseOptions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a3d01206e3f8be2e4ece219b8b72787ff">mCSRResponseOptions</a></td></tr>
+<tr class="separator:a3d01206e3f8be2e4ece219b8b72787ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5383a8377a5deab9c94ed2dcaa98df0a" id="r_a5383a8377a5deab9c94ed2dcaa98df0a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a5383a8377a5deab9c94ed2dcaa98df0a">testEventTriggerEnableKey</a> [16] = { 0 }</td></tr>
+<tr class="separator:a5383a8377a5deab9c94ed2dcaa98df0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589b049d69d83c7646d3987911aba798" id="r_a589b049d69d83c7646d3987911aba798"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a589b049d69d83c7646d3987911aba798">traceTo</a></td></tr>
+<tr class="separator:a589b049d69d83c7646d3987911aba798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cbb0bbee5898d757a446fb351c982c8" id="r_a5cbb0bbee5898d757a446fb351c982c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a5cbb0bbee5898d757a446fb351c982c8">mSimulateNoInternalTime</a> = false</td></tr>
+<tr class="separator:a5cbb0bbee5898d757a446fb351c982c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9adc9ce18fa4a66ca2bf6ebe87b3003" id="r_aa9adc9ce18fa4a66ca2bf6ebe87b3003"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#aa9adc9ce18fa4a66ca2bf6ebe87b3003">vendorName</a></td></tr>
+<tr class="separator:aa9adc9ce18fa4a66ca2bf6ebe87b3003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1217f57b32484ef28f63f87b3f65d78e" id="r_a1217f57b32484ef28f63f87b3f65d78e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a1217f57b32484ef28f63f87b3f65d78e">productName</a></td></tr>
+<tr class="separator:a1217f57b32484ef28f63f87b3f65d78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d97cc0e4bab3cc88cc2b6b63a58a496" id="r_a3d97cc0e4bab3cc88cc2b6b63a58a496"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a3d97cc0e4bab3cc88cc2b6b63a58a496">hardwareVersionString</a></td></tr>
+<tr class="separator:a3d97cc0e4bab3cc88cc2b6b63a58a496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c993106327379d50be6c895d598efe0" id="r_a3c993106327379d50be6c895d598efe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinuxDeviceOptions.html#a3c993106327379d50be6c895d598efe0">serialNumber</a></td></tr>
+<tr class="separator:a3c993106327379d50be6c895d598efe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a80e54198d3e60b3a2c7d351683548d88" name="a80e54198d3e60b3a2c7d351683548d88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80e54198d3e60b3a2c7d351683548d88">&#9670;&#160;</a></span>GetInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structLinuxDeviceOptions.html">LinuxDeviceOptions</a> &amp; LinuxDeviceOptions::GetInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="structLinuxDeviceOptions_a80e54198d3e60b3a2c7d351683548d88_cgraph.png" border="0" usemap="#astructLinuxDeviceOptions_a80e54198d3e60b3a2c7d351683548d88_cgraph" alt=""/></div>
+<map name="astructLinuxDeviceOptions_a80e54198d3e60b3a2c7d351683548d88_cgraph" id="astructLinuxDeviceOptions_a80e54198d3e60b3a2c7d351683548d88_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,157,45"/>
+<area shape="rect" href="namespacechip_1_1Credentials_1_1Examples.html#a392bf49f9b6ee815567a0d9bfaebf491" title="Get implementation of a sample DAC provider to validate device attestation procedure." alt="" coords="205,5,461,45"/>
+<area shape="poly" title=" " alt="" coords="157,23,191,23,191,28,157,28"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="structLinuxDeviceOptions_a80e54198d3e60b3a2c7d351683548d88_icgraph.png" border="0" usemap="#astructLinuxDeviceOptions_a80e54198d3e60b3a2c7d351683548d88_icgraph" alt=""/></div>
+<map name="astructLinuxDeviceOptions_a80e54198d3e60b3a2c7d351683548d88_icgraph" id="astructLinuxDeviceOptions_a80e54198d3e60b3a2c7d351683548d88_icgraph">
+<area shape="rect" title=" " alt="" coords="595,111,747,151"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="381,118,497,144"/>
+<area shape="poly" title=" " alt="" coords="581,134,497,134,497,128,581,128"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,86,283,112"/>
+<area shape="poly" title=" " alt="" coords="643,103,601,62,574,44,546,30,487,12,440,9,392,15,331,30,298,41,266,57,215,89,212,84,263,52,296,36,330,25,391,10,440,3,488,7,548,25,577,39,604,58,647,99"/>
+<area shape="rect" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="129,168,261,193"/>
+<area shape="poly" title=" " alt="" coords="642,163,600,196,574,212,547,223,504,233,459,237,413,236,369,232,289,215,229,196,230,191,290,209,370,226,414,231,459,232,503,228,546,218,572,207,597,192,638,159"/>
+<area shape="rect" href="namespaceanonymous__namespace_02Options_8cpp_03.html#a522139bbb37aefbe7b4e7a8b047c6bc6" title=" " alt="" coords="331,168,547,208"/>
+<area shape="poly" title=" " alt="" coords="582,156,521,171,520,166,581,151"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a6d7b58a5856b38af87b2c1355f748baf" title=" " alt="" coords="333,40,544,94"/>
+<area shape="poly" title=" " alt="" coords="584,110,537,97,539,92,585,105"/>
+<area shape="poly" title=" " alt="" coords="367,124,283,113,283,108,367,119"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,144,60,169"/>
+<area shape="poly" title=" " alt="" coords="147,119,61,149,60,144,145,114"/>
+<area shape="poly" title=" " alt="" coords="115,171,60,163,61,158,116,166"/>
+<area shape="poly" title=" " alt="" coords="320,85,283,90,283,85,319,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a8e2cdf44ece8d7a92fb6a23af8447af0" name="a8e2cdf44ece8d7a92fb6a23af8447af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2cdf44ece8d7a92fb6a23af8447af0">&#9670;&#160;</a></span>app_pipe</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* LinuxDeviceOptions::app_pipe = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d03f904507dada02f41c6d260f66e70" name="a5d03f904507dada02f41c6d260f66e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d03f904507dada02f41c6d260f66e70">&#9670;&#160;</a></span>cameraDeferredOffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LinuxDeviceOptions::cameraDeferredOffer = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8867ffc4f12e40ddb995a5cac8b9a386" name="a8867ffc4f12e40ddb995a5cac8b9a386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8867ffc4f12e40ddb995a5cac8b9a386">&#9670;&#160;</a></span>cameraVideoDevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt;std::string&gt; LinuxDeviceOptions::cameraVideoDevice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83f1b849f1bab9aeccf3c694b58bf8f1" name="a83f1b849f1bab9aeccf3c694b58bf8f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f1b849f1bab9aeccf3c694b58bf8f1">&#9670;&#160;</a></span>command</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* LinuxDeviceOptions::command = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d2285cd105579d4d4a4be9840dbe566" name="a1d2285cd105579d4d4a4be9840dbe566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d2285cd105579d4d4a4be9840dbe566">&#9670;&#160;</a></span>dacProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html">chip::Credentials::DeviceAttestationCredentialsProvider</a>* LinuxDeviceOptions::dacProvider = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad907bbbced7b6763d4142f206f06adc" name="aad907bbbced7b6763d4142f206f06adc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad907bbbced7b6763d4142f206f06adc">&#9670;&#160;</a></span>dacProviderFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt;std::string&gt; LinuxDeviceOptions::dacProviderFile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12d9c01f695d07a693c981930f36111f" name="a12d9c01f695d07a693c981930f36111f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12d9c01f695d07a693c981930f36111f">&#9670;&#160;</a></span>discriminator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt;uint16_t&gt; LinuxDeviceOptions::discriminator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d97cc0e4bab3cc88cc2b6b63a58a496" name="a3d97cc0e4bab3cc88cc2b6b63a58a496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d97cc0e4bab3cc88cc2b6b63a58a496">&#9670;&#160;</a></span>hardwareVersionString</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt;std::string&gt; LinuxDeviceOptions::hardwareVersionString</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e3a1c09edc173c6f65441fd00525cd1" name="a7e3a1c09edc173c6f65441fd00525cd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e3a1c09edc173c6f65441fd00525cd1">&#9670;&#160;</a></span>interfaceId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">chip::Inet::InterfaceId</a> LinuxDeviceOptions::interfaceId = <a class="el" href="classchip_1_1Inet_1_1InterfaceId.html#af5af583e6c6d8343374241114077999d">chip::Inet::InterfaceId::Null</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0661dfcdf5331ea1d42849ae71e67a8" name="ac0661dfcdf5331ea1d42849ae71e67a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0661dfcdf5331ea1d42849ae71e67a8">&#9670;&#160;</a></span>KVS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* LinuxDeviceOptions::KVS = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34240a1a81f38483250d9feebe606e03" name="a34240a1a81f38483250d9feebe606e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34240a1a81f38483250d9feebe606e03">&#9670;&#160;</a></span>mBleDevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t LinuxDeviceOptions::mBleDevice = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d01206e3f8be2e4ece219b8b72787ff" name="a3d01206e3f8be2e4ece219b8b72787ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d01206e3f8be2e4ece219b8b72787ff">&#9670;&#160;</a></span>mCSRResponseOptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::CSRResponseOptions LinuxDeviceOptions::mCSRResponseOptions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cbb0bbee5898d757a446fb351c982c8" name="a5cbb0bbee5898d757a446fb351c982c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cbb0bbee5898d757a446fb351c982c8">&#9670;&#160;</a></span>mSimulateNoInternalTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LinuxDeviceOptions::mSimulateNoInternalTime = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20b2d2dfa28c02fcaa7109c0568bb467" name="a20b2d2dfa28c02fcaa7109c0568bb467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b2d2dfa28c02fcaa7109c0568bb467">&#9670;&#160;</a></span>mThread</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LinuxDeviceOptions::mThread = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3ff5862258c00a61e9098aba7bf006c" name="ad3ff5862258c00a61e9098aba7bf006c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ff5862258c00a61e9098aba7bf006c">&#9670;&#160;</a></span>mWiFi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LinuxDeviceOptions::mWiFi = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e38ea9b54c27c22531bdfe7ec7af533" name="a5e38ea9b54c27c22531bdfe7ec7af533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e38ea9b54c27c22531bdfe7ec7af533">&#9670;&#160;</a></span>payload</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> LinuxDeviceOptions::payload</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbd1cf2449fcd422cb9a78b9f9d08659" name="acbd1cf2449fcd422cb9a78b9f9d08659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd1cf2449fcd422cb9a78b9f9d08659">&#9670;&#160;</a></span>PICS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* LinuxDeviceOptions::PICS = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1217f57b32484ef28f63f87b3f65d78e" name="a1217f57b32484ef28f63f87b3f65d78e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1217f57b32484ef28f63f87b3f65d78e">&#9670;&#160;</a></span>productName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt;std::string&gt; LinuxDeviceOptions::productName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c993106327379d50be6c895d598efe0" name="a3c993106327379d50be6c895d598efe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c993106327379d50be6c895d598efe0">&#9670;&#160;</a></span>serialNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt;std::string&gt; LinuxDeviceOptions::serialNumber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a019d8aa96c4b1594e28e7949b8d98e98" name="a019d8aa96c4b1594e28e7949b8d98e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a019d8aa96c4b1594e28e7949b8d98e98">&#9670;&#160;</a></span>spake2pIterations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t LinuxDeviceOptions::spake2pIterations = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6df9fe9a82b4d17d2b9ac882b3154c80" name="a6df9fe9a82b4d17d2b9ac882b3154c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df9fe9a82b4d17d2b9ac882b3154c80">&#9670;&#160;</a></span>spake2pSalt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt;std::vector&lt;uint8_t&gt; &gt; LinuxDeviceOptions::spake2pSalt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cc6e117921c899ed5dd8b176867af57" name="a5cc6e117921c899ed5dd8b176867af57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc6e117921c899ed5dd8b176867af57">&#9670;&#160;</a></span>spake2pVerifier</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt;std::vector&lt;uint8_t&gt; &gt; LinuxDeviceOptions::spake2pVerifier</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5383a8377a5deab9c94ed2dcaa98df0a" name="a5383a8377a5deab9c94ed2dcaa98df0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5383a8377a5deab9c94ed2dcaa98df0a">&#9670;&#160;</a></span>testEventTriggerEnableKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t LinuxDeviceOptions::testEventTriggerEnableKey[16] = { 0 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a589b049d69d83c7646d3987911aba798" name="a589b049d69d83c7646d3987911aba798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589b049d69d83c7646d3987911aba798">&#9670;&#160;</a></span>traceTo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; LinuxDeviceOptions::traceTo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9adc9ce18fa4a66ca2bf6ebe87b3003" name="aa9adc9ce18fa4a66ca2bf6ebe87b3003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9adc9ce18fa4a66ca2bf6ebe87b3003">&#9670;&#160;</a></span>vendorName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt;std::string&gt; LinuxDeviceOptions::vendorName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6b4fd7740769081a25eea1362c6042f" name="af6b4fd7740769081a25eea1362c6042f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b4fd7740769081a25eea1362c6042f">&#9670;&#160;</a></span>wifiSupports5g</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LinuxDeviceOptions::wifiSupports5g = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/examples/platform/linux/<a class="el" href="Options_8h_source.html">Options.h</a></li>
+<li>connectedhomeip/examples/platform/linux/<a class="el" href="Options_8cpp.html">Options.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

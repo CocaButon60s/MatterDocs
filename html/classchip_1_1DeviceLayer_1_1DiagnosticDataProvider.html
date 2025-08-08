@@ -1,0 +1,1645 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::DeviceLayer::DiagnosticDataProvider クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1DeviceLayer.html">DeviceLayer</a></li><li class="navelem"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">DiagnosticDataProvider</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::DeviceLayer::DiagnosticDataProvider クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="DiagnosticDataProvider_8h_source.html">DiagnosticDataProvider.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::DeviceLayer::DiagnosticDataProvider 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider__coll__graph.png" border="0" usemap="#achip_1_1DeviceLayer_1_1DiagnosticDataProvider_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1DeviceLayer_1_1DiagnosticDataProvider_coll__map" id="achip_1_1DeviceLayer_1_1DiagnosticDataProvider_coll__map">
+<area shape="rect" title=" " alt="" coords="453,37,629,77"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1WiFiDiagnosticsDelegate.html" title=" " alt="" coords="14,5,199,45"/>
+<area shape="poly" title=" " alt="" coords="213,30,453,48,453,54,213,36"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1ThreadDiagnosticsDelegate.html" title=" " alt="" coords="5,69,208,109"/>
+<area shape="poly" title=" " alt="" coords="222,81,429,67,453,64,453,70,430,72,222,86"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:af7fefca61afb260b234c0bee57ef550e" id="r_af7fefca61afb260b234c0bee57ef550e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#af7fefca61afb260b234c0bee57ef550e">SetWiFiDiagnosticsDelegate</a> (<a class="el" href="classchip_1_1DeviceLayer_1_1WiFiDiagnosticsDelegate.html">WiFiDiagnosticsDelegate</a> *delegate)</td></tr>
+<tr class="separator:af7fefca61afb260b234c0bee57ef550e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0201160b3228356e49193e3c24607e" id="r_afc0201160b3228356e49193e3c24607e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1DeviceLayer_1_1WiFiDiagnosticsDelegate.html">WiFiDiagnosticsDelegate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#afc0201160b3228356e49193e3c24607e">GetWiFiDiagnosticsDelegate</a> () const</td></tr>
+<tr class="separator:afc0201160b3228356e49193e3c24607e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03408d65c6174c2dbebeff35ca25fc6a" id="r_a03408d65c6174c2dbebeff35ca25fc6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a03408d65c6174c2dbebeff35ca25fc6a">SetThreadDiagnosticsDelegate</a> (<a class="el" href="classchip_1_1DeviceLayer_1_1ThreadDiagnosticsDelegate.html">ThreadDiagnosticsDelegate</a> *delegate)</td></tr>
+<tr class="separator:a03408d65c6174c2dbebeff35ca25fc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae537a4ee98a7bc32be7957f9ad655db3" id="r_ae537a4ee98a7bc32be7957f9ad655db3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1DeviceLayer_1_1ThreadDiagnosticsDelegate.html">ThreadDiagnosticsDelegate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#ae537a4ee98a7bc32be7957f9ad655db3">GetThreadDiagnosticsDelegate</a> () const</td></tr>
+<tr class="separator:ae537a4ee98a7bc32be7957f9ad655db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3d3666574c5a16068a96ec18c645fb" id="r_abd3d3666574c5a16068a96ec18c645fb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#abd3d3666574c5a16068a96ec18c645fb">GetRebootCount</a> (uint16_t &amp;rebootCount)</td></tr>
+<tr class="memdesc:abd3d3666574c5a16068a96ec18c645fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the number of times the node has rebooted. The reboot count value will be reset only upon a factory reset of the node.  <br /></td></tr>
+<tr class="separator:abd3d3666574c5a16068a96ec18c645fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fc99410f1e8d7a880798fdab712e42" id="r_a44fc99410f1e8d7a880798fdab712e42"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a44fc99410f1e8d7a880798fdab712e42">GetUpTime</a> (uint64_t &amp;upTime)</td></tr>
+<tr class="memdesc:a44fc99410f1e8d7a880798fdab712e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the time (in seconds) since the node's last reboot. The up time value will be reset upon a node reboot.  <br /></td></tr>
+<tr class="separator:a44fc99410f1e8d7a880798fdab712e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2658f4f70a7953e73b38b64a42b510c0" id="r_a2658f4f70a7953e73b38b64a42b510c0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a2658f4f70a7953e73b38b64a42b510c0">GetTotalOperationalHours</a> (uint32_t &amp;totalOperationalHours)</td></tr>
+<tr class="memdesc:a2658f4f70a7953e73b38b64a42b510c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the total time (in hours) the node has been operational. The total operational hours value will be reset only upon a factory reset of the node.  <br /></td></tr>
+<tr class="separator:a2658f4f70a7953e73b38b64a42b510c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6270b20c09cd98097509e1d3e81f8995" id="r_a6270b20c09cd98097509e1d3e81f8995"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a6270b20c09cd98097509e1d3e81f8995">GetBootReason</a> (<a class="el" href="namespacechip_1_1DeviceLayer.html#a023f09be0d01139137032466eef44f2f">BootReasonType</a> &amp;bootReason)</td></tr>
+<tr class="memdesc:a6270b20c09cd98097509e1d3e81f8995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the reason for the node's most recent reboot.  <br /></td></tr>
+<tr class="separator:a6270b20c09cd98097509e1d3e81f8995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1adb8c395b36ce1e9ac4b45421869186" id="r_a1adb8c395b36ce1e9ac4b45421869186"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a1adb8c395b36ce1e9ac4b45421869186">GetActiveHardwareFaults</a> (GeneralFaults&lt; kMaxHardwareFaults &gt; &amp;hardwareFaults)</td></tr>
+<tr class="memdesc:a1adb8c395b36ce1e9ac4b45421869186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the set of hardware faults currently detected by the node.  <br /></td></tr>
+<tr class="separator:a1adb8c395b36ce1e9ac4b45421869186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645a1b3b2ff020d6b065097b1ae3005f" id="r_a645a1b3b2ff020d6b065097b1ae3005f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a645a1b3b2ff020d6b065097b1ae3005f">GetActiveRadioFaults</a> (GeneralFaults&lt; kMaxRadioFaults &gt; &amp;radioFaults)</td></tr>
+<tr class="memdesc:a645a1b3b2ff020d6b065097b1ae3005f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the set of radio faults currently detected by the node.  <br /></td></tr>
+<tr class="separator:a645a1b3b2ff020d6b065097b1ae3005f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61cbab81f965a5e0f28dacbeff02ebf3" id="r_a61cbab81f965a5e0f28dacbeff02ebf3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a61cbab81f965a5e0f28dacbeff02ebf3">GetActiveNetworkFaults</a> (GeneralFaults&lt; kMaxNetworkFaults &gt; &amp;networkFaults)</td></tr>
+<tr class="memdesc:a61cbab81f965a5e0f28dacbeff02ebf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the set of network faults currently detected by the node.  <br /></td></tr>
+<tr class="separator:a61cbab81f965a5e0f28dacbeff02ebf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0e1919a8db939d8b4809ec2e166720" id="r_a2c0e1919a8db939d8b4809ec2e166720"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a2c0e1919a8db939d8b4809ec2e166720">GetAverageWearCount</a> (uint32_t &amp;averageWearCount)</td></tr>
+<tr class="memdesc:a2c0e1919a8db939d8b4809ec2e166720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the average wear count of the node's persistent storage backend.  <br /></td></tr>
+<tr class="separator:a2c0e1919a8db939d8b4809ec2e166720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d423e7d2bda61a08dc7b07ff4ba3ea" id="r_a27d423e7d2bda61a08dc7b07ff4ba3ea"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a27d423e7d2bda61a08dc7b07ff4ba3ea">GetNetworkInterfaces</a> (<a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html">NetworkInterface</a> **netifpp)</td></tr>
+<tr class="separator:a27d423e7d2bda61a08dc7b07ff4ba3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93eca56ce2feb66b2efbac5bbebdc36" id="r_ab93eca56ce2feb66b2efbac5bbebdc36"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#ab93eca56ce2feb66b2efbac5bbebdc36">ReleaseNetworkInterfaces</a> (<a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html">NetworkInterface</a> *netifp)</td></tr>
+<tr class="separator:ab93eca56ce2feb66b2efbac5bbebdc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3edac5c0cad99b206ad6a8a8f2be4bd1" id="r_a3edac5c0cad99b206ad6a8a8f2be4bd1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a3edac5c0cad99b206ad6a8a8f2be4bd1">SupportsWatermarks</a> ()</td></tr>
+<tr class="memdesc:a3edac5c0cad99b206ad6a8a8f2be4bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feature support - this returns support gor GetCurrentHeapHighWatermark and <a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#ad8ae0a36b51043cff3e6a8156b6cf59d">ResetWatermarks()</a>  <br /></td></tr>
+<tr class="separator:a3edac5c0cad99b206ad6a8a8f2be4bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea01048b01968e1d74b17a927f2bf543" id="r_aea01048b01968e1d74b17a927f2bf543"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#aea01048b01968e1d74b17a927f2bf543">GetCurrentHeapFree</a> (uint64_t &amp;currentHeapFree)</td></tr>
+<tr class="separator:aea01048b01968e1d74b17a927f2bf543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ebfbd8116a17e8dbb49e40b05a9af0" id="r_ab6ebfbd8116a17e8dbb49e40b05a9af0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#ab6ebfbd8116a17e8dbb49e40b05a9af0">GetCurrentHeapUsed</a> (uint64_t &amp;currentHeapUsed)</td></tr>
+<tr class="separator:ab6ebfbd8116a17e8dbb49e40b05a9af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ee8f55c662b7cffa6ba004b62f256a" id="r_a05ee8f55c662b7cffa6ba004b62f256a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a05ee8f55c662b7cffa6ba004b62f256a">GetCurrentHeapHighWatermark</a> (uint64_t &amp;currentHeapHighWatermark)</td></tr>
+<tr class="separator:a05ee8f55c662b7cffa6ba004b62f256a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ae0a36b51043cff3e6a8156b6cf59d" id="r_ad8ae0a36b51043cff3e6a8156b6cf59d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#ad8ae0a36b51043cff3e6a8156b6cf59d">ResetWatermarks</a> ()</td></tr>
+<tr class="separator:ad8ae0a36b51043cff3e6a8156b6cf59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fab4369a27a0c6b58df132b8ac90175" id="r_a4fab4369a27a0c6b58df132b8ac90175"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a4fab4369a27a0c6b58df132b8ac90175">GetThreadMetrics</a> (<a class="el" href="structchip_1_1DeviceLayer_1_1ThreadMetrics.html">ThreadMetrics</a> **threadMetricsOut)</td></tr>
+<tr class="separator:a4fab4369a27a0c6b58df132b8ac90175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd886f626c4e3dc74c91f5de68921994" id="r_afd886f626c4e3dc74c91f5de68921994"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#afd886f626c4e3dc74c91f5de68921994">ReleaseThreadMetrics</a> (<a class="el" href="structchip_1_1DeviceLayer_1_1ThreadMetrics.html">ThreadMetrics</a> *threadMetrics)</td></tr>
+<tr class="separator:afd886f626c4e3dc74c91f5de68921994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054312267683701abe5bd3fc1cdd3de1" id="r_a054312267683701abe5bd3fc1cdd3de1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a054312267683701abe5bd3fc1cdd3de1">GetEthPHYRate</a> (app::Clusters::EthernetNetworkDiagnostics::PHYRateEnum &amp;pHYRate)</td></tr>
+<tr class="separator:a054312267683701abe5bd3fc1cdd3de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6264d4c2bdab7ce1d2d86bc1e09548ba" id="r_a6264d4c2bdab7ce1d2d86bc1e09548ba"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a6264d4c2bdab7ce1d2d86bc1e09548ba">GetEthFullDuplex</a> (bool &amp;fullDuplex)</td></tr>
+<tr class="separator:a6264d4c2bdab7ce1d2d86bc1e09548ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fac0f7a6d8d5a5364bd454a291e3279" id="r_a3fac0f7a6d8d5a5364bd454a291e3279"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a3fac0f7a6d8d5a5364bd454a291e3279">GetEthCarrierDetect</a> (bool &amp;carrierDetect)</td></tr>
+<tr class="separator:a3fac0f7a6d8d5a5364bd454a291e3279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e836861e095c8cac4a05e522c431b82" id="r_a5e836861e095c8cac4a05e522c431b82"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a5e836861e095c8cac4a05e522c431b82">GetEthTimeSinceReset</a> (uint64_t &amp;timeSinceReset)</td></tr>
+<tr class="separator:a5e836861e095c8cac4a05e522c431b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c798923e50653c400a6ce90fca38a09" id="r_a4c798923e50653c400a6ce90fca38a09"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a4c798923e50653c400a6ce90fca38a09">GetEthPacketRxCount</a> (uint64_t &amp;packetRxCount)</td></tr>
+<tr class="separator:a4c798923e50653c400a6ce90fca38a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d444760d10f31b48fb395df368dcbd2" id="r_a6d444760d10f31b48fb395df368dcbd2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a6d444760d10f31b48fb395df368dcbd2">GetEthPacketTxCount</a> (uint64_t &amp;packetTxCount)</td></tr>
+<tr class="separator:a6d444760d10f31b48fb395df368dcbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad1c03bc70efdf6d568512f58935db8" id="r_a0ad1c03bc70efdf6d568512f58935db8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a0ad1c03bc70efdf6d568512f58935db8">GetEthTxErrCount</a> (uint64_t &amp;txErrCount)</td></tr>
+<tr class="separator:a0ad1c03bc70efdf6d568512f58935db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47dee0ad9da7e12cb86fbc7f08bf8ebb" id="r_a47dee0ad9da7e12cb86fbc7f08bf8ebb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a47dee0ad9da7e12cb86fbc7f08bf8ebb">GetEthCollisionCount</a> (uint64_t &amp;collisionCount)</td></tr>
+<tr class="separator:a47dee0ad9da7e12cb86fbc7f08bf8ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3ef9a81975cb71fce33f041fa3f920" id="r_a9c3ef9a81975cb71fce33f041fa3f920"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a9c3ef9a81975cb71fce33f041fa3f920">GetEthOverrunCount</a> (uint64_t &amp;overrunCount)</td></tr>
+<tr class="separator:a9c3ef9a81975cb71fce33f041fa3f920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba365877a2575e9cad7d518993ec2cfd" id="r_aba365877a2575e9cad7d518993ec2cfd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#aba365877a2575e9cad7d518993ec2cfd">ResetEthNetworkDiagnosticsCounts</a> ()</td></tr>
+<tr class="separator:aba365877a2575e9cad7d518993ec2cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af000c70d1e99db95c9911869c49d636b" id="r_af000c70d1e99db95c9911869c49d636b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#af000c70d1e99db95c9911869c49d636b">GetWiFiBssId</a> (<a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;value)</td></tr>
+<tr class="separator:af000c70d1e99db95c9911869c49d636b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0204d72ff17d5549e54caef131edb81b" id="r_a0204d72ff17d5549e54caef131edb81b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a0204d72ff17d5549e54caef131edb81b">GetWiFiSecurityType</a> (app::Clusters::WiFiNetworkDiagnostics::SecurityTypeEnum &amp;securityType)</td></tr>
+<tr class="separator:a0204d72ff17d5549e54caef131edb81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc35c0a78eb260be6470a789be3f26e" id="r_abcc35c0a78eb260be6470a789be3f26e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#abcc35c0a78eb260be6470a789be3f26e">GetWiFiVersion</a> (app::Clusters::WiFiNetworkDiagnostics::WiFiVersionEnum &amp;wiFiVersion)</td></tr>
+<tr class="separator:abcc35c0a78eb260be6470a789be3f26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4fa2456087cd91bf2bfaa8501a8dda" id="r_afe4fa2456087cd91bf2bfaa8501a8dda"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#afe4fa2456087cd91bf2bfaa8501a8dda">GetWiFiChannelNumber</a> (uint16_t &amp;channelNumber)</td></tr>
+<tr class="separator:afe4fa2456087cd91bf2bfaa8501a8dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e2003286b2835e8bce7d45410989fd" id="r_a10e2003286b2835e8bce7d45410989fd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a10e2003286b2835e8bce7d45410989fd">GetWiFiRssi</a> (int8_t &amp;rssi)</td></tr>
+<tr class="separator:a10e2003286b2835e8bce7d45410989fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bd261936c21f6671fcaf5d31c98f48" id="r_a08bd261936c21f6671fcaf5d31c98f48"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a08bd261936c21f6671fcaf5d31c98f48">GetWiFiBeaconLostCount</a> (uint32_t &amp;beaconLostCount)</td></tr>
+<tr class="separator:a08bd261936c21f6671fcaf5d31c98f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638af24898621414159d9ff542bb0ffb" id="r_a638af24898621414159d9ff542bb0ffb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a638af24898621414159d9ff542bb0ffb">GetWiFiBeaconRxCount</a> (uint32_t &amp;beaconRxCount)</td></tr>
+<tr class="separator:a638af24898621414159d9ff542bb0ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac71a1f6aa05b3d4c0ee4e55d9274a64a" id="r_ac71a1f6aa05b3d4c0ee4e55d9274a64a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#ac71a1f6aa05b3d4c0ee4e55d9274a64a">GetWiFiPacketMulticastRxCount</a> (uint32_t &amp;packetMulticastRxCount)</td></tr>
+<tr class="separator:ac71a1f6aa05b3d4c0ee4e55d9274a64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61068e03592db0f1c33128492ee54a34" id="r_a61068e03592db0f1c33128492ee54a34"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a61068e03592db0f1c33128492ee54a34">GetWiFiPacketMulticastTxCount</a> (uint32_t &amp;packetMulticastTxCount)</td></tr>
+<tr class="separator:a61068e03592db0f1c33128492ee54a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841872b0b3051784d42290d7919763bf" id="r_a841872b0b3051784d42290d7919763bf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a841872b0b3051784d42290d7919763bf">GetWiFiPacketUnicastRxCount</a> (uint32_t &amp;packetUnicastRxCount)</td></tr>
+<tr class="separator:a841872b0b3051784d42290d7919763bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac91442b46898768ef7cc7af180c06636" id="r_ac91442b46898768ef7cc7af180c06636"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#ac91442b46898768ef7cc7af180c06636">GetWiFiPacketUnicastTxCount</a> (uint32_t &amp;packetUnicastTxCount)</td></tr>
+<tr class="separator:ac91442b46898768ef7cc7af180c06636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76729e8713bfd0e5889446dcaa7eb17d" id="r_a76729e8713bfd0e5889446dcaa7eb17d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a76729e8713bfd0e5889446dcaa7eb17d">GetWiFiCurrentMaxRate</a> (uint64_t &amp;currentMaxRate)</td></tr>
+<tr class="separator:a76729e8713bfd0e5889446dcaa7eb17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaad6844e454c5da16418a9b81d60e55" id="r_abaad6844e454c5da16418a9b81d60e55"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#abaad6844e454c5da16418a9b81d60e55">GetWiFiOverrunCount</a> (uint64_t &amp;overrunCount)</td></tr>
+<tr class="separator:abaad6844e454c5da16418a9b81d60e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07acd2d3a5534b3e441fc3e1d877d9f8" id="r_a07acd2d3a5534b3e441fc3e1d877d9f8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a07acd2d3a5534b3e441fc3e1d877d9f8">ResetWiFiNetworkDiagnosticsCounts</a> ()</td></tr>
+<tr class="separator:a07acd2d3a5534b3e441fc3e1d877d9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2dd4c3d5b23fa515e0805c30957d6e11" id="r_a2dd4c3d5b23fa515e0805c30957d6e11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a2dd4c3d5b23fa515e0805c30957d6e11">DiagnosticDataProvider</a> ()=default</td></tr>
+<tr class="separator:a2dd4c3d5b23fa515e0805c30957d6e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb0a1800e80030b16f81e9757d2a831" id="r_aefb0a1800e80030b16f81e9757d2a831"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#aefb0a1800e80030b16f81e9757d2a831">~DiagnosticDataProvider</a> ()=default</td></tr>
+<tr class="separator:aefb0a1800e80030b16f81e9757d2a831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a416c36c2330c7f368e1c0068906b51a7" id="r_a416c36c2330c7f368e1c0068906b51a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a416c36c2330c7f368e1c0068906b51a7">DiagnosticDataProvider</a> (const <a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">DiagnosticDataProvider</a> &amp;)=delete</td></tr>
+<tr class="separator:a416c36c2330c7f368e1c0068906b51a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b71b64fc72ea44d932f28e8825ccce6" id="r_a4b71b64fc72ea44d932f28e8825ccce6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a4b71b64fc72ea44d932f28e8825ccce6">DiagnosticDataProvider</a> (const <a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">DiagnosticDataProvider</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a4b71b64fc72ea44d932f28e8825ccce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257886af09f6b6503767f15cbc03f114" id="r_a257886af09f6b6503767f15cbc03f114"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">DiagnosticDataProvider</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a257886af09f6b6503767f15cbc03f114">operator=</a> (const <a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">DiagnosticDataProvider</a> &amp;)=delete</td></tr>
+<tr class="separator:a257886af09f6b6503767f15cbc03f114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a296aca67fb7000ef46e3ec030b61d3cb" id="r_a296aca67fb7000ef46e3ec030b61d3cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1DeviceLayer_1_1WiFiDiagnosticsDelegate.html">WiFiDiagnosticsDelegate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a296aca67fb7000ef46e3ec030b61d3cb">mWiFiDiagnosticsDelegate</a> = nullptr</td></tr>
+<tr class="separator:a296aca67fb7000ef46e3ec030b61d3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9a3694cca82cd6b29a05bf85ba20eb" id="r_a8e9a3694cca82cd6b29a05bf85ba20eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1DeviceLayer_1_1ThreadDiagnosticsDelegate.html">ThreadDiagnosticsDelegate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#a8e9a3694cca82cd6b29a05bf85ba20eb">mThreadDiagnosticsDelegate</a> = nullptr</td></tr>
+<tr class="separator:a8e9a3694cca82cd6b29a05bf85ba20eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Provides access to runtime and build-time configuration information for a chip device. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a2dd4c3d5b23fa515e0805c30957d6e11" name="a2dd4c3d5b23fa515e0805c30957d6e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd4c3d5b23fa515e0805c30957d6e11">&#9670;&#160;</a></span>DiagnosticDataProvider() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::DeviceLayer::DiagnosticDataProvider::DiagnosticDataProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefb0a1800e80030b16f81e9757d2a831" name="aefb0a1800e80030b16f81e9757d2a831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefb0a1800e80030b16f81e9757d2a831">&#9670;&#160;</a></span>~DiagnosticDataProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual chip::DeviceLayer::DiagnosticDataProvider::~DiagnosticDataProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a416c36c2330c7f368e1c0068906b51a7" name="a416c36c2330c7f368e1c0068906b51a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a416c36c2330c7f368e1c0068906b51a7">&#9670;&#160;</a></span>DiagnosticDataProvider() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::DeviceLayer::DiagnosticDataProvider::DiagnosticDataProvider </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">DiagnosticDataProvider</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b71b64fc72ea44d932f28e8825ccce6" name="a4b71b64fc72ea44d932f28e8825ccce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b71b64fc72ea44d932f28e8825ccce6">&#9670;&#160;</a></span>DiagnosticDataProvider() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::DeviceLayer::DiagnosticDataProvider::DiagnosticDataProvider </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">DiagnosticDataProvider</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a1adb8c395b36ce1e9ac4b45421869186" name="a1adb8c395b36ce1e9ac4b45421869186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1adb8c395b36ce1e9ac4b45421869186">&#9670;&#160;</a></span>GetActiveHardwareFaults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetActiveHardwareFaults </td>
+          <td>(</td>
+          <td class="paramtype">GeneralFaults&lt; kMaxHardwareFaults &gt; &amp;&#160;</td>
+          <td class="paramname"><em>hardwareFaults</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the set of hardware faults currently detected by the node. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hardwareFaults</td><td>Reference to location of a GeneralFaults instance. The instance can be populated by sequentially calling add method. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a61cbab81f965a5e0f28dacbeff02ebf3" name="a61cbab81f965a5e0f28dacbeff02ebf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61cbab81f965a5e0f28dacbeff02ebf3">&#9670;&#160;</a></span>GetActiveNetworkFaults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetActiveNetworkFaults </td>
+          <td>(</td>
+          <td class="paramtype">GeneralFaults&lt; kMaxNetworkFaults &gt; &amp;&#160;</td>
+          <td class="paramname"><em>networkFaults</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the set of network faults currently detected by the node. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">networkFaults</td><td>Reference to location of a GeneralFaults instance. The instance can be populated by sequentially calling add method. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a645a1b3b2ff020d6b065097b1ae3005f" name="a645a1b3b2ff020d6b065097b1ae3005f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a645a1b3b2ff020d6b065097b1ae3005f">&#9670;&#160;</a></span>GetActiveRadioFaults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetActiveRadioFaults </td>
+          <td>(</td>
+          <td class="paramtype">GeneralFaults&lt; kMaxRadioFaults &gt; &amp;&#160;</td>
+          <td class="paramname"><em>radioFaults</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the set of radio faults currently detected by the node. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">radioFaults</td><td>Reference to location of a GeneralFaults instance. The instance can be populated by sequentially calling add method. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2c0e1919a8db939d8b4809ec2e166720" name="a2c0e1919a8db939d8b4809ec2e166720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0e1919a8db939d8b4809ec2e166720">&#9670;&#160;</a></span>GetAverageWearCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetAverageWearCount </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>averageWearCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the average wear count of the node's persistent storage backend. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">averageWearCount</td><td>Reference to location where the average wear count integer will be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6270b20c09cd98097509e1d3e81f8995" name="a6270b20c09cd98097509e1d3e81f8995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6270b20c09cd98097509e1d3e81f8995">&#9670;&#160;</a></span>GetBootReason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetBootReason </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip_1_1DeviceLayer.html#a023f09be0d01139137032466eef44f2f">BootReasonType</a> &amp;&#160;</td>
+          <td class="paramname"><em>bootReason</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the reason for the node's most recent reboot. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">bootReason</td><td>Reference to location where the boot reason enum value will be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aea01048b01968e1d74b17a927f2bf543" name="aea01048b01968e1d74b17a927f2bf543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea01048b01968e1d74b17a927f2bf543">&#9670;&#160;</a></span>GetCurrentHeapFree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetCurrentHeapFree </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>currentHeapFree</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05ee8f55c662b7cffa6ba004b62f256a" name="a05ee8f55c662b7cffa6ba004b62f256a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ee8f55c662b7cffa6ba004b62f256a">&#9670;&#160;</a></span>GetCurrentHeapHighWatermark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetCurrentHeapHighWatermark </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>currentHeapHighWatermark</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6ebfbd8116a17e8dbb49e40b05a9af0" name="ab6ebfbd8116a17e8dbb49e40b05a9af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6ebfbd8116a17e8dbb49e40b05a9af0">&#9670;&#160;</a></span>GetCurrentHeapUsed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetCurrentHeapUsed </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>currentHeapUsed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3fac0f7a6d8d5a5364bd454a291e3279" name="a3fac0f7a6d8d5a5364bd454a291e3279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fac0f7a6d8d5a5364bd454a291e3279">&#9670;&#160;</a></span>GetEthCarrierDetect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetEthCarrierDetect </td>
+          <td>(</td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>carrierDetect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47dee0ad9da7e12cb86fbc7f08bf8ebb" name="a47dee0ad9da7e12cb86fbc7f08bf8ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47dee0ad9da7e12cb86fbc7f08bf8ebb">&#9670;&#160;</a></span>GetEthCollisionCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetEthCollisionCount </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>collisionCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6264d4c2bdab7ce1d2d86bc1e09548ba" name="a6264d4c2bdab7ce1d2d86bc1e09548ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6264d4c2bdab7ce1d2d86bc1e09548ba">&#9670;&#160;</a></span>GetEthFullDuplex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetEthFullDuplex </td>
+          <td>(</td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>fullDuplex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c3ef9a81975cb71fce33f041fa3f920" name="a9c3ef9a81975cb71fce33f041fa3f920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3ef9a81975cb71fce33f041fa3f920">&#9670;&#160;</a></span>GetEthOverrunCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetEthOverrunCount </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>overrunCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c798923e50653c400a6ce90fca38a09" name="a4c798923e50653c400a6ce90fca38a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c798923e50653c400a6ce90fca38a09">&#9670;&#160;</a></span>GetEthPacketRxCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetEthPacketRxCount </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>packetRxCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d444760d10f31b48fb395df368dcbd2" name="a6d444760d10f31b48fb395df368dcbd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d444760d10f31b48fb395df368dcbd2">&#9670;&#160;</a></span>GetEthPacketTxCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetEthPacketTxCount </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>packetTxCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a054312267683701abe5bd3fc1cdd3de1" name="a054312267683701abe5bd3fc1cdd3de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a054312267683701abe5bd3fc1cdd3de1">&#9670;&#160;</a></span>GetEthPHYRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetEthPHYRate </td>
+          <td>(</td>
+          <td class="paramtype">app::Clusters::EthernetNetworkDiagnostics::PHYRateEnum &amp;&#160;</td>
+          <td class="paramname"><em>pHYRate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ethernet network diagnostics methods </p>
+
+</div>
+</div>
+<a id="a5e836861e095c8cac4a05e522c431b82" name="a5e836861e095c8cac4a05e522c431b82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e836861e095c8cac4a05e522c431b82">&#9670;&#160;</a></span>GetEthTimeSinceReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetEthTimeSinceReset </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>timeSinceReset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ad1c03bc70efdf6d568512f58935db8" name="a0ad1c03bc70efdf6d568512f58935db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad1c03bc70efdf6d568512f58935db8">&#9670;&#160;</a></span>GetEthTxErrCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetEthTxErrCount </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>txErrCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27d423e7d2bda61a08dc7b07ff4ba3ea" name="a27d423e7d2bda61a08dc7b07ff4ba3ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d423e7d2bda61a08dc7b07ff4ba3ea">&#9670;&#160;</a></span>GetNetworkInterfaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetNetworkInterfaces </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html">NetworkInterface</a> **&#160;</td>
+          <td class="paramname"><em>netifpp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd3d3666574c5a16068a96ec18c645fb" name="abd3d3666574c5a16068a96ec18c645fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3d3666574c5a16068a96ec18c645fb">&#9670;&#160;</a></span>GetRebootCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetRebootCount </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>rebootCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the number of times the node has rebooted. The reboot count value will be reset only upon a factory reset of the node. </p>
+<p>General Diagnostics methods. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">rebootCount</td><td>Reference to location where the reboot count integer will be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae537a4ee98a7bc32be7957f9ad655db3" name="ae537a4ee98a7bc32be7957f9ad655db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae537a4ee98a7bc32be7957f9ad655db3">&#9670;&#160;</a></span>GetThreadDiagnosticsDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1DeviceLayer_1_1ThreadDiagnosticsDelegate.html">ThreadDiagnosticsDelegate</a> * chip::DeviceLayer::DiagnosticDataProvider::GetThreadDiagnosticsDelegate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fab4369a27a0c6b58df132b8ac90175" name="a4fab4369a27a0c6b58df132b8ac90175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fab4369a27a0c6b58df132b8ac90175">&#9670;&#160;</a></span>GetThreadMetrics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetThreadMetrics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchip_1_1DeviceLayer_1_1ThreadMetrics.html">ThreadMetrics</a> **&#160;</td>
+          <td class="paramname"><em>threadMetricsOut</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2658f4f70a7953e73b38b64a42b510c0" name="a2658f4f70a7953e73b38b64a42b510c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2658f4f70a7953e73b38b64a42b510c0">&#9670;&#160;</a></span>GetTotalOperationalHours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetTotalOperationalHours </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>totalOperationalHours</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the total time (in hours) the node has been operational. The total operational hours value will be reset only upon a factory reset of the node. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">totalOperationalHours</td><td>Reference to location where the total operation hours integer will be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44fc99410f1e8d7a880798fdab712e42" name="a44fc99410f1e8d7a880798fdab712e42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44fc99410f1e8d7a880798fdab712e42">&#9670;&#160;</a></span>GetUpTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetUpTime </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>upTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the time (in seconds) since the node's last reboot. The up time value will be reset upon a node reboot. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">upTime</td><td>Reference to location where the up time integer will be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a08bd261936c21f6671fcaf5d31c98f48" name="a08bd261936c21f6671fcaf5d31c98f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08bd261936c21f6671fcaf5d31c98f48">&#9670;&#160;</a></span>GetWiFiBeaconLostCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiBeaconLostCount </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>beaconLostCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a638af24898621414159d9ff542bb0ffb" name="a638af24898621414159d9ff542bb0ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a638af24898621414159d9ff542bb0ffb">&#9670;&#160;</a></span>GetWiFiBeaconRxCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiBeaconRxCount </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>beaconRxCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af000c70d1e99db95c9911869c49d636b" name="af000c70d1e99db95c9911869c49d636b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af000c70d1e99db95c9911869c49d636b">&#9670;&#160;</a></span>GetWiFiBssId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiBssId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wi-Fi network diagnostics methods The MutableByteSpan provided to GetWiFiBssId must have size at least kMaxHardwareAddrSize. Its size will be set to the actual size of the BSSID. </p>
+
+</div>
+</div>
+<a id="afe4fa2456087cd91bf2bfaa8501a8dda" name="afe4fa2456087cd91bf2bfaa8501a8dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe4fa2456087cd91bf2bfaa8501a8dda">&#9670;&#160;</a></span>GetWiFiChannelNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiChannelNumber </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>channelNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76729e8713bfd0e5889446dcaa7eb17d" name="a76729e8713bfd0e5889446dcaa7eb17d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76729e8713bfd0e5889446dcaa7eb17d">&#9670;&#160;</a></span>GetWiFiCurrentMaxRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiCurrentMaxRate </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>currentMaxRate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc0201160b3228356e49193e3c24607e" name="afc0201160b3228356e49193e3c24607e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc0201160b3228356e49193e3c24607e">&#9670;&#160;</a></span>GetWiFiDiagnosticsDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1DeviceLayer_1_1WiFiDiagnosticsDelegate.html">WiFiDiagnosticsDelegate</a> * chip::DeviceLayer::DiagnosticDataProvider::GetWiFiDiagnosticsDelegate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abaad6844e454c5da16418a9b81d60e55" name="abaad6844e454c5da16418a9b81d60e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaad6844e454c5da16418a9b81d60e55">&#9670;&#160;</a></span>GetWiFiOverrunCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiOverrunCount </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>overrunCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac71a1f6aa05b3d4c0ee4e55d9274a64a" name="ac71a1f6aa05b3d4c0ee4e55d9274a64a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71a1f6aa05b3d4c0ee4e55d9274a64a">&#9670;&#160;</a></span>GetWiFiPacketMulticastRxCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiPacketMulticastRxCount </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>packetMulticastRxCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61068e03592db0f1c33128492ee54a34" name="a61068e03592db0f1c33128492ee54a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61068e03592db0f1c33128492ee54a34">&#9670;&#160;</a></span>GetWiFiPacketMulticastTxCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiPacketMulticastTxCount </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>packetMulticastTxCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a841872b0b3051784d42290d7919763bf" name="a841872b0b3051784d42290d7919763bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a841872b0b3051784d42290d7919763bf">&#9670;&#160;</a></span>GetWiFiPacketUnicastRxCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiPacketUnicastRxCount </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>packetUnicastRxCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac91442b46898768ef7cc7af180c06636" name="ac91442b46898768ef7cc7af180c06636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac91442b46898768ef7cc7af180c06636">&#9670;&#160;</a></span>GetWiFiPacketUnicastTxCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiPacketUnicastTxCount </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>packetUnicastTxCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10e2003286b2835e8bce7d45410989fd" name="a10e2003286b2835e8bce7d45410989fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10e2003286b2835e8bce7d45410989fd">&#9670;&#160;</a></span>GetWiFiRssi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiRssi </td>
+          <td>(</td>
+          <td class="paramtype">int8_t &amp;&#160;</td>
+          <td class="paramname"><em>rssi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0204d72ff17d5549e54caef131edb81b" name="a0204d72ff17d5549e54caef131edb81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0204d72ff17d5549e54caef131edb81b">&#9670;&#160;</a></span>GetWiFiSecurityType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiSecurityType </td>
+          <td>(</td>
+          <td class="paramtype">app::Clusters::WiFiNetworkDiagnostics::SecurityTypeEnum &amp;&#160;</td>
+          <td class="paramname"><em>securityType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcc35c0a78eb260be6470a789be3f26e" name="abcc35c0a78eb260be6470a789be3f26e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcc35c0a78eb260be6470a789be3f26e">&#9670;&#160;</a></span>GetWiFiVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::GetWiFiVersion </td>
+          <td>(</td>
+          <td class="paramtype">app::Clusters::WiFiNetworkDiagnostics::WiFiVersionEnum &amp;&#160;</td>
+          <td class="paramname"><em>wiFiVersion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a257886af09f6b6503767f15cbc03f114" name="a257886af09f6b6503767f15cbc03f114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a257886af09f6b6503767f15cbc03f114">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">DiagnosticDataProvider</a> &amp; chip::DeviceLayer::DiagnosticDataProvider::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">DiagnosticDataProvider</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab93eca56ce2feb66b2efbac5bbebdc36" name="ab93eca56ce2feb66b2efbac5bbebdc36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93eca56ce2feb66b2efbac5bbebdc36">&#9670;&#160;</a></span>ReleaseNetworkInterfaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::DiagnosticDataProvider::ReleaseNetworkInterfaces </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html">NetworkInterface</a> *&#160;</td>
+          <td class="paramname"><em>netifp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd886f626c4e3dc74c91f5de68921994" name="afd886f626c4e3dc74c91f5de68921994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd886f626c4e3dc74c91f5de68921994">&#9670;&#160;</a></span>ReleaseThreadMetrics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::DiagnosticDataProvider::ReleaseThreadMetrics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchip_1_1DeviceLayer_1_1ThreadMetrics.html">ThreadMetrics</a> *&#160;</td>
+          <td class="paramname"><em>threadMetrics</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba365877a2575e9cad7d518993ec2cfd" name="aba365877a2575e9cad7d518993ec2cfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba365877a2575e9cad7d518993ec2cfd">&#9670;&#160;</a></span>ResetEthNetworkDiagnosticsCounts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::ResetEthNetworkDiagnosticsCounts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8ae0a36b51043cff3e6a8156b6cf59d" name="ad8ae0a36b51043cff3e6a8156b6cf59d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ae0a36b51043cff3e6a8156b6cf59d">&#9670;&#160;</a></span>ResetWatermarks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::ResetWatermarks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07acd2d3a5534b3e441fc3e1d877d9f8" name="a07acd2d3a5534b3e441fc3e1d877d9f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07acd2d3a5534b3e441fc3e1d877d9f8">&#9670;&#160;</a></span>ResetWiFiNetworkDiagnosticsCounts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::DiagnosticDataProvider::ResetWiFiNetworkDiagnosticsCounts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03408d65c6174c2dbebeff35ca25fc6a" name="a03408d65c6174c2dbebeff35ca25fc6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03408d65c6174c2dbebeff35ca25fc6a">&#9670;&#160;</a></span>SetThreadDiagnosticsDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::DiagnosticDataProvider::SetThreadDiagnosticsDelegate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1DeviceLayer_1_1ThreadDiagnosticsDelegate.html">ThreadDiagnosticsDelegate</a> *&#160;</td>
+          <td class="paramname"><em>delegate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7fefca61afb260b234c0bee57ef550e" name="af7fefca61afb260b234c0bee57ef550e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7fefca61afb260b234c0bee57ef550e">&#9670;&#160;</a></span>SetWiFiDiagnosticsDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::DiagnosticDataProvider::SetWiFiDiagnosticsDelegate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1DeviceLayer_1_1WiFiDiagnosticsDelegate.html">WiFiDiagnosticsDelegate</a> *&#160;</td>
+          <td class="paramname"><em>delegate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3edac5c0cad99b206ad6a8a8f2be4bd1" name="a3edac5c0cad99b206ad6a8a8f2be4bd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3edac5c0cad99b206ad6a8a8f2be4bd1">&#9670;&#160;</a></span>SupportsWatermarks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool chip::DeviceLayer::DiagnosticDataProvider::SupportsWatermarks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Feature support - this returns support gor GetCurrentHeapHighWatermark and <a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html#ad8ae0a36b51043cff3e6a8156b6cf59d">ResetWatermarks()</a> </p>
+<p>Software Diagnostics methods. </p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a8e9a3694cca82cd6b29a05bf85ba20eb" name="a8e9a3694cca82cd6b29a05bf85ba20eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e9a3694cca82cd6b29a05bf85ba20eb">&#9670;&#160;</a></span>mThreadDiagnosticsDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1DeviceLayer_1_1ThreadDiagnosticsDelegate.html">ThreadDiagnosticsDelegate</a>* chip::DeviceLayer::DiagnosticDataProvider::mThreadDiagnosticsDelegate = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a296aca67fb7000ef46e3ec030b61d3cb" name="a296aca67fb7000ef46e3ec030b61d3cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a296aca67fb7000ef46e3ec030b61d3cb">&#9670;&#160;</a></span>mWiFiDiagnosticsDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1DeviceLayer_1_1WiFiDiagnosticsDelegate.html">WiFiDiagnosticsDelegate</a>* chip::DeviceLayer::DiagnosticDataProvider::mWiFiDiagnosticsDelegate = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/include/platform/<a class="el" href="DiagnosticDataProvider_8h_source.html">DiagnosticDataProvider.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

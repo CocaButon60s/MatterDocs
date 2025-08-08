@@ -1,0 +1,17 @@
+<map id="anonymous_namespace{AppMain::cpp}::StopSignalHandler" name="anonymous_namespace{AppMain::cpp}::StopSignalHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,145,208,199"/>
+<area shape="rect" id="Node000002" href="$namespaceanonymous__namespace_02AppMain_8cpp_03.html#a7b5acccb085831d760d79051c6a63962" title=" " alt="" coords="256,152,519,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,169,242,169,242,175,208,175"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Server.html#a8a19ddeb66b639f93d0ff613d4c04e3e" title=" " alt="" coords="576,5,772,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="414,149,481,103,565,55,583,47,585,52,568,60,483,107,417,154"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Server.html#aebc85f8a7d702eb987e86f075f2119e8" title=" " alt="" coords="581,70,767,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="439,149,566,105,600,96,601,101,567,111,440,155"/>
+<area shape="rect" id="Node000005" href="$namespacechip_1_1DeviceLayer.html#a9b90588e3accea89d79094c29fc07261" title=" " alt="" coords="601,120,747,160"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="519,155,586,147,587,152,519,160"/>
+<area shape="rect" id="Node000006" href="$classAppMainLoopImplementation.html#ac732bef4ae5cd58f78b948f2f013d694" title=" " alt="" coords="567,184,781,224"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="519,184,553,188,553,193,519,189"/>
+<area shape="rect" id="Node000007" href="$classchip_1_1DeviceLayer_1_1PlatformManager.html#a45ec9f9b795dcb62d2fb8963fbfe431f" title="This will trigger the event loop to exit and block till it has exited the loop. This prevents the pro..." alt="" coords="569,249,779,303"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="444,190,586,241,584,246,443,195"/>
+<area shape="rect" id="Node000008" href="$namespacechip_1_1DeviceLayer.html#add83a4013f09bbd09e9d185437318f40" title=" " alt="" coords="601,328,747,368"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="411,190,477,250,521,283,568,312,589,322,587,327,565,317,518,288,474,254,407,194"/>
+</map>

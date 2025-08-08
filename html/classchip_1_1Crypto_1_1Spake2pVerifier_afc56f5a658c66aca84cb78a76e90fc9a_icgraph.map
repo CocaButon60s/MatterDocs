@@ -1,0 +1,11 @@
+<map id="chip::Crypto::Spake2pVerifier::Generate" name="chip::Crypto::Spake2pVerifier::Generate">
+<area shape="rect" id="Node000001" title="Generate the Spake2+ verifier." alt="" coords="893,5,1103,45"/>
+<area shape="rect" id="Node000002" href="$classLinuxCommissionableDataProvider.html#a3008625eeb7d169fa9fc74397227a7ef" title="Initialize the commissionable Data provider for Linux samples" alt="" coords="595,5,845,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="879,28,845,28,845,23,879,23"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1examples.html#a63149b00322319c60a17f0450b9e6af5" title="Initialize a LinuxCommissionableDataProvider from Linux common command&#45;line options,..." alt="" coords="288,5,547,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="581,28,547,28,547,23,581,23"/>
+<area shape="rect" id="Node000004" href="$AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="108,13,240,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="275,28,241,28,241,23,275,23"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>

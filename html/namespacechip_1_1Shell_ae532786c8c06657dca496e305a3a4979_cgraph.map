@@ -1,0 +1,25 @@
+<map id="chip::Shell::RegisterCommissioneeCommands" name="chip::Shell::RegisterCommissioneeCommands">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,273,253,313"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Shell.html#a63caa983b0e6ae4eb80991439f1bdcee" title=" " alt="" coords="301,209,496,249"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,271,300,250,301,255,215,276"/>
+<area shape="rect" id="Node000011" href="$classchip_1_1Shell_1_1Engine.html#a0e98775cff9adbc5392b1679c28cd342" title=" " alt="" coords="319,273,478,313"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="253,291,305,291,305,296,253,296"/>
+<area shape="rect" id="Node000012" href="$classchip_1_1Shell_1_1Engine.html#af224092d063bd9f539e716a8799d9a47" title=" " alt="" coords="328,337,469,377"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="215,311,315,335,314,340,214,316"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Server.html#a028441cde3dca084cad196dbab534a73" title=" " alt="" coords="574,5,805,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="409,208,429,174,459,132,497,90,543,55,560,46,563,51,545,60,501,94,463,136,434,177,413,211"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Server.html#aebc85f8a7d702eb987e86f075f2119e8" title=" " alt="" coords="597,70,782,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="415,207,468,156,504,128,543,106,583,92,584,97,545,110,507,133,472,160,419,211"/>
+<area shape="rect" id="Node000005" href="$classchip_1_1app_1_1DnssdServer.html#a082e0a6e768395c9eaf50f948acbd4c7" title="Provides the system&#45;wide implementation of the service advertiser" alt="" coords="604,120,775,160"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="444,207,543,169,590,157,591,162,545,175,446,212"/>
+<area shape="rect" id="Node000006" href="$namespacechip_1_1Shell.html#aa47601d2de80eb5755cf74626da4889e" title=" " alt="" coords="580,185,799,210"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="496,216,566,208,567,214,497,221"/>
+<area shape="rect" id="Node000007" href="$classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1IdentificationDeclaration.html#a077fb810f85b411aeb3e716bce11d7a8" title=" " alt="" coords="544,234,835,289"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="497,237,530,241,530,246,496,243"/>
+<area shape="rect" id="Node000008" href="$classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1IdentificationDeclaration.html#ab1bccff5d8f264f6b8afdbf458ca4fc7" title=" " alt="" coords="544,313,835,367"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="471,247,497,259,522,279,545,298,561,305,559,310,543,302,518,283,495,264,469,252"/>
+<area shape="rect" id="Node000009" href="$classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1IdentificationDeclaration.html#acb36f774f63d222218c01215e9d33cfe" title=" " alt="" coords="544,391,835,446"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="481,247,498,259,510,274,517,290,522,320,527,349,534,363,546,377,552,382,549,386,542,381,529,366,522,351,517,321,512,291,506,277,494,263,478,252"/>
+<area shape="rect" id="Node000010" href="$classchip_1_1app_1_1DnssdServer.html#a6a20c2a5830002513dd22e0c28d42041" title=" " alt="" coords="604,471,775,511"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="483,248,498,260,515,285,523,311,524,336,521,361,519,386,521,410,528,434,546,457,567,472,591,482,589,487,564,477,542,461,524,436,515,411,514,386,516,361,518,336,518,312,511,287,494,263,480,252"/>
+</map>

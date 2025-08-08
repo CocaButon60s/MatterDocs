@@ -1,0 +1,8 @@
+<map id="chip::Platform::Impl::ScopedMemoryBufferBase::ScopedMemoryBufferBase" name="chip::Platform::Impl::ScopedMemoryBufferBase::ScopedMemoryBufferBase">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,15,208,69"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="256,29,407,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,39,242,39,242,45,209,45"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="295,31,287,21,291,11,306,5,331,3,363,7,375,16,372,20,361,11,331,8,307,10,295,15,292,20,299,27"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="455,29,661,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="407,39,441,39,441,45,407,45"/>
+</map>

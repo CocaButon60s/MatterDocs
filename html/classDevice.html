@@ -1,0 +1,1335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: Device クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="classDevice-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">Device クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Device_8h_source.html">Device.h</a>&gt;</code></p>
+<div class="dynheader">
+Device の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice__inherit__graph.png" border="0" usemap="#aDevice_inherit__map" alt="Inheritance graph"/></div>
+<map name="aDevice_inherit__map" id="aDevice_inherit__map">
+<area shape="rect" title=" " alt="" coords="336,5,403,31"/>
+<area shape="rect" href="classComposedDevice.html" title=" " alt="" coords="5,79,141,104"/>
+<area shape="poly" title=" " alt="" coords="323,33,122,81,121,76,322,28"/>
+<area shape="rect" href="classDeviceOnOff.html" title=" " alt="" coords="165,79,269,104"/>
+<area shape="poly" title=" " alt="" coords="334,39,243,81,241,76,332,34"/>
+<area shape="rect" href="classDevicePowerSource.html" title=" " alt="" coords="294,79,445,104"/>
+<area shape="poly" title=" " alt="" coords="372,44,372,79,367,79,367,44"/>
+<area shape="rect" href="classDeviceSwitch.html" title=" " alt="" coords="469,79,579,104"/>
+<area shape="poly" title=" " alt="" coords="408,34,500,76,498,81,405,39"/>
+<area shape="rect" href="classDeviceTempSensor.html" title=" " alt="" coords="604,79,751,104"/>
+<area shape="poly" title=" " alt="" coords="417,27,628,76,627,81,416,33"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a4a93d064f1eb2587a12152ff79aa295c" id="r_a4a93d064f1eb2587a12152ff79aa295c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295c">Changed_t</a> { <br />
+&#160;&#160;<a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295caac5620970f0e7ade5b4629df25d55c43">kChanged_Reachable</a> = 1u &lt;&lt; 0
+, <a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295ca5b0c0c0a8f1219df319674bd3a37508c">kChanged_Location</a> = 1u &lt;&lt; 1
+, <a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295ca27a474d0af9e8fcac1703d93a10a682b">kChanged_Name</a> = 1u &lt;&lt; 2
+, <a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295ca1e1f2381db1aa694bb6d3ec234f10340">kChanged_ConfigurationVersion</a> = 1u &lt;&lt; 3
+, <br />
+&#160;&#160;<a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295ca93c16e2b8bb27dd628799d1ec2780944">kChanged_Last</a> = kChanged_ConfigurationVersion
+<br />
+ }</td></tr>
+<tr class="separator:a4a93d064f1eb2587a12152ff79aa295c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a9a1ae1ef68e404dc54b27c9263c5dfe8" id="r_a9a1ae1ef68e404dc54b27c9263c5dfe8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a9a1ae1ef68e404dc54b27c9263c5dfe8">Device</a> (const char *szDeviceName, std::string szLocation)</td></tr>
+<tr class="separator:a9a1ae1ef68e404dc54b27c9263c5dfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f3f693be6b0dbde83d03bf7a336d2c" id="r_af5f3f693be6b0dbde83d03bf7a336d2c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#af5f3f693be6b0dbde83d03bf7a336d2c">~Device</a> ()</td></tr>
+<tr class="separator:af5f3f693be6b0dbde83d03bf7a336d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad533e7e9c778c15d4ecbb9b99305bbb" id="r_aad533e7e9c778c15d4ecbb9b99305bbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#aad533e7e9c778c15d4ecbb9b99305bbb">IsReachable</a> ()</td></tr>
+<tr class="separator:aad533e7e9c778c15d4ecbb9b99305bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2b382654bcb2860b254bc48ab15319" id="r_a4c2b382654bcb2860b254bc48ab15319"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a4c2b382654bcb2860b254bc48ab15319">SetReachable</a> (bool aReachable)</td></tr>
+<tr class="separator:a4c2b382654bcb2860b254bc48ab15319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3cb2cf469424b7cbf9849f349af31a" id="r_a8a3cb2cf469424b7cbf9849f349af31a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a8a3cb2cf469424b7cbf9849f349af31a">SetName</a> (const char *szDeviceName)</td></tr>
+<tr class="separator:a8a3cb2cf469424b7cbf9849f349af31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3362a850d2b78673376b8e0b1583c4f" id="r_ad3362a850d2b78673376b8e0b1583c4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#ad3362a850d2b78673376b8e0b1583c4f">SetUniqueId</a> (const char *szDeviceUniqueId)</td></tr>
+<tr class="separator:ad3362a850d2b78673376b8e0b1583c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698404e7cf63ed9210e86b7b4400c832" id="r_a698404e7cf63ed9210e86b7b4400c832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a698404e7cf63ed9210e86b7b4400c832">SetLocation</a> (std::string szLocation)</td></tr>
+<tr class="separator:a698404e7cf63ed9210e86b7b4400c832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98a2c4c280383bfd3dbcc676a1867cf7" id="r_a98a2c4c280383bfd3dbcc676a1867cf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a98a2c4c280383bfd3dbcc676a1867cf7">GenerateUniqueId</a> ()</td></tr>
+<tr class="separator:a98a2c4c280383bfd3dbcc676a1867cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf996f854bcc72ad490c631fa7bf39d" id="r_aadf996f854bcc72ad490c631fa7bf39d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#aadf996f854bcc72ad490c631fa7bf39d">GetConfigurationVersion</a> ()</td></tr>
+<tr class="separator:aadf996f854bcc72ad490c631fa7bf39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6120ec2389b1dbfe4fca66bf7090f14" id="r_ac6120ec2389b1dbfe4fca66bf7090f14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#ac6120ec2389b1dbfe4fca66bf7090f14">SetConfigurationVersion</a> (uint32_t configurationVersion)</td></tr>
+<tr class="separator:ac6120ec2389b1dbfe4fca66bf7090f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf116830d3dfda53a61a8a241d550d8" id="r_a8cf116830d3dfda53a61a8a241d550d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a8cf116830d3dfda53a61a8a241d550d8">SetEndpointId</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> id)</td></tr>
+<tr class="separator:a8cf116830d3dfda53a61a8a241d550d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24eec7ca17d202f489ee2534a879fb08" id="r_a24eec7ca17d202f489ee2534a879fb08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a24eec7ca17d202f489ee2534a879fb08">GetEndpointId</a> ()</td></tr>
+<tr class="separator:a24eec7ca17d202f489ee2534a879fb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c9045ae3f75ef445bd45d44968d052" id="r_ae1c9045ae3f75ef445bd45d44968d052"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#ae1c9045ae3f75ef445bd45d44968d052">SetParentEndpointId</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> id)</td></tr>
+<tr class="separator:ae1c9045ae3f75ef445bd45d44968d052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1001cc0de2b5e3c18794867a807970" id="r_acf1001cc0de2b5e3c18794867a807970"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#acf1001cc0de2b5e3c18794867a807970">GetParentEndpointId</a> ()</td></tr>
+<tr class="separator:acf1001cc0de2b5e3c18794867a807970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f11cf52d0929e177fe97aa1f2c281bc" id="r_a8f11cf52d0929e177fe97aa1f2c281bc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a8f11cf52d0929e177fe97aa1f2c281bc">GetName</a> ()</td></tr>
+<tr class="separator:a8f11cf52d0929e177fe97aa1f2c281bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07cc81a6eec5a65be617602c5e246753" id="r_a07cc81a6eec5a65be617602c5e246753"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a07cc81a6eec5a65be617602c5e246753">GetUniqueId</a> ()</td></tr>
+<tr class="separator:a07cc81a6eec5a65be617602c5e246753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63fa54e386a433b158302146c1dea21" id="r_ac63fa54e386a433b158302146c1dea21"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#ac63fa54e386a433b158302146c1dea21">GetLocation</a> ()</td></tr>
+<tr class="separator:ac63fa54e386a433b158302146c1dea21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df969cb29ba2fd484286d5f743c9fbd" id="r_a7df969cb29ba2fd484286d5f743c9fbd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a7df969cb29ba2fd484286d5f743c9fbd">GetZone</a> ()</td></tr>
+<tr class="separator:a7df969cb29ba2fd484286d5f743c9fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f921cd54ef4c6ae4dd27b1426099be" id="r_a68f921cd54ef4c6ae4dd27b1426099be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a68f921cd54ef4c6ae4dd27b1426099be">SetZone</a> (std::string zone)</td></tr>
+<tr class="separator:a68f921cd54ef4c6ae4dd27b1426099be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a16f777270f43a9c568626692ba1b8fca" id="r_a16f777270f43a9c568626692ba1b8fca"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295c">Device::Changed_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a16f777270f43a9c568626692ba1b8fca">Changed</a></td></tr>
+<tr class="separator:a16f777270f43a9c568626692ba1b8fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:aecad302bd3ed4ed9854f87875fbfa6e2" id="r_aecad302bd3ed4ed9854f87875fbfa6e2"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#aecad302bd3ed4ed9854f87875fbfa6e2">kDeviceNameSize</a> = 32</td></tr>
+<tr class="separator:aecad302bd3ed4ed9854f87875fbfa6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46edea3eb92414cdee8436102325b5f1" id="r_a46edea3eb92414cdee8436102325b5f1"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a46edea3eb92414cdee8436102325b5f1">kDeviceUniqueIdSize</a> = 32</td></tr>
+<tr class="separator:a46edea3eb92414cdee8436102325b5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:abd2a213a9679f8be5c89964ccd2bfddf" id="r_abd2a213a9679f8be5c89964ccd2bfddf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#abd2a213a9679f8be5c89964ccd2bfddf">mReachable</a> = false</td></tr>
+<tr class="separator:abd2a213a9679f8be5c89964ccd2bfddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa9a520dc8c2973b6df6790fbe1ed0c" id="r_a4fa9a520dc8c2973b6df6790fbe1ed0c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a4fa9a520dc8c2973b6df6790fbe1ed0c">mName</a> [<a class="el" href="classDevice.html#aecad302bd3ed4ed9854f87875fbfa6e2">kDeviceNameSize</a>+1] = { 0 }</td></tr>
+<tr class="separator:a4fa9a520dc8c2973b6df6790fbe1ed0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce0a87b461a95e9e381ddbd5c41888b" id="r_a5ce0a87b461a95e9e381ddbd5c41888b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a5ce0a87b461a95e9e381ddbd5c41888b">mUniqueId</a> [<a class="el" href="classDevice.html#a46edea3eb92414cdee8436102325b5f1">kDeviceUniqueIdSize</a>+1] = { 0 }</td></tr>
+<tr class="separator:a5ce0a87b461a95e9e381ddbd5c41888b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2fcf9495fb73e61e877ec9219d4e119" id="r_ae2fcf9495fb73e61e877ec9219d4e119"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#ae2fcf9495fb73e61e877ec9219d4e119">mConfigurationVersion</a></td></tr>
+<tr class="separator:ae2fcf9495fb73e61e877ec9219d4e119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2660c8069e8111dfedd3990b52b6454c" id="r_a2660c8069e8111dfedd3990b52b6454c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a2660c8069e8111dfedd3990b52b6454c">mLocation</a></td></tr>
+<tr class="separator:a2660c8069e8111dfedd3990b52b6454c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9280afaa4792f111aad55238a03676ba" id="r_a9280afaa4792f111aad55238a03676ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a9280afaa4792f111aad55238a03676ba">mEndpointId</a></td></tr>
+<tr class="separator:a9280afaa4792f111aad55238a03676ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4da806022269292a1477cd30853f3e" id="r_aab4da806022269292a1477cd30853f3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#aab4da806022269292a1477cd30853f3e">mParentEndpointId</a></td></tr>
+<tr class="separator:aab4da806022269292a1477cd30853f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b64902e7e649d661f70b74d0457c0e" id="r_ad6b64902e7e649d661f70b74d0457c0e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#ad6b64902e7e649d661f70b74d0457c0e">mZone</a></td></tr>
+<tr class="separator:ad6b64902e7e649d661f70b74d0457c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a06599195755322100ae2e23b41a91bd2" id="r_a06599195755322100ae2e23b41a91bd2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a06599195755322100ae2e23b41a91bd2">HandleDeviceChange</a> (<a class="el" href="classDevice.html">Device</a> *device, <a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295c">Device::Changed_t</a> changeMask)=0</td></tr>
+<tr class="separator:a06599195755322100ae2e23b41a91bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a4a93d064f1eb2587a12152ff79aa295c" name="a4a93d064f1eb2587a12152ff79aa295c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a93d064f1eb2587a12152ff79aa295c">&#9670;&#160;</a></span>Changed_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295c">Device::Changed_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a4a93d064f1eb2587a12152ff79aa295caac5620970f0e7ade5b4629df25d55c43" name="a4a93d064f1eb2587a12152ff79aa295caac5620970f0e7ade5b4629df25d55c43"></a>kChanged_Reachable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4a93d064f1eb2587a12152ff79aa295ca5b0c0c0a8f1219df319674bd3a37508c" name="a4a93d064f1eb2587a12152ff79aa295ca5b0c0c0a8f1219df319674bd3a37508c"></a>kChanged_Location&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4a93d064f1eb2587a12152ff79aa295ca27a474d0af9e8fcac1703d93a10a682b" name="a4a93d064f1eb2587a12152ff79aa295ca27a474d0af9e8fcac1703d93a10a682b"></a>kChanged_Name&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4a93d064f1eb2587a12152ff79aa295ca1e1f2381db1aa694bb6d3ec234f10340" name="a4a93d064f1eb2587a12152ff79aa295ca1e1f2381db1aa694bb6d3ec234f10340"></a>kChanged_ConfigurationVersion&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4a93d064f1eb2587a12152ff79aa295ca93c16e2b8bb27dd628799d1ec2780944" name="a4a93d064f1eb2587a12152ff79aa295ca93c16e2b8bb27dd628799d1ec2780944"></a>kChanged_Last&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a9a1ae1ef68e404dc54b27c9263c5dfe8" name="a9a1ae1ef68e404dc54b27c9263c5dfe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1ae1ef68e404dc54b27c9263c5dfe8">&#9670;&#160;</a></span>Device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Device::Device </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szDeviceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>szLocation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a9a1ae1ef68e404dc54b27c9263c5dfe8_cgraph.png" border="0" usemap="#aclassDevice_a9a1ae1ef68e404dc54b27c9263c5dfe8_cgraph" alt=""/></div>
+<map name="aclassDevice_a9a1ae1ef68e404dc54b27c9263c5dfe8_cgraph" id="aclassDevice_a9a1ae1ef68e404dc54b27c9263c5dfe8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,125,55"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d" title=" " alt="" coords="173,29,365,55"/>
+<area shape="poly" title=" " alt="" coords="125,39,160,39,160,45,125,45"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="413,29,564,55"/>
+<area shape="poly" title=" " alt="" coords="366,39,400,39,400,45,366,45"/>
+<area shape="poly" title=" " alt="" coords="453,31,445,21,449,11,464,5,489,3,519,6,531,15,528,20,517,11,489,8,465,10,453,15,450,20,457,28"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="612,29,819,55"/>
+<area shape="poly" title=" " alt="" coords="565,39,598,39,598,45,565,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af5f3f693be6b0dbde83d03bf7a336d2c" name="af5f3f693be6b0dbde83d03bf7a336d2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f3f693be6b0dbde83d03bf7a336d2c">&#9670;&#160;</a></span>~Device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Device::~Device </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a98a2c4c280383bfd3dbcc676a1867cf7" name="a98a2c4c280383bfd3dbcc676a1867cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98a2c4c280383bfd3dbcc676a1867cf7">&#9670;&#160;</a></span>GenerateUniqueId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::GenerateUniqueId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a98a2c4c280383bfd3dbcc676a1867cf7_cgraph.png" border="0" usemap="#aclassDevice_a98a2c4c280383bfd3dbcc676a1867cf7_cgraph" alt=""/></div>
+<map name="aclassDevice_a98a2c4c280383bfd3dbcc676a1867cf7_cgraph" id="aclassDevice_a98a2c4c280383bfd3dbcc676a1867cf7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,199,31"/>
+<area shape="rect" href="namespacechip_1_1Crypto.html#ae695d88ede2aae482fbdbb022828c29d" title=" " alt="" coords="247,5,429,31"/>
+<area shape="poly" title=" " alt="" coords="199,15,233,15,233,21,199,21"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a98a2c4c280383bfd3dbcc676a1867cf7_icgraph.png" border="0" usemap="#aclassDevice_a98a2c4c280383bfd3dbcc676a1867cf7_icgraph" alt=""/></div>
+<map name="aclassDevice_a98a2c4c280383bfd3dbcc676a1867cf7_icgraph" id="aclassDevice_a98a2c4c280383bfd3dbcc676a1867cf7_icgraph">
+<area shape="rect" title=" " alt="" coords="903,5,1096,31"/>
+<area shape="rect" href="main_8cpp.html#aa8cadda0b254803163b60286b11dcd53" title=" " alt="" coords="705,5,855,31"/>
+<area shape="poly" title=" " alt="" coords="889,21,855,21,855,15,889,15"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,5,447,31"/>
+<area shape="poly" title=" " alt="" coords="692,21,447,21,447,15,692,15"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="495,31,657,56"/>
+<area shape="poly" title=" " alt="" coords="692,32,658,36,657,31,691,26"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="317,21,283,21,283,15,317,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+<area shape="poly" title=" " alt="" coords="480,33,447,28,447,23,481,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aadf996f854bcc72ad490c631fa7bf39d" name="aadf996f854bcc72ad490c631fa7bf39d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf996f854bcc72ad490c631fa7bf39d">&#9670;&#160;</a></span>GetConfigurationVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Device::GetConfigurationVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_aadf996f854bcc72ad490c631fa7bf39d_icgraph.png" border="0" usemap="#aclassDevice_aadf996f854bcc72ad490c631fa7bf39d_icgraph" alt=""/></div>
+<map name="aclassDevice_aadf996f854bcc72ad490c631fa7bf39d_icgraph" id="aclassDevice_aadf996f854bcc72ad490c631fa7bf39d_icgraph">
+<area shape="rect" title=" " alt="" coords="869,55,1055,95"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="625,5,787,31"/>
+<area shape="poly" title=" " alt="" coords="860,55,821,46,764,33,765,28,822,41,861,50"/>
+<area shape="rect" href="classBridgeAppCommandHandler.html#a99a02d2cc79131042555a474026c1a09" title=" " alt="" coords="603,55,809,95"/>
+<area shape="poly" title=" " alt="" coords="856,78,809,78,809,73,856,73"/>
+<area shape="rect" href="main_8cpp.html#af2f17ad1608197ed522f457b6512c1a1" title=" " alt="" coords="591,119,821,159"/>
+<area shape="poly" title=" " alt="" coords="869,101,787,122,786,117,868,96"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="379,5,495,31"/>
+<area shape="poly" title=" " alt="" coords="611,21,495,21,495,15,611,15"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="365,21,283,21,283,15,365,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+<area shape="rect" href="classBridgeCommandDelegate.html#adf7d76b19822a725e3baf2270e720710" title=" " alt="" coords="331,55,543,95"/>
+<area shape="poly" title=" " alt="" coords="589,78,543,78,543,73,589,73"/>
+<area shape="rect" href="main_8cpp.html#a35e0ccb1029d0e664cb9fff4f3ad556b" title=" " alt="" coords="342,119,531,159"/>
+<area shape="poly" title=" " alt="" coords="577,142,532,142,532,137,577,137"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a24eec7ca17d202f489ee2534a879fb08" name="a24eec7ca17d202f489ee2534a879fb08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24eec7ca17d202f489ee2534a879fb08">&#9670;&#160;</a></span>GetEndpointId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> Device::GetEndpointId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a24eec7ca17d202f489ee2534a879fb08_icgraph.png" border="0" usemap="#aclassDevice_a24eec7ca17d202f489ee2534a879fb08_icgraph" alt=""/></div>
+<map name="aclassDevice_a24eec7ca17d202f489ee2534a879fb08_icgraph" id="aclassDevice_a24eec7ca17d202f489ee2534a879fb08_icgraph">
+<area shape="rect" title=" " alt="" coords="1329,88,1496,113"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,91,447,116"/>
+<area shape="poly" title=" " alt="" coords="1354,87,1202,52,1101,34,988,19,867,10,742,10,617,20,555,30,495,44,470,54,446,66,407,93,404,88,443,62,468,49,494,39,554,25,616,15,742,4,867,5,988,14,1102,29,1203,47,1355,82"/>
+<area shape="rect" href="main_8cpp.html#a9e226c8f2cfcf9a4399a0baa06e7416f" title=" " alt="" coords="499,54,738,94"/>
+<area shape="poly" title=" " alt="" coords="1316,97,1281,95,988,85,738,79,738,73,988,79,1281,90,1316,92"/>
+<area shape="rect" href="classBridgedPowerSourceAttrAccess.html#ad470200ce9a3013304aa67d7db58d6e1" title=" " alt="" coords="1053,185,1278,225"/>
+<area shape="poly" title=" " alt="" coords="1382,123,1336,149,1282,175,1249,187,1247,182,1280,170,1333,145,1379,118"/>
+<area shape="rect" href="namespaceanonymous__namespace_02main_8cpp_03.html#aa4ee5c65f36fa242b228245f65d51531" title=" " alt="" coords="1049,105,1281,160"/>
+<area shape="poly" title=" " alt="" coords="1316,116,1282,120,1281,115,1315,110"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,91,283,116"/>
+<area shape="poly" title=" " alt="" coords="317,106,283,106,283,101,317,101"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,91,60,116"/>
+<area shape="poly" title=" " alt="" coords="95,106,60,106,60,101,95,101"/>
+<area shape="poly" title=" " alt="" coords="486,94,447,98,447,93,485,88"/>
+<area shape="rect" href="main_8cpp.html#acc97fe72c27730d9b68031e60adfdb1d" title=" " alt="" coords="495,119,743,144"/>
+<area shape="poly" title=" " alt="" coords="1036,144,1001,146,896,148,791,146,743,144,743,138,791,141,896,143,1001,141,1035,139"/>
+<area shape="rect" href="main_8cpp.html#acddbdac074074838706f6cac15611fd5" title=" " alt="" coords="791,105,1001,131"/>
+<area shape="poly" title=" " alt="" coords="1035,128,1001,126,1002,121,1036,123"/>
+<area shape="rect" href="main_8cpp.html#a3fe55c819c4811eec60d15d6f7a4110c" title=" " alt="" coords="502,169,735,209"/>
+<area shape="poly" title=" " alt="" coords="1036,149,1002,152,736,180,735,174,1001,147,1035,144"/>
+<area shape="poly" title=" " alt="" coords="500,119,446,113,447,108,501,114"/>
+<area shape="poly" title=" " alt="" coords="802,106,738,95,739,90,803,100"/>
+<area shape="poly" title=" " alt="" coords="777,126,743,128,743,123,777,121"/>
+<area shape="poly" title=" " alt="" coords="833,137,699,171,697,166,831,131"/>
+<area shape="poly" title=" " alt="" coords="517,167,494,159,449,139,411,118,413,114,451,134,496,154,518,162"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac63fa54e386a433b158302146c1dea21" name="ac63fa54e386a433b158302146c1dea21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac63fa54e386a433b158302146c1dea21">&#9670;&#160;</a></span>GetLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Device::GetLocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_ac63fa54e386a433b158302146c1dea21_icgraph.png" border="0" usemap="#aclassDevice_ac63fa54e386a433b158302146c1dea21_icgraph" alt=""/></div>
+<map name="aclassDevice_ac63fa54e386a433b158302146c1dea21_icgraph" id="aclassDevice_ac63fa54e386a433b158302146c1dea21_icgraph">
+<area shape="rect" title=" " alt="" coords="483,75,636,101"/>
+<area shape="rect" href="main_8cpp.html#ae579118b6e30a9a0f9219e48f91ad5fb" title=" " alt="" coords="280,39,431,65"/>
+<area shape="poly" title=" " alt="" coords="473,76,427,67,428,62,474,70"/>
+<area shape="rect" href="main_8cpp.html#ad0d534fabf21a1a35ee4e750f0fff965" title=" " alt="" coords="276,99,435,125"/>
+<area shape="poly" title=" " alt="" coords="470,101,435,105,435,100,469,96"/>
+<area shape="rect" href="classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a5c4740fd4a4f26ccf02e2ae6b74883ac" title=" " alt="" coords="5,5,228,75"/>
+<area shape="poly" title=" " alt="" coords="266,50,228,48,228,43,267,45"/>
+<area shape="rect" href="classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a40c81795ed59dad860acec7bbc2652c9" title="Callback that will be called to handle an InstantAction command." alt="" coords="11,99,222,168"/>
+<area shape="poly" title=" " alt="" coords="262,123,223,127,222,121,262,118"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8f11cf52d0929e177fe97aa1f2c281bc" name="a8f11cf52d0929e177fe97aa1f2c281bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f11cf52d0929e177fe97aa1f2c281bc">&#9670;&#160;</a></span>GetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * Device::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a8f11cf52d0929e177fe97aa1f2c281bc_icgraph.png" border="0" usemap="#aclassDevice_a8f11cf52d0929e177fe97aa1f2c281bc_icgraph" alt=""/></div>
+<map name="aclassDevice_a8f11cf52d0929e177fe97aa1f2c281bc_icgraph" id="aclassDevice_a8f11cf52d0929e177fe97aa1f2c281bc_icgraph">
+<area shape="rect" title=" " alt="" coords="1011,55,1148,80"/>
+<area shape="rect" href="main_8cpp.html#aa8cadda0b254803163b60286b11dcd53" title=" " alt="" coords="773,5,922,31"/>
+<area shape="poly" title=" " alt="" coords="1007,54,962,45,909,33,910,28,963,39,1008,49"/>
+<area shape="rect" href="main_8cpp.html#af2f17ad1608197ed522f457b6512c1a1" title=" " alt="" coords="732,105,963,145"/>
+<area shape="poly" title=" " alt="" coords="1015,86,929,107,928,102,1013,81"/>
+<area shape="rect" href="main_8cpp.html#adc829c4e45300049ccd44f0e98604911" title=" " alt="" coords="758,55,937,80"/>
+<area shape="poly" title=" " alt="" coords="997,70,937,70,937,65,997,65"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,29,447,55"/>
+<area shape="poly" title=" " alt="" coords="759,25,447,42,447,36,758,20"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="508,55,671,80"/>
+<area shape="poly" title=" " alt="" coords="768,36,657,57,656,52,766,31"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,29,283,55"/>
+<area shape="poly" title=" " alt="" coords="317,45,283,45,283,39,317,39"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,29,60,55"/>
+<area shape="poly" title=" " alt="" coords="95,45,60,45,60,39,95,39"/>
+<area shape="poly" title=" " alt="" coords="494,58,446,52,447,47,494,53"/>
+<area shape="rect" href="main_8cpp.html#a35e0ccb1029d0e664cb9fff4f3ad556b" title=" " alt="" coords="495,105,684,145"/>
+<area shape="poly" title=" " alt="" coords="718,127,684,127,684,122,718,122"/>
+<area shape="poly" title=" " alt="" coords="744,70,671,70,671,65,744,65"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acf1001cc0de2b5e3c18794867a807970" name="acf1001cc0de2b5e3c18794867a807970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1001cc0de2b5e3c18794867a807970">&#9670;&#160;</a></span>GetParentEndpointId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> Device::GetParentEndpointId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07cc81a6eec5a65be617602c5e246753" name="a07cc81a6eec5a65be617602c5e246753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07cc81a6eec5a65be617602c5e246753">&#9670;&#160;</a></span>GetUniqueId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * Device::GetUniqueId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a07cc81a6eec5a65be617602c5e246753_icgraph.png" border="0" usemap="#aclassDevice_a07cc81a6eec5a65be617602c5e246753_icgraph" alt=""/></div>
+<map name="aclassDevice_a07cc81a6eec5a65be617602c5e246753_icgraph" id="aclassDevice_a07cc81a6eec5a65be617602c5e246753_icgraph">
+<area shape="rect" title=" " alt="" coords="1011,60,1167,85"/>
+<area shape="rect" href="main_8cpp.html#aa8cadda0b254803163b60286b11dcd53" title=" " alt="" coords="773,31,922,56"/>
+<area shape="poly" title=" " alt="" coords="997,64,922,55,922,50,997,59"/>
+<area shape="rect" href="main_8cpp.html#af2f17ad1608197ed522f457b6512c1a1" title=" " alt="" coords="732,81,963,121"/>
+<area shape="poly" title=" " alt="" coords="997,86,963,90,962,85,997,81"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,5,447,31"/>
+<area shape="poly" title=" " alt="" coords="766,31,684,21,557,16,447,18,447,13,557,11,684,15,767,26"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="508,31,671,56"/>
+<area shape="poly" title=" " alt="" coords="759,46,671,46,671,41,759,41"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="317,21,283,21,283,15,317,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+<area shape="poly" title=" " alt="" coords="494,34,446,28,447,23,494,29"/>
+<area shape="rect" href="main_8cpp.html#a35e0ccb1029d0e664cb9fff4f3ad556b" title=" " alt="" coords="495,81,684,121"/>
+<area shape="poly" title=" " alt="" coords="718,103,684,103,684,98,718,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7df969cb29ba2fd484286d5f743c9fbd" name="a7df969cb29ba2fd484286d5f743c9fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7df969cb29ba2fd484286d5f743c9fbd">&#9670;&#160;</a></span>GetZone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Device::GetZone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a7df969cb29ba2fd484286d5f743c9fbd_icgraph.png" border="0" usemap="#aclassDevice_a7df969cb29ba2fd484286d5f743c9fbd_icgraph" alt=""/></div>
+<map name="aclassDevice_a7df969cb29ba2fd484286d5f743c9fbd_icgraph" id="aclassDevice_a7df969cb29ba2fd484286d5f743c9fbd_icgraph">
+<area shape="rect" title=" " alt="" coords="475,27,605,53"/>
+<area shape="rect" href="main_8cpp.html#ae579118b6e30a9a0f9219e48f91ad5fb" title=" " alt="" coords="276,27,427,53"/>
+<area shape="poly" title=" " alt="" coords="461,43,427,43,427,37,461,37"/>
+<area shape="rect" href="classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a5c4740fd4a4f26ccf02e2ae6b74883ac" title=" " alt="" coords="5,5,228,75"/>
+<area shape="poly" title=" " alt="" coords="262,43,228,43,228,37,262,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a06599195755322100ae2e23b41a91bd2" name="a06599195755322100ae2e23b41a91bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06599195755322100ae2e23b41a91bd2">&#9670;&#160;</a></span>HandleDeviceChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Device::HandleDeviceChange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDevice.html">Device</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295c">Device::Changed_t</a>&#160;</td>
+          <td class="paramname"><em>changeMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classDeviceOnOff.html#a69562709446f6a6c6ab54e6ca4f8131d">DeviceOnOff</a>, <a class="el" href="classDeviceSwitch.html#a0806bc4d15400160e345595557907b5a">DeviceSwitch</a>, <a class="el" href="classDeviceTempSensor.html#abc49dd06bc101f5628f6a1088d92e489">DeviceTempSensor</a>, <a class="el" href="classComposedDevice.html#accdb9c09b1f5648621953edb5026a93f">ComposedDevice</a>, <a class="el" href="classDevicePowerSource.html#a2d5a3b3d6736153ff4a3f464390d726e">DevicePowerSource</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a06599195755322100ae2e23b41a91bd2_icgraph.png" border="0" usemap="#aclassDevice_a06599195755322100ae2e23b41a91bd2_icgraph" alt=""/></div>
+<map name="aclassDevice_a06599195755322100ae2e23b41a91bd2_icgraph" id="aclassDevice_a06599195755322100ae2e23b41a91bd2_icgraph">
+<area shape="rect" title=" " alt="" coords="1076,80,1291,105"/>
+<area shape="rect" href="classDevice.html#ac6120ec2389b1dbfe4fca66bf7090f14" title=" " alt="" coords="845,154,1028,194"/>
+<area shape="poly" title=" " alt="" coords="1132,112,999,156,997,151,1130,107"/>
+<area shape="rect" href="classDevice.html#a698404e7cf63ed9210e86b7b4400c832" title=" " alt="" coords="861,104,1012,129"/>
+<area shape="poly" title=" " alt="" coords="1062,107,1012,112,1012,107,1062,102"/>
+<area shape="rect" href="classDevice.html#a8a3cb2cf469424b7cbf9849f349af31a" title=" " alt="" coords="869,55,1004,80"/>
+<area shape="poly" title=" " alt="" coords="1062,83,1004,77,1005,72,1062,78"/>
+<area shape="rect" href="classDevice.html#a4c2b382654bcb2860b254bc48ab15319" title=" " alt="" coords="855,5,1019,31"/>
+<area shape="poly" title=" " alt="" coords="1132,78,1027,45,987,33,988,28,1029,39,1134,73"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="613,56,775,81"/>
+<area shape="poly" title=" " alt="" coords="862,152,844,144,718,84,721,79,846,140,864,147"/>
+<area shape="rect" href="classBridgeAppCommandHandler.html#a99a02d2cc79131042555a474026c1a09" title=" " alt="" coords="591,154,797,194"/>
+<area shape="poly" title=" " alt="" coords="832,177,798,177,798,171,832,171"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="379,31,495,56"/>
+<area shape="poly" title=" " alt="" coords="599,62,495,52,495,46,599,57"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,31,283,56"/>
+<area shape="poly" title=" " alt="" coords="365,46,283,46,283,41,365,41"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,60,56"/>
+<area shape="poly" title=" " alt="" coords="95,46,60,46,60,41,95,41"/>
+<area shape="rect" href="classBridgeCommandDelegate.html#adf7d76b19822a725e3baf2270e720710" title=" " alt="" coords="331,154,543,194"/>
+<area shape="poly" title=" " alt="" coords="577,177,543,177,543,171,577,171"/>
+<area shape="poly" title=" " alt="" coords="858,104,758,84,759,79,859,99"/>
+<area shape="poly" title=" " alt="" coords="856,70,775,71,775,66,856,65"/>
+<area shape="poly" title=" " alt="" coords="862,36,756,59,755,53,861,31"/>
+<area shape="poly" title=" " alt="" coords="841,25,495,43,495,38,841,20"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aad533e7e9c778c15d4ecbb9b99305bbb" name="aad533e7e9c778c15d4ecbb9b99305bbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad533e7e9c778c15d4ecbb9b99305bbb">&#9670;&#160;</a></span>IsReachable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Device::IsReachable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_aad533e7e9c778c15d4ecbb9b99305bbb_icgraph.png" border="0" usemap="#aclassDevice_aad533e7e9c778c15d4ecbb9b99305bbb_icgraph" alt=""/></div>
+<map name="aclassDevice_aad533e7e9c778c15d4ecbb9b99305bbb_icgraph" id="aclassDevice_aad533e7e9c778c15d4ecbb9b99305bbb_icgraph">
+<area shape="rect" title=" " alt="" coords="521,41,676,66"/>
+<area shape="rect" href="main_8cpp.html#a1e3fef27262fefaf3348b7c1d837114e" title=" " alt="" coords="5,5,195,45"/>
+<area shape="poly" title=" " alt="" coords="532,40,473,31,327,23,195,24,195,18,327,17,474,25,533,35"/>
+<area shape="rect" href="main_8cpp.html#af2f17ad1608197ed522f457b6512c1a1" title=" " alt="" coords="243,91,473,131"/>
+<area shape="poly" title=" " alt="" coords="532,72,443,93,442,88,531,67"/>
+<area shape="rect" href="main_8cpp.html#ad41766909be9cd1828ad31075d44d21d" title=" " alt="" coords="259,41,457,66"/>
+<area shape="poly" title=" " alt="" coords="507,56,457,56,457,51,507,51"/>
+<area shape="rect" href="main_8cpp.html#a35e0ccb1029d0e664cb9fff4f3ad556b" title=" " alt="" coords="5,91,195,131"/>
+<area shape="poly" title=" " alt="" coords="229,113,195,113,195,108,229,108"/>
+<area shape="poly" title=" " alt="" coords="245,44,194,38,195,33,246,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac6120ec2389b1dbfe4fca66bf7090f14" name="ac6120ec2389b1dbfe4fca66bf7090f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6120ec2389b1dbfe4fca66bf7090f14">&#9670;&#160;</a></span>SetConfigurationVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::SetConfigurationVersion </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>configurationVersion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_ac6120ec2389b1dbfe4fca66bf7090f14_cgraph.png" border="0" usemap="#aclassDevice_ac6120ec2389b1dbfe4fca66bf7090f14_cgraph" alt=""/></div>
+<map name="aclassDevice_ac6120ec2389b1dbfe4fca66bf7090f14_cgraph" id="aclassDevice_ac6120ec2389b1dbfe4fca66bf7090f14_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,188,45"/>
+<area shape="rect" href="classDevice.html#a06599195755322100ae2e23b41a91bd2" title=" " alt="" coords="236,13,451,38"/>
+<area shape="poly" title=" " alt="" coords="188,23,222,23,222,28,188,28"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_ac6120ec2389b1dbfe4fca66bf7090f14_icgraph.png" border="0" usemap="#aclassDevice_ac6120ec2389b1dbfe4fca66bf7090f14_icgraph" alt=""/></div>
+<map name="aclassDevice_ac6120ec2389b1dbfe4fca66bf7090f14_icgraph" id="aclassDevice_ac6120ec2389b1dbfe4fca66bf7090f14_icgraph">
+<area shape="rect" title=" " alt="" coords="845,27,1028,67"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="613,5,775,31"/>
+<area shape="poly" title=" " alt="" coords="831,37,775,30,776,25,832,32"/>
+<area shape="rect" href="classBridgeAppCommandHandler.html#a99a02d2cc79131042555a474026c1a09" title=" " alt="" coords="591,55,797,95"/>
+<area shape="poly" title=" " alt="" coords="832,62,798,66,797,61,832,57"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="379,5,495,31"/>
+<area shape="poly" title=" " alt="" coords="599,21,495,21,495,15,599,15"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="365,21,283,21,283,15,365,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+<area shape="rect" href="classBridgeCommandDelegate.html#adf7d76b19822a725e3baf2270e720710" title=" " alt="" coords="331,55,543,95"/>
+<area shape="poly" title=" " alt="" coords="577,78,543,78,543,73,577,73"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8cf116830d3dfda53a61a8a241d550d8" name="a8cf116830d3dfda53a61a8a241d550d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf116830d3dfda53a61a8a241d550d8">&#9670;&#160;</a></span>SetEndpointId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::SetEndpointId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a8cf116830d3dfda53a61a8a241d550d8_icgraph.png" border="0" usemap="#aclassDevice_a8cf116830d3dfda53a61a8a241d550d8_icgraph" alt=""/></div>
+<map name="aclassDevice_a8cf116830d3dfda53a61a8a241d550d8_icgraph" id="aclassDevice_a8cf116830d3dfda53a61a8a241d550d8_icgraph">
+<area shape="rect" title=" " alt="" coords="903,48,1068,73"/>
+<area shape="rect" href="main_8cpp.html#aa8cadda0b254803163b60286b11dcd53" title=" " alt="" coords="705,22,855,48"/>
+<area shape="poly" title=" " alt="" coords="889,51,855,47,855,42,889,46"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,22,447,48"/>
+<area shape="poly" title=" " alt="" coords="889,70,706,75,600,72,494,63,432,50,433,45,495,58,600,66,706,69,889,64"/>
+<area shape="poly" title=" " alt="" coords="712,22,657,14,576,8,495,14,436,25,435,20,494,9,576,3,658,9,713,17"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="495,22,657,48"/>
+<area shape="poly" title=" " alt="" coords="691,38,658,38,658,32,691,32"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,22,283,48"/>
+<area shape="poly" title=" " alt="" coords="317,38,283,38,283,32,317,32"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,22,60,48"/>
+<area shape="poly" title=" " alt="" coords="95,38,60,38,60,32,95,32"/>
+<area shape="poly" title=" " alt="" coords="481,38,447,38,447,32,481,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a698404e7cf63ed9210e86b7b4400c832" name="a698404e7cf63ed9210e86b7b4400c832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a698404e7cf63ed9210e86b7b4400c832">&#9670;&#160;</a></span>SetLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::SetLocation </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>szLocation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a698404e7cf63ed9210e86b7b4400c832_cgraph.png" border="0" usemap="#aclassDevice_a698404e7cf63ed9210e86b7b4400c832_cgraph" alt=""/></div>
+<map name="aclassDevice_a698404e7cf63ed9210e86b7b4400c832_cgraph" id="aclassDevice_a698404e7cf63ed9210e86b7b4400c832_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,156,31"/>
+<area shape="rect" href="classDevice.html#a06599195755322100ae2e23b41a91bd2" title=" " alt="" coords="204,5,419,31"/>
+<area shape="poly" title=" " alt="" coords="156,15,190,15,190,21,156,21"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a698404e7cf63ed9210e86b7b4400c832_icgraph.png" border="0" usemap="#aclassDevice_a698404e7cf63ed9210e86b7b4400c832_icgraph" alt=""/></div>
+<map name="aclassDevice_a698404e7cf63ed9210e86b7b4400c832_icgraph" id="aclassDevice_a698404e7cf63ed9210e86b7b4400c832_icgraph">
+<area shape="rect" title=" " alt="" coords="705,5,856,31"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="495,5,657,31"/>
+<area shape="poly" title=" " alt="" coords="692,21,658,21,658,15,692,15"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,5,447,31"/>
+<area shape="poly" title=" " alt="" coords="481,21,447,21,447,15,481,15"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="317,21,283,21,283,15,317,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8a3cb2cf469424b7cbf9849f349af31a" name="a8a3cb2cf469424b7cbf9849f349af31a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a3cb2cf469424b7cbf9849f349af31a">&#9670;&#160;</a></span>SetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::SetName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szDeviceName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a8a3cb2cf469424b7cbf9849f349af31a_cgraph.png" border="0" usemap="#aclassDevice_a8a3cb2cf469424b7cbf9849f349af31a_cgraph" alt=""/></div>
+<map name="aclassDevice_a8a3cb2cf469424b7cbf9849f349af31a_cgraph" id="aclassDevice_a8a3cb2cf469424b7cbf9849f349af31a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,140,80"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d" title=" " alt="" coords="199,29,391,55"/>
+<area shape="poly" title=" " alt="" coords="140,57,185,52,186,57,140,62"/>
+<area shape="rect" href="classDevice.html#a06599195755322100ae2e23b41a91bd2" title=" " alt="" coords="188,79,403,104"/>
+<area shape="poly" title=" " alt="" coords="140,72,175,76,174,81,140,77"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="451,29,601,55"/>
+<area shape="poly" title=" " alt="" coords="391,39,437,39,437,45,391,45"/>
+<area shape="poly" title=" " alt="" coords="489,31,481,21,485,11,501,5,526,3,558,7,570,16,567,20,556,11,526,8,502,10,489,15,486,20,493,27"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="649,29,856,55"/>
+<area shape="poly" title=" " alt="" coords="602,39,636,39,636,45,602,45"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a8a3cb2cf469424b7cbf9849f349af31a_icgraph.png" border="0" usemap="#aclassDevice_a8a3cb2cf469424b7cbf9849f349af31a_icgraph" alt=""/></div>
+<map name="aclassDevice_a8a3cb2cf469424b7cbf9849f349af31a_icgraph" id="aclassDevice_a8a3cb2cf469424b7cbf9849f349af31a_icgraph">
+<area shape="rect" title=" " alt="" coords="705,5,840,31"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="495,5,657,31"/>
+<area shape="poly" title=" " alt="" coords="692,21,657,21,657,15,692,15"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,5,447,31"/>
+<area shape="poly" title=" " alt="" coords="481,21,447,21,447,15,481,15"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="317,21,283,21,283,15,317,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae1c9045ae3f75ef445bd45d44968d052" name="ae1c9045ae3f75ef445bd45d44968d052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c9045ae3f75ef445bd45d44968d052">&#9670;&#160;</a></span>SetParentEndpointId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::SetParentEndpointId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_ae1c9045ae3f75ef445bd45d44968d052_icgraph.png" border="0" usemap="#aclassDevice_ae1c9045ae3f75ef445bd45d44968d052_icgraph" alt=""/></div>
+<map name="aclassDevice_ae1c9045ae3f75ef445bd45d44968d052_icgraph" id="aclassDevice_ae1c9045ae3f75ef445bd45d44968d052_icgraph">
+<area shape="rect" title=" " alt="" coords="903,5,1109,31"/>
+<area shape="rect" href="main_8cpp.html#aa8cadda0b254803163b60286b11dcd53" title=" " alt="" coords="705,5,855,31"/>
+<area shape="poly" title=" " alt="" coords="889,21,855,21,855,15,889,15"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,5,447,31"/>
+<area shape="poly" title=" " alt="" coords="692,21,447,21,447,15,692,15"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="495,31,657,56"/>
+<area shape="poly" title=" " alt="" coords="692,32,658,36,657,31,691,26"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="317,21,283,21,283,15,317,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+<area shape="poly" title=" " alt="" coords="480,33,447,28,447,23,481,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4c2b382654bcb2860b254bc48ab15319" name="a4c2b382654bcb2860b254bc48ab15319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c2b382654bcb2860b254bc48ab15319">&#9670;&#160;</a></span>SetReachable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::SetReachable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>aReachable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a4c2b382654bcb2860b254bc48ab15319_cgraph.png" border="0" usemap="#aclassDevice_a4c2b382654bcb2860b254bc48ab15319_cgraph" alt=""/></div>
+<map name="aclassDevice_a4c2b382654bcb2860b254bc48ab15319_cgraph" id="aclassDevice_a4c2b382654bcb2860b254bc48ab15319_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,169,31"/>
+<area shape="rect" href="classDevice.html#a06599195755322100ae2e23b41a91bd2" title=" " alt="" coords="217,5,432,31"/>
+<area shape="poly" title=" " alt="" coords="169,15,204,15,204,21,169,21"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a4c2b382654bcb2860b254bc48ab15319_icgraph.png" border="0" usemap="#aclassDevice_a4c2b382654bcb2860b254bc48ab15319_icgraph" alt=""/></div>
+<map name="aclassDevice_a4c2b382654bcb2860b254bc48ab15319_icgraph" id="aclassDevice_a4c2b382654bcb2860b254bc48ab15319_icgraph">
+<area shape="rect" title=" " alt="" coords="705,5,869,31"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,5,447,31"/>
+<area shape="poly" title=" " alt="" coords="691,21,447,21,447,15,691,15"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="495,31,657,56"/>
+<area shape="poly" title=" " alt="" coords="692,32,658,36,657,31,692,27"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="317,21,283,21,283,15,317,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+<area shape="poly" title=" " alt="" coords="480,33,447,28,447,23,481,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad3362a850d2b78673376b8e0b1583c4f" name="ad3362a850d2b78673376b8e0b1583c4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3362a850d2b78673376b8e0b1583c4f">&#9670;&#160;</a></span>SetUniqueId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::SetUniqueId </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szDeviceUniqueId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_ad3362a850d2b78673376b8e0b1583c4f_cgraph.png" border="0" usemap="#aclassDevice_ad3362a850d2b78673376b8e0b1583c4f_cgraph" alt=""/></div>
+<map name="aclassDevice_ad3362a850d2b78673376b8e0b1583c4f_cgraph" id="aclassDevice_ad3362a850d2b78673376b8e0b1583c4f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,160,55"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d" title=" " alt="" coords="208,29,400,55"/>
+<area shape="poly" title=" " alt="" coords="160,39,194,39,194,45,160,45"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="448,29,599,55"/>
+<area shape="poly" title=" " alt="" coords="400,39,434,39,434,45,400,45"/>
+<area shape="poly" title=" " alt="" coords="488,31,480,21,484,11,499,5,523,3,554,6,566,15,563,20,552,11,523,8,500,10,488,15,485,20,492,28"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="647,29,853,55"/>
+<area shape="poly" title=" " alt="" coords="599,39,633,39,633,45,599,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a68f921cd54ef4c6ae4dd27b1426099be" name="a68f921cd54ef4c6ae4dd27b1426099be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f921cd54ef4c6ae4dd27b1426099be">&#9670;&#160;</a></span>SetZone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::SetZone </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>zone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDevice_a68f921cd54ef4c6ae4dd27b1426099be_icgraph.png" border="0" usemap="#aclassDevice_a68f921cd54ef4c6ae4dd27b1426099be_icgraph" alt=""/></div>
+<map name="aclassDevice_a68f921cd54ef4c6ae4dd27b1426099be_icgraph" id="aclassDevice_a68f921cd54ef4c6ae4dd27b1426099be_icgraph">
+<area shape="rect" title=" " alt="" coords="705,5,835,31"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="495,5,657,31"/>
+<area shape="poly" title=" " alt="" coords="691,21,657,21,657,15,691,15"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,5,447,31"/>
+<area shape="poly" title=" " alt="" coords="481,21,447,21,447,15,481,15"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" title=" " alt="" coords="317,21,283,21,283,15,317,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a16f777270f43a9c568626692ba1b8fca" name="a16f777270f43a9c568626692ba1b8fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f777270f43a9c568626692ba1b8fca">&#9670;&#160;</a></span>Changed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDevice.html#a4a93d064f1eb2587a12152ff79aa295c">Device::Changed_t</a> Device::Changed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecad302bd3ed4ed9854f87875fbfa6e2" name="aecad302bd3ed4ed9854f87875fbfa6e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecad302bd3ed4ed9854f87875fbfa6e2">&#9670;&#160;</a></span>kDeviceNameSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Device::kDeviceNameSize = 32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46edea3eb92414cdee8436102325b5f1" name="a46edea3eb92414cdee8436102325b5f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46edea3eb92414cdee8436102325b5f1">&#9670;&#160;</a></span>kDeviceUniqueIdSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Device::kDeviceUniqueIdSize = 32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2fcf9495fb73e61e877ec9219d4e119" name="ae2fcf9495fb73e61e877ec9219d4e119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2fcf9495fb73e61e877ec9219d4e119">&#9670;&#160;</a></span>mConfigurationVersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Device::mConfigurationVersion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9280afaa4792f111aad55238a03676ba" name="a9280afaa4792f111aad55238a03676ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9280afaa4792f111aad55238a03676ba">&#9670;&#160;</a></span>mEndpointId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> Device::mEndpointId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2660c8069e8111dfedd3990b52b6454c" name="a2660c8069e8111dfedd3990b52b6454c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2660c8069e8111dfedd3990b52b6454c">&#9670;&#160;</a></span>mLocation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Device::mLocation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fa9a520dc8c2973b6df6790fbe1ed0c" name="a4fa9a520dc8c2973b6df6790fbe1ed0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fa9a520dc8c2973b6df6790fbe1ed0c">&#9670;&#160;</a></span>mName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Device::mName[<a class="el" href="classDevice.html#aecad302bd3ed4ed9854f87875fbfa6e2">kDeviceNameSize</a>+1] = { 0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab4da806022269292a1477cd30853f3e" name="aab4da806022269292a1477cd30853f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab4da806022269292a1477cd30853f3e">&#9670;&#160;</a></span>mParentEndpointId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> Device::mParentEndpointId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd2a213a9679f8be5c89964ccd2bfddf" name="abd2a213a9679f8be5c89964ccd2bfddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2a213a9679f8be5c89964ccd2bfddf">&#9670;&#160;</a></span>mReachable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Device::mReachable = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ce0a87b461a95e9e381ddbd5c41888b" name="a5ce0a87b461a95e9e381ddbd5c41888b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ce0a87b461a95e9e381ddbd5c41888b">&#9670;&#160;</a></span>mUniqueId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Device::mUniqueId[<a class="el" href="classDevice.html#a46edea3eb92414cdee8436102325b5f1">kDeviceUniqueIdSize</a>+1] = { 0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6b64902e7e649d661f70b74d0457c0e" name="ad6b64902e7e649d661f70b74d0457c0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b64902e7e649d661f70b74d0457c0e">&#9670;&#160;</a></span>mZone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Device::mZone</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/examples/bridge-app/linux/include/<a class="el" href="Device_8h_source.html">Device.h</a></li>
+<li>connectedhomeip/examples/bridge-app/linux/<a class="el" href="Device_8cpp.html">Device.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

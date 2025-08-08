@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/inet/InetInterface.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_4fe739944a85759e1859e9646003ba6e.html">inet</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">InetInterface.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;inet/InetConfig.h&gt;</code><br />
+<code>#include &lt;inet/IPAddress.h&gt;</code><br />
+<code>#include &lt;inet/InetError.h&gt;</code><br />
+<code>#include &lt;lib/support/DLLUtil.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+InetInterface.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="InetInterface_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2inet_2InetInterface_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2inet_2InetInterface_8h" id="aconnectedhomeip_2src_2inet_2InetInterface_8h">
+<area shape="rect" title=" " alt="" coords="368,5,529,45"/>
+<area shape="rect" title=" " alt="" coords="5,93,135,119"/>
+<area shape="poly" title=" " alt="" coords="368,46,139,93,138,88,367,41"/>
+<area shape="rect" title=" " alt="" coords="159,93,285,119"/>
+<area shape="poly" title=" " alt="" coords="395,48,269,91,267,86,394,43"/>
+<area shape="rect" title=" " alt="" coords="309,93,428,119"/>
+<area shape="poly" title=" " alt="" coords="431,47,392,85,389,82,427,44"/>
+<area shape="rect" title=" " alt="" coords="451,93,606,119"/>
+<area shape="poly" title=" " alt="" coords="470,44,509,82,505,85,466,47"/>
+<area shape="rect" title=" " alt="" coords="630,93,705,119"/>
+<area shape="poly" title=" " alt="" coords="502,43,623,86,621,91,500,48"/>
+<area shape="rect" title=" " alt="" coords="729,93,800,119"/>
+<area shape="poly" title=" " alt="" coords="525,43,717,90,715,95,524,48"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="InetInterface_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2inet_2InetInterface_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2inet_2InetInterface_8hdep" id="aconnectedhomeip_2src_2inet_2InetInterface_8hdep">
+<area shape="rect" title=" " alt="" coords="583,5,744,45"/>
+<area shape="rect" href="Options_8h.html" title=" " alt="" coords="445,101,652,141"/>
+<area shape="poly" title=" " alt="" coords="631,56,574,103,570,99,628,52"/>
+<area shape="rect" href="DiagnosticDataProvider_8h.html" title=" " alt="" coords="711,93,917,148"/>
+<area shape="poly" title=" " alt="" coords="707,50,773,91,770,96,704,55"/>
+<area shape="rect" href="AppMain_8h.html" title=" " alt="" coords="375,203,581,243"/>
+<area shape="poly" title=" " alt="" coords="530,154,493,205,489,202,525,151"/>
+<area shape="rect" href="CommissionableInit_8h.html" title=" " alt="" coords="120,196,351,251"/>
+<area shape="poly" title=" " alt="" coords="478,147,318,198,316,193,476,142"/>
+<area shape="rect" href="Options_8cpp.html" title=" " alt="" coords="605,203,812,243"/>
+<area shape="poly" title=" " alt="" coords="592,146,680,201,677,206,589,150"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="260,306,467,346"/>
+<area shape="poly" title=" " alt="" coords="448,254,387,308,383,304,444,250"/>
+<area shape="rect" href="AppMain_8cpp.html" title=" " alt="" coords="491,306,697,346"/>
+<area shape="poly" title=" " alt="" coords="512,250,574,304,571,308,508,254"/>
+<area shape="poly" title=" " alt="" coords="281,257,341,304,337,308,278,261"/>
+<area shape="poly" title=" " alt="" coords="342,252,527,303,526,308,341,257"/>
+<area shape="rect" href="CommissionableInit_8cpp.html" title=" " alt="" coords="5,299,236,353"/>
+<area shape="poly" title=" " alt="" coords="197,262,152,301,149,297,193,258"/>
+<area shape="poly" title=" " alt="" coords="832,161,839,207,836,231,826,252,800,279,768,298,733,312,698,321,697,315,732,307,766,294,796,275,821,249,831,229,834,207,827,162"/>
+</map>
+</div>
+</div>
+<p><a href="InetInterface_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">chip::Inet::InterfaceId</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Inet_1_1InterfaceIterator.html">chip::Inet::InterfaceIterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator for the list of system network interfaces.  <a href="classchip_1_1Inet_1_1InterfaceIterator.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Inet_1_1InterfaceAddressIterator.html">chip::Inet::InterfaceAddressIterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator for the list of system network interface IP addresses.  <a href="classchip_1_1Inet_1_1InterfaceAddressIterator.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1Inet" id="r_namespacechip_1_1Inet"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Inet.html">chip::Inet</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a31925664b27b332f85a409c0111b7a4a" id="r_a31925664b27b332f85a409c0111b7a4a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Inet.html#a31925664b27b332f85a409c0111b7a4a">chip::Inet::InterfaceType</a> { <br />
+&#160;&#160;<a class="el" href="namespacechip_1_1Inet.html#a31925664b27b332f85a409c0111b7a4aa88183b946cc5f0e8c96b2e66e1c74a7e">chip::Inet::Unknown</a> = 0
+, <a class="el" href="namespacechip_1_1Inet.html#a31925664b27b332f85a409c0111b7a4aa3bf5d41ed0ac852c9a2e2d3a1161e26d">chip::Inet::WiFi</a> = 1
+, <a class="el" href="namespacechip_1_1Inet.html#a31925664b27b332f85a409c0111b7a4aabe2ae05fb04ddcf6efa31e63e0f0e111">chip::Inet::Ethernet</a> = 2
+, <a class="el" href="namespacechip_1_1Inet.html#a31925664b27b332f85a409c0111b7a4aa71e49f0a64aa14c31736b028670cacf3">chip::Inet::Cellular</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacechip_1_1Inet.html#a31925664b27b332f85a409c0111b7a4aad97477d6d8a838ead9348185bb5b6742">chip::Inet::Thread</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:a31925664b27b332f85a409c0111b7a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a246dc37b8f3828875b165a9e838ae224" id="r_a246dc37b8f3828875b165a9e838ae224"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Inet.html#a246dc37b8f3828875b165a9e838ae224">chip::Inet::NetmaskToPrefixLength</a> (const uint8_t *netmask, uint16_t netmaskLen)</td></tr>
+<tr class="separator:a246dc37b8f3828875b165a9e838ae224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>This file defines the <code>Inet::InterfaceId</code> type alias and related classes for iterating on the list of system network interfaces and the list of system interface addresses. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

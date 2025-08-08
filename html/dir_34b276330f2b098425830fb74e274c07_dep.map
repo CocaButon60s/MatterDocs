@@ -1,0 +1,9 @@
+<map id="connectedhomeip/src/app/clusters" name="connectedhomeip/src/app/clusters">
+<area shape="rect" id="node1" href="dir_6e8df11f0c7753a85be744cf78b83d4a.html" title="reporting" alt="" coords="257,136,338,161"/>
+<area shape="rect" id="node3" href="dir_663e3a7681912cdfcf85b146b3824c2b.html" title="actions&#45;server" alt="" coords="240,63,355,88"/>
+<area shape="poly" id="edge1" href="dir_000001_000026.html" alt="" coords="300,88,300,122,295,122,295,88"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000001_000026.html" title="1" alt="" coords="301,110,310,125"/>
+<area shape="rect" id="node4" href="dir_e6be0848093d57bf746ef7b6ced2ccd5.html" title="network&#45;commissioning" alt="" coords="37,63,216,88"/>
+<area shape="rect" id="clust2" href="dir_34b276330f2b098425830fb74e274c07.html" alt="" coords="27,52,464,99"/>
+<area shape="rect" id="clust1" href="dir_a9aeb43d402f24b4c5513213743384b7.html" title="app" alt="" coords="16,16,475,172"/>
+</map>

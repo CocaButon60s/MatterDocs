@@ -1,0 +1,4 @@
+<map id="chip::Crypto::ExtractSubjectFromX509Cert" name="chip::Crypto::ExtractSubjectFromX509Cert">
+<area shape="rect" id="Node000001" title="Extracts Subject Distinguished Name from X509 Certificate. The value is copied into buffer in a raw A..." alt="" coords="5,29,208,69"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="141,18,129,11,107,8,87,10,76,15,71,21,74,28,68,30,66,20,72,11,86,5,107,3,130,6,143,13"/>
+</map>

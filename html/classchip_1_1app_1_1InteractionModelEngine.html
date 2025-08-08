@@ -1,0 +1,3443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::app::InteractionModelEngine クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1app.html">app</a></li><li class="navelem"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html">InteractionModelEngine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pri-types">非公開型</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-static-methods">静的非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="#friends">フレンド</a> &#124;
+<a href="classchip_1_1app_1_1InteractionModelEngine-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::app::InteractionModelEngine クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is a singleton hosting all CHIP unsolicited message processing and managing interaction model related clients and handlers  
+ <a href="classchip_1_1app_1_1InteractionModelEngine.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="InteractionModelEngine_8h_source.html">InteractionModelEngine.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::app::InteractionModelEngine の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1InteractionModelEngine__inherit__graph.png" border="0" usemap="#achip_1_1app_1_1InteractionModelEngine_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1app_1_1InteractionModelEngine_inherit__map" id="achip_1_1app_1_1InteractionModelEngine_inherit__map">
+<area shape="rect" title="This is a singleton hosting all CHIP unsolicited message processing and managing interaction model re..." alt="" coords="309,263,508,303"/>
+<area shape="rect" title=" " alt="" coords="18,5,249,45"/>
+<area shape="poly" title=" " alt="" coords="254,49,263,55,290,78,315,104,355,162,384,218,403,261,398,264,380,220,351,165,310,108,286,82,260,59,251,54"/>
+<area shape="rect" title=" " alt="" coords="22,70,245,95"/>
+<area shape="poly" title=" " alt="" coords="251,98,263,104,309,140,348,183,378,226,399,261,395,264,374,229,344,187,306,144,260,109,248,103"/>
+<area shape="rect" title=" " alt="" coords="37,119,230,145"/>
+<area shape="poly" title=" " alt="" coords="241,146,263,155,302,179,338,207,392,261,388,264,335,211,299,183,260,160,239,151"/>
+<area shape="rect" title=" " alt="" coords="35,169,232,209"/>
+<area shape="poly" title=" " alt="" coords="235,211,262,219,365,260,363,265,260,224,234,216"/>
+<area shape="rect" title=" " alt="" coords="49,233,218,273"/>
+<area shape="poly" title=" " alt="" coords="232,261,309,269,309,275,231,266"/>
+<area shape="rect" title=" " alt="" coords="5,298,261,323"/>
+<area shape="poly" title=" " alt="" coords="272,294,309,290,309,295,272,299"/>
+<area shape="rect" title=" " alt="" coords="65,348,202,388"/>
+<area shape="poly" title=" " alt="" coords="215,345,261,332,353,300,355,305,262,337,216,350"/>
+<area shape="rect" title=" " alt="" coords="39,413,227,438"/>
+<area shape="poly" title=" " alt="" coords="238,406,260,398,298,376,333,350,387,301,390,305,336,354,301,381,262,402,240,411"/>
+<area shape="rect" title=" " alt="" coords="47,462,220,487"/>
+<area shape="poly" title=" " alt="" coords="233,459,260,447,304,414,342,374,372,334,394,301,398,304,377,337,346,378,308,418,263,452,235,464"/>
+<area shape="rect" title=" " alt="" coords="50,511,217,537"/>
+<area shape="poly" title=" " alt="" coords="229,511,260,496,286,476,310,452,350,397,379,344,397,302,402,304,384,346,354,400,314,455,290,480,263,501,231,516"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::app::InteractionModelEngine 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1InteractionModelEngine__coll__graph.png" border="0" usemap="#achip_1_1app_1_1InteractionModelEngine_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1app_1_1InteractionModelEngine_coll__map" id="achip_1_1app_1_1InteractionModelEngine_coll__map">
+<area shape="rect" title="This is a singleton hosting all CHIP unsolicited message processing and managing interaction model re..." alt="" coords="309,263,508,303"/>
+<area shape="rect" title=" " alt="" coords="18,5,249,45"/>
+<area shape="poly" title=" " alt="" coords="254,49,263,55,290,78,315,104,355,162,384,218,403,261,398,264,380,220,351,165,310,108,286,82,260,59,251,54"/>
+<area shape="rect" title=" " alt="" coords="22,70,245,95"/>
+<area shape="poly" title=" " alt="" coords="251,98,263,104,309,140,348,183,378,226,399,261,395,264,374,229,344,187,306,144,260,109,248,103"/>
+<area shape="rect" title=" " alt="" coords="37,119,230,145"/>
+<area shape="poly" title=" " alt="" coords="241,146,263,155,302,179,338,207,392,261,388,264,335,211,299,183,260,160,239,151"/>
+<area shape="rect" title=" " alt="" coords="35,169,232,209"/>
+<area shape="poly" title=" " alt="" coords="235,211,262,219,365,260,363,265,260,224,234,216"/>
+<area shape="rect" title=" " alt="" coords="49,233,218,273"/>
+<area shape="poly" title=" " alt="" coords="232,261,309,269,309,275,231,266"/>
+<area shape="rect" title=" " alt="" coords="5,298,261,323"/>
+<area shape="poly" title=" " alt="" coords="272,294,309,290,309,295,272,299"/>
+<area shape="rect" title=" " alt="" coords="65,348,202,388"/>
+<area shape="poly" title=" " alt="" coords="215,345,261,332,353,300,355,305,262,337,216,350"/>
+<area shape="rect" title=" " alt="" coords="39,413,227,438"/>
+<area shape="poly" title=" " alt="" coords="238,406,260,398,298,376,333,350,387,301,390,305,336,354,301,381,262,402,240,411"/>
+<area shape="rect" title=" " alt="" coords="47,462,220,487"/>
+<area shape="poly" title=" " alt="" coords="233,459,260,447,304,414,342,374,372,334,394,301,398,304,377,337,346,378,308,418,263,452,235,464"/>
+<area shape="rect" title=" " alt="" coords="50,511,217,537"/>
+<area shape="poly" title=" " alt="" coords="229,511,260,496,286,476,310,452,350,397,379,344,397,302,402,304,384,346,354,400,314,455,290,480,263,501,231,516"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine_1_1CurrentExchangeValueScope.html">CurrentExchangeValueScope</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad954161ea758c16319299416424ddad7" id="r_ad954161ea758c16319299416424ddad7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ad954161ea758c16319299416424ddad7">InteractionModelEngine</a> (void)</td></tr>
+<tr class="separator:ad954161ea758c16319299416424ddad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae276b9ddd94005e80696cc17bdefd8b3" id="r_ae276b9ddd94005e80696cc17bdefd8b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ae276b9ddd94005e80696cc17bdefd8b3">Init</a> (Messaging::ExchangeManager *apExchangeMgr, FabricTable *apFabricTable, reporting::ReportScheduler *reportScheduler, CASESessionManager *apCASESessionMgr=nullptr, SubscriptionResumptionStorage *subscriptionResumptionStorage=nullptr, EventManagement *eventManagement=nullptr)</td></tr>
+<tr class="separator:ae276b9ddd94005e80696cc17bdefd8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ec2b1dbad97917c0f6d19aa5860a13" id="r_aa5ec2b1dbad97917c0f6d19aa5860a13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aa5ec2b1dbad97917c0f6d19aa5860a13">Shutdown</a> ()</td></tr>
+<tr class="separator:aa5ec2b1dbad97917c0f6d19aa5860a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544ffb824bdc82a59115e6d1fa762e83" id="r_a544ffb824bdc82a59115e6d1fa762e83"><td class="memItemLeft" align="right" valign="top">Messaging::ExchangeManager *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a544ffb824bdc82a59115e6d1fa762e83">GetExchangeManager</a> (void) const</td></tr>
+<tr class="separator:a544ffb824bdc82a59115e6d1fa762e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b087a00dee2e43f106b994289fdfb4" id="r_a62b087a00dee2e43f106b994289fdfb4"><td class="memItemLeft" align="right" valign="top">CASESessionManager *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a62b087a00dee2e43f106b994289fdfb4">GetCASESessionManager</a> () const</td></tr>
+<tr class="separator:a62b087a00dee2e43f106b994289fdfb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011354abf27b9c727acf0d27410c6914" id="r_a011354abf27b9c727acf0d27410c6914"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a011354abf27b9c727acf0d27410c6914">ShutdownAllSubscriptionHandlers</a> ()</td></tr>
+<tr class="separator:a011354abf27b9c727acf0d27410c6914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4fe2892438e9b1100a90f4b4b95ef40" id="r_ad4fe2892438e9b1100a90f4b4b95ef40"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ad4fe2892438e9b1100a90f4b4b95ef40">GetNumActiveReadHandlers</a> () const</td></tr>
+<tr class="separator:ad4fe2892438e9b1100a90f4b4b95ef40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d2fe36ccc59a82fa593b02a8b70e08" id="r_a56d2fe36ccc59a82fa593b02a8b70e08"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a56d2fe36ccc59a82fa593b02a8b70e08">GetNumActiveReadHandlers</a> (ReadHandler::InteractionType type) const</td></tr>
+<tr class="separator:a56d2fe36ccc59a82fa593b02a8b70e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aca498db16b302ccac782c221bd15ed" id="r_a9aca498db16b302ccac782c221bd15ed"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a9aca498db16b302ccac782c221bd15ed">GetNumActiveReadHandlers</a> (ReadHandler::InteractionType type, <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> fabricIndex) const</td></tr>
+<tr class="separator:a9aca498db16b302ccac782c221bd15ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada221415ad95782d90f18434fca525f0" id="r_ada221415ad95782d90f18434fca525f0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ada221415ad95782d90f18434fca525f0">GetNumActiveWriteHandlers</a> () const</td></tr>
+<tr class="separator:ada221415ad95782d90f18434fca525f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a9d20302afd197da8ecb4652753bf9" id="r_a55a9d20302afd197da8ecb4652753bf9"><td class="memItemLeft" align="right" valign="top">ReadHandler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a55a9d20302afd197da8ecb4652753bf9">ActiveHandlerAt</a> (unsigned int aIndex)</td></tr>
+<tr class="separator:a55a9d20302afd197da8ecb4652753bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8c7941ed753e07f49deff3c976061e" id="r_aae8c7941ed753e07f49deff3c976061e"><td class="memItemLeft" align="right" valign="top">WriteHandler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aae8c7941ed753e07f49deff3c976061e">ActiveWriteHandlerAt</a> (unsigned int aIndex)</td></tr>
+<tr class="separator:aae8c7941ed753e07f49deff3c976061e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c54f95d0d9e87c1dfde5b6aa90dd47" id="r_a50c54f95d0d9e87c1dfde5b6aa90dd47"><td class="memItemLeft" align="right" valign="top">reporting::Engine &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a50c54f95d0d9e87c1dfde5b6aa90dd47">GetReportingEngine</a> ()</td></tr>
+<tr class="separator:a50c54f95d0d9e87c1dfde5b6aa90dd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec91bffe8104163a0c774d21c6441265" id="r_aec91bffe8104163a0c774d21c6441265"><td class="memItemLeft" align="right" valign="top">reporting::ReportScheduler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aec91bffe8104163a0c774d21c6441265">GetReportScheduler</a> ()</td></tr>
+<tr class="separator:aec91bffe8104163a0c774d21c6441265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad787e38e46e81b2ee298bf2b11b0f71d" id="r_ad787e38e46e81b2ee298bf2b11b0f71d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ad787e38e46e81b2ee298bf2b11b0f71d">ReleaseAttributePathList</a> (SingleLinkedListNode&lt; AttributePathParams &gt; *&amp;aAttributePathList)</td></tr>
+<tr class="separator:ad787e38e46e81b2ee298bf2b11b0f71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80bba308fac9838c66fe7da7871e2168" id="r_a80bba308fac9838c66fe7da7871e2168"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a80bba308fac9838c66fe7da7871e2168">PushFrontAttributePathList</a> (SingleLinkedListNode&lt; AttributePathParams &gt; *&amp;aAttributePathList, AttributePathParams &amp;aAttributePath)</td></tr>
+<tr class="separator:a80bba308fac9838c66fe7da7871e2168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51806003b17ef293fc06f7ea6b47c832" id="r_a51806003b17ef293fc06f7ea6b47c832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a51806003b17ef293fc06f7ea6b47c832">RemoveDuplicateConcreteAttributePath</a> (SingleLinkedListNode&lt; AttributePathParams &gt; *&amp;aAttributePaths)</td></tr>
+<tr class="separator:a51806003b17ef293fc06f7ea6b47c832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd52a286a866789fcacf1cc3d84f2a8" id="r_adcd52a286a866789fcacf1cc3d84f2a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#adcd52a286a866789fcacf1cc3d84f2a8">ReleaseEventPathList</a> (SingleLinkedListNode&lt; EventPathParams &gt; *&amp;aEventPathList)</td></tr>
+<tr class="separator:adcd52a286a866789fcacf1cc3d84f2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8fd787ef27457ea46d6cedfe091116" id="r_a8b8fd787ef27457ea46d6cedfe091116"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a8b8fd787ef27457ea46d6cedfe091116">PushFrontEventPathParamsList</a> (SingleLinkedListNode&lt; EventPathParams &gt; *&amp;aEventPathList, EventPathParams &amp;aEventPath)</td></tr>
+<tr class="separator:a8b8fd787ef27457ea46d6cedfe091116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60dfd52fb1059ea1b11901184a8ea306" id="r_a60dfd52fb1059ea1b11901184a8ea306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a60dfd52fb1059ea1b11901184a8ea306">ReleaseDataVersionFilterList</a> (SingleLinkedListNode&lt; DataVersionFilter &gt; *&amp;aDataVersionFilterList)</td></tr>
+<tr class="separator:a60dfd52fb1059ea1b11901184a8ea306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13590ac41e066f1995a3624ab89fcc5" id="r_aa13590ac41e066f1995a3624ab89fcc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aa13590ac41e066f1995a3624ab89fcc5">PushFrontDataVersionFilterList</a> (SingleLinkedListNode&lt; DataVersionFilter &gt; *&amp;aDataVersionFilterList, DataVersionFilter &amp;aDataVersionFilter)</td></tr>
+<tr class="separator:aa13590ac41e066f1995a3624ab89fcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdda3ad7456f05e35118a8fefe4ceb35" id="r_afdda3ad7456f05e35118a8fefe4ceb35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#afdda3ad7456f05e35118a8fefe4ceb35">RegisterReadHandlerAppCallback</a> (ReadHandler::ApplicationCallback *mpApplicationCallback)</td></tr>
+<tr class="separator:afdda3ad7456f05e35118a8fefe4ceb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0857ecbda2d73de7cf273924f930c87b" id="r_a0857ecbda2d73de7cf273924f930c87b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a0857ecbda2d73de7cf273924f930c87b">UnregisterReadHandlerAppCallback</a> ()</td></tr>
+<tr class="separator:a0857ecbda2d73de7cf273924f930c87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609cf4fcb02887ecfad44afd84b0cab1" id="r_a609cf4fcb02887ecfad44afd84b0cab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a609cf4fcb02887ecfad44afd84b0cab1">OnTimedInteractionFailed</a> (TimedHandler *apTimedHandler) override</td></tr>
+<tr class="separator:a609cf4fcb02887ecfad44afd84b0cab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53e3ac6f910e9ec4812e89ba96a23ea" id="r_ad53e3ac6f910e9ec4812e89ba96a23ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ad53e3ac6f910e9ec4812e89ba96a23ea">OnTimedInvoke</a> (TimedHandler *apTimedHandler, Messaging::ExchangeContext *apExchangeContext, const PayloadHeader &amp;aPayloadHeader, System::PacketBufferHandle &amp;&amp;aPayload) override</td></tr>
+<tr class="separator:ad53e3ac6f910e9ec4812e89ba96a23ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a45ac1208fe40a870257c0d3470f2d" id="r_a89a45ac1208fe40a870257c0d3470f2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a89a45ac1208fe40a870257c0d3470f2d">OnTimedWrite</a> (TimedHandler *apTimedHandler, Messaging::ExchangeContext *apExchangeContext, const PayloadHeader &amp;aPayloadHeader, System::PacketBufferHandle &amp;&amp;aPayload) override</td></tr>
+<tr class="separator:a89a45ac1208fe40a870257c0d3470f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29823a6ac7170cda24701629a2715752" id="r_a29823a6ac7170cda24701629a2715752"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a29823a6ac7170cda24701629a2715752">HasConflictWriteRequests</a> (const WriteHandler *apWriteHandler, const <a class="el" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp;apath) override</td></tr>
+<tr class="separator:a29823a6ac7170cda24701629a2715752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7c3937c75d27d3af1a152740fc4dbf" id="r_aae7c3937c75d27d3af1a152740fc4dbf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aae7c3937c75d27d3af1a152740fc4dbf">GetNumDirtySubscriptions</a> () const</td></tr>
+<tr class="separator:aae7c3937c75d27d3af1a152740fc4dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5343936b4fa2f15abbb9557ff243ca" id="r_a7d5343936b4fa2f15abbb9557ff243ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a7d5343936b4fa2f15abbb9557ff243ca">TrimFabricForSubscriptions</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> aFabricIndex, bool aForceEvict)</td></tr>
+<tr class="separator:a7d5343936b4fa2f15abbb9557ff243ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9916b11d10cf09b0e70dcc555026e3fb" id="r_a9916b11d10cf09b0e70dcc555026e3fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a9916b11d10cf09b0e70dcc555026e3fb">TrimFabricForRead</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> aFabricIndex)</td></tr>
+<tr class="separator:a9916b11d10cf09b0e70dcc555026e3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73befae4030f874ba8f6c1bb15b68ebc" id="r_a73befae4030f874ba8f6c1bb15b68ebc"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a73befae4030f874ba8f6c1bb15b68ebc">GetMinGuaranteedSubscriptionsPerFabric</a> () const</td></tr>
+<tr class="separator:a73befae4030f874ba8f6c1bb15b68ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3914f7dfb8f84885e1cf0b7f3e90a204" id="r_a3914f7dfb8f84885e1cf0b7f3e90a204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a3914f7dfb8f84885e1cf0b7f3e90a204">OnFabricRemoved</a> (const FabricTable &amp;fabricTable, <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> fabricIndex) override</td></tr>
+<tr class="separator:a3914f7dfb8f84885e1cf0b7f3e90a204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad693ecb4e56f467218269fabe0595f02" id="r_ad693ecb4e56f467218269fabe0595f02"><td class="memItemLeft" align="right" valign="top">SubscriptionResumptionStorage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ad693ecb4e56f467218269fabe0595f02">GetSubscriptionResumptionStorage</a> ()</td></tr>
+<tr class="separator:ad693ecb4e56f467218269fabe0595f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135eb13ff9da687c77dbd868d2e2ab01" id="r_a135eb13ff9da687c77dbd868d2e2ab01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a135eb13ff9da687c77dbd868d2e2ab01">ResumeSubscriptions</a> ()</td></tr>
+<tr class="separator:a135eb13ff9da687c77dbd868d2e2ab01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d979a7b153836b1c223589789894c89" id="r_a0d979a7b153836b1c223589789894c89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a0d979a7b153836b1c223589789894c89">SubjectHasActiveSubscription</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> aFabricIndex, <a class="el" href="namespacechip.html#ac741422ab936732a88bb008cf631cbd2">NodeId</a> subjectID) override</td></tr>
+<tr class="separator:a0d979a7b153836b1c223589789894c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe3c54200dd626ae2f106fbee69a289" id="r_aafe3c54200dd626ae2f106fbee69a289"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aafe3c54200dd626ae2f106fbee69a289">SubjectHasPersistedSubscription</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> aFabricIndex, <a class="el" href="namespacechip.html#ac741422ab936732a88bb008cf631cbd2">NodeId</a> subjectID) override</td></tr>
+<tr class="separator:aafe3c54200dd626ae2f106fbee69a289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f495116f38b9c93bb788890d8cc8c93" id="r_a1f495116f38b9c93bb788890d8cc8c93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a1f495116f38b9c93bb788890d8cc8c93">FabricHasAtLeastOneActiveSubscription</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> aFabricIndex) override</td></tr>
+<tr class="separator:a1f495116f38b9c93bb788890d8cc8c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5833ff3e1f637580b9f52c81daf06b0d" id="r_a5833ff3e1f637580b9f52c81daf06b0d"><td class="memItemLeft" align="right" valign="top">DataModel::Provider *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a5833ff3e1f637580b9f52c81daf06b0d">GetDataModelProvider</a> () const</td></tr>
+<tr class="separator:a5833ff3e1f637580b9f52c81daf06b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ac21fa0aa150c1ae87afe9ecb8eda6" id="r_a47ac21fa0aa150c1ae87afe9ecb8eda6"><td class="memItemLeft" align="right" valign="top">DataModel::Provider *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a47ac21fa0aa150c1ae87afe9ecb8eda6">SetDataModelProvider</a> (DataModel::Provider *model)</td></tr>
+<tr class="separator:a47ac21fa0aa150c1ae87afe9ecb8eda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:af782833f7dd10dff62c4f7fdf2b9c967" id="r_af782833f7dd10dff62c4f7fdf2b9c967"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html">InteractionModelEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#af782833f7dd10dff62c4f7fdf2b9c967">GetInstance</a> (void)</td></tr>
+<tr class="memdesc:af782833f7dd10dff62c4f7fdf2b9c967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the singleton Interaction Model Engine.  <br /></td></tr>
+<tr class="separator:af782833f7dd10dff62c4f7fdf2b9c967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a01cff25986831c9b3bbde0bf0e62681d" id="r_a01cff25986831c9b3bbde0bf0e62681d"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a01cff25986831c9b3bbde0bf0e62681d">kMinSupportedSubscriptionsPerFabric</a> = 3</td></tr>
+<tr class="separator:a01cff25986831c9b3bbde0bf0e62681d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed037f4faf691a1f4abbf81730efe4d" id="r_a3ed037f4faf691a1f4abbf81730efe4d"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a3ed037f4faf691a1f4abbf81730efe4d">kMinSupportedPathsPerSubscription</a> = 3</td></tr>
+<tr class="separator:a3ed037f4faf691a1f4abbf81730efe4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62da4829f4c9def5e1d23af00937d03" id="r_aa62da4829f4c9def5e1d23af00937d03"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aa62da4829f4c9def5e1d23af00937d03">kMinSupportedPathsPerReadRequest</a> = 9</td></tr>
+<tr class="separator:aa62da4829f4c9def5e1d23af00937d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f1a9c71f67d34ed87573bdae4b42fc" id="r_a21f1a9c71f67d34ed87573bdae4b42fc"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a21f1a9c71f67d34ed87573bdae4b42fc">kMinSupportedReadRequestsPerFabric</a> = 1</td></tr>
+<tr class="separator:a21f1a9c71f67d34ed87573bdae4b42fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41aacbd85f81839933ab76c006b4eb7a" id="r_a41aacbd85f81839933ab76c006b4eb7a"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a41aacbd85f81839933ab76c006b4eb7a">kReadHandlerPoolSize</a> = <a class="el" href="CHIPConfig_8h.html#a1ab3a4cb431bbc7a56640d71437e7c8d">CHIP_IM_MAX_NUM_SUBSCRIPTIONS</a> + <a class="el" href="CHIPConfig_8h.html#a52dea4665fee83d6a98cfb5ec698893e">CHIP_IM_MAX_NUM_READS</a></td></tr>
+<tr class="separator:a41aacbd85f81839933ab76c006b4eb7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+非公開型</h2></td></tr>
+<tr class="memitem:afc8c3ff32c88030ea9a6c17d2835fe86" id="r_afc8c3ff32c88030ea9a6c17d2835fe86"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#afc8c3ff32c88030ea9a6c17d2835fe86">State</a> : uint8_t { <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#afc8c3ff32c88030ea9a6c17d2835fe86a518b13885544b3431069d8b44387de9c">kUninitialized</a>
+, <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#afc8c3ff32c88030ea9a6c17d2835fe86af2a73d6da4f1757992348e01f07c1abd">kInitializing</a>
+, <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#afc8c3ff32c88030ea9a6c17d2835fe86ab661416dbe99f1eddca1a5547a8bd720">kInitialized</a>
+ }</td></tr>
+<tr class="separator:afc8c3ff32c88030ea9a6c17d2835fe86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887aa951fa7b1406a4645eba316977ae" id="r_a887aa951fa7b1406a4645eba316977ae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a> = Protocols::InteractionModel::Status</td></tr>
+<tr class="separator:a887aa951fa7b1406a4645eba316977ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8258eab068576b88770adff67d4e4e3b" id="r_a8258eab068576b88770adff67d4e4e3b"><td class="memItemLeft" align="right" valign="top">Messaging::ExchangeContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a8258eab068576b88770adff67d4e4e3b">CurrentExchange</a> () override</td></tr>
+<tr class="separator:a8258eab068576b88770adff67d4e4e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0787faf2a852512a3d7396e8a9a821d2" id="r_a0787faf2a852512a3d7396e8a9a821d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a0787faf2a852512a3d7396e8a9a821d2">OnDone</a> (CommandResponseSender &amp;apResponderObj) override</td></tr>
+<tr class="separator:a0787faf2a852512a3d7396e8a9a821d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8eb80cbfd166a1231121d182d8276ed" id="r_aa8eb80cbfd166a1231121d182d8276ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aa8eb80cbfd166a1231121d182d8276ed">OnDone</a> (CommandHandlerImpl &amp;apCommandObj) override</td></tr>
+<tr class="separator:aa8eb80cbfd166a1231121d182d8276ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35ec23ad13ac690f3819e98a1b32302" id="r_ab35ec23ad13ac690f3819e98a1b32302"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ab35ec23ad13ac690f3819e98a1b32302">OnDone</a> (ReadHandler &amp;apReadObj) override</td></tr>
+<tr class="separator:ab35ec23ad13ac690f3819e98a1b32302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d01031deebe3b5a73e2e4a4670a243b" id="r_a8d01031deebe3b5a73e2e4a4670a243b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a8d01031deebe3b5a73e2e4a4670a243b">TryToResumeSubscriptions</a> ()</td></tr>
+<tr class="separator:a8d01031deebe3b5a73e2e4a4670a243b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0106569e2cf2e47723de61334bedcd5" id="r_af0106569e2cf2e47723de61334bedcd5"><td class="memItemLeft" align="right" valign="top">ReadHandler::ApplicationCallback *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#af0106569e2cf2e47723de61334bedcd5">GetAppCallback</a> () override</td></tr>
+<tr class="separator:af0106569e2cf2e47723de61334bedcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec2efe1965802ed64b1cc20b46388c10" id="r_aec2efe1965802ed64b1cc20b46388c10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html">InteractionModelEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aec2efe1965802ed64b1cc20b46388c10">GetInteractionModelEngine</a> () override</td></tr>
+<tr class="separator:aec2efe1965802ed64b1cc20b46388c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d1cc88538db5dbf6b281f4cea3caa5" id="r_ad2d1cc88538db5dbf6b281f4cea3caa5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ad2d1cc88538db5dbf6b281f4cea3caa5">OnUnsolicitedMessageReceived</a> (const PayloadHeader &amp;payloadHeader, ExchangeDelegate *&amp;newDelegate) override</td></tr>
+<tr class="separator:ad2d1cc88538db5dbf6b281f4cea3caa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9c9dd720c29eed03c2b09e6b6972e5" id="r_aba9c9dd720c29eed03c2b09e6b6972e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aba9c9dd720c29eed03c2b09e6b6972e5">OnInvokeCommandRequest</a> (Messaging::ExchangeContext *apExchangeContext, const PayloadHeader &amp;aPayloadHeader, System::PacketBufferHandle &amp;&amp;aPayload, bool aIsTimedInvoke)</td></tr>
+<tr class="separator:aba9c9dd720c29eed03c2b09e6b6972e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cfde2b67add65c6e8f32e03dbc6839a" id="r_a6cfde2b67add65c6e8f32e03dbc6839a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a6cfde2b67add65c6e8f32e03dbc6839a">OnMessageReceived</a> (Messaging::ExchangeContext *apExchangeContext, const PayloadHeader &amp;aPayloadHeader, System::PacketBufferHandle &amp;&amp;aPayload) override</td></tr>
+<tr class="separator:a6cfde2b67add65c6e8f32e03dbc6839a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8833d12a97e5c434710c9258c94299cb" id="r_a8833d12a97e5c434710c9258c94299cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a8833d12a97e5c434710c9258c94299cb">OnResponseTimeout</a> (Messaging::ExchangeContext *ec) override</td></tr>
+<tr class="separator:a8833d12a97e5c434710c9258c94299cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a597ac83dc28d4620b06860e9a3aeb8" id="r_a0a597ac83dc28d4620b06860e9a3aeb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a0a597ac83dc28d4620b06860e9a3aeb8">ParseAttributePaths</a> (const Access::SubjectDescriptor &amp;aSubjectDescriptor, AttributePathIBs::Parser &amp;aAttributePathListParser, bool &amp;aHasValidAttributePath, size_t &amp;aRequestedAttributePathCount)</td></tr>
+<tr class="separator:a0a597ac83dc28d4620b06860e9a3aeb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3299999168a2d2d00f8159ea1f6ff20f" id="r_a3299999168a2d2d00f8159ea1f6ff20f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a3299999168a2d2d00f8159ea1f6ff20f">ParseEventPaths</a> (const Access::SubjectDescriptor &amp;aSubjectDescriptor, EventPathIBs::Parser &amp;aEventPathListParser, bool &amp;aHasValidEventPath, size_t &amp;aRequestedEventPathCount)</td></tr>
+<tr class="separator:a3299999168a2d2d00f8159ea1f6ff20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0e49b3fdf69873d53c7ee460955d18" id="r_a0d0e49b3fdf69873d53c7ee460955d18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a0d0e49b3fdf69873d53c7ee460955d18">OnReadInitialRequest</a> (Messaging::ExchangeContext *apExchangeContext, const PayloadHeader &amp;aPayloadHeader, System::PacketBufferHandle &amp;&amp;aPayload, ReadHandler::InteractionType aInteractionType)</td></tr>
+<tr class="separator:a0d0e49b3fdf69873d53c7ee460955d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42df33178585406631bdb8a61bfebc34" id="r_a42df33178585406631bdb8a61bfebc34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a42df33178585406631bdb8a61bfebc34">OnWriteRequest</a> (Messaging::ExchangeContext *apExchangeContext, const PayloadHeader &amp;aPayloadHeader, System::PacketBufferHandle &amp;&amp;aPayload, bool aIsTimedWrite)</td></tr>
+<tr class="separator:a42df33178585406631bdb8a61bfebc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af85180d48134c17a9ed0860ea5990acf" id="r_af85180d48134c17a9ed0860ea5990acf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#af85180d48134c17a9ed0860ea5990acf">OnTimedRequest</a> (Messaging::ExchangeContext *apExchangeContext, const PayloadHeader &amp;aPayloadHeader, System::PacketBufferHandle &amp;&amp;aPayload, Protocols::InteractionModel::Status &amp;aStatus)</td></tr>
+<tr class="separator:af85180d48134c17a9ed0860ea5990acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9d11b9304caac1c7b703c91fa76cdd" id="r_a6d9d11b9304caac1c7b703c91fa76cdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a6d9d11b9304caac1c7b703c91fa76cdd">OnUnsolicitedReportData</a> (Messaging::ExchangeContext *apExchangeContext, const PayloadHeader &amp;aPayloadHeader, System::PacketBufferHandle &amp;&amp;aPayload)</td></tr>
+<tr class="separator:a6d9d11b9304caac1c7b703c91fa76cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3831d798ea5ba25713301a6368dc2c" id="r_aaa3831d798ea5ba25713301a6368dc2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aaa3831d798ea5ba25713301a6368dc2c">DispatchCommand</a> (CommandHandlerImpl &amp;apCommandObj, const ConcreteCommandPath &amp;aCommandPath, TLV::TLVReader &amp;apPayload) override</td></tr>
+<tr class="separator:aaa3831d798ea5ba25713301a6368dc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4867d85bcb7f7ef3c8955d4873225d" id="r_ade4867d85bcb7f7ef3c8955d4873225d"><td class="memItemLeft" align="right" valign="top">Protocols::InteractionModel::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ade4867d85bcb7f7ef3c8955d4873225d">ValidateCommandCanBeDispatched</a> (const DataModel::InvokeRequest &amp;request) override</td></tr>
+<tr class="separator:ade4867d85bcb7f7ef3c8955d4873225d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab635c05c74b36068008d91c808a78d00" id="r_ab635c05c74b36068008d91c808a78d00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ab635c05c74b36068008d91c808a78d00">HasActiveRead</a> ()</td></tr>
+<tr class="separator:ab635c05c74b36068008d91c808a78d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737fd660aa5de26d0fd388f888247f3b" id="r_a737fd660aa5de26d0fd388f888247f3b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a737fd660aa5de26d0fd388f888247f3b">GetPathPoolCapacityForReads</a> () const</td></tr>
+<tr class="separator:a737fd660aa5de26d0fd388f888247f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74181176f5b483e24a374dc61360b150" id="r_a74181176f5b483e24a374dc61360b150"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a74181176f5b483e24a374dc61360b150">GetReadHandlerPoolCapacityForReads</a> () const</td></tr>
+<tr class="separator:a74181176f5b483e24a374dc61360b150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a178e78664fc2768f119d45612b040c48" id="r_a178e78664fc2768f119d45612b040c48"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a178e78664fc2768f119d45612b040c48">GetPathPoolCapacityForSubscriptions</a> () const</td></tr>
+<tr class="separator:a178e78664fc2768f119d45612b040c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4354890e335174ecaa81e1c477e8c5" id="r_a3a4354890e335174ecaa81e1c477e8c5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a3a4354890e335174ecaa81e1c477e8c5">GetReadHandlerPoolCapacityForSubscriptions</a> () const</td></tr>
+<tr class="separator:a3a4354890e335174ecaa81e1c477e8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397d3ffd1319196e981d9a09e10854da" id="r_a397d3ffd1319196e981d9a09e10854da"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a397d3ffd1319196e981d9a09e10854da">GetConfigMaxFabrics</a> () const</td></tr>
+<tr class="separator:a397d3ffd1319196e981d9a09e10854da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb71feb1128314f0b6f0c003624dafcb" id="r_adb71feb1128314f0b6f0c003624dafcb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#adb71feb1128314f0b6f0c003624dafcb">GetGuaranteedReadRequestsPerFabric</a> () const</td></tr>
+<tr class="separator:adb71feb1128314f0b6f0c003624dafcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8bcdaf9544f142aa66f015a665e067" id="r_afb8bcdaf9544f142aa66f015a665e067"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#afb8bcdaf9544f142aa66f015a665e067">EnsureResourceForSubscription</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> aFabricIndex, size_t aRequestedAttributePathCount, size_t aRequestedEventPathCount)</td></tr>
+<tr class="separator:afb8bcdaf9544f142aa66f015a665e067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e6239778d6e52c0c702032a3a4feee" id="r_ad1e6239778d6e52c0c702032a3a4feee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ad1e6239778d6e52c0c702032a3a4feee">EnsureResourceForRead</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> aFabricIndex, size_t aRequestedAttributePathCount, size_t aRequestedEventPathCount)</td></tr>
+<tr class="separator:ad1e6239778d6e52c0c702032a3a4feee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81e3542f0aebb6f793c99a802694b6e" id="r_af81e3542f0aebb6f793c99a802694b6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#af81e3542f0aebb6f793c99a802694b6e">ShutdownMatchingSubscriptions</a> (const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> &gt; &amp;aFabricIndex=<a class="el" href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">NullOptional</a>, const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#ac741422ab936732a88bb008cf631cbd2">NodeId</a> &gt; &amp;aPeerNodeId=<a class="el" href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">NullOptional</a>)</td></tr>
+<tr class="separator:af81e3542f0aebb6f793c99a802694b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db6cef34da50d0e62d2b0b0783dbb0e" id="r_a8db6cef34da50d0e62d2b0b0783dbb0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a8db6cef34da50d0e62d2b0b0783dbb0e">CheckCommandExistence</a> (const ConcreteCommandPath &amp;aCommandPath, DataModel::AcceptedCommandEntry &amp;entry)</td></tr>
+<tr class="separator:a8db6cef34da50d0e62d2b0b0783dbb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0bfccffda66341d499866e5049f1c5e" id="r_af0bfccffda66341d499866e5049f1c5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#af0bfccffda66341d499866e5049f1c5e">CheckCommandAccess</a> (const DataModel::InvokeRequest &amp;aRequest, const Access::Privilege aRequiredPrivilege)</td></tr>
+<tr class="separator:af0bfccffda66341d499866e5049f1c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1852b9f11e648c86e478cd67798e504" id="r_af1852b9f11e648c86e478cd67798e504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#af1852b9f11e648c86e478cd67798e504">CheckCommandFlags</a> (const DataModel::InvokeRequest &amp;aRequest, const DataModel::AcceptedCommandEntry &amp;entry)</td></tr>
+<tr class="separator:af1852b9f11e648c86e478cd67798e504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ea38233598f38da48635f7c5806560" id="r_a78ea38233598f38da48635f7c5806560"><td class="memItemLeft" align="right" valign="top">std::optional&lt; DataModel::AttributeEntry &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a78ea38233598f38da48635f7c5806560">FindAttributeEntry</a> (const <a class="el" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp;path)</td></tr>
+<tr class="separator:a78ea38233598f38da48635f7c5806560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632288a517c7e5f1419e309767200104" id="r_a632288a517c7e5f1419e309767200104"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
+<tr class="memitem:a632288a517c7e5f1419e309767200104"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a632288a517c7e5f1419e309767200104">ReleasePool</a> (SingleLinkedListNode&lt; T &gt; *&amp;aObjectList, ObjectPool&lt; SingleLinkedListNode&lt; T &gt;, N &gt; &amp;aObjectPool)</td></tr>
+<tr class="separator:a632288a517c7e5f1419e309767200104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab779055768d6ba0453414bbd5a9a3bb5" id="r_ab779055768d6ba0453414bbd5a9a3bb5"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
+<tr class="memitem:ab779055768d6ba0453414bbd5a9a3bb5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ab779055768d6ba0453414bbd5a9a3bb5">PushFront</a> (SingleLinkedListNode&lt; T &gt; *&amp;aObjectList, T &amp;aData, ObjectPool&lt; SingleLinkedListNode&lt; T &gt;, N &gt; &amp;aObjectPool)</td></tr>
+<tr class="separator:ab779055768d6ba0453414bbd5a9a3bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静的非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a059a6a28b267507b6e9ba7ec12a04be8" id="r_a059a6a28b267507b6e9ba7ec12a04be8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a059a6a28b267507b6e9ba7ec12a04be8">ResumeSubscriptionsTimerCallback</a> (System::Layer *apSystemLayer, void *apAppState)</td></tr>
+<tr class="separator:a059a6a28b267507b6e9ba7ec12a04be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:aa7ce529def60e4e309a3dcd22c3d8383" id="r_aa7ce529def60e4e309a3dcd22c3d8383"><td class="memItemLeft" align="right" valign="top">Messaging::ExchangeManager *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aa7ce529def60e4e309a3dcd22c3d8383">mpExchangeMgr</a> = nullptr</td></tr>
+<tr class="separator:aa7ce529def60e4e309a3dcd22c3d8383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43e7570e0621c194f58689704a25ae0" id="r_ae43e7570e0621c194f58689704a25ae0"><td class="memItemLeft" align="right" valign="top">ObjectPool&lt; CommandResponseSender, <a class="el" href="CHIPConfig_8h.html#a2e67b1a10a1ffc9ee722c716960ff09e">CHIP_IM_MAX_NUM_COMMAND_HANDLER</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ae43e7570e0621c194f58689704a25ae0">mCommandResponderObjs</a></td></tr>
+<tr class="separator:ae43e7570e0621c194f58689704a25ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d1e3c78fe8d813422990ccadc9d290" id="r_a24d1e3c78fe8d813422990ccadc9d290"><td class="memItemLeft" align="right" valign="top">ObjectPool&lt; TimedHandler, <a class="el" href="CHIPConfig_8h.html#aa07e69c02e44331e38e4d7cf09f8f214">CHIP_IM_MAX_NUM_TIMED_HANDLER</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a24d1e3c78fe8d813422990ccadc9d290">mTimedHandlers</a></td></tr>
+<tr class="separator:a24d1e3c78fe8d813422990ccadc9d290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777f474c4454dec9dfa6494aa7aea974" id="r_a777f474c4454dec9dfa6494aa7aea974"><td class="memItemLeft" align="right" valign="top">WriteHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a777f474c4454dec9dfa6494aa7aea974">mWriteHandlers</a> [<a class="el" href="CHIPConfig_8h.html#a9c5110bc248a31fb8b89a4c57de236cb">CHIP_IM_MAX_NUM_WRITE_HANDLER</a>]</td></tr>
+<tr class="separator:a777f474c4454dec9dfa6494aa7aea974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac127b2374bff6de4cc4be57d4becad" id="r_adac127b2374bff6de4cc4be57d4becad"><td class="memItemLeft" align="right" valign="top">reporting::Engine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#adac127b2374bff6de4cc4be57d4becad">mReportingEngine</a></td></tr>
+<tr class="separator:adac127b2374bff6de4cc4be57d4becad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acded684e7095156140cbedb08af55f76" id="r_acded684e7095156140cbedb08af55f76"><td class="memItemLeft" align="right" valign="top">reporting::ReportScheduler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#acded684e7095156140cbedb08af55f76">mReportScheduler</a> = nullptr</td></tr>
+<tr class="separator:acded684e7095156140cbedb08af55f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd7ab41c02739db16b36fdb7d1f49d4" id="r_a2dd7ab41c02739db16b36fdb7d1f49d4"><td class="memItemLeft" align="right" valign="top">ObjectPool&lt; SingleLinkedListNode&lt; AttributePathParams &gt;, <a class="el" href="CHIPConfig_8h.html#aa51a96eecfb1fe917bdaa5a49ff79ff6">CHIP_IM_SERVER_MAX_NUM_PATH_GROUPS_FOR_READS</a>+<a class="el" href="CHIPConfig_8h.html#aea875fe81bfb3c6f882398086c03aeb8">CHIP_IM_SERVER_MAX_NUM_PATH_GROUPS_FOR_SUBSCRIPTIONS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a2dd7ab41c02739db16b36fdb7d1f49d4">mAttributePathPool</a></td></tr>
+<tr class="separator:a2dd7ab41c02739db16b36fdb7d1f49d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7831d1c11abb3670a46f74f3d831180" id="r_ac7831d1c11abb3670a46f74f3d831180"><td class="memItemLeft" align="right" valign="top">ObjectPool&lt; SingleLinkedListNode&lt; EventPathParams &gt;, <a class="el" href="CHIPConfig_8h.html#aa51a96eecfb1fe917bdaa5a49ff79ff6">CHIP_IM_SERVER_MAX_NUM_PATH_GROUPS_FOR_READS</a>+<a class="el" href="CHIPConfig_8h.html#aea875fe81bfb3c6f882398086c03aeb8">CHIP_IM_SERVER_MAX_NUM_PATH_GROUPS_FOR_SUBSCRIPTIONS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ac7831d1c11abb3670a46f74f3d831180">mEventPathPool</a></td></tr>
+<tr class="separator:ac7831d1c11abb3670a46f74f3d831180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0f73f2460c0a45467348c4895c751c" id="r_a8f0f73f2460c0a45467348c4895c751c"><td class="memItemLeft" align="right" valign="top">ObjectPool&lt; SingleLinkedListNode&lt; DataVersionFilter &gt;, <a class="el" href="CHIPConfig_8h.html#aa51a96eecfb1fe917bdaa5a49ff79ff6">CHIP_IM_SERVER_MAX_NUM_PATH_GROUPS_FOR_READS</a>+<a class="el" href="CHIPConfig_8h.html#aea875fe81bfb3c6f882398086c03aeb8">CHIP_IM_SERVER_MAX_NUM_PATH_GROUPS_FOR_SUBSCRIPTIONS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a8f0f73f2460c0a45467348c4895c751c">mDataVersionFilterPool</a></td></tr>
+<tr class="separator:a8f0f73f2460c0a45467348c4895c751c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939d37dfe7ecc5a3899eb84552fe9cfd" id="r_a939d37dfe7ecc5a3899eb84552fe9cfd"><td class="memItemLeft" align="right" valign="top">ObjectPool&lt; ReadHandler, <a class="el" href="CHIPConfig_8h.html#a52dea4665fee83d6a98cfb5ec698893e">CHIP_IM_MAX_NUM_READS</a>+<a class="el" href="CHIPConfig_8h.html#a1ab3a4cb431bbc7a56640d71437e7c8d">CHIP_IM_MAX_NUM_SUBSCRIPTIONS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a939d37dfe7ecc5a3899eb84552fe9cfd">mReadHandlers</a></td></tr>
+<tr class="separator:a939d37dfe7ecc5a3899eb84552fe9cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b719a06a61d2f8f437c0ab2d13410ec" id="r_a9b719a06a61d2f8f437c0ab2d13410ec"><td class="memItemLeft" align="right" valign="top">ReadHandler::ApplicationCallback *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a9b719a06a61d2f8f437c0ab2d13410ec">mpReadHandlerApplicationCallback</a> = nullptr</td></tr>
+<tr class="separator:a9b719a06a61d2f8f437c0ab2d13410ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f37e0bca299d78cb9be26d6a2cd96e0" id="r_a9f37e0bca299d78cb9be26d6a2cd96e0"><td class="memItemLeft" align="right" valign="top">FabricTable *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a9f37e0bca299d78cb9be26d6a2cd96e0">mpFabricTable</a> = nullptr</td></tr>
+<tr class="separator:a9f37e0bca299d78cb9be26d6a2cd96e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2087c1443aeac2e7c0eb8d8d3c319df8" id="r_a2087c1443aeac2e7c0eb8d8d3c319df8"><td class="memItemLeft" align="right" valign="top">CASESessionManager *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a2087c1443aeac2e7c0eb8d8d3c319df8">mpCASESessionMgr</a> = nullptr</td></tr>
+<tr class="separator:a2087c1443aeac2e7c0eb8d8d3c319df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e21787e57b6d42a7cc5b9c32aa38c9" id="r_ac5e21787e57b6d42a7cc5b9c32aa38c9"><td class="memItemLeft" align="right" valign="top">SubscriptionResumptionStorage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ac5e21787e57b6d42a7cc5b9c32aa38c9">mpSubscriptionResumptionStorage</a> = nullptr</td></tr>
+<tr class="separator:ac5e21787e57b6d42a7cc5b9c32aa38c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c40ae82fb16b59dad9a9db000e9b9e" id="r_ab6c40ae82fb16b59dad9a9db000e9b9e"><td class="memItemLeft" align="right" valign="top">DataModel::Provider *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ab6c40ae82fb16b59dad9a9db000e9b9e">mDataModelProvider</a> = nullptr</td></tr>
+<tr class="separator:ab6c40ae82fb16b59dad9a9db000e9b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d8bc8b77c2d868321e382f616ec596" id="r_ae5d8bc8b77c2d868321e382f616ec596"><td class="memItemLeft" align="right" valign="top">Messaging::ExchangeContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ae5d8bc8b77c2d868321e382f616ec596">mCurrentExchange</a> = nullptr</td></tr>
+<tr class="separator:ae5d8bc8b77c2d868321e382f616ec596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63dcbae8167ad1b185deb1f6e6a387ab" id="r_a63dcbae8167ad1b185deb1f6e6a387ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#afc8c3ff32c88030ea9a6c17d2835fe86">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a63dcbae8167ad1b185deb1f6e6a387ab">mState</a> = <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#afc8c3ff32c88030ea9a6c17d2835fe86a518b13885544b3431069d8b44387de9c">State::kUninitialized</a></td></tr>
+<tr class="separator:a63dcbae8167ad1b185deb1f6e6a387ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a553f5453f53d66a5a5fe6f13c9330965" id="r_a553f5453f53d66a5a5fe6f13c9330965"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a553f5453f53d66a5a5fe6f13c9330965">kReservedHandlersForReads</a> = <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a21f1a9c71f67d34ed87573bdae4b42fc">kMinSupportedReadRequestsPerFabric</a> * (<a class="el" href="CHIPConfig_8h.html#aa4ce0e44e78ed2dd3f279714c194279d">CHIP_CONFIG_MAX_FABRICS</a>)</td></tr>
+<tr class="separator:a553f5453f53d66a5a5fe6f13c9330965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba65cce6f0ce9d884ba233ceb8a73441" id="r_aba65cce6f0ce9d884ba233ceb8a73441"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aba65cce6f0ce9d884ba233ceb8a73441">kReservedPathsForReads</a> = <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aa62da4829f4c9def5e1d23af00937d03">kMinSupportedPathsPerReadRequest</a> * <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a553f5453f53d66a5a5fe6f13c9330965">kReservedHandlersForReads</a></td></tr>
+<tr class="separator:aba65cce6f0ce9d884ba233ceb8a73441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+フレンド</h2></td></tr>
+<tr class="memitem:a39590dcb834ee83a7db0d425ae4cc29b" id="r_a39590dcb834ee83a7db0d425ae4cc29b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a39590dcb834ee83a7db0d425ae4cc29b">reporting::Engine</a></td></tr>
+<tr class="separator:a39590dcb834ee83a7db0d425ae4cc29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3def127789f4aa098ca846e14b3a10a7" id="r_a3def127789f4aa098ca846e14b3a10a7"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a3def127789f4aa098ca846e14b3a10a7">TestCommandInteraction</a></td></tr>
+<tr class="separator:a3def127789f4aa098ca846e14b3a10a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a862b984644c3632bc62c5025d8f8bd88" id="r_a862b984644c3632bc62c5025d8f8bd88"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a862b984644c3632bc62c5025d8f8bd88">TestInteractionModelEngine</a></td></tr>
+<tr class="separator:a862b984644c3632bc62c5025d8f8bd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c4b36ecebb4556de5b6941eeb183ce" id="r_a65c4b36ecebb4556de5b6941eeb183ce"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a65c4b36ecebb4556de5b6941eeb183ce">SubscriptionResumptionSessionEstablisher</a></td></tr>
+<tr class="separator:a65c4b36ecebb4556de5b6941eeb183ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>This is a singleton hosting all CHIP unsolicited message processing and managing interaction model related clients and handlers </p>
+</div><h2 class="groupheader">型定義メンバ詳解</h2>
+<a id="a887aa951fa7b1406a4645eba316977ae" name="a887aa951fa7b1406a4645eba316977ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a887aa951fa7b1406a4645eba316977ae">&#9670;&#160;</a></span>Status</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">chip::app::InteractionModelEngine::Status</a> =  Protocols::InteractionModel::Status</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="afc8c3ff32c88030ea9a6c17d2835fe86" name="afc8c3ff32c88030ea9a6c17d2835fe86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc8c3ff32c88030ea9a6c17d2835fe86">&#9670;&#160;</a></span>State</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#afc8c3ff32c88030ea9a6c17d2835fe86">chip::app::InteractionModelEngine::State</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="afc8c3ff32c88030ea9a6c17d2835fe86a518b13885544b3431069d8b44387de9c" name="afc8c3ff32c88030ea9a6c17d2835fe86a518b13885544b3431069d8b44387de9c"></a>kUninitialized&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afc8c3ff32c88030ea9a6c17d2835fe86af2a73d6da4f1757992348e01f07c1abd" name="afc8c3ff32c88030ea9a6c17d2835fe86af2a73d6da4f1757992348e01f07c1abd"></a>kInitializing&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afc8c3ff32c88030ea9a6c17d2835fe86ab661416dbe99f1eddca1a5547a8bd720" name="afc8c3ff32c88030ea9a6c17d2835fe86ab661416dbe99f1eddca1a5547a8bd720"></a>kInitialized&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="ad954161ea758c16319299416424ddad7" name="ad954161ea758c16319299416424ddad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad954161ea758c16319299416424ddad7">&#9670;&#160;</a></span>InteractionModelEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::app::InteractionModelEngine::InteractionModelEngine </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a55a9d20302afd197da8ecb4652753bf9" name="a55a9d20302afd197da8ecb4652753bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a9d20302afd197da8ecb4652753bf9">&#9670;&#160;</a></span>ActiveHandlerAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadHandler * chip::app::InteractionModelEngine::ActiveHandlerAt </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>aIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the handler at a particular index within the active handler list. </p>
+
+</div>
+</div>
+<a id="aae8c7941ed753e07f49deff3c976061e" name="aae8c7941ed753e07f49deff3c976061e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae8c7941ed753e07f49deff3c976061e">&#9670;&#160;</a></span>ActiveWriteHandlerAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WriteHandler * chip::app::InteractionModelEngine::ActiveWriteHandlerAt </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>aIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the write handler at a particular index within the active handler list. </p>
+
+</div>
+</div>
+<a id="af0bfccffda66341d499866e5049f1c5e" name="af0bfccffda66341d499866e5049f1c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0bfccffda66341d499866e5049f1c5e">&#9670;&#160;</a></span>CheckCommandAccess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a> chip::app::InteractionModelEngine::CheckCommandAccess </td>
+          <td>(</td>
+          <td class="paramtype">const DataModel::InvokeRequest &amp;&#160;</td>
+          <td class="paramname"><em>aRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Access::Privilege&#160;</td>
+          <td class="paramname"><em>aRequiredPrivilege</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8db6cef34da50d0e62d2b0b0783dbb0e" name="a8db6cef34da50d0e62d2b0b0783dbb0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db6cef34da50d0e62d2b0b0783dbb0e">&#9670;&#160;</a></span>CheckCommandExistence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a> chip::app::InteractionModelEngine::CheckCommandExistence </td>
+          <td>(</td>
+          <td class="paramtype">const ConcreteCommandPath &amp;&#160;</td>
+          <td class="paramname"><em>aCommandPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataModel::AcceptedCommandEntry &amp;&#160;</td>
+          <td class="paramname"><em>entry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Validates that the command exists and on success returns the data for the command in <code>entry</code>. </p>
+
+</div>
+</div>
+<a id="af1852b9f11e648c86e478cd67798e504" name="af1852b9f11e648c86e478cd67798e504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1852b9f11e648c86e478cd67798e504">&#9670;&#160;</a></span>CheckCommandFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a> chip::app::InteractionModelEngine::CheckCommandFlags </td>
+          <td>(</td>
+          <td class="paramtype">const DataModel::InvokeRequest &amp;&#160;</td>
+          <td class="paramname"><em>aRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DataModel::AcceptedCommandEntry &amp;&#160;</td>
+          <td class="paramname"><em>entry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8258eab068576b88770adff67d4e4e3b" name="a8258eab068576b88770adff67d4e4e3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8258eab068576b88770adff67d4e4e3b">&#9670;&#160;</a></span>CurrentExchange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Messaging::ExchangeContext * chip::app::InteractionModelEngine::CurrentExchange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa3831d798ea5ba25713301a6368dc2c" name="aaa3831d798ea5ba25713301a6368dc2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3831d798ea5ba25713301a6368dc2c">&#9670;&#160;</a></span>DispatchCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::DispatchCommand </td>
+          <td>(</td>
+          <td class="paramtype">CommandHandlerImpl &amp;&#160;</td>
+          <td class="paramname"><em>apCommandObj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ConcreteCommandPath &amp;&#160;</td>
+          <td class="paramname"><em>aCommandPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TLV::TLVReader &amp;&#160;</td>
+          <td class="paramname"><em>apPayload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1e6239778d6e52c0c702032a3a4feee" name="ad1e6239778d6e52c0c702032a3a4feee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e6239778d6e52c0c702032a3a4feee">&#9670;&#160;</a></span>EnsureResourceForRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a> chip::app::InteractionModelEngine::EnsureResourceForRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>aFabricIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>aRequestedAttributePathCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>aRequestedEventPathCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Verify and ensure (by killing oldest read handlers that make the resources used by the current fabric exceed the fabric quota) the resources for handling a new read transaction with the given resource requirments.</p><ul>
+<li>PASE sessions will be counted in a virtual fabric (i.e. kInvalidFabricIndex will be consided as a "valid" fabric in this function)</li>
+<li>If the existing resources can serve this read transaction, this function will return Status::Success.</li>
+<li>or if the resources used by read transactions in the fabric index meets the per fabric resource limit (i.e. 9 paths &amp; 1 read) after accepting this read request, this function will always return Status::Success by evicting existing read transactions from other fabrics which are using more than the guaranteed minimum number of read.</li>
+<li>or if the resources used by read transactions in the fabric index will exceed the per fabric resource limit (i.e. 9 paths &amp; 1 read) after accepting this read request, this function will return a failure status without evicting any existing transaction.</li>
+<li>However, read transactions on PASE sessions won't evict any existing read transactions when we have already commissioned CHIP_CONFIG_MAX_FABRICS fabrics on the device.</li>
+</ul>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Status::Success</td><td>The read transaction can be accepted. </td></tr>
+    <tr><td class="paramname">Status::Busy</td><td>The remaining resource is insufficient to handle this read request, and the accessing fabric for this read request will use more resources than we guaranteed, the client is expected to retry later. </td></tr>
+    <tr><td class="paramname">Status::PathsExhausted</td><td>The attribute / event path pool is exhausted, and the read request is requesting more resources than we guaranteed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb8bcdaf9544f142aa66f015a665e067" name="afb8bcdaf9544f142aa66f015a665e067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8bcdaf9544f142aa66f015a665e067">&#9670;&#160;</a></span>EnsureResourceForSubscription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::InteractionModelEngine::EnsureResourceForSubscription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>aFabricIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>aRequestedAttributePathCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>aRequestedEventPathCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Verify and ensure (by killing oldest read handlers that make the resources used by the current fabric exceed the fabric quota)</p><ul>
+<li>If the subscription uses resources within the per subscription limit, this function will always success by evicting existing subscriptions.</li>
+<li>If the subscription uses more than per subscription limit, this function will return PATHS_EXHAUSTED if we are running out of paths.</li>
+</ul>
+<p>After the checks above, we will try to ensure we have a free Readhandler for processing the subscription.</p>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>when we have enough resources for the incoming subscription, false if not. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1f495116f38b9c93bb788890d8cc8c93" name="a1f495116f38b9c93bb788890d8cc8c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f495116f38b9c93bb788890d8cc8c93">&#9670;&#160;</a></span>FabricHasAtLeastOneActiveSubscription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::InteractionModelEngine::FabricHasAtLeastOneActiveSubscription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>aFabricIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78ea38233598f38da48635f7c5806560" name="a78ea38233598f38da48635f7c5806560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78ea38233598f38da48635f7c5806560">&#9670;&#160;</a></span>FindAttributeEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; DataModel::AttributeEntry &gt; chip::app::InteractionModelEngine::FindAttributeEntry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Find the AttributeEntry that corresponds to the given attribute, if there is one. </p>
+
+</div>
+</div>
+<a id="af0106569e2cf2e47723de61334bedcd5" name="af0106569e2cf2e47723de61334bedcd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0106569e2cf2e47723de61334bedcd5">&#9670;&#160;</a></span>GetAppCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadHandler::ApplicationCallback * chip::app::InteractionModelEngine::GetAppCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62b087a00dee2e43f106b994289fdfb4" name="a62b087a00dee2e43f106b994289fdfb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62b087a00dee2e43f106b994289fdfb4">&#9670;&#160;</a></span>GetCASESessionManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CASESessionManager * chip::app::InteractionModelEngine::GetCASESessionManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a pointer to the CASESessionManager. This can return nullptr if one wasn't provided in the call to <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#ae276b9ddd94005e80696cc17bdefd8b3">Init()</a>. </p>
+
+</div>
+</div>
+<a id="a397d3ffd1319196e981d9a09e10854da" name="a397d3ffd1319196e981d9a09e10854da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a397d3ffd1319196e981d9a09e10854da">&#9670;&#160;</a></span>GetConfigMaxFabrics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t chip::app::InteractionModelEngine::GetConfigMaxFabrics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1InteractionModelEngine_a397d3ffd1319196e981d9a09e10854da_icgraph.png" border="0" usemap="#aclasschip_1_1app_1_1InteractionModelEngine_a397d3ffd1319196e981d9a09e10854da_icgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1InteractionModelEngine_a397d3ffd1319196e981d9a09e10854da_icgraph" id="aclasschip_1_1app_1_1InteractionModelEngine_a397d3ffd1319196e981d9a09e10854da_icgraph">
+<area shape="rect" title=" " alt="" coords="320,13,531,53"/>
+<area shape="rect" href="classchip_1_1app_1_1InteractionModelEngine.html#adb71feb1128314f0b6f0c003624dafcb" title=" " alt="" coords="5,5,272,60"/>
+<area shape="poly" title=" " alt="" coords="306,35,272,35,272,30,306,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5833ff3e1f637580b9f52c81daf06b0d" name="a5833ff3e1f637580b9f52c81daf06b0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5833ff3e1f637580b9f52c81daf06b0d">&#9670;&#160;</a></span>GetDataModelProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataModel::Provider * chip::app::InteractionModelEngine::GetDataModelProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a544ffb824bdc82a59115e6d1fa762e83" name="a544ffb824bdc82a59115e6d1fa762e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544ffb824bdc82a59115e6d1fa762e83">&#9670;&#160;</a></span>GetExchangeManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Messaging::ExchangeManager * chip::app::InteractionModelEngine::GetExchangeManager </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb71feb1128314f0b6f0c003624dafcb" name="adb71feb1128314f0b6f0c003624dafcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb71feb1128314f0b6f0c003624dafcb">&#9670;&#160;</a></span>GetGuaranteedReadRequestsPerFabric()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t chip::app::InteractionModelEngine::GetGuaranteedReadRequestsPerFabric </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1InteractionModelEngine_adb71feb1128314f0b6f0c003624dafcb_cgraph.png" border="0" usemap="#aclasschip_1_1app_1_1InteractionModelEngine_adb71feb1128314f0b6f0c003624dafcb_cgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1InteractionModelEngine_adb71feb1128314f0b6f0c003624dafcb_cgraph" id="aclasschip_1_1app_1_1InteractionModelEngine_adb71feb1128314f0b6f0c003624dafcb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,34,272,89"/>
+<area shape="rect" href="classchip_1_1app_1_1InteractionModelEngine.html#a397d3ffd1319196e981d9a09e10854da" title=" " alt="" coords="348,5,559,45"/>
+<area shape="poly" title=" " alt="" coords="272,43,334,36,334,42,273,49"/>
+<area shape="rect" href="classchip_1_1app_1_1InteractionModelEngine.html#a74181176f5b483e24a374dc61360b150" title=" " alt="" coords="320,70,587,125"/>
+<area shape="poly" title=" " alt="" coords="273,74,307,78,306,83,272,79"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af782833f7dd10dff62c4f7fdf2b9c967" name="af782833f7dd10dff62c4f7fdf2b9c967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af782833f7dd10dff62c4f7fdf2b9c967">&#9670;&#160;</a></span>GetInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html">InteractionModelEngine</a> * chip::app::InteractionModelEngine::GetInstance </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve the singleton Interaction Model Engine. </p>
+<dl class="section return"><dt>戻り値</dt><dd>A pointer to the shared InteractionModel Engine </dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1InteractionModelEngine_af782833f7dd10dff62c4f7fdf2b9c967_icgraph.png" border="0" usemap="#aclasschip_1_1app_1_1InteractionModelEngine_af782833f7dd10dff62c4f7fdf2b9c967_icgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1InteractionModelEngine_af782833f7dd10dff62c4f7fdf2b9c967_icgraph" id="aclasschip_1_1app_1_1InteractionModelEngine_af782833f7dd10dff62c4f7fdf2b9c967_icgraph">
+<area shape="rect" title="Retrieve the singleton Interaction Model Engine." alt="" coords="331,5,529,45"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,13,283,38"/>
+<area shape="poly" title=" " alt="" coords="317,28,283,28,283,23,317,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="95,28,60,28,60,23,95,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec2efe1965802ed64b1cc20b46388c10" name="aec2efe1965802ed64b1cc20b46388c10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec2efe1965802ed64b1cc20b46388c10">&#9670;&#160;</a></span>GetInteractionModelEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html">InteractionModelEngine</a> * chip::app::InteractionModelEngine::GetInteractionModelEngine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73befae4030f874ba8f6c1bb15b68ebc" name="a73befae4030f874ba8f6c1bb15b68ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73befae4030f874ba8f6c1bb15b68ebc">&#9670;&#160;</a></span>GetMinGuaranteedSubscriptionsPerFabric()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t chip::app::InteractionModelEngine::GetMinGuaranteedSubscriptionsPerFabric </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the minimal value of guaranteed subscriptions per fabic. UINT16_MAX will be returned if current app is configured to use heap for the object pools used by interaction model engine.</p>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">the</td><td>minimal value of guaranteed subscriptions per fabic. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad4fe2892438e9b1100a90f4b4b95ef40" name="ad4fe2892438e9b1100a90f4b4b95ef40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4fe2892438e9b1100a90f4b4b95ef40">&#9670;&#160;</a></span>GetNumActiveReadHandlers() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t chip::app::InteractionModelEngine::GetNumActiveReadHandlers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56d2fe36ccc59a82fa593b02a8b70e08" name="a56d2fe36ccc59a82fa593b02a8b70e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d2fe36ccc59a82fa593b02a8b70e08">&#9670;&#160;</a></span>GetNumActiveReadHandlers() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t chip::app::InteractionModelEngine::GetNumActiveReadHandlers </td>
+          <td>(</td>
+          <td class="paramtype">ReadHandler::InteractionType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9aca498db16b302ccac782c221bd15ed" name="a9aca498db16b302ccac782c221bd15ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aca498db16b302ccac782c221bd15ed">&#9670;&#160;</a></span>GetNumActiveReadHandlers() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t chip::app::InteractionModelEngine::GetNumActiveReadHandlers </td>
+          <td>(</td>
+          <td class="paramtype">ReadHandler::InteractionType&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>fabricIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the number of active readhandlers with a specific type on a specific fabric. </p>
+
+</div>
+</div>
+<a id="ada221415ad95782d90f18434fca525f0" name="ada221415ad95782d90f18434fca525f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada221415ad95782d90f18434fca525f0">&#9670;&#160;</a></span>GetNumActiveWriteHandlers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t chip::app::InteractionModelEngine::GetNumActiveWriteHandlers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae7c3937c75d27d3af1a152740fc4dbf" name="aae7c3937c75d27d3af1a152740fc4dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae7c3937c75d27d3af1a152740fc4dbf">&#9670;&#160;</a></span>GetNumDirtySubscriptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t chip::app::InteractionModelEngine::GetNumDirtySubscriptions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the number of dirty subscriptions. Including the subscriptions that are generating reports. </p>
+
+</div>
+</div>
+<a id="a737fd660aa5de26d0fd388f888247f3b" name="a737fd660aa5de26d0fd388f888247f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737fd660aa5de26d0fd388f888247f3b">&#9670;&#160;</a></span>GetPathPoolCapacityForReads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t chip::app::InteractionModelEngine::GetPathPoolCapacityForReads </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a178e78664fc2768f119d45612b040c48" name="a178e78664fc2768f119d45612b040c48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a178e78664fc2768f119d45612b040c48">&#9670;&#160;</a></span>GetPathPoolCapacityForSubscriptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t chip::app::InteractionModelEngine::GetPathPoolCapacityForSubscriptions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74181176f5b483e24a374dc61360b150" name="a74181176f5b483e24a374dc61360b150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74181176f5b483e24a374dc61360b150">&#9670;&#160;</a></span>GetReadHandlerPoolCapacityForReads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t chip::app::InteractionModelEngine::GetReadHandlerPoolCapacityForReads </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1InteractionModelEngine_a74181176f5b483e24a374dc61360b150_icgraph.png" border="0" usemap="#aclasschip_1_1app_1_1InteractionModelEngine_a74181176f5b483e24a374dc61360b150_icgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1InteractionModelEngine_a74181176f5b483e24a374dc61360b150_icgraph" id="aclasschip_1_1app_1_1InteractionModelEngine_a74181176f5b483e24a374dc61360b150_icgraph">
+<area shape="rect" title=" " alt="" coords="320,5,587,60"/>
+<area shape="rect" href="classchip_1_1app_1_1InteractionModelEngine.html#adb71feb1128314f0b6f0c003624dafcb" title=" " alt="" coords="5,5,272,60"/>
+<area shape="poly" title=" " alt="" coords="306,35,272,35,272,30,306,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3a4354890e335174ecaa81e1c477e8c5" name="a3a4354890e335174ecaa81e1c477e8c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a4354890e335174ecaa81e1c477e8c5">&#9670;&#160;</a></span>GetReadHandlerPoolCapacityForSubscriptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t chip::app::InteractionModelEngine::GetReadHandlerPoolCapacityForSubscriptions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50c54f95d0d9e87c1dfde5b6aa90dd47" name="a50c54f95d0d9e87c1dfde5b6aa90dd47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50c54f95d0d9e87c1dfde5b6aa90dd47">&#9670;&#160;</a></span>GetReportingEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">reporting::Engine &amp; chip::app::InteractionModelEngine::GetReportingEngine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec91bffe8104163a0c774d21c6441265" name="aec91bffe8104163a0c774d21c6441265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec91bffe8104163a0c774d21c6441265">&#9670;&#160;</a></span>GetReportScheduler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">reporting::ReportScheduler * chip::app::InteractionModelEngine::GetReportScheduler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad693ecb4e56f467218269fabe0595f02" name="ad693ecb4e56f467218269fabe0595f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad693ecb4e56f467218269fabe0595f02">&#9670;&#160;</a></span>GetSubscriptionResumptionStorage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SubscriptionResumptionStorage * chip::app::InteractionModelEngine::GetSubscriptionResumptionStorage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab635c05c74b36068008d91c808a78d00" name="ab635c05c74b36068008d91c808a78d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab635c05c74b36068008d91c808a78d00">&#9670;&#160;</a></span>HasActiveRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::InteractionModelEngine::HasActiveRead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29823a6ac7170cda24701629a2715752" name="a29823a6ac7170cda24701629a2715752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29823a6ac7170cda24701629a2715752">&#9670;&#160;</a></span>HasConflictWriteRequests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::InteractionModelEngine::HasConflictWriteRequests </td>
+          <td>(</td>
+          <td class="paramtype">const WriteHandler *&#160;</td>
+          <td class="paramname"><em>apWriteHandler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp;&#160;</td>
+          <td class="paramname"><em>apath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae276b9ddd94005e80696cc17bdefd8b3" name="ae276b9ddd94005e80696cc17bdefd8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae276b9ddd94005e80696cc17bdefd8b3">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::InteractionModelEngine::Init </td>
+          <td>(</td>
+          <td class="paramtype">Messaging::ExchangeManager *&#160;</td>
+          <td class="paramname"><em>apExchangeMgr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FabricTable *&#160;</td>
+          <td class="paramname"><em>apFabricTable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">reporting::ReportScheduler *&#160;</td>
+          <td class="paramname"><em>reportScheduler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CASESessionManager *&#160;</td>
+          <td class="paramname"><em>apCASESessionMgr</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SubscriptionResumptionStorage *&#160;</td>
+          <td class="paramname"><em>subscriptionResumptionStorage</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventManagement *&#160;</td>
+          <td class="paramname"><em>eventManagement</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize the InteractionModel Engine.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">apExchangeMgr</td><td>A pointer to the ExchangeManager object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">apFabricTable</td><td>A pointer to the FabricTable object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">apCASESessionMgr</td><td>An optional pointer to a CASESessionManager (used for re-subscriptions). @parma[in] eventManagement An optional pointer to a EventManagement. If null, the global instance will be used. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa8eb80cbfd166a1231121d182d8276ed" name="aa8eb80cbfd166a1231121d182d8276ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8eb80cbfd166a1231121d182d8276ed">&#9670;&#160;</a></span>OnDone() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::OnDone </td>
+          <td>(</td>
+          <td class="paramtype">CommandHandlerImpl &amp;&#160;</td>
+          <td class="paramname"><em>apCommandObj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0787faf2a852512a3d7396e8a9a821d2" name="a0787faf2a852512a3d7396e8a9a821d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0787faf2a852512a3d7396e8a9a821d2">&#9670;&#160;</a></span>OnDone() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::OnDone </td>
+          <td>(</td>
+          <td class="paramtype">CommandResponseSender &amp;&#160;</td>
+          <td class="paramname"><em>apResponderObj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab35ec23ad13ac690f3819e98a1b32302" name="ab35ec23ad13ac690f3819e98a1b32302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35ec23ad13ac690f3819e98a1b32302">&#9670;&#160;</a></span>OnDone() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::OnDone </td>
+          <td>(</td>
+          <td class="paramtype">ReadHandler &amp;&#160;</td>
+          <td class="paramname"><em>apReadObj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3914f7dfb8f84885e1cf0b7f3e90a204" name="a3914f7dfb8f84885e1cf0b7f3e90a204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3914f7dfb8f84885e1cf0b7f3e90a204">&#9670;&#160;</a></span>OnFabricRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::OnFabricRemoved </td>
+          <td>(</td>
+          <td class="paramtype">const FabricTable &amp;&#160;</td>
+          <td class="paramname"><em>fabricTable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>fabricIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba9c9dd720c29eed03c2b09e6b6972e5" name="aba9c9dd720c29eed03c2b09e6b6972e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba9c9dd720c29eed03c2b09e6b6972e5">&#9670;&#160;</a></span>OnInvokeCommandRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a> chip::app::InteractionModelEngine::OnInvokeCommandRequest </td>
+          <td>(</td>
+          <td class="paramtype">Messaging::ExchangeContext *&#160;</td>
+          <td class="paramname"><em>apExchangeContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PayloadHeader &amp;&#160;</td>
+          <td class="paramname"><em>aPayloadHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System::PacketBufferHandle &amp;&amp;&#160;</td>
+          <td class="paramname"><em>aPayload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>aIsTimedInvoke</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called when Interaction Model receives a Command Request message. </p>
+
+</div>
+</div>
+<a id="a6cfde2b67add65c6e8f32e03dbc6839a" name="a6cfde2b67add65c6e8f32e03dbc6839a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cfde2b67add65c6e8f32e03dbc6839a">&#9670;&#160;</a></span>OnMessageReceived()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::InteractionModelEngine::OnMessageReceived </td>
+          <td>(</td>
+          <td class="paramtype">Messaging::ExchangeContext *&#160;</td>
+          <td class="paramname"><em>apExchangeContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PayloadHeader &amp;&#160;</td>
+          <td class="paramname"><em>aPayloadHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System::PacketBufferHandle &amp;&amp;&#160;</td>
+          <td class="paramname"><em>aPayload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d0e49b3fdf69873d53c7ee460955d18" name="a0d0e49b3fdf69873d53c7ee460955d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d0e49b3fdf69873d53c7ee460955d18">&#9670;&#160;</a></span>OnReadInitialRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a> chip::app::InteractionModelEngine::OnReadInitialRequest </td>
+          <td>(</td>
+          <td class="paramtype">Messaging::ExchangeContext *&#160;</td>
+          <td class="paramname"><em>apExchangeContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PayloadHeader &amp;&#160;</td>
+          <td class="paramname"><em>aPayloadHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System::PacketBufferHandle &amp;&amp;&#160;</td>
+          <td class="paramname"><em>aPayload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadHandler::InteractionType&#160;</td>
+          <td class="paramname"><em>aInteractionType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called when Interaction Model receives a Read Request message. Errors processing the Read Request are handled entirely within this function. If the status returned is not Status::Success, the caller will send a status response message with that status. </p>
+
+</div>
+</div>
+<a id="a8833d12a97e5c434710c9258c94299cb" name="a8833d12a97e5c434710c9258c94299cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8833d12a97e5c434710c9258c94299cb">&#9670;&#160;</a></span>OnResponseTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::OnResponseTimeout </td>
+          <td>(</td>
+          <td class="paramtype">Messaging::ExchangeContext *&#160;</td>
+          <td class="paramname"><em>ec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a609cf4fcb02887ecfad44afd84b0cab1" name="a609cf4fcb02887ecfad44afd84b0cab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609cf4fcb02887ecfad44afd84b0cab1">&#9670;&#160;</a></span>OnTimedInteractionFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::OnTimedInteractionFailed </td>
+          <td>(</td>
+          <td class="paramtype">TimedHandler *&#160;</td>
+          <td class="paramname"><em>apTimedHandler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad53e3ac6f910e9ec4812e89ba96a23ea" name="ad53e3ac6f910e9ec4812e89ba96a23ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53e3ac6f910e9ec4812e89ba96a23ea">&#9670;&#160;</a></span>OnTimedInvoke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::OnTimedInvoke </td>
+          <td>(</td>
+          <td class="paramtype">TimedHandler *&#160;</td>
+          <td class="paramname"><em>apTimedHandler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Messaging::ExchangeContext *&#160;</td>
+          <td class="paramname"><em>apExchangeContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PayloadHeader &amp;&#160;</td>
+          <td class="paramname"><em>aPayloadHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System::PacketBufferHandle &amp;&amp;&#160;</td>
+          <td class="paramname"><em>aPayload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af85180d48134c17a9ed0860ea5990acf" name="af85180d48134c17a9ed0860ea5990acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af85180d48134c17a9ed0860ea5990acf">&#9670;&#160;</a></span>OnTimedRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::InteractionModelEngine::OnTimedRequest </td>
+          <td>(</td>
+          <td class="paramtype">Messaging::ExchangeContext *&#160;</td>
+          <td class="paramname"><em>apExchangeContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PayloadHeader &amp;&#160;</td>
+          <td class="paramname"><em>aPayloadHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System::PacketBufferHandle &amp;&amp;&#160;</td>
+          <td class="paramname"><em>aPayload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Protocols::InteractionModel::Status &amp;&#160;</td>
+          <td class="paramname"><em>aStatus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called when Interaction Model receives a Timed Request message. Errors processing the Timed Request are handled entirely within this function. The caller pre-sets status to failure and the callee is expected to set it to success if it does not want an automatic status response message to be sent. </p>
+
+</div>
+</div>
+<a id="a89a45ac1208fe40a870257c0d3470f2d" name="a89a45ac1208fe40a870257c0d3470f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a45ac1208fe40a870257c0d3470f2d">&#9670;&#160;</a></span>OnTimedWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::OnTimedWrite </td>
+          <td>(</td>
+          <td class="paramtype">TimedHandler *&#160;</td>
+          <td class="paramname"><em>apTimedHandler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Messaging::ExchangeContext *&#160;</td>
+          <td class="paramname"><em>apExchangeContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PayloadHeader &amp;&#160;</td>
+          <td class="paramname"><em>aPayloadHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System::PacketBufferHandle &amp;&amp;&#160;</td>
+          <td class="paramname"><em>aPayload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2d1cc88538db5dbf6b281f4cea3caa5" name="ad2d1cc88538db5dbf6b281f4cea3caa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d1cc88538db5dbf6b281f4cea3caa5">&#9670;&#160;</a></span>OnUnsolicitedMessageReceived()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::InteractionModelEngine::OnUnsolicitedMessageReceived </td>
+          <td>(</td>
+          <td class="paramtype">const PayloadHeader &amp;&#160;</td>
+          <td class="paramname"><em>payloadHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ExchangeDelegate *&amp;&#160;</td>
+          <td class="paramname"><em>newDelegate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d9d11b9304caac1c7b703c91fa76cdd" name="a6d9d11b9304caac1c7b703c91fa76cdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9d11b9304caac1c7b703c91fa76cdd">&#9670;&#160;</a></span>OnUnsolicitedReportData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a> chip::app::InteractionModelEngine::OnUnsolicitedReportData </td>
+          <td>(</td>
+          <td class="paramtype">Messaging::ExchangeContext *&#160;</td>
+          <td class="paramname"><em>apExchangeContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PayloadHeader &amp;&#160;</td>
+          <td class="paramname"><em>aPayloadHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System::PacketBufferHandle &amp;&amp;&#160;</td>
+          <td class="paramname"><em>aPayload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function handles processing of un-solicited ReportData messages on the client, which can only occur post subscription establishment </p>
+
+</div>
+</div>
+<a id="a42df33178585406631bdb8a61bfebc34" name="a42df33178585406631bdb8a61bfebc34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42df33178585406631bdb8a61bfebc34">&#9670;&#160;</a></span>OnWriteRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a887aa951fa7b1406a4645eba316977ae">Status</a> chip::app::InteractionModelEngine::OnWriteRequest </td>
+          <td>(</td>
+          <td class="paramtype">Messaging::ExchangeContext *&#160;</td>
+          <td class="paramname"><em>apExchangeContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PayloadHeader &amp;&#160;</td>
+          <td class="paramname"><em>aPayloadHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System::PacketBufferHandle &amp;&amp;&#160;</td>
+          <td class="paramname"><em>aPayload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>aIsTimedWrite</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called when Interaction Model receives a Write Request message. Errors processing the Write Request are handled entirely within this function. If the status returned is not Status::Success, the caller will send a status response message with that status. </p>
+
+</div>
+</div>
+<a id="a0a597ac83dc28d4620b06860e9a3aeb8" name="a0a597ac83dc28d4620b06860e9a3aeb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a597ac83dc28d4620b06860e9a3aeb8">&#9670;&#160;</a></span>ParseAttributePaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::InteractionModelEngine::ParseAttributePaths </td>
+          <td>(</td>
+          <td class="paramtype">const Access::SubjectDescriptor &amp;&#160;</td>
+          <td class="paramname"><em>aSubjectDescriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AttributePathIBs::Parser &amp;&#160;</td>
+          <td class="paramname"><em>aAttributePathListParser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>aHasValidAttributePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>aRequestedAttributePathCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This parses the attribute path list to ensure it is well formed. If so, for each path in the list, it will expand to a list of concrete paths and walk each path to check if it has privileges to read that attribute.</p>
+<p>If there is AT LEAST one "existent path" (as the spec calls it) that has sufficient privilege, aHasValidAttributePath will be set to true. Otherwise, it will be set to false.</p>
+<p>aRequestedAttributePathCount will be updated to reflect the number of attribute paths in the request. </p>
+
+</div>
+</div>
+<a id="a3299999168a2d2d00f8159ea1f6ff20f" name="a3299999168a2d2d00f8159ea1f6ff20f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3299999168a2d2d00f8159ea1f6ff20f">&#9670;&#160;</a></span>ParseEventPaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::InteractionModelEngine::ParseEventPaths </td>
+          <td>(</td>
+          <td class="paramtype">const Access::SubjectDescriptor &amp;&#160;</td>
+          <td class="paramname"><em>aSubjectDescriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventPathIBs::Parser &amp;&#160;</td>
+          <td class="paramname"><em>aEventPathListParser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>aHasValidEventPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>aRequestedEventPathCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This parses the event path list to ensure it is well formed. If so, for each path in the list, it will expand to a list of concrete paths and walk each path to check if it has privileges to read that event.</p>
+<p>If there is AT LEAST one "existent path" (as the spec calls it) that has sufficient privilege, aHasValidEventPath will be set to true. Otherwise, it will be set to false.</p>
+<p>aRequestedEventPathCount will be updated to reflect the number of event paths in the request. </p>
+
+</div>
+</div>
+<a id="ab779055768d6ba0453414bbd5a9a3bb5" name="ab779055768d6ba0453414bbd5a9a3bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab779055768d6ba0453414bbd5a9a3bb5">&#9670;&#160;</a></span>PushFront()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::InteractionModelEngine::PushFront </td>
+          <td>(</td>
+          <td class="paramtype">SingleLinkedListNode&lt; T &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>aObjectList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>aData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ObjectPool&lt; SingleLinkedListNode&lt; T &gt;, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>aObjectPool</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80bba308fac9838c66fe7da7871e2168" name="a80bba308fac9838c66fe7da7871e2168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80bba308fac9838c66fe7da7871e2168">&#9670;&#160;</a></span>PushFrontAttributePathList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::InteractionModelEngine::PushFrontAttributePathList </td>
+          <td>(</td>
+          <td class="paramtype">SingleLinkedListNode&lt; AttributePathParams &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>aAttributePathList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AttributePathParams &amp;&#160;</td>
+          <td class="paramname"><em>aAttributePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa13590ac41e066f1995a3624ab89fcc5" name="aa13590ac41e066f1995a3624ab89fcc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa13590ac41e066f1995a3624ab89fcc5">&#9670;&#160;</a></span>PushFrontDataVersionFilterList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::InteractionModelEngine::PushFrontDataVersionFilterList </td>
+          <td>(</td>
+          <td class="paramtype">SingleLinkedListNode&lt; DataVersionFilter &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>aDataVersionFilterList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataVersionFilter &amp;&#160;</td>
+          <td class="paramname"><em>aDataVersionFilter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b8fd787ef27457ea46d6cedfe091116" name="a8b8fd787ef27457ea46d6cedfe091116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8fd787ef27457ea46d6cedfe091116">&#9670;&#160;</a></span>PushFrontEventPathParamsList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::InteractionModelEngine::PushFrontEventPathParamsList </td>
+          <td>(</td>
+          <td class="paramtype">SingleLinkedListNode&lt; EventPathParams &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>aEventPathList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventPathParams &amp;&#160;</td>
+          <td class="paramname"><em>aEventPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afdda3ad7456f05e35118a8fefe4ceb35" name="afdda3ad7456f05e35118a8fefe4ceb35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdda3ad7456f05e35118a8fefe4ceb35">&#9670;&#160;</a></span>RegisterReadHandlerAppCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::RegisterReadHandlerAppCallback </td>
+          <td>(</td>
+          <td class="paramtype">ReadHandler::ApplicationCallback *&#160;</td>
+          <td class="paramname"><em>mpApplicationCallback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad787e38e46e81b2ee298bf2b11b0f71d" name="ad787e38e46e81b2ee298bf2b11b0f71d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad787e38e46e81b2ee298bf2b11b0f71d">&#9670;&#160;</a></span>ReleaseAttributePathList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::ReleaseAttributePathList </td>
+          <td>(</td>
+          <td class="paramtype">SingleLinkedListNode&lt; AttributePathParams &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>aAttributePathList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60dfd52fb1059ea1b11901184a8ea306" name="a60dfd52fb1059ea1b11901184a8ea306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60dfd52fb1059ea1b11901184a8ea306">&#9670;&#160;</a></span>ReleaseDataVersionFilterList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::ReleaseDataVersionFilterList </td>
+          <td>(</td>
+          <td class="paramtype">SingleLinkedListNode&lt; DataVersionFilter &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>aDataVersionFilterList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adcd52a286a866789fcacf1cc3d84f2a8" name="adcd52a286a866789fcacf1cc3d84f2a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcd52a286a866789fcacf1cc3d84f2a8">&#9670;&#160;</a></span>ReleaseEventPathList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::ReleaseEventPathList </td>
+          <td>(</td>
+          <td class="paramtype">SingleLinkedListNode&lt; EventPathParams &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>aEventPathList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a632288a517c7e5f1419e309767200104" name="a632288a517c7e5f1419e309767200104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632288a517c7e5f1419e309767200104">&#9670;&#160;</a></span>ReleasePool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::ReleasePool </td>
+          <td>(</td>
+          <td class="paramtype">SingleLinkedListNode&lt; T &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>aObjectList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ObjectPool&lt; SingleLinkedListNode&lt; T &gt;, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>aObjectPool</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51806003b17ef293fc06f7ea6b47c832" name="a51806003b17ef293fc06f7ea6b47c832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51806003b17ef293fc06f7ea6b47c832">&#9670;&#160;</a></span>RemoveDuplicateConcreteAttributePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::RemoveDuplicateConcreteAttributePath </td>
+          <td>(</td>
+          <td class="paramtype">SingleLinkedListNode&lt; AttributePathParams &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>aAttributePaths</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a135eb13ff9da687c77dbd868d2e2ab01" name="a135eb13ff9da687c77dbd868d2e2ab01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a135eb13ff9da687c77dbd868d2e2ab01">&#9670;&#160;</a></span>ResumeSubscriptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::InteractionModelEngine::ResumeSubscriptions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a059a6a28b267507b6e9ba7ec12a04be8" name="a059a6a28b267507b6e9ba7ec12a04be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a059a6a28b267507b6e9ba7ec12a04be8">&#9670;&#160;</a></span>ResumeSubscriptionsTimerCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void chip::app::InteractionModelEngine::ResumeSubscriptionsTimerCallback </td>
+          <td>(</td>
+          <td class="paramtype">System::Layer *&#160;</td>
+          <td class="paramname"><em>apSystemLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>apAppState</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47ac21fa0aa150c1ae87afe9ecb8eda6" name="a47ac21fa0aa150c1ae87afe9ecb8eda6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ac21fa0aa150c1ae87afe9ecb8eda6">&#9670;&#160;</a></span>SetDataModelProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataModel::Provider * chip::app::InteractionModelEngine::SetDataModelProvider </td>
+          <td>(</td>
+          <td class="paramtype">DataModel::Provider *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5ec2b1dbad97917c0f6d19aa5860a13" name="aa5ec2b1dbad97917c0f6d19aa5860a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5ec2b1dbad97917c0f6d19aa5860a13">&#9670;&#160;</a></span>Shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::Shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a011354abf27b9c727acf0d27410c6914" name="a011354abf27b9c727acf0d27410c6914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a011354abf27b9c727acf0d27410c6914">&#9670;&#160;</a></span>ShutdownAllSubscriptionHandlers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::ShutdownAllSubscriptionHandlers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tears down all subscription handlers. </p>
+
+</div>
+</div>
+<a id="af81e3542f0aebb6f793c99a802694b6e" name="af81e3542f0aebb6f793c99a802694b6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81e3542f0aebb6f793c99a802694b6e">&#9670;&#160;</a></span>ShutdownMatchingSubscriptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::ShutdownMatchingSubscriptions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>aFabricIndex</em> = <code><a class="el" href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">NullOptional</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#ac741422ab936732a88bb008cf631cbd2">NodeId</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>aPeerNodeId</em> = <code><a class="el" href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">NullOptional</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Helper for various ShutdownSubscriptions functions. The subscriptions that match all the provided arguments will be shut down. </p>
+
+</div>
+</div>
+<a id="a0d979a7b153836b1c223589789894c89" name="a0d979a7b153836b1c223589789894c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d979a7b153836b1c223589789894c89">&#9670;&#160;</a></span>SubjectHasActiveSubscription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::InteractionModelEngine::SubjectHasActiveSubscription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>aFabricIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ac741422ab936732a88bb008cf631cbd2">NodeId</a>&#160;</td>
+          <td class="paramname"><em>subjectID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aafe3c54200dd626ae2f106fbee69a289" name="aafe3c54200dd626ae2f106fbee69a289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafe3c54200dd626ae2f106fbee69a289">&#9670;&#160;</a></span>SubjectHasPersistedSubscription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::InteractionModelEngine::SubjectHasPersistedSubscription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>aFabricIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ac741422ab936732a88bb008cf631cbd2">NodeId</a>&#160;</td>
+          <td class="paramname"><em>subjectID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9916b11d10cf09b0e70dcc555026e3fb" name="a9916b11d10cf09b0e70dcc555026e3fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9916b11d10cf09b0e70dcc555026e3fb">&#9670;&#160;</a></span>TrimFabricForRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::InteractionModelEngine::TrimFabricForRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>aFabricIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Select a read handler and abort the read transaction if the fabric is using more resources (number of paths or number of read handlers) then we guaranteed.</p>
+<ul>
+<li>The youngest oversized read handlers will be chosen first.</li>
+<li>If there are no oversized read handlers, the youngest read handlers will be chosen.</li>
+</ul>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Whether</td><td>we have evicted a read transaction. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d5343936b4fa2f15abbb9557ff243ca" name="a7d5343936b4fa2f15abbb9557ff243ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5343936b4fa2f15abbb9557ff243ca">&#9670;&#160;</a></span>TrimFabricForSubscriptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::InteractionModelEngine::TrimFabricForSubscriptions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>aFabricIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>aForceEvict</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Select the oldest (and the one that exceeds the per subscription resource minimum if there are any) read handler on the fabric with the given fabric index. Evict it when the fabric uses more resources than the per fabric quota or aForceEvict is true.</p>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Whether</td><td>we have evicted a subscription. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d01031deebe3b5a73e2e4a4670a243b" name="a8d01031deebe3b5a73e2e4a4670a243b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d01031deebe3b5a73e2e4a4670a243b">&#9670;&#160;</a></span>TryToResumeSubscriptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::TryToResumeSubscriptions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0857ecbda2d73de7cf273924f930c87b" name="a0857ecbda2d73de7cf273924f930c87b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0857ecbda2d73de7cf273924f930c87b">&#9670;&#160;</a></span>UnregisterReadHandlerAppCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::InteractionModelEngine::UnregisterReadHandlerAppCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade4867d85bcb7f7ef3c8955d4873225d" name="ade4867d85bcb7f7ef3c8955d4873225d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade4867d85bcb7f7ef3c8955d4873225d">&#9670;&#160;</a></span>ValidateCommandCanBeDispatched()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Protocols::InteractionModel::Status chip::app::InteractionModelEngine::ValidateCommandCanBeDispatched </td>
+          <td>(</td>
+          <td class="paramtype">const DataModel::InvokeRequest &amp;&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">フレンドと関連関数の詳解</h2>
+<a id="a39590dcb834ee83a7db0d425ae4cc29b" name="a39590dcb834ee83a7db0d425ae4cc29b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39590dcb834ee83a7db0d425ae4cc29b">&#9670;&#160;</a></span>reporting::Engine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class reporting::Engine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65c4b36ecebb4556de5b6941eeb183ce" name="a65c4b36ecebb4556de5b6941eeb183ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65c4b36ecebb4556de5b6941eeb183ce">&#9670;&#160;</a></span>SubscriptionResumptionSessionEstablisher</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class SubscriptionResumptionSessionEstablisher</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3def127789f4aa098ca846e14b3a10a7" name="a3def127789f4aa098ca846e14b3a10a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3def127789f4aa098ca846e14b3a10a7">&#9670;&#160;</a></span>TestCommandInteraction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class TestCommandInteraction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a862b984644c3632bc62c5025d8f8bd88" name="a862b984644c3632bc62c5025d8f8bd88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a862b984644c3632bc62c5025d8f8bd88">&#9670;&#160;</a></span>TestInteractionModelEngine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class TestInteractionModelEngine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="aa62da4829f4c9def5e1d23af00937d03" name="aa62da4829f4c9def5e1d23af00937d03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa62da4829f4c9def5e1d23af00937d03">&#9670;&#160;</a></span>kMinSupportedPathsPerReadRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::app::InteractionModelEngine::kMinSupportedPathsPerReadRequest = 9</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ed037f4faf691a1f4abbf81730efe4d" name="a3ed037f4faf691a1f4abbf81730efe4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ed037f4faf691a1f4abbf81730efe4d">&#9670;&#160;</a></span>kMinSupportedPathsPerSubscription</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::app::InteractionModelEngine::kMinSupportedPathsPerSubscription = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21f1a9c71f67d34ed87573bdae4b42fc" name="a21f1a9c71f67d34ed87573bdae4b42fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f1a9c71f67d34ed87573bdae4b42fc">&#9670;&#160;</a></span>kMinSupportedReadRequestsPerFabric</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::app::InteractionModelEngine::kMinSupportedReadRequestsPerFabric = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01cff25986831c9b3bbde0bf0e62681d" name="a01cff25986831c9b3bbde0bf0e62681d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01cff25986831c9b3bbde0bf0e62681d">&#9670;&#160;</a></span>kMinSupportedSubscriptionsPerFabric</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::app::InteractionModelEngine::kMinSupportedSubscriptionsPerFabric = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Spec 8.5.1 A publisher SHALL always ensure that every fabric the node is commissioned into can create at least three subscriptions to the publisher and that each subscription SHALL support at least 3 attribute/event paths. </p>
+
+</div>
+</div>
+<a id="a41aacbd85f81839933ab76c006b4eb7a" name="a41aacbd85f81839933ab76c006b4eb7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41aacbd85f81839933ab76c006b4eb7a">&#9670;&#160;</a></span>kReadHandlerPoolSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::app::InteractionModelEngine::kReadHandlerPoolSize = <a class="el" href="CHIPConfig_8h.html#a1ab3a4cb431bbc7a56640d71437e7c8d">CHIP_IM_MAX_NUM_SUBSCRIPTIONS</a> + <a class="el" href="CHIPConfig_8h.html#a52dea4665fee83d6a98cfb5ec698893e">CHIP_IM_MAX_NUM_READS</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a553f5453f53d66a5a5fe6f13c9330965" name="a553f5453f53d66a5a5fe6f13c9330965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a553f5453f53d66a5a5fe6f13c9330965">&#9670;&#160;</a></span>kReservedHandlersForReads</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::app::InteractionModelEngine::kReservedHandlersForReads = <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a21f1a9c71f67d34ed87573bdae4b42fc">kMinSupportedReadRequestsPerFabric</a> * (<a class="el" href="CHIPConfig_8h.html#aa4ce0e44e78ed2dd3f279714c194279d">CHIP_CONFIG_MAX_FABRICS</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba65cce6f0ce9d884ba233ceb8a73441" name="aba65cce6f0ce9d884ba233ceb8a73441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba65cce6f0ce9d884ba233ceb8a73441">&#9670;&#160;</a></span>kReservedPathsForReads</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::app::InteractionModelEngine::kReservedPathsForReads = <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#aa62da4829f4c9def5e1d23af00937d03">kMinSupportedPathsPerReadRequest</a> * <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#a553f5453f53d66a5a5fe6f13c9330965">kReservedHandlersForReads</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2dd7ab41c02739db16b36fdb7d1f49d4" name="a2dd7ab41c02739db16b36fdb7d1f49d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd7ab41c02739db16b36fdb7d1f49d4">&#9670;&#160;</a></span>mAttributePathPool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectPool&lt;SingleLinkedListNode&lt;AttributePathParams&gt;, <a class="el" href="CHIPConfig_8h.html#aa51a96eecfb1fe917bdaa5a49ff79ff6">CHIP_IM_SERVER_MAX_NUM_PATH_GROUPS_FOR_READS</a> + <a class="el" href="CHIPConfig_8h.html#aea875fe81bfb3c6f882398086c03aeb8">CHIP_IM_SERVER_MAX_NUM_PATH_GROUPS_FOR_SUBSCRIPTIONS</a>&gt; chip::app::InteractionModelEngine::mAttributePathPool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae43e7570e0621c194f58689704a25ae0" name="ae43e7570e0621c194f58689704a25ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43e7570e0621c194f58689704a25ae0">&#9670;&#160;</a></span>mCommandResponderObjs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectPool&lt;CommandResponseSender, <a class="el" href="CHIPConfig_8h.html#a2e67b1a10a1ffc9ee722c716960ff09e">CHIP_IM_MAX_NUM_COMMAND_HANDLER</a>&gt; chip::app::InteractionModelEngine::mCommandResponderObjs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5d8bc8b77c2d868321e382f616ec596" name="ae5d8bc8b77c2d868321e382f616ec596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5d8bc8b77c2d868321e382f616ec596">&#9670;&#160;</a></span>mCurrentExchange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Messaging::ExchangeContext* chip::app::InteractionModelEngine::mCurrentExchange = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6c40ae82fb16b59dad9a9db000e9b9e" name="ab6c40ae82fb16b59dad9a9db000e9b9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c40ae82fb16b59dad9a9db000e9b9e">&#9670;&#160;</a></span>mDataModelProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataModel::Provider* chip::app::InteractionModelEngine::mDataModelProvider = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f0f73f2460c0a45467348c4895c751c" name="a8f0f73f2460c0a45467348c4895c751c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f0f73f2460c0a45467348c4895c751c">&#9670;&#160;</a></span>mDataVersionFilterPool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectPool&lt;SingleLinkedListNode&lt;DataVersionFilter&gt;, <a class="el" href="CHIPConfig_8h.html#aa51a96eecfb1fe917bdaa5a49ff79ff6">CHIP_IM_SERVER_MAX_NUM_PATH_GROUPS_FOR_READS</a> + <a class="el" href="CHIPConfig_8h.html#aea875fe81bfb3c6f882398086c03aeb8">CHIP_IM_SERVER_MAX_NUM_PATH_GROUPS_FOR_SUBSCRIPTIONS</a>&gt; chip::app::InteractionModelEngine::mDataVersionFilterPool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7831d1c11abb3670a46f74f3d831180" name="ac7831d1c11abb3670a46f74f3d831180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7831d1c11abb3670a46f74f3d831180">&#9670;&#160;</a></span>mEventPathPool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectPool&lt;SingleLinkedListNode&lt;EventPathParams&gt;, <a class="el" href="CHIPConfig_8h.html#aa51a96eecfb1fe917bdaa5a49ff79ff6">CHIP_IM_SERVER_MAX_NUM_PATH_GROUPS_FOR_READS</a> + <a class="el" href="CHIPConfig_8h.html#aea875fe81bfb3c6f882398086c03aeb8">CHIP_IM_SERVER_MAX_NUM_PATH_GROUPS_FOR_SUBSCRIPTIONS</a>&gt; chip::app::InteractionModelEngine::mEventPathPool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2087c1443aeac2e7c0eb8d8d3c319df8" name="a2087c1443aeac2e7c0eb8d8d3c319df8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2087c1443aeac2e7c0eb8d8d3c319df8">&#9670;&#160;</a></span>mpCASESessionMgr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CASESessionManager* chip::app::InteractionModelEngine::mpCASESessionMgr = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7ce529def60e4e309a3dcd22c3d8383" name="aa7ce529def60e4e309a3dcd22c3d8383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ce529def60e4e309a3dcd22c3d8383">&#9670;&#160;</a></span>mpExchangeMgr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Messaging::ExchangeManager* chip::app::InteractionModelEngine::mpExchangeMgr = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f37e0bca299d78cb9be26d6a2cd96e0" name="a9f37e0bca299d78cb9be26d6a2cd96e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f37e0bca299d78cb9be26d6a2cd96e0">&#9670;&#160;</a></span>mpFabricTable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FabricTable* chip::app::InteractionModelEngine::mpFabricTable = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b719a06a61d2f8f437c0ab2d13410ec" name="a9b719a06a61d2f8f437c0ab2d13410ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b719a06a61d2f8f437c0ab2d13410ec">&#9670;&#160;</a></span>mpReadHandlerApplicationCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadHandler::ApplicationCallback* chip::app::InteractionModelEngine::mpReadHandlerApplicationCallback = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5e21787e57b6d42a7cc5b9c32aa38c9" name="ac5e21787e57b6d42a7cc5b9c32aa38c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e21787e57b6d42a7cc5b9c32aa38c9">&#9670;&#160;</a></span>mpSubscriptionResumptionStorage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SubscriptionResumptionStorage* chip::app::InteractionModelEngine::mpSubscriptionResumptionStorage = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a939d37dfe7ecc5a3899eb84552fe9cfd" name="a939d37dfe7ecc5a3899eb84552fe9cfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a939d37dfe7ecc5a3899eb84552fe9cfd">&#9670;&#160;</a></span>mReadHandlers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectPool&lt;ReadHandler, <a class="el" href="CHIPConfig_8h.html#a52dea4665fee83d6a98cfb5ec698893e">CHIP_IM_MAX_NUM_READS</a> + <a class="el" href="CHIPConfig_8h.html#a1ab3a4cb431bbc7a56640d71437e7c8d">CHIP_IM_MAX_NUM_SUBSCRIPTIONS</a>&gt; chip::app::InteractionModelEngine::mReadHandlers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adac127b2374bff6de4cc4be57d4becad" name="adac127b2374bff6de4cc4be57d4becad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adac127b2374bff6de4cc4be57d4becad">&#9670;&#160;</a></span>mReportingEngine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">reporting::Engine chip::app::InteractionModelEngine::mReportingEngine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acded684e7095156140cbedb08af55f76" name="acded684e7095156140cbedb08af55f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acded684e7095156140cbedb08af55f76">&#9670;&#160;</a></span>mReportScheduler</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">reporting::ReportScheduler* chip::app::InteractionModelEngine::mReportScheduler = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63dcbae8167ad1b185deb1f6e6a387ab" name="a63dcbae8167ad1b185deb1f6e6a387ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63dcbae8167ad1b185deb1f6e6a387ab">&#9670;&#160;</a></span>mState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#afc8c3ff32c88030ea9a6c17d2835fe86">State</a> chip::app::InteractionModelEngine::mState = <a class="el" href="classchip_1_1app_1_1InteractionModelEngine.html#afc8c3ff32c88030ea9a6c17d2835fe86a518b13885544b3431069d8b44387de9c">State::kUninitialized</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24d1e3c78fe8d813422990ccadc9d290" name="a24d1e3c78fe8d813422990ccadc9d290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d1e3c78fe8d813422990ccadc9d290">&#9670;&#160;</a></span>mTimedHandlers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectPool&lt;TimedHandler, <a class="el" href="CHIPConfig_8h.html#aa07e69c02e44331e38e4d7cf09f8f214">CHIP_IM_MAX_NUM_TIMED_HANDLER</a>&gt; chip::app::InteractionModelEngine::mTimedHandlers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a777f474c4454dec9dfa6494aa7aea974" name="a777f474c4454dec9dfa6494aa7aea974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a777f474c4454dec9dfa6494aa7aea974">&#9670;&#160;</a></span>mWriteHandlers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WriteHandler chip::app::InteractionModelEngine::mWriteHandlers[<a class="el" href="CHIPConfig_8h.html#a9c5110bc248a31fb8b89a4c57de236cb">CHIP_IM_MAX_NUM_WRITE_HANDLER</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/app/<a class="el" href="InteractionModelEngine_8h_source.html">InteractionModelEngine.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<map id="EmberAfDefinedEndpoint" name="EmberAfDefinedEndpoint">
+<area shape="rect" id="Node000001" title="Struct that maps actual endpoint type, onto a specific endpoint." alt="" coords="633,70,819,95"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Span.html" title=" " alt="" coords="256,5,455,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="469,39,610,60,653,67,652,73,609,65,468,44"/>
+<area shape="rect" id="Node000003" href="$structEmberAfEndpointType.html" title="Endpoint type struct describes clusters that are on the endpoint." alt="" coords="273,70,438,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="452,80,633,80,633,85,452,85"/>
+<area shape="rect" id="Node000004" href="$structEmberAfCluster.html" title="Struct describing cluster" alt="" coords="5,70,129,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="143,80,273,80,273,85,143,85"/>
+<area shape="rect" id="Node000005" href="$classchip_1_1Span.html" title=" " alt="" coords="227,119,484,174"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="497,120,651,93,652,98,498,125"/>
+</map>

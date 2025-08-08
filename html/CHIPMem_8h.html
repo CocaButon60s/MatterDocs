@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/support/CHIPMem.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_1d1f3af32c41ad09e7d154e58874adc8.html">support</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">CHIPMem.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="CHIPError_8h_source.html">lib/core/CHIPError.h</a>&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;new&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+CHIPMem.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="CHIPMem_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2lib_2support_2CHIPMem_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2lib_2support_2CHIPMem_8h" id="aconnectedhomeip_2src_2lib_2support_2CHIPMem_8h">
+<area shape="rect" title=" " alt="" coords="391,5,565,45"/>
+<area shape="rect" href="CHIPError_8h.html" title=" " alt="" coords="173,93,319,119"/>
+<area shape="poly" title=" " alt="" coords="423,48,294,91,292,86,422,43"/>
+<area shape="rect" title=" " alt="" coords="344,93,415,119"/>
+<area shape="poly" title=" " alt="" coords="456,48,406,87,403,82,452,43"/>
+<area shape="rect" title=" " alt="" coords="439,93,517,119"/>
+<area shape="poly" title=" " alt="" coords="481,46,481,79,475,79,475,46"/>
+<area shape="rect" title=" " alt="" coords="541,93,591,119"/>
+<area shape="poly" title=" " alt="" coords="501,44,544,82,541,86,498,48"/>
+<area shape="rect" title=" " alt="" coords="615,93,675,119"/>
+<area shape="poly" title=" " alt="" coords="519,43,609,85,607,90,517,48"/>
+<area shape="rect" title=" " alt="" coords="5,167,92,192"/>
+<area shape="poly" title=" " alt="" coords="215,121,95,164,93,159,213,116"/>
+<area shape="rect" title=" " alt="" coords="117,167,175,192"/>
+<area shape="poly" title=" " alt="" coords="231,121,175,161,172,156,228,117"/>
+<area shape="rect" title=" " alt="" coords="200,167,292,192"/>
+<area shape="poly" title=" " alt="" coords="249,119,249,153,243,153,243,119"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="316,167,475,192"/>
+<area shape="poly" title=" " alt="" coords="271,116,360,158,357,163,269,121"/>
+<area shape="rect" title=" " alt="" coords="499,167,671,192"/>
+<area shape="poly" title=" " alt="" coords="301,116,517,161,516,166,300,121"/>
+<area shape="rect" title=" " alt="" coords="163,240,283,265"/>
+<area shape="poly" title=" " alt="" coords="369,194,265,237,263,232,367,190"/>
+<area shape="rect" title=" " alt="" coords="307,240,483,265"/>
+<area shape="poly" title=" " alt="" coords="398,192,398,226,393,226,393,192"/>
+<area shape="rect" title=" " alt="" coords="508,240,637,265"/>
+<area shape="poly" title=" " alt="" coords="425,190,532,232,530,237,423,194"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="CHIPMem_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2lib_2support_2CHIPMem_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2lib_2support_2CHIPMem_8hdep" id="aconnectedhomeip_2src_2lib_2support_2CHIPMem_8hdep">
+<area shape="rect" title=" " alt="" coords="455,5,629,45"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="5,101,212,141"/>
+<area shape="poly" title=" " alt="" coords="442,51,197,103,196,98,441,46"/>
+<area shape="rect" href="AppMain_8cpp.html" title=" " alt="" coords="931,299,1137,339"/>
+<area shape="poly" title=" " alt="" coords="442,40,368,54,304,76,282,90,268,107,266,125,277,146,296,164,320,181,386,211,469,237,563,258,761,289,931,307,930,312,760,295,562,263,468,242,384,216,318,186,292,168,273,150,261,126,264,104,278,86,302,71,367,49,441,35"/>
+<area shape="rect" href="CommissioneeShellCommands_8cpp.html" title=" " alt="" coords="287,93,538,148"/>
+<area shape="poly" title=" " alt="" coords="506,55,451,95,448,91,503,51"/>
+<area shape="rect" href="ControllerShellCommands_8cpp.html" title=" " alt="" coords="562,93,781,148"/>
+<area shape="poly" title=" " alt="" coords="581,51,636,91,633,95,578,55"/>
+<area shape="rect" href="AccessRestrictionProvider_8h.html" title=" " alt="" coords="805,101,1060,141"/>
+<area shape="poly" title=" " alt="" coords="635,46,854,98,853,103,633,51"/>
+<area shape="rect" href="ScopedBuffer_8h.html" title=" " alt="" coords="1084,101,1280,141"/>
+<area shape="poly" title=" " alt="" coords="643,33,843,56,1073,91,1109,98,1108,103,1072,96,842,61,643,39"/>
+<area shape="rect" href="ExampleAccessRestrictionProvider_8h.html" title=" " alt="" coords="745,196,1040,251"/>
+<area shape="poly" title=" " alt="" coords="923,154,906,197,901,195,918,153"/>
+<area shape="poly" title=" " alt="" coords="1150,152,1105,198,1070,252,1045,300,1040,297,1065,249,1101,194,1146,148"/>
+<area shape="rect" href="CHIPMemString_8h.html" title=" " alt="" coords="1115,203,1329,243"/>
+<area shape="poly" title=" " alt="" coords="1197,153,1217,202,1212,204,1192,155"/>
+<area shape="poly" title=" " alt="" coords="1173,252,1073,301,1071,296,1171,247"/>
+<area shape="rect" href="Options_8cpp.html" title=" " alt="" coords="1161,299,1368,339"/>
+<area shape="poly" title=" " alt="" coords="1239,255,1258,297,1254,300,1234,257"/>
+</map>
+</div>
+</div>
+<p><a href="CHIPMem_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1Platform_1_1Deleter.html">chip::Platform::Deleter&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1Platform" id="r_namespacechip_1_1Platform"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html">chip::Platform</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a5aa7f753cd47ceb79267fa9faada8410" id="r_a5aa7f753cd47ceb79267fa9faada8410"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CHIPMem_8h.html#a5aa7f753cd47ceb79267fa9faada8410">CHIP_ZERO_AT</a>(value)</td></tr>
+<tr class="separator:a5aa7f753cd47ceb79267fa9faada8410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:aae7416ab6fa22474750b9a19e10f8abd" id="r_aae7416ab6fa22474750b9a19e10f8abd"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">typename</a> <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a> &gt; </td></tr>
+<tr class="memitem:aae7416ab6fa22474750b9a19e10f8abd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#aae7416ab6fa22474750b9a19e10f8abd">chip::Platform::UniquePtr</a> = std::unique_ptr&lt; <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a>, <a class="el" href="structchip_1_1Platform_1_1Deleter.html">Deleter</a>&lt; <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a> &gt; &gt;</td></tr>
+<tr class="separator:aae7416ab6fa22474750b9a19e10f8abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da32c0b65d739c5f11ec9cf6603f6a7" id="r_a7da32c0b65d739c5f11ec9cf6603f6a7"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">typename</a> <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a> &gt; </td></tr>
+<tr class="memitem:a7da32c0b65d739c5f11ec9cf6603f6a7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#a7da32c0b65d739c5f11ec9cf6603f6a7">chip::Platform::SharedPtr</a> = std::shared_ptr&lt; <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a> &gt;</td></tr>
+<tr class="separator:a7da32c0b65d739c5f11ec9cf6603f6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d49a2a4040f6d6881381ab169a722e" id="r_a57d49a2a4040f6d6881381ab169a722e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">typename</a> <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a> &gt; </td></tr>
+<tr class="memitem:a57d49a2a4040f6d6881381ab169a722e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#a57d49a2a4040f6d6881381ab169a722e">chip::Platform::WeakPtr</a> = std::weak_ptr&lt; <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a> &gt;</td></tr>
+<tr class="separator:a57d49a2a4040f6d6881381ab169a722e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a93cd137a84802c233858f319af2551a7" id="r_a93cd137a84802c233858f319af2551a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#a93cd137a84802c233858f319af2551a7">chip::Platform::MemoryInit</a> (<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">void</a> *<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">buf</a>=<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">nullptr</a>, <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">size_t</a> <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">bufSize</a>=0)</td></tr>
+<tr class="separator:a93cd137a84802c233858f319af2551a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d666c72a16291f4bb65678cef399707" id="r_a0d666c72a16291f4bb65678cef399707"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#a0d666c72a16291f4bb65678cef399707">chip::Platform::MemoryShutdown</a> ()</td></tr>
+<tr class="separator:a0d666c72a16291f4bb65678cef399707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a25352e7486414fa03671cb9da8af1" id="r_af1a25352e7486414fa03671cb9da8af1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1">chip::Platform::MemoryAlloc</a> (<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">size_t</a> size)</td></tr>
+<tr class="separator:af1a25352e7486414fa03671cb9da8af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e74f8a96bbeccb88d656a39c68ff40" id="r_a36e74f8a96bbeccb88d656a39c68ff40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#a36e74f8a96bbeccb88d656a39c68ff40">chip::Platform::MemoryCalloc</a> (<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">size_t</a> <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">num</a>, <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">size_t</a> size)</td></tr>
+<tr class="separator:a36e74f8a96bbeccb88d656a39c68ff40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68027b0fbad83aa6839779f76e52a50c" id="r_a68027b0fbad83aa6839779f76e52a50c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#a68027b0fbad83aa6839779f76e52a50c">chip::Platform::MemoryRealloc</a> (<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">void</a> *<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">p</a>, <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">size_t</a> size)</td></tr>
+<tr class="separator:a68027b0fbad83aa6839779f76e52a50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a65a9cd65454203059a7878eb74ccc1" id="r_a9a65a9cd65454203059a7878eb74ccc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#a9a65a9cd65454203059a7878eb74ccc1">chip::Platform::MemoryFree</a> (<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">void</a> *<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">p</a>)</td></tr>
+<tr class="separator:a9a65a9cd65454203059a7878eb74ccc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7cb069f46f06b0312657d2db12a9d9" id="r_abe7cb069f46f06b0312657d2db12a9d9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:abe7cb069f46f06b0312657d2db12a9d9"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">chip::Platform::New</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:abe7cb069f46f06b0312657d2db12a9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b3e4c947b3e37de31cb9c07c113592" id="r_a43b3e4c947b3e37de31cb9c07c113592"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">typename</a> <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a> &gt; </td></tr>
+<tr class="memitem:a43b3e4c947b3e37de31cb9c07c113592"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#a43b3e4c947b3e37de31cb9c07c113592">chip::Platform::Delete</a> (<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a> *<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">p</a>)</td></tr>
+<tr class="separator:a43b3e4c947b3e37de31cb9c07c113592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b04f652a90c59381bf5940d9672855" id="r_a18b04f652a90c59381bf5940d9672855"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">typename</a> <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a> , typename... Args&gt; </td></tr>
+<tr class="memitem:a18b04f652a90c59381bf5940d9672855"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#aae7416ab6fa22474750b9a19e10f8abd">UniquePtr</a>&lt; <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#a18b04f652a90c59381bf5940d9672855">chip::Platform::MakeUnique</a> (<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">Args</a> &amp;&amp;... <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">args</a>)</td></tr>
+<tr class="separator:a18b04f652a90c59381bf5940d9672855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d373ab5be46695e7558fd30ea0e4eba" id="r_a8d373ab5be46695e7558fd30ea0e4eba"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">typename</a> <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a> , typename... Args&gt; </td></tr>
+<tr class="memitem:a8d373ab5be46695e7558fd30ea0e4eba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#a7da32c0b65d739c5f11ec9cf6603f6a7">SharedPtr</a>&lt; <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#a8d373ab5be46695e7558fd30ea0e4eba">chip::Platform::MakeShared</a> (<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">Args</a> &amp;&amp;... <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">args</a>)</td></tr>
+<tr class="separator:a8d373ab5be46695e7558fd30ea0e4eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab189a3e937e0a14d4085ab5fa7afd9cc" id="r_ab189a3e937e0a14d4085ab5fa7afd9cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#ab189a3e937e0a14d4085ab5fa7afd9cc">chip::Platform::MemoryInternalCheckPointer</a> (<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">const</a> <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">void</a> *<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">p</a>, <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">size_t</a> <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">min_size</a>)</td></tr>
+<tr class="separator:ab189a3e937e0a14d4085ab5fa7afd9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ee83aa4799a0c742bb194316c1311e9" id="r_a3ee83aa4799a0c742bb194316c1311e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Platform.html#a3ee83aa4799a0c742bb194316c1311e9">chip::Platform::MemoryDebugCheckPointer</a> (<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">const</a> <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">void</a> *<a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">p</a>, <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">size_t</a> <a class="el" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9">min_size</a>=0)</td></tr>
+<tr class="separator:a3ee83aa4799a0c742bb194316c1311e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>This file defines heap memory allocation APIs for CHIP. </p>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a5aa7f753cd47ceb79267fa9faada8410" name="a5aa7f753cd47ceb79267fa9faada8410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aa7f753cd47ceb79267fa9faada8410">&#9670;&#160;</a></span>CHIP_ZERO_AT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_ZERO_AT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span>                                                                                                                             \</div>
+<div class="line">    {                                                                                                                              \</div>
+<div class="line">        memset(&amp;value, 0, <span class="keyword">sizeof</span>(value));                                                                                          \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

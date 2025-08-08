@@ -1,0 +1,694 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1Protocols.html">Protocols</a></li><li class="navelem"><a class="el" href="namespacechip_1_1Protocols_1_1UserDirectedCommissioning.html">UserDirectedCommissioning</a></li><li class="navelem"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html">UserDirectedCommissioningServer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="UserDirectedCommissioning_8h_source.html">UserDirectedCommissioning.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer__inherit__graph.png" border="0" usemap="#achip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer_inherit__map" id="achip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,79,323,133"/>
+<area shape="rect" href="classchip_1_1TransportMgrDelegate.html" title=" " alt="" coords="63,5,265,31"/>
+<area shape="poly" title=" " alt="" coords="167,44,167,79,161,79,161,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer__coll__graph.png" border="0" usemap="#achip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer_coll__map" id="achip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer_coll__map">
+<area shape="rect" title=" " alt="" coords="537,48,855,103"/>
+<area shape="rect" href="classchip_1_1TransportMgrDelegate.html" title=" " alt="" coords="54,5,255,31"/>
+<area shape="poly" title=" " alt="" coords="269,27,514,53,537,55,537,61,513,58,268,32"/>
+<area shape="rect" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1InstanceNameResolver.html" title=" " alt="" coords="13,55,296,95"/>
+<area shape="poly" title=" " alt="" coords="310,73,537,73,537,78,310,78"/>
+<area shape="rect" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserConfirmationProvider.html" title=" " alt="" coords="5,119,304,159"/>
+<area shape="poly" title=" " alt="" coords="317,117,537,91,537,97,318,123"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad1c253951ec1c2961c76affbbe7e5fd2" id="r_ad1c253951ec1c2961c76affbbe7e5fd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#ad1c253951ec1c2961c76affbbe7e5fd2">SetInstanceNameResolver</a> (<a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1InstanceNameResolver.html">InstanceNameResolver</a> *instanceNameResolver)</td></tr>
+<tr class="separator:ad1c253951ec1c2961c76affbbe7e5fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e14b80fedec02f386dc63eff4ac5d6" id="r_ab9e14b80fedec02f386dc63eff4ac5d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#ab9e14b80fedec02f386dc63eff4ac5d6">SetUserConfirmationProvider</a> (<a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserConfirmationProvider.html">UserConfirmationProvider</a> *userConfirmationProvider)</td></tr>
+<tr class="separator:ab9e14b80fedec02f386dc63eff4ac5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4e5d91c7740541f1473299505ad060" id="r_a3e4e5d91c7740541f1473299505ad060"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#a3e4e5d91c7740541f1473299505ad060">SetUDCClientProcessingState</a> (char *instanceName, UDCClientProcessingState state)</td></tr>
+<tr class="separator:a3e4e5d91c7740541f1473299505ad060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73cf19c2d295e858182161d261d40165" id="r_a73cf19c2d295e858182161d261d40165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#a73cf19c2d295e858182161d261d40165">ResetUDCClientProcessingStates</a> ()</td></tr>
+<tr class="separator:a73cf19c2d295e858182161d261d40165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0681ca19068f69824b0316d21326e46c" id="r_a0681ca19068f69824b0316d21326e46c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#a0681ca19068f69824b0316d21326e46c">OnCommissionableNodeFound</a> (const Dnssd::DiscoveredNodeData &amp;nodeData)</td></tr>
+<tr class="separator:a0681ca19068f69824b0316d21326e46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bb23cde5ad7a7df616a394d5343c17c" id="r_a8bb23cde5ad7a7df616a394d5343c17c"><td class="memItemLeft" align="right" valign="top">UDCClients&lt; <a class="el" href="namespacechip_1_1Protocols_1_1UserDirectedCommissioning.html#aacc76be71ebd6623b57e6c33e5f786bf">kMaxUDCClients</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#a8bb23cde5ad7a7df616a394d5343c17c">GetUDCClients</a> ()</td></tr>
+<tr class="separator:a8bb23cde5ad7a7df616a394d5343c17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabae44eba7e4e6e14f4fe9b227b0bccb" id="r_aabae44eba7e4e6e14f4fe9b227b0bccb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#aabae44eba7e4e6e14f4fe9b227b0bccb">PrintUDCClients</a> ()</td></tr>
+<tr class="separator:aabae44eba7e4e6e14f4fe9b227b0bccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0440b94a403faebd6bb0af688f09e8d8" id="r_a0440b94a403faebd6bb0af688f09e8d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#a0440b94a403faebd6bb0af688f09e8d8">SendCDCMessage</a> (<a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1CommissionerDeclaration.html">CommissionerDeclaration</a> cdMessage, chip::Transport::PeerAddress peerAddress)</td></tr>
+<tr class="separator:a0440b94a403faebd6bb0af688f09e8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e6b3c3650a7fa0bb17947c56529986" id="r_a58e6b3c3650a7fa0bb17947c56529986"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#a58e6b3c3650a7fa0bb17947c56529986">EncodeUDCMessage</a> (const System::PacketBufferHandle &amp;payload)</td></tr>
+<tr class="separator:a58e6b3c3650a7fa0bb17947c56529986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79db2312757e707557e2086153d55188" id="r_a79db2312757e707557e2086153d55188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#a79db2312757e707557e2086153d55188">SetTransportManager</a> (TransportMgrBase *transportMgr)</td></tr>
+<tr class="separator:a79db2312757e707557e2086153d55188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classchip_1_1TransportMgrDelegate"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classchip_1_1TransportMgrDelegate')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classchip_1_1TransportMgrDelegate.html">chip::TransportMgrDelegate</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a752a436a7dd47dda7054d95b5293a299 inherit pub_methods_classchip_1_1TransportMgrDelegate" id="r_a752a436a7dd47dda7054d95b5293a299"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1TransportMgrDelegate.html#a752a436a7dd47dda7054d95b5293a299">~TransportMgrDelegate</a> ()=default</td></tr>
+<tr class="separator:a752a436a7dd47dda7054d95b5293a299 inherit pub_methods_classchip_1_1TransportMgrDelegate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:ac4bd17479f4071b32c0a8674b2112c4c" id="r_ac4bd17479f4071b32c0a8674b2112c4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#ac4bd17479f4071b32c0a8674b2112c4c">HandleNewUDC</a> (const Transport::PeerAddress &amp;source, <a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1IdentificationDeclaration.html">IdentificationDeclaration</a> &amp;id)</td></tr>
+<tr class="separator:ac4bd17479f4071b32c0a8674b2112c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95fb9b2906526b41fea6b7d6a6c002bb" id="r_a95fb9b2906526b41fea6b7d6a6c002bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#a95fb9b2906526b41fea6b7d6a6c002bb">HandleUDCCancel</a> (<a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1IdentificationDeclaration.html">IdentificationDeclaration</a> &amp;id)</td></tr>
+<tr class="separator:a95fb9b2906526b41fea6b7d6a6c002bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93825b3be596bdb036a9fc44ae8fdaca" id="r_a93825b3be596bdb036a9fc44ae8fdaca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#a93825b3be596bdb036a9fc44ae8fdaca">HandleUDCCommissionerPasscodeReady</a> (<a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1IdentificationDeclaration.html">IdentificationDeclaration</a> &amp;id)</td></tr>
+<tr class="separator:a93825b3be596bdb036a9fc44ae8fdaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecbdf9bceb5ee274004c3b17010e8012" id="r_aecbdf9bceb5ee274004c3b17010e8012"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#aecbdf9bceb5ee274004c3b17010e8012">OnMessageReceived</a> (const Transport::PeerAddress &amp;source, System::PacketBufferHandle &amp;&amp;msgBuf, Transport::MessageTransportContext *ctxt=nullptr) override</td></tr>
+<tr class="memdesc:aecbdf9bceb5ee274004c3b17010e8012"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle received secure message.  <br /></td></tr>
+<tr class="separator:aecbdf9bceb5ee274004c3b17010e8012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a5712448d04dc0b42ae480c133b70d658" id="r_a5712448d04dc0b42ae480c133b70d658"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1InstanceNameResolver.html">InstanceNameResolver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#a5712448d04dc0b42ae480c133b70d658">mInstanceNameResolver</a> = nullptr</td></tr>
+<tr class="separator:a5712448d04dc0b42ae480c133b70d658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c92c537b92185bb9e41a426b5044f1c" id="r_a0c92c537b92185bb9e41a426b5044f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserConfirmationProvider.html">UserConfirmationProvider</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#a0c92c537b92185bb9e41a426b5044f1c">mUserConfirmationProvider</a> = nullptr</td></tr>
+<tr class="separator:a0c92c537b92185bb9e41a426b5044f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd9ca401db88e3992a5a6304ebb9fef" id="r_aecd9ca401db88e3992a5a6304ebb9fef"><td class="memItemLeft" align="right" valign="top">UDCClients&lt; <a class="el" href="namespacechip_1_1Protocols_1_1UserDirectedCommissioning.html#aacc76be71ebd6623b57e6c33e5f786bf">kMaxUDCClients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#aecd9ca401db88e3992a5a6304ebb9fef">mUdcClients</a></td></tr>
+<tr class="separator:aecd9ca401db88e3992a5a6304ebb9fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ac022f75e96095f981c89f68d72bc2" id="r_af4ac022f75e96095f981c89f68d72bc2"><td class="memItemLeft" align="right" valign="top">TransportMgrBase *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserDirectedCommissioningServer.html#af4ac022f75e96095f981c89f68d72bc2">mTransportMgr</a> = nullptr</td></tr>
+<tr class="separator:af4ac022f75e96095f981c89f68d72bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>TODO:</p><ul>
+<li>add processing of Identification Declaration flags </li>
+</ul>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a58e6b3c3650a7fa0bb17947c56529986" name="a58e6b3c3650a7fa0bb17947c56529986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e6b3c3650a7fa0bb17947c56529986">&#9670;&#160;</a></span>EncodeUDCMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::EncodeUDCMessage </td>
+          <td>(</td>
+          <td class="paramtype">const System::PacketBufferHandle &amp;&#160;</td>
+          <td class="paramname"><em>payload</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encode a User Directed Commissioning message.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">payload</td><td>A PacketBufferHandle with the payload.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_ERROR_NO_MEMORY if allocation fails. Other CHIP_ERROR codes as returned by the lower layers. </dd></dl>
+
+</div>
+</div>
+<a id="a8bb23cde5ad7a7df616a394d5343c17c" name="a8bb23cde5ad7a7df616a394d5343c17c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bb23cde5ad7a7df616a394d5343c17c">&#9670;&#160;</a></span>GetUDCClients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UDCClients&lt; <a class="el" href="namespacechip_1_1Protocols_1_1UserDirectedCommissioning.html#aacc76be71ebd6623b57e6c33e5f786bf">kMaxUDCClients</a> &gt; &amp; chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::GetUDCClients </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the cache of UDC Clients </p>
+
+</div>
+</div>
+<a id="ac4bd17479f4071b32c0a8674b2112c4c" name="ac4bd17479f4071b32c0a8674b2112c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4bd17479f4071b32c0a8674b2112c4c">&#9670;&#160;</a></span>HandleNewUDC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::HandleNewUDC </td>
+          <td>(</td>
+          <td class="paramtype">const Transport::PeerAddress &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1IdentificationDeclaration.html">IdentificationDeclaration</a> &amp;&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a95fb9b2906526b41fea6b7d6a6c002bb" name="a95fb9b2906526b41fea6b7d6a6c002bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95fb9b2906526b41fea6b7d6a6c002bb">&#9670;&#160;</a></span>HandleUDCCancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::HandleUDCCancel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1IdentificationDeclaration.html">IdentificationDeclaration</a> &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93825b3be596bdb036a9fc44ae8fdaca" name="a93825b3be596bdb036a9fc44ae8fdaca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93825b3be596bdb036a9fc44ae8fdaca">&#9670;&#160;</a></span>HandleUDCCommissionerPasscodeReady()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::HandleUDCCommissionerPasscodeReady </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1IdentificationDeclaration.html">IdentificationDeclaration</a> &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0681ca19068f69824b0316d21326e46c" name="a0681ca19068f69824b0316d21326e46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0681ca19068f69824b0316d21326e46c">&#9670;&#160;</a></span>OnCommissionableNodeFound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::OnCommissionableNodeFound </td>
+          <td>(</td>
+          <td class="paramtype">const Dnssd::DiscoveredNodeData &amp;&#160;</td>
+          <td class="paramname"><em>nodeData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Called when a CHIP Node in commissioning mode is found.</p>
+<p>Lookup instanceName from nodeData in the active UDC Client states and if current state is kDiscoveringNode then change to kPromptingUser and call UX Prompt callback</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nodeData</td><td>DNS-SD response data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aecbdf9bceb5ee274004c3b17010e8012" name="aecbdf9bceb5ee274004c3b17010e8012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecbdf9bceb5ee274004c3b17010e8012">&#9670;&#160;</a></span>OnMessageReceived()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::OnMessageReceived </td>
+          <td>(</td>
+          <td class="paramtype">const Transport::PeerAddress &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System::PacketBufferHandle &amp;&amp;&#160;</td>
+          <td class="paramname"><em>msgBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Transport::MessageTransportContext *&#160;</td>
+          <td class="paramname"><em>ctxt</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handle received secure message. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the source address of the package </td></tr>
+    <tr><td class="paramname">msgBuf</td><td>the buffer containing a full CHIP message (except for the optional length field). </td></tr>
+    <tr><td class="paramname">ctxt</td><td>the pointer to additional context on the underlying transport. For TCP, it is a pointer to the underlying connection object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classchip_1_1TransportMgrDelegate.html#aa213723a9b61f6cec64f00665d0eb271">chip::TransportMgrDelegate</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="aabae44eba7e4e6e14f4fe9b227b0bccb" name="aabae44eba7e4e6e14f4fe9b227b0bccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabae44eba7e4e6e14f4fe9b227b0bccb">&#9670;&#160;</a></span>PrintUDCClients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::PrintUDCClients </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Print the cache of UDC Clients </p>
+
+</div>
+</div>
+<a id="a73cf19c2d295e858182161d261d40165" name="a73cf19c2d295e858182161d261d40165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73cf19c2d295e858182161d261d40165">&#9670;&#160;</a></span>ResetUDCClientProcessingStates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::ResetUDCClientProcessingStates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reset the processing states for all UDC Clients </p>
+
+</div>
+</div>
+<a id="a0440b94a403faebd6bb0af688f09e8d8" name="a0440b94a403faebd6bb0af688f09e8d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0440b94a403faebd6bb0af688f09e8d8">&#9670;&#160;</a></span>SendCDCMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::SendCDCMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1CommissionerDeclaration.html">CommissionerDeclaration</a>&#160;</td>
+          <td class="paramname"><em>cdMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">chip::Transport::PeerAddress&#160;</td>
+          <td class="paramname"><em>peerAddress</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send a Commissioner Declaration message to the given peer address</p>
+<p>Only one message will be sent. Clients should follow spec and send up to 5 times with 100ms sleep between each call. </p>
+
+</div>
+</div>
+<a id="ad1c253951ec1c2961c76affbbe7e5fd2" name="ad1c253951ec1c2961c76affbbe7e5fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c253951ec1c2961c76affbbe7e5fd2">&#9670;&#160;</a></span>SetInstanceNameResolver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::SetInstanceNameResolver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1InstanceNameResolver.html">InstanceNameResolver</a> *&#160;</td>
+          <td class="paramname"><em>instanceNameResolver</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the listener to be called when a UDC request is received and the Instance Name provided needs to be resolved.</p>
+<p>The resolver should call OnCommissionableNodeFound when the instance is found</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">instanceNameResolver</td><td>The callback function to receive UDC request instance name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a79db2312757e707557e2086153d55188" name="a79db2312757e707557e2086153d55188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79db2312757e707557e2086153d55188">&#9670;&#160;</a></span>SetTransportManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::SetTransportManager </td>
+          <td>(</td>
+          <td class="paramtype">TransportMgrBase *&#160;</td>
+          <td class="paramname"><em>transportMgr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Assign the transport manager to use for Commissioner Declaration messages </p>
+
+</div>
+</div>
+<a id="a3e4e5d91c7740541f1473299505ad060" name="a3e4e5d91c7740541f1473299505ad060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4e5d91c7740541f1473299505ad060">&#9670;&#160;</a></span>SetUDCClientProcessingState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::SetUDCClientProcessingState </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>instanceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UDCClientProcessingState&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update the processing state for a UDC Client based upon instance name.</p>
+<p>This can be used by the UX to set the state to one of the following values:</p><ul>
+<li>kUserDeclined</li>
+<li>kObtainingOnboardingPayload</li>
+<li>kCommissioningNode</li>
+<li>kCommissioningFailed</li>
+</ul>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">instanceName</td><td>The instance name for the UDC Client. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>The state for the UDC Client. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab9e14b80fedec02f386dc63eff4ac5d6" name="ab9e14b80fedec02f386dc63eff4ac5d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e14b80fedec02f386dc63eff4ac5d6">&#9670;&#160;</a></span>SetUserConfirmationProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::SetUserConfirmationProvider </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserConfirmationProvider.html">UserConfirmationProvider</a> *&#160;</td>
+          <td class="paramname"><em>userConfirmationProvider</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the listener to be called when a UDC request is received and the Instance Name has been resolved.</p>
+<p>The provider should prompt the user to allow commissioning of the node and provide the setup code.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">userConfirmationProvider</td><td>The callback function to obtain user confirmation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a5712448d04dc0b42ae480c133b70d658" name="a5712448d04dc0b42ae480c133b70d658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5712448d04dc0b42ae480c133b70d658">&#9670;&#160;</a></span>mInstanceNameResolver</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1InstanceNameResolver.html">InstanceNameResolver</a>* chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::mInstanceNameResolver = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4ac022f75e96095f981c89f68d72bc2" name="af4ac022f75e96095f981c89f68d72bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ac022f75e96095f981c89f68d72bc2">&#9670;&#160;</a></span>mTransportMgr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TransportMgrBase* chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::mTransportMgr = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecd9ca401db88e3992a5a6304ebb9fef" name="aecd9ca401db88e3992a5a6304ebb9fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecd9ca401db88e3992a5a6304ebb9fef">&#9670;&#160;</a></span>mUdcClients</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UDCClients&lt;<a class="el" href="namespacechip_1_1Protocols_1_1UserDirectedCommissioning.html#aacc76be71ebd6623b57e6c33e5f786bf">kMaxUDCClients</a>&gt; chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::mUdcClients</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c92c537b92185bb9e41a426b5044f1c" name="a0c92c537b92185bb9e41a426b5044f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c92c537b92185bb9e41a426b5044f1c">&#9670;&#160;</a></span>mUserConfirmationProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserConfirmationProvider.html">UserConfirmationProvider</a>* chip::Protocols::UserDirectedCommissioning::UserDirectedCommissioningServer::mUserConfirmationProvider = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/protocols/user_directed_commissioning/<a class="el" href="UserDirectedCommissioning_8h_source.html">UserDirectedCommissioning.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

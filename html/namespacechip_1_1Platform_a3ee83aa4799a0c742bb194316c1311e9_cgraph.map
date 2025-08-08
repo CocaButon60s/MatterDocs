@@ -1,0 +1,10 @@
+<map id="chip::Platform::MemoryDebugCheckPointer" name="chip::Platform::MemoryDebugCheckPointer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,223,87"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Platform.html#ab189a3e937e0a14d4085ab5fa7afd9cc" title=" " alt="" coords="271,5,496,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,47,257,42,258,47,223,53"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="308,94,459,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,80,295,91,294,96,223,85"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="341,96,331,86,336,76,354,69,383,67,421,71,432,76,435,82,431,85,428,80,420,77,383,73,355,75,340,80,337,85,345,92"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="544,94,751,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="459,104,530,104,530,109,459,109"/>
+</map>

@@ -1,0 +1,27 @@
+<map id="Device::HandleDeviceChange" name="Device::HandleDeviceChange">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1076,80,1291,105"/>
+<area shape="rect" id="Node000002" href="$classDevice.html#ac6120ec2389b1dbfe4fca66bf7090f14" title=" " alt="" coords="845,154,1028,194"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1132,112,999,156,997,151,1130,107"/>
+<area shape="rect" id="Node000009" href="$classDevice.html#a698404e7cf63ed9210e86b7b4400c832" title=" " alt="" coords="861,104,1012,129"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1062,107,1012,112,1012,107,1062,102"/>
+<area shape="rect" id="Node000010" href="$classDevice.html#a8a3cb2cf469424b7cbf9849f349af31a" title=" " alt="" coords="869,55,1004,80"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1062,83,1004,77,1005,72,1062,78"/>
+<area shape="rect" id="Node000011" href="$classDevice.html#a4c2b382654bcb2860b254bc48ab15319" title=" " alt="" coords="855,5,1019,31"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="1132,78,1027,45,987,33,988,28,1029,39,1134,73"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="613,56,775,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="862,152,844,144,718,84,721,79,846,140,864,147"/>
+<area shape="rect" id="Node000007" href="$classBridgeAppCommandHandler.html#a99a02d2cc79131042555a474026c1a09" title=" " alt="" coords="591,154,797,194"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="832,177,798,177,798,171,832,171"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="379,31,495,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="599,62,495,52,495,46,599,57"/>
+<area shape="rect" id="Node000005" href="$AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,31,283,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="365,46,283,46,283,41,365,41"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,60,56"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="95,46,60,46,60,41,95,41"/>
+<area shape="rect" id="Node000008" href="$classBridgeCommandDelegate.html#adf7d76b19822a725e3baf2270e720710" title=" " alt="" coords="331,154,543,194"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="577,177,543,177,543,171,577,171"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="858,104,758,84,759,79,859,99"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="856,70,775,71,775,66,856,65"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="862,36,756,59,755,53,861,31"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="841,25,495,43,495,38,841,20"/>
+</map>

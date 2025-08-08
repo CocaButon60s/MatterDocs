@@ -1,0 +1,13 @@
+<map id="Device" name="Device">
+<area shape="rect" id="Node000001" title=" " alt="" coords="336,5,403,31"/>
+<area shape="rect" id="Node000002" href="$classComposedDevice.html" title=" " alt="" coords="5,79,141,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,33,122,81,121,76,322,28"/>
+<area shape="rect" id="Node000003" href="$classDeviceOnOff.html" title=" " alt="" coords="165,79,269,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="334,39,243,81,241,76,332,34"/>
+<area shape="rect" id="Node000004" href="$classDevicePowerSource.html" title=" " alt="" coords="294,79,445,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="372,44,372,79,367,79,367,44"/>
+<area shape="rect" id="Node000005" href="$classDeviceSwitch.html" title=" " alt="" coords="469,79,579,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="408,34,500,76,498,81,405,39"/>
+<area shape="rect" id="Node000006" href="$classDeviceTempSensor.html" title=" " alt="" coords="604,79,751,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="417,27,628,76,627,81,416,33"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="chip::Platform::ScopedMemoryBuffer::Get" name="chip::Platform::ScopedMemoryBuffer::Get">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,51,228,91"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="315,29,465,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,57,301,49,302,54,228,62"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Platform_1_1Impl_1_1ScopedMemoryBufferBase.html#a74dba1158757dd42fac6de335c38c513" title=" " alt="" coords="276,79,504,119"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="228,80,263,84,262,89,228,85"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="347,31,338,21,343,11,361,5,390,3,428,7,438,12,442,18,437,20,435,16,426,12,390,8,362,10,346,15,343,20,351,27"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="552,29,759,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="466,39,538,39,538,45,466,45"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="chip::Platform::Deleter::operator()" name="chip::Platform::Deleter::operator()">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,46,175,86"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Platform.html#a43b3e4c947b3e37de31cb9c07c113592" title=" " alt="" coords="223,28,387,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,53,209,49,210,55,175,59"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="461,79,611,104"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="175,68,447,84,447,89,175,73"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Platform.html#a9a65a9cd65454203059a7878eb74ccc1" title=" " alt="" coords="435,5,637,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,30,421,27,421,32,388,35"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="364,51,465,73,463,78,363,56"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="499,80,491,70,495,60,510,54,536,52,568,56,581,65,577,70,566,61,536,57,511,59,498,64,496,70,503,77"/>
+<area shape="rect" id="Node000005" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="685,79,892,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="612,89,672,89,672,94,612,94"/>
+</map>

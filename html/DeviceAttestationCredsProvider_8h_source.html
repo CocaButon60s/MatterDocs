@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/credentials/DeviceAttestationCredsProvider.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_071dc5feb02a2b296c14ae77677b1804.html">credentials</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">DeviceAttestationCredsProvider.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="DeviceAttestationCredsProvider_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2021 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPError_8h.html">lib/core/CHIPError.h</a>&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="Span_8h.html">lib/support/Span.h</a>&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespacechip_1_1Credentials.html">   23</a></span><span class="keyword">namespace </span>Credentials {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html">DeviceAttestationCredentialsProvider</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#aab622fc6e881dfc94ebc39b5d567cded">   28</a></span>    <a class="code hl_function" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#aab622fc6e881dfc94ebc39b5d567cded">DeviceAttestationCredentialsProvider</a>()          = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#aebbe4500fab56701cab7b850e3d7b16b">   29</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#aebbe4500fab56701cab7b850e3d7b16b">~DeviceAttestationCredentialsProvider</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// Not copyable</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#a0a82359893554e62783f5727c2722dc2">   32</a></span>    <a class="code hl_function" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#a0a82359893554e62783f5727c2722dc2">DeviceAttestationCredentialsProvider</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html">DeviceAttestationCredentialsProvider</a> &amp;)             = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#ac339011c0d81785509e9fc54ca6041de">   33</a></span>    <a class="code hl_class" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html">DeviceAttestationCredentialsProvider</a> &amp; <a class="code hl_function" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#ac339011c0d81785509e9fc54ca6041de">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html">DeviceAttestationCredentialsProvider</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#aaf19f9499ade00ca3be2b0980e8cce15">   45</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#aaf19f9499ade00ca3be2b0980e8cce15">GetCertificationDeclaration</a>(<a class="code hl_class" href="classchip_1_1Span.html">MutableByteSpan</a> &amp; out_cd_buffer) = 0;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#ad8c62f2a2a1b1324db2b5cde28a45855">   56</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#ad8c62f2a2a1b1324db2b5cde28a45855">GetFirmwareInformation</a>(<a class="code hl_class" href="classchip_1_1Span.html">MutableByteSpan</a> &amp; out_firmware_info_buffer) = 0;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#a6157b80403797f0f4648c2b7a23e575f">   68</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#a6157b80403797f0f4648c2b7a23e575f">GetDeviceAttestationCert</a>(<a class="code hl_class" href="classchip_1_1Span.html">MutableByteSpan</a> &amp; out_dac_buffer) = 0;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#a4b7615ceed350e18e63662e50d89b05f">   80</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#a4b7615ceed350e18e63662e50d89b05f">GetProductAttestationIntermediateCert</a>(<a class="code hl_class" href="classchip_1_1Span.html">MutableByteSpan</a> &amp; out_pai_buffer) = 0;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#ad324d07b355ceb9dfcc06dfce1c1ea5b">   90</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#ad324d07b355ceb9dfcc06dfce1c1ea5b">SignWithDeviceAttestationKey</a>(<span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Span.html">ByteSpan</a> &amp; message_to_sign, <a class="code hl_class" href="classchip_1_1Span.html">MutableByteSpan</a> &amp; out_signature_buffer) = 0;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>};</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="namespacechip_1_1Credentials.html#aeae45b8580f6ca54811f2f2f76e1f92f">  100</a></span><a class="code hl_class" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html">DeviceAttestationCredentialsProvider</a> * <a class="code hl_function" href="namespacechip_1_1Credentials.html#aeae45b8580f6ca54811f2f2f76e1f92f">GetDeviceAttestationCredentialsProvider</a>();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="namespacechip_1_1Credentials.html#a758593169c34e02f82f1aaad970ea33f">  111</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacechip_1_1Credentials.html#a758593169c34e02f82f1aaad970ea33f">SetDeviceAttestationCredentialsProvider</a>(<a class="code hl_class" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html">DeviceAttestationCredentialsProvider</a> * provider);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="namespacechip_1_1Credentials.html#a4eb60e7624151281840202d3c73bd227">  116</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacechip_1_1Credentials.html#a4eb60e7624151281840202d3c73bd227">IsDeviceAttestationCredentialsProviderSet</a>();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>} <span class="comment">// namespace Credentials</span></div>
+</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>} <span class="comment">// namespace chip</span></div>
+<div class="ttc" id="aCHIPError_8h_html"><div class="ttname"><a href="CHIPError_8h.html">CHIPError.h</a></div></div>
+<div class="ttc" id="aSpan_8h_html"><div class="ttname"><a href="Span_8h.html">Span.h</a></div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html"><div class="ttname"><a href="classchip_1_1ChipError.html">chip::ChipError</a></div><div class="ttdef"><b>Definition</b> CHIPError.h:55</div></div>
+<div class="ttc" id="aclasschip_1_1Credentials_1_1DeviceAttestationCredentialsProvider_html"><div class="ttname"><a href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html">chip::Credentials::DeviceAttestationCredentialsProvider</a></div><div class="ttdef"><b>Definition</b> DeviceAttestationCredsProvider.h:26</div></div>
+<div class="ttc" id="aclasschip_1_1Credentials_1_1DeviceAttestationCredentialsProvider_html_a0a82359893554e62783f5727c2722dc2"><div class="ttname"><a href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#a0a82359893554e62783f5727c2722dc2">chip::Credentials::DeviceAttestationCredentialsProvider::DeviceAttestationCredentialsProvider</a></div><div class="ttdeci">DeviceAttestationCredentialsProvider(const DeviceAttestationCredentialsProvider &amp;)=delete</div></div>
+<div class="ttc" id="aclasschip_1_1Credentials_1_1DeviceAttestationCredentialsProvider_html_a4b7615ceed350e18e63662e50d89b05f"><div class="ttname"><a href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#a4b7615ceed350e18e63662e50d89b05f">chip::Credentials::DeviceAttestationCredentialsProvider::GetProductAttestationIntermediateCert</a></div><div class="ttdeci">virtual CHIP_ERROR GetProductAttestationIntermediateCert(MutableByteSpan &amp;out_pai_buffer)=0</div><div class="ttdoc">Get the PAI Certificate in DER format. Updates out_pai_buffer's size on success to match the data siz...</div></div>
+<div class="ttc" id="aclasschip_1_1Credentials_1_1DeviceAttestationCredentialsProvider_html_a6157b80403797f0f4648c2b7a23e575f"><div class="ttname"><a href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#a6157b80403797f0f4648c2b7a23e575f">chip::Credentials::DeviceAttestationCredentialsProvider::GetDeviceAttestationCert</a></div><div class="ttdeci">virtual CHIP_ERROR GetDeviceAttestationCert(MutableByteSpan &amp;out_dac_buffer)=0</div><div class="ttdoc">Get the Device Attestation Certificate in DER format. Updates out_dac_buffer's size on success to mat...</div></div>
+<div class="ttc" id="aclasschip_1_1Credentials_1_1DeviceAttestationCredentialsProvider_html_aab622fc6e881dfc94ebc39b5d567cded"><div class="ttname"><a href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#aab622fc6e881dfc94ebc39b5d567cded">chip::Credentials::DeviceAttestationCredentialsProvider::DeviceAttestationCredentialsProvider</a></div><div class="ttdeci">DeviceAttestationCredentialsProvider()=default</div></div>
+<div class="ttc" id="aclasschip_1_1Credentials_1_1DeviceAttestationCredentialsProvider_html_aaf19f9499ade00ca3be2b0980e8cce15"><div class="ttname"><a href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#aaf19f9499ade00ca3be2b0980e8cce15">chip::Credentials::DeviceAttestationCredentialsProvider::GetCertificationDeclaration</a></div><div class="ttdeci">virtual CHIP_ERROR GetCertificationDeclaration(MutableByteSpan &amp;out_cd_buffer)=0</div><div class="ttdoc">Get the Certification Declaration body. Updates out_cd_buffer's size on success to match the data siz...</div></div>
+<div class="ttc" id="aclasschip_1_1Credentials_1_1DeviceAttestationCredentialsProvider_html_ac339011c0d81785509e9fc54ca6041de"><div class="ttname"><a href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#ac339011c0d81785509e9fc54ca6041de">chip::Credentials::DeviceAttestationCredentialsProvider::operator=</a></div><div class="ttdeci">DeviceAttestationCredentialsProvider &amp; operator=(const DeviceAttestationCredentialsProvider &amp;)=delete</div></div>
+<div class="ttc" id="aclasschip_1_1Credentials_1_1DeviceAttestationCredentialsProvider_html_ad324d07b355ceb9dfcc06dfce1c1ea5b"><div class="ttname"><a href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#ad324d07b355ceb9dfcc06dfce1c1ea5b">chip::Credentials::DeviceAttestationCredentialsProvider::SignWithDeviceAttestationKey</a></div><div class="ttdeci">virtual CHIP_ERROR SignWithDeviceAttestationKey(const ByteSpan &amp;message_to_sign, MutableByteSpan &amp;out_signature_buffer)=0</div><div class="ttdoc">Signs a message using the device attestation private key</div></div>
+<div class="ttc" id="aclasschip_1_1Credentials_1_1DeviceAttestationCredentialsProvider_html_ad8c62f2a2a1b1324db2b5cde28a45855"><div class="ttname"><a href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#ad8c62f2a2a1b1324db2b5cde28a45855">chip::Credentials::DeviceAttestationCredentialsProvider::GetFirmwareInformation</a></div><div class="ttdeci">virtual CHIP_ERROR GetFirmwareInformation(MutableByteSpan &amp;out_firmware_info_buffer)=0</div><div class="ttdoc">Get the Firmware Information body. Updates out_firmware_info_buffer's size on success to match the da...</div></div>
+<div class="ttc" id="aclasschip_1_1Credentials_1_1DeviceAttestationCredentialsProvider_html_aebbe4500fab56701cab7b850e3d7b16b"><div class="ttname"><a href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html#aebbe4500fab56701cab7b850e3d7b16b">chip::Credentials::DeviceAttestationCredentialsProvider::~DeviceAttestationCredentialsProvider</a></div><div class="ttdeci">virtual ~DeviceAttestationCredentialsProvider()=default</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html"><div class="ttname"><a href="classchip_1_1Span.html">chip::Span</a></div><div class="ttdoc">A wrapper class for holding objects and its length, without the ownership of it. We can use C++20 std...</div><div class="ttdef"><b>Definition</b> Span.h:41</div></div>
+<div class="ttc" id="anamespacechip_1_1Credentials_html_a4eb60e7624151281840202d3c73bd227"><div class="ttname"><a href="namespacechip_1_1Credentials.html#a4eb60e7624151281840202d3c73bd227">chip::Credentials::IsDeviceAttestationCredentialsProviderSet</a></div><div class="ttdeci">bool IsDeviceAttestationCredentialsProviderSet()</div></div>
+<div class="ttc" id="anamespacechip_1_1Credentials_html_a758593169c34e02f82f1aaad970ea33f"><div class="ttname"><a href="namespacechip_1_1Credentials.html#a758593169c34e02f82f1aaad970ea33f">chip::Credentials::SetDeviceAttestationCredentialsProvider</a></div><div class="ttdeci">void SetDeviceAttestationCredentialsProvider(DeviceAttestationCredentialsProvider *provider)</div></div>
+<div class="ttc" id="anamespacechip_1_1Credentials_html_aeae45b8580f6ca54811f2f2f76e1f92f"><div class="ttname"><a href="namespacechip_1_1Credentials.html#aeae45b8580f6ca54811f2f2f76e1f92f">chip::Credentials::GetDeviceAttestationCredentialsProvider</a></div><div class="ttdeci">DeviceAttestationCredentialsProvider * GetDeviceAttestationCredentialsProvider()</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

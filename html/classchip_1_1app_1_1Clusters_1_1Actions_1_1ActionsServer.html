@@ -1,0 +1,1312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::app::Clusters::Actions::ActionsServer クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1app.html">app</a></li><li class="navelem"><a class="el" href="namespacechip_1_1app_1_1Clusters.html">Clusters</a></li><li class="navelem"><a class="el" href="namespacechip_1_1app_1_1Clusters_1_1Actions.html">Actions</a></li><li class="navelem"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html">ActionsServer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::app::Clusters::Actions::ActionsServer クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="actions-server_8h_source.html">actions-server.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::app::Clusters::Actions::ActionsServer の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer__inherit__graph.png" border="0" usemap="#achip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer_inherit__map" id="achip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer_inherit__map">
+<area shape="rect" title=" " alt="" coords="122,93,298,133"/>
+<area shape="rect" href="classchip_1_1app_1_1AttributeAccessInterface.html" title=" " alt="" coords="5,5,196,45"/>
+<area shape="poly" title=" " alt="" coords="137,52,187,91,184,95,134,56"/>
+<area shape="rect" title=" " alt="" coords="220,13,419,38"/>
+<area shape="poly" title=" " alt="" coords="295,49,236,95,232,91,292,45"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::app::Clusters::Actions::ActionsServer 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer__coll__graph.png" border="0" usemap="#achip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer_coll__map" id="achip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer_coll__map">
+<area shape="rect" title=" " alt="" coords="1227,101,1403,141"/>
+<area shape="poly" title=" " alt="" coords="1287,85,1297,78,1315,75,1330,77,1341,83,1345,92,1344,101,1338,100,1340,93,1337,86,1329,82,1315,80,1299,83,1290,89"/>
+<area shape="rect" href="classchip_1_1app_1_1AttributeAccessInterface.html" title=" " alt="" coords="907,44,1097,84"/>
+<area shape="poly" title=" " alt="" coords="1111,81,1227,103,1226,108,1110,86"/>
+<area shape="poly" title=" " alt="" coords="972,28,983,20,1002,17,1019,19,1030,25,1035,34,1033,44,1028,43,1029,35,1026,29,1017,25,1002,23,985,25,976,32"/>
+<area shape="rect" href="classchip_1_1Optional.html" title=" " alt="" coords="557,51,768,77"/>
+<area shape="poly" title=" " alt="" coords="782,61,907,61,907,67,782,67"/>
+<area shape="rect" href="classchip_1_1Optional_1_1ValueHolder.html" title=" " alt="" coords="261,44,412,84"/>
+<area shape="poly" title=" " alt="" coords="426,61,557,61,557,67,426,67"/>
+<area shape="rect" title=" " alt="" coords="5,22,212,106"/>
+<area shape="poly" title=" " alt="" coords="226,61,261,61,261,67,226,67"/>
+<area shape="rect" title=" " alt="" coords="903,109,1101,134"/>
+<area shape="poly" title=" " alt="" coords="1115,119,1226,119,1226,124,1115,124"/>
+<area shape="rect" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1Delegate.html" title=" " alt="" coords="929,159,1075,199"/>
+<area shape="poly" title=" " alt="" coords="1088,160,1226,135,1227,140,1089,166"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a681ccc0f91f08d9adf4af2d730cd4e10" id="r_a681ccc0f91f08d9adf4af2d730cd4e10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a681ccc0f91f08d9adf4af2d730cd4e10">ActionsServer</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1Delegate.html">Delegate</a> &amp;aDelegate)</td></tr>
+<tr class="separator:a681ccc0f91f08d9adf4af2d730cd4e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fbd115efcee10555de8b2cdc90cfba7" id="r_a4fbd115efcee10555de8b2cdc90cfba7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a4fbd115efcee10555de8b2cdc90cfba7">~ActionsServer</a> ()</td></tr>
+<tr class="separator:a4fbd115efcee10555de8b2cdc90cfba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98bab02961da106ad3d8cc72d2e8008d" id="r_a98bab02961da106ad3d8cc72d2e8008d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a98bab02961da106ad3d8cc72d2e8008d">Init</a> ()</td></tr>
+<tr class="separator:a98bab02961da106ad3d8cc72d2e8008d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8089a5eef2091987981d7568f8d6a540" id="r_a8089a5eef2091987981d7568f8d6a540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a8089a5eef2091987981d7568f8d6a540">Shutdown</a> ()</td></tr>
+<tr class="separator:a8089a5eef2091987981d7568f8d6a540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97d19ce7fdbd9e34aaba5830c6dff5b" id="r_ae97d19ce7fdbd9e34aaba5830c6dff5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#ae97d19ce7fdbd9e34aaba5830c6dff5b">OnStateChanged</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpoint, uint16_t aActionId, uint32_t aInvokeId, ActionStateEnum aActionState)</td></tr>
+<tr class="memdesc:ae97d19ce7fdbd9e34aaba5830c6dff5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the state of an action is changed.  <br /></td></tr>
+<tr class="separator:ae97d19ce7fdbd9e34aaba5830c6dff5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa807a8289bbcda4b09660b089c74fab6" id="r_aa807a8289bbcda4b09660b089c74fab6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#aa807a8289bbcda4b09660b089c74fab6">OnActionFailed</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpoint, uint16_t aActionId, uint32_t aInvokeId, ActionStateEnum aActionState, ActionErrorEnum aActionError)</td></tr>
+<tr class="memdesc:aa807a8289bbcda4b09660b089c74fab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an action fails.  <br /></td></tr>
+<tr class="separator:aa807a8289bbcda4b09660b089c74fab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475da36ead2e05e7a7a76b8d02e64b57" id="r_a475da36ead2e05e7a7a76b8d02e64b57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a475da36ead2e05e7a7a76b8d02e64b57">SetDefaultDelegate</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1Delegate.html">Delegate</a> *aDelegate)</td></tr>
+<tr class="separator:a475da36ead2e05e7a7a76b8d02e64b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683c9cf33e1e29b59ec05b5fc890dab1" id="r_a683c9cf33e1e29b59ec05b5fc890dab1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a683c9cf33e1e29b59ec05b5fc890dab1">Read</a> (const <a class="el" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> &amp;aPath, AttributeValueEncoder &amp;aEncoder) override</td></tr>
+<tr class="separator:a683c9cf33e1e29b59ec05b5fc890dab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a63701fa420075b4b92c60452095c0" id="r_af8a63701fa420075b4b92c60452095c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#af8a63701fa420075b4b92c60452095c0">ActionListModified</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpoint)</td></tr>
+<tr class="separator:af8a63701fa420075b4b92c60452095c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89a29b275e9b90e672a34cd85cac6ba" id="r_ab89a29b275e9b90e672a34cd85cac6ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#ab89a29b275e9b90e672a34cd85cac6ba">EndpointListModified</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpoint)</td></tr>
+<tr class="separator:ab89a29b275e9b90e672a34cd85cac6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classchip_1_1app_1_1AttributeAccessInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classchip_1_1app_1_1AttributeAccessInterface')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">chip::app::AttributeAccessInterface</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a195c75011d86ee3dcc7d46285afbafa5 inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface" id="r_a195c75011d86ee3dcc7d46285afbafa5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a195c75011d86ee3dcc7d46285afbafa5">AttributeAccessInterface</a> (<a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> &gt; aEndpointId, <a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId)</td></tr>
+<tr class="separator:a195c75011d86ee3dcc7d46285afbafa5 inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3debdc4c20a59d1f72c8fa9304262be inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface" id="r_ad3debdc4c20a59d1f72c8fa9304262be"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#ad3debdc4c20a59d1f72c8fa9304262be">~AttributeAccessInterface</a> ()</td></tr>
+<tr class="separator:ad3debdc4c20a59d1f72c8fa9304262be inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe26c2bc0004445e66b6731394453034 inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface" id="r_afe26c2bc0004445e66b6731394453034"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#afe26c2bc0004445e66b6731394453034">Read</a> (const DataModel::ReadAttributeRequest &amp;aRequest, AttributeValueEncoder &amp;aEncoder)</td></tr>
+<tr class="separator:afe26c2bc0004445e66b6731394453034 inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68635af42764b78476ad22389b72a46c inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface" id="r_a68635af42764b78476ad22389b72a46c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a68635af42764b78476ad22389b72a46c">Write</a> (const <a class="el" href="structchip_1_1app_1_1ConcreteDataAttributePath.html">ConcreteDataAttributePath</a> &amp;aPath, AttributeValueDecoder &amp;aDecoder)</td></tr>
+<tr class="separator:a68635af42764b78476ad22389b72a46c inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2899b330c9a67466175e52c1cd283d01 inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface" id="r_a2899b330c9a67466175e52c1cd283d01"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a2899b330c9a67466175e52c1cd283d01">OnListWriteBegin</a> (const <a class="el" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp;aPath)</td></tr>
+<tr class="separator:a2899b330c9a67466175e52c1cd283d01 inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f352adf9b910be95fff8e8115aaa1d inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface" id="r_a47f352adf9b910be95fff8e8115aaa1d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a47f352adf9b910be95fff8e8115aaa1d">OnListWriteEnd</a> (const <a class="el" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp;aPath, bool aWriteWasSuccessful)</td></tr>
+<tr class="separator:a47f352adf9b910be95fff8e8115aaa1d inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2887025e5242bd397b3a8ce75f195cc5 inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface" id="r_a2887025e5242bd397b3a8ce75f195cc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a2887025e5242bd397b3a8ce75f195cc5">SetNext</a> (<a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> *aNext)</td></tr>
+<tr class="separator:a2887025e5242bd397b3a8ce75f195cc5 inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a30290cb829a015952e4c2860c8509b inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface" id="r_a7a30290cb829a015952e4c2860c8509b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a7a30290cb829a015952e4c2860c8509b">GetNext</a> () const</td></tr>
+<tr class="separator:a7a30290cb829a015952e4c2860c8509b inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa465d39295b8fb8e06f34dcb93d2f74d inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface" id="r_aa465d39295b8fb8e06f34dcb93d2f74d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#aa465d39295b8fb8e06f34dcb93d2f74d">Matches</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId) const</td></tr>
+<tr class="separator:aa465d39295b8fb8e06f34dcb93d2f74d inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc37488d8b7dfdf0e04319e9fc5fda83 inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface" id="r_adc37488d8b7dfdf0e04319e9fc5fda83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#adc37488d8b7dfdf0e04319e9fc5fda83">MatchesEndpoint</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId) const</td></tr>
+<tr class="separator:adc37488d8b7dfdf0e04319e9fc5fda83 inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09843999b983d05e07a0be1e672a3af9 inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface" id="r_a09843999b983d05e07a0be1e672a3af9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a09843999b983d05e07a0be1e672a3af9">Matches</a> (const <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> &amp;aOther) const</td></tr>
+<tr class="separator:a09843999b983d05e07a0be1e672a3af9 inherit pub_methods_classchip_1_1app_1_1AttributeAccessInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a91667018630ab4b3fb384887dcf2b5dc" id="r_a91667018630ab4b3fb384887dcf2b5dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a91667018630ab4b3fb384887dcf2b5dc">ReadActionListAttribute</a> (const <a class="el" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> &amp;aPath, const AttributeValueEncoder::ListEncodeHelper &amp;aEncoder)</td></tr>
+<tr class="separator:a91667018630ab4b3fb384887dcf2b5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ea535c1a54af4481472b7887c4221e" id="r_aa6ea535c1a54af4481472b7887c4221e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#aa6ea535c1a54af4481472b7887c4221e">ReadEndpointListAttribute</a> (const <a class="el" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> &amp;aPath, const AttributeValueEncoder::ListEncodeHelper &amp;aEncoder)</td></tr>
+<tr class="separator:aa6ea535c1a54af4481472b7887c4221e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce3902bb8141361c3f750ae4416ff0c" id="r_abce3902bb8141361c3f750ae4416ff0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#abce3902bb8141361c3f750ae4416ff0c">HaveActionWithId</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, uint16_t aActionId, uint16_t &amp;aActionIndex)</td></tr>
+<tr class="separator:abce3902bb8141361c3f750ae4416ff0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5e5dcc563a12991bb1ec5ae1adc040" id="r_a8b5e5dcc563a12991bb1ec5ae1adc040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a8b5e5dcc563a12991bb1ec5ae1adc040">MarkDirty</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="el" href="namespacechip.html#a9679009d83716300aae025b8a172c401">AttributeId</a> aAttributeId)</td></tr>
+<tr class="separator:a8b5e5dcc563a12991bb1ec5ae1adc040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18572e5021af62f0b85a9e5334f685e7" id="r_a18572e5021af62f0b85a9e5334f685e7"><td class="memTemplParams" colspan="2">template&lt;typename RequestT , typename FuncT &gt; </td></tr>
+<tr class="memitem:a18572e5021af62f0b85a9e5334f685e7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a18572e5021af62f0b85a9e5334f685e7">HandleCommand</a> (HandlerContext &amp;handlerContext, FuncT func)</td></tr>
+<tr class="separator:a18572e5021af62f0b85a9e5334f685e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69ae97ae136491a492fb5ed70d855d4" id="r_ae69ae97ae136491a492fb5ed70d855d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#ae69ae97ae136491a492fb5ed70d855d4">InvokeCommand</a> (HandlerContext &amp;handlerContext) override</td></tr>
+<tr class="separator:ae69ae97ae136491a492fb5ed70d855d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a1a296bdfedd97b6a5373226bbcbf2" id="r_a85a1a296bdfedd97b6a5373226bbcbf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a85a1a296bdfedd97b6a5373226bbcbf2">HandleInstantAction</a> (HandlerContext &amp;ctx, const Commands::InstantAction::DecodableType &amp;commandData)</td></tr>
+<tr class="separator:a85a1a296bdfedd97b6a5373226bbcbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361f36ffc2ce68cb8010e94d60ad2764" id="r_a361f36ffc2ce68cb8010e94d60ad2764"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a361f36ffc2ce68cb8010e94d60ad2764">HandleInstantActionWithTransition</a> (HandlerContext &amp;ctx, const Commands::InstantActionWithTransition::DecodableType &amp;commandData)</td></tr>
+<tr class="separator:a361f36ffc2ce68cb8010e94d60ad2764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e2dacd08480fa95e23c3ed924c3188d" id="r_a6e2dacd08480fa95e23c3ed924c3188d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a6e2dacd08480fa95e23c3ed924c3188d">HandleStartAction</a> (HandlerContext &amp;ctx, const Commands::StartAction::DecodableType &amp;commandData)</td></tr>
+<tr class="separator:a6e2dacd08480fa95e23c3ed924c3188d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b774196e5e8edb3f8a01725d320986f" id="r_a6b774196e5e8edb3f8a01725d320986f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a6b774196e5e8edb3f8a01725d320986f">HandleStartActionWithDuration</a> (HandlerContext &amp;ctx, const Commands::StartActionWithDuration::DecodableType &amp;commandData)</td></tr>
+<tr class="separator:a6b774196e5e8edb3f8a01725d320986f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af85253ddaac667426f4c70a7f65702" id="r_a3af85253ddaac667426f4c70a7f65702"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a3af85253ddaac667426f4c70a7f65702">HandleStopAction</a> (HandlerContext &amp;ctx, const Commands::StopAction::DecodableType &amp;commandData)</td></tr>
+<tr class="separator:a3af85253ddaac667426f4c70a7f65702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5f188f21b6e4a9e660485a06308dc0" id="r_afb5f188f21b6e4a9e660485a06308dc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#afb5f188f21b6e4a9e660485a06308dc0">HandlePauseAction</a> (HandlerContext &amp;ctx, const Commands::PauseAction::DecodableType &amp;commandData)</td></tr>
+<tr class="separator:afb5f188f21b6e4a9e660485a06308dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf0cee610dc118c4b4f8dc15f5b59e8" id="r_afbf0cee610dc118c4b4f8dc15f5b59e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#afbf0cee610dc118c4b4f8dc15f5b59e8">HandlePauseActionWithDuration</a> (HandlerContext &amp;ctx, const Commands::PauseActionWithDuration::DecodableType &amp;commandData)</td></tr>
+<tr class="separator:afbf0cee610dc118c4b4f8dc15f5b59e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2f790583739eeedf1a823b503df67e" id="r_aef2f790583739eeedf1a823b503df67e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#aef2f790583739eeedf1a823b503df67e">HandleResumeAction</a> (HandlerContext &amp;ctx, const Commands::ResumeAction::DecodableType &amp;commandData)</td></tr>
+<tr class="separator:aef2f790583739eeedf1a823b503df67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24bdf994437659e1055182509e7926df" id="r_a24bdf994437659e1055182509e7926df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a24bdf994437659e1055182509e7926df">HandleEnableAction</a> (HandlerContext &amp;ctx, const Commands::EnableAction::DecodableType &amp;commandData)</td></tr>
+<tr class="separator:a24bdf994437659e1055182509e7926df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1f9b8f904946444e7415d5dc52843c" id="r_a5b1f9b8f904946444e7415d5dc52843c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a5b1f9b8f904946444e7415d5dc52843c">HandleEnableActionWithDuration</a> (HandlerContext &amp;ctx, const Commands::EnableActionWithDuration::DecodableType &amp;commandData)</td></tr>
+<tr class="separator:a5b1f9b8f904946444e7415d5dc52843c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec9b05d626cc21f50e8f8290ca1fade" id="r_a6ec9b05d626cc21f50e8f8290ca1fade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a6ec9b05d626cc21f50e8f8290ca1fade">HandleDisableAction</a> (HandlerContext &amp;ctx, const Commands::DisableAction::DecodableType &amp;commandData)</td></tr>
+<tr class="separator:a6ec9b05d626cc21f50e8f8290ca1fade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b86a9d4e1d52d338876d3ba9ad01a68" id="r_a5b86a9d4e1d52d338876d3ba9ad01a68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a5b86a9d4e1d52d338876d3ba9ad01a68">HandleDisableActionWithDuration</a> (HandlerContext &amp;ctx, const Commands::DisableActionWithDuration::DecodableType &amp;commandData)</td></tr>
+<tr class="separator:a5b86a9d4e1d52d338876d3ba9ad01a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:aeff4b71d3121053969e587b058c46f48" id="r_aeff4b71d3121053969e587b058c46f48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1Delegate.html">Delegate</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#aeff4b71d3121053969e587b058c46f48">mDelegate</a></td></tr>
+<tr class="separator:aeff4b71d3121053969e587b058c46f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cfdd9ac744765db20014ed249851c1" id="r_a12cfdd9ac744765db20014ed249851c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a12cfdd9ac744765db20014ed249851c1">mEndpointId</a></td></tr>
+<tr class="separator:a12cfdd9ac744765db20014ed249851c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a9c4caeb48038c74384039bb8e3d921c9" id="r_a9c4caeb48038c74384039bb8e3d921c9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html">ActionsServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a9c4caeb48038c74384039bb8e3d921c9">sInstance</a></td></tr>
+<tr class="separator:a9c4caeb48038c74384039bb8e3d921c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c5297f301a2652e5548d0b6bc1cbc96" id="r_a7c5297f301a2652e5548d0b6bc1cbc96"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a7c5297f301a2652e5548d0b6bc1cbc96">kMaxEndpointListLength</a> = 256u</td></tr>
+<tr class="separator:a7c5297f301a2652e5548d0b6bc1cbc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb52b95a8675411b40bcdd8932408f99" id="r_abb52b95a8675411b40bcdd8932408f99"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#abb52b95a8675411b40bcdd8932408f99">kMaxActionListLength</a> = 256u</td></tr>
+<tr class="separator:abb52b95a8675411b40bcdd8932408f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_methods_classchip_1_1app_1_1AttributeAccessInterface"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classchip_1_1app_1_1AttributeAccessInterface')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">chip::app::AttributeAccessInterface</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a4dc4de909abf0275a299d014385d3a08 inherit pro_methods_classchip_1_1app_1_1AttributeAccessInterface" id="r_a4dc4de909abf0275a299d014385d3a08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a4dc4de909abf0275a299d014385d3a08">GetEndpointId</a> ()</td></tr>
+<tr class="separator:a4dc4de909abf0275a299d014385d3a08 inherit pro_methods_classchip_1_1app_1_1AttributeAccessInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a681ccc0f91f08d9adf4af2d730cd4e10" name="a681ccc0f91f08d9adf4af2d730cd4e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a681ccc0f91f08d9adf4af2d730cd4e10">&#9670;&#160;</a></span>ActionsServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::app::Clusters::Actions::ActionsServer::ActionsServer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td>
+          <td class="paramname"><em>aEndpointId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1Delegate.html">Delegate</a> &amp;&#160;</td>
+          <td class="paramname"><em>aDelegate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fbd115efcee10555de8b2cdc90cfba7" name="a4fbd115efcee10555de8b2cdc90cfba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fbd115efcee10555de8b2cdc90cfba7">&#9670;&#160;</a></span>~ActionsServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::app::Clusters::Actions::ActionsServer::~ActionsServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="af8a63701fa420075b4b92c60452095c0" name="af8a63701fa420075b4b92c60452095c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a63701fa420075b4b92c60452095c0">&#9670;&#160;</a></span>ActionListModified()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::ActionListModified </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td>
+          <td class="paramname"><em>aEndpoint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A notification from an application to the sever that an ActionList is modified..</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aEndpoint</td><td>The endpoint ID where the action should be updated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab89a29b275e9b90e672a34cd85cac6ba" name="ab89a29b275e9b90e672a34cd85cac6ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89a29b275e9b90e672a34cd85cac6ba">&#9670;&#160;</a></span>EndpointListModified()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::EndpointListModified </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td>
+          <td class="paramname"><em>aEndpoint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A notification from an application to the sever that an EndpointList is modified..</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aEndpoint</td><td>The endpoint ID where the action should be updated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a18572e5021af62f0b85a9e5334f685e7" name="a18572e5021af62f0b85a9e5334f685e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18572e5021af62f0b85a9e5334f685e7">&#9670;&#160;</a></span>HandleCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RequestT , typename FuncT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandleCommand </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>handlerContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FuncT&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ec9b05d626cc21f50e8f8290ca1fade" name="a6ec9b05d626cc21f50e8f8290ca1fade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ec9b05d626cc21f50e8f8290ca1fade">&#9670;&#160;</a></span>HandleDisableAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandleDisableAction </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Commands::DisableAction::DecodableType &amp;&#160;</td>
+          <td class="paramname"><em>commandData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b86a9d4e1d52d338876d3ba9ad01a68" name="a5b86a9d4e1d52d338876d3ba9ad01a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b86a9d4e1d52d338876d3ba9ad01a68">&#9670;&#160;</a></span>HandleDisableActionWithDuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandleDisableActionWithDuration </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Commands::DisableActionWithDuration::DecodableType &amp;&#160;</td>
+          <td class="paramname"><em>commandData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24bdf994437659e1055182509e7926df" name="a24bdf994437659e1055182509e7926df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24bdf994437659e1055182509e7926df">&#9670;&#160;</a></span>HandleEnableAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandleEnableAction </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Commands::EnableAction::DecodableType &amp;&#160;</td>
+          <td class="paramname"><em>commandData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b1f9b8f904946444e7415d5dc52843c" name="a5b1f9b8f904946444e7415d5dc52843c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1f9b8f904946444e7415d5dc52843c">&#9670;&#160;</a></span>HandleEnableActionWithDuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandleEnableActionWithDuration </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Commands::EnableActionWithDuration::DecodableType &amp;&#160;</td>
+          <td class="paramname"><em>commandData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85a1a296bdfedd97b6a5373226bbcbf2" name="a85a1a296bdfedd97b6a5373226bbcbf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85a1a296bdfedd97b6a5373226bbcbf2">&#9670;&#160;</a></span>HandleInstantAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandleInstantAction </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Commands::InstantAction::DecodableType &amp;&#160;</td>
+          <td class="paramname"><em>commandData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a361f36ffc2ce68cb8010e94d60ad2764" name="a361f36ffc2ce68cb8010e94d60ad2764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a361f36ffc2ce68cb8010e94d60ad2764">&#9670;&#160;</a></span>HandleInstantActionWithTransition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandleInstantActionWithTransition </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Commands::InstantActionWithTransition::DecodableType &amp;&#160;</td>
+          <td class="paramname"><em>commandData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb5f188f21b6e4a9e660485a06308dc0" name="afb5f188f21b6e4a9e660485a06308dc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb5f188f21b6e4a9e660485a06308dc0">&#9670;&#160;</a></span>HandlePauseAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandlePauseAction </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Commands::PauseAction::DecodableType &amp;&#160;</td>
+          <td class="paramname"><em>commandData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbf0cee610dc118c4b4f8dc15f5b59e8" name="afbf0cee610dc118c4b4f8dc15f5b59e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbf0cee610dc118c4b4f8dc15f5b59e8">&#9670;&#160;</a></span>HandlePauseActionWithDuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandlePauseActionWithDuration </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Commands::PauseActionWithDuration::DecodableType &amp;&#160;</td>
+          <td class="paramname"><em>commandData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef2f790583739eeedf1a823b503df67e" name="aef2f790583739eeedf1a823b503df67e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef2f790583739eeedf1a823b503df67e">&#9670;&#160;</a></span>HandleResumeAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandleResumeAction </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Commands::ResumeAction::DecodableType &amp;&#160;</td>
+          <td class="paramname"><em>commandData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e2dacd08480fa95e23c3ed924c3188d" name="a6e2dacd08480fa95e23c3ed924c3188d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e2dacd08480fa95e23c3ed924c3188d">&#9670;&#160;</a></span>HandleStartAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandleStartAction </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Commands::StartAction::DecodableType &amp;&#160;</td>
+          <td class="paramname"><em>commandData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b774196e5e8edb3f8a01725d320986f" name="a6b774196e5e8edb3f8a01725d320986f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b774196e5e8edb3f8a01725d320986f">&#9670;&#160;</a></span>HandleStartActionWithDuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandleStartActionWithDuration </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Commands::StartActionWithDuration::DecodableType &amp;&#160;</td>
+          <td class="paramname"><em>commandData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3af85253ddaac667426f4c70a7f65702" name="a3af85253ddaac667426f4c70a7f65702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3af85253ddaac667426f4c70a7f65702">&#9670;&#160;</a></span>HandleStopAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::HandleStopAction </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Commands::StopAction::DecodableType &amp;&#160;</td>
+          <td class="paramname"><em>commandData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abce3902bb8141361c3f750ae4416ff0c" name="abce3902bb8141361c3f750ae4416ff0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abce3902bb8141361c3f750ae4416ff0c">&#9670;&#160;</a></span>HaveActionWithId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::Clusters::Actions::ActionsServer::HaveActionWithId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td>
+          <td class="paramname"><em>aEndpointId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>aActionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>aActionIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98bab02961da106ad3d8cc72d2e8008d" name="a98bab02961da106ad3d8cc72d2e8008d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98bab02961da106ad3d8cc72d2e8008d">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::Clusters::Actions::ActionsServer::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialise the <a class="el" href="namespacechip_1_1app_1_1Clusters_1_1Actions.html">Actions</a> server instance. </p><dl class="section return"><dt>戻り値</dt><dd>Returns an error if the given endpoint and cluster have not been enabled in zap, if the <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> or <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> registration fails returns an error. </dd></dl>
+
+</div>
+</div>
+<a id="ae69ae97ae136491a492fb5ed70d855d4" name="ae69ae97ae136491a492fb5ed70d855d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69ae97ae136491a492fb5ed70d855d4">&#9670;&#160;</a></span>InvokeCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::InvokeCommand </td>
+          <td>(</td>
+          <td class="paramtype">HandlerContext &amp;&#160;</td>
+          <td class="paramname"><em>handlerContext</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b5e5dcc563a12991bb1ec5ae1adc040" name="a8b5e5dcc563a12991bb1ec5ae1adc040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b5e5dcc563a12991bb1ec5ae1adc040">&#9670;&#160;</a></span>MarkDirty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::MarkDirty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td>
+          <td class="paramname"><em>aEndpointId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a9679009d83716300aae025b8a172c401">AttributeId</a>&#160;</td>
+          <td class="paramname"><em>aAttributeId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer_a8b5e5dcc563a12991bb1ec5ae1adc040_cgraph.png" border="0" usemap="#aclasschip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer_a8b5e5dcc563a12991bb1ec5ae1adc040_cgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer_a8b5e5dcc563a12991bb1ec5ae1adc040_cgraph" id="aclasschip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer_a8b5e5dcc563a12991bb1ec5ae1adc040_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,181,60"/>
+<area shape="rect" href="reporting_8h.html#a40f7305633e16b8108577ada09979774" title="Reporting Attribute Change" alt="" coords="229,13,415,53"/>
+<area shape="poly" title=" " alt="" coords="181,30,216,30,216,35,181,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa807a8289bbcda4b09660b089c74fab6" name="aa807a8289bbcda4b09660b089c74fab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa807a8289bbcda4b09660b089c74fab6">&#9670;&#160;</a></span>OnActionFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::OnActionFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td>
+          <td class="paramname"><em>aEndpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>aActionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>aInvokeId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActionStateEnum&#160;</td>
+          <td class="paramname"><em>aActionState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActionErrorEnum&#160;</td>
+          <td class="paramname"><em>aActionError</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when an action fails. </p>
+
+</div>
+</div>
+<a id="ae97d19ce7fdbd9e34aaba5830c6dff5b" name="ae97d19ce7fdbd9e34aaba5830c6dff5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97d19ce7fdbd9e34aaba5830c6dff5b">&#9670;&#160;</a></span>OnStateChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::OnStateChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td>
+          <td class="paramname"><em>aEndpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>aActionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>aInvokeId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActionStateEnum&#160;</td>
+          <td class="paramname"><em>aActionState</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when the state of an action is changed. </p>
+
+</div>
+</div>
+<a id="a683c9cf33e1e29b59ec05b5fc890dab1" name="a683c9cf33e1e29b59ec05b5fc890dab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a683c9cf33e1e29b59ec05b5fc890dab1">&#9670;&#160;</a></span>Read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::Clusters::Actions::ActionsServer::Read </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> &amp;&#160;</td>
+          <td class="paramname"><em>aPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AttributeValueEncoder &amp;&#160;</td>
+          <td class="paramname"><em>aEncoder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A simpler version of Read(const ReadAttributeRequest &amp; request, AttributeValueEncoder &amp; aEncoder) which takes simply the path being read, for backwards compatibility.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPath</td><td>indicates which exact data is being read. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#ad0f0ab79d0babc85a06582cb5ac2c079">chip::app::AttributeAccessInterface</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a91667018630ab4b3fb384887dcf2b5dc" name="a91667018630ab4b3fb384887dcf2b5dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91667018630ab4b3fb384887dcf2b5dc">&#9670;&#160;</a></span>ReadActionListAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::Clusters::Actions::ActionsServer::ReadActionListAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> &amp;&#160;</td>
+          <td class="paramname"><em>aPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AttributeValueEncoder::ListEncodeHelper &amp;&#160;</td>
+          <td class="paramname"><em>aEncoder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6ea535c1a54af4481472b7887c4221e" name="aa6ea535c1a54af4481472b7887c4221e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6ea535c1a54af4481472b7887c4221e">&#9670;&#160;</a></span>ReadEndpointListAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::Clusters::Actions::ActionsServer::ReadEndpointListAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> &amp;&#160;</td>
+          <td class="paramname"><em>aPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AttributeValueEncoder::ListEncodeHelper &amp;&#160;</td>
+          <td class="paramname"><em>aEncoder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a475da36ead2e05e7a7a76b8d02e64b57" name="a475da36ead2e05e7a7a76b8d02e64b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a475da36ead2e05e7a7a76b8d02e64b57">&#9670;&#160;</a></span>SetDefaultDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::SetDefaultDelegate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td>
+          <td class="paramname"><em>aEndpointId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1Delegate.html">Delegate</a> *&#160;</td>
+          <td class="paramname"><em>aDelegate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8089a5eef2091987981d7568f8d6a540" name="a8089a5eef2091987981d7568f8d6a540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8089a5eef2091987981d7568f8d6a540">&#9670;&#160;</a></span>Shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::Clusters::Actions::ActionsServer::Shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unregisters the CommandHandlerInterface and <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="abb52b95a8675411b40bcdd8932408f99" name="abb52b95a8675411b40bcdd8932408f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb52b95a8675411b40bcdd8932408f99">&#9670;&#160;</a></span>kMaxActionListLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::app::Clusters::Actions::ActionsServer::kMaxActionListLength = 256u</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c5297f301a2652e5548d0b6bc1cbc96" name="a7c5297f301a2652e5548d0b6bc1cbc96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c5297f301a2652e5548d0b6bc1cbc96">&#9670;&#160;</a></span>kMaxEndpointListLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::app::Clusters::Actions::ActionsServer::kMaxEndpointListLength = 256u</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeff4b71d3121053969e587b058c46f48" name="aeff4b71d3121053969e587b058c46f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff4b71d3121053969e587b058c46f48">&#9670;&#160;</a></span>mDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1Delegate.html">Delegate</a>&amp; chip::app::Clusters::Actions::ActionsServer::mDelegate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12cfdd9ac744765db20014ed249851c1" name="a12cfdd9ac744765db20014ed249851c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12cfdd9ac744765db20014ed249851c1">&#9670;&#160;</a></span>mEndpointId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> chip::app::Clusters::Actions::ActionsServer::mEndpointId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c4caeb48038c74384039bb8e3d921c9" name="a9c4caeb48038c74384039bb8e3d921c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4caeb48038c74384039bb8e3d921c9">&#9670;&#160;</a></span>sInstance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html">ActionsServer</a> chip::app::Clusters::Actions::ActionsServer::sInstance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/app/clusters/actions-server/<a class="el" href="actions-server_8h_source.html">actions-server.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

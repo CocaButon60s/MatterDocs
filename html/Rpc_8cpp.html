@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/examples/platform/linux/Rpc.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_10d0982b574d45f69a889a48df526ab0.html">examples</a></li><li class="navelem"><a class="el" href="dir_b568bdd729e53f1ef6f0845f5f040bad.html">platform</a></li><li class="navelem"><a class="el" href="dir_305ccfe11c2879671f1244ec47ab4e9e.html">linux</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">Rpc.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;pw_rpc/server.h&quot;</code><br />
+<code>#include &quot;pw_rpc_system_server/rpc_server.h&quot;</code><br />
+<code>#include &quot;pw_rpc_system_server/socket.h&quot;</code><br />
+<code>#include &lt;<a class="el" href="PlatformManager_8h_source.html">platform/PlatformManager.h</a>&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &quot;<a class="el" href="Rpc_8h_source.html">Rpc.h</a>&quot;</code><br />
+<code>#include &lt;map&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Rpc.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="Rpc_8cpp__incl.png" border="0" usemap="#aconnectedhomeip_2examples_2platform_2linux_2Rpc_8cpp" alt=""/></div>
+<map name="aconnectedhomeip_2examples_2platform_2linux_2Rpc_8cpp" id="aconnectedhomeip_2examples_2platform_2linux_2Rpc_8cpp">
+<area shape="rect" title=" " alt="" coords="683,5,889,45"/>
+<area shape="rect" title=" " alt="" coords="144,101,268,126"/>
+<area shape="poly" title=" " alt="" coords="683,39,495,62,281,96,262,100,261,95,280,91,494,57,682,34"/>
+<area shape="rect" title=" " alt="" coords="293,93,463,133"/>
+<area shape="poly" title=" " alt="" coords="697,48,477,94,476,89,696,43"/>
+<area shape="rect" title=" " alt="" coords="487,93,658,133"/>
+<area shape="poly" title=" " alt="" coords="740,48,633,91,631,86,738,43"/>
+<area shape="rect" href="PlatformManager_8h.html" title=" " alt="" coords="683,101,889,126"/>
+<area shape="poly" title=" " alt="" coords="789,46,789,87,783,87,783,46"/>
+<area shape="rect" title=" " alt="" coords="914,101,978,126"/>
+<area shape="poly" title=" " alt="" coords="822,43,914,92,912,97,820,48"/>
+<area shape="rect" href="Rpc_8h.html" title=" " alt="" coords="1062,101,1121,126"/>
+<area shape="poly" title=" " alt="" coords="854,43,1049,97,1048,103,852,48"/>
+<area shape="rect" title=" " alt="" coords="1145,101,1195,126"/>
+<area shape="poly" title=" " alt="" coords="890,36,1008,57,1072,72,1134,91,1138,92,1136,97,1132,96,1070,77,1007,62,889,42"/>
+<area shape="rect" title=" " alt="" coords="5,181,180,207"/>
+<area shape="poly" title=" " alt="" coords="720,129,670,136,434,162,194,184,194,179,434,156,670,131,719,123"/>
+<area shape="rect" href="CHIPDeviceConfig_8h.html" title=" " alt="" coords="205,181,415,207"/>
+<area shape="poly" title=" " alt="" coords="717,129,393,182,393,176,716,123"/>
+<area shape="rect" title=" " alt="" coords="440,181,647,207"/>
+<area shape="poly" title=" " alt="" coords="752,129,593,180,591,175,750,123"/>
+<area shape="rect" title=" " alt="" coords="671,181,901,207"/>
+<area shape="poly" title=" " alt="" coords="789,126,789,167,783,167,783,126"/>
+<area shape="rect" title=" " alt="" coords="925,181,1095,207"/>
+<area shape="poly" title=" " alt="" coords="819,123,966,174,964,179,818,129"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="231,255,389,280"/>
+<area shape="poly" title=" " alt="" coords="313,207,313,241,307,241,307,207"/>
+<area shape="rect" title=" " alt="" coords="78,328,198,353"/>
+<area shape="poly" title=" " alt="" coords="283,282,180,325,178,320,281,278"/>
+<area shape="rect" title=" " alt="" coords="222,328,398,353"/>
+<area shape="poly" title=" " alt="" coords="313,280,313,314,307,314,307,280"/>
+<area shape="rect" title=" " alt="" coords="423,328,552,353"/>
+<area shape="poly" title=" " alt="" coords="339,278,447,320,445,325,338,282"/>
+<area shape="rect" title=" " alt="" coords="1120,181,1183,207"/>
+<area shape="poly" title=" " alt="" coords="1102,125,1136,168,1132,172,1098,128"/>
+<area shape="rect" title=" " alt="" coords="1207,181,1269,207"/>
+<area shape="poly" title=" " alt="" coords="1114,124,1205,172,1203,177,1112,129"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1rpc" id="r_namespacechip_1_1rpc"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc.html">chip::rpc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1rpc_1_1anonymous__namespace_02Rpc_8cpp_03" id="r_namespacechip_1_1rpc_1_1anonymous__namespace_02Rpc_8cpp_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1anonymous__namespace_02Rpc_8cpp_03.html">chip::rpc::anonymous_namespace{Rpc.cpp}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a3d75240bdb10dd364e35908544d20530" id="r_a3d75240bdb10dd364e35908544d20530"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1anonymous__namespace_02Rpc_8cpp_03.html#a3d75240bdb10dd364e35908544d20530">chip::rpc::anonymous_namespace{Rpc.cpp}::RegisterServices</a> (pw::rpc::Server &amp;server)</td></tr>
+<tr class="separator:a3d75240bdb10dd364e35908544d20530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7010d37cb69460c170fd0e896d90fdd4" id="r_a7010d37cb69460c170fd0e896d90fdd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc.html#a7010d37cb69460c170fd0e896d90fdd4">chip::rpc::RunRpcService</a> ()</td></tr>
+<tr class="separator:a7010d37cb69460c170fd0e896d90fdd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d3b22415f9c3aff2b3db22f3f1c574" id="r_ae7d3b22415f9c3aff2b3db22f3f1c574"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc.html#ae7d3b22415f9c3aff2b3db22f3f1c574">chip::rpc::Init</a> (uint16_t rpcServerPort)</td></tr>
+<tr class="separator:ae7d3b22415f9c3aff2b3db22f3f1c574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

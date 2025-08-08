@@ -1,0 +1,14 @@
+<map id="ExampleDeviceInstanceInfoProvider::GetHardwareVersionString" name="ExampleDeviceInstanceInfoProvider::GetHardwareVersionString">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,78,261,118"/>
+<area shape="rect" id="Node000002" href="$classExampleDeviceInstanceInfoProvider.html#aac41509cfe14865dd0ad5ccd30997de0" title=" " alt="" coords="309,5,545,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,75,295,59,296,65,225,81"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="593,85,744,111"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="262,95,580,95,580,101,262,101"/>
+<area shape="rect" id="Node000005" href="$namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d" title=" " alt="" coords="331,136,523,161"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="250,115,340,131,339,136,249,121"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="530,58,608,79,607,84,528,63"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="632,87,624,77,628,67,643,61,669,59,701,63,713,72,709,76,699,67,669,64,644,66,632,71,629,76,636,83"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="792,85,999,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="745,95,778,95,778,101,745,101"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="488,133,594,111,595,116,489,138"/>
+</map>

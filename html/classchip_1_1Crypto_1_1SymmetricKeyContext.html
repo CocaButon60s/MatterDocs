@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::Crypto::SymmetricKeyContext クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1Crypto.html">Crypto</a></li><li class="navelem"><a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyContext.html">SymmetricKeyContext</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classchip_1_1Crypto_1_1SymmetricKeyContext-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::Crypto::SymmetricKeyContext クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Opaque context used to protect a symmetric key. The key operations must be performed without exposing the protected key value.  
+ <a href="classchip_1_1Crypto_1_1SymmetricKeyContext.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="CHIPCryptoPAL_8h_source.html">CHIPCryptoPAL.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:affdda9d7c79cff930f8360b8278cef7d" id="r_affdda9d7c79cff930f8360b8278cef7d"><td class="memItemLeft" align="right" valign="top">virtual uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyContext.html#affdda9d7c79cff930f8360b8278cef7d">GetKeyHash</a> ()=0</td></tr>
+<tr class="memdesc:affdda9d7c79cff930f8360b8278cef7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the symmetric key hash  <br /></td></tr>
+<tr class="separator:affdda9d7c79cff930f8360b8278cef7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ece001e40a65a0a58560fb1395b8e7" id="r_a44ece001e40a65a0a58560fb1395b8e7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyContext.html#a44ece001e40a65a0a58560fb1395b8e7">~SymmetricKeyContext</a> ()=default</td></tr>
+<tr class="separator:a44ece001e40a65a0a58560fb1395b8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b59532b11aff8ef182cfcdcb9b3357" id="r_a65b59532b11aff8ef182cfcdcb9b3357"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyContext.html#a65b59532b11aff8ef182cfcdcb9b3357">MessageEncrypt</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;plaintext, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;aad, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;nonce, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;mic, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;ciphertext) const =0</td></tr>
+<tr class="memdesc:a65b59532b11aff8ef182cfcdcb9b3357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the message encryption as described in 4.7.2. (Security Processing of Outgoing Messages)  <br /></td></tr>
+<tr class="separator:a65b59532b11aff8ef182cfcdcb9b3357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e3385f09a427986faecde64e3b7939" id="r_a10e3385f09a427986faecde64e3b7939"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyContext.html#a10e3385f09a427986faecde64e3b7939">MessageDecrypt</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;ciphertext, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;aad, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;nonce, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;mic, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;plaintext) const =0</td></tr>
+<tr class="memdesc:a10e3385f09a427986faecde64e3b7939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the message decryption as described in 4.7.3.(Security Processing of Incoming Messages)  <br /></td></tr>
+<tr class="separator:a10e3385f09a427986faecde64e3b7939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af110c89fbae5a1ee22cf848a1d773983" id="r_af110c89fbae5a1ee22cf848a1d773983"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyContext.html#af110c89fbae5a1ee22cf848a1d773983">PrivacyEncrypt</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;input, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;nonce, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;output) const =0</td></tr>
+<tr class="memdesc:af110c89fbae5a1ee22cf848a1d773983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform privacy encoding as described in 4.8.2. (Privacy Processing of Outgoing Messages)  <br /></td></tr>
+<tr class="separator:af110c89fbae5a1ee22cf848a1d773983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58dc01b4def485c5278f02cf1c5d064" id="r_af58dc01b4def485c5278f02cf1c5d064"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyContext.html#af58dc01b4def485c5278f02cf1c5d064">PrivacyDecrypt</a> (const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;input, const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;nonce, <a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;output) const =0</td></tr>
+<tr class="memdesc:af58dc01b4def485c5278f02cf1c5d064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform privacy decoding as described in 4.8.3. (Privacy Processing of Incoming Messages)  <br /></td></tr>
+<tr class="separator:af58dc01b4def485c5278f02cf1c5d064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77db6ec978b5b13f402a6313884a07d4" id="r_a77db6ec978b5b13f402a6313884a07d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyContext.html#a77db6ec978b5b13f402a6313884a07d4">Release</a> ()=0</td></tr>
+<tr class="memdesc:a77db6ec978b5b13f402a6313884a07d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release resources such as dynamic memory used to allocate this instance of the <a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyContext.html" title="Opaque context used to protect a symmetric key. The key operations must be performed without exposing...">SymmetricKeyContext</a>  <br /></td></tr>
+<tr class="separator:a77db6ec978b5b13f402a6313884a07d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Opaque context used to protect a symmetric key. The key operations must be performed without exposing the protected key value. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a44ece001e40a65a0a58560fb1395b8e7" name="a44ece001e40a65a0a58560fb1395b8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ece001e40a65a0a58560fb1395b8e7">&#9670;&#160;</a></span>~SymmetricKeyContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual chip::Crypto::SymmetricKeyContext::~SymmetricKeyContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="affdda9d7c79cff930f8360b8278cef7d" name="affdda9d7c79cff930f8360b8278cef7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affdda9d7c79cff930f8360b8278cef7d">&#9670;&#160;</a></span>GetKeyHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint16_t chip::Crypto::SymmetricKeyContext::GetKeyHash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the symmetric key hash </p>
+<p>TODO: Replace <a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyContext.html#affdda9d7c79cff930f8360b8278cef7d" title="Returns the symmetric key hash">GetKeyHash()</a> with DeriveGroupSessionId(SymmetricKeyContext &amp;, uint16_t &amp; session_id)</p>
+<dl class="section return"><dt>戻り値</dt><dd>Group Key Hash </dd></dl>
+
+</div>
+</div>
+<a id="a10e3385f09a427986faecde64e3b7939" name="a10e3385f09a427986faecde64e3b7939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10e3385f09a427986faecde64e3b7939">&#9670;&#160;</a></span>MessageDecrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Crypto::SymmetricKeyContext::MessageDecrypt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>ciphertext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>aad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>nonce</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>mic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>plaintext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform the message decryption as described in 4.7.3.(Security Processing of Incoming Messages) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ciphertext</td><td>Incoming encrypted payload </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aad</td><td>Additional data (message header contents) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nonce</td><td>Nonce (Security Flags | Message Counter | Source Node ID) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mic</td><td>Incoming Message Integrity Check </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">plaintext</td><td>Incoming message payload. Must be at least as big as ciphertext. The same buffer may be used both for plaintext, and ciphertext. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a65b59532b11aff8ef182cfcdcb9b3357" name="a65b59532b11aff8ef182cfcdcb9b3357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b59532b11aff8ef182cfcdcb9b3357">&#9670;&#160;</a></span>MessageEncrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Crypto::SymmetricKeyContext::MessageEncrypt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>plaintext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>aad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>nonce</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>mic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>ciphertext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform the message encryption as described in 4.7.2. (Security Processing of Outgoing Messages) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plaintext</td><td>Outgoing message payload. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aad</td><td>Additional data (message header contents) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nonce</td><td>Nonce (Security Flags | Message Counter | Source Node ID) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mic</td><td>Outgoing Message Integrity Check </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ciphertext</td><td>Outgoing encrypted payload. Must be at least as big as plaintext. The same buffer may be used both for ciphertext, and plaintext. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_ERROR </dd></dl>
+
+</div>
+</div>
+<a id="af58dc01b4def485c5278f02cf1c5d064" name="af58dc01b4def485c5278f02cf1c5d064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af58dc01b4def485c5278f02cf1c5d064">&#9670;&#160;</a></span>PrivacyDecrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Crypto::SymmetricKeyContext::PrivacyDecrypt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>nonce</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform privacy decoding as described in 4.8.3. (Privacy Processing of Incoming Messages) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>Message header to privacy decrypt </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nonce</td><td>Privacy Nonce = session_id | mic </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Message header deobfuscated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_ERROR </dd></dl>
+
+</div>
+</div>
+<a id="af110c89fbae5a1ee22cf848a1d773983" name="af110c89fbae5a1ee22cf848a1d773983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af110c89fbae5a1ee22cf848a1d773983">&#9670;&#160;</a></span>PrivacyEncrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Crypto::SymmetricKeyContext::PrivacyEncrypt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>nonce</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform privacy encoding as described in 4.8.2. (Privacy Processing of Outgoing Messages) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>Message header to privacy encrypt </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nonce</td><td>Privacy Nonce = session_id | mic </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Message header obfuscated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a77db6ec978b5b13f402a6313884a07d4" name="a77db6ec978b5b13f402a6313884a07d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77db6ec978b5b13f402a6313884a07d4">&#9670;&#160;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void chip::Crypto::SymmetricKeyContext::Release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Release resources such as dynamic memory used to allocate this instance of the <a class="el" href="classchip_1_1Crypto_1_1SymmetricKeyContext.html" title="Opaque context used to protect a symmetric key. The key operations must be performed without exposing...">SymmetricKeyContext</a> </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/crypto/<a class="el" href="CHIPCryptoPAL_8h_source.html">CHIPCryptoPAL.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

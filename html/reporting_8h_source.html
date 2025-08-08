@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/app/reporting/reporting.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_a9aeb43d402f24b4c5513213743384b7.html">app</a></li><li class="navelem"><a class="el" href="dir_6e8df11f0c7753a85be744cf78b83d4a.html">reporting</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">reporting.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="reporting_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="ConcreteAttributePath_8h.html">app/ConcreteAttributePath.h</a>&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="reporting_8h.html#a40f7305633e16b8108577ada09979774">   29</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="reporting_8h.html#a40f7305633e16b8108577ada09979774">MatterReportingAttributeChangeCallback</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> endpoint, <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">chip::ClusterId</a> clusterId, <a class="code hl_typedef" href="namespacechip.html#a9679009d83716300aae025b8a172c401">chip::AttributeId</a> attributeId);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * Same but with a nicer attribute path.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="reporting_8h.html#a1a0ebb34683155a89c44ad7c6bb47686">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="reporting_8h.html#a40f7305633e16b8108577ada09979774">MatterReportingAttributeChangeCallback</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">chip::app::ConcreteAttributePath</a> &amp; aPath);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * Same but only with an EndpointId, this is used when adding / enabling an endpoint during runtime.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="reporting_8h.html#a5aadf68551ac83f2cdf5aa1f4ef06aff">   39</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="reporting_8h.html#a40f7305633e16b8108577ada09979774">MatterReportingAttributeChangeCallback</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> endpoint);</div>
+<div class="ttc" id="aConcreteAttributePath_8h_html"><div class="ttname"><a href="ConcreteAttributePath_8h.html">ConcreteAttributePath.h</a></div></div>
+<div class="ttc" id="anamespacechip_html_a167c692d0d28c8e6a7d0b2f0c50b290a"><div class="ttname"><a href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">chip::ClusterId</a></div><div class="ttdeci">uint32_t ClusterId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:32</div></div>
+<div class="ttc" id="anamespacechip_html_a9679009d83716300aae025b8a172c401"><div class="ttname"><a href="namespacechip.html#a9679009d83716300aae025b8a172c401">chip::AttributeId</a></div><div class="ttdeci">uint32_t AttributeId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:31</div></div>
+<div class="ttc" id="anamespacechip_html_ae2e3807cea12f480cdb9c90c2cca56ef"><div class="ttname"><a href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a></div><div class="ttdeci">uint16_t EndpointId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:40</div></div>
+<div class="ttc" id="areporting_8h_html_a40f7305633e16b8108577ada09979774"><div class="ttname"><a href="reporting_8h.html#a40f7305633e16b8108577ada09979774">MatterReportingAttributeChangeCallback</a></div><div class="ttdeci">void MatterReportingAttributeChangeCallback(chip::EndpointId endpoint, chip::ClusterId clusterId, chip::AttributeId attributeId)</div><div class="ttdoc">Reporting Attribute Change</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteAttributePath_html"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteAttributePath.html">chip::app::ConcreteAttributePath</a></div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

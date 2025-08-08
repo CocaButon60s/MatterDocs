@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/support/SafeInt.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_1d1f3af32c41ad09e7d154e58874adc8.html">support</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">SafeInt.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+SafeInt.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="SafeInt_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2lib_2support_2SafeInt_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2lib_2support_2SafeInt_8h" id="aconnectedhomeip_2src_2lib_2support_2SafeInt_8h">
+<area shape="rect" title=" " alt="" coords="43,5,205,45"/>
+<area shape="rect" title=" " alt="" coords="5,93,64,119"/>
+<area shape="poly" title=" " alt="" coords="104,48,60,86,56,82,101,44"/>
+<area shape="rect" title=" " alt="" coords="89,93,159,119"/>
+<area shape="poly" title=" " alt="" coords="127,46,127,79,121,79,121,46"/>
+<area shape="rect" title=" " alt="" coords="183,93,275,119"/>
+<area shape="poly" title=" " alt="" coords="151,43,204,83,201,87,148,48"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="SafeInt_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2lib_2support_2SafeInt_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2lib_2support_2SafeInt_8hdep" id="aconnectedhomeip_2src_2lib_2support_2SafeInt_8hdep">
+<area shape="rect" title=" " alt="" coords="132,5,293,45"/>
+<area shape="rect" href="Options_8cpp.html" title=" " alt="" coords="5,93,212,133"/>
+<area shape="poly" title=" " alt="" coords="181,56,133,95,130,91,177,52"/>
+<area shape="rect" href="Server_8h.html" title=" " alt="" coords="236,93,397,133"/>
+<area shape="poly" title=" " alt="" coords="248,52,295,91,292,95,245,56"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="27,284,233,324"/>
+<area shape="poly" title=" " alt="" coords="225,140,167,160,145,171,132,183,122,207,119,234,126,283,121,284,114,234,116,206,128,180,142,167,165,155,223,135"/>
+<area shape="rect" href="AppMain_8cpp.html" title=" " alt="" coords="271,284,477,324"/>
+<area shape="poly" title=" " alt="" coords="344,143,365,180,376,236,378,284,372,284,371,237,359,182,339,146"/>
+<area shape="rect" href="AppMain_8h.html" title=" " alt="" coords="143,189,349,229"/>
+<area shape="poly" title=" " alt="" coords="296,146,262,190,258,187,292,143"/>
+<area shape="rect" href="CommissioneeShellCommands_8cpp.html" title=" " alt="" coords="425,181,675,236"/>
+<area shape="poly" title=" " alt="" coords="378,136,485,179,483,184,376,141"/>
+<area shape="poly" title=" " alt="" coords="214,239,155,286,152,282,210,235"/>
+<area shape="poly" title=" " alt="" coords="285,235,350,282,347,286,281,239"/>
+</map>
+</div>
+</div>
+<p><a href="SafeInt_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a53794e3da556f4491f1ac9a1c6a5fadc" id="r_a53794e3da556f4491f1ac9a1c6a5fadc"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , std::enable_if_t&lt; std::is_integral&lt; T &gt;::value, int &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a53794e3da556f4491f1ac9a1c6a5fadc"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacechip.html#a53794e3da556f4491f1ac9a1c6a5fadc">chip::CanCastTo</a> (U arg)</td></tr>
+<tr class="separator:a53794e3da556f4491f1ac9a1c6a5fadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404f138692d990b01d966a0c81a1d72c" id="r_a404f138692d990b01d966a0c81a1d72c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a404f138692d990b01d966a0c81a1d72c"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_unsigned&lt; T &gt;::value, typenamestd::make_signed&lt; T &gt;::type &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacechip.html#a404f138692d990b01d966a0c81a1d72c">chip::CastToSigned</a> (T arg)</td></tr>
+<tr class="separator:a404f138692d990b01d966a0c81a1d72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Utilities for safely working with integer types. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

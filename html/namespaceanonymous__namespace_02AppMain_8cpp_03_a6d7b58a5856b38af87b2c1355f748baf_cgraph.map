@@ -1,0 +1,25 @@
+<map id="anonymous_namespace{AppMain::cpp}::InitNetworkCommissioning" name="anonymous_namespace{AppMain::cpp}::InitNetworkCommissioning">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,185,216,240"/>
+<area shape="rect" id="Node000002" href="$endpoint-config-api_8h.html#ab2030cb8a85f4fe96c84316b62604ff1" title="Enable/disable endpoints" alt="" coords="264,5,492,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,184,149,150,180,111,219,72,263,40,275,33,278,38,265,44,222,76,184,114,153,153,131,187"/>
+<area shape="rect" id="Node000003" href="$namespaceanonymous__namespace_02AppMain_8cpp_03.html#a15088dc9ad525bdcbaf5afa96fcddc87" title=" " alt="" coords="267,55,489,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,183,263,126,293,112,296,117,265,131,160,188"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="593,135,743,160"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="204,183,264,170,347,159,431,152,578,145,579,151,431,157,347,164,264,175,205,188"/>
+<area shape="rect" id="Node000006" href="$namespaceanonymous__namespace_02AppMain_8cpp_03.html#a22be42790b6e9cceb03fbd956eaa4211" title=" " alt="" coords="275,185,481,240"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="216,210,261,210,261,215,216,215"/>
+<area shape="rect" id="Node000007" href="$structLinuxDeviceOptions.html#a80e54198d3e60b3a2c7d351683548d88" title=" " alt="" coords="302,265,454,305"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="214,238,291,258,289,264,212,243"/>
+<area shape="rect" id="Node000009" href="$classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="577,355,759,380"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="144,238,198,279,231,298,265,314,341,337,419,352,495,361,564,365,563,370,495,366,419,358,339,342,263,319,228,303,195,283,141,242"/>
+<area shape="rect" id="Node000010" href="$classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="300,380,456,405"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="135,239,190,299,226,331,265,358,299,373,297,378,263,363,223,335,186,303,131,242"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="490,104,598,129,597,134,489,110"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="623,136,614,126,619,116,637,110,668,108,708,112,719,117,722,124,718,126,715,121,707,117,668,113,638,115,622,120,619,126,627,133"/>
+<area shape="rect" id="Node000005" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="844,135,1051,160"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="743,145,830,145,830,150,743,150"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="481,187,597,160,598,166,482,192"/>
+<area shape="rect" id="Node000008" href="$namespacechip_1_1Credentials_1_1Examples.html#a392bf49f9b6ee815567a0d9bfaebf491" title="Get implementation of a sample DAC provider to validate device attestation procedure." alt="" coords="540,265,796,305"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="454,282,527,282,527,287,454,287"/>
+<area shape="poly" id="edge13_Node000010_Node000009" title=" " alt="" coords="456,383,564,374,564,379,457,389"/>
+</map>

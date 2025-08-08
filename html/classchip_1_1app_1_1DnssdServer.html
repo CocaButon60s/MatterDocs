@@ -1,0 +1,1125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::app::DnssdServer クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1app.html">app</a></li><li class="navelem"><a class="el" href="classchip_1_1app_1_1DnssdServer.html">DnssdServer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classchip_1_1app_1_1DnssdServer-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::app::DnssdServer クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Dnssd_8h_source.html">Dnssd.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::app::DnssdServer の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1DnssdServer__inherit__graph.png" border="0" usemap="#achip_1_1app_1_1DnssdServer_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1app_1_1DnssdServer_inherit__map" id="achip_1_1app_1_1DnssdServer_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,79,176,104"/>
+<area shape="rect" title=" " alt="" coords="21,5,160,31"/>
+<area shape="poly" title=" " alt="" coords="93,44,93,79,88,79,88,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::app::DnssdServer 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1DnssdServer__coll__graph.png" border="0" usemap="#achip_1_1app_1_1DnssdServer_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1app_1_1DnssdServer_coll__map" id="achip_1_1app_1_1DnssdServer_coll__map">
+<area shape="rect" title=" " alt="" coords="976,55,1147,80"/>
+<area shape="rect" title=" " alt="" coords="585,5,724,31"/>
+<area shape="poly" title=" " alt="" coords="738,22,952,45,997,52,996,57,952,50,738,27"/>
+<area shape="rect" href="classchip_1_1Inet_1_1InterfaceId.html" title=" " alt="" coords="575,55,735,80"/>
+<area shape="poly" title=" " alt="" coords="748,65,976,65,976,70,748,70"/>
+<area shape="rect" href="classchip_1_1Optional.html" title=" " alt="" coords="557,104,752,129"/>
+<area shape="poly" title=" " alt="" coords="765,105,952,85,996,77,997,83,952,90,766,111"/>
+<area shape="rect" href="classchip_1_1Optional_1_1ValueHolder.html" title=" " alt="" coords="261,97,412,137"/>
+<area shape="poly" title=" " alt="" coords="426,114,557,114,557,119,426,119"/>
+<area shape="rect" title=" " alt="" coords="5,75,212,159"/>
+<area shape="poly" title=" " alt="" coords="226,114,261,114,261,119,226,119"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a66d778a8a2ae42ce43aeaf4a3e2759d9" id="r_a66d778a8a2ae42ce43aeaf4a3e2759d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a66d778a8a2ae42ce43aeaf4a3e2759d9">SetSecuredIPv6Port</a> (uint16_t port)</td></tr>
+<tr class="memdesc:a66d778a8a2ae42ce43aeaf4a3e2759d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the secure Matter IPv6 port  <br /></td></tr>
+<tr class="separator:a66d778a8a2ae42ce43aeaf4a3e2759d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f19cf06ca892efe616b5d8a3b70a92" id="r_a26f19cf06ca892efe616b5d8a3b70a92"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a26f19cf06ca892efe616b5d8a3b70a92">GetSecuredPort</a> () const</td></tr>
+<tr class="memdesc:a26f19cf06ca892efe616b5d8a3b70a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the secure Matter port  <br /></td></tr>
+<tr class="separator:a26f19cf06ca892efe616b5d8a3b70a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f759385123e4230000057478739d7e0" id="r_a9f759385123e4230000057478739d7e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a9f759385123e4230000057478739d7e0">SetUnsecuredPort</a> (uint16_t port)</td></tr>
+<tr class="memdesc:a9f759385123e4230000057478739d7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the unsecure Matter port  <br /></td></tr>
+<tr class="separator:a9f759385123e4230000057478739d7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59646d58feb06280b73ab61dcbf75178" id="r_a59646d58feb06280b73ab61dcbf75178"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a59646d58feb06280b73ab61dcbf75178">GetUnsecuredPort</a> () const</td></tr>
+<tr class="memdesc:a59646d58feb06280b73ab61dcbf75178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the unsecure Matter port  <br /></td></tr>
+<tr class="separator:a59646d58feb06280b73ab61dcbf75178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c940ef0b002a681d9f66ea7d79b164a" id="r_a5c940ef0b002a681d9f66ea7d79b164a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a5c940ef0b002a681d9f66ea7d79b164a">SetInterfaceId</a> (<a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a> interfaceId)</td></tr>
+<tr class="memdesc:a5c940ef0b002a681d9f66ea7d79b164a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the interface id used for advertising  <br /></td></tr>
+<tr class="separator:a5c940ef0b002a681d9f66ea7d79b164a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad035bab831cb3bcc05b776f2f35c143c" id="r_ad035bab831cb3bcc05b776f2f35c143c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#ad035bab831cb3bcc05b776f2f35c143c">GetInterfaceId</a> ()</td></tr>
+<tr class="memdesc:ad035bab831cb3bcc05b776f2f35c143c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the interface id used for advertising  <br /></td></tr>
+<tr class="separator:ad035bab831cb3bcc05b776f2f35c143c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fd545ae46c2a99d66366a2913cbf9d" id="r_ae7fd545ae46c2a99d66366a2913cbf9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#ae7fd545ae46c2a99d66366a2913cbf9d">SetFabricTable</a> (FabricTable *table)</td></tr>
+<tr class="separator:ae7fd545ae46c2a99d66366a2913cbf9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4676f5232d056b04b7115d06c470cd48" id="r_a4676f5232d056b04b7115d06c470cd48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a4676f5232d056b04b7115d06c470cd48">SetCommissioningModeProvider</a> (CommissioningModeProvider *provider)</td></tr>
+<tr class="separator:a4676f5232d056b04b7115d06c470cd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a2de9dd032bb1a57b107900943d620" id="r_a19a2de9dd032bb1a57b107900943d620"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a19a2de9dd032bb1a57b107900943d620">AdvertiseOperational</a> ()</td></tr>
+<tr class="memdesc:a19a2de9dd032bb1a57b107900943d620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start operational advertising  <br /></td></tr>
+<tr class="separator:a19a2de9dd032bb1a57b107900943d620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a20c2a5830002513dd22e0c28d42041" id="r_a6a20c2a5830002513dd22e0c28d42041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a6a20c2a5830002513dd22e0c28d42041">StartServer</a> ()</td></tr>
+<tr class="separator:a6a20c2a5830002513dd22e0c28d42041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2248c7d76712918c8ce395c8974216a9" id="r_a2248c7d76712918c8ce395c8974216a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a2248c7d76712918c8ce395c8974216a9">StartServer</a> (Dnssd::CommissioningMode mode)</td></tr>
+<tr class="memdesc:a2248c7d76712918c8ce395c8974216a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Re-)starts the <a class="el" href="namespacechip_1_1Dnssd.html">Dnssd</a> server, using the provided commissioning mode.  <br /></td></tr>
+<tr class="separator:a2248c7d76712918c8ce395c8974216a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e6636ea06879a3031e0db0c3839a08" id="r_a66e6636ea06879a3031e0db0c3839a08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a66e6636ea06879a3031e0db0c3839a08">StopServer</a> ()</td></tr>
+<tr class="separator:a66e6636ea06879a3031e0db0c3839a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6986dc852b9de1d2e8b01907eeb72797" id="r_a6986dc852b9de1d2e8b01907eeb72797"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a6986dc852b9de1d2e8b01907eeb72797">GenerateRotatingDeviceId</a> (char rotatingDeviceIdHexBuffer[], size_t rotatingDeviceIdHexBufferSize)</td></tr>
+<tr class="separator:a6986dc852b9de1d2e8b01907eeb72797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c53dd43936055faf22a26196a89124" id="r_a51c53dd43936055faf22a26196a89124"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a51c53dd43936055faf22a26196a89124">GetCommissionableInstanceName</a> (char *buffer, size_t bufferLen)</td></tr>
+<tr class="memdesc:a51c53dd43936055faf22a26196a89124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the (random) instance name that a CHIP device is to use for pre-commissioning DNS-SD  <br /></td></tr>
+<tr class="separator:a51c53dd43936055faf22a26196a89124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9616ae202d862605460ce42c3fe7bf7" id="r_ad9616ae202d862605460ce42c3fe7bf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#ad9616ae202d862605460ce42c3fe7bf7">SetEphemeralDiscriminator</a> (<a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; uint16_t &gt; discriminator)</td></tr>
+<tr class="memdesc:ad9616ae202d862605460ce42c3fe7bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides configuration so that commissionable advertisement will use an ephemeral discriminator such as one set for ECM. If the <a class="el" href="classchip_1_1Optional.html">Optional</a> has no value, the default basic discriminator is used as usual.  <br /></td></tr>
+<tr class="separator:ad9616ae202d862605460ce42c3fe7bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8bce0ad38d54f234cfbcf5e9b30d13" id="r_a4d8bce0ad38d54f234cfbcf5e9b30d13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a4d8bce0ad38d54f234cfbcf5e9b30d13">OnICDModeChange</a> () override</td></tr>
+<tr class="memdesc:a4d8bce0ad38d54f234cfbcf5e9b30d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the ICD changes operating mode, the dnssd server needs to restart its DNS-SD advertising to update the TXT keys.  <br /></td></tr>
+<tr class="separator:a4d8bce0ad38d54f234cfbcf5e9b30d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d86b86f106681d06c04d2a30a16e0e" id="r_ad1d86b86f106681d06c04d2a30a16e0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#ad1d86b86f106681d06c04d2a30a16e0e">OnEnterActiveMode</a> () override</td></tr>
+<tr class="memdesc:ad1d86b86f106681d06c04d2a30a16e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">dnssd server has no action to do on this ICD event. Do nothing.  <br /></td></tr>
+<tr class="separator:ad1d86b86f106681d06c04d2a30a16e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de5a30d4aa7f72bae842ad7afb95b04" id="r_a0de5a30d4aa7f72bae842ad7afb95b04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a0de5a30d4aa7f72bae842ad7afb95b04">OnTransitionToIdle</a> () override</td></tr>
+<tr class="memdesc:a0de5a30d4aa7f72bae842ad7afb95b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">dnssd server has no action to do on this ICD event. Do nothing.  <br /></td></tr>
+<tr class="separator:a0de5a30d4aa7f72bae842ad7afb95b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66a5a156bdcef66f62324f277f4bdf1" id="r_ac66a5a156bdcef66f62324f277f4bdf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#ac66a5a156bdcef66f62324f277f4bdf1">OnEnterIdleMode</a> () override</td></tr>
+<tr class="memdesc:ac66a5a156bdcef66f62324f277f4bdf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">dnssd server has no action to do on this ICD event. Do nothing.  <br /></td></tr>
+<tr class="separator:ac66a5a156bdcef66f62324f277f4bdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a082e0a6e768395c9eaf50f948acbd4c7" id="r_a082e0a6e768395c9eaf50f948acbd4c7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classchip_1_1app_1_1DnssdServer.html">DnssdServer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a082e0a6e768395c9eaf50f948acbd4c7">Instance</a> ()</td></tr>
+<tr class="memdesc:a082e0a6e768395c9eaf50f948acbd4c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the system-wide implementation of the service advertiser  <br /></td></tr>
+<tr class="separator:a082e0a6e768395c9eaf50f948acbd4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:ab45501cb45c134edbd50529926da998d" id="r_ab45501cb45c134edbd50529926da998d"><td class="memItemLeft" align="right" valign="top">static constexpr System::Clock::Timestamp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#ab45501cb45c134edbd50529926da998d">kTimeoutCleared</a> = System::Clock::kZero</td></tr>
+<tr class="separator:ab45501cb45c134edbd50529926da998d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a71b560e079346c27ce8a738f3498ab65" id="r_a71b560e079346c27ce8a738f3498ab65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a71b560e079346c27ce8a738f3498ab65">Advertise</a> (bool commissionableNode, chip::Dnssd::CommissioningMode mode)</td></tr>
+<tr class="separator:a71b560e079346c27ce8a738f3498ab65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a790970e40c2b303e2496169c8b9c2ca8" id="r_a790970e40c2b303e2496169c8b9c2ca8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a790970e40c2b303e2496169c8b9c2ca8">AdvertiseCommissioner</a> ()</td></tr>
+<tr class="memdesc:a790970e40c2b303e2496169c8b9c2ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set MDNS commissioner advertisement  <br /></td></tr>
+<tr class="separator:a790970e40c2b303e2496169c8b9c2ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328af8cbfced23c88aafb1623d7c9419" id="r_a328af8cbfced23c88aafb1623d7c9419"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a328af8cbfced23c88aafb1623d7c9419">AdvertiseCommissionableNode</a> (chip::Dnssd::CommissioningMode mode)</td></tr>
+<tr class="memdesc:a328af8cbfced23c88aafb1623d7c9419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set MDNS commissionable node advertisement  <br /></td></tr>
+<tr class="separator:a328af8cbfced23c88aafb1623d7c9419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c14e9a5dcdd95f2bc49b83be5919dee" id="r_a8c14e9a5dcdd95f2bc49b83be5919dee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a8c14e9a5dcdd95f2bc49b83be5919dee">GetPrimaryOrFallbackMACAddress</a> (<a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;mac)</td></tr>
+<tr class="separator:a8c14e9a5dcdd95f2bc49b83be5919dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb5f78f8f09b76528ab8e02fa7b93d65" id="r_abb5f78f8f09b76528ab8e02fa7b93d65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#abb5f78f8f09b76528ab8e02fa7b93d65">HaveOperationalCredentials</a> ()</td></tr>
+<tr class="separator:abb5f78f8f09b76528ab8e02fa7b93d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706eef18813150fc2661e47ab03950e7" id="r_a706eef18813150fc2661e47ab03950e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a706eef18813150fc2661e47ab03950e7">SecuredIPv4PortMatchesIPv6Port</a> () const</td></tr>
+<tr class="separator:a706eef18813150fc2661e47ab03950e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ad0b83d16d4dc820add98fffe0f8eca38" id="r_ad0b83d16d4dc820add98fffe0f8eca38"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#ad0b83d16d4dc820add98fffe0f8eca38">mFallbackMAC</a> [<a class="el" href="classchip_1_1DeviceLayer_1_1ConfigurationManager.html#a66a0371723c28e67aed8f7e30371897fad1b2bedf92189ad1750c9db8760efe18">chip::DeviceLayer::ConfigurationManager::kPrimaryMACAddressLength</a>] = { 0 }</td></tr>
+<tr class="separator:ad0b83d16d4dc820add98fffe0f8eca38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7718517def401878ccadf176f3328471" id="r_a7718517def401878ccadf176f3328471"><td class="memItemLeft" align="right" valign="top">FabricTable *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a7718517def401878ccadf176f3328471">mFabricTable</a> = nullptr</td></tr>
+<tr class="separator:a7718517def401878ccadf176f3328471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4aecbed8f96515c47616ce836fca840" id="r_ae4aecbed8f96515c47616ce836fca840"><td class="memItemLeft" align="right" valign="top">CommissioningModeProvider *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#ae4aecbed8f96515c47616ce836fca840">mCommissioningModeProvider</a> = nullptr</td></tr>
+<tr class="separator:ae4aecbed8f96515c47616ce836fca840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5f7592dd58defdb5c0d1ed8a5db7b6" id="r_abf5f7592dd58defdb5c0d1ed8a5db7b6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#abf5f7592dd58defdb5c0d1ed8a5db7b6">mSecuredIPv6Port</a> = <a class="el" href="CHIPConfig_8h.html#a6affe2b65fc2ab95d72bc782ab34908c">CHIP_PORT</a></td></tr>
+<tr class="separator:abf5f7592dd58defdb5c0d1ed8a5db7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96997c24e912789bb127b1c195409df" id="r_ae96997c24e912789bb127b1c195409df"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#ae96997c24e912789bb127b1c195409df">mUnsecuredPort</a> = <a class="el" href="CHIPConfig_8h.html#a9d7f7b42cde77e003c383afaca573db5">CHIP_UDC_PORT</a></td></tr>
+<tr class="separator:ae96997c24e912789bb127b1c195409df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89fd1de82cb3a83951b3f79590ce44e9" id="r_a89fd1de82cb3a83951b3f79590ce44e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a89fd1de82cb3a83951b3f79590ce44e9">mInterfaceId</a> = <a class="el" href="classchip_1_1Inet_1_1InterfaceId.html#af5af583e6c6d8343374241114077999d">Inet::InterfaceId::Null</a>()</td></tr>
+<tr class="separator:a89fd1de82cb3a83951b3f79590ce44e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6511be100ae43270468dfdd2266116b2" id="r_a6511be100ae43270468dfdd2266116b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html#a6511be100ae43270468dfdd2266116b2">mEphemeralDiscriminator</a></td></tr>
+<tr class="separator:a6511be100ae43270468dfdd2266116b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a71b560e079346c27ce8a738f3498ab65" name="a71b560e079346c27ce8a738f3498ab65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b560e079346c27ce8a738f3498ab65">&#9670;&#160;</a></span>Advertise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::DnssdServer::Advertise </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>commissionableNode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">chip::Dnssd::CommissioningMode&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overloaded utility method for commissioner and commissionable advertisement This method is used for both commissioner discovery and commissionable node discovery since they share many fields. commissionableNode = true : advertise commissionable node commissionableNode = false : advertise commissioner </p>
+
+</div>
+</div>
+<a id="a328af8cbfced23c88aafb1623d7c9419" name="a328af8cbfced23c88aafb1623d7c9419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328af8cbfced23c88aafb1623d7c9419">&#9670;&#160;</a></span>AdvertiseCommissionableNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::DnssdServer::AdvertiseCommissionableNode </td>
+          <td>(</td>
+          <td class="paramtype">chip::Dnssd::CommissioningMode&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set MDNS commissionable node advertisement </p>
+
+</div>
+</div>
+<a id="a790970e40c2b303e2496169c8b9c2ca8" name="a790970e40c2b303e2496169c8b9c2ca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a790970e40c2b303e2496169c8b9c2ca8">&#9670;&#160;</a></span>AdvertiseCommissioner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::DnssdServer::AdvertiseCommissioner </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set MDNS commissioner advertisement </p>
+
+</div>
+</div>
+<a id="a19a2de9dd032bb1a57b107900943d620" name="a19a2de9dd032bb1a57b107900943d620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a2de9dd032bb1a57b107900943d620">&#9670;&#160;</a></span>AdvertiseOperational()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::DnssdServer::AdvertiseOperational </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start operational advertising </p>
+
+</div>
+</div>
+<a id="a6986dc852b9de1d2e8b01907eeb72797" name="a6986dc852b9de1d2e8b01907eeb72797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6986dc852b9de1d2e8b01907eeb72797">&#9670;&#160;</a></span>GenerateRotatingDeviceId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::DnssdServer::GenerateRotatingDeviceId </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>rotatingDeviceIdHexBuffer</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>rotatingDeviceIdHexBufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51c53dd43936055faf22a26196a89124" name="a51c53dd43936055faf22a26196a89124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c53dd43936055faf22a26196a89124">&#9670;&#160;</a></span>GetCommissionableInstanceName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::DnssdServer::GetCommissionableInstanceName </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bufferLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates the (random) instance name that a CHIP device is to use for pre-commissioning DNS-SD </p>
+
+</div>
+</div>
+<a id="ad035bab831cb3bcc05b776f2f35c143c" name="ad035bab831cb3bcc05b776f2f35c143c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad035bab831cb3bcc05b776f2f35c143c">&#9670;&#160;</a></span>GetInterfaceId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a> chip::app::DnssdServer::GetInterfaceId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the interface id used for advertising </p>
+
+</div>
+</div>
+<a id="a8c14e9a5dcdd95f2bc49b83be5919dee" name="a8c14e9a5dcdd95f2bc49b83be5919dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c14e9a5dcdd95f2bc49b83be5919dee">&#9670;&#160;</a></span>GetPrimaryOrFallbackMACAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::GetPrimaryOrFallbackMACAddress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>mac</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26f19cf06ca892efe616b5d8a3b70a92" name="a26f19cf06ca892efe616b5d8a3b70a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f19cf06ca892efe616b5d8a3b70a92">&#9670;&#160;</a></span>GetSecuredPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t chip::app::DnssdServer::GetSecuredPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the secure Matter port </p>
+
+</div>
+</div>
+<a id="a59646d58feb06280b73ab61dcbf75178" name="a59646d58feb06280b73ab61dcbf75178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59646d58feb06280b73ab61dcbf75178">&#9670;&#160;</a></span>GetUnsecuredPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t chip::app::DnssdServer::GetUnsecuredPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the unsecure Matter port </p>
+
+</div>
+</div>
+<a id="abb5f78f8f09b76528ab8e02fa7b93d65" name="abb5f78f8f09b76528ab8e02fa7b93d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb5f78f8f09b76528ab8e02fa7b93d65">&#9670;&#160;</a></span>HaveOperationalCredentials()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::DnssdServer::HaveOperationalCredentials </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a082e0a6e768395c9eaf50f948acbd4c7" name="a082e0a6e768395c9eaf50f948acbd4c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082e0a6e768395c9eaf50f948acbd4c7">&#9670;&#160;</a></span>Instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classchip_1_1app_1_1DnssdServer.html">DnssdServer</a> &amp; chip::app::DnssdServer::Instance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Provides the system-wide implementation of the service advertiser </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1DnssdServer_a082e0a6e768395c9eaf50f948acbd4c7_icgraph.png" border="0" usemap="#aclasschip_1_1app_1_1DnssdServer_a082e0a6e768395c9eaf50f948acbd4c7_icgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1DnssdServer_a082e0a6e768395c9eaf50f948acbd4c7_icgraph" id="aclasschip_1_1app_1_1DnssdServer_a082e0a6e768395c9eaf50f948acbd4c7_icgraph">
+<area shape="rect" title="Provides the system&#45;wide implementation of the service advertiser" alt="" coords="897,37,1068,77"/>
+<area shape="rect" href="namespacechip_1_1Shell.html#a63caa983b0e6ae4eb80991439f1bdcee" title=" " alt="" coords="641,5,835,45"/>
+<area shape="poly" title=" " alt="" coords="883,47,835,41,836,35,884,42"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a30b097f657c6c2c553c2c573f52ed36d" title=" " alt="" coords="627,69,849,109"/>
+<area shape="poly" title=" " alt="" coords="884,73,850,77,849,72,883,68"/>
+<area shape="rect" href="namespacechip_1_1Shell.html#ae532786c8c06657dca496e305a3a4979" title=" " alt="" coords="331,8,579,48"/>
+<area shape="poly" title=" " alt="" coords="627,29,579,29,579,24,627,24"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,19,283,45"/>
+<area shape="poly" title=" " alt="" coords="317,33,283,33,283,28,317,27"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,46,60,71"/>
+<area shape="poly" title=" " alt="" coords="105,50,60,57,60,52,104,44"/>
+<area shape="rect" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="129,70,261,95"/>
+<area shape="poly" title=" " alt="" coords="613,90,261,86,261,81,613,85"/>
+<area shape="poly" title=" " alt="" coords="115,73,60,65,61,60,116,68"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad1d86b86f106681d06c04d2a30a16e0e" name="ad1d86b86f106681d06c04d2a30a16e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d86b86f106681d06c04d2a30a16e0e">&#9670;&#160;</a></span>OnEnterActiveMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::OnEnterActiveMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dnssd server has no action to do on this ICD event. Do nothing. </p>
+
+</div>
+</div>
+<a id="ac66a5a156bdcef66f62324f277f4bdf1" name="ac66a5a156bdcef66f62324f277f4bdf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac66a5a156bdcef66f62324f277f4bdf1">&#9670;&#160;</a></span>OnEnterIdleMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::OnEnterIdleMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dnssd server has no action to do on this ICD event. Do nothing. </p>
+
+</div>
+</div>
+<a id="a4d8bce0ad38d54f234cfbcf5e9b30d13" name="a4d8bce0ad38d54f234cfbcf5e9b30d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8bce0ad38d54f234cfbcf5e9b30d13">&#9670;&#160;</a></span>OnICDModeChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::OnICDModeChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When the ICD changes operating mode, the dnssd server needs to restart its DNS-SD advertising to update the TXT keys. </p>
+
+</div>
+</div>
+<a id="a0de5a30d4aa7f72bae842ad7afb95b04" name="a0de5a30d4aa7f72bae842ad7afb95b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de5a30d4aa7f72bae842ad7afb95b04">&#9670;&#160;</a></span>OnTransitionToIdle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::OnTransitionToIdle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dnssd server has no action to do on this ICD event. Do nothing. </p>
+
+</div>
+</div>
+<a id="a706eef18813150fc2661e47ab03950e7" name="a706eef18813150fc2661e47ab03950e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706eef18813150fc2661e47ab03950e7">&#9670;&#160;</a></span>SecuredIPv4PortMatchesIPv6Port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::DnssdServer::SecuredIPv4PortMatchesIPv6Port </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4676f5232d056b04b7115d06c470cd48" name="a4676f5232d056b04b7115d06c470cd48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4676f5232d056b04b7115d06c470cd48">&#9670;&#160;</a></span>SetCommissioningModeProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::SetCommissioningModeProvider </td>
+          <td>(</td>
+          <td class="paramtype">CommissioningModeProvider *&#160;</td>
+          <td class="paramname"><em>provider</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9616ae202d862605460ce42c3fe7bf7" name="ad9616ae202d862605460ce42c3fe7bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9616ae202d862605460ce42c3fe7bf7">&#9670;&#160;</a></span>SetEphemeralDiscriminator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::DnssdServer::SetEphemeralDiscriminator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; uint16_t &gt;&#160;</td>
+          <td class="paramname"><em>discriminator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overrides configuration so that commissionable advertisement will use an ephemeral discriminator such as one set for ECM. If the <a class="el" href="classchip_1_1Optional.html">Optional</a> has no value, the default basic discriminator is used as usual. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">discriminator</td><td>Ephemeral discriminator to override if it HasValue(), otherwise reverts to default. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_NO_ERROR on success or CHIP_ERROR_INVALID_ARGUMENT on invalid value </dd></dl>
+
+</div>
+</div>
+<a id="ae7fd545ae46c2a99d66366a2913cbf9d" name="ae7fd545ae46c2a99d66366a2913cbf9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7fd545ae46c2a99d66366a2913cbf9d">&#9670;&#160;</a></span>SetFabricTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::SetFabricTable </td>
+          <td>(</td>
+          <td class="paramtype">FabricTable *&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c940ef0b002a681d9f66ea7d79b164a" name="a5c940ef0b002a681d9f66ea7d79b164a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c940ef0b002a681d9f66ea7d79b164a">&#9670;&#160;</a></span>SetInterfaceId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::SetInterfaceId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a>&#160;</td>
+          <td class="paramname"><em>interfaceId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the interface id used for advertising </p>
+
+</div>
+</div>
+<a id="a66d778a8a2ae42ce43aeaf4a3e2759d9" name="a66d778a8a2ae42ce43aeaf4a3e2759d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66d778a8a2ae42ce43aeaf4a3e2759d9">&#9670;&#160;</a></span>SetSecuredIPv6Port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::SetSecuredIPv6Port </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the secure Matter IPv6 port </p>
+
+</div>
+</div>
+<a id="a9f759385123e4230000057478739d7e0" name="a9f759385123e4230000057478739d7e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f759385123e4230000057478739d7e0">&#9670;&#160;</a></span>SetUnsecuredPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::SetUnsecuredPort </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the unsecure Matter port </p>
+
+</div>
+</div>
+<a id="a6a20c2a5830002513dd22e0c28d42041" name="a6a20c2a5830002513dd22e0c28d42041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a20c2a5830002513dd22e0c28d42041">&#9670;&#160;</a></span>StartServer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::StartServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(Re-)starts the <a class="el" href="namespacechip_1_1Dnssd.html">Dnssd</a> server, using the commissioning mode from our commissioning mode provider. </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1DnssdServer_a6a20c2a5830002513dd22e0c28d42041_icgraph.png" border="0" usemap="#aclasschip_1_1app_1_1DnssdServer_a6a20c2a5830002513dd22e0c28d42041_icgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1DnssdServer_a6a20c2a5830002513dd22e0c28d42041_icgraph" id="aclasschip_1_1app_1_1DnssdServer_a6a20c2a5830002513dd22e0c28d42041_icgraph">
+<area shape="rect" title=" " alt="" coords="897,37,1068,77"/>
+<area shape="rect" href="namespacechip_1_1Shell.html#a63caa983b0e6ae4eb80991439f1bdcee" title=" " alt="" coords="641,5,835,45"/>
+<area shape="poly" title=" " alt="" coords="883,47,835,41,836,35,884,42"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a30b097f657c6c2c553c2c573f52ed36d" title=" " alt="" coords="627,69,849,109"/>
+<area shape="poly" title=" " alt="" coords="884,73,850,77,849,72,883,68"/>
+<area shape="rect" href="namespacechip_1_1Shell.html#ae532786c8c06657dca496e305a3a4979" title=" " alt="" coords="331,8,579,48"/>
+<area shape="poly" title=" " alt="" coords="627,29,579,29,579,24,627,24"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,19,283,45"/>
+<area shape="poly" title=" " alt="" coords="317,33,283,33,283,28,317,27"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,46,60,71"/>
+<area shape="poly" title=" " alt="" coords="105,50,60,57,60,52,104,44"/>
+<area shape="rect" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="129,70,261,95"/>
+<area shape="poly" title=" " alt="" coords="613,90,261,86,261,81,613,85"/>
+<area shape="poly" title=" " alt="" coords="115,73,60,65,61,60,116,68"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2248c7d76712918c8ce395c8974216a9" name="a2248c7d76712918c8ce395c8974216a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2248c7d76712918c8ce395c8974216a9">&#9670;&#160;</a></span>StartServer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::StartServer </td>
+          <td>(</td>
+          <td class="paramtype">Dnssd::CommissioningMode&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>(Re-)starts the <a class="el" href="namespacechip_1_1Dnssd.html">Dnssd</a> server, using the provided commissioning mode. </p>
+
+</div>
+</div>
+<a id="a66e6636ea06879a3031e0db0c3839a08" name="a66e6636ea06879a3031e0db0c3839a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66e6636ea06879a3031e0db0c3839a08">&#9670;&#160;</a></span>StopServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::DnssdServer::StopServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ab45501cb45c134edbd50529926da998d" name="ab45501cb45c134edbd50529926da998d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab45501cb45c134edbd50529926da998d">&#9670;&#160;</a></span>kTimeoutCleared</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr System::Clock::Timestamp chip::app::DnssdServer::kTimeoutCleared = System::Clock::kZero</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4aecbed8f96515c47616ce836fca840" name="ae4aecbed8f96515c47616ce836fca840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4aecbed8f96515c47616ce836fca840">&#9670;&#160;</a></span>mCommissioningModeProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CommissioningModeProvider* chip::app::DnssdServer::mCommissioningModeProvider = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6511be100ae43270468dfdd2266116b2" name="a6511be100ae43270468dfdd2266116b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6511be100ae43270468dfdd2266116b2">&#9670;&#160;</a></span>mEphemeralDiscriminator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt;uint16_t&gt; chip::app::DnssdServer::mEphemeralDiscriminator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7718517def401878ccadf176f3328471" name="a7718517def401878ccadf176f3328471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7718517def401878ccadf176f3328471">&#9670;&#160;</a></span>mFabricTable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FabricTable* chip::app::DnssdServer::mFabricTable = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0b83d16d4dc820add98fffe0f8eca38" name="ad0b83d16d4dc820add98fffe0f8eca38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b83d16d4dc820add98fffe0f8eca38">&#9670;&#160;</a></span>mFallbackMAC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t chip::app::DnssdServer::mFallbackMAC[<a class="el" href="classchip_1_1DeviceLayer_1_1ConfigurationManager.html#a66a0371723c28e67aed8f7e30371897fad1b2bedf92189ad1750c9db8760efe18">chip::DeviceLayer::ConfigurationManager::kPrimaryMACAddressLength</a>] = { 0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89fd1de82cb3a83951b3f79590ce44e9" name="a89fd1de82cb3a83951b3f79590ce44e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89fd1de82cb3a83951b3f79590ce44e9">&#9670;&#160;</a></span>mInterfaceId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Inet_1_1InterfaceId.html">Inet::InterfaceId</a> chip::app::DnssdServer::mInterfaceId = <a class="el" href="classchip_1_1Inet_1_1InterfaceId.html#af5af583e6c6d8343374241114077999d">Inet::InterfaceId::Null</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf5f7592dd58defdb5c0d1ed8a5db7b6" name="abf5f7592dd58defdb5c0d1ed8a5db7b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5f7592dd58defdb5c0d1ed8a5db7b6">&#9670;&#160;</a></span>mSecuredIPv6Port</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t chip::app::DnssdServer::mSecuredIPv6Port = <a class="el" href="CHIPConfig_8h.html#a6affe2b65fc2ab95d72bc782ab34908c">CHIP_PORT</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae96997c24e912789bb127b1c195409df" name="ae96997c24e912789bb127b1c195409df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae96997c24e912789bb127b1c195409df">&#9670;&#160;</a></span>mUnsecuredPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t chip::app::DnssdServer::mUnsecuredPort = <a class="el" href="CHIPConfig_8h.html#a9d7f7b42cde77e003c383afaca573db5">CHIP_UDC_PORT</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/app/server/<a class="el" href="Dnssd_8h_source.html">Dnssd.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

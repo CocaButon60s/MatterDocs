@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/examples/platform/linux/LinuxCommissionableDataProvider.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_10d0982b574d45f69a889a48df526ab0.html">examples</a></li><li class="navelem"><a class="el" href="dir_b568bdd729e53f1ef6f0845f5f040bad.html">platform</a></li><li class="navelem"><a class="el" href="dir_305ccfe11c2879671f1244ec47ab4e9e.html">linux</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">LinuxCommissionableDataProvider.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="LinuxCommissionableDataProvider_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2022 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *    All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPError_8h.html">lib/core/CHIPError.h</a>&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="Optional_8h.html">lib/core/Optional.h</a>&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;<a class="code" href="CommissionableDataProvider_8h.html">platform/CommissionableDataProvider.h</a>&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classLinuxCommissionableDataProvider.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="classLinuxCommissionableDataProvider.html">LinuxCommissionableDataProvider</a> : <span class="keyword">public</span> <a class="code hl_class" href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html">chip::DeviceLayer::CommissionableDataProvider</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classLinuxCommissionableDataProvider.html#a13fdb58e17156e925c7147983ea0eff3">   31</a></span>    <a class="code hl_function" href="classLinuxCommissionableDataProvider.html#a13fdb58e17156e925c7147983ea0eff3">LinuxCommissionableDataProvider</a>() {}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classLinuxCommissionableDataProvider.html#a3008625eeb7d169fa9fc74397227a7ef">Init</a>(<a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional</a>&lt;std::vector&lt;uint8_t&gt;&gt; serializedSpake2pVerifier,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional</a>&lt;std::vector&lt;uint8_t&gt;&gt; spake2pSalt, uint32_t spake2pIterationCount,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;uint32_t&gt;</a> setupPasscode, uint16_t discriminator);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classLinuxCommissionableDataProvider.html#a466ebd4f613d626e718cf8e6aaa235a2">GetSetupDiscriminator</a>(uint16_t &amp; setupDiscriminator) <span class="keyword">override</span>;</div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classLinuxCommissionableDataProvider.html#a1c4eb18ada47b40d3ecee7c8aaedb3a7">   64</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classLinuxCommissionableDataProvider.html#a1c4eb18ada47b40d3ecee7c8aaedb3a7">SetSetupDiscriminator</a>(uint16_t setupDiscriminator)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="comment">// We don&#39;t support overriding the discriminator post-init (it is deprecated!)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="CHIPError_8h.html#a0cb04b2f9a17c93b4e8166abad17958f">CHIP_ERROR_NOT_IMPLEMENTED</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classLinuxCommissionableDataProvider.html#a18904f0378fa902139218c53a4b60e6f">GetSpake2pIterationCount</a>(uint32_t &amp; iterationCount) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classLinuxCommissionableDataProvider.html#a7cb5450a137d474ea45572283c358a99">GetSpake2pSalt</a>(<a class="code hl_class" href="classchip_1_1Span.html">chip::MutableByteSpan</a> &amp; saltBuf) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classLinuxCommissionableDataProvider.html#a38cbfeca23399c635fcbaffbd16f77d9">GetSpake2pVerifier</a>(<a class="code hl_class" href="classchip_1_1Span.html">chip::MutableByteSpan</a> &amp; verifierBuf, <span class="keywordtype">size_t</span> &amp; outVerifierLen) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classLinuxCommissionableDataProvider.html#a2e223847f3c35b55a442342670862515">GetSetupPasscode</a>(uint32_t &amp; setupPasscode) <span class="keyword">override</span>;</div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classLinuxCommissionableDataProvider.html#a32409ac0149100fe92b9adb199046f63">   73</a></span>    <a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="classLinuxCommissionableDataProvider.html#a32409ac0149100fe92b9adb199046f63">SetSetupPasscode</a>(uint32_t setupPasscode)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="comment">// We don&#39;t support overriding the passcode post-init (it is deprecated!)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="CHIPError_8h.html#a0cb04b2f9a17c93b4e8166abad17958f">CHIP_ERROR_NOT_IMPLEMENTED</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classLinuxCommissionableDataProvider.html#afae660292bd30beb100a9571c21d735a">   80</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classLinuxCommissionableDataProvider.html#afae660292bd30beb100a9571c21d735a">mIsInitialized</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classLinuxCommissionableDataProvider.html#a9edf47feb4aa391b13df3450403a4883">   81</a></span>    std::vector&lt;uint8_t&gt; <a class="code hl_variable" href="classLinuxCommissionableDataProvider.html#a9edf47feb4aa391b13df3450403a4883">mSerializedPaseVerifier</a>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classLinuxCommissionableDataProvider.html#ab71188e4afc464fc07e98d7b4ea41832">   82</a></span>    std::vector&lt;uint8_t&gt; <a class="code hl_variable" href="classLinuxCommissionableDataProvider.html#ab71188e4afc464fc07e98d7b4ea41832">mPaseSalt</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classLinuxCommissionableDataProvider.html#a360ee3dbd54ef3fed02ea5007ccfc02d">   83</a></span>    uint32_t <a class="code hl_variable" href="classLinuxCommissionableDataProvider.html#a360ee3dbd54ef3fed02ea5007ccfc02d">mPaseIterationCount</a> = 0;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classLinuxCommissionableDataProvider.html#a492c0674d574c53079d0be9cf7cca996">   84</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;uint32_t&gt;</a> <a class="code hl_variable" href="classLinuxCommissionableDataProvider.html#a492c0674d574c53079d0be9cf7cca996">mSetupPasscode</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classLinuxCommissionableDataProvider.html#acf076e97a22b0340a90fb6b12e7fe8f9">   85</a></span>    uint16_t <a class="code hl_variable" href="classLinuxCommissionableDataProvider.html#acf076e97a22b0340a90fb6b12e7fe8f9">mDiscriminator</a> = 0;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
+</div>
+<div class="ttc" id="aCHIPError_8h_html"><div class="ttname"><a href="CHIPError_8h.html">CHIPError.h</a></div></div>
+<div class="ttc" id="aCHIPError_8h_html_a0cb04b2f9a17c93b4e8166abad17958f"><div class="ttname"><a href="CHIPError_8h.html#a0cb04b2f9a17c93b4e8166abad17958f">CHIP_ERROR_NOT_IMPLEMENTED</a></div><div class="ttdeci">#define CHIP_ERROR_NOT_IMPLEMENTED</div><div class="ttdoc">A requested function or feature is not implemented.</div><div class="ttdef"><b>Definition</b> CHIPError.h:901</div></div>
+<div class="ttc" id="aCommissionableDataProvider_8h_html"><div class="ttname"><a href="CommissionableDataProvider_8h.html">CommissionableDataProvider.h</a></div></div>
+<div class="ttc" id="aOptional_8h_html"><div class="ttname"><a href="Optional_8h.html">Optional.h</a></div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html">LinuxCommissionableDataProvider</a></div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.h:29</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_a13fdb58e17156e925c7147983ea0eff3"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#a13fdb58e17156e925c7147983ea0eff3">LinuxCommissionableDataProvider::LinuxCommissionableDataProvider</a></div><div class="ttdeci">LinuxCommissionableDataProvider()</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.h:31</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_a18904f0378fa902139218c53a4b60e6f"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#a18904f0378fa902139218c53a4b60e6f">LinuxCommissionableDataProvider::GetSpake2pIterationCount</a></div><div class="ttdeci">CHIP_ERROR GetSpake2pIterationCount(uint32_t &amp;iterationCount) override</div><div class="ttdoc">Obtain the default PAKE verifier's PBKDF2 iteration count</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.cpp:182</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_a1c4eb18ada47b40d3ecee7c8aaedb3a7"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#a1c4eb18ada47b40d3ecee7c8aaedb3a7">LinuxCommissionableDataProvider::SetSetupDiscriminator</a></div><div class="ttdeci">CHIP_ERROR SetSetupDiscriminator(uint16_t setupDiscriminator) override</div><div class="ttdoc">Set the setup discriminator if supported.</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.h:64</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_a2e223847f3c35b55a442342670862515"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#a2e223847f3c35b55a442342670862515">LinuxCommissionableDataProvider::GetSetupPasscode</a></div><div class="ttdeci">CHIP_ERROR GetSetupPasscode(uint32_t &amp;setupPasscode) override</div><div class="ttdoc">Obtain the default setup passcode for the device if supported</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.cpp:215</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_a3008625eeb7d169fa9fc74397227a7ef"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#a3008625eeb7d169fa9fc74397227a7ef">LinuxCommissionableDataProvider::Init</a></div><div class="ttdeci">CHIP_ERROR Init(chip::Optional&lt; std::vector&lt; uint8_t &gt; &gt; serializedSpake2pVerifier, chip::Optional&lt; std::vector&lt; uint8_t &gt; &gt; spake2pSalt, uint32_t spake2pIterationCount, chip::Optional&lt; uint32_t &gt; setupPasscode, uint16_t discriminator)</div><div class="ttdoc">Initialize the commissionable Data provider for Linux samples</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.cpp:41</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_a32409ac0149100fe92b9adb199046f63"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#a32409ac0149100fe92b9adb199046f63">LinuxCommissionableDataProvider::SetSetupPasscode</a></div><div class="ttdeci">CHIP_ERROR SetSetupPasscode(uint32_t setupPasscode) override</div><div class="ttdoc">Set the setup discriminator if supported.</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.h:73</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_a360ee3dbd54ef3fed02ea5007ccfc02d"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#a360ee3dbd54ef3fed02ea5007ccfc02d">LinuxCommissionableDataProvider::mPaseIterationCount</a></div><div class="ttdeci">uint32_t mPaseIterationCount</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.h:83</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_a38cbfeca23399c635fcbaffbd16f77d9"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#a38cbfeca23399c635fcbaffbd16f77d9">LinuxCommissionableDataProvider::GetSpake2pVerifier</a></div><div class="ttdeci">CHIP_ERROR GetSpake2pVerifier(chip::MutableByteSpan &amp;verifierBuf, size_t &amp;outVerifierLen) override</div><div class="ttdoc">Obtain the default PAKE verifier in the provided verifierBuf</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.cpp:200</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_a466ebd4f613d626e718cf8e6aaa235a2"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#a466ebd4f613d626e718cf8e6aaa235a2">LinuxCommissionableDataProvider::GetSetupDiscriminator</a></div><div class="ttdeci">CHIP_ERROR GetSetupDiscriminator(uint16_t &amp;setupDiscriminator) override</div><div class="ttdoc">Obtain the default setup discriminator for the device used for commissionable advertising</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.cpp:175</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_a492c0674d574c53079d0be9cf7cca996"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#a492c0674d574c53079d0be9cf7cca996">LinuxCommissionableDataProvider::mSetupPasscode</a></div><div class="ttdeci">chip::Optional&lt; uint32_t &gt; mSetupPasscode</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.h:84</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_a7cb5450a137d474ea45572283c358a99"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#a7cb5450a137d474ea45572283c358a99">LinuxCommissionableDataProvider::GetSpake2pSalt</a></div><div class="ttdeci">CHIP_ERROR GetSpake2pSalt(chip::MutableByteSpan &amp;saltBuf) override</div><div class="ttdoc">Obtain the default PAKE verifier's PBKDF2 salt in the provided saltBuf</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.cpp:189</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_a9edf47feb4aa391b13df3450403a4883"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#a9edf47feb4aa391b13df3450403a4883">LinuxCommissionableDataProvider::mSerializedPaseVerifier</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; mSerializedPaseVerifier</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.h:81</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_ab71188e4afc464fc07e98d7b4ea41832"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#ab71188e4afc464fc07e98d7b4ea41832">LinuxCommissionableDataProvider::mPaseSalt</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; mPaseSalt</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.h:82</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_acf076e97a22b0340a90fb6b12e7fe8f9"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#acf076e97a22b0340a90fb6b12e7fe8f9">LinuxCommissionableDataProvider::mDiscriminator</a></div><div class="ttdeci">uint16_t mDiscriminator</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.h:85</div></div>
+<div class="ttc" id="aclassLinuxCommissionableDataProvider_html_afae660292bd30beb100a9571c21d735a"><div class="ttname"><a href="classLinuxCommissionableDataProvider.html#afae660292bd30beb100a9571c21d735a">LinuxCommissionableDataProvider::mIsInitialized</a></div><div class="ttdeci">bool mIsInitialized</div><div class="ttdef"><b>Definition</b> LinuxCommissionableDataProvider.h:80</div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html"><div class="ttname"><a href="classchip_1_1ChipError.html">chip::ChipError</a></div><div class="ttdef"><b>Definition</b> CHIPError.h:55</div></div>
+<div class="ttc" id="aclasschip_1_1DeviceLayer_1_1CommissionableDataProvider_html"><div class="ttname"><a href="classchip_1_1DeviceLayer_1_1CommissionableDataProvider.html">chip::DeviceLayer::CommissionableDataProvider</a></div><div class="ttdef"><b>Definition</b> CommissionableDataProvider.h:33</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html"><div class="ttname"><a href="classchip_1_1Optional.html">chip::Optional</a></div><div class="ttdef"><b>Definition</b> Optional.h:49</div></div>
+<div class="ttc" id="aclasschip_1_1Span_html"><div class="ttname"><a href="classchip_1_1Span.html">chip::Span</a></div><div class="ttdoc">A wrapper class for holding objects and its length, without the ownership of it. We can use C++20 std...</div><div class="ttdef"><b>Definition</b> Span.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

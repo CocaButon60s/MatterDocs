@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/app/TestEventTriggerDelegate.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_a9aeb43d402f24b4c5513213743384b7.html">app</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a>  </div>
+  <div class="headertitle"><div class="title">TestEventTriggerDelegate.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="CHIPError_8h_source.html">lib/core/CHIPError.h</a>&gt;</code><br />
+<code>#include &lt;lib/support/IntrusiveList.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="Span_8h_source.html">lib/support/Span.h</a>&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+TestEventTriggerDelegate.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestEventTriggerDelegate_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2app_2TestEventTriggerDelegate_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2app_2TestEventTriggerDelegate_8h" id="aconnectedhomeip_2src_2app_2TestEventTriggerDelegate_8h">
+<area shape="rect" title=" " alt="" coords="277,5,509,45"/>
+<area shape="rect" href="CHIPError_8h.html" title=" " alt="" coords="213,247,359,273"/>
+<area shape="poly" title=" " alt="" coords="277,39,210,54,141,78,108,95,78,116,51,140,28,168,20,190,24,207,38,221,62,233,127,248,199,255,198,260,126,253,60,238,35,226,19,210,14,189,24,165,47,136,75,111,105,91,139,73,208,49,276,34"/>
+<area shape="rect" title=" " alt="" coords="537,93,723,119"/>
+<area shape="poly" title=" " alt="" coords="450,43,583,87,582,92,449,48"/>
+<area shape="rect" href="Span_8h.html" title=" " alt="" coords="323,93,462,119"/>
+<area shape="poly" title=" " alt="" coords="395,46,395,79,390,79,390,46"/>
+<area shape="rect" title=" " alt="" coords="39,167,109,192"/>
+<area shape="poly" title=" " alt="" coords="354,48,112,163,109,158,352,43"/>
+<area shape="rect" title=" " alt="" coords="821,167,887,192"/>
+<area shape="poly" title=" " alt="" coords="415,43,463,81,494,100,526,116,600,140,662,148,726,153,807,164,807,169,725,158,661,154,599,145,524,121,491,105,460,86,412,48"/>
+<area shape="rect" title=" " alt="" coords="5,328,92,353"/>
+<area shape="poly" title=" " alt="" coords="252,275,97,326,95,321,251,270"/>
+<area shape="rect" title=" " alt="" coords="117,328,175,353"/>
+<area shape="poly" title=" " alt="" coords="267,275,180,324,177,319,264,271"/>
+<area shape="rect" title=" " alt="" coords="396,328,488,353"/>
+<area shape="poly" title=" " alt="" coords="310,270,408,320,406,324,307,275"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="512,328,671,353"/>
+<area shape="poly" title=" " alt="" coords="331,270,534,322,533,327,330,275"/>
+<area shape="rect" title=" " alt="" coords="200,328,372,353"/>
+<area shape="poly" title=" " alt="" coords="289,273,289,314,283,314,283,273"/>
+<area shape="rect" title=" " alt="" coords="359,401,479,427"/>
+<area shape="poly" title=" " alt="" coords="565,356,461,398,459,394,563,351"/>
+<area shape="rect" title=" " alt="" coords="503,401,679,427"/>
+<area shape="poly" title=" " alt="" coords="594,354,594,388,589,388,589,354"/>
+<area shape="rect" title=" " alt="" coords="704,401,833,427"/>
+<area shape="poly" title=" " alt="" coords="621,351,728,394,726,399,619,356"/>
+<area shape="poly" title=" " alt="" coords="426,116,459,135,474,149,486,165,493,185,496,206,491,248,476,286,460,317,455,315,472,284,486,246,491,206,488,186,481,168,470,153,455,140,423,121"/>
+<area shape="rect" title=" " alt="" coords="741,167,797,192"/>
+<area shape="poly" title=" " alt="" coords="463,115,583,135,728,164,727,169,582,140,462,120"/>
+<area shape="poly" title=" " alt="" coords="339,121,123,169,122,164,338,116"/>
+<area shape="poly" title=" " alt="" coords="463,114,640,138,807,164,807,169,639,143,462,119"/>
+<area shape="rect" title=" " alt="" coords="133,167,199,192"/>
+<area shape="poly" title=" " alt="" coords="357,121,213,166,211,161,355,116"/>
+<area shape="rect" title=" " alt="" coords="223,167,290,192"/>
+<area shape="poly" title=" " alt="" coords="372,121,292,163,290,158,370,116"/>
+<area shape="rect" title=" " alt="" coords="314,167,471,192"/>
+<area shape="poly" title=" " alt="" coords="395,119,395,153,390,153,390,119"/>
+<area shape="rect" href="CodeUtils_8h.html" title=" " alt="" coords="546,167,717,192"/>
+<area shape="poly" title=" " alt="" coords="432,116,580,160,579,165,430,121"/>
+<area shape="poly" title=" " alt="" coords="582,195,350,247,349,242,581,189"/>
+<area shape="poly" title=" " alt="" coords="614,194,590,214,571,241,567,260,568,279,581,315,575,317,563,280,562,259,566,239,586,210,611,190"/>
+<area shape="rect" title=" " alt="" coords="580,247,715,273"/>
+<area shape="poly" title=" " alt="" coords="636,192,645,233,640,234,631,193"/>
+<area shape="rect" title=" " alt="" coords="739,247,927,273"/>
+<area shape="poly" title=" " alt="" coords="662,190,792,240,790,245,660,194"/>
+<area shape="rect" title=" " alt="" coords="951,240,1119,280"/>
+<area shape="poly" title=" " alt="" coords="691,189,938,237,937,242,690,195"/>
+<area shape="rect" title=" " alt="" coords="1143,240,1290,280"/>
+<area shape="poly" title=" " alt="" coords="717,188,1130,238,1129,243,717,193"/>
+<area shape="rect" title=" " alt="" coords="1315,247,1401,273"/>
+<area shape="poly" title=" " alt="" coords="717,188,729,189,890,200,1017,204,1143,212,1216,222,1303,237,1316,241,1315,246,1301,243,1215,227,1142,217,1017,209,890,206,728,195,717,193"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="TestEventTriggerDelegate_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2app_2TestEventTriggerDelegate_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2app_2TestEventTriggerDelegate_8hdep" id="aconnectedhomeip_2src_2app_2TestEventTriggerDelegate_8hdep">
+<area shape="rect" title=" " alt="" coords="38,5,270,45"/>
+<area shape="rect" href="AppMain_8cpp.html" title=" " alt="" coords="5,284,212,324"/>
+<area shape="poly" title=" " alt="" coords="144,59,125,116,110,182,109,209,110,236,111,284,106,284,105,236,103,209,105,181,120,115,139,58"/>
+<area shape="rect" href="Server_8h.html" title=" " alt="" coords="169,93,331,133"/>
+<area shape="poly" title=" " alt="" coords="187,53,231,91,227,95,184,57"/>
+<area shape="poly" title=" " alt="" coords="187,142,160,160,137,183,124,208,116,235,111,284,106,284,111,234,119,206,133,180,157,156,184,138"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="261,284,468,324"/>
+<area shape="poly" title=" " alt="" coords="321,137,348,155,368,180,378,207,380,235,373,284,368,284,375,235,373,208,364,183,344,159,318,142"/>
+<area shape="rect" href="AppMain_8h.html" title=" " alt="" coords="147,189,353,229"/>
+<area shape="poly" title=" " alt="" coords="253,147,253,189,247,189,247,147"/>
+<area shape="rect" href="CommissioneeShellCommands_8cpp.html" title=" " alt="" coords="429,181,679,236"/>
+<area shape="poly" title=" " alt="" coords="325,135,469,179,468,184,324,140"/>
+<area shape="poly" title=" " alt="" coords="211,239,139,286,136,282,208,234"/>
+<area shape="poly" title=" " alt="" coords="285,235,343,282,340,286,282,239"/>
+</map>
+</div>
+</div>
+<p><a href="TestEventTriggerDelegate_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1TestEventTriggerHandler.html">chip::TestEventTriggerHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1TestEventTriggerDelegate.html">chip::TestEventTriggerDelegate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SimpleTestEventTriggerDelegate.html">chip::SimpleTestEventTriggerDelegate</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classchip_1_1TestEventTriggerDelegate.html">TestEventTriggerDelegate</a> that owns its enable key in RAM.  <a href="classchip_1_1SimpleTestEventTriggerDelegate.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

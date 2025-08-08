@@ -1,0 +1,10 @@
+<map id="connectedhomeip/src/lib/support/ScopedBuffer.h" name="connectedhomeip/src/lib/support/ScopedBuffer.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="83,5,279,45"/>
+<area shape="rect" id="Node000002" href="$AppMain_8cpp.html" title=" " alt="" coords="5,181,212,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,58,136,94,121,141,114,182,108,181,116,139,132,92,154,55"/>
+<area shape="rect" id="Node000003" href="$CHIPMemString_8h.html" title=" " alt="" coords="146,93,359,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,54,239,91,235,95,203,58"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="211,143,142,184,139,179,208,138"/>
+<area shape="rect" id="Node000004" href="$Options_8cpp.html" title=" " alt="" coords="236,181,443,221"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="283,141,322,179,318,183,280,145"/>
+</map>

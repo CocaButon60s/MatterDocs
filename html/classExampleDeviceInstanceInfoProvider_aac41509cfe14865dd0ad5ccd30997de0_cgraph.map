@@ -1,0 +1,8 @@
+<map id="ExampleDeviceInstanceInfoProvider::CanFitInNullTerminatedString" name="ExampleDeviceInstanceInfoProvider::CanFitInNullTerminatedString">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,15,241,69"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="289,29,440,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,39,275,39,275,45,242,45"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="328,31,320,21,324,11,339,5,365,3,397,7,409,16,405,20,395,11,365,8,340,10,328,15,325,20,332,27"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="488,29,695,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="441,39,474,39,474,45,441,45"/>
+</map>

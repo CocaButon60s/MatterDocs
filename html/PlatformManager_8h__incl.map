@@ -1,0 +1,21 @@
+<map id="connectedhomeip/src/include/platform/PlatformManager.h" name="connectedhomeip/src/include/platform/PlatformManager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="447,5,640,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,108,180,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="447,55,166,108,165,103,446,50"/>
+<area shape="rect" id="Node000003" href="$CHIPDeviceConfig_8h.html" title=" " alt="" coords="205,108,415,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="473,63,355,106,353,101,471,58"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="440,108,647,133"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="546,60,546,94,541,94,541,60"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="671,108,901,133"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="618,58,741,101,740,106,617,63"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="925,108,1095,133"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="641,49,935,103,934,108,640,54"/>
+<area shape="rect" id="Node000004" href="$CHIPConfig_8h.html" title=" " alt="" coords="231,181,389,207"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="313,134,313,168,307,168,307,134"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="78,255,198,280"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="283,209,180,252,178,247,281,204"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="222,255,398,280"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="313,207,313,241,307,241,307,207"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="423,255,552,280"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="339,204,447,247,445,252,338,209"/>
+</map>

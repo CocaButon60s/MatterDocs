@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/examples/platform/linux/AppMain.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_10d0982b574d45f69a889a48df526ab0.html">examples</a></li><li class="navelem"><a class="el" href="dir_b568bdd729e53f1ef6f0845f5f040bad.html">platform</a></li><li class="navelem"><a class="el" href="dir_305ccfe11c2879671f1244ec47ab4e9e.html">linux</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">AppMain.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="AppMain_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2021 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *    All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="Server_8h.html">app/server/Server.h</a>&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="CommissionerDiscoveryController_8h.html">controller/CommissionerDiscoveryController.h</a>&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="code" href="RawKeySessionKeystore_8h.html">crypto/RawKeySessionKeystore.h</a>&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPError_8h.html">lib/core/CHIPError.h</a>&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="DataModelTypes_8h.html">lib/core/DataModelTypes.h</a>&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;<a class="code" href="Optional_8h.html">lib/core/Optional.h</a>&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPDeviceLayer_8h.html">platform/CHIPDeviceLayer.h</a>&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="code" href="PlatformManager_8h.html">platform/PlatformManager.h</a>&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="code" href="TransportMgr_8h.html">transport/TransportMgr.h</a>&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="Options_8h.html">Options.h</a>&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// Applications can optionally provide the endpoint id of a secondary network</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// commissioning endpoint, if one is supported.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="AppMain_8h.html#a9ca5f9bc07d9758d954fbe87b8d268fd">   35</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="AppMain_8h.html#a9ca5f9bc07d9758d954fbe87b8d268fd">ChipLinuxAppInit</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * <span class="keyword">const</span> argv[], chip::ArgParser::OptionSet * customOptions = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                     <span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;chip::EndpointId&gt;</a> secondaryNetworkCommissioningEndpoit = <a class="code hl_variable" href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">chip::NullOptional</a>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classAppMainLoopImplementation.html">   45</a></span><span class="keyword">class </span><a class="code hl_class" href="classAppMainLoopImplementation.html">AppMainLoopImplementation</a></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classAppMainLoopImplementation.html#a1ff9cd975b90db01d019674a11b3aa16">   48</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classAppMainLoopImplementation.html#a1ff9cd975b90db01d019674a11b3aa16">~AppMainLoopImplementation</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classAppMainLoopImplementation.html#aaf9c00474c8327ed507e5c92e15b3d4e">   57</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classAppMainLoopImplementation.html#aaf9c00474c8327ed507e5c92e15b3d4e">RunMainLoop</a>() = 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classAppMainLoopImplementation.html#ac732bef4ae5cd58f78b948f2f013d694">   69</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classAppMainLoopImplementation.html#ac732bef4ae5cd58f78b948f2f013d694">SignalSafeStopMainLoop</a>() = 0;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="};">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classDefaultAppMainLoopImplementation.html">   72</a></span><span class="keyword">class </span><a class="code hl_class" href="classDefaultAppMainLoopImplementation.html">DefaultAppMainLoopImplementation</a> : <span class="keyword">public</span> <a class="code hl_class" href="classAppMainLoopImplementation.html">AppMainLoopImplementation</a></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classDefaultAppMainLoopImplementation.html#a01ac53fff1481063c6c42413e301f445">   75</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDefaultAppMainLoopImplementation.html#a01ac53fff1481063c6c42413e301f445">RunMainLoop</a>()<span class="keyword"> override </span>{ <a class="code hl_function" href="namespacechip_1_1DeviceLayer.html#a9b90588e3accea89d79094c29fc07261">chip::DeviceLayer::PlatformMgr</a>().<a class="code hl_function" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a4cff33452d1f380bfd46c984e45df31c">RunEventLoop</a>(); }</div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classDefaultAppMainLoopImplementation.html#ab171fe3c33fc5e139b2b91ae00a2f6c8">   76</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDefaultAppMainLoopImplementation.html#ab171fe3c33fc5e139b2b91ae00a2f6c8">SignalSafeStopMainLoop</a>()<span class="keyword"> override</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <a class="code hl_function" href="classchip_1_1Server.html#aebc85f8a7d702eb987e86f075f2119e8">chip::Server::GetInstance</a>().<a class="code hl_function" href="classchip_1_1Server.html#a8a19ddeb66b639f93d0ff613d4c04e3e">GenerateShutDownEvent</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <a class="code hl_function" href="namespacechip_1_1DeviceLayer.html#a9b90588e3accea89d79094c29fc07261">chip::DeviceLayer::PlatformMgr</a>().<a class="code hl_function" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a8a1daf9aaf8eb75f6c743c8dd1935d29">ScheduleWork</a>([](intptr_t) { <a class="code hl_function" href="namespacechip_1_1DeviceLayer.html#a9b90588e3accea89d79094c29fc07261">chip::DeviceLayer::PlatformMgr</a>().<a class="code hl_function" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a45ec9f9b795dcb62d2fb8963fbfe431f">StopEventLoopTask</a>(); });</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keywordtype">void</span> <a class="code hl_function" href="AppMain_8h.html#a04eb0e14c60010ac93c8f3e3c8196ec7">ChipLinuxAppMainLoop</a>(<a class="code hl_class" href="classAppMainLoopImplementation.html">AppMainLoopImplementation</a> * impl = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">// For extra init calls, the function will be called right before running Matter main loop.</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">void</span> <a class="code hl_function" href="AppMain_8h.html#a24fca18689ed30bdf1bcf5973f0d3985">ApplicationInit</a>();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">// For extra shutdown calls, the function will be called before any of the core Matter objects are shut down.</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keywordtype">void</span> <a class="code hl_function" href="AppMain_8h.html#af53c316002f526ba5ce7a9127bddae45">ApplicationShutdown</a>();</div>
+<div class="ttc" id="aAppMain_8h_html_a04eb0e14c60010ac93c8f3e3c8196ec7"><div class="ttname"><a href="AppMain_8h.html#a04eb0e14c60010ac93c8f3e3c8196ec7">ChipLinuxAppMainLoop</a></div><div class="ttdeci">void ChipLinuxAppMainLoop(AppMainLoopImplementation *impl=nullptr)</div><div class="ttdef"><b>Definition</b> AppMain.cpp:775</div></div>
+<div class="ttc" id="aAppMain_8h_html_a24fca18689ed30bdf1bcf5973f0d3985"><div class="ttname"><a href="AppMain_8h.html#a24fca18689ed30bdf1bcf5973f0d3985">ApplicationInit</a></div><div class="ttdeci">void ApplicationInit()</div><div class="ttdef"><b>Definition</b> main.cpp:918</div></div>
+<div class="ttc" id="aAppMain_8h_html_a9ca5f9bc07d9758d954fbe87b8d268fd"><div class="ttname"><a href="AppMain_8h.html#a9ca5f9bc07d9758d954fbe87b8d268fd">ChipLinuxAppInit</a></div><div class="ttdeci">int ChipLinuxAppInit(int argc, char *const argv[], chip::ArgParser::OptionSet *customOptions=nullptr, const chip::Optional&lt; chip::EndpointId &gt; secondaryNetworkCommissioningEndpoit=chip::NullOptional)</div></div>
+<div class="ttc" id="aAppMain_8h_html_af53c316002f526ba5ce7a9127bddae45"><div class="ttname"><a href="AppMain_8h.html#af53c316002f526ba5ce7a9127bddae45">ApplicationShutdown</a></div><div class="ttdeci">void ApplicationShutdown()</div><div class="ttdef"><b>Definition</b> main.cpp:1065</div></div>
+<div class="ttc" id="aCHIPDeviceLayer_8h_html"><div class="ttname"><a href="CHIPDeviceLayer_8h.html">CHIPDeviceLayer.h</a></div></div>
+<div class="ttc" id="aCHIPError_8h_html"><div class="ttname"><a href="CHIPError_8h.html">CHIPError.h</a></div></div>
+<div class="ttc" id="aCommissionerDiscoveryController_8h_html"><div class="ttname"><a href="CommissionerDiscoveryController_8h.html">CommissionerDiscoveryController.h</a></div></div>
+<div class="ttc" id="aDataModelTypes_8h_html"><div class="ttname"><a href="DataModelTypes_8h.html">DataModelTypes.h</a></div></div>
+<div class="ttc" id="aOptional_8h_html"><div class="ttname"><a href="Optional_8h.html">Optional.h</a></div></div>
+<div class="ttc" id="aOptions_8h_html"><div class="ttname"><a href="Options_8h.html">Options.h</a></div></div>
+<div class="ttc" id="aPlatformManager_8h_html"><div class="ttname"><a href="PlatformManager_8h.html">PlatformManager.h</a></div></div>
+<div class="ttc" id="aRawKeySessionKeystore_8h_html"><div class="ttname"><a href="RawKeySessionKeystore_8h.html">RawKeySessionKeystore.h</a></div></div>
+<div class="ttc" id="aServer_8h_html"><div class="ttname"><a href="Server_8h.html">Server.h</a></div></div>
+<div class="ttc" id="aTransportMgr_8h_html"><div class="ttname"><a href="TransportMgr_8h.html">TransportMgr.h</a></div></div>
+<div class="ttc" id="aclassAppMainLoopImplementation_html"><div class="ttname"><a href="classAppMainLoopImplementation.html">AppMainLoopImplementation</a></div><div class="ttdef"><b>Definition</b> AppMain.h:46</div></div>
+<div class="ttc" id="aclassAppMainLoopImplementation_html_a1ff9cd975b90db01d019674a11b3aa16"><div class="ttname"><a href="classAppMainLoopImplementation.html#a1ff9cd975b90db01d019674a11b3aa16">AppMainLoopImplementation::~AppMainLoopImplementation</a></div><div class="ttdeci">virtual ~AppMainLoopImplementation()=default</div></div>
+<div class="ttc" id="aclassAppMainLoopImplementation_html_aaf9c00474c8327ed507e5c92e15b3d4e"><div class="ttname"><a href="classAppMainLoopImplementation.html#aaf9c00474c8327ed507e5c92e15b3d4e">AppMainLoopImplementation::RunMainLoop</a></div><div class="ttdeci">virtual void RunMainLoop()=0</div></div>
+<div class="ttc" id="aclassAppMainLoopImplementation_html_ac732bef4ae5cd58f78b948f2f013d694"><div class="ttname"><a href="classAppMainLoopImplementation.html#ac732bef4ae5cd58f78b948f2f013d694">AppMainLoopImplementation::SignalSafeStopMainLoop</a></div><div class="ttdeci">virtual void SignalSafeStopMainLoop()=0</div></div>
+<div class="ttc" id="aclassDefaultAppMainLoopImplementation_html"><div class="ttname"><a href="classDefaultAppMainLoopImplementation.html">DefaultAppMainLoopImplementation</a></div><div class="ttdef"><b>Definition</b> AppMain.h:73</div></div>
+<div class="ttc" id="aclassDefaultAppMainLoopImplementation_html_a01ac53fff1481063c6c42413e301f445"><div class="ttname"><a href="classDefaultAppMainLoopImplementation.html#a01ac53fff1481063c6c42413e301f445">DefaultAppMainLoopImplementation::RunMainLoop</a></div><div class="ttdeci">void RunMainLoop() override</div><div class="ttdef"><b>Definition</b> AppMain.h:75</div></div>
+<div class="ttc" id="aclassDefaultAppMainLoopImplementation_html_ab171fe3c33fc5e139b2b91ae00a2f6c8"><div class="ttname"><a href="classDefaultAppMainLoopImplementation.html#ab171fe3c33fc5e139b2b91ae00a2f6c8">DefaultAppMainLoopImplementation::SignalSafeStopMainLoop</a></div><div class="ttdeci">void SignalSafeStopMainLoop() override</div><div class="ttdef"><b>Definition</b> AppMain.h:76</div></div>
+<div class="ttc" id="aclasschip_1_1DeviceLayer_1_1PlatformManager_html_a45ec9f9b795dcb62d2fb8963fbfe431f"><div class="ttname"><a href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a45ec9f9b795dcb62d2fb8963fbfe431f">chip::DeviceLayer::PlatformManager::StopEventLoopTask</a></div><div class="ttdeci">CHIP_ERROR StopEventLoopTask()</div><div class="ttdoc">This will trigger the event loop to exit and block till it has exited the loop. This prevents the pro...</div><div class="ttdef"><b>Definition</b> PlatformManager.h:438</div></div>
+<div class="ttc" id="aclasschip_1_1DeviceLayer_1_1PlatformManager_html_a4cff33452d1f380bfd46c984e45df31c"><div class="ttname"><a href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a4cff33452d1f380bfd46c984e45df31c">chip::DeviceLayer::PlatformManager::RunEventLoop</a></div><div class="ttdeci">void RunEventLoop()</div><div class="ttdef"><b>Definition</b> PlatformManager.h:407</div></div>
+<div class="ttc" id="aclasschip_1_1DeviceLayer_1_1PlatformManager_html_a8a1daf9aaf8eb75f6c743c8dd1935d29"><div class="ttname"><a href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a8a1daf9aaf8eb75f6c743c8dd1935d29">chip::DeviceLayer::PlatformManager::ScheduleWork</a></div><div class="ttdeci">CHIP_ERROR ScheduleWork(AsyncWorkFunct workFunct, intptr_t arg=0)</div><div class="ttdef"><b>Definition</b> PlatformManager.h:402</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html"><div class="ttname"><a href="classchip_1_1Optional.html">chip::Optional</a></div><div class="ttdef"><b>Definition</b> Optional.h:49</div></div>
+<div class="ttc" id="aclasschip_1_1Server_html_a8a19ddeb66b639f93d0ff613d4c04e3e"><div class="ttname"><a href="classchip_1_1Server.html#a8a19ddeb66b639f93d0ff613d4c04e3e">chip::Server::GenerateShutDownEvent</a></div><div class="ttdeci">void GenerateShutDownEvent()</div></div>
+<div class="ttc" id="aclasschip_1_1Server_html_aebc85f8a7d702eb987e86f075f2119e8"><div class="ttname"><a href="classchip_1_1Server.html#aebc85f8a7d702eb987e86f075f2119e8">chip::Server::GetInstance</a></div><div class="ttdeci">static Server &amp; GetInstance()</div><div class="ttdef"><b>Definition</b> Server.h:469</div></div>
+<div class="ttc" id="anamespacechip_1_1DeviceLayer_html_a9b90588e3accea89d79094c29fc07261"><div class="ttname"><a href="namespacechip_1_1DeviceLayer.html#a9b90588e3accea89d79094c29fc07261">chip::DeviceLayer::PlatformMgr</a></div><div class="ttdeci">PlatformManager &amp; PlatformMgr()</div></div>
+<div class="ttc" id="anamespacechip_html_aaf771abf1db8295717d80349c7a62a6d"><div class="ttname"><a href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">chip::NullOptional</a></div><div class="ttdeci">constexpr NullOptionalType NullOptional</div><div class="ttdef"><b>Definition</b> Optional.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

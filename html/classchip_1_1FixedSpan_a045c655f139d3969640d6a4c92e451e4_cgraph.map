@@ -1,0 +1,9 @@
+<map id="chip::FixedSpan::data_equal" name="chip::FixedSpan::data_equal">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,165,87"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097" title=" " alt="" coords="230,5,357,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,46,226,31,227,36,166,51"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33" title=" " alt="" coords="213,55,373,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,65,199,65,199,70,165,70"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8" title=" " alt="" coords="232,104,355,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="166,84,227,98,226,103,165,89"/>
+</map>

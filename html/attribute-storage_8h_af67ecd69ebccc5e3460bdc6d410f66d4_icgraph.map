@@ -1,0 +1,9 @@
+<map id="emberAfFixedEndpointCount" name="emberAfFixedEndpointCount">
+<area shape="rect" id="Node000001" title="Returns the number of pre&#45;compiled endpoints." alt="" coords="495,5,701,31"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,5,447,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="481,21,447,21,447,15,481,15"/>
+<area shape="rect" id="Node000003" href="$AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="317,21,283,21,283,15,317,15"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+</map>

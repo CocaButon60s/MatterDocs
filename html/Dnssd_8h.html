@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/app/server/Dnssd.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_a9aeb43d402f24b4c5513213743384b7.html">app</a></li><li class="navelem"><a class="el" href="dir_05f9db9b48a89734c9815305b495e471.html">server</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a>  </div>
+  <div class="headertitle"><div class="title">Dnssd.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;app/icd/server/ICDServerConfig.h&gt;</code><br />
+<code>#include &lt;app/icd/server/ICDStateObserver.h&gt;</code><br />
+<code>#include &lt;app/server/CommissioningModeProvider.h&gt;</code><br />
+<code>#include &lt;credentials/FabricTable.h&gt;</code><br />
+<code>#include &lt;inet/InetConfig.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPError_8h_source.html">lib/core/CHIPError.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Optional_8h_source.html">lib/core/Optional.h</a>&gt;</code><br />
+<code>#include &lt;lib/dnssd/Advertiser.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPDeviceLayer_8h_source.html">platform/CHIPDeviceLayer.h</a>&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;system/TimeSource.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Dnssd.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="Dnssd_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2app_2server_2Dnssd_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2app_2server_2Dnssd_8h" id="aconnectedhomeip_2src_2app_2server_2Dnssd_8h">
+<area shape="rect" title=" " alt="" coords="893,5,1055,45"/>
+<area shape="rect" title=" " alt="" coords="5,93,188,133"/>
+<area shape="poly" title=" " alt="" coords="893,34,593,55,401,73,202,96,202,91,400,68,593,50,893,29"/>
+<area shape="rect" title=" " alt="" coords="213,101,458,126"/>
+<area shape="poly" title=" " alt="" coords="894,40,470,96,430,101,430,96,470,91,893,35"/>
+<area shape="rect" title=" " alt="" coords="483,93,679,133"/>
+<area shape="poly" title=" " alt="" coords="894,47,681,93,680,88,892,42"/>
+<area shape="rect" title=" " alt="" coords="703,101,885,126"/>
+<area shape="poly" title=" " alt="" coords="936,48,831,97,829,93,933,43"/>
+<area shape="rect" title=" " alt="" coords="1179,577,1308,603"/>
+<area shape="poly" title=" " alt="" coords="966,47,938,90,899,135,872,157,842,175,776,204,644,243,591,263,572,274,557,287,549,302,547,320,553,341,567,366,583,385,605,403,666,437,743,468,830,496,1013,542,1166,573,1165,578,1011,547,829,501,741,473,663,441,602,407,579,389,562,370,548,343,542,320,544,301,553,284,569,270,589,258,642,238,774,199,839,170,869,153,895,131,933,86,961,44"/>
+<area shape="rect" href="CHIPError_8h.html" title=" " alt="" coords="1094,423,1241,449"/>
+<area shape="poly" title=" " alt="" coords="993,44,1013,71,1035,107,1052,148,1059,192,1059,276,1062,297,1068,317,1089,355,1116,388,1143,412,1139,416,1112,391,1084,358,1063,320,1056,298,1054,276,1054,193,1047,150,1030,109,1009,74,989,47"/>
+<area shape="rect" href="Optional_8h.html" title=" " alt="" coords="873,262,1014,287"/>
+<area shape="poly" title=" " alt="" coords="974,46,949,248,944,248,969,45"/>
+<area shape="rect" title=" " alt="" coords="2039,101,2202,126"/>
+<area shape="poly" title=" " alt="" coords="1055,25,1231,31,1472,42,1748,61,2028,91,2057,95,2056,101,2027,96,1748,66,1472,47,1231,36,1055,31"/>
+<area shape="rect" href="CHIPDeviceLayer_8h.html" title=" " alt="" coords="1810,101,2015,126"/>
+<area shape="poly" title=" " alt="" coords="1055,31,1797,99,1796,104,1055,37"/>
+<area shape="rect" title=" " alt="" coords="2226,101,2301,126"/>
+<area shape="poly" title=" " alt="" coords="1055,25,1305,30,1641,42,1973,61,2110,75,2215,91,2226,94,2224,99,2213,96,2110,80,1972,66,1640,47,1305,36,1055,30"/>
+<area shape="rect" title=" " alt="" coords="2325,101,2487,126"/>
+<area shape="poly" title=" " alt="" coords="1055,24,1273,26,1584,35,1946,55,2131,71,2313,91,2344,95,2343,101,2312,96,2131,76,1945,61,1584,41,1273,32,1055,29"/>
+<area shape="rect" title=" " alt="" coords="1100,504,1187,529"/>
+<area shape="poly" title=" " alt="" coords="1166,450,1153,491,1148,490,1161,448"/>
+<area shape="rect" title=" " alt="" coords="1211,504,1270,529"/>
+<area shape="poly" title=" " alt="" coords="1180,447,1222,492,1218,495,1176,451"/>
+<area shape="rect" title=" " alt="" coords="984,504,1076,529"/>
+<area shape="poly" title=" " alt="" coords="1148,451,1063,499,1061,495,1146,447"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="2045,504,2204,529"/>
+<area shape="poly" title=" " alt="" coords="1215,446,1254,453,1472,478,1689,495,2032,511,2031,516,1688,501,1471,484,1254,459,1214,451"/>
+<area shape="rect" title=" " alt="" coords="1295,504,1467,529"/>
+<area shape="poly" title=" " alt="" coords="1199,446,1338,497,1336,502,1197,451"/>
+<area shape="poly" title=" " alt="" coords="2046,527,1322,585,1322,580,2045,522"/>
+<area shape="rect" title=" " alt="" coords="2150,577,2270,603"/>
+<area shape="poly" title=" " alt="" coords="2140,527,2187,566,2184,571,2137,531"/>
+<area shape="rect" title=" " alt="" coords="1950,577,2126,603"/>
+<area shape="poly" title=" " alt="" coords="2112,531,2064,571,2061,566,2109,527"/>
+<area shape="poly" title=" " alt="" coords="953,286,982,342,1009,422,1027,490,1022,491,1004,424,977,344,948,289"/>
+<area shape="rect" title=" " alt="" coords="919,343,968,368"/>
+<area shape="poly" title=" " alt="" coords="946,288,946,329,941,329,941,288"/>
+<area shape="rect" title=" " alt="" coords="577,343,651,368"/>
+<area shape="poly" title=" " alt="" coords="896,290,665,345,664,339,895,285"/>
+<area shape="rect" title=" " alt="" coords="676,343,736,368"/>
+<area shape="poly" title=" " alt="" coords="910,290,750,342,748,337,908,285"/>
+<area shape="rect" title=" " alt="" coords="761,343,894,368"/>
+<area shape="poly" title=" " alt="" coords="928,290,857,337,854,333,925,285"/>
+<area shape="rect" href="CodeUtils_8h.html" title=" " alt="" coords="1658,343,1829,368"/>
+<area shape="poly" title=" " alt="" coords="1015,280,1644,342,1644,347,1014,286"/>
+<area shape="poly" title=" " alt="" coords="1658,367,1472,388,1254,419,1230,423,1229,418,1254,413,1472,382,1657,362"/>
+<area shape="poly" title=" " alt="" coords="1829,358,1905,364,1985,374,2055,391,2082,401,2101,414,2114,431,2122,451,2128,490,2123,490,2117,452,2110,434,2098,418,2079,406,2053,396,1984,380,1905,369,1829,363"/>
+<area shape="rect" title=" " alt="" coords="1952,423,2087,449"/>
+<area shape="poly" title=" " alt="" coords="1784,365,1967,417,1965,422,1783,371"/>
+<area shape="rect" title=" " alt="" coords="1265,423,1453,449"/>
+<area shape="poly" title=" " alt="" coords="1688,371,1429,423,1428,418,1687,365"/>
+<area shape="rect" title=" " alt="" coords="1478,416,1646,456"/>
+<area shape="poly" title=" " alt="" coords="1718,370,1619,413,1617,408,1716,366"/>
+<area shape="rect" title=" " alt="" coords="1670,416,1817,456"/>
+<area shape="poly" title=" " alt="" coords="1746,368,1746,402,1741,402,1741,368"/>
+<area shape="rect" title=" " alt="" coords="1841,423,1928,449"/>
+<area shape="poly" title=" " alt="" coords="1765,366,1853,414,1850,419,1763,371"/>
+<area shape="rect" href="CHIPDeviceConfig_8h.html" title=" " alt="" coords="2126,262,2337,287"/>
+<area shape="poly" title=" " alt="" coords="1934,124,2083,204,2193,254,2190,259,2081,209,1931,129"/>
+<area shape="rect" href="CHIPCore_8h.html" title=" " alt="" coords="1318,181,1465,207"/>
+<area shape="poly" title=" " alt="" coords="1837,129,1479,182,1478,177,1836,123"/>
+<area shape="rect" title=" " alt="" coords="2355,181,2555,207"/>
+<area shape="poly" title=" " alt="" coords="1982,123,2028,131,2356,177,2355,182,2027,136,1981,129"/>
+<area shape="rect" href="ConfigurationManager_8h.html" title=" " alt="" coords="2094,181,2331,207"/>
+<area shape="poly" title=" " alt="" coords="1957,123,2157,175,2155,181,1956,129"/>
+<area shape="rect" title=" " alt="" coords="2579,181,2811,207"/>
+<area shape="poly" title=" " alt="" coords="1978,123,2028,131,2566,179,2565,184,2027,136,1977,129"/>
+<area shape="rect" title=" " alt="" coords="2836,181,3011,207"/>
+<area shape="poly" title=" " alt="" coords="1976,123,2028,131,2249,150,2422,158,2597,164,2822,179,2822,184,2597,169,2422,163,2248,156,2027,136,1975,129"/>
+<area shape="rect" title=" " alt="" coords="3035,181,3279,207"/>
+<area shape="poly" title=" " alt="" coords="1975,123,2028,131,2305,153,2522,161,2741,165,3021,179,3021,184,2740,171,2522,166,2304,159,2027,136,1974,129"/>
+<area shape="rect" href="PlatformManager_8h.html" title=" " alt="" coords="1703,181,1909,207"/>
+<area shape="poly" title=" " alt="" coords="1899,128,1834,175,1831,171,1895,124"/>
+<area shape="rect" title=" " alt="" coords="3303,181,3474,207"/>
+<area shape="poly" title=" " alt="" coords="1974,123,2028,131,2218,147,2380,156,2656,160,2934,161,3097,167,3290,179,3290,184,3097,172,2934,166,2656,165,2380,161,2218,152,2027,136,1973,129"/>
+<area shape="rect" title=" " alt="" coords="1094,181,1294,207"/>
+<area shape="poly" title=" " alt="" coords="1810,128,1308,183,1308,178,1809,123"/>
+<area shape="poly" title=" " alt="" coords="2234,288,2228,362,2216,411,2196,457,2178,480,2157,498,2154,494,2174,476,2192,455,2211,409,2223,361,2229,287"/>
+<area shape="poly" title=" " alt="" coords="1326,209,1246,229,1213,242,1192,257,1180,274,1172,293,1163,335,1162,375,1165,409,1160,410,1157,376,1158,334,1167,291,1176,271,1188,253,1210,237,1244,224,1325,204"/>
+<area shape="poly" title=" " alt="" coords="1342,209,1295,224,1253,243,1238,255,1229,267,1228,279,1236,293,1249,301,1271,308,1339,319,1429,326,1530,330,1724,335,1841,340,1887,345,1929,346,2003,346,2036,350,2068,361,2099,382,2130,414,2139,433,2141,453,2136,491,2131,490,2136,453,2133,434,2125,418,2095,386,2066,366,2035,355,2002,351,1929,351,1887,350,1840,345,1724,340,1529,336,1428,331,1338,324,1270,313,1247,306,1232,297,1223,280,1224,265,1234,251,1250,239,1293,219,1341,204"/>
+<area shape="rect" title=" " alt="" coords="1246,262,1417,287"/>
+<area shape="poly" title=" " alt="" coords="1385,208,1351,252,1347,249,1380,205"/>
+<area shape="poly" title=" " alt="" coords="2218,206,2228,248,2223,249,2213,207"/>
+<area shape="rect" title=" " alt="" coords="3106,343,3173,368"/>
+<area shape="poly" title=" " alt="" coords="2332,203,2343,204,2504,205,2771,205,2910,209,3033,217,3127,231,3159,241,3179,253,3188,272,3185,294,3175,315,3162,333,3157,330,3170,312,3180,292,3182,273,3175,256,3157,246,3126,236,3032,222,2909,214,2771,211,2504,210,2343,209,2331,208"/>
+<area shape="rect" title=" " alt="" coords="2989,262,3165,287"/>
+<area shape="poly" title=" " alt="" coords="2332,203,2344,204,2522,216,2661,223,2799,232,2977,252,3009,257,3008,262,2976,257,2799,238,2660,228,2521,221,2343,209,2331,208"/>
+<area shape="rect" href="Span_8h.html" title=" " alt="" coords="2826,262,2965,287"/>
+<area shape="poly" title=" " alt="" coords="2332,204,2616,231,2814,252,2837,256,2836,262,2814,257,2616,236,2331,209"/>
+<area shape="rect" title=" " alt="" coords="2361,262,2565,287"/>
+<area shape="poly" title=" " alt="" coords="2250,204,2415,255,2413,260,2248,209"/>
+<area shape="rect" title=" " alt="" coords="2589,255,2801,295"/>
+<area shape="poly" title=" " alt="" coords="2283,204,2576,251,2575,257,2282,209"/>
+<area shape="poly" title=" " alt="" coords="2853,290,2814,297,2637,317,2487,328,2355,331,2231,331,1975,329,1824,333,1646,345,1558,349,1481,346,1347,336,1285,338,1223,349,1157,375,1084,418,1067,433,1055,452,1038,491,1034,489,1050,450,1063,430,1080,414,1154,370,1221,344,1285,332,1347,331,1481,340,1558,343,1646,340,1824,328,1974,324,2231,325,2355,326,2487,322,2637,312,2814,292,2852,285"/>
+<area shape="poly" title=" " alt="" coords="2853,290,2814,297,2678,314,2539,328,2266,346,2025,354,1843,357,1843,351,2024,349,2266,340,2539,322,2678,309,2814,292,2852,285"/>
+<area shape="poly" title=" " alt="" coords="2932,285,3093,337,3092,342,2930,290"/>
+<area shape="rect" title=" " alt="" coords="2823,343,2879,368"/>
+<area shape="poly" title=" " alt="" coords="2891,289,2867,332,2862,329,2887,286"/>
+<area shape="rect" title=" " alt="" coords="2904,343,2975,368"/>
+<area shape="poly" title=" " alt="" coords="2904,286,2928,329,2924,332,2900,289"/>
+<area shape="poly" title=" " alt="" coords="1868,204,2157,257,2156,262,1867,209"/>
+<area shape="poly" title=" " alt="" coords="1730,209,1430,257,1403,262,1402,257,1430,252,1729,204"/>
+<area shape="rect" title=" " alt="" coords="1927,262,2101,287"/>
+<area shape="poly" title=" " alt="" coords="1837,204,1972,255,1970,260,1835,209"/>
+<area shape="rect" title=" " alt="" coords="1441,262,1648,287"/>
+<area shape="poly" title=" " alt="" coords="1769,209,1596,261,1595,256,1767,204"/>
+<area shape="rect" title=" " alt="" coords="1673,262,1902,287"/>
+<area shape="poly" title=" " alt="" coords="1806,207,1796,249,1791,248,1801,206"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="Dnssd_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2app_2server_2Dnssd_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2app_2server_2Dnssd_8hdep" id="aconnectedhomeip_2src_2app_2server_2Dnssd_8hdep">
+<area shape="rect" title=" " alt="" coords="155,5,316,45"/>
+<area shape="rect" href="AppMain_8cpp.html" title=" " alt="" coords="5,101,212,141"/>
+<area shape="poly" title=" " alt="" coords="200,56,136,103,133,98,197,51"/>
+<area shape="rect" href="CommissioneeShellCommands_8cpp.html" title=" " alt="" coords="237,93,487,148"/>
+<area shape="poly" title=" " alt="" coords="274,51,328,91,325,95,271,56"/>
+</map>
+</div>
+</div>
+<p><a href="Dnssd_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1DnssdServer.html">chip::app::DnssdServer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1app" id="r_namespacechip_1_1app"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1app.html">chip::app</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

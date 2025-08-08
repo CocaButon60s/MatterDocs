@@ -1,0 +1,15 @@
+<map id="Room::getName" name="Room::getName">
+<area shape="rect" id="Node000001" title=" " alt="" coords="800,43,928,68"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="589,12,752,37"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="786,46,750,40,751,35,787,40"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#ad0d534fabf21a1a35ee4e750f0fff965" title=" " alt="" coords="591,67,750,92"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="787,68,751,72,750,67,786,62"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="378,5,494,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="575,25,494,22,494,17,576,19"/>
+<area shape="rect" id="Node000004" href="$AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="364,21,283,21,283,15,364,15"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+<area shape="rect" id="Node000007" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a40c81795ed59dad860acec7bbc2652c9" title="Callback that will be called to handle an InstantAction command." alt="" coords="331,55,541,125"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="577,86,542,88,542,83,577,81"/>
+</map>

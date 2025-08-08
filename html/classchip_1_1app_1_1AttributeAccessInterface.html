@@ -1,0 +1,736 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::app::AttributeAccessInterface クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1app.html">app</a></li><li class="navelem"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classchip_1_1app_1_1AttributeAccessInterface-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::app::AttributeAccessInterface クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="AttributeAccessInterface_8h_source.html">AttributeAccessInterface.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::app::AttributeAccessInterface の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1AttributeAccessInterface__inherit__graph.png" border="0" usemap="#achip_1_1app_1_1AttributeAccessInterface_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1app_1_1AttributeAccessInterface_inherit__map" id="achip_1_1app_1_1AttributeAccessInterface_inherit__map">
+<area shape="rect" title=" " alt="" coords="135,5,325,45"/>
+<area shape="rect" href="classBridgedPowerSourceAttrAccess.html" title=" " alt="" coords="5,101,231,126"/>
+<area shape="poly" title=" " alt="" coords="196,56,135,102,132,98,193,52"/>
+<area shape="rect" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html" title=" " alt="" coords="255,93,431,133"/>
+<area shape="poly" title=" " alt="" coords="267,52,320,91,317,95,264,56"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::app::AttributeAccessInterface 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1AttributeAccessInterface__coll__graph.png" border="0" usemap="#achip_1_1app_1_1AttributeAccessInterface_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1app_1_1AttributeAccessInterface_coll__map" id="achip_1_1app_1_1AttributeAccessInterface_coll__map">
+<area shape="rect" title=" " alt="" coords="903,44,1093,84"/>
+<area shape="poly" title=" " alt="" coords="968,28,979,20,998,17,1015,19,1026,25,1031,34,1029,44,1024,43,1026,35,1022,29,1013,25,998,23,981,25,971,32"/>
+<area shape="rect" href="classchip_1_1Optional.html" title=" " alt="" coords="557,51,768,77"/>
+<area shape="poly" title=" " alt="" coords="782,61,902,61,902,67,782,67"/>
+<area shape="rect" href="classchip_1_1Optional_1_1ValueHolder.html" title=" " alt="" coords="261,44,412,84"/>
+<area shape="poly" title=" " alt="" coords="426,61,557,61,557,67,426,67"/>
+<area shape="rect" title=" " alt="" coords="5,22,212,106"/>
+<area shape="poly" title=" " alt="" coords="226,61,261,61,261,67,226,67"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a195c75011d86ee3dcc7d46285afbafa5" id="r_a195c75011d86ee3dcc7d46285afbafa5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a195c75011d86ee3dcc7d46285afbafa5">AttributeAccessInterface</a> (<a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> &gt; aEndpointId, <a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId)</td></tr>
+<tr class="separator:a195c75011d86ee3dcc7d46285afbafa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3debdc4c20a59d1f72c8fa9304262be" id="r_ad3debdc4c20a59d1f72c8fa9304262be"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#ad3debdc4c20a59d1f72c8fa9304262be">~AttributeAccessInterface</a> ()</td></tr>
+<tr class="separator:ad3debdc4c20a59d1f72c8fa9304262be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe26c2bc0004445e66b6731394453034" id="r_afe26c2bc0004445e66b6731394453034"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#afe26c2bc0004445e66b6731394453034">Read</a> (const DataModel::ReadAttributeRequest &amp;aRequest, AttributeValueEncoder &amp;aEncoder)</td></tr>
+<tr class="separator:afe26c2bc0004445e66b6731394453034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f0ab79d0babc85a06582cb5ac2c079" id="r_ad0f0ab79d0babc85a06582cb5ac2c079"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#ad0f0ab79d0babc85a06582cb5ac2c079">Read</a> (const <a class="el" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> &amp;aPath, AttributeValueEncoder &amp;aEncoder)=0</td></tr>
+<tr class="separator:ad0f0ab79d0babc85a06582cb5ac2c079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68635af42764b78476ad22389b72a46c" id="r_a68635af42764b78476ad22389b72a46c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a68635af42764b78476ad22389b72a46c">Write</a> (const <a class="el" href="structchip_1_1app_1_1ConcreteDataAttributePath.html">ConcreteDataAttributePath</a> &amp;aPath, AttributeValueDecoder &amp;aDecoder)</td></tr>
+<tr class="separator:a68635af42764b78476ad22389b72a46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2899b330c9a67466175e52c1cd283d01" id="r_a2899b330c9a67466175e52c1cd283d01"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a2899b330c9a67466175e52c1cd283d01">OnListWriteBegin</a> (const <a class="el" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp;aPath)</td></tr>
+<tr class="separator:a2899b330c9a67466175e52c1cd283d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f352adf9b910be95fff8e8115aaa1d" id="r_a47f352adf9b910be95fff8e8115aaa1d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a47f352adf9b910be95fff8e8115aaa1d">OnListWriteEnd</a> (const <a class="el" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp;aPath, bool aWriteWasSuccessful)</td></tr>
+<tr class="separator:a47f352adf9b910be95fff8e8115aaa1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2887025e5242bd397b3a8ce75f195cc5" id="r_a2887025e5242bd397b3a8ce75f195cc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a2887025e5242bd397b3a8ce75f195cc5">SetNext</a> (<a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> *aNext)</td></tr>
+<tr class="separator:a2887025e5242bd397b3a8ce75f195cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a30290cb829a015952e4c2860c8509b" id="r_a7a30290cb829a015952e4c2860c8509b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a7a30290cb829a015952e4c2860c8509b">GetNext</a> () const</td></tr>
+<tr class="separator:a7a30290cb829a015952e4c2860c8509b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa465d39295b8fb8e06f34dcb93d2f74d" id="r_aa465d39295b8fb8e06f34dcb93d2f74d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#aa465d39295b8fb8e06f34dcb93d2f74d">Matches</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId) const</td></tr>
+<tr class="separator:aa465d39295b8fb8e06f34dcb93d2f74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc37488d8b7dfdf0e04319e9fc5fda83" id="r_adc37488d8b7dfdf0e04319e9fc5fda83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#adc37488d8b7dfdf0e04319e9fc5fda83">MatchesEndpoint</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId) const</td></tr>
+<tr class="separator:adc37488d8b7dfdf0e04319e9fc5fda83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09843999b983d05e07a0be1e672a3af9" id="r_a09843999b983d05e07a0be1e672a3af9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a09843999b983d05e07a0be1e672a3af9">Matches</a> (const <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> &amp;aOther) const</td></tr>
+<tr class="separator:a09843999b983d05e07a0be1e672a3af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4dc4de909abf0275a299d014385d3a08" id="r_a4dc4de909abf0275a299d014385d3a08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a4dc4de909abf0275a299d014385d3a08">GetEndpointId</a> ()</td></tr>
+<tr class="separator:a4dc4de909abf0275a299d014385d3a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:aaccbd0a9f2758a4a2305649a0db52e06" id="r_aaccbd0a9f2758a4a2305649a0db52e06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#aaccbd0a9f2758a4a2305649a0db52e06">mEndpointId</a></td></tr>
+<tr class="separator:aaccbd0a9f2758a4a2305649a0db52e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf82d548598113145df2c72827593e0a" id="r_acf82d548598113145df2c72827593e0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#acf82d548598113145df2c72827593e0a">mClusterId</a></td></tr>
+<tr class="separator:acf82d548598113145df2c72827593e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759d699524f1c7800c41f58b76ede8f9" id="r_a759d699524f1c7800c41f58b76ede8f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html#a759d699524f1c7800c41f58b76ede8f9">mNext</a> = nullptr</td></tr>
+<tr class="separator:a759d699524f1c7800c41f58b76ede8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a195c75011d86ee3dcc7d46285afbafa5" name="a195c75011d86ee3dcc7d46285afbafa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a195c75011d86ee3dcc7d46285afbafa5">&#9670;&#160;</a></span>AttributeAccessInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::app::AttributeAccessInterface::AttributeAccessInterface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> &gt;&#160;</td>
+          <td class="paramname"><em>aEndpointId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a>&#160;</td>
+          <td class="paramname"><em>aClusterId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>aEndpointId can be Missing to indicate that this object is meant to be used with all endpoints. </p>
+
+</div>
+</div>
+<a id="ad3debdc4c20a59d1f72c8fa9304262be" name="ad3debdc4c20a59d1f72c8fa9304262be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3debdc4c20a59d1f72c8fa9304262be">&#9670;&#160;</a></span>~AttributeAccessInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual chip::app::AttributeAccessInterface::~AttributeAccessInterface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a4dc4de909abf0275a299d014385d3a08" name="a4dc4de909abf0275a299d014385d3a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc4de909abf0275a299d014385d3a08">&#9670;&#160;</a></span>GetEndpointId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> &gt; chip::app::AttributeAccessInterface::GetEndpointId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a30290cb829a015952e4c2860c8509b" name="a7a30290cb829a015952e4c2860c8509b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a30290cb829a015952e4c2860c8509b">&#9670;&#160;</a></span>GetNext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> * chip::app::AttributeAccessInterface::GetNext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09843999b983d05e07a0be1e672a3af9" name="a09843999b983d05e07a0be1e672a3af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09843999b983d05e07a0be1e672a3af9">&#9670;&#160;</a></span>Matches() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::AttributeAccessInterface::Matches </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> &amp;&#160;</td>
+          <td class="paramname"><em>aOther</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check whether another <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> wants to handle the same set of attributes as we do. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1AttributeAccessInterface_a09843999b983d05e07a0be1e672a3af9_cgraph.png" border="0" usemap="#aclasschip_1_1app_1_1AttributeAccessInterface_a09843999b983d05e07a0be1e672a3af9_cgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1AttributeAccessInterface_a09843999b983d05e07a0be1e672a3af9_cgraph" id="aclasschip_1_1app_1_1AttributeAccessInterface_a09843999b983d05e07a0be1e672a3af9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,196,45"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="448,13,629,38"/>
+<area shape="poly" title=" " alt="" coords="196,23,434,23,434,28,196,28"/>
+<area shape="rect" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="244,38,400,63"/>
+<area shape="poly" title=" " alt="" coords="196,34,231,38,230,43,196,39"/>
+<area shape="poly" title=" " alt="" coords="400,39,434,35,435,40,401,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa465d39295b8fb8e06f34dcb93d2f74d" name="aa465d39295b8fb8e06f34dcb93d2f74d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa465d39295b8fb8e06f34dcb93d2f74d">&#9670;&#160;</a></span>Matches() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::AttributeAccessInterface::Matches </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td>
+          <td class="paramname"><em>aEndpointId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a>&#160;</td>
+          <td class="paramname"><em>aClusterId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check whether a this <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> is relevant for a particular endpoint+cluster. An <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> will be used for a read from a particular cluster only when this function returns true. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1AttributeAccessInterface_aa465d39295b8fb8e06f34dcb93d2f74d_cgraph.png" border="0" usemap="#aclasschip_1_1app_1_1AttributeAccessInterface_aa465d39295b8fb8e06f34dcb93d2f74d_cgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1AttributeAccessInterface_aa465d39295b8fb8e06f34dcb93d2f74d_cgraph" id="aclasschip_1_1app_1_1AttributeAccessInterface_aa465d39295b8fb8e06f34dcb93d2f74d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,196,45"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="448,13,629,38"/>
+<area shape="poly" title=" " alt="" coords="196,23,434,23,434,28,196,28"/>
+<area shape="rect" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="244,38,400,63"/>
+<area shape="poly" title=" " alt="" coords="196,34,231,38,230,43,196,39"/>
+<area shape="poly" title=" " alt="" coords="400,39,434,35,435,40,401,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adc37488d8b7dfdf0e04319e9fc5fda83" name="adc37488d8b7dfdf0e04319e9fc5fda83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc37488d8b7dfdf0e04319e9fc5fda83">&#9670;&#160;</a></span>MatchesEndpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::app::AttributeAccessInterface::MatchesEndpoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td>
+          <td class="paramname"><em>aEndpointId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check whether an <a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> is relevant for a particular specific endpoint. This is used to clean up overrides registered for an endpoint that becomes disabled. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1AttributeAccessInterface_adc37488d8b7dfdf0e04319e9fc5fda83_cgraph.png" border="0" usemap="#aclasschip_1_1app_1_1AttributeAccessInterface_adc37488d8b7dfdf0e04319e9fc5fda83_cgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1AttributeAccessInterface_adc37488d8b7dfdf0e04319e9fc5fda83_cgraph" id="aclasschip_1_1app_1_1AttributeAccessInterface_adc37488d8b7dfdf0e04319e9fc5fda83_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,205,45"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="457,13,639,38"/>
+<area shape="poly" title=" " alt="" coords="205,23,444,23,444,28,205,28"/>
+<area shape="rect" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="253,38,409,63"/>
+<area shape="poly" title=" " alt="" coords="206,34,240,38,239,43,206,39"/>
+<area shape="poly" title=" " alt="" coords="410,39,444,35,444,40,410,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2899b330c9a67466175e52c1cd283d01" name="a2899b330c9a67466175e52c1cd283d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2899b330c9a67466175e52c1cd283d01">&#9670;&#160;</a></span>OnListWriteBegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void chip::app::AttributeAccessInterface::OnListWriteBegin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp;&#160;</td>
+          <td class="paramname"><em>aPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indicates the start of a series of list operations. This function will be called before the first Write operation of a series of consequence attribute data of the same attribute.</p>
+<p>1) This function will be called if the client tries to set a nullable list attribute to null. 2) This function will only be called once for a series of consequent attribute data (regardless the kind of list operation) of the same attribute.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPath</td><td>indicates the path of the modified list. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47f352adf9b910be95fff8e8115aaa1d" name="a47f352adf9b910be95fff8e8115aaa1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f352adf9b910be95fff8e8115aaa1d">&#9670;&#160;</a></span>OnListWriteEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void chip::app::AttributeAccessInterface::OnListWriteEnd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp;&#160;</td>
+          <td class="paramname"><em>aPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>aWriteWasSuccessful</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indicates the end of a series of list operations. This function will be called after the last Write operation of a series of consequence attribute data of the same attribute.</p>
+<p>1) This function will be called if the client tries to set a nullable list attribute to null. 2) This function will only be called once for a series of consequent attribute data (regardless the kind of list operation) of the same attribute. 3) When aWriteWasSuccessful is true, the data written must be consistent or the list is untouched.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPath</td><td>indicates the path of the modified list </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aWriteWasSuccessful</td><td>indicates whether the delivered list is complete. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad0f0ab79d0babc85a06582cb5ac2c079" name="ad0f0ab79d0babc85a06582cb5ac2c079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f0ab79d0babc85a06582cb5ac2c079">&#9670;&#160;</a></span>Read() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::AttributeAccessInterface::Read </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> &amp;&#160;</td>
+          <td class="paramname"><em>aPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AttributeValueEncoder &amp;&#160;</td>
+          <td class="paramname"><em>aEncoder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A simpler version of Read(const ReadAttributeRequest &amp; request, AttributeValueEncoder &amp; aEncoder) which takes simply the path being read, for backwards compatibility.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPath</td><td>indicates which exact data is being read. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classBridgedPowerSourceAttrAccess.html#ad470200ce9a3013304aa67d7db58d6e1">BridgedPowerSourceAttrAccess</a>, <a class="el" href="classchip_1_1app_1_1Clusters_1_1Actions_1_1ActionsServer.html#a683c9cf33e1e29b59ec05b5fc890dab1">chip::app::Clusters::Actions::ActionsServer</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="afe26c2bc0004445e66b6731394453034" name="afe26c2bc0004445e66b6731394453034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe26c2bc0004445e66b6731394453034">&#9670;&#160;</a></span>Read() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::AttributeAccessInterface::Read </td>
+          <td>(</td>
+          <td class="paramtype">const DataModel::ReadAttributeRequest &amp;&#160;</td>
+          <td class="paramname"><em>aRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AttributeValueEncoder &amp;&#160;</td>
+          <td class="paramname"><em>aEncoder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Callback for reading attributes.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aRequest</td><td>indicates which exact data is being read along with attributes of how data is being read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aEncoder</td><td>the AttributeValueEncoder to use for encoding the data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The implementation can do one of three things:</p>
+<p>1) Return a failure. This is treated as a failed read and the error is returned to the client, by converting it to a StatusIB. 2) Return success and attempt to encode data using aEncoder. The data is returned to the client. 3) Return success and not attempt to encode any data using aEncoder. In this case, Ember attribute access will happen for the read. This may involve reading from the attribute store or external attribute callbacks. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1AttributeAccessInterface_afe26c2bc0004445e66b6731394453034_cgraph.png" border="0" usemap="#aclasschip_1_1app_1_1AttributeAccessInterface_afe26c2bc0004445e66b6731394453034_cgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1AttributeAccessInterface_afe26c2bc0004445e66b6731394453034_cgraph" id="aclasschip_1_1app_1_1AttributeAccessInterface_afe26c2bc0004445e66b6731394453034_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,196,69"/>
+<area shape="poly" title=" " alt="" coords="65,30,63,20,68,11,81,5,101,3,123,6,135,13,132,17,121,11,101,8,83,10,72,15,68,21,70,28"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1app_1_1AttributeAccessInterface_afe26c2bc0004445e66b6731394453034_icgraph.png" border="0" usemap="#aclasschip_1_1app_1_1AttributeAccessInterface_afe26c2bc0004445e66b6731394453034_icgraph" alt=""/></div>
+<map name="aclasschip_1_1app_1_1AttributeAccessInterface_afe26c2bc0004445e66b6731394453034_icgraph" id="aclasschip_1_1app_1_1AttributeAccessInterface_afe26c2bc0004445e66b6731394453034_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,196,69"/>
+<area shape="poly" title=" " alt="" coords="132,17,121,11,101,8,83,10,72,15,68,21,70,28,65,30,63,20,68,11,81,5,101,3,123,6,135,13"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2887025e5242bd397b3a8ce75f195cc5" name="a2887025e5242bd397b3a8ce75f195cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2887025e5242bd397b3a8ce75f195cc5">&#9670;&#160;</a></span>SetNext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::app::AttributeAccessInterface::SetNext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a> *&#160;</td>
+          <td class="paramname"><em>aNext</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Mechanism for keeping track of a chain of AttributeAccessInterfaces. </p>
+
+</div>
+</div>
+<a id="a68635af42764b78476ad22389b72a46c" name="a68635af42764b78476ad22389b72a46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68635af42764b78476ad22389b72a46c">&#9670;&#160;</a></span>Write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::app::AttributeAccessInterface::Write </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1app_1_1ConcreteDataAttributePath.html">ConcreteDataAttributePath</a> &amp;&#160;</td>
+          <td class="paramname"><em>aPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AttributeValueDecoder &amp;&#160;</td>
+          <td class="paramname"><em>aDecoder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Callback for writing attributes.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPath</td><td>indicates which exact data is being written. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aDecoder</td><td>the AttributeValueDecoder to use for decoding the data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The implementation can do one of three things:</p>
+<p>1) Return a failure. This is treated as a failed write and the error is sent to the client, by converting it to a StatusIB. 2) Return success and attempt to decode from aDecoder. This is treated as a successful write. 3) Return success and not attempt to decode from aDecoder. In this case, Ember attribute access will happen for the write. This may involve writing to the attribute store or external attribute callbacks. </p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="acf82d548598113145df2c72827593e0a" name="acf82d548598113145df2c72827593e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf82d548598113145df2c72827593e0a">&#9670;&#160;</a></span>mClusterId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> chip::app::AttributeAccessInterface::mClusterId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaccbd0a9f2758a4a2305649a0db52e06" name="aaccbd0a9f2758a4a2305649a0db52e06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaccbd0a9f2758a4a2305649a0db52e06">&#9670;&#160;</a></span>mEndpointId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt;<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&gt; chip::app::AttributeAccessInterface::mEndpointId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a759d699524f1c7800c41f58b76ede8f9" name="a759d699524f1c7800c41f58b76ede8f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a759d699524f1c7800c41f58b76ede8f9">&#9670;&#160;</a></span>mNext</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">AttributeAccessInterface</a>* chip::app::AttributeAccessInterface::mNext = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/app/<a class="el" href="AttributeAccessInterface_8h_source.html">AttributeAccessInterface.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

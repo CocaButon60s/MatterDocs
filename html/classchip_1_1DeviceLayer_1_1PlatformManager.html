@@ -1,0 +1,1731 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::DeviceLayer::PlatformManager クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1DeviceLayer.html">DeviceLayer</a></li><li class="navelem"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pri-types">非公開型</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#friends">フレンド</a> &#124;
+<a href="classchip_1_1DeviceLayer_1_1PlatformManager-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::DeviceLayer::PlatformManager クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="PlatformManager_8h_source.html">PlatformManager.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::DeviceLayer::PlatformManager 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1DeviceLayer_1_1PlatformManager__coll__graph.png" border="0" usemap="#achip_1_1DeviceLayer_1_1PlatformManager_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1DeviceLayer_1_1PlatformManager_coll__map" id="achip_1_1DeviceLayer_1_1PlatformManager_coll__map">
+<area shape="rect" title=" " alt="" coords="29,108,176,148"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1PlatformManagerDelegate.html" title=" " alt="" coords="5,5,200,45"/>
+<area shape="poly" title=" " alt="" coords="105,59,105,108,100,108,100,59"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a61da86a211bc12e7b5a8649aa38b7385" id="r_a61da86a211bc12e7b5a8649aa38b7385"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a61da86a211bc12e7b5a8649aa38b7385">EventHandlerFunct</a>) (const ChipDeviceEvent *event, intptr_t arg)</td></tr>
+<tr class="separator:a61da86a211bc12e7b5a8649aa38b7385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4c1372af7e3d001e2857e6f14c9a1554" id="r_a4c1372af7e3d001e2857e6f14c9a1554"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a4c1372af7e3d001e2857e6f14c9a1554">InitChipStack</a> ()</td></tr>
+<tr class="separator:a4c1372af7e3d001e2857e6f14c9a1554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b9e3aa86bd17703ed7c1566505da3e" id="r_a40b9e3aa86bd17703ed7c1566505da3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a40b9e3aa86bd17703ed7c1566505da3e">AddEventHandler</a> (<a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a61da86a211bc12e7b5a8649aa38b7385">EventHandlerFunct</a> handler, intptr_t arg=0)</td></tr>
+<tr class="separator:a40b9e3aa86bd17703ed7c1566505da3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe71645c08ad0f7dc93a432b14bbeb5" id="r_a5fe71645c08ad0f7dc93a432b14bbeb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a5fe71645c08ad0f7dc93a432b14bbeb5">RemoveEventHandler</a> (<a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a61da86a211bc12e7b5a8649aa38b7385">EventHandlerFunct</a> handler, intptr_t arg=0)</td></tr>
+<tr class="separator:a5fe71645c08ad0f7dc93a432b14bbeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92473a1cdb4cdbd14d2a06a27fbdfc82" id="r_a92473a1cdb4cdbd14d2a06a27fbdfc82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a92473a1cdb4cdbd14d2a06a27fbdfc82">SetDelegate</a> (<a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManagerDelegate.html">PlatformManagerDelegate</a> *delegate)</td></tr>
+<tr class="separator:a92473a1cdb4cdbd14d2a06a27fbdfc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770c84364c504f0eb510ff000f08903f" id="r_a770c84364c504f0eb510ff000f08903f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManagerDelegate.html">PlatformManagerDelegate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a770c84364c504f0eb510ff000f08903f">GetDelegate</a> () const</td></tr>
+<tr class="separator:a770c84364c504f0eb510ff000f08903f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398db9d0c0bd1049c90ba5a92977bf51" id="r_a398db9d0c0bd1049c90ba5a92977bf51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a398db9d0c0bd1049c90ba5a92977bf51">HandleServerStarted</a> ()</td></tr>
+<tr class="separator:a398db9d0c0bd1049c90ba5a92977bf51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0db77bdab7a833061fe341eba933cf" id="r_a5e0db77bdab7a833061fe341eba933cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a5e0db77bdab7a833061fe341eba933cf">HandleServerShuttingDown</a> ()</td></tr>
+<tr class="separator:a5e0db77bdab7a833061fe341eba933cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a1daf9aaf8eb75f6c743c8dd1935d29" id="r_a8a1daf9aaf8eb75f6c743c8dd1935d29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a8a1daf9aaf8eb75f6c743c8dd1935d29">ScheduleWork</a> (AsyncWorkFunct workFunct, intptr_t arg=0)</td></tr>
+<tr class="separator:a8a1daf9aaf8eb75f6c743c8dd1935d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cff33452d1f380bfd46c984e45df31c" id="r_a4cff33452d1f380bfd46c984e45df31c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a4cff33452d1f380bfd46c984e45df31c">RunEventLoop</a> ()</td></tr>
+<tr class="separator:a4cff33452d1f380bfd46c984e45df31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8492de263e64ccd18e1a138264aebc9d" id="r_a8492de263e64ccd18e1a138264aebc9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a8492de263e64ccd18e1a138264aebc9d">StartEventLoopTask</a> ()</td></tr>
+<tr class="memdesc:a8492de263e64ccd18e1a138264aebc9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the stack on its own task with an associated event queue to dispatch and handle events posted to that task.  <br /></td></tr>
+<tr class="separator:a8492de263e64ccd18e1a138264aebc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ec9f9b795dcb62d2fb8963fbfe431f" id="r_a45ec9f9b795dcb62d2fb8963fbfe431f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a45ec9f9b795dcb62d2fb8963fbfe431f">StopEventLoopTask</a> ()</td></tr>
+<tr class="memdesc:a45ec9f9b795dcb62d2fb8963fbfe431f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will trigger the event loop to exit and block till it has exited the loop. This prevents the processing of any further events in the queue.  <br /></td></tr>
+<tr class="separator:a45ec9f9b795dcb62d2fb8963fbfe431f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8acb26d5d8adcd1f5709f3f4fecb588" id="r_ac8acb26d5d8adcd1f5709f3f4fecb588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#ac8acb26d5d8adcd1f5709f3f4fecb588">LockChipStack</a> ()</td></tr>
+<tr class="separator:ac8acb26d5d8adcd1f5709f3f4fecb588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a27948111e2d94228526dd92105aeb0" id="r_a8a27948111e2d94228526dd92105aeb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a8a27948111e2d94228526dd92105aeb0">TryLockChipStack</a> ()</td></tr>
+<tr class="separator:a8a27948111e2d94228526dd92105aeb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f35d6ee56ac54c996387c24bdfc023c" id="r_a3f35d6ee56ac54c996387c24bdfc023c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a3f35d6ee56ac54c996387c24bdfc023c">UnlockChipStack</a> ()</td></tr>
+<tr class="separator:a3f35d6ee56ac54c996387c24bdfc023c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0bbc9cee2cfc64849e6c84eb1fc686" id="r_a8e0bbc9cee2cfc64849e6c84eb1fc686"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a8e0bbc9cee2cfc64849e6c84eb1fc686">Shutdown</a> ()</td></tr>
+<tr class="memdesc:a8e0bbc9cee2cfc64849e6c84eb1fc686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down and cleans up the main objects in the CHIP stack. This DOES NOT stop the chip thread or event queue from running.  <br /></td></tr>
+<tr class="separator:a8e0bbc9cee2cfc64849e6c84eb1fc686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74fcc71cf01edc5d7874ecaa4a2165e2" id="r_a74fcc71cf01edc5d7874ecaa4a2165e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a74fcc71cf01edc5d7874ecaa4a2165e2">PostEvent</a> (const ChipDeviceEvent *event)</td></tr>
+<tr class="separator:a74fcc71cf01edc5d7874ecaa4a2165e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047ce7e7e2c66b7f6b485b062554768e" id="r_a047ce7e7e2c66b7f6b485b062554768e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a047ce7e7e2c66b7f6b485b062554768e">PostEventOrDie</a> (const ChipDeviceEvent *event)</td></tr>
+<tr class="separator:a047ce7e7e2c66b7f6b485b062554768e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f044320dd1c463521b7f56295d3da3a" id="r_a7f044320dd1c463521b7f56295d3da3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a7f044320dd1c463521b7f56295d3da3a">ScheduleBackgroundWork</a> (AsyncWorkFunct workFunct, intptr_t arg=0)</td></tr>
+<tr class="separator:a7f044320dd1c463521b7f56295d3da3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a46c1946d3a0e3caf4f816c6004952" id="r_af5a46c1946d3a0e3caf4f816c6004952"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#af5a46c1946d3a0e3caf4f816c6004952">PostBackgroundEvent</a> (const ChipDeviceEvent *event)</td></tr>
+<tr class="separator:af5a46c1946d3a0e3caf4f816c6004952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9857c970df94b74fb8ed42fdeca25c" id="r_aeb9857c970df94b74fb8ed42fdeca25c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#aeb9857c970df94b74fb8ed42fdeca25c">RunBackgroundEventLoop</a> ()</td></tr>
+<tr class="separator:aeb9857c970df94b74fb8ed42fdeca25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13a9ca5ec68a96432eca775db71a78c" id="r_ad13a9ca5ec68a96432eca775db71a78c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#ad13a9ca5ec68a96432eca775db71a78c">StartBackgroundEventLoopTask</a> ()</td></tr>
+<tr class="separator:ad13a9ca5ec68a96432eca775db71a78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d639c42bd58e64d9dd040edcc11b06e" id="r_a7d639c42bd58e64d9dd040edcc11b06e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a7d639c42bd58e64d9dd040edcc11b06e">StopBackgroundEventLoopTask</a> ()</td></tr>
+<tr class="separator:a7d639c42bd58e64d9dd040edcc11b06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a1f3cfb5351e38ee32a5b5e6ecac675d3" id="r_a1f3cfb5351e38ee32a5b5e6ecac675d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a1f3cfb5351e38ee32a5b5e6ecac675d3">PlatformManager</a> ()=default</td></tr>
+<tr class="separator:a1f3cfb5351e38ee32a5b5e6ecac675d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af761c1ce7972980df8c6ee72822e48a0" id="r_af761c1ce7972980df8c6ee72822e48a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#af761c1ce7972980df8c6ee72822e48a0">~PlatformManager</a> ()=default</td></tr>
+<tr class="separator:af761c1ce7972980df8c6ee72822e48a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa19637e419ef10064eedeb17be2226" id="r_afaa19637e419ef10064eedeb17be2226"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#afaa19637e419ef10064eedeb17be2226">PlatformManager</a> (const <a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a> &amp;)=delete</td></tr>
+<tr class="separator:afaa19637e419ef10064eedeb17be2226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de9fcd6afb9ba8344c4e6b237950332" id="r_a3de9fcd6afb9ba8344c4e6b237950332"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a3de9fcd6afb9ba8344c4e6b237950332">PlatformManager</a> (const <a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a3de9fcd6afb9ba8344c4e6b237950332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dbe8d62bde794dba8354b184d91940c" id="r_a9dbe8d62bde794dba8354b184d91940c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a9dbe8d62bde794dba8354b184d91940c">operator=</a> (const <a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a> &amp;)=delete</td></tr>
+<tr class="separator:a9dbe8d62bde794dba8354b184d91940c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+非公開型</h2></td></tr>
+<tr class="memitem:a26f02d5cc1416014414a170a42921270" id="r_a26f02d5cc1416014414a170a42921270"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a26f02d5cc1416014414a170a42921270">ImplClass</a> = ::chip::DeviceLayer::PlatformManagerImpl</td></tr>
+<tr class="separator:a26f02d5cc1416014414a170a42921270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a266bda5573ebb886e54dfa2944b96942" id="r_a266bda5573ebb886e54dfa2944b96942"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a266bda5573ebb886e54dfa2944b96942">DispatchEvent</a> (const ChipDeviceEvent *event)</td></tr>
+<tr class="separator:a266bda5573ebb886e54dfa2944b96942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae611e3100742f6fef1dde1c02b8d8ee4" id="r_ae611e3100742f6fef1dde1c02b8d8ee4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#ae611e3100742f6fef1dde1c02b8d8ee4">StartChipTimer</a> (System::Clock::Timeout duration)</td></tr>
+<tr class="separator:ae611e3100742f6fef1dde1c02b8d8ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a289642910967ab4a80e700a7ab1550f6" id="r_a289642910967ab4a80e700a7ab1550f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a289642910967ab4a80e700a7ab1550f6">mInitialized</a> = false</td></tr>
+<tr class="separator:a289642910967ab4a80e700a7ab1550f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63f3e699fe7433380e4c3f9ab544270" id="r_ae63f3e699fe7433380e4c3f9ab544270"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManagerDelegate.html">PlatformManagerDelegate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#ae63f3e699fe7433380e4c3f9ab544270">mDelegate</a> = nullptr</td></tr>
+<tr class="separator:ae63f3e699fe7433380e4c3f9ab544270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+フレンド</h2></td></tr>
+<tr class="memitem:ac31a0df4105578f7404846c15568b820" id="r_ac31a0df4105578f7404846c15568b820"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#ac31a0df4105578f7404846c15568b820">PlatformManagerImpl</a></td></tr>
+<tr class="separator:ac31a0df4105578f7404846c15568b820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2116de3dec40503a2bb150dd941ae7db" id="r_a2116de3dec40503a2bb150dd941ae7db"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a2116de3dec40503a2bb150dd941ae7db">ConnectivityManagerImpl</a></td></tr>
+<tr class="separator:a2116de3dec40503a2bb150dd941ae7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50cd5ed45a9e4ed4b1d99e721b2b4ce1" id="r_a50cd5ed45a9e4ed4b1d99e721b2b4ce1"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a50cd5ed45a9e4ed4b1d99e721b2b4ce1">ConfigurationManagerImpl</a></td></tr>
+<tr class="separator:a50cd5ed45a9e4ed4b1d99e721b2b4ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706511a494149aec8fdda0abaa53d55e" id="r_a706511a494149aec8fdda0abaa53d55e"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a706511a494149aec8fdda0abaa53d55e">DeviceControlServer</a></td></tr>
+<tr class="separator:a706511a494149aec8fdda0abaa53d55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e623a90ab9dc6e02803831c1451661" id="r_af1e623a90ab9dc6e02803831c1451661"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#af1e623a90ab9dc6e02803831c1451661">Dnssd::DiscoveryImplPlatform</a></td></tr>
+<tr class="separator:af1e623a90ab9dc6e02803831c1451661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7137a09f7c45d0f898ff2147a0b3e9bd" id="r_a7137a09f7c45d0f898ff2147a0b3e9bd"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a7137a09f7c45d0f898ff2147a0b3e9bd">FailSafeContext</a></td></tr>
+<tr class="separator:a7137a09f7c45d0f898ff2147a0b3e9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0274dafbe097e372adf1f16d97d9bd99" id="r_a0274dafbe097e372adf1f16d97d9bd99"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a0274dafbe097e372adf1f16d97d9bd99">TraitManager</a></td></tr>
+<tr class="separator:a0274dafbe097e372adf1f16d97d9bd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7213564d92362311f143e6ca2cd1f24e" id="r_a7213564d92362311f143e6ca2cd1f24e"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a7213564d92362311f143e6ca2cd1f24e">ThreadStackManagerImpl</a></td></tr>
+<tr class="separator:a7213564d92362311f143e6ca2cd1f24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798c42a7466a4a111a9dfbc0843ecede" id="r_a798c42a7466a4a111a9dfbc0843ecede"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a798c42a7466a4a111a9dfbc0843ecede">Internal::NFCCommissioningManagerImpl</a></td></tr>
+<tr class="separator:a798c42a7466a4a111a9dfbc0843ecede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208e83cad03106b77b2e8b8956cf0cca" id="r_a208e83cad03106b77b2e8b8956cf0cca"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a208e83cad03106b77b2e8b8956cf0cca">Internal::BLEManagerImpl</a></td></tr>
+<tr class="separator:a208e83cad03106b77b2e8b8956cf0cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929b8c50e573b52988f41760a0377430" id="r_a929b8c50e573b52988f41760a0377430"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
+<tr class="memitem:a929b8c50e573b52988f41760a0377430"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a929b8c50e573b52988f41760a0377430">Internal::GenericPlatformManagerImpl</a></td></tr>
+<tr class="separator:a929b8c50e573b52988f41760a0377430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4cbc0bd7eed8869f0d94cea06668ae8" id="r_ad4cbc0bd7eed8869f0d94cea06668ae8"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
+<tr class="memitem:ad4cbc0bd7eed8869f0d94cea06668ae8"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#ad4cbc0bd7eed8869f0d94cea06668ae8">Internal::GenericPlatformManagerImpl_CMSISOS</a></td></tr>
+<tr class="separator:ad4cbc0bd7eed8869f0d94cea06668ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4efedc666ea89b201be84c10faee9d" id="r_aab4efedc666ea89b201be84c10faee9d"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
+<tr class="memitem:aab4efedc666ea89b201be84c10faee9d"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#aab4efedc666ea89b201be84c10faee9d">Internal::GenericPlatformManagerImpl_FreeRTOS</a></td></tr>
+<tr class="separator:aab4efedc666ea89b201be84c10faee9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae442cfbf06ded6604c83e41b66654d80" id="r_ae442cfbf06ded6604c83e41b66654d80"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
+<tr class="memitem:ae442cfbf06ded6604c83e41b66654d80"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#ae442cfbf06ded6604c83e41b66654d80">Internal::GenericPlatformManagerImpl_POSIX</a></td></tr>
+<tr class="separator:ae442cfbf06ded6604c83e41b66654d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27e64b4ae1e3eb43724cb459f97ce67" id="r_ac27e64b4ae1e3eb43724cb459f97ce67"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
+<tr class="memitem:ac27e64b4ae1e3eb43724cb459f97ce67"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#ac27e64b4ae1e3eb43724cb459f97ce67">Internal::GenericPlatformManagerImpl_Zephyr</a></td></tr>
+<tr class="separator:ac27e64b4ae1e3eb43724cb459f97ce67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2f7e801702f32466bd8c5c5fbf063f" id="r_aed2f7e801702f32466bd8c5c5fbf063f"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
+<tr class="memitem:aed2f7e801702f32466bd8c5c5fbf063f"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#aed2f7e801702f32466bd8c5c5fbf063f">Internal::GenericConnectivityManagerImpl_Thread</a></td></tr>
+<tr class="separator:aed2f7e801702f32466bd8c5c5fbf063f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1adcbce2503b97fa59993cd79d0b9351" id="r_a1adcbce2503b97fa59993cd79d0b9351"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
+<tr class="memitem:a1adcbce2503b97fa59993cd79d0b9351"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a1adcbce2503b97fa59993cd79d0b9351">Internal::GenericThreadStackManagerImpl_OpenThread</a></td></tr>
+<tr class="separator:a1adcbce2503b97fa59993cd79d0b9351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80eccab2a6304088baebf9fc7f3c2751" id="r_a80eccab2a6304088baebf9fc7f3c2751"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
+<tr class="memitem:a80eccab2a6304088baebf9fc7f3c2751"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a80eccab2a6304088baebf9fc7f3c2751">Internal::GenericThreadStackManagerImpl_OpenThread_LwIP</a></td></tr>
+<tr class="separator:a80eccab2a6304088baebf9fc7f3c2751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41c9fd8237d290bd991f809e3ec00b2" id="r_ad41c9fd8237d290bd991f809e3ec00b2"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
+<tr class="memitem:ad41c9fd8237d290bd991f809e3ec00b2"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#ad41c9fd8237d290bd991f809e3ec00b2">Internal::GenericConfigurationManagerImpl</a></td></tr>
+<tr class="separator:ad41c9fd8237d290bd991f809e3ec00b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f00f758608a0f7fa826f031e6bc168" id="r_ac9f00f758608a0f7fa826f031e6bc168"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#ac9f00f758608a0f7fa826f031e6bc168">System::PlatformEventing</a></td></tr>
+<tr class="separator:ac9f00f758608a0f7fa826f031e6bc168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Provides features for initializing and interacting with the chip network stack on a chip-enabled device. </p>
+</div><h2 class="groupheader">型定義メンバ詳解</h2>
+<a id="a61da86a211bc12e7b5a8649aa38b7385" name="a61da86a211bc12e7b5a8649aa38b7385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61da86a211bc12e7b5a8649aa38b7385">&#9670;&#160;</a></span>EventHandlerFunct</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* chip::DeviceLayer::PlatformManager::EventHandlerFunct) (const ChipDeviceEvent *event, intptr_t arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26f02d5cc1416014414a170a42921270" name="a26f02d5cc1416014414a170a42921270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f02d5cc1416014414a170a42921270">&#9670;&#160;</a></span>ImplClass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a26f02d5cc1416014414a170a42921270">chip::DeviceLayer::PlatformManager::ImplClass</a> =  ::chip::DeviceLayer::PlatformManagerImpl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a1f3cfb5351e38ee32a5b5e6ecac675d3" name="a1f3cfb5351e38ee32a5b5e6ecac675d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3cfb5351e38ee32a5b5e6ecac675d3">&#9670;&#160;</a></span>PlatformManager() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::DeviceLayer::PlatformManager::PlatformManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af761c1ce7972980df8c6ee72822e48a0" name="af761c1ce7972980df8c6ee72822e48a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af761c1ce7972980df8c6ee72822e48a0">&#9670;&#160;</a></span>~PlatformManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::DeviceLayer::PlatformManager::~PlatformManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaa19637e419ef10064eedeb17be2226" name="afaa19637e419ef10064eedeb17be2226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa19637e419ef10064eedeb17be2226">&#9670;&#160;</a></span>PlatformManager() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::DeviceLayer::PlatformManager::PlatformManager </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3de9fcd6afb9ba8344c4e6b237950332" name="a3de9fcd6afb9ba8344c4e6b237950332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de9fcd6afb9ba8344c4e6b237950332">&#9670;&#160;</a></span>PlatformManager() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::DeviceLayer::PlatformManager::PlatformManager </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a40b9e3aa86bd17703ed7c1566505da3e" name="a40b9e3aa86bd17703ed7c1566505da3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b9e3aa86bd17703ed7c1566505da3e">&#9670;&#160;</a></span>AddEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::PlatformManager::AddEventHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a61da86a211bc12e7b5a8649aa38b7385">EventHandlerFunct</a>&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">intptr_t&#160;</td>
+          <td class="paramname"><em>arg</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a266bda5573ebb886e54dfa2944b96942" name="a266bda5573ebb886e54dfa2944b96942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a266bda5573ebb886e54dfa2944b96942">&#9670;&#160;</a></span>DispatchEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::PlatformManager::DispatchEvent </td>
+          <td>(</td>
+          <td class="paramtype">const ChipDeviceEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a770c84364c504f0eb510ff000f08903f" name="a770c84364c504f0eb510ff000f08903f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770c84364c504f0eb510ff000f08903f">&#9670;&#160;</a></span>GetDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManagerDelegate.html">PlatformManagerDelegate</a> * chip::DeviceLayer::PlatformManager::GetDelegate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e0db77bdab7a833061fe341eba933cf" name="a5e0db77bdab7a833061fe341eba933cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e0db77bdab7a833061fe341eba933cf">&#9670;&#160;</a></span>HandleServerShuttingDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::PlatformManager::HandleServerShuttingDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Should be called before shutting down the Matter stack or restarting the application to run all needed pre-shutdown actions. </p>
+
+</div>
+</div>
+<a id="a398db9d0c0bd1049c90ba5a92977bf51" name="a398db9d0c0bd1049c90ba5a92977bf51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a398db9d0c0bd1049c90ba5a92977bf51">&#9670;&#160;</a></span>HandleServerStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::PlatformManager::HandleServerStarted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Should be called after initializing all layers of the Matter stack to run all needed post-startup actions. </p>
+
+</div>
+</div>
+<a id="a4c1372af7e3d001e2857e6f14c9a1554" name="a4c1372af7e3d001e2857e6f14c9a1554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c1372af7e3d001e2857e6f14c9a1554">&#9670;&#160;</a></span>InitChipStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::PlatformManager::InitChipStack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a4c1372af7e3d001e2857e6f14c9a1554">InitChipStack()</a> initializes the <a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a>. After calling that, a consumer is allowed to call either StartEventLoopTask or RunEventLoop to process pending work. Calling both is not allowed: it must be one or the other. </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1DeviceLayer_1_1PlatformManager_a4c1372af7e3d001e2857e6f14c9a1554_icgraph.png" border="0" usemap="#aclasschip_1_1DeviceLayer_1_1PlatformManager_a4c1372af7e3d001e2857e6f14c9a1554_icgraph" alt=""/></div>
+<map name="aclasschip_1_1DeviceLayer_1_1PlatformManager_a4c1372af7e3d001e2857e6f14c9a1554_icgraph" id="aclasschip_1_1DeviceLayer_1_1PlatformManager_a4c1372af7e3d001e2857e6f14c9a1554_icgraph">
+<area shape="rect" title=" " alt="" coords="288,5,517,45"/>
+<area shape="rect" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="108,13,240,38"/>
+<area shape="poly" title=" " alt="" coords="274,28,240,28,240,23,274,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac8acb26d5d8adcd1f5709f3f4fecb588" name="ac8acb26d5d8adcd1f5709f3f4fecb588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8acb26d5d8adcd1f5709f3f4fecb588">&#9670;&#160;</a></span>LockChipStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::PlatformManager::LockChipStack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1DeviceLayer_1_1PlatformManager_ac8acb26d5d8adcd1f5709f3f4fecb588_icgraph.png" border="0" usemap="#aclasschip_1_1DeviceLayer_1_1PlatformManager_ac8acb26d5d8adcd1f5709f3f4fecb588_icgraph" alt=""/></div>
+<map name="aclasschip_1_1DeviceLayer_1_1PlatformManager_ac8acb26d5d8adcd1f5709f3f4fecb588_icgraph" id="aclasschip_1_1DeviceLayer_1_1PlatformManager_ac8acb26d5d8adcd1f5709f3f4fecb588_icgraph">
+<area shape="rect" title=" " alt="" coords="256,37,495,77"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1StackLock.html#a13bfea63c2650792980e3b69ccb0b666" title=" " alt="" coords="25,5,188,45"/>
+<area shape="poly" title=" " alt="" coords="242,44,188,38,188,32,243,39"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1StackUnlock.html#a3d446d5167298debd91939fd40aee1e2" title=" " alt="" coords="5,69,208,109"/>
+<area shape="poly" title=" " alt="" coords="243,76,209,80,208,75,242,71"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9dbe8d62bde794dba8354b184d91940c" name="a9dbe8d62bde794dba8354b184d91940c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dbe8d62bde794dba8354b184d91940c">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a> &amp; chip::DeviceLayer::PlatformManager::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5a46c1946d3a0e3caf4f816c6004952" name="af5a46c1946d3a0e3caf4f816c6004952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a46c1946d3a0e3caf4f816c6004952">&#9670;&#160;</a></span>PostBackgroundEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::PlatformManager::PostBackgroundEvent </td>
+          <td>(</td>
+          <td class="paramtype">const ChipDeviceEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generally this function has the same semantics as PostEvent except it applies to background processing.</p>
+<p>If CHIP_DEVICE_CONFIG_ENABLE_BG_EVENT_PROCESSING is not true, will delegate to PostEvent.</p>
+<p>Only accepts events of type kCallWorkFunct or kNoOp.</p>
+<p>Returns CHIP_ERROR_INVALID_ARGUMENT if the event type is not acceptable. Returns CHIP_ERROR_NO_MEMORY if resources are exhausted. </p>
+
+</div>
+</div>
+<a id="a74fcc71cf01edc5d7874ecaa4a2165e2" name="a74fcc71cf01edc5d7874ecaa4a2165e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74fcc71cf01edc5d7874ecaa4a2165e2">&#9670;&#160;</a></span>PostEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::PlatformManager::PostEvent </td>
+          <td>(</td>
+          <td class="paramtype">const ChipDeviceEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a047ce7e7e2c66b7f6b485b062554768e" name="a047ce7e7e2c66b7f6b485b062554768e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047ce7e7e2c66b7f6b485b062554768e">&#9670;&#160;</a></span>PostEventOrDie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::PlatformManager::PostEventOrDie </td>
+          <td>(</td>
+          <td class="paramtype">const ChipDeviceEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1DeviceLayer_1_1PlatformManager_a047ce7e7e2c66b7f6b485b062554768e_cgraph.png" border="0" usemap="#aclasschip_1_1DeviceLayer_1_1PlatformManager_a047ce7e7e2c66b7f6b485b062554768e_cgraph" alt=""/></div>
+<map name="aclasschip_1_1DeviceLayer_1_1PlatformManager_a047ce7e7e2c66b7f6b485b062554768e_cgraph" id="aclasschip_1_1DeviceLayer_1_1PlatformManager_a047ce7e7e2c66b7f6b485b062554768e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,213,60"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61" title=" " alt="" coords="261,20,432,45"/>
+<area shape="poly" title=" " alt="" coords="214,30,248,30,248,35,214,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5fe71645c08ad0f7dc93a432b14bbeb5" name="a5fe71645c08ad0f7dc93a432b14bbeb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe71645c08ad0f7dc93a432b14bbeb5">&#9670;&#160;</a></span>RemoveEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::PlatformManager::RemoveEventHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a61da86a211bc12e7b5a8649aa38b7385">EventHandlerFunct</a>&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">intptr_t&#160;</td>
+          <td class="paramname"><em>arg</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb9857c970df94b74fb8ed42fdeca25c" name="aeb9857c970df94b74fb8ed42fdeca25c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9857c970df94b74fb8ed42fdeca25c">&#9670;&#160;</a></span>RunBackgroundEventLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::PlatformManager::RunBackgroundEventLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generally this function has the same semantics as RunEventLoop except it applies to background processing. </p>
+
+</div>
+</div>
+<a id="a4cff33452d1f380bfd46c984e45df31c" name="a4cff33452d1f380bfd46c984e45df31c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cff33452d1f380bfd46c984e45df31c">&#9670;&#160;</a></span>RunEventLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::PlatformManager::RunEventLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Process work items until StopEventLoopTask is called. RunEventLoop will not return until work item processing is stopped. Once it returns it guarantees that no more work items will be processed unless there's another call to RunEventLoop.</p>
+<p>Consumers that call RunEventLoop must not call StartEventLoopTask.</p>
+<p>Consumers that call RunEventLoop must ensure that RunEventLoop returns before calling Shutdown. </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1DeviceLayer_1_1PlatformManager_a4cff33452d1f380bfd46c984e45df31c_icgraph.png" border="0" usemap="#aclasschip_1_1DeviceLayer_1_1PlatformManager_a4cff33452d1f380bfd46c984e45df31c_icgraph" alt=""/></div>
+<map name="aclasschip_1_1DeviceLayer_1_1PlatformManager_a4cff33452d1f380bfd46c984e45df31c_icgraph" id="aclasschip_1_1DeviceLayer_1_1PlatformManager_a4cff33452d1f380bfd46c984e45df31c_icgraph">
+<area shape="rect" title=" " alt="" coords="419,27,655,67"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="152,5,327,31"/>
+<area shape="poly" title=" " alt="" coords="405,37,327,29,327,24,405,32"/>
+<area shape="rect" href="classDefaultAppMainLoopImplementation.html#a01ac53fff1481063c6c42413e301f445" title=" " alt="" coords="108,55,371,95"/>
+<area shape="poly" title=" " alt="" coords="405,62,371,66,371,60,405,57"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="138,21,60,21,60,15,138,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7f044320dd1c463521b7f56295d3da3a" name="a7f044320dd1c463521b7f56295d3da3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f044320dd1c463521b7f56295d3da3a">&#9670;&#160;</a></span>ScheduleBackgroundWork()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::PlatformManager::ScheduleBackgroundWork </td>
+          <td>(</td>
+          <td class="paramtype">AsyncWorkFunct&#160;</td>
+          <td class="paramname"><em>workFunct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">intptr_t&#160;</td>
+          <td class="paramname"><em>arg</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generally this function has the same semantics as ScheduleWork except it applies to background processing.</p>
+<p>Delegates to PostBackgroundEvent (which will delegate to PostEvent if CHIP_DEVICE_CONFIG_ENABLE_BG_EVENT_PROCESSING is not true). </p>
+
+</div>
+</div>
+<a id="a8a1daf9aaf8eb75f6c743c8dd1935d29" name="a8a1daf9aaf8eb75f6c743c8dd1935d29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a1daf9aaf8eb75f6c743c8dd1935d29">&#9670;&#160;</a></span>ScheduleWork()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::PlatformManager::ScheduleWork </td>
+          <td>(</td>
+          <td class="paramtype">AsyncWorkFunct&#160;</td>
+          <td class="paramname"><em>workFunct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">intptr_t&#160;</td>
+          <td class="paramname"><em>arg</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>ScheduleWork can be called after InitChipStack has been called. Calls that happen before either StartEventLoopTask or RunEventLoop will queue the work up but that work will NOT run until one of those functions is called.</p>
+<p>ScheduleWork can be called safely on any thread without locking the stack. When called from a thread that is not doing the stack work item processing, the callback function may be called (on the work item processing thread) before ScheduleWork returns. </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1DeviceLayer_1_1PlatformManager_a8a1daf9aaf8eb75f6c743c8dd1935d29_icgraph.png" border="0" usemap="#aclasschip_1_1DeviceLayer_1_1PlatformManager_a8a1daf9aaf8eb75f6c743c8dd1935d29_icgraph" alt=""/></div>
+<map name="aclasschip_1_1DeviceLayer_1_1PlatformManager_a8a1daf9aaf8eb75f6c743c8dd1935d29_icgraph" id="aclasschip_1_1DeviceLayer_1_1PlatformManager_a8a1daf9aaf8eb75f6c743c8dd1935d29_icgraph">
+<area shape="rect" title=" " alt="" coords="1360,77,1595,117"/>
+<area shape="rect" href="classBridgeCommandDelegate.html#adf7d76b19822a725e3baf2270e720710" title=" " alt="" coords="1075,5,1287,45"/>
+<area shape="poly" title=" " alt="" coords="1380,77,1263,48,1265,43,1382,71"/>
+<area shape="rect" href="namespaceanonymous__namespace_02main_8cpp_03.html#aa4ee5c65f36fa242b228245f65d51531" title=" " alt="" coords="1065,70,1297,125"/>
+<area shape="poly" title=" " alt="" coords="1346,100,1297,100,1297,95,1346,95"/>
+<area shape="rect" href="classDefaultAppMainLoopImplementation.html#ab171fe3c33fc5e139b2b91ae00a2f6c8" title=" " alt="" coords="1049,149,1312,189"/>
+<area shape="poly" title=" " alt="" coords="1382,123,1265,152,1263,147,1380,118"/>
+<area shape="rect" href="main_8cpp.html#acc97fe72c27730d9b68031e60adfdb1d" title=" " alt="" coords="495,27,743,53"/>
+<area shape="poly" title=" " alt="" coords="1051,81,1001,75,743,51,743,46,1002,69,1052,76"/>
+<area shape="rect" href="main_8cpp.html#acddbdac074074838706f6cac15611fd5" title=" " alt="" coords="791,85,1001,110"/>
+<area shape="poly" title=" " alt="" coords="1051,100,1001,100,1001,95,1051,95"/>
+<area shape="rect" href="main_8cpp.html#a3fe55c819c4811eec60d15d6f7a4110c" title=" " alt="" coords="502,141,735,181"/>
+<area shape="poly" title=" " alt="" coords="1051,119,1002,125,736,153,735,148,1001,120,1051,114"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,85,447,110"/>
+<area shape="poly" title=" " alt="" coords="537,58,495,68,429,87,428,82,494,63,536,53"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,85,283,110"/>
+<area shape="poly" title=" " alt="" coords="317,100,283,100,283,95,317,95"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,85,60,110"/>
+<area shape="poly" title=" " alt="" coords="95,100,60,100,60,95,95,95"/>
+<area shape="poly" title=" " alt="" coords="821,85,742,68,681,55,682,50,743,63,822,79"/>
+<area shape="rect" href="main_8cpp.html#a9e226c8f2cfcf9a4399a0baa06e7416f" title=" " alt="" coords="499,77,738,117"/>
+<area shape="poly" title=" " alt="" coords="777,100,738,100,738,95,777,95"/>
+<area shape="poly" title=" " alt="" coords="827,116,707,144,706,139,826,111"/>
+<area shape="poly" title=" " alt="" coords="485,100,447,100,447,95,485,95"/>
+<area shape="poly" title=" " alt="" coords="525,140,494,132,429,113,431,107,495,127,526,135"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a92473a1cdb4cdbd14d2a06a27fbdfc82" name="a92473a1cdb4cdbd14d2a06a27fbdfc82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92473a1cdb4cdbd14d2a06a27fbdfc82">&#9670;&#160;</a></span>SetDelegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::PlatformManager::SetDelegate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManagerDelegate.html">PlatformManagerDelegate</a> *&#160;</td>
+          <td class="paramname"><em>delegate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e0bbc9cee2cfc64849e6c84eb1fc686" name="a8e0bbc9cee2cfc64849e6c84eb1fc686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0bbc9cee2cfc64849e6c84eb1fc686">&#9670;&#160;</a></span>Shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::PlatformManager::Shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shuts down and cleans up the main objects in the CHIP stack. This DOES NOT stop the chip thread or event queue from running. </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1DeviceLayer_1_1PlatformManager_a8e0bbc9cee2cfc64849e6c84eb1fc686_icgraph.png" border="0" usemap="#aclasschip_1_1DeviceLayer_1_1PlatformManager_a8e0bbc9cee2cfc64849e6c84eb1fc686_icgraph" alt=""/></div>
+<map name="aclasschip_1_1DeviceLayer_1_1PlatformManager_a8e0bbc9cee2cfc64849e6c84eb1fc686_icgraph" id="aclasschip_1_1DeviceLayer_1_1PlatformManager_a8e0bbc9cee2cfc64849e6c84eb1fc686_icgraph">
+<area shape="rect" title="Shuts down and cleans up the main objects in the CHIP stack. This DOES NOT stop the chip thread or ev..." alt="" coords="331,5,537,45"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,13,283,38"/>
+<area shape="poly" title=" " alt="" coords="317,28,283,28,283,23,317,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="95,28,60,28,60,23,95,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad13a9ca5ec68a96432eca775db71a78c" name="ad13a9ca5ec68a96432eca775db71a78c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13a9ca5ec68a96432eca775db71a78c">&#9670;&#160;</a></span>StartBackgroundEventLoopTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::PlatformManager::StartBackgroundEventLoopTask </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generally this function has the same semantics as StartEventLoopTask except it applies to background processing. </p>
+
+</div>
+</div>
+<a id="ae611e3100742f6fef1dde1c02b8d8ee4" name="ae611e3100742f6fef1dde1c02b8d8ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae611e3100742f6fef1dde1c02b8d8ee4">&#9670;&#160;</a></span>StartChipTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::PlatformManager::StartChipTimer </td>
+          <td>(</td>
+          <td class="paramtype">System::Clock::Timeout&#160;</td>
+          <td class="paramname"><em>duration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8492de263e64ccd18e1a138264aebc9d" name="a8492de263e64ccd18e1a138264aebc9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8492de263e64ccd18e1a138264aebc9d">&#9670;&#160;</a></span>StartEventLoopTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::PlatformManager::StartEventLoopTask </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts the stack on its own task with an associated event queue to dispatch and handle events posted to that task. </p>
+<p>Process work items until StopEventLoopTask is called.</p>
+<p>StartEventLoopTask processes items asynchronously. It can return before any items are processed, or after some items have been processed, or while an item is being processed, or even after <a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a45ec9f9b795dcb62d2fb8963fbfe431f" title="This will trigger the event loop to exit and block till it has exited the loop. This prevents the pro...">StopEventLoopTask()</a> has been called (e.g. if <a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a8a1daf9aaf8eb75f6c743c8dd1935d29">ScheduleWork()</a> was called before StartEventLoopTask was called, with a work item that calls StopEventLoopTask).</p>
+<p>Consumers that call StartEventLoopTask must not call RunEventLoop.</p>
+<p>Consumers that call StartEventLoopTask must ensure that they call StopEventLoopTask before calling Shutdown.</p>
+<p>This is thread-safe. This is <em>NOT SAFE</em> to call from within the CHIP event loop since it can grab the stack lock. </p>
+
+</div>
+</div>
+<a id="a7d639c42bd58e64d9dd040edcc11b06e" name="a7d639c42bd58e64d9dd040edcc11b06e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d639c42bd58e64d9dd040edcc11b06e">&#9670;&#160;</a></span>StopBackgroundEventLoopTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::PlatformManager::StopBackgroundEventLoopTask </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generally this function has the same semantics as StopEventLoopTask except it applies to background processing. </p>
+
+</div>
+</div>
+<a id="a45ec9f9b795dcb62d2fb8963fbfe431f" name="a45ec9f9b795dcb62d2fb8963fbfe431f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ec9f9b795dcb62d2fb8963fbfe431f">&#9670;&#160;</a></span>StopEventLoopTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::DeviceLayer::PlatformManager::StopEventLoopTask </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This will trigger the event loop to exit and block till it has exited the loop. This prevents the processing of any further events in the queue. </p>
+<p>Stop processing of work items by the event loop.</p>
+<p>If called from outside work item processing, StopEventLoopTask guarantees that any currently-executing work item completes execution and no more work items will run after StopEventLoopTask returns. This is generally how StopEventLoopTask is used in conjunction with StartEventLoopTask.</p>
+<p>If called from inside work item processing, StopEventLoopTask makes no guarantees about exactly when work item processing will stop. What it does guarantee is that if it is used this way in conjunction with RunEventLoop then all work item processing will stop before RunEventLoop returns.</p>
+<p>Additionally, this stops the CHIP task if the following criteria are met:</p><ol type="1">
+<li>One was created earlier through a call to StartEventLoopTask</li>
+<li>This call isn't being made from that task.</li>
+</ol>
+<p>This is safe to call from any task. This is safe to call from within the CHIP event loop. </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1DeviceLayer_1_1PlatformManager_a45ec9f9b795dcb62d2fb8963fbfe431f_icgraph.png" border="0" usemap="#aclasschip_1_1DeviceLayer_1_1PlatformManager_a45ec9f9b795dcb62d2fb8963fbfe431f_icgraph" alt=""/></div>
+<map name="aclasschip_1_1DeviceLayer_1_1PlatformManager_a45ec9f9b795dcb62d2fb8963fbfe431f_icgraph" id="aclasschip_1_1DeviceLayer_1_1PlatformManager_a45ec9f9b795dcb62d2fb8963fbfe431f_icgraph">
+<area shape="rect" title="This will trigger the event loop to exit and block till it has exited the loop. This prevents the pro..." alt="" coords="892,30,1101,85"/>
+<area shape="rect" href="classDefaultAppMainLoopImplementation.html#ab171fe3c33fc5e139b2b91ae00a2f6c8" title=" " alt="" coords="581,5,844,45"/>
+<area shape="poly" title=" " alt="" coords="878,47,844,43,844,37,878,41"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a7b5acccb085831d760d79051c6a63962" title=" " alt="" coords="581,69,844,109"/>
+<area shape="poly" title=" " alt="" coords="878,73,844,77,844,72,878,68"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,77,283,102"/>
+<area shape="poly" title=" " alt="" coords="567,85,533,84,432,82,331,84,283,86,283,81,331,79,432,77,533,79,568,80"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a648b20fe10e56b8bb136370b8654b461" title=" " alt="" coords="331,94,533,149"/>
+<area shape="poly" title=" " alt="" coords="568,109,534,112,533,107,567,103"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,77,60,102"/>
+<area shape="poly" title=" " alt="" coords="95,92,60,92,60,87,95,87"/>
+<area shape="poly" title=" " alt="" coords="317,108,282,104,283,98,317,103"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8a27948111e2d94228526dd92105aeb0" name="a8a27948111e2d94228526dd92105aeb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a27948111e2d94228526dd92105aeb0">&#9670;&#160;</a></span>TryLockChipStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::DeviceLayer::PlatformManager::TryLockChipStack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f35d6ee56ac54c996387c24bdfc023c" name="a3f35d6ee56ac54c996387c24bdfc023c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f35d6ee56ac54c996387c24bdfc023c">&#9670;&#160;</a></span>UnlockChipStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::DeviceLayer::PlatformManager::UnlockChipStack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1DeviceLayer_1_1PlatformManager_a3f35d6ee56ac54c996387c24bdfc023c_icgraph.png" border="0" usemap="#aclasschip_1_1DeviceLayer_1_1PlatformManager_a3f35d6ee56ac54c996387c24bdfc023c_icgraph" alt=""/></div>
+<map name="aclasschip_1_1DeviceLayer_1_1PlatformManager_a3f35d6ee56ac54c996387c24bdfc023c_icgraph" id="aclasschip_1_1DeviceLayer_1_1PlatformManager_a3f35d6ee56ac54c996387c24bdfc023c_icgraph">
+<area shape="rect" title=" " alt="" coords="245,30,463,85"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1StackUnlock.html#afd6cbd1d9970b3bd10cea4f73e6489ff" title=" " alt="" coords="5,5,197,45"/>
+<area shape="poly" title=" " alt="" coords="231,44,197,40,198,35,232,39"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1StackLock.html#a944865bbc7435ad0b3b693a0cca498f2" title=" " alt="" coords="15,69,188,109"/>
+<area shape="poly" title=" " alt="" coords="232,75,189,81,188,76,231,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">フレンドと関連関数の詳解</h2>
+<a id="a50cd5ed45a9e4ed4b1d99e721b2b4ce1" name="a50cd5ed45a9e4ed4b1d99e721b2b4ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50cd5ed45a9e4ed4b1d99e721b2b4ce1">&#9670;&#160;</a></span>ConfigurationManagerImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class ConfigurationManagerImpl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2116de3dec40503a2bb150dd941ae7db" name="a2116de3dec40503a2bb150dd941ae7db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2116de3dec40503a2bb150dd941ae7db">&#9670;&#160;</a></span>ConnectivityManagerImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class ConnectivityManagerImpl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a706511a494149aec8fdda0abaa53d55e" name="a706511a494149aec8fdda0abaa53d55e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706511a494149aec8fdda0abaa53d55e">&#9670;&#160;</a></span>DeviceControlServer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class DeviceControlServer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1e623a90ab9dc6e02803831c1451661" name="af1e623a90ab9dc6e02803831c1451661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e623a90ab9dc6e02803831c1451661">&#9670;&#160;</a></span>Dnssd::DiscoveryImplPlatform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class Dnssd::DiscoveryImplPlatform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7137a09f7c45d0f898ff2147a0b3e9bd" name="a7137a09f7c45d0f898ff2147a0b3e9bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7137a09f7c45d0f898ff2147a0b3e9bd">&#9670;&#160;</a></span>FailSafeContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class FailSafeContext</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a208e83cad03106b77b2e8b8956cf0cca" name="a208e83cad03106b77b2e8b8956cf0cca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a208e83cad03106b77b2e8b8956cf0cca">&#9670;&#160;</a></span>Internal::BLEManagerImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class Internal::BLEManagerImpl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad41c9fd8237d290bd991f809e3ec00b2" name="ad41c9fd8237d290bd991f809e3ec00b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41c9fd8237d290bd991f809e3ec00b2">&#9670;&#160;</a></span>Internal::GenericConfigurationManagerImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classchip_1_1DeviceLayer_1_1Internal_1_1GenericConfigurationManagerImpl.html">Internal::GenericConfigurationManagerImpl</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed2f7e801702f32466bd8c5c5fbf063f" name="aed2f7e801702f32466bd8c5c5fbf063f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed2f7e801702f32466bd8c5c5fbf063f">&#9670;&#160;</a></span>Internal::GenericConnectivityManagerImpl_Thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classchip_1_1DeviceLayer_1_1Internal_1_1GenericConnectivityManagerImpl__Thread.html">Internal::GenericConnectivityManagerImpl_Thread</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a929b8c50e573b52988f41760a0377430" name="a929b8c50e573b52988f41760a0377430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a929b8c50e573b52988f41760a0377430">&#9670;&#160;</a></span>Internal::GenericPlatformManagerImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classchip_1_1DeviceLayer_1_1Internal_1_1GenericPlatformManagerImpl.html">Internal::GenericPlatformManagerImpl</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4cbc0bd7eed8869f0d94cea06668ae8" name="ad4cbc0bd7eed8869f0d94cea06668ae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4cbc0bd7eed8869f0d94cea06668ae8">&#9670;&#160;</a></span>Internal::GenericPlatformManagerImpl_CMSISOS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classchip_1_1DeviceLayer_1_1Internal_1_1GenericPlatformManagerImpl__CMSISOS.html">Internal::GenericPlatformManagerImpl_CMSISOS</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab4efedc666ea89b201be84c10faee9d" name="aab4efedc666ea89b201be84c10faee9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab4efedc666ea89b201be84c10faee9d">&#9670;&#160;</a></span>Internal::GenericPlatformManagerImpl_FreeRTOS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classchip_1_1DeviceLayer_1_1Internal_1_1GenericPlatformManagerImpl__FreeRTOS.html">Internal::GenericPlatformManagerImpl_FreeRTOS</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae442cfbf06ded6604c83e41b66654d80" name="ae442cfbf06ded6604c83e41b66654d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae442cfbf06ded6604c83e41b66654d80">&#9670;&#160;</a></span>Internal::GenericPlatformManagerImpl_POSIX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classchip_1_1DeviceLayer_1_1Internal_1_1GenericPlatformManagerImpl__POSIX.html">Internal::GenericPlatformManagerImpl_POSIX</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac27e64b4ae1e3eb43724cb459f97ce67" name="ac27e64b4ae1e3eb43724cb459f97ce67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac27e64b4ae1e3eb43724cb459f97ce67">&#9670;&#160;</a></span>Internal::GenericPlatformManagerImpl_Zephyr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classchip_1_1DeviceLayer_1_1Internal_1_1GenericPlatformManagerImpl__Zephyr.html">Internal::GenericPlatformManagerImpl_Zephyr</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1adcbce2503b97fa59993cd79d0b9351" name="a1adcbce2503b97fa59993cd79d0b9351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1adcbce2503b97fa59993cd79d0b9351">&#9670;&#160;</a></span>Internal::GenericThreadStackManagerImpl_OpenThread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classchip_1_1DeviceLayer_1_1Internal_1_1GenericThreadStackManagerImpl__OpenThread.html">Internal::GenericThreadStackManagerImpl_OpenThread</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80eccab2a6304088baebf9fc7f3c2751" name="a80eccab2a6304088baebf9fc7f3c2751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80eccab2a6304088baebf9fc7f3c2751">&#9670;&#160;</a></span>Internal::GenericThreadStackManagerImpl_OpenThread_LwIP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classchip_1_1DeviceLayer_1_1Internal_1_1GenericThreadStackManagerImpl__OpenThread__LwIP.html">Internal::GenericThreadStackManagerImpl_OpenThread_LwIP</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a798c42a7466a4a111a9dfbc0843ecede" name="a798c42a7466a4a111a9dfbc0843ecede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a798c42a7466a4a111a9dfbc0843ecede">&#9670;&#160;</a></span>Internal::NFCCommissioningManagerImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class Internal::NFCCommissioningManagerImpl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac31a0df4105578f7404846c15568b820" name="ac31a0df4105578f7404846c15568b820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac31a0df4105578f7404846c15568b820">&#9670;&#160;</a></span>PlatformManagerImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class PlatformManagerImpl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9f00f758608a0f7fa826f031e6bc168" name="ac9f00f758608a0f7fa826f031e6bc168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f00f758608a0f7fa826f031e6bc168">&#9670;&#160;</a></span>System::PlatformEventing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class System::PlatformEventing</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7213564d92362311f143e6ca2cd1f24e" name="a7213564d92362311f143e6ca2cd1f24e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7213564d92362311f143e6ca2cd1f24e">&#9670;&#160;</a></span>ThreadStackManagerImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class ThreadStackManagerImpl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0274dafbe097e372adf1f16d97d9bd99" name="a0274dafbe097e372adf1f16d97d9bd99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0274dafbe097e372adf1f16d97d9bd99">&#9670;&#160;</a></span>TraitManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class TraitManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ae63f3e699fe7433380e4c3f9ab544270" name="ae63f3e699fe7433380e4c3f9ab544270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae63f3e699fe7433380e4c3f9ab544270">&#9670;&#160;</a></span>mDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManagerDelegate.html">PlatformManagerDelegate</a>* chip::DeviceLayer::PlatformManager::mDelegate = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a289642910967ab4a80e700a7ab1550f6" name="a289642910967ab4a80e700a7ab1550f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a289642910967ab4a80e700a7ab1550f6">&#9670;&#160;</a></span>mInitialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::DeviceLayer::PlatformManager::mInitialized = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/include/platform/<a class="el" href="PlatformManager_8h_source.html">PlatformManager.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

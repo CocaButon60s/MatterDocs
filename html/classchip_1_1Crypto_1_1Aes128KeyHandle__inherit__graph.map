@@ -1,0 +1,7 @@
+<map id="chip::Crypto::Aes128KeyHandle" name="chip::Crypto::Aes128KeyHandle">
+<area shape="rect" id="Node000001" title="Platform&#45;specific 128&#45;bit AES key handle" alt="" coords="21,196,247,221"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Crypto_1_1Symmetric128BitsKeyHandle.html" title="Platform&#45;specific 128&#45;bit symmetric key handle" alt="" coords="33,108,235,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,162,137,196,131,196,131,162"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Crypto_1_1SymmetricKeyHandle.html" title=" " alt="" coords="5,5,263,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="137,74,137,108,131,108,131,74"/>
+</map>

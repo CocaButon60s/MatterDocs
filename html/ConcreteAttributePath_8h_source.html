@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/app/ConcreteAttributePath.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_a9aeb43d402f24b4c5513213743384b7.html">app</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">ConcreteAttributePath.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="ConcreteAttributePath_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2021 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *    All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;app/ConcreteClusterPath.h&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;app/util/basic-types.h&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="code" href="Optional_8h.html">lib/core/Optional.h</a>&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">namespace </span>app {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteAttributePath.html">   34</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> : <span class="keyword">public</span> ConcreteClusterPath</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteAttributePath.html#aabd0ea56d4d14adaf5205f7493bcea08">   36</a></span>    <a class="code hl_function" href="structchip_1_1app_1_1ConcreteAttributePath.html#aabd0ea56d4d14adaf5205f7493bcea08">ConcreteAttributePath</a>()</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="comment">// Note: mExpanded is in the superclass, so we can&#39;t use a field</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="comment">// initializer.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        mExpanded = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteAttributePath.html#a194fe361218455c6762c4d3eeffe3464">   43</a></span>    <a class="code hl_function" href="structchip_1_1app_1_1ConcreteAttributePath.html#a194fe361218455c6762c4d3eeffe3464">ConcreteAttributePath</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId, <a class="code hl_typedef" href="namespacechip.html#a9679009d83716300aae025b8a172c401">AttributeId</a> aAttributeId) :</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        ConcreteClusterPath(aEndpointId, aClusterId), <a class="code hl_variable" href="structchip_1_1app_1_1ConcreteAttributePath.html#a18c68bdc50039307d6f6d70af70e77d4">mAttributeId</a>(aAttributeId)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="comment">// Note: mExpanded is in the supercclass, so we can&#39;t use a field</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="comment">// initializer.</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        mExpanded = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteAttributePath.html#a07de48632dba56cc39b36bfb28b233a4">   51</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteAttributePath.html#a07de48632dba56cc39b36bfb28b233a4">IsValid</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> ConcreteClusterPath::HasValidIds() &amp;&amp; <a class="code hl_function" href="namespacechip.html#a793b88e663c13e4deba835fb5512254c">IsValidAttributeId</a>(<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteAttributePath.html#a18c68bdc50039307d6f6d70af70e77d4">mAttributeId</a>); }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteAttributePath.html#a58d845ad9709c1a377ca9646e5208e36">   53</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteAttributePath.html#a58d845ad9709c1a377ca9646e5208e36">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp; aOther)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> ConcreteClusterPath::operator==(aOther) &amp;&amp; (<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteAttributePath.html#a18c68bdc50039307d6f6d70af70e77d4">mAttributeId</a> == aOther.<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteAttributePath.html#a18c68bdc50039307d6f6d70af70e77d4">mAttributeId</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteAttributePath.html#aa0ef70d9efaf719e520dbac1f8c224c4">   58</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteAttributePath.html#aa0ef70d9efaf719e520dbac1f8c224c4">operator!=</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp; aOther)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == aOther); }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteAttributePath.html#a0314aff21a3192ad909645d27e492b97">   60</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteAttributePath.html#a0314aff21a3192ad909645d27e492b97">operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp; path)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">return</span> (mEndpointId &lt; path.mEndpointId) || ((mEndpointId == path.mEndpointId) &amp;&amp; (mClusterId &lt; path.mClusterId)) ||</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            ((mEndpointId == path.mEndpointId) &amp;&amp; (mClusterId == path.mClusterId) &amp;&amp; (<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteAttributePath.html#a18c68bdc50039307d6f6d70af70e77d4">mAttributeId</a> &lt; path.<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteAttributePath.html#a18c68bdc50039307d6f6d70af70e77d4">mAttributeId</a>));</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteAttributePath.html#a18c68bdc50039307d6f6d70af70e77d4">   66</a></span>    <a class="code hl_typedef" href="namespacechip.html#a9679009d83716300aae025b8a172c401">AttributeId</a> <a class="code hl_variable" href="structchip_1_1app_1_1ConcreteAttributePath.html#a18c68bdc50039307d6f6d70af70e77d4">mAttributeId</a> = 0;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="};">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">   74</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#ae0c4f6cddfaa1033cded087d3ed76af2">   76</a></span>    <a class="code hl_function" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#ae0c4f6cddfaa1033cded087d3ed76af2">ConcreteReadAttributePath</a>() {}</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a2e9ed453062f38eeb0a5407e99333cd8">   78</a></span>    <a class="code hl_function" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a2e9ed453062f38eeb0a5407e99333cd8">ConcreteReadAttributePath</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp; path) : <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a>(path) {}</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a063a3a9c59916baea68cb1738a090f1e">   80</a></span>    <a class="code hl_function" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a063a3a9c59916baea68cb1738a090f1e">ConcreteReadAttributePath</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId, <a class="code hl_typedef" href="namespacechip.html#a9679009d83716300aae025b8a172c401">AttributeId</a> aAttributeId) :</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a>(aEndpointId, aClusterId, aAttributeId)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    {}</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a3f7c2efbd9a295db6c35ba723f5b87f8">   84</a></span>    <a class="code hl_function" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a3f7c2efbd9a295db6c35ba723f5b87f8">ConcreteReadAttributePath</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId, <a class="code hl_typedef" href="namespacechip.html#a9679009d83716300aae025b8a172c401">AttributeId</a> aAttributeId, uint16_t aListIndex) :</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a>(aEndpointId, aClusterId, aAttributeId)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <a class="code hl_variable" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a681b68e04ecc144494e593e09c5d045b">mListIndex</a>.<a class="code hl_function" href="classchip_1_1Optional.html#a02d5932f37467d13f8bef21a41b1f391">SetValue</a>(aListIndex);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#aaecc167a8d59a373297614bff869a30b">   90</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#aaecc167a8d59a373297614bff869a30b">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> &amp; aOther) <span class="keyword">const</span> = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a8ff27c69da2faeb2c82d500b72c426cb">   91</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a8ff27c69da2faeb2c82d500b72c426cb">operator!=</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> &amp; aOther) <span class="keyword">const</span> = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#adfa5e2bc9f0fada20a445a159f7d5fee">   92</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#adfa5e2bc9f0fada20a445a159f7d5fee">operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteReadAttributePath.html">ConcreteReadAttributePath</a> &amp; aOther) <span class="keyword">const</span>  = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a681b68e04ecc144494e593e09c5d045b">   94</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;uint16_t&gt;</a> <a class="code hl_variable" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a681b68e04ecc144494e593e09c5d045b">mListIndex</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00102" data-start="{" data-end="};">
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html">  102</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structchip_1_1app_1_1ConcreteDataAttributePath.html">ConcreteDataAttributePath</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>{</div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="};">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66c">  104</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66c">ListOperation</a> : uint8_t</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <a class="code hl_enumvalue" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66ca6083f076b938b400455b490060b458db">NotList</a>,     <span class="comment">// Path points to an attribute that isn&#39;t a list.</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <a class="code hl_enumvalue" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66ca77815b63cb6602918ba3a349065258c8">ReplaceAll</a>,  <span class="comment">// Path points to an attribute that is a list, indicating that the contents of the list should be replaced in</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                     <span class="comment">// its entirety.</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <a class="code hl_enumvalue" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66caf71b26ab6532c299eeef2e7706a8ba22">ReplaceItem</a>, <span class="comment">// Path points to a specific item in a list, indicating that that item should be replaced in its entirety.</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <a class="code hl_enumvalue" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66ca5e89b729b700c19c79bca0bb1d93421a">DeleteItem</a>,  <span class="comment">// Path points to a specific item in a list, indicating that that item should be deleted from the list.</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <a class="code hl_enumvalue" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66ca9361ae81d47dfc5c82b0fbc2ed482af9">AppendItem</a>   <span class="comment">// Path points to an attribute that is a list, indicating that an item should be appended into the list.</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    };</div>
+</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#afb84167464efbb5cc06e1469b680830f">  114</a></span>    <a class="code hl_function" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#afb84167464efbb5cc06e1469b680830f">ConcreteDataAttributePath</a>() {}</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#af77353b189a11fe35cca65f869c9b7d1">  116</a></span>    <a class="code hl_function" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#af77353b189a11fe35cca65f869c9b7d1">ConcreteDataAttributePath</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp; path) : <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a>(path) {}</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#afc3bc2b068c358b1a75b719b4f45bc38">  118</a></span>    <a class="code hl_function" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#afc3bc2b068c358b1a75b719b4f45bc38">ConcreteDataAttributePath</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId, <a class="code hl_typedef" href="namespacechip.html#a9679009d83716300aae025b8a172c401">AttributeId</a> aAttributeId) :</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a>(aEndpointId, aClusterId, aAttributeId)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    {}</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a3bd3675cda934234d09ff1faab262853">  122</a></span>    <a class="code hl_function" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a3bd3675cda934234d09ff1faab262853">ConcreteDataAttributePath</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId, <a class="code hl_typedef" href="namespacechip.html#a9679009d83716300aae025b8a172c401">AttributeId</a> aAttributeId,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                              <span class="keyword">const</span> <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;DataVersion&gt;</a> &amp; aDataVersion) :</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a>(aEndpointId, aClusterId, aAttributeId),</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a9f9bf9a8340e38d9af14a523fa6ee459">mDataVersion</a>(aDataVersion)</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    {}</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a903d7e2a285cdc0f4dab11f7b00ec349">  128</a></span>    <a class="code hl_function" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a903d7e2a285cdc0f4dab11f7b00ec349">ConcreteDataAttributePath</a>(<a class="code hl_typedef" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId, <a class="code hl_typedef" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId, <a class="code hl_typedef" href="namespacechip.html#a9679009d83716300aae025b8a172c401">AttributeId</a> aAttributeId, <a class="code hl_enumeration" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66c">ListOperation</a> aListOp,</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                              uint16_t aListIndex) :</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a>(aEndpointId, aClusterId, aAttributeId)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a853381c53f66a267445d83b133eb434d">mListOp</a>    = aListOp;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a6ee2913674e8e00b0cb64364ca9c7432">mListIndex</a> = aListIndex;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
+</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#ac7393a3e8b1fe1fb7091ad8b2cde9835">  136</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#ac7393a3e8b1fe1fb7091ad8b2cde9835">IsListOperation</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a853381c53f66a267445d83b133eb434d">mListOp</a> != <a class="code hl_enumvalue" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66ca6083f076b938b400455b490060b458db">ListOperation::NotList</a>; }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#adc67ccbd215bc2f9bebce9a41b50eb11">  137</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#adc67ccbd215bc2f9bebce9a41b50eb11">IsListItemOperation</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> ((<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a853381c53f66a267445d83b133eb434d">mListOp</a> != <a class="code hl_enumvalue" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66ca6083f076b938b400455b490060b458db">ListOperation::NotList</a>) &amp;&amp; (<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a853381c53f66a267445d83b133eb434d">mListOp</a> != <a class="code hl_enumvalue" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66ca77815b63cb6602918ba3a349065258c8">ListOperation::ReplaceAll</a>)); }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#aac57497dccaf9f5bc881d6147fc5ec1f">  139</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#aac57497dccaf9f5bc881d6147fc5ec1f">LogPath</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        ChipLogProgress(DataManagement, <span class="stringliteral">&quot;Concrete Attribute Path: (%d, &quot;</span> ChipLogFormatMEI <span class="stringliteral">&quot;, &quot;</span> ChipLogFormatMEI <span class="stringliteral">&quot;) &quot;</span>, mEndpointId,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                        ChipLogValueMEI(mClusterId), ChipLogValueMEI(<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteAttributePath.html#a18c68bdc50039307d6f6d70af70e77d4">mAttributeId</a>));</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    }</div>
+</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="foldopen" id="foldopen00145" data-start="{" data-end="}">
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a551cee906405c282cb8b1991d8921d7a">  145</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a551cee906405c282cb8b1991d8921d7a">MatchesConcreteAttributePath</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteAttributePath.html">ConcreteAttributePath</a> &amp; aOther)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteAttributePath.html#a58d845ad9709c1a377ca9646e5208e36">ConcreteAttributePath::operator==</a>(aOther);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    }</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="foldopen" id="foldopen00150" data-start="{" data-end="}">
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a2743daccb3b9c2987d6512eab4a321ce">  150</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a2743daccb3b9c2987d6512eab4a321ce">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteDataAttributePath.html">ConcreteDataAttributePath</a> &amp; aOther)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteAttributePath.html#a58d845ad9709c1a377ca9646e5208e36">ConcreteAttributePath::operator==</a>(aOther) &amp;&amp; (<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a6ee2913674e8e00b0cb64364ca9c7432">mListIndex</a> == aOther.<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a6ee2913674e8e00b0cb64364ca9c7432">mListIndex</a>) &amp;&amp; (<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a853381c53f66a267445d83b133eb434d">mListOp</a> == aOther.<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a853381c53f66a267445d83b133eb434d">mListOp</a>) &amp;&amp;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            (<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a9f9bf9a8340e38d9af14a523fa6ee459">mDataVersion</a> == aOther.<a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a9f9bf9a8340e38d9af14a523fa6ee459">mDataVersion</a>);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
+</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#ae30a19499121b41a0c4b0b100d99581f">  156</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#ae30a19499121b41a0c4b0b100d99581f">operator!=</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteDataAttributePath.html">ConcreteDataAttributePath</a> &amp; aOther)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == aOther); }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#aae23273446eb9b94182e3e38f2e407a4">  158</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#aae23273446eb9b94182e3e38f2e407a4">operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structchip_1_1app_1_1ConcreteDataAttributePath.html">ConcreteDataAttributePath</a> &amp; aOther) <span class="keyword">const</span> = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="comment">// This index is only valid if `mListOp` is set to a list item operation, i.e</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="comment">// ReplaceItem, DeleteItem or AppendItem. Otherwise, it is to be ignored.</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a6ee2913674e8e00b0cb64364ca9c7432">  164</a></span>    uint16_t <a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a6ee2913674e8e00b0cb64364ca9c7432">mListIndex</a>                = 0;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a853381c53f66a267445d83b133eb434d">  165</a></span>    <a class="code hl_enumeration" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66c">ListOperation</a> <a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a853381c53f66a267445d83b133eb434d">mListOp</a>              = <a class="code hl_enumvalue" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66ca6083f076b938b400455b490060b458db">ListOperation::NotList</a>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a9f9bf9a8340e38d9af14a523fa6ee459">  166</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">Optional&lt;DataVersion&gt;</a> <a class="code hl_variable" href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a9f9bf9a8340e38d9af14a523fa6ee459">mDataVersion</a> = <a class="code hl_variable" href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">NullOptional</a>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>};</div>
+</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>} <span class="comment">// namespace app</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>} <span class="comment">// namespace chip</span></div>
+<div class="ttc" id="aOptional_8h_html"><div class="ttname"><a href="Optional_8h.html">Optional.h</a></div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html"><div class="ttname"><a href="classchip_1_1Optional.html">chip::Optional</a></div><div class="ttdef"><b>Definition</b> Optional.h:49</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html_a02d5932f37467d13f8bef21a41b1f391"><div class="ttname"><a href="classchip_1_1Optional.html#a02d5932f37467d13f8bef21a41b1f391">chip::Optional::SetValue</a></div><div class="ttdeci">constexpr void SetValue(const T &amp;value)</div><div class="ttdef"><b>Definition</b> Optional.h:155</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+<div class="ttc" id="anamespacechip_html_a167c692d0d28c8e6a7d0b2f0c50b290a"><div class="ttname"><a href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">chip::ClusterId</a></div><div class="ttdeci">uint32_t ClusterId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:32</div></div>
+<div class="ttc" id="anamespacechip_html_a793b88e663c13e4deba835fb5512254c"><div class="ttname"><a href="namespacechip.html#a793b88e663c13e4deba835fb5512254c">chip::IsValidAttributeId</a></div><div class="ttdeci">constexpr bool IsValidAttributeId(AttributeId aAttributeId)</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:130</div></div>
+<div class="ttc" id="anamespacechip_html_a9679009d83716300aae025b8a172c401"><div class="ttname"><a href="namespacechip.html#a9679009d83716300aae025b8a172c401">chip::AttributeId</a></div><div class="ttdeci">uint32_t AttributeId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:31</div></div>
+<div class="ttc" id="anamespacechip_html_aaf771abf1db8295717d80349c7a62a6d"><div class="ttname"><a href="namespacechip.html#aaf771abf1db8295717d80349c7a62a6d">chip::NullOptional</a></div><div class="ttdeci">constexpr NullOptionalType NullOptional</div><div class="ttdef"><b>Definition</b> Optional.h:41</div></div>
+<div class="ttc" id="anamespacechip_html_ae2e3807cea12f480cdb9c90c2cca56ef"><div class="ttname"><a href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a></div><div class="ttdeci">uint16_t EndpointId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:40</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteAttributePath_html"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteAttributePath.html">chip::app::ConcreteAttributePath</a></div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:35</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteAttributePath_html_a0314aff21a3192ad909645d27e492b97"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteAttributePath.html#a0314aff21a3192ad909645d27e492b97">chip::app::ConcreteAttributePath::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const ConcreteAttributePath &amp;path) const</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:60</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteAttributePath_html_a07de48632dba56cc39b36bfb28b233a4"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteAttributePath.html#a07de48632dba56cc39b36bfb28b233a4">chip::app::ConcreteAttributePath::IsValid</a></div><div class="ttdeci">bool IsValid() const</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:51</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteAttributePath_html_a18c68bdc50039307d6f6d70af70e77d4"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteAttributePath.html#a18c68bdc50039307d6f6d70af70e77d4">chip::app::ConcreteAttributePath::mAttributeId</a></div><div class="ttdeci">AttributeId mAttributeId</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:66</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteAttributePath_html_a194fe361218455c6762c4d3eeffe3464"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteAttributePath.html#a194fe361218455c6762c4d3eeffe3464">chip::app::ConcreteAttributePath::ConcreteAttributePath</a></div><div class="ttdeci">ConcreteAttributePath(EndpointId aEndpointId, ClusterId aClusterId, AttributeId aAttributeId)</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:43</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteAttributePath_html_a58d845ad9709c1a377ca9646e5208e36"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteAttributePath.html#a58d845ad9709c1a377ca9646e5208e36">chip::app::ConcreteAttributePath::operator==</a></div><div class="ttdeci">bool operator==(const ConcreteAttributePath &amp;aOther) const</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:53</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteAttributePath_html_aa0ef70d9efaf719e520dbac1f8c224c4"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteAttributePath.html#aa0ef70d9efaf719e520dbac1f8c224c4">chip::app::ConcreteAttributePath::operator!=</a></div><div class="ttdeci">bool operator!=(const ConcreteAttributePath &amp;aOther) const</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:58</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteAttributePath_html_aabd0ea56d4d14adaf5205f7493bcea08"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteAttributePath.html#aabd0ea56d4d14adaf5205f7493bcea08">chip::app::ConcreteAttributePath::ConcreteAttributePath</a></div><div class="ttdeci">ConcreteAttributePath()</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:36</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html">chip::app::ConcreteDataAttributePath</a></div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:103</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a15ff03bdebd31bae34080c76750dc66c"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66c">chip::app::ConcreteDataAttributePath::ListOperation</a></div><div class="ttdeci">ListOperation</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:105</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a15ff03bdebd31bae34080c76750dc66ca5e89b729b700c19c79bca0bb1d93421a"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66ca5e89b729b700c19c79bca0bb1d93421a">chip::app::ConcreteDataAttributePath::ListOperation::DeleteItem</a></div><div class="ttdeci">@ DeleteItem</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a15ff03bdebd31bae34080c76750dc66ca6083f076b938b400455b490060b458db"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66ca6083f076b938b400455b490060b458db">chip::app::ConcreteDataAttributePath::ListOperation::NotList</a></div><div class="ttdeci">@ NotList</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a15ff03bdebd31bae34080c76750dc66ca77815b63cb6602918ba3a349065258c8"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66ca77815b63cb6602918ba3a349065258c8">chip::app::ConcreteDataAttributePath::ListOperation::ReplaceAll</a></div><div class="ttdeci">@ ReplaceAll</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a15ff03bdebd31bae34080c76750dc66ca9361ae81d47dfc5c82b0fbc2ed482af9"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66ca9361ae81d47dfc5c82b0fbc2ed482af9">chip::app::ConcreteDataAttributePath::ListOperation::AppendItem</a></div><div class="ttdeci">@ AppendItem</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a15ff03bdebd31bae34080c76750dc66caf71b26ab6532c299eeef2e7706a8ba22"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a15ff03bdebd31bae34080c76750dc66caf71b26ab6532c299eeef2e7706a8ba22">chip::app::ConcreteDataAttributePath::ListOperation::ReplaceItem</a></div><div class="ttdeci">@ ReplaceItem</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a2743daccb3b9c2987d6512eab4a321ce"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a2743daccb3b9c2987d6512eab4a321ce">chip::app::ConcreteDataAttributePath::operator==</a></div><div class="ttdeci">bool operator==(const ConcreteDataAttributePath &amp;aOther) const</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:150</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a3bd3675cda934234d09ff1faab262853"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a3bd3675cda934234d09ff1faab262853">chip::app::ConcreteDataAttributePath::ConcreteDataAttributePath</a></div><div class="ttdeci">ConcreteDataAttributePath(EndpointId aEndpointId, ClusterId aClusterId, AttributeId aAttributeId, const Optional&lt; DataVersion &gt; &amp;aDataVersion)</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:122</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a551cee906405c282cb8b1991d8921d7a"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a551cee906405c282cb8b1991d8921d7a">chip::app::ConcreteDataAttributePath::MatchesConcreteAttributePath</a></div><div class="ttdeci">bool MatchesConcreteAttributePath(const ConcreteAttributePath &amp;aOther) const</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:145</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a6ee2913674e8e00b0cb64364ca9c7432"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a6ee2913674e8e00b0cb64364ca9c7432">chip::app::ConcreteDataAttributePath::mListIndex</a></div><div class="ttdeci">uint16_t mListIndex</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:164</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a853381c53f66a267445d83b133eb434d"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a853381c53f66a267445d83b133eb434d">chip::app::ConcreteDataAttributePath::mListOp</a></div><div class="ttdeci">ListOperation mListOp</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:165</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a903d7e2a285cdc0f4dab11f7b00ec349"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a903d7e2a285cdc0f4dab11f7b00ec349">chip::app::ConcreteDataAttributePath::ConcreteDataAttributePath</a></div><div class="ttdeci">ConcreteDataAttributePath(EndpointId aEndpointId, ClusterId aClusterId, AttributeId aAttributeId, ListOperation aListOp, uint16_t aListIndex)</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:128</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_a9f9bf9a8340e38d9af14a523fa6ee459"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#a9f9bf9a8340e38d9af14a523fa6ee459">chip::app::ConcreteDataAttributePath::mDataVersion</a></div><div class="ttdeci">Optional&lt; DataVersion &gt; mDataVersion</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:166</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_aac57497dccaf9f5bc881d6147fc5ec1f"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#aac57497dccaf9f5bc881d6147fc5ec1f">chip::app::ConcreteDataAttributePath::LogPath</a></div><div class="ttdeci">void LogPath() const</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:139</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_aae23273446eb9b94182e3e38f2e407a4"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#aae23273446eb9b94182e3e38f2e407a4">chip::app::ConcreteDataAttributePath::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const ConcreteDataAttributePath &amp;aOther) const =delete</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_ac7393a3e8b1fe1fb7091ad8b2cde9835"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#ac7393a3e8b1fe1fb7091ad8b2cde9835">chip::app::ConcreteDataAttributePath::IsListOperation</a></div><div class="ttdeci">bool IsListOperation() const</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:136</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_adc67ccbd215bc2f9bebce9a41b50eb11"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#adc67ccbd215bc2f9bebce9a41b50eb11">chip::app::ConcreteDataAttributePath::IsListItemOperation</a></div><div class="ttdeci">bool IsListItemOperation() const</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:137</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_ae30a19499121b41a0c4b0b100d99581f"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#ae30a19499121b41a0c4b0b100d99581f">chip::app::ConcreteDataAttributePath::operator!=</a></div><div class="ttdeci">bool operator!=(const ConcreteDataAttributePath &amp;aOther) const</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:156</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_af77353b189a11fe35cca65f869c9b7d1"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#af77353b189a11fe35cca65f869c9b7d1">chip::app::ConcreteDataAttributePath::ConcreteDataAttributePath</a></div><div class="ttdeci">ConcreteDataAttributePath(const ConcreteAttributePath &amp;path)</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:116</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_afb84167464efbb5cc06e1469b680830f"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#afb84167464efbb5cc06e1469b680830f">chip::app::ConcreteDataAttributePath::ConcreteDataAttributePath</a></div><div class="ttdeci">ConcreteDataAttributePath()</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:114</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteDataAttributePath_html_afc3bc2b068c358b1a75b719b4f45bc38"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteDataAttributePath.html#afc3bc2b068c358b1a75b719b4f45bc38">chip::app::ConcreteDataAttributePath::ConcreteDataAttributePath</a></div><div class="ttdeci">ConcreteDataAttributePath(EndpointId aEndpointId, ClusterId aClusterId, AttributeId aAttributeId)</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:118</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteReadAttributePath_html"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteReadAttributePath.html">chip::app::ConcreteReadAttributePath</a></div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:75</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteReadAttributePath_html_a063a3a9c59916baea68cb1738a090f1e"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a063a3a9c59916baea68cb1738a090f1e">chip::app::ConcreteReadAttributePath::ConcreteReadAttributePath</a></div><div class="ttdeci">ConcreteReadAttributePath(EndpointId aEndpointId, ClusterId aClusterId, AttributeId aAttributeId)</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:80</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteReadAttributePath_html_a2e9ed453062f38eeb0a5407e99333cd8"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a2e9ed453062f38eeb0a5407e99333cd8">chip::app::ConcreteReadAttributePath::ConcreteReadAttributePath</a></div><div class="ttdeci">ConcreteReadAttributePath(const ConcreteAttributePath &amp;path)</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:78</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteReadAttributePath_html_a3f7c2efbd9a295db6c35ba723f5b87f8"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a3f7c2efbd9a295db6c35ba723f5b87f8">chip::app::ConcreteReadAttributePath::ConcreteReadAttributePath</a></div><div class="ttdeci">ConcreteReadAttributePath(EndpointId aEndpointId, ClusterId aClusterId, AttributeId aAttributeId, uint16_t aListIndex)</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:84</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteReadAttributePath_html_a681b68e04ecc144494e593e09c5d045b"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a681b68e04ecc144494e593e09c5d045b">chip::app::ConcreteReadAttributePath::mListIndex</a></div><div class="ttdeci">Optional&lt; uint16_t &gt; mListIndex</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:94</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteReadAttributePath_html_a8ff27c69da2faeb2c82d500b72c426cb"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a8ff27c69da2faeb2c82d500b72c426cb">chip::app::ConcreteReadAttributePath::operator!=</a></div><div class="ttdeci">bool operator!=(const ConcreteReadAttributePath &amp;aOther) const =delete</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteReadAttributePath_html_aaecc167a8d59a373297614bff869a30b"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteReadAttributePath.html#aaecc167a8d59a373297614bff869a30b">chip::app::ConcreteReadAttributePath::operator==</a></div><div class="ttdeci">bool operator==(const ConcreteReadAttributePath &amp;aOther) const =delete</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteReadAttributePath_html_adfa5e2bc9f0fada20a445a159f7d5fee"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteReadAttributePath.html#adfa5e2bc9f0fada20a445a159f7d5fee">chip::app::ConcreteReadAttributePath::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const ConcreteReadAttributePath &amp;aOther) const =delete</div></div>
+<div class="ttc" id="astructchip_1_1app_1_1ConcreteReadAttributePath_html_ae0c4f6cddfaa1033cded087d3ed76af2"><div class="ttname"><a href="structchip_1_1app_1_1ConcreteReadAttributePath.html#ae0c4f6cddfaa1033cded087d3ed76af2">chip::app::ConcreteReadAttributePath::ConcreteReadAttributePath</a></div><div class="ttdeci">ConcreteReadAttributePath()</div><div class="ttdef"><b>Definition</b> ConcreteAttributePath.h:76</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

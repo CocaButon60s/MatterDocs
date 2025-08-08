@@ -1,0 +1,684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/examples/platform/linux/AppMain.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_10d0982b574d45f69a889a48df526ab0.html">examples</a></li><li class="navelem"><a class="el" href="dir_b568bdd729e53f1ef6f0845f5f040bad.html">platform</a></li><li class="navelem"><a class="el" href="dir_305ccfe11c2879671f1244ec47ab4e9e.html">linux</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle"><div class="title">AppMain.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPDeviceLayer_8h_source.html">platform/CHIPDeviceLayer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="PlatformManager_8h_source.html">platform/PlatformManager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="InteractionModelEngine_8h_source.html">app/InteractionModelEngine.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="network-commissioning_8h_source.html">app/clusters/network-commissioning/network-commissioning.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Dnssd_8h_source.html">app/server/Dnssd.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Server_8h_source.html">app/server/Server.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="endpoint-config-api_8h_source.html">app/util/endpoint-config-api.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPCryptoPAL_8h_source.html">crypto/CHIPCryptoPAL.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Instance_8h_source.html">data-model-providers/codegen/Instance.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPError_8h_source.html">lib/core/CHIPError.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="NodeId_8h_source.html">lib/core/NodeId.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Optional_8h_source.html">lib/core/Optional.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPLogging_8h_source.html">lib/support/logging/CHIPLogging.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="OnboardingCodesUtil_8h_source.html">setup_payload/OnboardingCodesUtil.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="DeviceAttestationCredsProvider_8h_source.html">credentials/DeviceAttestationCredsProvider.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPMem_8h_source.html">lib/support/CHIPMem.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPMemString_8h_source.html">lib/support/CHIPMemString.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ScopedBuffer_8h_source.html">lib/support/ScopedBuffer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="TestGroupData_8h_source.html">lib/support/TestGroupData.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="QRCodeSetupPayloadGenerator_8h_source.html">setup_payload/QRCodeSetupPayloadGenerator.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="SetupPayload_8h_source.html">setup_payload/SetupPayload.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="CommissionableDataProvider_8h_source.html">platform/CommissionableDataProvider.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="DiagnosticDataProvider_8h_source.html">platform/DiagnosticDataProvider.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="RuntimeOptionsProvider_8h_source.html">platform/RuntimeOptionsProvider.h</a>&gt;</code><br />
+<code>#include &lt;AllClustersExampleDeviceInfoProviderImpl.h&gt;</code><br />
+<code>#include &lt;DeviceInfoProviderImpl.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="TestEventTriggerDelegate_8h_source.html">app/TestEventTriggerDelegate.h</a>&gt;</code><br />
+<code>#include &lt;signal.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="AppMain_8h_source.html">AppMain.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="CommissionableInit_8h_source.html">CommissionableInit.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+AppMain.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="AppMain_8cpp__incl.png" border="0" usemap="#aconnectedhomeip_2examples_2platform_2linux_2AppMain_8cpp" alt=""/></div>
+<map name="aconnectedhomeip_2examples_2platform_2linux_2AppMain_8cpp" id="aconnectedhomeip_2examples_2platform_2linux_2AppMain_8cpp">
+<area shape="rect" title=" " alt="" coords="1716,5,1923,45"/>
+<area shape="rect" title=" " alt="" coords="333,291,391,317"/>
+<area shape="poly" title=" " alt="" coords="1716,30,1368,35,921,45,707,54,526,65,397,79,357,87,338,95,325,115,318,138,316,163,319,188,333,238,351,278,346,280,328,240,314,189,311,163,312,137,320,113,335,91,356,82,396,74,526,60,707,49,921,40,1368,29,1716,25"/>
+<area shape="rect" href="CHIPDeviceLayer_8h.html" title=" " alt="" coords="2022,203,2227,229"/>
+<area shape="poly" title=" " alt="" coords="1821,45,1827,96,1837,123,1853,146,1880,163,1923,177,2025,199,2024,204,1921,182,1878,167,1850,150,1832,125,1822,97,1816,46"/>
+<area shape="rect" href="CHIPError_8h.html" title=" " alt="" coords="906,372,1053,397"/>
+<area shape="poly" title=" " alt="" coords="1716,44,1617,64,1514,96,1459,125,1390,168,1322,211,1265,239,1225,246,1172,249,1050,248,988,249,932,254,887,266,869,275,856,286,850,295,849,303,856,323,881,348,913,365,911,370,878,352,852,325,843,304,845,293,852,282,866,270,885,261,931,249,988,244,1049,242,1172,243,1224,241,1264,233,1319,206,1388,164,1456,120,1512,91,1615,59,1715,38"/>
+<area shape="rect" href="PlatformManager_8h.html" title=" " alt="" coords="4237,291,4444,317"/>
+<area shape="poly" title=" " alt="" coords="1923,38,2008,58,2051,73,2093,91,2112,105,2125,120,2137,134,2156,146,2214,163,2282,175,2360,182,2444,185,2630,183,2828,174,3027,164,3213,160,3299,162,3377,168,3446,178,3506,194,3523,203,3535,214,3545,225,3562,234,3621,249,3697,259,3876,270,4057,275,4197,281,4246,287,4245,292,4196,287,4056,280,3876,275,3696,265,3620,254,3560,238,3542,229,3531,218,3520,207,3504,198,3445,183,3376,173,3298,168,3213,166,3027,170,2828,179,2630,188,2444,190,2359,187,2282,180,2213,168,2154,150,2134,138,2121,124,2109,109,2090,96,2049,78,2006,63,1922,43"/>
+<area shape="rect" href="InteractionModelEngine_8h.html" title=" " alt="" coords="2766,203,2982,229"/>
+<area shape="poly" title=" " alt="" coords="1862,43,1903,65,1945,91,1962,107,1974,121,1986,134,2004,146,2073,165,2162,178,2263,184,2372,187,2585,187,2677,189,2750,193,2792,199,2792,204,2750,199,2677,194,2585,193,2372,192,2263,190,2161,183,2072,171,2002,150,1982,139,1970,125,1959,111,1942,95,1900,69,1859,48"/>
+<area shape="rect" href="CHIPLogging_8h.html" title=" " alt="" coords="4468,284,4611,324"/>
+<area shape="poly" title=" " alt="" coords="1923,31,2032,51,2089,68,2143,91,2162,105,2173,120,2184,134,2202,146,2238,155,2293,164,2449,176,2650,183,2872,187,3297,190,3551,193,4003,223,4201,244,4454,281,4454,286,4200,249,4002,228,3551,199,3297,195,2872,192,2649,188,2449,181,2292,169,2236,161,2200,150,2180,138,2169,123,2158,109,2141,96,2087,73,2031,56,1922,36"/>
+<area shape="rect" href="network-commissioning_8h.html" title=" " alt="" coords="2212,93,2395,148"/>
+<area shape="poly" title=" " alt="" coords="1923,41,2193,91,2199,92,2198,97,2192,96,1923,46"/>
+<area shape="rect" href="Dnssd_8h.html" title=" " alt="" coords="855,108,1002,133"/>
+<area shape="poly" title=" " alt="" coords="1716,32,1577,37,1404,49,1212,68,1021,96,977,107,975,102,1020,91,1212,62,1403,44,1577,32,1716,26"/>
+<area shape="rect" href="Optional_8h.html" title=" " alt="" coords="598,291,739,317"/>
+<area shape="poly" title=" " alt="" coords="1716,33,1563,40,1385,53,1219,71,1151,83,1100,96,1075,107,1057,120,1040,135,1015,150,932,192,848,231,712,289,710,284,846,226,930,188,1013,146,1036,130,1054,116,1072,103,1098,91,1150,77,1218,66,1385,47,1563,35,1716,28"/>
+<area shape="rect" href="Server_8h.html" title=" " alt="" coords="1580,203,1728,229"/>
+<area shape="poly" title=" " alt="" coords="1751,48,1713,67,1681,95,1668,117,1661,142,1656,190,1650,189,1655,141,1664,115,1677,92,1710,63,1748,43"/>
+<area shape="rect" href="TestEventTriggerDelegate_8h.html" title=" " alt="" coords="865,291,1093,317"/>
+<area shape="poly" title=" " alt="" coords="1772,48,1652,96,1534,144,1418,198,1384,220,1348,239,1233,263,1063,292,1063,286,1232,257,1346,233,1381,215,1415,194,1532,139,1650,91,1770,43"/>
+<area shape="rect" href="endpoint-config-api_8h.html" title=" " alt="" coords="2419,101,2595,141"/>
+<area shape="poly" title=" " alt="" coords="1923,31,2147,53,2278,70,2408,91,2427,95,2426,100,2407,96,2277,75,2146,58,1923,37"/>
+<area shape="rect" href="CHIPCryptoPAL_8h.html" title=" " alt="" coords="1077,203,1253,229"/>
+<area shape="poly" title=" " alt="" coords="1716,32,1549,38,1361,49,1200,68,1146,81,1117,95,1111,106,1108,117,1113,143,1128,169,1146,192,1141,195,1123,172,1108,145,1103,117,1106,104,1114,91,1144,76,1199,63,1360,44,1549,32,1716,26"/>
+<area shape="rect" href="Instance_8h.html" title=" " alt="" coords="2619,101,2782,141"/>
+<area shape="poly" title=" " alt="" coords="1923,27,2060,33,2231,44,2420,63,2608,91,2627,95,2626,100,2607,96,2419,68,2231,50,2059,38,1923,32"/>
+<area shape="rect" href="NodeId_8h.html" title=" " alt="" coords="2807,108,2939,133"/>
+<area shape="poly" title=" " alt="" coords="1923,28,2378,50,2619,68,2719,79,2795,91,2832,101,2830,106,2793,96,2718,84,2619,74,2378,56,1923,33"/>
+<area shape="rect" href="OnboardingCodesUtil_8h.html" title=" " alt="" coords="584,101,780,141"/>
+<area shape="poly" title=" " alt="" coords="1716,31,1541,36,1313,47,1057,66,800,96,772,101,772,95,799,91,1057,61,1313,42,1541,31,1716,26"/>
+<area shape="rect" href="SetupPayload_8h.html" title=" " alt="" coords="399,203,621,229"/>
+<area shape="poly" title=" " alt="" coords="1716,32,1491,40,1221,53,979,71,894,83,844,96,829,107,820,121,810,136,794,150,758,165,707,180,592,204,591,198,705,174,756,160,791,146,806,133,815,118,825,104,842,91,893,78,979,66,1220,47,1491,34,1716,27"/>
+<area shape="rect" href="DeviceAttestationCredsProvider_8h.html" title=" " alt="" coords="2523,196,2737,236"/>
+<area shape="poly" title=" " alt="" coords="1844,43,1900,91,1925,122,1936,135,1954,146,2004,162,2069,173,2224,183,2382,187,2504,193,2510,194,2509,199,2503,199,2381,192,2224,189,2068,178,2003,167,1952,150,1933,139,1921,126,1896,95,1841,47"/>
+<area shape="rect" href="CHIPMem_8h.html" title=" " alt="" coords="54,291,225,317"/>
+<area shape="poly" title=" " alt="" coords="1716,29,1305,32,760,41,497,49,272,61,111,76,62,85,38,95,15,128,10,144,8,160,15,196,34,235,45,250,59,263,92,283,90,288,56,268,41,254,29,237,10,197,3,161,4,143,10,125,35,91,61,80,110,71,272,55,496,44,759,35,1305,26,1716,24"/>
+<area shape="rect" href="CHIPMemString_8h.html" title=" " alt="" coords="64,108,273,133"/>
+<area shape="poly" title=" " alt="" coords="1716,32,997,53,590,72,421,84,293,96,228,108,227,102,292,91,421,78,590,67,997,48,1716,26"/>
+<area shape="rect" href="ScopedBuffer_8h.html" title=" " alt="" coords="43,203,235,229"/>
+<area shape="poly" title=" " alt="" coords="1716,29,1308,31,767,40,506,49,284,60,125,76,76,85,53,95,45,107,44,119,54,147,75,174,103,195,100,199,72,178,49,149,38,119,40,105,50,91,75,80,124,71,284,55,506,43,767,35,1308,26,1716,24"/>
+<area shape="rect" href="TestGroupData_8h.html" title=" " alt="" coords="1127,108,1330,133"/>
+<area shape="poly" title=" " alt="" coords="1716,42,1544,65,1349,96,1291,108,1290,102,1348,91,1543,60,1715,37"/>
+<area shape="rect" href="QRCodeSetupPayloadGenerator_8h.html" title=" " alt="" coords="349,101,559,141"/>
+<area shape="poly" title=" " alt="" coords="1716,29,1506,32,1221,41,898,61,733,77,572,96,544,101,543,95,571,91,732,71,898,56,1221,36,1506,26,1716,24"/>
+<area shape="rect" href="CommissionableDataProvider_8h.html" title=" " alt="" coords="2268,196,2491,236"/>
+<area shape="poly" title=" " alt="" coords="1832,44,1867,102,1887,129,1903,146,2255,195,2254,201,1901,150,1883,133,1862,105,1827,47"/>
+<area shape="rect" href="DiagnosticDataProvider_8h.html" title=" " alt="" coords="3245,203,3492,229"/>
+<area shape="poly" title=" " alt="" coords="1912,43,1977,63,2042,91,2061,106,2074,121,2086,134,2106,146,2136,153,2181,160,2312,171,2663,182,3016,188,3227,193,3279,199,3278,204,3227,199,3016,193,2663,188,2311,176,2181,165,2135,159,2104,150,2083,138,2070,124,2058,109,2039,96,1976,68,1911,48"/>
+<area shape="rect" href="RuntimeOptionsProvider_8h.html" title=" " alt="" coords="2963,108,3215,133"/>
+<area shape="poly" title=" " alt="" coords="1923,26,2115,31,2371,42,2660,61,2952,91,3023,103,3023,108,2951,96,2659,67,2370,48,2115,36,1923,31"/>
+<area shape="rect" title=" " alt="" coords="3239,101,3434,141"/>
+<area shape="poly" title=" " alt="" coords="1923,26,2586,48,2957,67,3111,78,3228,91,3253,95,3253,100,3227,96,3110,83,2956,72,2586,53,1923,32"/>
+<area shape="rect" title=" " alt="" coords="3458,108,3645,133"/>
+<area shape="poly" title=" " alt="" coords="1923,26,2250,32,2690,44,3127,63,3309,76,3446,91,3501,102,3499,107,3446,96,3308,81,3127,69,2690,49,2250,37,1923,31"/>
+<area shape="rect" title=" " alt="" coords="3669,108,3743,133"/>
+<area shape="poly" title=" " alt="" coords="1923,25,2324,31,2864,43,3367,62,3549,75,3657,91,3678,99,3676,104,3656,96,3549,81,3366,68,2864,48,2324,36,1923,30"/>
+<area shape="rect" href="AppMain_8h.html" title=" " alt="" coords="1691,108,1782,133"/>
+<area shape="poly" title=" " alt="" coords="1805,47,1758,99,1754,96,1801,44"/>
+<area shape="rect" href="CommissionableInit_8h.html" title=" " alt="" coords="3007,203,3171,229"/>
+<area shape="poly" title=" " alt="" coords="1884,43,1938,64,1993,91,2012,106,2024,121,2036,134,2055,146,2095,159,2142,169,2254,182,2382,188,2519,189,2787,186,2902,187,2994,193,3025,198,3024,203,2994,199,2902,192,2787,191,2519,194,2382,194,2253,188,2141,174,2094,164,2053,150,2033,138,2020,124,2008,110,1990,96,1936,68,1882,48"/>
+<area shape="rect" href="CHIPDeviceConfig_8h.html" title=" " alt="" coords="3753,372,3963,397"/>
+<area shape="poly" title=" " alt="" coords="2197,226,2257,233,2344,238,2453,239,2707,238,2837,240,2959,247,3066,260,3111,270,3150,282,3166,291,3176,302,3186,313,3200,322,3244,335,3301,346,3444,362,3600,372,3739,378,3739,383,3599,378,3444,367,3300,351,3242,340,3198,326,3182,317,3172,306,3162,295,3148,286,3110,275,3065,265,2958,252,2837,246,2707,244,2453,244,2344,243,2256,239,2196,231"/>
+<area shape="rect" href="CHIPCore_8h.html" title=" " alt="" coords="2990,291,3137,317"/>
+<area shape="poly" title=" " alt="" coords="2198,226,2257,233,2460,248,2618,253,2776,259,2978,281,3005,286,3004,291,2978,287,2776,265,2618,258,2459,254,2256,239,2198,231"/>
+<area shape="rect" title=" " alt="" coords="1785,291,1985,317"/>
+<area shape="poly" title=" " alt="" coords="2093,231,1930,289,1929,284,2091,226"/>
+<area shape="rect" href="ConfigurationManager_8h.html" title=" " alt="" coords="3690,291,3927,317"/>
+<area shape="poly" title=" " alt="" coords="2195,226,2257,233,2473,249,2656,256,2967,257,3279,258,3462,266,3678,281,3726,287,3725,292,3678,287,3462,271,3279,264,2967,262,2656,262,2473,254,2256,239,2195,231"/>
+<area shape="rect" title=" " alt="" coords="2009,291,2241,317"/>
+<area shape="poly" title=" " alt="" coords="2127,229,2127,277,2122,277,2122,229"/>
+<area shape="rect" title=" " alt="" coords="2265,291,2440,317"/>
+<area shape="poly" title=" " alt="" coords="2156,226,2310,284,2309,289,2154,231"/>
+<area shape="rect" title=" " alt="" coords="1364,291,1608,317"/>
+<area shape="poly" title=" " alt="" coords="2038,231,1621,287,1581,292,1580,287,1620,281,2037,226"/>
+<area shape="poly" title=" " alt="" coords="2194,226,2257,233,2548,253,2795,262,3012,264,3215,262,3418,259,3635,259,3882,265,4174,281,4239,287,4238,292,4174,287,3882,271,3635,265,3418,264,3215,267,3012,269,2795,268,2548,259,2256,239,2194,231"/>
+<area shape="rect" title=" " alt="" coords="1169,291,1339,317"/>
+<area shape="poly" title=" " alt="" coords="2022,226,1721,247,1537,265,1353,287,1322,292,1322,286,1352,281,1537,259,1721,242,2022,220"/>
+<area shape="rect" title=" " alt="" coords="2465,291,2665,317"/>
+<area shape="poly" title=" " alt="" coords="2184,226,2493,286,2492,291,2183,231"/>
+<area shape="rect" title=" " alt="" coords="3243,372,3414,397"/>
+<area shape="poly" title=" " alt="" coords="3103,314,3278,366,3276,371,3101,319"/>
+<area shape="poly" title=" " alt="" coords="3019,319,2978,327,2801,342,2567,355,2005,373,1453,382,1066,386,1066,380,1452,377,2005,368,2566,350,2801,337,2978,321,3018,314"/>
+<area shape="poly" title=" " alt="" coords="3818,315,3846,359,3841,362,3814,318"/>
+<area shape="poly" title=" " alt="" coords="4271,319,3942,372,3941,367,4270,314"/>
+<area shape="poly" title=" " alt="" coords="4273,319,4218,327,3997,348,3777,363,3428,382,3427,377,3777,358,3997,342,4218,321,4272,314"/>
+<area shape="rect" title=" " alt="" coords="4039,372,4213,397"/>
+<area shape="poly" title=" " alt="" coords="4310,319,4171,370,4169,365,4309,314"/>
+<area shape="rect" title=" " alt="" coords="4237,372,4444,397"/>
+<area shape="poly" title=" " alt="" coords="4343,317,4343,358,4338,358,4338,317"/>
+<area shape="rect" title=" " alt="" coords="4469,372,4698,397"/>
+<area shape="poly" title=" " alt="" coords="4377,314,4536,365,4534,370,4375,319"/>
+<area shape="poly" title=" " alt="" coords="2901,226,3026,283,3024,288,2898,231"/>
+<area shape="rect" title=" " alt="" coords="2791,291,2965,317"/>
+<area shape="poly" title=" " alt="" coords="2877,229,2879,277,2874,278,2872,229"/>
+<area shape="rect" href="AppConfig_8h.html" title=" " alt="" coords="1633,291,1761,317"/>
+<area shape="poly" title=" " alt="" coords="2807,231,2750,239,2602,251,2475,256,2260,255,2157,255,2046,259,1921,268,1773,287,1750,291,1749,286,1772,281,1920,263,2046,253,2157,250,2260,250,2475,250,2601,245,2750,233,2806,226"/>
+<area shape="rect" title=" " alt="" coords="3471,291,3666,317"/>
+<area shape="poly" title=" " alt="" coords="2944,226,2996,233,3126,248,3228,257,3329,266,3460,281,3493,286,3492,292,3459,287,3329,271,3227,262,3125,253,2995,239,2943,231"/>
+<area shape="rect" title=" " alt="" coords="3952,291,4161,317"/>
+<area shape="poly" title=" " alt="" coords="2940,226,2996,233,3139,246,3260,253,3467,257,3674,261,3796,268,3940,281,3980,287,3979,292,3939,287,3796,274,3674,267,3467,262,3260,258,3139,251,2995,239,2940,231"/>
+<area shape="rect" title=" " alt="" coords="3211,291,3447,317"/>
+<area shape="poly" title=" " alt="" coords="2935,226,3255,286,3254,291,2934,231"/>
+<area shape="poly" title=" " alt="" coords="2939,226,2996,233,3216,249,3404,255,3569,253,3724,249,3879,246,4045,248,4233,258,4455,281,4454,287,4233,264,4045,253,3879,251,3724,255,3569,259,3404,260,3216,255,2995,239,2938,231"/>
+<area shape="poly" title=" " alt="" coords="1002,131,1116,145,1365,168,1612,185,2008,207,2008,212,1612,191,1364,173,1115,151,1001,136"/>
+<area shape="poly" title=" " alt="" coords="894,136,817,163,723,200,639,243,608,264,588,285,581,305,582,313,588,322,607,337,636,349,715,367,806,376,892,380,892,386,806,382,714,372,635,354,605,342,584,326,577,315,575,304,584,283,604,260,636,238,721,195,815,158,892,131"/>
+<area shape="poly" title=" " alt="" coords="914,136,698,286,695,281,910,131"/>
+<area shape="poly" title=" " alt="" coords="1633,231,1522,287,1520,282,1630,226"/>
+<area shape="poly" title=" " alt="" coords="1601,231,1321,291,1320,286,1600,226"/>
+<area shape="poly" title=" " alt="" coords="1729,219,2133,243,2677,281,2777,290,2777,295,2676,287,2133,248,1728,224"/>
+<area shape="poly" title=" " alt="" coords="1662,228,1687,277,1682,280,1657,230"/>
+<area shape="poly" title=" " alt="" coords="1580,229,1083,292,1082,287,1580,224"/>
+<area shape="poly" title=" " alt="" coords="982,317,982,358,977,358,977,317"/>
+<area shape="poly" title=" " alt="" coords="1102,231,810,286,803,299,804,312,811,323,823,334,862,352,907,366,906,371,860,357,821,338,807,327,798,313,798,298,807,282,1101,226"/>
+<area shape="poly" title=" " alt="" coords="1101,231,1058,239,908,262,758,287,735,291,734,286,758,281,907,257,1058,233,1100,226"/>
+<area shape="poly" title=" " alt="" coords="648,143,544,199,542,194,646,138"/>
+<area shape="poly" title=" " alt="" coords="491,231,395,287,392,282,489,227"/>
+<area shape="poly" title=" " alt="" coords="512,228,518,275,527,301,544,322,568,337,603,349,695,366,798,375,892,380,892,385,797,381,694,371,602,354,566,341,540,326,523,303,513,276,507,229"/>
+<area shape="poly" title=" " alt="" coords="533,226,636,282,634,287,530,231"/>
+<area shape="poly" title=" " alt="" coords="2659,234,2682,254,2701,277,2710,302,2709,314,2701,326,2676,337,2627,346,2468,361,2248,372,1990,379,1458,386,1067,386,1067,381,1458,380,1990,374,2248,366,2468,356,2626,341,2675,332,2698,322,2704,312,2705,302,2697,280,2678,258,2655,238"/>
+<area shape="poly" title=" " alt="" coords="225,312,321,321,893,373,892,379,320,327,225,317"/>
+<area shape="poly" title=" " alt="" coords="168,134,150,191,145,189,163,133"/>
+<area shape="poly" title=" " alt="" coords="142,229,142,277,137,277,137,229"/>
+<area shape="poly" title=" " alt="" coords="1223,135,1182,194,1178,191,1219,132"/>
+<area shape="poly" title=" " alt="" coords="434,143,410,168,390,197,374,239,367,278,362,277,369,237,385,195,406,164,430,139"/>
+<area shape="poly" title=" " alt="" coords="468,139,498,190,494,193,463,142"/>
+<area shape="poly" title=" " alt="" coords="2491,233,2610,257,2655,270,2679,282,2688,304,2686,315,2678,326,2654,337,2606,346,2449,361,2232,371,1977,379,1453,385,1066,386,1066,381,1453,380,1977,373,2232,366,2449,355,2605,341,2652,332,2675,322,2681,313,2683,305,2675,286,2653,275,2608,262,2490,238"/>
+<area shape="poly" title=" " alt="" coords="3493,217,3794,223,4159,236,4474,255,4577,267,4609,274,4625,282,4633,293,4635,304,4633,315,4625,326,4550,335,4379,349,3977,378,3977,372,4378,344,4550,330,4622,322,4628,313,4630,304,4628,295,4622,286,4607,279,4576,272,4474,260,4159,241,3794,229,3492,222"/>
+<area shape="poly" title=" " alt="" coords="1763,131,1801,145,1924,177,2037,198,2036,204,1923,182,1800,151,1761,136"/>
+<area shape="poly" title=" " alt="" coords="1705,136,1562,183,1375,239,1313,251,1263,256,1216,265,1158,286,1143,295,1133,305,1107,326,1064,350,1022,369,1020,364,1062,345,1104,322,1129,301,1140,291,1155,282,1214,260,1263,251,1312,246,1373,233,1561,178,1703,131"/>
+<area shape="poly" title=" " alt="" coords="1782,124,2035,145,2252,150,2612,156,2972,168,3105,179,3153,186,3184,194,3200,203,3211,214,3220,225,3235,234,3276,246,3325,256,3439,270,3571,277,3711,278,3984,276,4102,277,4197,281,4249,287,4248,292,4196,287,4102,282,3984,282,3711,284,3570,282,3439,275,3324,262,3275,251,3233,238,3217,229,3207,218,3197,207,3182,198,3152,191,3105,184,2971,174,2612,161,2252,155,2035,151,1782,129"/>
+<area shape="poly" title=" " alt="" coords="1697,136,1512,185,1390,214,1265,239,1048,265,754,296,753,291,1047,259,1264,233,1388,209,1510,180,1696,131"/>
+<area shape="poly" title=" " alt="" coords="1729,135,1675,195,1671,191,1725,132"/>
+<area shape="poly" title=" " alt="" coords="3144,226,3190,233,3688,245,4012,258,4123,268,4158,274,4176,282,4183,293,4186,304,4183,315,4175,326,4136,337,4045,346,3736,360,3300,371,2789,378,1758,385,1067,386,1067,381,1758,379,2789,372,3300,365,3736,355,4045,340,4135,331,4172,322,4179,313,4181,304,4178,295,4172,286,4157,280,4123,273,4012,263,3688,250,3190,239,3143,231"/>
+<area shape="poly" title=" " alt="" coords="3146,226,3190,233,3327,250,3434,259,3541,267,3678,281,3720,287,3719,292,3678,287,3541,272,3434,264,3327,255,3190,239,3145,231"/>
+<area shape="poly" title=" " alt="" coords="3143,226,3190,233,3346,249,3478,257,3704,260,3929,262,4062,268,4218,281,4261,287,4261,292,4218,287,4062,274,3929,267,3704,265,3478,262,3346,254,3190,239,3142,231"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSampleTestEventTriggerHandler.html">SampleTestEventTriggerHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExampleDeviceInstanceInfoProvider.html">ExampleDeviceInstanceInfoProvider</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespaceanonymous__namespace_02AppMain_8cpp_03" id="r_namespaceanonymous__namespace_02AppMain_8cpp_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html">anonymous_namespace{AppMain.cpp}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a93f68ee337f228baa58f470155c83e3e" id="r_a93f68ee337f228baa58f470155c83e3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AppMain_8cpp.html#a93f68ee337f228baa58f470155c83e3e">CHIP_APP_MAIN_HAS_THREAD_DRIVER</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a93f68ee337f228baa58f470155c83e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3bb9cd3b7a78d5c118012db4bd789c0" id="r_ad3bb9cd3b7a78d5c118012db4bd789c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AppMain_8cpp.html#ad3bb9cd3b7a78d5c118012db4bd789c0">CHIP_APP_MAIN_HAS_WIFI_DRIVER</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ad3bb9cd3b7a78d5c118012db4bd789c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2960a98e8ba0ba4cd7dccbcf0b5289" id="r_afa2960a98e8ba0ba4cd7dccbcf0b5289"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AppMain_8cpp.html#afa2960a98e8ba0ba4cd7dccbcf0b5289">CHIP_APP_MAIN_HAS_ETHERNET_DRIVER</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:afa2960a98e8ba0ba4cd7dccbcf0b5289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a15088dc9ad525bdcbaf5afa96fcddc87" id="r_a15088dc9ad525bdcbaf5afa96fcddc87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a15088dc9ad525bdcbaf5afa96fcddc87">anonymous_namespace{AppMain.cpp}::EnableThreadNetworkCommissioning</a> ()</td></tr>
+<tr class="separator:a15088dc9ad525bdcbaf5afa96fcddc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22be42790b6e9cceb03fbd956eaa4211" id="r_a22be42790b6e9cceb03fbd956eaa4211"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a22be42790b6e9cceb03fbd956eaa4211">anonymous_namespace{AppMain.cpp}::EnableWiFiNetworkCommissioning</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> endpoint)</td></tr>
+<tr class="separator:a22be42790b6e9cceb03fbd956eaa4211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7b58a5856b38af87b2c1355f748baf" id="r_a6d7b58a5856b38af87b2c1355f748baf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a6d7b58a5856b38af87b2c1355f748baf">anonymous_namespace{AppMain.cpp}::InitNetworkCommissioning</a> ()</td></tr>
+<tr class="separator:a6d7b58a5856b38af87b2c1355f748baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b097f657c6c2c553c2c573f52ed36d" id="r_a30b097f657c6c2c553c2c573f52ed36d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a30b097f657c6c2c553c2c573f52ed36d">anonymous_namespace{AppMain.cpp}::EventHandler</a> (const DeviceLayer::ChipDeviceEvent *event, intptr_t arg)</td></tr>
+<tr class="separator:a30b097f657c6c2c553c2c573f52ed36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5acccb085831d760d79051c6a63962" id="r_a7b5acccb085831d760d79051c6a63962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a7b5acccb085831d760d79051c6a63962">anonymous_namespace{AppMain.cpp}::StopMainEventLoop</a> ()</td></tr>
+<tr class="separator:a7b5acccb085831d760d79051c6a63962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e477eb2e34f23b38d689102869e0ca" id="r_ae9e477eb2e34f23b38d689102869e0ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#ae9e477eb2e34f23b38d689102869e0ca">anonymous_namespace{AppMain.cpp}::Cleanup</a> ()</td></tr>
+<tr class="separator:ae9e477eb2e34f23b38d689102869e0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648b20fe10e56b8bb136370b8654b461" id="r_a648b20fe10e56b8bb136370b8654b461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a648b20fe10e56b8bb136370b8654b461">anonymous_namespace{AppMain.cpp}::StopSignalHandler</a> (int)</td></tr>
+<tr class="separator:a648b20fe10e56b8bb136370b8654b461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16ab9de630f50f5cc9fb21106e704ad3" id="r_a16ab9de630f50f5cc9fb21106e704ad3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3">ChipLinuxAppInit</a> (int argc, char *const argv[], OptionSet *customOptions, const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> &gt; secondaryNetworkCommissioningEndpoint)</td></tr>
+<tr class="separator:a16ab9de630f50f5cc9fb21106e704ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa527d4be3bd3bab615a180981b6555e4" id="r_aa527d4be3bd3bab615a180981b6555e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4">ChipLinuxAppMainLoop</a> (<a class="el" href="classAppMainLoopImplementation.html">AppMainLoopImplementation</a> *impl)</td></tr>
+<tr class="separator:aa527d4be3bd3bab615a180981b6555e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a253d844165aaa0cc1f3371b27102094a" id="r_a253d844165aaa0cc1f3371b27102094a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a253d844165aaa0cc1f3371b27102094a">anonymous_namespace{AppMain.cpp}::sSecondaryNetworkCommissioningEndpoint</a></td></tr>
+<tr class="separator:a253d844165aaa0cc1f3371b27102094a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57cf77f9ad44818b65ed71192abd2721" id="r_a57cf77f9ad44818b65ed71192abd2721"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAppMainLoopImplementation.html">AppMainLoopImplementation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a57cf77f9ad44818b65ed71192abd2721">anonymous_namespace{AppMain.cpp}::gMainLoopImplementation</a> = nullptr</td></tr>
+<tr class="separator:a57cf77f9ad44818b65ed71192abd2721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac588fad49d629b13979961d430013025" id="r_ac588fad49d629b13979961d430013025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLinuxCommissionableDataProvider.html">LinuxCommissionableDataProvider</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#ac588fad49d629b13979961d430013025">anonymous_namespace{AppMain.cpp}::gCommissionableDataProvider</a></td></tr>
+<tr class="separator:ac588fad49d629b13979961d430013025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa89a8c243dbe158f907856883de8ab5c" id="r_aa89a8c243dbe158f907856883de8ab5c"><td class="memItemLeft" align="right" valign="top">chip::DeviceLayer::DeviceInfoProviderImpl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#aa89a8c243dbe158f907856883de8ab5c">anonymous_namespace{AppMain.cpp}::gExampleDeviceInfoProvider</a></td></tr>
+<tr class="separator:aa89a8c243dbe158f907856883de8ab5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31231e345ce7b95234ef6c02d3e90872" id="r_a31231e345ce7b95234ef6c02d3e90872"><td class="memItemLeft" align="right" valign="top">chip::DeviceLayer::AllClustersExampleDeviceInfoProviderImpl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a31231e345ce7b95234ef6c02d3e90872">anonymous_namespace{AppMain.cpp}::gAllClustersExampleDeviceInfoProvider</a></td></tr>
+<tr class="separator:a31231e345ce7b95234ef6c02d3e90872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bba5c6a163b6673b006cd0c4c7fa510" id="r_a0bba5c6a163b6673b006cd0c4c7fa510"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classExampleDeviceInstanceInfoProvider.html">ExampleDeviceInstanceInfoProvider</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AppMain_8cpp.html#a0bba5c6a163b6673b006cd0c4c7fa510">gExampleDeviceInstanceInfoProvider</a></td></tr>
+<tr class="separator:a0bba5c6a163b6673b006cd0c4c7fa510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="afa2960a98e8ba0ba4cd7dccbcf0b5289" name="afa2960a98e8ba0ba4cd7dccbcf0b5289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2960a98e8ba0ba4cd7dccbcf0b5289">&#9670;&#160;</a></span>CHIP_APP_MAIN_HAS_ETHERNET_DRIVER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_APP_MAIN_HAS_ETHERNET_DRIVER&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93f68ee337f228baa58f470155c83e3e" name="a93f68ee337f228baa58f470155c83e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93f68ee337f228baa58f470155c83e3e">&#9670;&#160;</a></span>CHIP_APP_MAIN_HAS_THREAD_DRIVER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_APP_MAIN_HAS_THREAD_DRIVER&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3bb9cd3b7a78d5c118012db4bd789c0" name="ad3bb9cd3b7a78d5c118012db4bd789c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3bb9cd3b7a78d5c118012db4bd789c0">&#9670;&#160;</a></span>CHIP_APP_MAIN_HAS_WIFI_DRIVER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHIP_APP_MAIN_HAS_WIFI_DRIVER&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a16ab9de630f50f5cc9fb21106e704ad3" name="a16ab9de630f50f5cc9fb21106e704ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16ab9de630f50f5cc9fb21106e704ad3">&#9670;&#160;</a></span>ChipLinuxAppInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ChipLinuxAppInit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *const&#160;</td>
+          <td class="paramname"><em>argv</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OptionSet *&#160;</td>
+          <td class="paramname"><em>customOptions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> &gt;&#160;</td>
+          <td class="paramname"><em>secondaryNetworkCommissioningEndpoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="AppMain_8cpp_a16ab9de630f50f5cc9fb21106e704ad3_cgraph.png" border="0" usemap="#aAppMain_8cpp_a16ab9de630f50f5cc9fb21106e704ad3_cgraph" alt=""/></div>
+<map name="aAppMain_8cpp_a16ab9de630f50f5cc9fb21106e704ad3_cgraph" id="aAppMain_8cpp_a16ab9de630f50f5cc9fb21106e704ad3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,709,137,734"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#ae9e477eb2e34f23b38d689102869e0ca" title=" " alt="" coords="221,5,408,45"/>
+<area shape="poly" title=" " alt="" coords="70,709,76,586,93,389,107,285,126,189,152,110,167,79,183,55,207,38,210,42,187,59,171,82,157,112,132,190,112,286,98,390,81,586,76,709"/>
+<area shape="rect" href="namespacechip_1_1DeviceLayer.html#aa339b4bbbc137aab908ac19ebd3460e3" title=" " alt="" coords="241,69,388,109"/>
+<area shape="poly" title=" " alt="" coords="71,708,78,596,97,418,111,325,130,239,154,168,168,140,183,119,204,104,227,94,229,99,206,108,187,123,173,143,159,170,135,240,117,326,102,419,83,596,76,709"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a30b097f657c6c2c553c2c573f52ed36d" title=" " alt="" coords="203,133,426,173"/>
+<area shape="poly" title=" " alt="" coords="71,708,81,608,102,452,117,371,135,295,157,233,183,190,196,179,200,183,187,194,162,235,140,297,122,372,107,453,86,608,76,709"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="545,342,695,367"/>
+<area shape="poly" title=" " alt="" coords="71,708,80,613,100,468,115,393,133,325,156,270,169,249,184,234,217,212,248,199,278,193,308,194,371,209,445,234,490,253,533,278,598,330,594,334,530,283,488,257,443,238,369,214,307,199,278,198,249,204,219,216,187,238,173,252,161,272,138,327,120,394,105,469,85,614,76,709"/>
+<area shape="rect" href="structLinuxDeviceOptions.html#a80e54198d3e60b3a2c7d351683548d88" title=" " alt="" coords="239,619,391,659"/>
+<area shape="poly" title=" " alt="" coords="97,706,184,668,225,656,226,661,186,673,99,711"/>
+<area shape="rect" href="classchip_1_1Server.html#aebc85f8a7d702eb987e86f075f2119e8" title=" " alt="" coords="222,683,407,709"/>
+<area shape="poly" title=" " alt="" coords="138,712,208,704,209,710,138,717"/>
+<area shape="rect" href="OnboardingCodesUtil_8h.html#a5b02a951bdb1f0167ab91ccb097b1dcc" title=" " alt="" coords="237,733,392,758"/>
+<area shape="poly" title=" " alt="" coords="138,725,224,734,223,739,138,730"/>
+<area shape="rect" href="classExampleDeviceInstanceInfoProvider.html#a270ca785448fe887b072e504852a6276" title=" " alt="" coords="213,248,417,288"/>
+<area shape="poly" title=" " alt="" coords="72,708,84,626,107,502,123,438,141,379,161,331,183,298,198,286,202,291,187,302,166,334,146,381,128,440,113,504,89,627,77,709"/>
+<area shape="rect" href="namespacechip_1_1rpc.html#ae7d3b22415f9c3aff2b3db22f3f1c574" title=" " alt="" coords="261,782,368,807"/>
+<area shape="poly" title=" " alt="" coords="100,732,140,750,186,767,248,782,247,787,185,772,138,755,97,737"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a4c1372af7e3d001e2857e6f14c9a1554" title=" " alt="" coords="200,832,429,872"/>
+<area shape="poly" title=" " alt="" coords="86,732,127,774,156,797,187,816,205,825,203,830,184,821,153,801,124,778,82,736"/>
+<area shape="rect" href="namespacechip_1_1examples.html#a63149b00322319c60a17f0450b9e6af5" title="Initialize a LinuxCommissionableDataProvider from Linux common command&#45;line options,..." alt="" coords="185,896,444,936"/>
+<area shape="poly" title=" " alt="" coords="80,733,94,764,117,804,148,846,187,882,196,887,193,892,184,886,144,850,113,807,90,766,75,735"/>
+<area shape="rect" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="823,1125,979,1150"/>
+<area shape="poly" title=" " alt="" coords="78,733,88,775,108,833,140,895,162,922,187,946,220,967,250,979,279,985,307,986,369,986,405,988,445,996,545,1025,621,1052,697,1080,797,1111,828,1119,827,1124,795,1116,696,1085,619,1057,543,1030,443,1001,404,994,369,991,307,992,278,990,248,984,217,972,184,950,158,926,136,898,103,836,82,777,72,735"/>
+<area shape="rect" href="namespacechip_1_1examples.html#a580b242840f362fa08c82ad028db467d" title=" " alt="" coords="196,1011,433,1051"/>
+<area shape="poly" title=" " alt="" coords="77,734,85,782,104,851,118,889,137,926,160,960,187,990,203,1002,200,1006,184,994,155,963,132,928,114,891,99,853,80,783,72,735"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1ConfigurationManager.html#a30813cbe99e8ec83e7725f29dcff5b52" title=" " alt="" coords="231,1075,398,1130"/>
+<area shape="poly" title=" " alt="" coords="76,734,80,793,96,881,110,929,129,977,155,1022,187,1061,220,1082,217,1087,184,1065,150,1025,124,979,105,931,91,882,75,794,70,735"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#a93cd137a84802c233858f319af2551a7" title=" " alt="" coords="217,1154,413,1179"/>
+<area shape="poly" title=" " alt="" coords="77,734,89,816,112,940,127,1004,145,1062,165,1110,187,1141,205,1153,202,1158,183,1145,160,1112,140,1064,122,1005,107,941,84,817,72,734"/>
+<area shape="rect" href="Options_8cpp.html#ae7343289fe286e647f67a9a2b381127d" title=" " alt="" coords="251,313,379,338"/>
+<area shape="poly" title=" " alt="" coords="70,708,71,644,84,547,98,493,119,440,147,391,184,349,208,333,236,324,237,330,210,338,187,353,151,394,123,442,103,495,90,548,77,644,75,708"/>
+<area shape="rect" href="namespacechip_1_1DeviceLayer.html#a9b90588e3accea89d79094c29fc07261" title=" " alt="" coords="241,1204,388,1244"/>
+<area shape="poly" title=" " alt="" coords="77,734,87,824,110,963,125,1035,143,1100,164,1154,187,1190,207,1204,229,1214,227,1219,204,1209,183,1194,159,1157,138,1102,120,1036,104,964,82,825,71,734"/>
+<area shape="rect" href="namespacechip_1_1DeviceLayer.html#a0f116f09a0e109f6a32f9d894bf01d42" title=" " alt="" coords="241,1268,388,1308"/>
+<area shape="poly" title=" " alt="" coords="76,734,85,836,106,993,121,1075,139,1151,161,1213,174,1237,187,1254,206,1269,229,1278,227,1283,204,1273,183,1258,169,1239,157,1215,134,1153,116,1077,100,994,80,836,71,735"/>
+<area shape="rect" href="OnboardingCodesUtil_8h.html#a5c1494dd7fe8e5bab0f3ccb9361e66a6" title=" " alt="" coords="231,1333,398,1358"/>
+<area shape="poly" title=" " alt="" coords="76,734,83,847,101,1024,116,1117,135,1202,158,1272,172,1299,187,1318,202,1329,219,1337,217,1342,199,1334,183,1322,168,1301,153,1274,129,1204,110,1118,96,1025,77,847,71,735"/>
+<area shape="rect" href="namespacechip_1_1DeviceLayer.html#a8cc35b9789acc3f35c8416069bc0a59c" title=" " alt="" coords="196,1383,433,1423"/>
+<area shape="poly" title=" " alt="" coords="76,734,82,855,99,1047,113,1148,133,1241,157,1318,171,1347,187,1369,190,1372,187,1376,183,1372,167,1350,152,1320,127,1242,108,1149,94,1047,76,855,70,734"/>
+<area shape="rect" href="classExampleDeviceInstanceInfoProvider.html#a76fbf3a9e3452cc434bc98fcc14af387" title=" " alt="" coords="187,363,442,403"/>
+<area shape="poly" title=" " alt="" coords="71,708,77,654,93,574,108,531,127,488,152,447,183,413,189,408,192,412,187,417,156,451,132,490,113,533,99,576,82,655,76,709"/>
+<area shape="rect" href="classExampleDeviceInstanceInfoProvider.html#aa051b867f65c3c3a3d44551fd6b8af94" title=" " alt="" coords="213,427,417,467"/>
+<area shape="poly" title=" " alt="" coords="72,708,82,664,102,601,135,534,157,503,184,477,199,466,202,471,187,481,161,507,139,537,107,603,87,665,77,709"/>
+<area shape="rect" href="classExampleDeviceInstanceInfoProvider.html#aa57959ed665c91dfa4ff29c22df6a354" title=" " alt="" coords="213,491,417,531"/>
+<area shape="poly" title=" " alt="" coords="74,708,88,674,110,629,142,581,162,559,184,541,199,531,201,536,187,545,165,563,146,584,115,631,93,676,79,710"/>
+<area shape="rect" href="classExampleDeviceInstanceInfoProvider.html#ae8a704d7ac464b8e571ed084d9493d95" title=" " alt="" coords="213,555,417,595"/>
+<area shape="poly" title=" " alt="" coords="79,707,120,657,150,628,184,604,198,597,201,602,187,609,154,632,124,660,84,710"/>
+<area shape="rect" href="classchip_1_1app_1_1DnssdServer.html#a082e0a6e768395c9eaf50f948acbd4c7" title="Provides the system&#45;wide implementation of the service advertiser" alt="" coords="535,101,705,141"/>
+<area shape="poly" title=" " alt="" coords="426,139,520,129,521,134,426,144"/>
+<area shape="poly" title=" " alt="" coords="403,171,445,190,493,222,537,260,601,329,598,333,533,264,490,227,443,194,401,176"/>
+<area shape="rect" href="classchip_1_1app_1_1DnssdServer.html#a6a20c2a5830002513dd22e0c28d42041" title=" " alt="" coords="535,165,705,205"/>
+<area shape="poly" title=" " alt="" coords="426,162,521,172,520,178,426,168"/>
+<area shape="poly" title=" " alt="" coords="575,344,565,334,570,324,589,317,620,315,661,320,671,325,675,331,670,333,668,329,659,325,620,321,590,323,574,328,570,333,579,340"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="797,342,1004,367"/>
+<area shape="poly" title=" " alt="" coords="695,352,784,352,784,357,695,357"/>
+<area shape="rect" href="namespacechip_1_1Credentials_1_1Examples.html#a392bf49f9b6ee815567a0d9bfaebf491" title="Get implementation of a sample DAC provider to validate device attestation procedure." alt="" coords="492,609,748,649"/>
+<area shape="poly" title=" " alt="" coords="391,634,478,631,478,636,391,639"/>
+<area shape="poly" title=" " alt="" coords="400,285,445,297,568,335,566,340,443,303,398,291"/>
+<area shape="rect" href="namespacechip_1_1rpc.html#a7010d37cb69460c170fd0e896d90fdd4" title=" " alt="" coords="529,674,711,699"/>
+<area shape="poly" title=" " alt="" coords="368,785,443,767,519,736,583,704,586,708,521,741,445,772,369,790"/>
+<area shape="rect" href="namespacepw_1_1rpc_1_1system__server.html#a745625a735bc54e17cabecbbb2df8e7b" title=" " alt="" coords="534,775,706,815"/>
+<area shape="poly" title=" " alt="" coords="368,792,520,792,520,797,368,797"/>
+<area shape="rect" href="namespacepw_1_1rpc_1_1system__server.html#aeaf81baa03911b45d3432b551a7e36cd" title=" " alt="" coords="815,539,987,579"/>
+<area shape="poly" title=" " alt="" coords="711,675,746,659,762,643,770,626,778,607,794,589,802,583,805,588,798,593,782,610,775,628,767,646,750,664,713,680"/>
+<area shape="rect" href="namespacepw_1_1rpc_1_1system__server.html#a74abc31e84e397fc785a6a2c53c3ba00" title=" " alt="" coords="815,603,987,643"/>
+<area shape="poly" title=" " alt="" coords="688,671,747,659,810,644,811,649,749,664,689,677"/>
+<area shape="rect" href="namespacepw_1_1rpc_1_1system__server.html#a0fd0d9a2c6e9b71e58b9da83c192b4a5" title=" " alt="" coords="815,667,987,707"/>
+<area shape="poly" title=" " alt="" coords="712,684,801,684,801,689,712,689"/>
+<area shape="rect" href="classLinuxCommissionableDataProvider.html#a3008625eeb7d169fa9fc74397227a7ef" title="Initialize the commissionable Data provider for Linux samples" alt="" coords="495,896,745,936"/>
+<area shape="poly" title=" " alt="" coords="444,913,481,913,481,919,444,919"/>
+<area shape="rect" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097" title=" " alt="" coords="837,731,964,757"/>
+<area shape="poly" title=" " alt="" coords="653,894,699,863,746,825,760,809,768,795,778,781,795,767,823,754,825,759,797,772,782,784,773,798,764,812,750,829,702,867,656,898"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1Spake2pVerifier.html#adf56bdeacb33433cb87f30f6d41b6311" title=" " alt="" coords="796,781,1005,821"/>
+<area shape="poly" title=" " alt="" coords="659,893,722,862,795,831,816,823,818,828,797,836,724,867,661,898"/>
+<area shape="rect" href="classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61" title=" " alt="" coords="815,846,986,871"/>
+<area shape="poly" title=" " alt="" coords="718,893,824,871,825,877,719,899"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1Spake2pVerifier.html#afc56f5a658c66aca84cb78a76e90fc9a" title="Generate the Spake2+ verifier." alt="" coords="796,896,1005,936"/>
+<area shape="poly" title=" " alt="" coords="746,913,782,913,782,919,746,919"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="1053,1043,1235,1069"/>
+<area shape="poly" title=" " alt="" coords="725,933,882,966,1006,996,1105,1035,1103,1040,1005,1001,881,971,724,939"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1Spake2pVerifier.html#a25c8a62cd0a49fe81567394373e25f6e" title=" " alt="" coords="796,1011,1005,1051"/>
+<area shape="poly" title=" " alt="" coords="704,934,749,952,774,971,797,990,825,1003,822,1008,795,994,771,975,747,957,702,939"/>
+<area shape="rect" href="classchip_1_1Optional.html#a02d5932f37467d13f8bef21a41b1f391" title=" " alt="" coords="812,1075,989,1101"/>
+<area shape="poly" title=" " alt="" coords="720,934,750,953,762,966,769,981,774,1009,780,1036,786,1048,798,1061,806,1067,803,1071,794,1065,782,1051,775,1037,769,1010,764,982,757,969,746,957,717,938"/>
+<area shape="poly" title=" " alt="" coords="724,934,750,953,765,973,773,994,774,1035,776,1074,783,1093,798,1111,812,1121,809,1126,794,1115,778,1096,771,1075,769,1035,767,995,760,976,746,957,721,938"/>
+<area shape="poly" title=" " alt="" coords="963,1122,1004,1111,1102,1072,1104,1077,1006,1116,965,1127"/>
+<area shape="poly" title=" " alt="" coords="379,329,531,344,531,349,378,334"/>
+<area shape="poly" title=" " alt="" coords="442,368,531,360,532,365,442,374"/>
+<area shape="poly" title=" " alt="" coords="400,424,443,412,571,370,572,375,445,417,401,429"/>
+<area shape="poly" title=" " alt="" coords="412,488,443,476,486,453,527,426,593,374,596,379,531,430,489,458,445,481,414,493"/>
+<area shape="poly" title=" " alt="" coords="416,553,443,540,493,503,538,458,575,414,601,378,605,381,579,417,542,462,497,507,445,545,418,558"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="AppMain_8cpp_a16ab9de630f50f5cc9fb21106e704ad3_icgraph.png" border="0" usemap="#aAppMain_8cpp_a16ab9de630f50f5cc9fb21106e704ad3_icgraph" alt=""/></div>
+<map name="aAppMain_8cpp_a16ab9de630f50f5cc9fb21106e704ad3_icgraph" id="aAppMain_8cpp_a16ab9de630f50f5cc9fb21106e704ad3_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,240,31"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa527d4be3bd3bab615a180981b6555e4" name="aa527d4be3bd3bab615a180981b6555e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa527d4be3bd3bab615a180981b6555e4">&#9670;&#160;</a></span>ChipLinuxAppMainLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChipLinuxAppMainLoop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAppMainLoopImplementation.html">AppMainLoopImplementation</a> *&#160;</td>
+          <td class="paramname"><em>impl</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Start up the Linux app and use the provided main loop for event processing.</p>
+<p>If no main loop implementation is provided, an equivalent of <a class="el" href="classDefaultAppMainLoopImplementation.html">DefaultAppMainLoopImplementation</a> will be used. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="AppMain_8cpp_aa527d4be3bd3bab615a180981b6555e4_cgraph.png" border="0" usemap="#aAppMain_8cpp_aa527d4be3bd3bab615a180981b6555e4_cgraph" alt=""/></div>
+<map name="aAppMain_8cpp_aa527d4be3bd3bab615a180981b6555e4_cgraph" id="aAppMain_8cpp_aa527d4be3bd3bab615a180981b6555e4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,1768,180,1793"/>
+<area shape="rect" href="main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="302,901,418,927"/>
+<area shape="poly" title=" " alt="" coords="95,1767,143,1577,225,1288,293,1086,347,938,352,940,298,1088,231,1289,149,1578,100,1768"/>
+<area shape="rect" href="structLinuxDeviceOptions.html#a80e54198d3e60b3a2c7d351683548d88" title=" " alt="" coords="595,97,747,137"/>
+<area shape="poly" title=" " alt="" coords="92,1767,99,1487,121,999,139,744,162,515,175,419,190,339,207,280,226,243,262,207,304,178,350,156,398,139,447,127,495,119,581,112,582,117,496,124,448,132,399,144,352,161,306,183,265,211,230,246,212,282,196,341,180,420,167,516,144,744,126,1000,105,1487,97,1768"/>
+<area shape="rect" href="main_8cpp.html#af53c316002f526ba5ce7a9127bddae45" title=" " alt="" coords="281,1301,439,1327"/>
+<area shape="poly" title=" " alt="" coords="91,1767,92,1692,97,1637,107,1575,123,1510,148,1446,181,1387,202,1360,226,1336,245,1323,266,1315,268,1320,248,1328,230,1340,206,1364,186,1390,152,1448,128,1512,112,1576,103,1637,98,1692,96,1768"/>
+<area shape="rect" href="CodeUtils_8h.html#ac4a38a77adf7accad0c23273ff9e86ae" title=" " alt="" coords="325,1351,395,1376"/>
+<area shape="poly" title=" " alt="" coords="91,1767,96,1699,102,1651,114,1596,130,1539,154,1483,186,1431,226,1387,245,1374,267,1365,311,1359,311,1364,268,1371,248,1379,230,1391,190,1434,159,1486,135,1541,119,1597,108,1651,101,1700,97,1768"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#ae9e477eb2e34f23b38d689102869e0ca" title=" " alt="" coords="267,1401,453,1441"/>
+<area shape="poly" title=" " alt="" coords="93,1767,101,1710,123,1624,140,1577,163,1531,191,1488,226,1450,252,1434,255,1439,230,1455,195,1491,167,1533,145,1579,128,1626,106,1711,98,1768"/>
+<area shape="rect" href="namespacechip_1_1DeviceLayer.html#aa339b4bbbc137aab908ac19ebd3460e3" title=" " alt="" coords="287,1465,433,1505"/>
+<area shape="poly" title=" " alt="" coords="94,1767,107,1720,133,1654,172,1583,197,1550,226,1521,248,1507,272,1497,274,1501,251,1512,230,1525,201,1553,176,1586,137,1656,113,1722,99,1768"/>
+<area shape="rect" href="classchip_1_1Server.html#aebc85f8a7d702eb987e86f075f2119e8" title=" " alt="" coords="886,1576,1071,1601"/>
+<area shape="poly" title=" " alt="" coords="95,1767,108,1725,134,1669,152,1639,173,1610,198,1585,227,1565,280,1547,351,1537,436,1534,529,1536,720,1551,881,1571,880,1577,719,1556,529,1541,436,1539,352,1542,281,1552,229,1570,201,1589,177,1614,156,1642,139,1671,113,1727,100,1769"/>
+<area shape="rect" href="classchip_1_1app_1_1InteractionModelEngine.html#af782833f7dd10dff62c4f7fdf2b9c967" title="Retrieve the singleton Interaction Model Engine." alt="" coords="261,1761,459,1801"/>
+<area shape="poly" title=" " alt="" coords="180,1778,247,1778,247,1783,180,1783"/>
+<area shape="rect" href="classchip_1_1Server.html#a15468bdd7924d29116dc04abab145da4" title=" " alt="" coords="296,1825,424,1851"/>
+<area shape="poly" title=" " alt="" coords="145,1791,229,1810,283,1821,282,1826,227,1815,144,1796"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a6d7b58a5856b38af87b2c1355f748baf" title=" " alt="" coords="255,257,465,312"/>
+<area shape="poly" title=" " alt="" coords="93,1767,139,1431,179,1164,225,888,292,563,346,325,352,326,297,564,231,889,184,1165,144,1432,98,1768"/>
+<area shape="rect" href="namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="903,207,1054,232"/>
+<area shape="poly" title=" " alt="" coords="92,1768,98,1475,118,961,135,692,159,450,173,349,188,266,206,203,226,164,289,99,354,51,421,20,491,5,563,5,640,18,720,44,804,82,822,96,831,113,839,130,852,147,894,176,936,198,933,203,891,180,849,150,834,132,826,115,818,100,801,87,718,49,638,23,563,10,491,11,423,26,357,56,293,103,230,167,211,205,193,267,178,350,164,451,141,692,123,962,103,1475,97,1768"/>
+<area shape="rect" href="classchip_1_1app_1_1RuntimeOptionsProvider.html#a472e163c9f72a8397a6d5b2568dd88c6" title=" " alt="" coords="263,1875,457,1915"/>
+<area shape="poly" title=" " alt="" coords="112,1791,163,1826,229,1861,250,1869,248,1874,227,1866,160,1830,109,1796"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1ConfigurationManager.html#a30813cbe99e8ec83e7725f29dcff5b52" title=" " alt="" coords="277,1940,443,1995"/>
+<area shape="poly" title=" " alt="" coords="104,1792,152,1855,188,1893,229,1925,265,1942,263,1947,227,1929,185,1897,148,1859,100,1795"/>
+<area shape="rect" href="namespacechip_1_1DeviceLayer.html#a9b90588e3accea89d79094c29fc07261" title=" " alt="" coords="905,1641,1052,1681"/>
+<area shape="poly" title=" " alt="" coords="141,1765,228,1746,412,1717,597,1694,891,1665,892,1670,597,1699,413,1722,228,1751,142,1770"/>
+<area shape="rect" href="namespacechip_1_1DeviceLayer.html#a0f116f09a0e109f6a32f9d894bf01d42" title=" " alt="" coords="287,2019,433,2059"/>
+<area shape="poly" title=" " alt="" coords="100,1792,114,1834,140,1892,179,1953,202,1981,230,2005,251,2017,274,2026,273,2031,249,2022,226,2009,199,1985,174,1956,136,1894,110,1836,95,1794"/>
+<area shape="rect" href="OnboardingCodesUtil_8h.html#a5c1494dd7fe8e5bab0f3ccb9361e66a6" title=" " alt="" coords="277,2084,443,2109"/>
+<area shape="poly" title=" " alt="" coords="98,1793,109,1845,131,1921,149,1962,171,2001,197,2038,230,2069,265,2087,262,2092,226,2073,193,2042,166,2004,144,1964,126,1923,103,1847,93,1794"/>
+<area shape="rect" href="namespacechip_1_1Shell.html#ae532786c8c06657dca496e305a3a4979" title=" " alt="" coords="236,2134,484,2174"/>
+<area shape="poly" title=" " alt="" coords="98,1793,105,1853,126,1941,143,1990,166,2037,194,2082,230,2120,235,2124,232,2128,226,2124,190,2085,161,2040,138,1992,121,1943,100,1854,92,1794"/>
+<area shape="rect" href="namespacechip_1_1Shell.html#aa6f0275be496de6b5e0ed3fc69350384" title=" " alt="" coords="253,2198,467,2238"/>
+<area shape="poly" title=" " alt="" coords="97,1793,101,1862,107,1912,118,1968,135,2026,158,2084,190,2138,230,2184,242,2194,239,2198,226,2188,185,2141,154,2086,130,2028,113,1969,102,1913,96,1863,91,1794"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a4cff33452d1f380bfd46c984e45df31c" title=" " alt="" coords="242,2262,478,2302"/>
+<area shape="poly" title=" " alt="" coords="96,1793,97,1872,101,1929,111,1994,127,2062,151,2130,185,2193,206,2222,230,2248,234,2252,231,2256,226,2252,202,2225,180,2196,146,2132,122,2064,106,1995,96,1930,91,1872,91,1793"/>
+<area shape="rect" href="namespacechip_1_1Credentials.html#a758593169c34e02f82f1aaad970ea33f" title=" " alt="" coords="243,2327,477,2381"/>
+<area shape="poly" title=" " alt="" coords="98,1793,112,1894,139,2051,158,2133,179,2209,203,2270,230,2312,234,2316,230,2320,226,2316,199,2273,174,2210,153,2134,134,2052,107,1895,93,1794"/>
+<area shape="rect" href="classchip_1_1app_1_1RuntimeOptionsProvider.html#affca456d2c05ce6308a525f5df9a0d01" title=" " alt="" coords="228,2406,492,2446"/>
+<area shape="poly" title=" " alt="" coords="98,1793,109,1908,133,2089,151,2185,173,2272,200,2344,214,2372,230,2392,234,2396,230,2399,226,2396,210,2375,195,2346,168,2274,146,2186,128,2090,103,1908,92,1794"/>
+<area shape="rect" href="classchip_1_1Server.html#a1182135f01c00fc0a8ebc9e8ef1d9e22" title=" " alt="" coords="275,2471,445,2496"/>
+<area shape="poly" title=" " alt="" coords="97,1793,106,1919,129,2120,146,2226,169,2324,196,2403,212,2434,230,2456,245,2467,262,2475,260,2480,242,2472,226,2460,208,2437,192,2406,164,2325,141,2227,123,2121,101,1920,92,1794"/>
+<area shape="rect" href="classchip_1_1DeviceLayer_1_1PlatformManager.html#a8e0bbc9cee2cfc64849e6c84eb1fc686" title="Shuts down and cleans up the main objects in the CHIP stack. This DOES NOT stop the chip thread or ev..." alt="" coords="257,2521,463,2561"/>
+<area shape="poly" title=" " alt="" coords="97,1793,105,1927,127,2143,144,2257,167,2362,195,2449,212,2482,230,2507,246,2520,243,2524,226,2510,207,2485,190,2451,162,2364,139,2258,121,2143,100,1927,92,1793"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a7b5acccb085831d760d79051c6a63962" title=" " alt="" coords="540,1617,803,1657"/>
+<area shape="poly" title=" " alt="" coords="110,1765,161,1733,227,1702,302,1680,380,1663,526,1643,527,1648,381,1668,304,1685,229,1707,164,1738,113,1770"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a648b20fe10e56b8bb136370b8654b461" title=" " alt="" coords="259,1580,461,1635"/>
+<area shape="poly" title=" " alt="" coords="102,1766,152,1712,188,1680,227,1652,253,1638,255,1642,229,1656,191,1684,156,1715,106,1769"/>
+<area shape="rect" href="main_8cpp.html#aa8cadda0b254803163b60286b11dcd53" title=" " alt="" coords="904,776,1053,801"/>
+<area shape="poly" title=" " alt="" coords="376,899,445,854,490,830,539,811,631,791,725,781,814,778,890,780,890,785,814,783,726,786,632,797,541,816,493,835,447,859,379,903"/>
+<area shape="rect" href="classDevice.html#a8cf116830d3dfda53a61a8a241d550d8" title=" " alt="" coords="1155,751,1320,776"/>
+<area shape="poly" title=" " alt="" coords="371,899,398,872,437,838,485,803,539,777,620,753,705,737,791,728,875,725,1030,731,1153,746,1153,751,1030,737,875,730,791,733,706,742,622,758,541,782,488,808,440,842,402,876,375,903"/>
+<area shape="rect" href="main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="590,827,753,852"/>
+<area shape="poly" title=" " alt="" coords="402,899,539,861,581,852,582,857,541,866,403,904"/>
+<area shape="rect" href="classDevice.html#a4c2b382654bcb2860b254bc48ab15319" title=" " alt="" coords="897,877,1061,903"/>
+<area shape="poly" title=" " alt="" coords="418,913,590,916,802,910,883,902,883,907,803,915,590,921,418,919"/>
+<area shape="rect" href="endpoint-config-api_8h.html#ab2030cb8a85f4fe96c84316b62604ff1" title="Enable/disable endpoints" alt="" coords="557,369,785,395"/>
+<area shape="poly" title=" " alt="" coords="359,901,365,816,373,752,388,680,411,605,442,531,484,463,509,432,538,404,544,399,547,404,542,408,513,435,488,466,447,534,416,607,393,682,379,753,370,816,364,901"/>
+<area shape="rect" href="endpoint-config-api_8h.html#aca1103fbff91f47b3e299cb9bd62a0b1" title=" " alt="" coords="569,1283,773,1308"/>
+<area shape="poly" title=" " alt="" coords="366,926,381,989,412,1082,436,1133,465,1183,500,1229,542,1268,558,1278,555,1282,538,1272,496,1233,460,1186,431,1136,407,1084,376,990,361,927"/>
+<area shape="rect" href="attribute-storage_8h.html#af67ecd69ebccc5e3460bdc6d410f66d4" title="Returns the number of pre&#45;compiled endpoints." alt="" coords="568,1332,775,1357"/>
+<area shape="poly" title=" " alt="" coords="365,926,377,996,389,1047,406,1103,429,1162,459,1219,496,1272,542,1317,557,1327,554,1331,538,1321,492,1276,454,1222,424,1164,401,1105,384,1048,372,997,360,927"/>
+<area shape="rect" href="classDevice.html#a24eec7ca17d202f489ee2534a879fb08" title=" " alt="" coords="895,1419,1062,1444"/>
+<area shape="poly" title=" " alt="" coords="368,926,495,1288,504,1332,506,1370,515,1402,525,1417,542,1432,588,1458,639,1473,692,1480,746,1480,799,1475,848,1467,929,1446,930,1451,849,1472,799,1481,746,1486,692,1486,638,1478,586,1462,538,1436,521,1421,510,1405,501,1371,498,1333,489,1289,363,928"/>
+<area shape="poly" title=" " alt="" coords="361,900,440,538,494,321,518,242,538,198,570,165,607,141,610,145,573,169,542,201,523,244,499,322,445,539,367,901"/>
+<area shape="rect" href="main_8cpp.html#acc97fe72c27730d9b68031e60adfdb1d" title=" " alt="" coords="547,419,795,444"/>
+<area shape="poly" title=" " alt="" coords="359,901,368,823,379,766,395,702,417,634,448,568,488,507,538,455,546,449,549,453,542,459,492,510,453,571,422,636,400,703,384,767,373,824,365,902"/>
+<area shape="rect" href="main_8cpp.html#a9e226c8f2cfcf9a4399a0baa06e7416f" title=" " alt="" coords="552,1382,791,1422"/>
+<area shape="poly" title=" " alt="" coords="368,926,451,1161,503,1295,525,1342,542,1367,549,1372,546,1376,538,1370,521,1345,498,1297,446,1163,363,928"/>
+<area shape="rect" href="main_8cpp.html#a3fe55c819c4811eec60d15d6f7a4110c" title=" " alt="" coords="555,469,788,509"/>
+<area shape="poly" title=" " alt="" coords="360,900,374,832,404,729,427,672,457,616,494,564,538,519,545,514,548,518,542,523,498,567,462,619,432,674,409,731,379,834,366,901"/>
+<area shape="rect" href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry.html#aa4e3edad3303139bbb176dddc9cdbd9e" title=" " alt="" coords="573,533,769,573"/>
+<area shape="poly" title=" " alt="" coords="362,900,378,842,412,756,436,709,464,662,499,619,538,582,559,570,562,574,542,587,502,623,469,665,440,711,417,758,384,844,367,902"/>
+<area shape="rect" href="classchip_1_1app_1_1AttributeAccessInterfaceRegistry.html#a33d5636fa277d361bcaa894f39771780" title=" " alt="" coords="574,597,769,637"/>
+<area shape="poly" title=" " alt="" coords="364,900,384,852,420,783,472,709,503,675,538,646,560,634,562,639,542,651,507,679,476,712,425,786,389,854,369,902"/>
+<area shape="rect" href="classDevicePowerSource.html#aba87d01562f8cd2cd4df59fb2082148c" title=" " alt="" coords="592,661,751,701"/>
+<area shape="poly" title=" " alt="" coords="367,899,392,863,431,814,481,762,539,717,578,698,580,703,541,721,484,766,435,817,397,866,372,902"/>
+<area shape="rect" href="classDeviceOnOff.html#a79545fdc0cfa428ece17d10fb3d96a3d" title=" " alt="" coords="552,876,791,901"/>
+<area shape="poly" title=" " alt="" coords="418,907,538,897,539,902,419,912"/>
+<area shape="rect" href="classDeviceTempSensor.html#a78bc8d9175181b97b7fe81148bb158a3" title=" " alt="" coords="559,977,783,1017"/>
+<area shape="poly" title=" " alt="" coords="410,924,582,970,581,975,408,929"/>
+<area shape="rect" href="classDevicePowerSource.html#a70244b3d243c92bb7061c32aa8ae9d45" title=" " alt="" coords="592,1041,751,1081"/>
+<area shape="poly" title=" " alt="" coords="379,924,447,974,493,1002,541,1026,580,1040,578,1045,539,1031,490,1006,444,978,375,929"/>
+<area shape="rect" href="classDevicePowerSource.html#a56409fb7b2a5efedd8f9c19a53235542" title=" " alt="" coords="592,1105,751,1145"/>
+<area shape="poly" title=" " alt="" coords="372,925,398,958,436,1003,485,1050,541,1090,580,1106,578,1111,539,1095,482,1055,432,1007,393,962,368,928"/>
+<area shape="rect" href="classNamedPipeCommands.html#a645fcb3ad8e7ff557586ba6f7eaeba6e" title=" " alt="" coords="582,1169,761,1209"/>
+<area shape="poly" title=" " alt="" coords="369,926,391,970,428,1032,478,1099,508,1129,541,1154,570,1169,568,1174,539,1159,505,1133,474,1102,423,1035,386,973,365,928"/>
+<area shape="rect" href="classNamedPipeCommands.html#a48118a748d1802b823560a8c91d436fb" title=" " alt="" coords="567,1233,775,1259"/>
+<area shape="poly" title=" " alt="" coords="367,926,385,981,419,1061,442,1105,470,1147,503,1186,542,1218,556,1227,553,1232,538,1223,500,1189,466,1150,438,1108,414,1064,380,983,362,928"/>
+<area shape="poly" title=" " alt="" coords="1053,779,1141,770,1141,775,1054,784"/>
+<area shape="poly" title=" " alt="" coords="749,824,890,800,891,806,750,829"/>
+<area shape="poly" title=" " alt="" coords="750,849,888,872,887,878,749,855"/>
+<area shape="rect" href="namespacechip_1_1Credentials_1_1Examples.html#a392bf49f9b6ee815567a0d9bfaebf491" title="Get implementation of a sample DAC provider to validate device attestation procedure." alt="" coords="851,97,1107,137"/>
+<area shape="poly" title=" " alt="" coords="748,114,837,114,837,119,748,119"/>
+<area shape="poly" title=" " alt="" coords="791,1411,882,1419,881,1425,791,1416"/>
+<area shape="rect" href="CodeUtils_8h.html#a980d9761aee4e8f3c2b9db60b4853bad" title="This is invoked when a VerifyOrDie or VerifyOrDieWithMsg assertion expression evaluates to false." alt="" coords="629,1497,713,1523"/>
+<area shape="poly" title=" " alt="" coords="396,1359,445,1365,470,1373,494,1386,505,1397,512,1409,519,1432,525,1455,542,1476,577,1494,616,1504,615,1509,575,1499,538,1480,520,1457,514,1434,507,1411,501,1401,490,1391,468,1378,443,1370,395,1365"/>
+<area shape="poly" title=" " alt="" coords="422,309,479,333,541,354,580,364,578,369,539,359,477,338,420,314"/>
+<area shape="poly" title=" " alt="" coords="410,255,490,201,513,176,523,165,539,153,581,134,583,139,541,158,527,169,517,180,494,205,413,259"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a15088dc9ad525bdcbaf5afa96fcddc87" title=" " alt="" coords="560,212,783,267"/>
+<area shape="poly" title=" " alt="" coords="465,267,546,255,546,260,466,272"/>
+<area shape="poly" title=" " alt="" coords="403,255,466,222,502,208,539,197,588,188,637,183,736,183,828,190,904,201,903,207,827,195,736,188,638,188,588,193,541,202,504,213,468,227,406,260"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a22be42790b6e9cceb03fbd956eaa4211" title=" " alt="" coords="568,291,775,345"/>
+<area shape="poly" title=" " alt="" coords="466,293,555,303,554,308,465,298"/>
+<area shape="poly" title=" " alt="" coords="783,229,889,222,890,228,783,235"/>
+<area shape="poly" title=" " alt="" coords="937,208,928,198,932,188,950,182,979,180,1015,184,1025,189,1029,194,1025,197,1022,193,1014,189,979,185,951,187,936,192,933,197,941,205"/>
+<area shape="poly" title=" " alt="" coords="762,288,802,275,927,234,928,239,803,280,763,293"/>
+<area shape="poly" title=" " alt="" coords="799,1614,883,1601,884,1606,800,1619"/>
+<area shape="poly" title=" " alt="" coords="803,1644,892,1651,891,1656,803,1649"/>
+<area shape="poly" title=" " alt="" coords="462,1614,527,1620,526,1626,461,1619"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="AppMain_8cpp_aa527d4be3bd3bab615a180981b6555e4_icgraph.png" border="0" usemap="#aAppMain_8cpp_aa527d4be3bd3bab615a180981b6555e4_icgraph" alt=""/></div>
+<map name="aAppMain_8cpp_aa527d4be3bd3bab615a180981b6555e4_icgraph" id="aAppMain_8cpp_aa527d4be3bd3bab615a180981b6555e4_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,283,31"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">変数詳解</h2>
+<a id="a0bba5c6a163b6673b006cd0c4c7fa510" name="a0bba5c6a163b6673b006cd0c4c7fa510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bba5c6a163b6673b006cd0c4c7fa510">&#9670;&#160;</a></span>gExampleDeviceInstanceInfoProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classExampleDeviceInstanceInfoProvider.html">ExampleDeviceInstanceInfoProvider</a> gExampleDeviceInstanceInfoProvider</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

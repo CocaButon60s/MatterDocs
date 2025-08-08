@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::Crypto::PemEncoder クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1Crypto.html">Crypto</a></li><li class="navelem"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html">PemEncoder</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-types">非公開型</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="classchip_1_1Crypto_1_1PemEncoder-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::Crypto::PemEncoder クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="CHIPCryptoPAL_8h_source.html">CHIPCryptoPAL.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::Crypto::PemEncoder 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Crypto_1_1PemEncoder__coll__graph.png" border="0" usemap="#achip_1_1Crypto_1_1PemEncoder_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1Crypto_1_1PemEncoder_coll__map" id="achip_1_1Crypto_1_1PemEncoder_coll__map">
+<area shape="rect" title=" " alt="" coords="12,93,201,119"/>
+<area shape="rect" href="classchip_1_1Span.html" title=" " alt="" coords="5,5,208,31"/>
+<area shape="poly" title=" " alt="" coords="109,45,109,93,104,93,104,45"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:abf67a6462c13c82a177a322dcf8040fe" id="r_abf67a6462c13c82a177a322dcf8040fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#abf67a6462c13c82a177a322dcf8040fe">PemEncoder</a> (const char *encodedElement, <a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> derBytes)</td></tr>
+<tr class="memdesc:abf67a6462c13c82a177a322dcf8040fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a PEM encoder for element type <code>encodedElement</code> whose DER data is in <code>derBytes</code> span.  <br /></td></tr>
+<tr class="separator:abf67a6462c13c82a177a322dcf8040fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38650f11bbfbb5454a24fb47a5692c9" id="r_ac38650f11bbfbb5454a24fb47a5692c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#ac38650f11bbfbb5454a24fb47a5692c9">PemEncoder</a> (const <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html">PemEncoder</a> &amp;)=delete</td></tr>
+<tr class="separator:ac38650f11bbfbb5454a24fb47a5692c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8658f734f23deb5803fc086541596843" id="r_a8658f734f23deb5803fc086541596843"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html">PemEncoder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a8658f734f23deb5803fc086541596843">operator=</a> (const <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html">PemEncoder</a> &amp;)=delete</td></tr>
+<tr class="separator:a8658f734f23deb5803fc086541596843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f7d2b78604e242afb14daf8b75a6fb" id="r_a48f7d2b78604e242afb14daf8b75a6fb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a48f7d2b78604e242afb14daf8b75a6fb">NextLine</a> ()</td></tr>
+<tr class="memdesc:a48f7d2b78604e242afb14daf8b75a6fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pointer to the next null-terminated line of the encoding, or nullptr if done.  <br /></td></tr>
+<tr class="separator:a48f7d2b78604e242afb14daf8b75a6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+非公開型</h2></td></tr>
+<tr class="memitem:a5d8f004e02dd7ed9cb6b66df1f64dcc7" id="r_a5d8f004e02dd7ed9cb6b66df1f64dcc7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a5d8f004e02dd7ed9cb6b66df1f64dcc7">State</a> : int { <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a5d8f004e02dd7ed9cb6b66df1f64dcc7a12effe8a7e84be467d6ee315a176daf8">kPrintHeader</a> = 0
+, <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a5d8f004e02dd7ed9cb6b66df1f64dcc7abaa4ddc18ae7697c3b22c089ae061697">kPrintBody</a> = 1
+, <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a5d8f004e02dd7ed9cb6b66df1f64dcc7a52569e522829652b5909e9ffb32ccf72">kPrintFooter</a> = 2
+, <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a5d8f004e02dd7ed9cb6b66df1f64dcc7a48dce535edda4e00202f3f82989afabd">kDone</a> = 3
+ }</td></tr>
+<tr class="separator:a5d8f004e02dd7ed9cb6b66df1f64dcc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ab26a97f54733eee7d80bb1d517ff074a" id="r_ab26a97f54733eee7d80bb1d517ff074a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#ab26a97f54733eee7d80bb1d517ff074a">mEncodedElement</a></td></tr>
+<tr class="separator:ab26a97f54733eee7d80bb1d517ff074a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f64422b2dfa4951b9fbf87abac98158" id="r_a0f64422b2dfa4951b9fbf87abac98158"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a0f64422b2dfa4951b9fbf87abac98158">mDerBytes</a></td></tr>
+<tr class="separator:a0f64422b2dfa4951b9fbf87abac98158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f26c7f580a927878986cc01f12acd7" id="r_ab6f26c7f580a927878986cc01f12acd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a5d8f004e02dd7ed9cb6b66df1f64dcc7">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#ab6f26c7f580a927878986cc01f12acd7">mState</a> = <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a5d8f004e02dd7ed9cb6b66df1f64dcc7a12effe8a7e84be467d6ee315a176daf8">State::kPrintHeader</a></td></tr>
+<tr class="separator:ab6f26c7f580a927878986cc01f12acd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86159cb37fc87b962b64deecb1ab1591" id="r_a86159cb37fc87b962b64deecb1ab1591"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a86159cb37fc87b962b64deecb1ab1591">mProcessedBytes</a> = 0</td></tr>
+<tr class="separator:a86159cb37fc87b962b64deecb1ab1591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4afeb7372dabf01edfae8e488b6db534" id="r_a4afeb7372dabf01edfae8e488b6db534"><td class="memItemLeft" align="right" valign="top">StringBuilder&lt; <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#af28f370bb379397b73bf23781499a30f">kLineBufferSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a4afeb7372dabf01edfae8e488b6db534">mStringBuilder</a> {}</td></tr>
+<tr class="separator:a4afeb7372dabf01edfae8e488b6db534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a0c1b5e5cd53ad520342172e37b324e4f" id="r_a0c1b5e5cd53ad520342172e37b324e4f"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a0c1b5e5cd53ad520342172e37b324e4f">kNumBytesPerLine</a> = 48u</td></tr>
+<tr class="separator:a0c1b5e5cd53ad520342172e37b324e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28f370bb379397b73bf23781499a30f" id="r_af28f370bb379397b73bf23781499a30f"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#af28f370bb379397b73bf23781499a30f">kLineBufferSize</a> = 64u + 1u</td></tr>
+<tr class="separator:af28f370bb379397b73bf23781499a30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a5d8f004e02dd7ed9cb6b66df1f64dcc7" name="a5d8f004e02dd7ed9cb6b66df1f64dcc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d8f004e02dd7ed9cb6b66df1f64dcc7">&#9670;&#160;</a></span>State</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a5d8f004e02dd7ed9cb6b66df1f64dcc7">chip::Crypto::PemEncoder::State</a> : int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a5d8f004e02dd7ed9cb6b66df1f64dcc7a12effe8a7e84be467d6ee315a176daf8" name="a5d8f004e02dd7ed9cb6b66df1f64dcc7a12effe8a7e84be467d6ee315a176daf8"></a>kPrintHeader&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d8f004e02dd7ed9cb6b66df1f64dcc7abaa4ddc18ae7697c3b22c089ae061697" name="a5d8f004e02dd7ed9cb6b66df1f64dcc7abaa4ddc18ae7697c3b22c089ae061697"></a>kPrintBody&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d8f004e02dd7ed9cb6b66df1f64dcc7a52569e522829652b5909e9ffb32ccf72" name="a5d8f004e02dd7ed9cb6b66df1f64dcc7a52569e522829652b5909e9ffb32ccf72"></a>kPrintFooter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d8f004e02dd7ed9cb6b66df1f64dcc7a48dce535edda4e00202f3f82989afabd" name="a5d8f004e02dd7ed9cb6b66df1f64dcc7a48dce535edda4e00202f3f82989afabd"></a>kDone&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="abf67a6462c13c82a177a322dcf8040fe" name="abf67a6462c13c82a177a322dcf8040fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf67a6462c13c82a177a322dcf8040fe">&#9670;&#160;</a></span>PemEncoder() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::Crypto::PemEncoder::PemEncoder </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>encodedElement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a>&#160;</td>
+          <td class="paramname"><em>derBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a PEM encoder for element type <code>encodedElement</code> whose DER data is in <code>derBytes</code> span. </p>
+<p>LIFETIME: both encodedElement and derBytes lifetime must be &gt;= <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html">PemEncoder</a> lifetime. <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html">PemEncoder</a> references these while processing <code><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a48f7d2b78604e242afb14daf8b75a6fb" title="Returns the pointer to the next null-terminated line of the encoding, or nullptr if done.">NextLine()</a></code> calls.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encodedElement</td><td>- Element type string to include in header/footer (e.g. "CERTIFICATE"). Caller must provide correct uppercase. </td></tr>
+    <tr><td class="paramname">derBytes</td><td>- Byte span containing data to encode. May be empty. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac38650f11bbfbb5454a24fb47a5692c9" name="ac38650f11bbfbb5454a24fb47a5692c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38650f11bbfbb5454a24fb47a5692c9">&#9670;&#160;</a></span>PemEncoder() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::Crypto::PemEncoder::PemEncoder </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html">PemEncoder</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a48f7d2b78604e242afb14daf8b75a6fb" name="a48f7d2b78604e242afb14daf8b75a6fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f7d2b78604e242afb14daf8b75a6fb">&#9670;&#160;</a></span>NextLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * chip::Crypto::PemEncoder::NextLine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the pointer to the next null-terminated line of the encoding, or nullptr if done. </p>
+<p>The returned pointer has the lifetime of this class and during that lifetime will always point to valid memory.</p>
+<p>When header/footer are written, the heading type (<code>encodedElement</code> value) such as <code>CERTIFICATE</code> is clamped so that the entire header line with <code>-----BEGIN ${encodedElement}-----</code> and footer line with <code>-----END ${encodedElement}-----</code> are not wider than 64 bytes. This will not happen in practice with the types of things this is meant to encode.</p>
+<p>Usage should be in a loop, for example:</p>
+<p>std::vector&lt;std::string&gt; pemLines;</p>
+<p><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html">PemEncoder</a> encoder("CERTIFICATE", TestCerts::sTestCert_PAA_FFF1_Cert);</p>
+<p>const char* line = encoder.NextLine(); while (line) { pemLines.push_back(std::string{ line }); line = encoder.NextLine(); }</p>
+<dl class="section return"><dt>戻り値</dt><dd>a pointer to the internal line buffer for next line or nullptr when done. </dd></dl>
+
+</div>
+</div>
+<a id="a8658f734f23deb5803fc086541596843" name="a8658f734f23deb5803fc086541596843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8658f734f23deb5803fc086541596843">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html">PemEncoder</a> &amp; chip::Crypto::PemEncoder::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html">PemEncoder</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="af28f370bb379397b73bf23781499a30f" name="af28f370bb379397b73bf23781499a30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af28f370bb379397b73bf23781499a30f">&#9670;&#160;</a></span>kLineBufferSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::Crypto::PemEncoder::kLineBufferSize = 64u + 1u</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c1b5e5cd53ad520342172e37b324e4f" name="a0c1b5e5cd53ad520342172e37b324e4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1b5e5cd53ad520342172e37b324e4f">&#9670;&#160;</a></span>kNumBytesPerLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::Crypto::PemEncoder::kNumBytesPerLine = 48u</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f64422b2dfa4951b9fbf87abac98158" name="a0f64422b2dfa4951b9fbf87abac98158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f64422b2dfa4951b9fbf87abac98158">&#9670;&#160;</a></span>mDerBytes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip.html#a484ae57de38de1b6a4d136b125c1050d">ByteSpan</a> chip::Crypto::PemEncoder::mDerBytes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab26a97f54733eee7d80bb1d517ff074a" name="ab26a97f54733eee7d80bb1d517ff074a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26a97f54733eee7d80bb1d517ff074a">&#9670;&#160;</a></span>mEncodedElement</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* chip::Crypto::PemEncoder::mEncodedElement</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86159cb37fc87b962b64deecb1ab1591" name="a86159cb37fc87b962b64deecb1ab1591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86159cb37fc87b962b64deecb1ab1591">&#9670;&#160;</a></span>mProcessedBytes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t chip::Crypto::PemEncoder::mProcessedBytes = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6f26c7f580a927878986cc01f12acd7" name="ab6f26c7f580a927878986cc01f12acd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f26c7f580a927878986cc01f12acd7">&#9670;&#160;</a></span>mState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a5d8f004e02dd7ed9cb6b66df1f64dcc7">State</a> chip::Crypto::PemEncoder::mState = <a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#a5d8f004e02dd7ed9cb6b66df1f64dcc7a12effe8a7e84be467d6ee315a176daf8">State::kPrintHeader</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4afeb7372dabf01edfae8e488b6db534" name="a4afeb7372dabf01edfae8e488b6db534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4afeb7372dabf01edfae8e488b6db534">&#9670;&#160;</a></span>mStringBuilder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">StringBuilder&lt;<a class="el" href="classchip_1_1Crypto_1_1PemEncoder.html#af28f370bb379397b73bf23781499a30f">kLineBufferSize</a>&gt; chip::Crypto::PemEncoder::mStringBuilder {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/crypto/<a class="el" href="CHIPCryptoPAL_8h_source.html">CHIPCryptoPAL.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

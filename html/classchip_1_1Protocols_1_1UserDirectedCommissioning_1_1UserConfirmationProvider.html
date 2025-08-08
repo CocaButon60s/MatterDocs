@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::Protocols::UserDirectedCommissioning::UserConfirmationProvider クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1Protocols.html">Protocols</a></li><li class="navelem"><a class="el" href="namespacechip_1_1Protocols_1_1UserDirectedCommissioning.html">UserDirectedCommissioning</a></li><li class="navelem"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserConfirmationProvider.html">UserConfirmationProvider</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserConfirmationProvider-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::Protocols::UserDirectedCommissioning::UserConfirmationProvider クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="UserDirectedCommissioning_8h_source.html">UserDirectedCommissioning.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a898e67becb65ef1cab09456656076670" id="r_a898e67becb65ef1cab09456656076670"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserConfirmationProvider.html#a898e67becb65ef1cab09456656076670">OnUserDirectedCommissioningRequest</a> (UDCClientState state)=0</td></tr>
+<tr class="memdesc:a898e67becb65ef1cab09456656076670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an Identification Declaration UDC message has been received and corresponding nodeData has been found. It is expected that the implementer will prompt the user to confirm their intention to commission the given node, and obtain the setup code to allow commissioning to proceed, and then invoke commissioning on the given Node (using CHIP <a class="el" href="classDevice.html">Device</a> Controller, for example)  <br /></td></tr>
+<tr class="separator:a898e67becb65ef1cab09456656076670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd399c8cd031e615832266c111b373a" id="r_afcd399c8cd031e615832266c111b373a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserConfirmationProvider.html#afcd399c8cd031e615832266c111b373a">OnCancel</a> (UDCClientState state)=0</td></tr>
+<tr class="memdesc:afcd399c8cd031e615832266c111b373a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an Identification Declaration UDC message has been received with the cancel flag set. It is expected that the implementer will tear down any dialog prompts for the commissionee instance (identified in the UDC client state argument).  <br /></td></tr>
+<tr class="separator:afcd399c8cd031e615832266c111b373a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511cfd63d01e555f447bf7e2c0733b37" id="r_a511cfd63d01e555f447bf7e2c0733b37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserConfirmationProvider.html#a511cfd63d01e555f447bf7e2c0733b37">OnCommissionerPasscodeReady</a> (UDCClientState state)=0</td></tr>
+<tr class="memdesc:a511cfd63d01e555f447bf7e2c0733b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an Identification Declaration UDC message has been received with the commissioner passcode ready flag set. It is expected that the implementer will invoke commissioning on the commissionee instance (identified in the UDC client state argument).  <br /></td></tr>
+<tr class="separator:a511cfd63d01e555f447bf7e2c0733b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f253b247ac8713c0afac40cb586542" id="r_a21f253b247ac8713c0afac40cb586542"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1UserConfirmationProvider.html#a21f253b247ac8713c0afac40cb586542">~UserConfirmationProvider</a> ()=default</td></tr>
+<tr class="separator:a21f253b247ac8713c0afac40cb586542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a21f253b247ac8713c0afac40cb586542" name="a21f253b247ac8713c0afac40cb586542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f253b247ac8713c0afac40cb586542">&#9670;&#160;</a></span>~UserConfirmationProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual chip::Protocols::UserDirectedCommissioning::UserConfirmationProvider::~UserConfirmationProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="afcd399c8cd031e615832266c111b373a" name="afcd399c8cd031e615832266c111b373a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd399c8cd031e615832266c111b373a">&#9670;&#160;</a></span>OnCancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void chip::Protocols::UserDirectedCommissioning::UserConfirmationProvider::OnCancel </td>
+          <td>(</td>
+          <td class="paramtype">UDCClientState&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when an Identification Declaration UDC message has been received with the cancel flag set. It is expected that the implementer will tear down any dialog prompts for the commissionee instance (identified in the UDC client state argument). </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>The state for the UDC Client. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a511cfd63d01e555f447bf7e2c0733b37" name="a511cfd63d01e555f447bf7e2c0733b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a511cfd63d01e555f447bf7e2c0733b37">&#9670;&#160;</a></span>OnCommissionerPasscodeReady()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void chip::Protocols::UserDirectedCommissioning::UserConfirmationProvider::OnCommissionerPasscodeReady </td>
+          <td>(</td>
+          <td class="paramtype">UDCClientState&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when an Identification Declaration UDC message has been received with the commissioner passcode ready flag set. It is expected that the implementer will invoke commissioning on the commissionee instance (identified in the UDC client state argument). </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>The state for the UDC Client. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a898e67becb65ef1cab09456656076670" name="a898e67becb65ef1cab09456656076670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a898e67becb65ef1cab09456656076670">&#9670;&#160;</a></span>OnUserDirectedCommissioningRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void chip::Protocols::UserDirectedCommissioning::UserConfirmationProvider::OnUserDirectedCommissioningRequest </td>
+          <td>(</td>
+          <td class="paramtype">UDCClientState&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when an Identification Declaration UDC message has been received and corresponding nodeData has been found. It is expected that the implementer will prompt the user to confirm their intention to commission the given node, and obtain the setup code to allow commissioning to proceed, and then invoke commissioning on the given Node (using CHIP <a class="el" href="classDevice.html">Device</a> Controller, for example) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>The state for the UDC Client. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/protocols/user_directed_commissioning/<a class="el" href="UserDirectedCommissioning_8h_source.html">UserDirectedCommissioning.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

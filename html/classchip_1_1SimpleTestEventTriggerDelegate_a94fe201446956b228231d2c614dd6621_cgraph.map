@@ -1,0 +1,13 @@
+<map id="chip::SimpleTestEventTriggerDelegate::Init" name="chip::SimpleTestEventTriggerDelegate::Init">
+<area shape="rect" id="Node000001" title="Initialize the delegate with a key" alt="" coords="5,123,215,163"/>
+<area shape="rect" id="Node000002" href="$namespacechip.html#a6f6da3ee0bd910685bf4de6bcaf103eb" title=" " alt="" coords="263,80,484,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,121,293,105,294,111,215,126"/>
+<area shape="rect" id="Node000005" href="$classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8" title=" " alt="" coords="755,105,877,131"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="215,137,741,118,741,123,215,142"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097" title=" " alt="" coords="556,5,683,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,77,531,39,557,32,558,37,533,45,413,83"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Span.html#a675272efc7d6fffcb1eb12ad749cb15e" title=" " alt="" coords="532,55,707,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="484,79,518,75,518,80,485,84"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="485,96,741,111,740,116,484,102"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="670,78,754,99,752,104,669,83"/>
+</map>

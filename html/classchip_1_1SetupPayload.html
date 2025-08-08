@@ -1,0 +1,958 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::SetupPayload クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="classchip_1_1SetupPayload.html">SetupPayload</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#friends">フレンド</a> &#124;
+<a href="classchip_1_1SetupPayload-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::SetupPayload クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="SetupPayload_8h_source.html">SetupPayload.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::SetupPayload の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1SetupPayload__inherit__graph.png" border="0" usemap="#achip_1_1SetupPayload_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1SetupPayload_inherit__map" id="achip_1_1SetupPayload_inherit__map">
+<area shape="rect" title=" " alt="" coords="16,79,161,104"/>
+<area shape="rect" href="structchip_1_1PayloadContents.html" title=" " alt="" coords="5,5,172,31"/>
+<area shape="poly" title=" " alt="" coords="91,44,91,79,86,79,86,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::SetupPayload 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1SetupPayload__coll__graph.png" border="0" usemap="#achip_1_1SetupPayload_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1SetupPayload_coll__map" id="achip_1_1SetupPayload_coll__map">
+<area shape="rect" title=" " alt="" coords="1184,35,1329,60"/>
+<area shape="rect" href="structchip_1_1PayloadContents.html" title=" " alt="" coords="968,35,1135,60"/>
+<area shape="poly" title=" " alt="" coords="1149,45,1183,45,1183,50,1149,50"/>
+<area shape="rect" href="classchip_1_1Optional.html" title=" " alt="" coords="557,27,764,67"/>
+<area shape="poly" title=" " alt="" coords="778,45,968,45,968,50,778,50"/>
+<area shape="rect" href="classchip_1_1Optional_1_1ValueHolder.html" title=" " alt="" coords="261,27,412,67"/>
+<area shape="poly" title=" " alt="" coords="426,45,557,45,557,50,426,50"/>
+<area shape="rect" title=" " alt="" coords="5,5,212,89"/>
+<area shape="poly" title=" " alt="" coords="226,45,261,45,261,50,226,50"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3a16b50bd8002dcbed64cf38b4984a1b" id="r_a3a16b50bd8002dcbed64cf38b4984a1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#a3a16b50bd8002dcbed64cf38b4984a1b">addOptionalVendorData</a> (uint8_t tag, std::string data)</td></tr>
+<tr class="memdesc:a3a16b50bd8002dcbed64cf38b4984a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to add an optional vendor data  <br /></td></tr>
+<tr class="separator:a3a16b50bd8002dcbed64cf38b4984a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39c4a4031061d537fcbd18418c52b69" id="r_af39c4a4031061d537fcbd18418c52b69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#af39c4a4031061d537fcbd18418c52b69">addOptionalVendorData</a> (uint8_t tag, int32_t data)</td></tr>
+<tr class="memdesc:af39c4a4031061d537fcbd18418c52b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to add an optional vendor data  <br /></td></tr>
+<tr class="separator:af39c4a4031061d537fcbd18418c52b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f3b4ef8143199c1577622d2c7a8a1c" id="r_ae7f3b4ef8143199c1577622d2c7a8a1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#ae7f3b4ef8143199c1577622d2c7a8a1c">removeOptionalVendorData</a> (uint8_t tag)</td></tr>
+<tr class="memdesc:ae7f3b4ef8143199c1577622d2c7a8a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to remove an optional vendor data  <br /></td></tr>
+<tr class="separator:ae7f3b4ef8143199c1577622d2c7a8a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b58303837f758191a03543d1f6fd23a" id="r_a8b58303837f758191a03543d1f6fd23a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#a8b58303837f758191a03543d1f6fd23a">getOptionalVendorData</a> (uint8_t tag, <a class="el" href="structchip_1_1OptionalQRCodeInfo.html">OptionalQRCodeInfo</a> &amp;info) const</td></tr>
+<tr class="memdesc:a8b58303837f758191a03543d1f6fd23a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to retrieve an optional QR Code info vendor object  <br /></td></tr>
+<tr class="separator:a8b58303837f758191a03543d1f6fd23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4748faa9dbc4b41d2ada484bbba6aac" id="r_af4748faa9dbc4b41d2ada484bbba6aac"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structchip_1_1OptionalQRCodeInfo.html">OptionalQRCodeInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#af4748faa9dbc4b41d2ada484bbba6aac">getAllOptionalVendorData</a> () const</td></tr>
+<tr class="memdesc:af4748faa9dbc4b41d2ada484bbba6aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to retrieve the vector of <a class="el" href="structchip_1_1OptionalQRCodeInfo.html">OptionalQRCodeInfo</a> infos  <br /></td></tr>
+<tr class="separator:af4748faa9dbc4b41d2ada484bbba6aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4521f8e92755f2bc6e59e3bd16047af" id="r_ad4521f8e92755f2bc6e59e3bd16047af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#ad4521f8e92755f2bc6e59e3bd16047af">addSerialNumber</a> (std::string serialNumber)</td></tr>
+<tr class="memdesc:ad4521f8e92755f2bc6e59e3bd16047af"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to add a string serial number  <br /></td></tr>
+<tr class="separator:ad4521f8e92755f2bc6e59e3bd16047af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa36f36d08d5c0770991cc064a5cf5d" id="r_a7aa36f36d08d5c0770991cc064a5cf5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#a7aa36f36d08d5c0770991cc064a5cf5d">addSerialNumber</a> (uint32_t serialNumber)</td></tr>
+<tr class="memdesc:a7aa36f36d08d5c0770991cc064a5cf5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to add a uint32_t serial number  <br /></td></tr>
+<tr class="separator:a7aa36f36d08d5c0770991cc064a5cf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa249a69ebdde291c19a88348c34b9c27" id="r_aa249a69ebdde291c19a88348c34b9c27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#aa249a69ebdde291c19a88348c34b9c27">getSerialNumber</a> (std::string &amp;outSerialNumber) const</td></tr>
+<tr class="memdesc:aa249a69ebdde291c19a88348c34b9c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to retrieve serial number as a string  <br /></td></tr>
+<tr class="separator:aa249a69ebdde291c19a88348c34b9c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c4ab9c3ad209c0e69e12bff491ada6" id="r_af1c4ab9c3ad209c0e69e12bff491ada6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#af1c4ab9c3ad209c0e69e12bff491ada6">removeSerialNumber</a> ()</td></tr>
+<tr class="memdesc:af1c4ab9c3ad209c0e69e12bff491ada6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to remove the serial number from the payload  <br /></td></tr>
+<tr class="separator:af1c4ab9c3ad209c0e69e12bff491ada6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5dac8bf715c4057afe06eb38c60651" id="r_aeb5dac8bf715c4057afe06eb38c60651"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#aeb5dac8bf715c4057afe06eb38c60651">operator==</a> (const <a class="el" href="classchip_1_1SetupPayload.html">SetupPayload</a> &amp;input) const</td></tr>
+<tr class="separator:aeb5dac8bf715c4057afe06eb38c60651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structchip_1_1PayloadContents"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structchip_1_1PayloadContents')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:aea38cf30bb62a4ea669d7e622f088903 inherit pub_methods_structchip_1_1PayloadContents" id="r_aea38cf30bb62a4ea669d7e622f088903"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#aea38cf30bb62a4ea669d7e622f088903">isValidQRCodePayload</a> (<a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555">ValidationMode</a> mode=<a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555a778e08e88d04040a26ef80623953a98f">ValidationMode::kProduce</a>) const</td></tr>
+<tr class="separator:aea38cf30bb62a4ea669d7e622f088903 inherit pub_methods_structchip_1_1PayloadContents"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b60189051545894cd46652b9b82ba5 inherit pub_methods_structchip_1_1PayloadContents" id="r_a62b60189051545894cd46652b9b82ba5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a62b60189051545894cd46652b9b82ba5">isValidManualCode</a> (<a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555">ValidationMode</a> mode=<a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555a778e08e88d04040a26ef80623953a98f">ValidationMode::kProduce</a>) const</td></tr>
+<tr class="separator:a62b60189051545894cd46652b9b82ba5 inherit pub_methods_structchip_1_1PayloadContents"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299ca137eaf19136b3c3994db9e2975b inherit pub_methods_structchip_1_1PayloadContents" id="r_a299ca137eaf19136b3c3994db9e2975b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a299ca137eaf19136b3c3994db9e2975b">operator==</a> (const <a class="el" href="structchip_1_1PayloadContents.html">PayloadContents</a> &amp;input) const</td></tr>
+<tr class="separator:a299ca137eaf19136b3c3994db9e2975b inherit pub_methods_structchip_1_1PayloadContents"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:aac297eaf5a94d30236adba45bd3089c0" id="r_aac297eaf5a94d30236adba45bd3089c0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#aac297eaf5a94d30236adba45bd3089c0">IsCommonTag</a> (uint8_t tag)</td></tr>
+<tr class="memdesc:aac297eaf5a94d30236adba45bd3089c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the tag is CHIP Common type  <br /></td></tr>
+<tr class="separator:aac297eaf5a94d30236adba45bd3089c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace838f39c263477b5c32bc87cde69933" id="r_ace838f39c263477b5c32bc87cde69933"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#ace838f39c263477b5c32bc87cde69933">IsVendorTag</a> (uint8_t tag)</td></tr>
+<tr class="memdesc:ace838f39c263477b5c32bc87cde69933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the tag is vendor-specific  <br /></td></tr>
+<tr class="separator:ace838f39c263477b5c32bc87cde69933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8cec0340abea00998ce5b345f3d3e8b" id="r_ac8cec0340abea00998ce5b345f3d3e8b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#ac8cec0340abea00998ce5b345f3d3e8b">generateRandomSetupPin</a> (uint32_t &amp;setupPINCode)</td></tr>
+<tr class="memdesc:ac8cec0340abea00998ce5b345f3d3e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Random Setup Pin Code (Passcode)  <br /></td></tr>
+<tr class="separator:ac8cec0340abea00998ce5b345f3d3e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54e141736a20c0a563369bda242a8f0" id="r_ae54e141736a20c0a563369bda242a8f0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#ae54e141736a20c0a563369bda242a8f0">FromStringRepresentation</a> (std::string stringRepresentation, std::vector&lt; <a class="el" href="classchip_1_1SetupPayload.html">SetupPayload</a> &gt; &amp;outPayloads)</td></tr>
+<tr class="memdesc:ae54e141736a20c0a563369bda242a8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of setup payloads from a string representation.  <br /></td></tr>
+<tr class="separator:ae54e141736a20c0a563369bda242a8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_structchip_1_1PayloadContents"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_structchip_1_1PayloadContents')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> に属する継承静的公開メンバ関数</td></tr>
+<tr class="memitem:a2d6d07eac79faafac6a800639faa4fe9 inherit pub_static_methods_structchip_1_1PayloadContents" id="r_a2d6d07eac79faafac6a800639faa4fe9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a2d6d07eac79faafac6a800639faa4fe9">IsValidSetupPIN</a> (uint32_t setupPIN)</td></tr>
+<tr class="separator:a2d6d07eac79faafac6a800639faa4fe9 inherit pub_static_methods_structchip_1_1PayloadContents"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:ade817a8f12616182300a0e68cb42180f" id="r_ade817a8f12616182300a0e68cb42180f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#ade817a8f12616182300a0e68cb42180f">addOptionalVendorData</a> (const <a class="el" href="structchip_1_1OptionalQRCodeInfo.html">OptionalQRCodeInfo</a> &amp;info)</td></tr>
+<tr class="memdesc:ade817a8f12616182300a0e68cb42180f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to add an optional QR Code info vendor object  <br /></td></tr>
+<tr class="separator:ade817a8f12616182300a0e68cb42180f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd46df09eafb116fa4c9d7323ea6912" id="r_a1fd46df09eafb116fa4c9d7323ea6912"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#a1fd46df09eafb116fa4c9d7323ea6912">addOptionalExtensionData</a> (const <a class="el" href="structchip_1_1OptionalQRCodeInfoExtension.html">OptionalQRCodeInfoExtension</a> &amp;info)</td></tr>
+<tr class="memdesc:a1fd46df09eafb116fa4c9d7323ea6912"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to add an optional QR Code info CHIP object  <br /></td></tr>
+<tr class="separator:a1fd46df09eafb116fa4c9d7323ea6912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85513226b95683c12a2ed2769e24dcb9" id="r_a85513226b95683c12a2ed2769e24dcb9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structchip_1_1OptionalQRCodeInfoExtension.html">OptionalQRCodeInfoExtension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#a85513226b95683c12a2ed2769e24dcb9">getAllOptionalExtensionData</a> () const</td></tr>
+<tr class="memdesc:a85513226b95683c12a2ed2769e24dcb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to retrieve the vector of CHIPQRCodeInfo infos  <br /></td></tr>
+<tr class="separator:a85513226b95683c12a2ed2769e24dcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2af0d817d4d47f76d03cf42bdbd9d5b" id="r_ad2af0d817d4d47f76d03cf42bdbd9d5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#ad2af0d817d4d47f76d03cf42bdbd9d5b">getOptionalExtensionData</a> (uint8_t tag, <a class="el" href="structchip_1_1OptionalQRCodeInfoExtension.html">OptionalQRCodeInfoExtension</a> &amp;info) const</td></tr>
+<tr class="memdesc:ad2af0d817d4d47f76d03cf42bdbd9d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to retrieve an optional QR Code info extended object  <br /></td></tr>
+<tr class="separator:ad2af0d817d4d47f76d03cf42bdbd9d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171ec51f054ed7a4c31cb2835a8a0ecd" id="r_a171ec51f054ed7a4c31cb2835a8a0ecd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#af01e14e9a7cf70c1be1c9f5f0f5523a3">optionalQRCodeInfoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#a171ec51f054ed7a4c31cb2835a8a0ecd">getNumericTypeFor</a> (uint8_t tag) const</td></tr>
+<tr class="memdesc:a171ec51f054ed7a4c31cb2835a8a0ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to retrieve the associated expected numeric value for a tag  <br /></td></tr>
+<tr class="separator:a171ec51f054ed7a4c31cb2835a8a0ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a6c2f7f3100b71febc31f934f3c94ce98" id="r_a6c2f7f3100b71febc31f934f3c94ce98"><td class="memItemLeft" align="right" valign="top">std::map&lt; uint8_t, <a class="el" href="structchip_1_1OptionalQRCodeInfo.html">OptionalQRCodeInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#a6c2f7f3100b71febc31f934f3c94ce98">optionalVendorData</a></td></tr>
+<tr class="separator:a6c2f7f3100b71febc31f934f3c94ce98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7711a28f169641bb8bf5e9912d0da48" id="r_ad7711a28f169641bb8bf5e9912d0da48"><td class="memItemLeft" align="right" valign="top">std::map&lt; uint8_t, <a class="el" href="structchip_1_1OptionalQRCodeInfoExtension.html">OptionalQRCodeInfoExtension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#ad7711a28f169641bb8bf5e9912d0da48">optionalExtensionData</a></td></tr>
+<tr class="separator:ad7711a28f169641bb8bf5e9912d0da48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+フレンド</h2></td></tr>
+<tr class="memitem:a6f66b7752e78096aa6da3974f28cf9be" id="r_a6f66b7752e78096aa6da3974f28cf9be"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#a6f66b7752e78096aa6da3974f28cf9be">QRCodeSetupPayloadGenerator</a></td></tr>
+<tr class="separator:a6f66b7752e78096aa6da3974f28cf9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e662b954d9f27ce501879f4d017d4fa" id="r_a7e662b954d9f27ce501879f4d017d4fa"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1SetupPayload.html#a7e662b954d9f27ce501879f4d017d4fa">QRCodeSetupPayloadParser</a></td></tr>
+<tr class="separator:a7e662b954d9f27ce501879f4d017d4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_types_structchip_1_1PayloadContents"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structchip_1_1PayloadContents')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> に属する継承公開型</td></tr>
+<tr class="memitem:a19f30488198c8f6a9721587cb8b62555 inherit pub_types_structchip_1_1PayloadContents" id="r_a19f30488198c8f6a9721587cb8b62555"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555">ValidationMode</a> : uint8_t { <a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555a778e08e88d04040a26ef80623953a98f">kProduce</a>
+, <a class="el" href="structchip_1_1PayloadContents.html#a19f30488198c8f6a9721587cb8b62555a785420181a82ba1a0e5e62a27cfb9361">kConsume</a>
+ }</td></tr>
+<tr class="separator:a19f30488198c8f6a9721587cb8b62555 inherit pub_types_structchip_1_1PayloadContents"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_structchip_1_1PayloadContents"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structchip_1_1PayloadContents')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> に属する継承公開変数類</td></tr>
+<tr class="memitem:a46a90435a54527b8dffd076b48dc009a inherit pub_attribs_structchip_1_1PayloadContents" id="r_a46a90435a54527b8dffd076b48dc009a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a46a90435a54527b8dffd076b48dc009a">version</a> = 0</td></tr>
+<tr class="separator:a46a90435a54527b8dffd076b48dc009a inherit pub_attribs_structchip_1_1PayloadContents"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218f5f2e0eb89688225f803d2a4a013d inherit pub_attribs_structchip_1_1PayloadContents" id="r_a218f5f2e0eb89688225f803d2a4a013d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a218f5f2e0eb89688225f803d2a4a013d">vendorID</a> = 0</td></tr>
+<tr class="separator:a218f5f2e0eb89688225f803d2a4a013d inherit pub_attribs_structchip_1_1PayloadContents"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453daefad62ab10900817367ae15d8ae inherit pub_attribs_structchip_1_1PayloadContents" id="r_a453daefad62ab10900817367ae15d8ae"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a453daefad62ab10900817367ae15d8ae">productID</a> = 0</td></tr>
+<tr class="separator:a453daefad62ab10900817367ae15d8ae inherit pub_attribs_structchip_1_1PayloadContents"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e372106a9f3716dcc9a3711a9f2cad inherit pub_attribs_structchip_1_1PayloadContents" id="r_a89e372106a9f3716dcc9a3711a9f2cad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a653451e4ce3766efe71692ad79a2788f">CommissioningFlow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a89e372106a9f3716dcc9a3711a9f2cad">commissioningFlow</a> = <a class="el" href="namespacechip.html#a653451e4ce3766efe71692ad79a2788fa821da62632c491ea619ead7b31c094bf">CommissioningFlow::kStandard</a></td></tr>
+<tr class="separator:a89e372106a9f3716dcc9a3711a9f2cad inherit pub_attribs_structchip_1_1PayloadContents"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768b30adb6f04e0ee06212e7de7e1b3b inherit pub_attribs_structchip_1_1PayloadContents" id="r_a768b30adb6f04e0ee06212e7de7e1b3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">RendezvousInformationFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a768b30adb6f04e0ee06212e7de7e1b3b">rendezvousInformation</a></td></tr>
+<tr class="separator:a768b30adb6f04e0ee06212e7de7e1b3b inherit pub_attribs_structchip_1_1PayloadContents"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1572562c7f671fa21494a0e25540e3 inherit pub_attribs_structchip_1_1PayloadContents" id="r_a4c1572562c7f671fa21494a0e25540e3"><td class="memItemLeft" align="right" valign="top">SetupDiscriminator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a4c1572562c7f671fa21494a0e25540e3">discriminator</a> {}</td></tr>
+<tr class="separator:a4c1572562c7f671fa21494a0e25540e3 inherit pub_attribs_structchip_1_1PayloadContents"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577d75a2acb86ffa12a0df5136f88239 inherit pub_attribs_structchip_1_1PayloadContents" id="r_a577d75a2acb86ffa12a0df5136f88239"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1PayloadContents.html#a577d75a2acb86ffa12a0df5136f88239">setUpPINCode</a> = 0</td></tr>
+<tr class="separator:a577d75a2acb86ffa12a0df5136f88239 inherit pub_attribs_structchip_1_1PayloadContents"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a1fd46df09eafb116fa4c9d7323ea6912" name="a1fd46df09eafb116fa4c9d7323ea6912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd46df09eafb116fa4c9d7323ea6912">&#9670;&#160;</a></span>addOptionalExtensionData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::addOptionalExtensionData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1OptionalQRCodeInfoExtension.html">OptionalQRCodeInfoExtension</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A function to add an optional QR Code info CHIP object </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="classchip_1_1Optional.html">Optional</a> QR code info object to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR_INVALID_ARGUMENT on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ade817a8f12616182300a0e68cb42180f" name="ade817a8f12616182300a0e68cb42180f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade817a8f12616182300a0e68cb42180f">&#9670;&#160;</a></span>addOptionalVendorData() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::addOptionalVendorData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1OptionalQRCodeInfo.html">OptionalQRCodeInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A function to add an optional QR Code info vendor object </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="classchip_1_1Optional.html">Optional</a> QR code info object to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR_INVALID_ARGUMENT on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+</div>
+</div>
+<a id="af39c4a4031061d537fcbd18418c52b69" name="af39c4a4031061d537fcbd18418c52b69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af39c4a4031061d537fcbd18418c52b69">&#9670;&#160;</a></span>addOptionalVendorData() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::addOptionalVendorData </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function to add an optional vendor data </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>tag number in the [0x80-0xFF] range </td></tr>
+    <tr><td class="paramname">data</td><td>Integer representation of data to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a3a16b50bd8002dcbed64cf38b4984a1b" name="a3a16b50bd8002dcbed64cf38b4984a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a16b50bd8002dcbed64cf38b4984a1b">&#9670;&#160;</a></span>addOptionalVendorData() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::addOptionalVendorData </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function to add an optional vendor data </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>tag number in the [0x80-0xFF] range </td></tr>
+    <tr><td class="paramname">data</td><td>String representation of data to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ad4521f8e92755f2bc6e59e3bd16047af" name="ad4521f8e92755f2bc6e59e3bd16047af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4521f8e92755f2bc6e59e3bd16047af">&#9670;&#160;</a></span>addSerialNumber() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::addSerialNumber </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>serialNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function to add a string serial number </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serialNumber</td><td>string serial number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a7aa36f36d08d5c0770991cc064a5cf5d" name="a7aa36f36d08d5c0770991cc064a5cf5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa36f36d08d5c0770991cc064a5cf5d">&#9670;&#160;</a></span>addSerialNumber() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::addSerialNumber </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>serialNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function to add a uint32_t serial number </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serialNumber</td><td>uint32_t serial number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ae54e141736a20c0a563369bda242a8f0" name="ae54e141736a20c0a563369bda242a8f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae54e141736a20c0a563369bda242a8f0">&#9670;&#160;</a></span>FromStringRepresentation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::FromStringRepresentation </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>stringRepresentation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classchip_1_1SetupPayload.html">SetupPayload</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>outPayloads</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a list of setup payloads from a string representation. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stringRepresentation</td><td>The string representing the payloads.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outPayloads</td><td>On success, the contents of this vector will be replaces with the list of parsed payloads. The result may have only one entry, or multiple entries if concatenated QR codes are used.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>On failure, the value of the out param should not be relied on to be anything in particular. </p>
+
+</div>
+</div>
+<a id="ac8cec0340abea00998ce5b345f3d3e8b" name="ac8cec0340abea00998ce5b345f3d3e8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8cec0340abea00998ce5b345f3d3e8b">&#9670;&#160;</a></span>generateRandomSetupPin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::generateRandomSetupPin </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>setupPINCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a Random Setup Pin Code (Passcode) </p>
+<p>This function generates a random passcode within the defined limits (00000001 to 99999998) It also checks that the generated passcode is not equal to any invalid passcode values as defined in 5.1.7.1.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">setupPINCode</td><td>The generated random setup PIN code. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR_INTERNAL if unable to generate a valid passcode within a reasonable number of attempts, CHIP_NO_ERROR otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a85513226b95683c12a2ed2769e24dcb9" name="a85513226b95683c12a2ed2769e24dcb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85513226b95683c12a2ed2769e24dcb9">&#9670;&#160;</a></span>getAllOptionalExtensionData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structchip_1_1OptionalQRCodeInfoExtension.html">OptionalQRCodeInfoExtension</a> &gt; chip::SetupPayload::getAllOptionalExtensionData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A function to retrieve the vector of CHIPQRCodeInfo infos </p>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a vector of CHIPQRCodeInfos </dd></dl>
+
+</div>
+</div>
+<a id="af4748faa9dbc4b41d2ada484bbba6aac" name="af4748faa9dbc4b41d2ada484bbba6aac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4748faa9dbc4b41d2ada484bbba6aac">&#9670;&#160;</a></span>getAllOptionalVendorData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structchip_1_1OptionalQRCodeInfo.html">OptionalQRCodeInfo</a> &gt; chip::SetupPayload::getAllOptionalVendorData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function to retrieve the vector of <a class="el" href="structchip_1_1OptionalQRCodeInfo.html">OptionalQRCodeInfo</a> infos </p>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a vector of optionalQRCodeInfos </dd></dl>
+
+</div>
+</div>
+<a id="a171ec51f054ed7a4c31cb2835a8a0ecd" name="a171ec51f054ed7a4c31cb2835a8a0ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a171ec51f054ed7a4c31cb2835a8a0ecd">&#9670;&#160;</a></span>getNumericTypeFor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip.html#af01e14e9a7cf70c1be1c9f5f0f5523a3">optionalQRCodeInfoType</a> chip::SetupPayload::getNumericTypeFor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>tag</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A function to retrieve the associated expected numeric value for a tag </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>8 bit [0-255] tag number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns an optionalQRCodeInfoType value </dd></dl>
+
+</div>
+</div>
+<a id="ad2af0d817d4d47f76d03cf42bdbd9d5b" name="ad2af0d817d4d47f76d03cf42bdbd9d5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2af0d817d4d47f76d03cf42bdbd9d5b">&#9670;&#160;</a></span>getOptionalExtensionData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::getOptionalExtensionData </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structchip_1_1OptionalQRCodeInfoExtension.html">OptionalQRCodeInfoExtension</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A function to retrieve an optional QR Code info extended object </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>8 bit [128-255] tag number </td></tr>
+    <tr><td class="paramname">info</td><td>retrieved <a class="el" href="structchip_1_1OptionalQRCodeInfoExtension.html">OptionalQRCodeInfoExtension</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR_KEY_NOT_FOUND on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a8b58303837f758191a03543d1f6fd23a" name="a8b58303837f758191a03543d1f6fd23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b58303837f758191a03543d1f6fd23a">&#9670;&#160;</a></span>getOptionalVendorData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::getOptionalVendorData </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structchip_1_1OptionalQRCodeInfo.html">OptionalQRCodeInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function to retrieve an optional QR Code info vendor object </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>tag number in the [0x80-0xFF] range </td></tr>
+    <tr><td class="paramname">info</td><td>retrieved <a class="el" href="structchip_1_1OptionalQRCodeInfo.html">OptionalQRCodeInfo</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR_KEY_NOT_FOUND on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+</div>
+</div>
+<a id="aa249a69ebdde291c19a88348c34b9c27" name="aa249a69ebdde291c19a88348c34b9c27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa249a69ebdde291c19a88348c34b9c27">&#9670;&#160;</a></span>getSerialNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::getSerialNumber </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>outSerialNumber</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function to retrieve serial number as a string </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outSerialNumber</td><td>retrieved string serial number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+</div>
+</div>
+<a id="aac297eaf5a94d30236adba45bd3089c0" name="aac297eaf5a94d30236adba45bd3089c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac297eaf5a94d30236adba45bd3089c0">&#9670;&#160;</a></span>IsCommonTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool chip::SetupPayload::IsCommonTag </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>tag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the tag is CHIP Common type </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>Tag to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns True if the tag is of Common type </dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1SetupPayload_aac297eaf5a94d30236adba45bd3089c0_icgraph.png" border="0" usemap="#aclasschip_1_1SetupPayload_aac297eaf5a94d30236adba45bd3089c0_icgraph" alt=""/></div>
+<map name="aclasschip_1_1SetupPayload_aac297eaf5a94d30236adba45bd3089c0_icgraph" id="aclasschip_1_1SetupPayload_aac297eaf5a94d30236adba45bd3089c0_icgraph">
+<area shape="rect" title="Checks if the tag is CHIP Common type" alt="" coords="199,5,344,45"/>
+<area shape="rect" href="classchip_1_1SetupPayload.html#ace838f39c263477b5c32bc87cde69933" title="Checks if the tag is vendor&#45;specific" alt="" coords="5,5,151,45"/>
+<area shape="poly" title=" " alt="" coords="185,28,151,28,151,23,185,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ace838f39c263477b5c32bc87cde69933" name="ace838f39c263477b5c32bc87cde69933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace838f39c263477b5c32bc87cde69933">&#9670;&#160;</a></span>IsVendorTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool chip::SetupPayload::IsVendorTag </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>tag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the tag is vendor-specific </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>Tag to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns True if the tag is Vendor-specific </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1SetupPayload_ace838f39c263477b5c32bc87cde69933_cgraph.png" border="0" usemap="#aclasschip_1_1SetupPayload_ace838f39c263477b5c32bc87cde69933_cgraph" alt=""/></div>
+<map name="aclasschip_1_1SetupPayload_ace838f39c263477b5c32bc87cde69933_cgraph" id="aclasschip_1_1SetupPayload_ace838f39c263477b5c32bc87cde69933_cgraph">
+<area shape="rect" title="Checks if the tag is vendor&#45;specific" alt="" coords="5,5,151,45"/>
+<area shape="rect" href="classchip_1_1SetupPayload.html#aac297eaf5a94d30236adba45bd3089c0" title="Checks if the tag is CHIP Common type" alt="" coords="199,5,344,45"/>
+<area shape="poly" title=" " alt="" coords="151,23,184,23,184,28,151,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aeb5dac8bf715c4057afe06eb38c60651" name="aeb5dac8bf715c4057afe06eb38c60651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb5dac8bf715c4057afe06eb38c60651">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::SetupPayload::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1SetupPayload.html">SetupPayload</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7f3b4ef8143199c1577622d2c7a8a1c" name="ae7f3b4ef8143199c1577622d2c7a8a1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f3b4ef8143199c1577622d2c7a8a1c">&#9670;&#160;</a></span>removeOptionalVendorData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::removeOptionalVendorData </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>tag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function to remove an optional vendor data </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>tag number in the [0x80-0xFF] range </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR_KEY_NOT_FOUND on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+</div>
+</div>
+<a id="af1c4ab9c3ad209c0e69e12bff491ada6" name="af1c4ab9c3ad209c0e69e12bff491ada6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c4ab9c3ad209c0e69e12bff491ada6">&#9670;&#160;</a></span>removeSerialNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::SetupPayload::removeSerialNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function to remove the serial number from the payload </p>
+<dl class="section return"><dt>戻り値</dt><dd>Returns a CHIP_ERROR_KEY_NOT_FOUND on error, CHIP_NO_ERROR otherwise </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">フレンドと関連関数の詳解</h2>
+<a id="a6f66b7752e78096aa6da3974f28cf9be" name="a6f66b7752e78096aa6da3974f28cf9be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f66b7752e78096aa6da3974f28cf9be">&#9670;&#160;</a></span>QRCodeSetupPayloadGenerator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classchip_1_1QRCodeSetupPayloadGenerator.html">QRCodeSetupPayloadGenerator</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e662b954d9f27ce501879f4d017d4fa" name="a7e662b954d9f27ce501879f4d017d4fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e662b954d9f27ce501879f4d017d4fa">&#9670;&#160;</a></span>QRCodeSetupPayloadParser</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class QRCodeSetupPayloadParser</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ad7711a28f169641bb8bf5e9912d0da48" name="ad7711a28f169641bb8bf5e9912d0da48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7711a28f169641bb8bf5e9912d0da48">&#9670;&#160;</a></span>optionalExtensionData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;uint8_t, <a class="el" href="structchip_1_1OptionalQRCodeInfoExtension.html">OptionalQRCodeInfoExtension</a>&gt; chip::SetupPayload::optionalExtensionData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c2f7f3100b71febc31f934f3c94ce98" name="a6c2f7f3100b71febc31f934f3c94ce98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c2f7f3100b71febc31f934f3c94ce98">&#9670;&#160;</a></span>optionalVendorData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;uint8_t, <a class="el" href="structchip_1_1OptionalQRCodeInfo.html">OptionalQRCodeInfo</a>&gt; chip::SetupPayload::optionalVendorData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/setup_payload/<a class="el" href="SetupPayload_8h_source.html">SetupPayload.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

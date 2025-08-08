@@ -1,0 +1,24 @@
+<map id="connectedhomeip/src/lib/core/CHIPCore.h" name="connectedhomeip/src/lib/core/CHIPCore.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="249,5,410,45"/>
+<area shape="rect" id="Node000002" href="$CHIPConfig_8h.html" title=" " alt="" coords="158,167,317,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,48,257,68,234,95,229,108,228,123,232,153,227,153,223,123,224,107,230,92,253,64,283,43"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="244,93,415,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="332,46,332,79,327,79,327,46"/>
+<area shape="rect" id="Node000007" href="$CHIPError_8h.html" title=" " alt="" coords="439,93,585,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="374,43,473,85,471,90,372,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,240,125,265"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,194,107,237,105,232,209,190"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="149,240,325,265"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="240,192,240,226,235,226,235,192"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="350,240,479,265"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="267,190,374,232,372,237,265,194"/>
+<area shape="poly" id="edge10_Node000007_Node000002" title=" " alt="" coords="469,121,296,166,294,161,467,116"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="355,167,442,192"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="495,121,430,162,427,157,492,116"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="467,167,525,192"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="512,120,504,154,499,153,507,118"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="550,167,642,192"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="527,117,573,155,570,160,524,121"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="666,167,838,192"/>
+<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="551,116,701,160,699,165,550,121"/>
+</map>

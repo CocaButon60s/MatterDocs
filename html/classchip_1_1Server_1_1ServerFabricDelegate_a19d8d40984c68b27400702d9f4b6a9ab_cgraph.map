@@ -1,0 +1,21 @@
+<map id="chip::Server::ServerFabricDelegate::OnFabricRemoved" name="chip::Server::ServerFabricDelegate::OnFabricRemoved">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,179,212,219"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Server_1_1ServerFabricDelegate.html#aae1b44b3b5453cccc3de199b1aa5aed8" title=" " alt="" coords="266,5,535,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,177,184,128,220,101,259,77,289,63,291,68,261,82,223,105,188,132,132,181"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61" title=" " alt="" coords="609,85,780,111"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="140,177,194,147,259,122,347,104,436,94,521,90,596,90,596,96,522,96,437,99,348,109,261,127,196,152,143,181"/>
+<area shape="rect" id="Node000005" href="$classchip_1_1Server_1_1ServerFabricDelegate.html#a7262a713f72f55cc9d5bb671ebaa74df" title=" " alt="" coords="260,136,541,191"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="212,184,246,180,246,185,212,189"/>
+<area shape="rect" id="Node000007" href="$classchip_1_1Server.html#a028441cde3dca084cad196dbab534a73" title=" " alt="" coords="285,215,516,255"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="212,209,272,217,271,222,212,215"/>
+<area shape="rect" id="Node000008" href="$classchip_1_1Server.html#a17700671882196b6ac7736ecc3f4e9f1" title=" " alt="" coords="301,279,501,319"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="150,217,202,242,261,265,289,273,287,278,259,270,200,246,147,222"/>
+<area shape="rect" id="Node000009" href="$classchip_1_1Server.html#a3a35951b1a202d4ddd33c6b4f196d042" title=" " alt="" coords="303,343,498,383"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="129,218,184,274,221,304,261,329,291,341,289,346,259,334,218,308,181,278,125,222"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="525,57,624,80,623,85,524,63"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Server.html#acc837a4eaca927b99edf6cc336cb25a7" title=" " alt="" coords="605,13,785,53"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="536,30,591,30,591,35,536,35"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="524,133,623,111,624,116,525,139"/>
+<area shape="rect" id="Node000006" href="$classchip_1_1Server.html#abd460ae413187139cd4340cf50459c8f" title=" " alt="" coords="589,143,800,183"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="542,161,576,161,576,166,542,166"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="chip::Server::ServerFabricDelegate::ClearSubscriptionResumptionStateOnFabricChange" name="chip::Server::ServerFabricDelegate::ClearSubscriptionResumptionStateOnFabricChange">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,20,287,75"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61" title=" " alt="" coords="355,5,525,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,31,341,25,341,30,287,36"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Server.html#abd460ae413187139cd4340cf50459c8f" title=" " alt="" coords="335,55,545,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="287,58,321,61,321,67,287,63"/>
+</map>

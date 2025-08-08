@@ -1,0 +1,22 @@
+<map id="chip::Platform::ScopedMemoryBufferWithSize::Alloc" name="chip::Platform::ScopedMemoryBufferWithSize::Alloc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,161,228,201"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Platform_1_1ScopedMemoryBuffer.html#a6cce8bc251e52b3d7530986449ca810f" title=" " alt="" coords="276,91,499,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,158,295,132,296,137,196,163"/>
+<area shape="rect" id="Node000006" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="585,173,736,199"/>
+<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="228,179,572,182,572,188,228,184"/>
+<area shape="rect" id="Node000008" href="$classchip_1_1Platform_1_1ScopedMemoryBuffer.html#ab99324da623be53017336a4dd71b7aaf" title=" " alt="" coords="276,218,499,258"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="212,198,279,212,278,218,211,203"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Platform_1_1Impl_1_1ScopedMemoryBufferBase.html#a82f8d7875efde1f0dc1bad7369521e46" title=" " alt="" coords="559,5,762,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="457,89,551,61,553,66,458,94"/>
+<area shape="rect" id="Node000005" href="$classchip_1_1Platform_1_1ScopedMemoryBuffer.html#a638d76f7182aca130d0cd02c73f672d6" title=" " alt="" coords="549,85,772,125"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="499,106,535,105,535,110,499,111"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="462,129,601,167,599,172,460,134"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Platform_1_1Impl_1_1ScopedMemoryBufferBase.html#aa1c42896cfe0a909016134a4b3909b0a" title=" " alt="" coords="823,13,1061,53"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="762,30,809,30,809,35,762,35"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="617,175,607,165,612,155,630,149,661,147,700,151,710,156,714,162,709,164,707,160,698,156,661,152,631,154,616,159,613,164,621,171"/>
+<area shape="rect" id="Node000007" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="839,173,1045,199"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="736,183,825,183,825,189,736,189"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="492,215,579,199,580,204,493,221"/>
+<area shape="rect" id="Node000009" href="$classchip_1_1Platform_1_1Impl_1_1ScopedMemoryBufferBase.html#a74dba1158757dd42fac6de335c38c513" title=" " alt="" coords="547,223,775,263"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="499,238,533,238,533,244,499,243"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="chip::Access::ExampleAccessRestrictionProvider" name="chip::Access::ExampleAccessRestrictionProvider">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1031,80,1243,120"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Access_1_1AccessRestrictionProvider.html" title=" " alt="" coords="756,80,981,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="995,97,1031,97,1031,103,995,103"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Access_1_1AccessRestrictionProvider_1_1Listener.html" title=" " alt="" coords="333,44,559,84"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="572,72,756,88,756,93,572,77"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="418,28,428,20,446,17,462,19,472,25,477,34,475,44,470,43,472,35,469,29,460,25,446,23,430,25,421,32"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Access_1_1AccessRestrictionProvider_1_1StandardAccessRestrictionExceptionChecker.html" title=" " alt="" coords="317,109,575,163"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="588,121,756,107,756,112,589,127"/>
+<area shape="rect" id="Node000005" href="$classchip_1_1Access_1_1AccessRestrictionProvider_1_1AccessRestrictionExceptionChecker.html" title=" " alt="" coords="5,109,268,163"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="282,133,317,133,317,139,282,139"/>
+</map>

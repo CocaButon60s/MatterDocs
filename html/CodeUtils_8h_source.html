@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/support/CodeUtils.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_1d1f3af32c41ad09e7d154e58874adc8.html">support</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">CodeUtils.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="CodeUtils_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2020 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *    Copyright (c) 2013-2017 Nest Labs, Inc.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPConfig_8h.html">lib/core/CHIPConfig.h</a>&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPError_8h.html">lib/core/CHIPError.h</a>&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;lib/core/ErrorStr.h&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;lib/support/ObjectDump.h&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;lib/support/VerificationMacrosNoLogging.h&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;lib/support/logging/TextOnlyLogging.h&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#if !defined(CHIP_CONFIG_ABORT)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#abd8f8e559e3a6959ed899967219b85a9">   46</a></span><span class="preprocessor">#define CHIP_CONFIG_ABORT() abort()</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#if !defined(NL_ASSERT_ABORT)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#ae794ea824676211874ad5fc95f8abe92">   65</a></span><span class="preprocessor">#define NL_ASSERT_ABORT() chipAbort()</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#if !defined(NL_ASSERT_LOG)</span></div>
+<div class="foldopen" id="foldopen00110" data-start="" data-end="">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a9896c86249c0743dfcda1df682bbac4f">  110</a></span><span class="preprocessor">#define NL_ASSERT_LOG(aPrefix, aName, aCondition, aLabel, aFile, aLine, aMessage)         \</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">    do                                                                                    \</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">    {                                                                                     \</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">        ChipLogError(NotSpecified,                                                       \</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">                      NL_ASSERT_LOG_FORMAT_DEFAULT,                                       \</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">                      aPrefix,                                                            \</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">                      (((aName) == 0) || (*(aName) == &#39;\0&#39;)) ? &quot;&quot; : aName,                \</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">                      (((aName) == 0) || (*(aName) == &#39;\0&#39;)) ? &quot;&quot; : &quot;: &quot;,                 \</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">                      aCondition,                                                         \</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">                      (((aMessage) == 0) ? &quot;&quot; : aMessage),                                \</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">                      (((aMessage) == 0) ? &quot;&quot; : &quot;, &quot;),                                    \</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">                      aFile,                                                              \</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">                      aLine);                                                             \</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">    } while (0)</span></div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#include &lt;nlassert.h&gt;</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="foldopen" id="foldopen00149" data-start="" data-end="">
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#ab7eac32a4eff11925cac2aea1eaee6e0">  149</a></span><span class="preprocessor">#define ReturnErrorOnFailure(expr)                                                                                                 \</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="preprocessor">    do                                                                                                                             \</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">    {                                                                                                                              \</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">        auto __err = (expr);                                                                                                       \</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">        if (!::chip::ChipError::IsSuccess(__err))                                                                                  \</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">        {                                                                                                                          \</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="preprocessor">            return __err;                                                                                                          \</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="preprocessor">        }                                                                                                                          \</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">    } while (false)</span></div>
+</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="foldopen" id="foldopen00176" data-start="" data-end="">
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#ae542d3918dd17367d1bb653cbb78a826">  176</a></span><span class="preprocessor">#define ReturnErrorVariantOnFailure(variantType, expr)                                                                             \</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="preprocessor">    do                                                                                                                             \</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="preprocessor">    {                                                                                                                              \</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="preprocessor">        auto __err = (expr);                                                                                                       \</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="preprocessor">        if (!::chip::ChipError::IsSuccess(__err))                                                                                  \</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="preprocessor">        {                                                                                                                          \</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="preprocessor">            return variantType::Create&lt;CHIP_ERROR&gt;(__err);                                                                         \</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">        }                                                                                                                          \</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">    } while (false)</span></div>
+</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="foldopen" id="foldopen00201" data-start="" data-end="">
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a36d7e3df23c721a02c0d885e8cc89b0d">  201</a></span><span class="preprocessor">#define ReturnLogErrorOnFailure(expr)                                                                                              \</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">    do                                                                                                                             \</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">    {                                                                                                                              \</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">        CHIP_ERROR __err = (expr);                                                                                                 \</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">        if (__err != CHIP_NO_ERROR)                                                                                                \</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">        {                                                                                                                          \</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="preprocessor">            ChipLogError(NotSpecified, &quot;%s at %s:%d&quot;, ErrorStr(__err), __FILE__, __LINE__);                                        \</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">            return __err;                                                                                                          \</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">        }                                                                                                                          \</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">    } while (false)</span></div>
+</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="foldopen" id="foldopen00227" data-start="" data-end="">
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#aadfb3cc63b079f409a982141ac9f4a1a">  227</a></span><span class="preprocessor">#define ReturnOnFailure(expr)                                                                                                      \</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="preprocessor">    do                                                                                                                             \</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="preprocessor">    {                                                                                                                              \</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="preprocessor">        auto __err = (expr);                                                                                                       \</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="preprocessor">        if (!::chip::ChipError::IsSuccess(__err))                                                                                  \</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="preprocessor">        {                                                                                                                          \</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="preprocessor">            return;                                                                                                                \</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="preprocessor">        }                                                                                                                          \</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="preprocessor">    } while (false)</span></div>
+</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="foldopen" id="foldopen00254" data-start="" data-end="">
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a3e37928a21add5f0f75aa25184a913df">  254</a></span><span class="preprocessor">#define ReturnValueOnFailure(expr, value, ...)                                                                                     \</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="preprocessor">    do                                                                                                                             \</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="preprocessor">    {                                                                                                                              \</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="preprocessor">        auto __err = (expr);                                                                                                       \</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="preprocessor">        if (!::chip::ChipError::IsSuccess(__err))                                                                                  \</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="preprocessor">        {                                                                                                                          \</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="preprocessor">            return value;                                                                                                          \</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="preprocessor">        }                                                                                                                          \</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">    } while (false)</span></div>
+</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="foldopen" id="foldopen00279" data-start="" data-end="">
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a037c2295bf352e271ab7aba5b4ef8b47">  279</a></span><span class="preprocessor">#define VerifyOrReturn(expr, ...)                                                                                                  \</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="preprocessor">    do                                                                                                                             \</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="preprocessor">    {                                                                                                                              \</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="preprocessor">        if (!(expr))                                                                                                               \</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="preprocessor">        {                                                                                                                          \</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="preprocessor">            __VA_ARGS__;                                                                                                           \</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="preprocessor">            return;                                                                                                                \</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="preprocessor">        }                                                                                                                          \</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="preprocessor">    } while (false)</span></div>
+</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a87d6ca8bd6df53f66f84d1d0182ba649">  305</a></span><span class="preprocessor">#define VerifyOrReturnError(expr, code, ...) VerifyOrReturnValue(expr, code, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
+<div class="foldopen" id="foldopen00323" data-start="" data-end="">
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a8517413961050a9e5d631f1214b8e65e">  323</a></span><span class="preprocessor">#define VerifyOrReturnValue(expr, value, ...)                                                                                      \</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="preprocessor">    do                                                                                                                             \</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="preprocessor">    {                                                                                                                              \</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="preprocessor">        if (!(expr))                                                                                                               \</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="preprocessor">        {                                                                                                                          \</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="preprocessor">            __VA_ARGS__;                                                                                                           \</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="preprocessor">            return (value);                                                                                                        \</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="preprocessor">        }                                                                                                                          \</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="preprocessor">    } while (false)</span></div>
+</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="preprocessor">#if CHIP_CONFIG_ERROR_SOURCE</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="preprocessor">#define VerifyOrReturnLogError(expr, code)                                                                                         \</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="preprocessor">    do                                                                                                                             \</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="preprocessor">    {                                                                                                                              \</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="preprocessor">        if (!(expr))                                                                                                               \</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="preprocessor">        {                                                                                                                          \</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="preprocessor">            ChipLogError(NotSpecified, &quot;%s at %s:%d&quot;, ErrorStr(code), __FILE__, __LINE__);                                         \</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="preprocessor">            return code;                                                                                                           \</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="preprocessor">        }                                                                                                                          \</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="preprocessor">    } while (false)</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="preprocessor">#else </span><span class="comment">// CHIP_CONFIG_ERROR_SOURCE</span></div>
+<div class="foldopen" id="foldopen00359" data-start="" data-end="">
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a1e1fd06d45d114d66dde565be4c1f334">  359</a></span><span class="preprocessor">#define VerifyOrReturnLogError(expr, code)                                                                                         \</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="preprocessor">    do                                                                                                                             \</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="preprocessor">    {                                                                                                                              \</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="preprocessor">        if (!(expr))                                                                                                               \</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="preprocessor">        {                                                                                                                          \</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="preprocessor">            ChipLogError(NotSpecified, &quot;%s:%d false: %&quot; CHIP_ERROR_FORMAT, #expr, __LINE__, code.Format());                        \</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="preprocessor">            return code;                                                                                                           \</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="preprocessor">        }                                                                                                                          \</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="preprocessor">    } while (false)</span></div>
+</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_CONFIG_ERROR_SOURCE</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#ad934d8d5901a96fc7392cfe1c7875c57">  399</a></span><span class="preprocessor">#define SuccessOrExit(error) nlEXPECT(::chip::ChipError::IsSuccess((error)), exit)</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#acf90fce6f4dfe03d7f9f4e39fcd046b9">  412</a></span><span class="preprocessor">#define SuccessOrExitAction(error, action) nlEXPECT_ACTION(::chip::ChipError::IsSuccess((error)), exit, action)</span></div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a90853ce779644c59f4ddb796f067ae6e">  444</a></span><span class="preprocessor">#define VerifyOrExit(aCondition, anAction) nlEXPECT_ACTION(aCondition, exit, anAction)</span></div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span> </div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span><span class="comment">// clang-format off</span></div>
+<div class="foldopen" id="foldopen00481" data-start="" data-end="">
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#aa5d26b95c8540322013b11b942f3121e">  481</a></span><span class="preprocessor">#define ExitNow(...)                                                   \</span></div>
+<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span><span class="preprocessor">    do {                                                               \</span></div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span><span class="preprocessor">        __VA_ARGS__;                                                   \</span></div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span><span class="preprocessor">        goto exit;                                                     \</span></div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span><span class="preprocessor">    } while (0)</span></div>
+</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span> </div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span><span class="preprocessor">#ifndef chipAbort</span></div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code hl_function" href="CodeUtils_8h.html#a980d9761aee4e8f3c2b9db60b4853bad">chipAbort</a>(<span class="keywordtype">void</span>) __attribute((noreturn));</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span> </div>
+<div class="foldopen" id="foldopen00506" data-start="{" data-end="}">
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a980d9761aee4e8f3c2b9db60b4853bad">  506</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="CodeUtils_8h.html#a980d9761aee4e8f3c2b9db60b4853bad">chipAbort</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>{</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    {</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>        <span class="comment">// NL_ASSERT_ABORT is redefined to be chipAbort, so not useful here.</span></div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>        <a class="code hl_define" href="CodeUtils_8h.html#abd8f8e559e3a6959ed899967219b85a9">CHIP_CONFIG_ABORT</a>();</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>    }</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>}</div>
+</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span><span class="preprocessor">#endif </span><span class="comment">// chipAbort</span></div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span><span class="preprocessor">#ifndef chipDie</span></div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code hl_function" href="CodeUtils_8h.html#ac4a38a77adf7accad0c23273ff9e86ae">chipDie</a>(<span class="keywordtype">void</span>) __attribute((noreturn));</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span> </div>
+<div class="foldopen" id="foldopen00518" data-start="{" data-end="}">
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#ac4a38a77adf7accad0c23273ff9e86ae">  518</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="CodeUtils_8h.html#ac4a38a77adf7accad0c23273ff9e86ae">chipDie</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>{</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    ChipLogError(NotSpecified, <span class="stringliteral">&quot;chipDie chipDie chipDie&quot;</span>);</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>    <a class="code hl_function" href="CodeUtils_8h.html#a980d9761aee4e8f3c2b9db60b4853bad">chipAbort</a>();</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>}</div>
+</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span><span class="preprocessor">#endif </span><span class="comment">// chipDie</span></div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span><span class="preprocessor">#if CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE &amp;&amp; CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE_NO_COND</span></div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="preprocessor">#define VerifyOrDie(aCondition)                                                                                                    \</span></div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span><span class="preprocessor">    nlABORT_ACTION(aCondition, ChipLogError(Support, &quot;VerifyOrDie failure at %s:%d&quot;, __FILE__, __LINE__))</span></div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span><span class="preprocessor">#elif CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE</span></div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span><span class="preprocessor">#define VerifyOrDie(aCondition)                                                                                                    \</span></div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span><span class="preprocessor">    nlABORT_ACTION(aCondition, ChipLogError(Support, &quot;VerifyOrDie failure at %s:%d: %s&quot;, __FILE__, __LINE__, #aCondition))</span></div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span><span class="preprocessor">#else </span><span class="comment">// CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE</span></div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a670a2aeb107e6cc4df69083384bd85d0">  556</a></span><span class="preprocessor">#define VerifyOrDie(aCondition) VerifyOrDieWithoutLogging(aCondition)</span></div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE</span></div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span> </div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span><span class="preprocessor">#if CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE &amp;&amp; CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE_NO_COND</span></div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span><span class="preprocessor">#define SuccessOrDie(error)                                                                                                        \</span></div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="preprocessor">    nlABORT_ACTION(::chip::ChipError::IsSuccess((error)),                                                                          \</span></div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span><span class="preprocessor">                   ChipLogError(Support, &quot;SuccessOrDie failure %s at %s:%d&quot;, ErrorStr((error)), __FILE__, __LINE__))</span></div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span><span class="preprocessor">#elif CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE</span></div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><span class="preprocessor">#define SuccessOrDie(error)                                                                                                        \</span></div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span><span class="preprocessor">    nlABORT_ACTION(::chip::ChipError::IsSuccess((error)),                                                                          \</span></div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span><span class="preprocessor">                   ChipLogError(Support, &quot;SuccessOrDie failure %s at %s:%d: %s&quot;, ErrorStr((error)), __FILE__, __LINE__, #error))</span></div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="preprocessor">#else </span><span class="comment">// CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE</span></div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#af079056203feef133388451f3d259c48">  591</a></span><span class="preprocessor">#define SuccessOrDie(error) VerifyOrDieWithoutLogging(::chip::ChipError::IsSuccess((error)))</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE</span></div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span> </div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="preprocessor">#if CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE</span></div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="preprocessor">#define VerifyOrDieWithObject(aCondition, aObject)                                                                                 \</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="preprocessor">    nlABORT_ACTION(aCondition, ::chip::DumpObjectToLog(aObject);                                                                   \</span></div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="preprocessor">                   ChipLogError(Support, &quot;VerifyOrDie failure at %s:%d: %s&quot;, __FILE__, __LINE__, #aCondition))</span></div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span><span class="preprocessor">#else </span><span class="comment">// CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE</span></div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a24a4105473da6af944f0278687f6dd30">  606</a></span><span class="preprocessor">#define VerifyOrDieWithObject(aCondition, aObject) VerifyOrDieWithoutLogging(aCondition)</span></div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_CONFIG_VERBOSE_VERIFY_OR_DIE</span></div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
+<div class="foldopen" id="foldopen00643" data-start="" data-end="">
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a0a31bd399e232b983cd039634a678ccc">  643</a></span><span class="preprocessor">#define VerifyOrDieWithMsg(aCondition, aModule, aMessage, ...)                                                                     \</span></div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span><span class="preprocessor">    nlABORT_ACTION(aCondition, ChipLogError(aModule, aMessage, ##__VA_ARGS__))</span></div>
+</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span> </div>
+<div class="foldopen" id="foldopen00660" data-start="" data-end="">
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a125441c24dc434635673d4bd631f0cb0">  660</a></span><span class="preprocessor">#define LogErrorOnFailure(expr)                                                                                                    \</span></div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span><span class="preprocessor">    do                                                                                                                             \</span></div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span><span class="preprocessor">    {                                                                                                                              \</span></div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span><span class="preprocessor">        CHIP_ERROR __err = (expr);                                                                                                 \</span></div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span><span class="preprocessor">        if (__err != CHIP_NO_ERROR)                                                                                                \</span></div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span><span class="preprocessor">        {                                                                                                                          \</span></div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span><span class="preprocessor">            ChipLogError(NotSpecified, &quot;%s at %s:%d&quot;, ErrorStr(__err), __FILE__, __LINE__);                                        \</span></div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span><span class="preprocessor">        }                                                                                                                          \</span></div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span><span class="preprocessor">    } while (false)</span></div>
+</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
+<div class="foldopen" id="foldopen00685" data-start="" data-end="">
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#af96a3282b2f17fb6e91ddc004ed8f9f3">  685</a></span><span class="preprocessor">#define VerifyOrDo(expr, ...)                                                                                                      \</span></div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span><span class="preprocessor">    do                                                                                                                             \</span></div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span><span class="preprocessor">    {                                                                                                                              \</span></div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span><span class="preprocessor">        if (!(expr))                                                                                                               \</span></div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span><span class="preprocessor">        {                                                                                                                          \</span></div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span><span class="preprocessor">            __VA_ARGS__;                                                                                                           \</span></div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span><span class="preprocessor">        }                                                                                                                          \</span></div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span><span class="preprocessor">    } while (false)</span></div>
+</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span> </div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span><span class="preprocessor">#if (__cplusplus &gt;= 201103L)</span></div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span> </div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span><span class="preprocessor">#ifndef __FINAL</span></div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span><span class="preprocessor">#define __FINAL final</span></div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span> </div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span><span class="preprocessor">#ifndef __OVERRIDE</span></div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span><span class="preprocessor">#define __OVERRIDE override</span></div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span> </div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span><span class="preprocessor">#ifndef __CONSTEXPR</span></div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span><span class="preprocessor">#define __CONSTEXPR constexpr</span></div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span> </div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span> </div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span><span class="preprocessor">#ifndef __FINAL</span></div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a8301543874851b50d1f0e59090e0a222">  711</a></span><span class="preprocessor">#define __FINAL</span></div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span> </div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span><span class="preprocessor">#ifndef __OVERRIDE</span></div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a331a19ec0f9535c57fe0cc250a0caafb">  715</a></span><span class="preprocessor">#define __OVERRIDE</span></div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span> </div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span><span class="preprocessor">#ifndef __CONSTEXPR</span></div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a2f515258837972910228d2b1d432cc20">  719</a></span><span class="preprocessor">#define __CONSTEXPR constexpr</span></div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span> </div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span><span class="preprocessor">#endif </span><span class="comment">// (__cplusplus &gt;= 201103L)</span></div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span> </div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span><span class="preprocessor">#if ((__cplusplus &gt;= 201703L) || (defined(__GNUC__) &amp;&amp; (__GNUC__ &gt;= 7)) || (defined(__clang__)) &amp;&amp; (__clang_major__ &gt;= 4))</span></div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span><span class="preprocessor">#define CHECK_RETURN_VALUE [[nodiscard]]</span></div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span><span class="preprocessor">#elif defined(__GNUC__) &amp;&amp; (__GNUC__ &gt;= 4)</span></div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span><span class="preprocessor">#define CHECK_RETURN_VALUE __attribute__((warn_unused_result))</span></div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span><span class="preprocessor">#elif defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1700)</span></div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span><span class="preprocessor">#define CHECK_RETURN_VALUE _Check_return_</span></div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a6b7d992d708150592b0c7e912179b677">  731</a></span><span class="preprocessor">#define CHECK_RETURN_VALUE</span></div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span> </div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span><span class="preprocessor">#if defined(__clang__)</span></div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span><span class="preprocessor">#define FALLTHROUGH [[clang::fallthrough]]</span></div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span><span class="preprocessor">#elif defined(__GNUC__)</span></div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span><span class="preprocessor">#define FALLTHROUGH __attribute__((fallthrough))</span></div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a0cf2d82c57a09723ab59e6f4dcc45b84">  739</a></span><span class="preprocessor">#define FALLTHROUGH (void) 0</span></div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span> </div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span><span class="preprocessor">#ifndef MATTER_ARRAY_SIZE</span></div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a5871b95a46ce80a6e74b5bd6f25a1d96">  762</a></span><span class="preprocessor">#define MATTER_ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))</span></div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span> </div>
+<div class="foldopen" id="foldopen00772" data-start="{" data-end="}">
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#ac74350632cfe55de43f8c4cfb466f67a">  772</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code hl_function" href="CodeUtils_8h.html#ac74350632cfe55de43f8c4cfb466f67a">DefaultStringWhenNull</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * str, <span class="keyword">const</span> <span class="keywordtype">char</span> * default_str_value)</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>{</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    <span class="keywordflow">return</span> (str != <span class="keyword">nullptr</span>) ? str : default_str_value;</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>}</div>
+</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span> </div>
+<div class="foldopen" id="foldopen00783" data-start="{" data-end="}">
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno"><a class="line" href="CodeUtils_8h.html#a6f67c8ad78e853816ecd018753e32503">  783</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code hl_function" href="CodeUtils_8h.html#a6f67c8ad78e853816ecd018753e32503">StringOrNullMarker</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * str)</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>{</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="CodeUtils_8h.html#ac74350632cfe55de43f8c4cfb466f67a">DefaultStringWhenNull</a>(str, <span class="stringliteral">&quot;(null)&quot;</span>);</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>}</div>
+</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span> </div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacechip.html">chip</a> {</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span> </div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00796" data-start="{" data-end="}">
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno"><a class="line" href="namespacechip.html#a4785cba4891f9ea86b1641c9173da295">  796</a></span><span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacechip.html#a4785cba4891f9ea86b1641c9173da295">ArrayIsSorted</a>(<span class="keyword">const</span> T * aArray, <span class="keywordtype">size_t</span> aLength)</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>{</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    <span class="keywordflow">if</span> (aLength == 0 || aLength == 1)</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>    {</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    }</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span> </div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    <span class="keywordflow">if</span> (aArray[0] &gt; aArray[1])</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    {</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    }</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span> </div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacechip.html#a4785cba4891f9ea86b1641c9173da295">ArrayIsSorted</a>(aArray + 1, aLength - 1);</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>}</div>
+</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span> </div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="foldopen" id="foldopen00812" data-start="{" data-end="}">
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno"><a class="line" href="namespacechip.html#a72646cd8638503c4240270d54bb0ee86">  812</a></span><span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacechip.html#a4785cba4891f9ea86b1641c9173da295">ArrayIsSorted</a>(<span class="keyword">const</span> T (&amp;aArray)[N])</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>{</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacechip.html#a4785cba4891f9ea86b1641c9173da295">ArrayIsSorted</a>(aArray, N);</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>}</div>
+</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span> </div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>} <span class="comment">// namespace chip</span></div>
+<div class="ttc" id="aCHIPConfig_8h_html"><div class="ttname"><a href="CHIPConfig_8h.html">CHIPConfig.h</a></div></div>
+<div class="ttc" id="aCHIPError_8h_html"><div class="ttname"><a href="CHIPError_8h.html">CHIPError.h</a></div></div>
+<div class="ttc" id="aCodeUtils_8h_html_a6f67c8ad78e853816ecd018753e32503"><div class="ttname"><a href="CodeUtils_8h.html#a6f67c8ad78e853816ecd018753e32503">StringOrNullMarker</a></div><div class="ttdeci">const char * StringOrNullMarker(const char *str)</div><div class="ttdoc">Ensure that a string for a s specifier is shown as &quot;(null)&quot; if null</div><div class="ttdef"><b>Definition</b> CodeUtils.h:783</div></div>
+<div class="ttc" id="aCodeUtils_8h_html_a980d9761aee4e8f3c2b9db60b4853bad"><div class="ttname"><a href="CodeUtils_8h.html#a980d9761aee4e8f3c2b9db60b4853bad">chipAbort</a></div><div class="ttdeci">void chipAbort(void) __attribute((noreturn))</div><div class="ttdoc">This is invoked when a VerifyOrDie or VerifyOrDieWithMsg assertion expression evaluates to false.</div><div class="ttdef"><b>Definition</b> CodeUtils.h:506</div></div>
+<div class="ttc" id="aCodeUtils_8h_html_abd8f8e559e3a6959ed899967219b85a9"><div class="ttname"><a href="CodeUtils_8h.html#abd8f8e559e3a6959ed899967219b85a9">CHIP_CONFIG_ABORT</a></div><div class="ttdeci">#define CHIP_CONFIG_ABORT()</div><div class="ttdef"><b>Definition</b> CodeUtils.h:46</div></div>
+<div class="ttc" id="aCodeUtils_8h_html_ac4a38a77adf7accad0c23273ff9e86ae"><div class="ttname"><a href="CodeUtils_8h.html#ac4a38a77adf7accad0c23273ff9e86ae">chipDie</a></div><div class="ttdeci">void chipDie(void) __attribute((noreturn))</div><div class="ttdef"><b>Definition</b> CodeUtils.h:518</div></div>
+<div class="ttc" id="aCodeUtils_8h_html_ac74350632cfe55de43f8c4cfb466f67a"><div class="ttname"><a href="CodeUtils_8h.html#ac74350632cfe55de43f8c4cfb466f67a">DefaultStringWhenNull</a></div><div class="ttdeci">const char * DefaultStringWhenNull(const char *str, const char *default_str_value)</div><div class="ttdoc">Ensures that if str is NULL, a non-null default_str_value is provided</div><div class="ttdef"><b>Definition</b> CodeUtils.h:772</div></div>
+<div class="ttc" id="anamespacechip_html"><div class="ttname"><a href="namespacechip.html">chip</a></div><div class="ttdoc">Registers shell commands for a commissionee (eg. end device) related to commissioning.</div><div class="ttdef"><b>Definition</b> CommissionableInit.cpp:25</div></div>
+<div class="ttc" id="anamespacechip_html_a4785cba4891f9ea86b1641c9173da295"><div class="ttname"><a href="namespacechip.html#a4785cba4891f9ea86b1641c9173da295">chip::ArrayIsSorted</a></div><div class="ttdeci">constexpr bool ArrayIsSorted(const T *aArray, size_t aLength)</div><div class="ttdef"><b>Definition</b> CodeUtils.h:796</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

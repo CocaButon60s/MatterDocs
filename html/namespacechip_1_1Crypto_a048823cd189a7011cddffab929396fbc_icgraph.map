@@ -1,0 +1,13 @@
+<map id="chip::Crypto::ClearSecretData" name="chip::Crypto::ClearSecretData">
+<area shape="rect" id="Node000001" title="Safely clears the first len bytes of memory area buf." alt="" coords="292,127,507,152"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Crypto.html#ad1531fa42b018304d3e5b050392bad8b" title=" " alt="" coords="17,5,232,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="369,121,313,82,243,46,203,33,205,28,245,41,316,78,372,116"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Crypto_1_1SensitiveDataBuffer.html#a53f2545117d8686f003850994fc2c3a3" title=" " alt="" coords="25,55,224,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="330,126,211,98,212,93,331,121"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Crypto_1_1SensitiveDataBuffer.html#af37ba09e54f5b76d62073867b2a60943" title=" " alt="" coords="19,119,230,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="278,142,230,142,230,137,278,137"/>
+<area shape="rect" id="Node000005" href="$classchip_1_1Crypto_1_1SensitiveDataFixedBuffer.html#a7c426c79db2b6101b06bf313d037da61" title=" " alt="" coords="5,184,244,239"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="338,158,230,187,229,181,336,153"/>
+<area shape="rect" id="Node000006" href="$classchip_1_1Crypto_1_1SymmetricKeyHandle.html#a40834208eb6d2db0af9c1f27c93676d8" title=" " alt="" coords="11,263,239,303"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="375,163,318,208,283,232,245,252,212,266,210,261,243,248,280,227,315,204,372,159"/>
+</map>

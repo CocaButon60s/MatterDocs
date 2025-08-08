@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/app/AttributeAccessInterface.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_a9aeb43d402f24b4c5513213743384b7.html">app</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a>  </div>
+  <div class="headertitle"><div class="title">AttributeAccessInterface.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;app/AttributeReportBuilder.h&gt;</code><br />
+<code>#include &lt;app/AttributeValueDecoder.h&gt;</code><br />
+<code>#include &lt;app/AttributeValueEncoder.h&gt;</code><br />
+<code>#include &lt;app/data-model-provider/OperationTypes.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPError_8h_source.html">lib/core/CHIPError.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+AttributeAccessInterface.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="AttributeAccessInterface_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2app_2AttributeAccessInterface_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2app_2AttributeAccessInterface_8h" id="aconnectedhomeip_2src_2app_2AttributeAccessInterface_8h">
+<area shape="rect" title=" " alt="" coords="459,5,686,45"/>
+<area shape="rect" title=" " alt="" coords="5,101,212,126"/>
+<area shape="poly" title=" " alt="" coords="471,48,184,101,183,96,470,43"/>
+<area shape="rect" title=" " alt="" coords="237,101,445,126"/>
+<area shape="poly" title=" " alt="" coords="523,48,385,98,384,93,521,43"/>
+<area shape="rect" title=" " alt="" coords="469,101,676,126"/>
+<area shape="poly" title=" " alt="" coords="575,46,575,87,570,87,570,46"/>
+<area shape="rect" title=" " alt="" coords="701,93,885,133"/>
+<area shape="poly" title=" " alt="" coords="622,43,733,86,731,91,620,48"/>
+<area shape="rect" href="CHIPError_8h.html" title=" " alt="" coords="909,101,1055,126"/>
+<area shape="poly" title=" " alt="" coords="666,43,897,91,918,95,917,100,896,96,665,48"/>
+<area shape="rect" title=" " alt="" coords="741,181,828,207"/>
+<area shape="poly" title=" " alt="" coords="954,128,827,179,825,174,952,124"/>
+<area shape="rect" title=" " alt="" coords="853,181,911,207"/>
+<area shape="poly" title=" " alt="" coords="969,128,909,175,906,171,966,124"/>
+<area shape="rect" title=" " alt="" coords="936,181,1028,207"/>
+<area shape="poly" title=" " alt="" coords="985,126,985,167,979,167,979,126"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="1052,181,1211,207"/>
+<area shape="poly" title=" " alt="" coords="1005,124,1099,173,1096,177,1003,129"/>
+<area shape="rect" title=" " alt="" coords="1235,181,1407,207"/>
+<area shape="poly" title=" " alt="" coords="1032,123,1259,176,1257,181,1031,129"/>
+<area shape="rect" title=" " alt="" coords="899,255,1019,280"/>
+<area shape="poly" title=" " alt="" coords="1105,209,1001,252,999,247,1103,204"/>
+<area shape="rect" title=" " alt="" coords="1043,255,1219,280"/>
+<area shape="poly" title=" " alt="" coords="1134,207,1134,241,1129,241,1129,207"/>
+<area shape="rect" title=" " alt="" coords="1244,255,1373,280"/>
+<area shape="poly" title=" " alt="" coords="1161,204,1268,247,1266,252,1159,209"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="AttributeAccessInterface_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2app_2AttributeAccessInterface_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2app_2AttributeAccessInterface_8hdep" id="aconnectedhomeip_2src_2app_2AttributeAccessInterface_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,232,45"/>
+<area shape="rect" href="bridged-actions-stub_8cpp.html" title=" " alt="" coords="10,196,217,251"/>
+<area shape="poly" title=" " alt="" coords="62,55,39,72,21,95,13,121,21,147,40,173,65,194,62,198,36,177,16,149,8,121,16,92,35,68,58,50"/>
+<area shape="rect" href="AttributeAccessInterfaceRegistry_8h.html" title=" " alt="" coords="231,93,446,148"/>
+<area shape="poly" title=" " alt="" coords="177,48,278,91,276,96,175,53"/>
+<area shape="rect" href="actions-server_8h.html" title=" " alt="" coords="31,93,207,148"/>
+<area shape="poly" title=" " alt="" coords="121,59,121,93,116,93,116,59"/>
+<area shape="poly" title=" " alt="" coords="269,156,173,198,171,194,267,151"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="241,203,447,243"/>
+<area shape="poly" title=" " alt="" coords="343,162,346,203,340,203,338,162"/>
+<area shape="poly" title=" " alt="" coords="119,162,117,196,112,196,114,162"/>
+</map>
+</div>
+</div>
+<p><a href="AttributeAccessInterface_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1app_1_1AttributeAccessInterface.html">chip::app::AttributeAccessInterface</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1app" id="r_namespacechip_1_1app"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1app.html">chip::app</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

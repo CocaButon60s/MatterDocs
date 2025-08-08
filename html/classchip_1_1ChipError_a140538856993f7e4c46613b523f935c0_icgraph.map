@@ -1,0 +1,9 @@
+<map id="chip::ChipError::MakeMask" name="chip::ChipError::MakeMask">
+<area shape="rect" id="Node000001" title=" " alt="" coords="472,31,667,56"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1ChipError.html#a982b4916c50dc5b00982da0547aa3614" title=" " alt="" coords="255,5,416,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="458,34,416,29,417,24,459,29"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1ChipError.html#a36b5f98d2d117be65be2a1779771029a" title=" " alt="" coords="247,55,424,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="459,57,425,61,424,56,458,52"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1ChipError.html#a886b316b1a8601a847d107027e83ae08" title=" " alt="" coords="5,5,199,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="241,21,199,21,199,15,241,15"/>
+</map>

@@ -1,0 +1,544 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/setup_payload/OnboardingCodesUtil.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_487a48ec74188c06fd12863762b9f260.html">setup_payload</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">OnboardingCodesUtil.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="Span_8h_source.html">lib/support/Span.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="SetupPayload_8h_source.html">setup_payload/SetupPayload.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+OnboardingCodesUtil.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="OnboardingCodesUtil_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2setup__payload_2OnboardingCodesUtil_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2setup__payload_2OnboardingCodesUtil_8h" id="aconnectedhomeip_2src_2setup__payload_2OnboardingCodesUtil_8h">
+<area shape="rect" title=" " alt="" coords="1031,5,1271,60"/>
+<area shape="rect" href="Span_8h.html" title=" " alt="" coords="799,108,937,133"/>
+<area shape="poly" title=" " alt="" coords="1065,63,919,107,918,102,1064,58"/>
+<area shape="rect" href="SetupPayload_8h.html" title=" " alt="" coords="1323,108,1544,133"/>
+<area shape="poly" title=" " alt="" coords="1238,58,1383,102,1382,107,1236,63"/>
+<area shape="rect" title=" " alt="" coords="971,181,1027,207"/>
+<area shape="poly" title=" " alt="" coords="890,131,967,172,964,177,888,136"/>
+<area shape="rect" title=" " alt="" coords="462,181,533,207"/>
+<area shape="poly" title=" " alt="" coords="806,136,552,184,547,185,546,180,551,179,805,131"/>
+<area shape="rect" title=" " alt="" coords="1101,181,1168,207"/>
+<area shape="poly" title=" " alt="" coords="911,131,1089,178,1087,183,910,136"/>
+<area shape="rect" title=" " alt="" coords="609,181,674,207"/>
+<area shape="poly" title=" " alt="" coords="832,136,688,181,687,176,831,131"/>
+<area shape="rect" title=" " alt="" coords="699,181,765,207"/>
+<area shape="poly" title=" " alt="" coords="847,136,767,177,765,173,845,131"/>
+<area shape="rect" title=" " alt="" coords="1133,416,1225,441"/>
+<area shape="poly" title=" " alt="" coords="935,131,989,149,1016,162,1040,179,1067,205,1090,233,1129,295,1156,355,1174,401,1169,403,1151,357,1124,298,1086,236,1063,208,1037,183,1013,167,987,154,933,136"/>
+<area shape="rect" title=" " alt="" coords="789,181,947,207"/>
+<area shape="poly" title=" " alt="" coords="871,134,871,168,865,168,865,134"/>
+<area shape="rect" href="CodeUtils_8h.html" title=" " alt="" coords="485,255,656,280"/>
+<area shape="poly" title=" " alt="" coords="799,132,682,151,631,166,598,183,588,196,581,210,574,241,569,240,576,209,583,193,594,179,629,161,681,146,798,126"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="273,416,431,441"/>
+<area shape="poly" title=" " alt="" coords="485,274,355,281,210,292,86,308,45,319,23,330,13,343,9,355,9,366,13,375,34,391,69,404,112,413,161,419,259,425,258,430,160,424,111,418,67,409,32,396,9,378,4,367,3,354,9,341,20,326,43,314,85,303,209,287,355,276,485,269"/>
+<area shape="rect" href="CHIPError_8h.html" title=" " alt="" coords="880,335,1027,361"/>
+<area shape="poly" title=" " alt="" coords="629,277,867,325,888,330,887,335,866,331,628,283"/>
+<area shape="rect" title=" " alt="" coords="34,335,169,361"/>
+<area shape="poly" title=" " alt="" coords="485,282,342,303,180,331,160,335,159,330,179,325,341,298,485,277"/>
+<area shape="rect" title=" " alt="" coords="193,335,381,361"/>
+<area shape="poly" title=" " alt="" coords="530,283,342,334,340,329,529,277"/>
+<area shape="rect" title=" " alt="" coords="405,328,573,368"/>
+<area shape="poly" title=" " alt="" coords="560,282,520,321,517,317,557,278"/>
+<area shape="rect" title=" " alt="" coords="597,328,744,368"/>
+<area shape="poly" title=" " alt="" coords="587,278,637,317,634,321,584,282"/>
+<area shape="rect" title=" " alt="" coords="769,335,855,361"/>
+<area shape="poly" title=" " alt="" coords="607,277,757,325,766,328,764,333,755,331,606,283"/>
+<area shape="rect" title=" " alt="" coords="120,489,240,515"/>
+<area shape="poly" title=" " alt="" coords="325,444,222,486,220,482,323,439"/>
+<area shape="rect" title=" " alt="" coords="264,489,440,515"/>
+<area shape="poly" title=" " alt="" coords="355,442,355,476,349,476,349,442"/>
+<area shape="rect" title=" " alt="" coords="465,489,594,515"/>
+<area shape="poly" title=" " alt="" coords="381,439,489,482,487,487,379,444"/>
+<area shape="poly" title=" " alt="" coords="987,358,1134,409,1132,414,985,363"/>
+<area shape="poly" title=" " alt="" coords="905,363,867,371,640,402,445,422,445,417,639,397,866,365,904,358"/>
+<area shape="rect" title=" " alt="" coords="742,416,829,441"/>
+<area shape="poly" title=" " alt="" coords="930,363,823,413,821,408,928,358"/>
+<area shape="rect" title=" " alt="" coords="853,416,912,441"/>
+<area shape="poly" title=" " alt="" coords="945,363,904,407,900,404,941,359"/>
+<area shape="rect" title=" " alt="" coords="937,416,1109,441"/>
+<area shape="poly" title=" " alt="" coords="966,359,1005,404,1001,407,962,363"/>
+<area shape="poly" title=" " alt="" coords="1386,136,1182,184,1181,179,1385,131"/>
+<area shape="poly" title=" " alt="" coords="1382,136,1310,156,1232,184,1180,211,1111,251,984,330,981,326,1109,246,1178,206,1230,179,1308,151,1381,131"/>
+<area shape="rect" title=" " alt="" coords="1408,181,1459,207"/>
+<area shape="poly" title=" " alt="" coords="1436,134,1436,168,1431,168,1431,134"/>
+<area shape="rect" title=" " alt="" coords="1483,181,1541,207"/>
+<area shape="poly" title=" " alt="" coords="1448,131,1491,170,1487,174,1444,135"/>
+<area shape="rect" title=" " alt="" coords="1566,181,1629,207"/>
+<area shape="poly" title=" " alt="" coords="1461,131,1559,173,1557,178,1459,136"/>
+<area shape="rect" href="Optional_8h.html" title=" " alt="" coords="1243,181,1384,207"/>
+<area shape="poly" title=" " alt="" coords="1415,136,1346,176,1344,172,1413,131"/>
+<area shape="rect" title=" " alt="" coords="1653,181,1813,207"/>
+<area shape="poly" title=" " alt="" coords="1482,131,1672,176,1671,181,1481,136"/>
+<area shape="rect" title=" " alt="" coords="1838,181,2069,207"/>
+<area shape="poly" title=" " alt="" coords="1517,131,1856,177,1856,182,1516,136"/>
+<area shape="poly" title=" " alt="" coords="1383,204,1462,224,1495,237,1515,253,1521,267,1516,281,1489,314,1457,342,1422,365,1383,383,1307,409,1239,423,1238,418,1305,404,1381,378,1419,360,1454,338,1485,311,1511,279,1515,267,1511,256,1492,242,1460,229,1381,209"/>
+<area shape="poly" title=" " alt="" coords="1243,205,670,259,670,254,1242,199"/>
+<area shape="rect" title=" " alt="" coords="1577,255,1626,280"/>
+<area shape="poly" title=" " alt="" coords="1362,204,1558,252,1564,254,1562,259,1557,257,1360,209"/>
+<area shape="rect" title=" " alt="" coords="1184,255,1259,280"/>
+<area shape="poly" title=" " alt="" coords="1300,209,1249,248,1245,244,1297,205"/>
+<area shape="rect" title=" " alt="" coords="1283,255,1343,280"/>
+<area shape="poly" title=" " alt="" coords="1316,207,1316,241,1311,241,1311,207"/>
+<area shape="rect" title=" " alt="" coords="1368,255,1501,280"/>
+<area shape="poly" title=" " alt="" coords="1334,204,1405,245,1402,250,1331,209"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="OnboardingCodesUtil_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2setup__payload_2OnboardingCodesUtil_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2setup__payload_2OnboardingCodesUtil_8hdep" id="aconnectedhomeip_2src_2setup__payload_2OnboardingCodesUtil_8hdep">
+<area shape="rect" title=" " alt="" coords="103,5,343,60"/>
+<area shape="rect" href="AppMain_8cpp.html" title=" " alt="" coords="5,108,212,148"/>
+<area shape="poly" title=" " alt="" coords="182,71,134,110,130,106,179,67"/>
+<area shape="rect" href="Options_8cpp.html" title=" " alt="" coords="236,108,443,148"/>
+<area shape="poly" title=" " alt="" coords="269,67,318,106,314,110,265,71"/>
+</map>
+</div>
+</div>
+<p><a href="OnboardingCodesUtil_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a5c1494dd7fe8e5bab0f3ccb9361e66a6" id="r_a5c1494dd7fe8e5bab0f3ccb9361e66a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OnboardingCodesUtil_8h.html#a5c1494dd7fe8e5bab0f3ccb9361e66a6">PrintOnboardingCodes</a> (<a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">chip::RendezvousInformationFlags</a> aRendezvousFlags)</td></tr>
+<tr class="separator:a5c1494dd7fe8e5bab0f3ccb9361e66a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5145537ba71301be133b4a6a7e0b028" id="r_aa5145537ba71301be133b4a6a7e0b028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OnboardingCodesUtil_8h.html#aa5145537ba71301be133b4a6a7e0b028">PrintOnboardingCodes</a> (const <a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> &amp;payload)</td></tr>
+<tr class="separator:aa5145537ba71301be133b4a6a7e0b028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690e67f5662afee10e0c3ee6ef119012" id="r_a690e67f5662afee10e0c3ee6ef119012"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OnboardingCodesUtil_8h.html#a690e67f5662afee10e0c3ee6ef119012">PrintQrCodeURL</a> (const <a class="el" href="namespacechip.html#a328f22f6c63f2a8500d1dfd9a2c63676">chip::MutableCharSpan</a> qrCode)</td></tr>
+<tr class="separator:a690e67f5662afee10e0c3ee6ef119012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45787e0ed1618f197bf939c6d9e5bbe2" id="r_a45787e0ed1618f197bf939c6d9e5bbe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OnboardingCodesUtil_8h.html#a45787e0ed1618f197bf939c6d9e5bbe2">ShareQRCodeOverNFC</a> (<a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">chip::RendezvousInformationFlags</a> aRendezvousFlags)</td></tr>
+<tr class="separator:a45787e0ed1618f197bf939c6d9e5bbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4000faf31af0a0c14b5c6de5acd8bcbb" id="r_a4000faf31af0a0c14b5c6de5acd8bcbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OnboardingCodesUtil_8h.html#a4000faf31af0a0c14b5c6de5acd8bcbb">GetQRCode</a> (<a class="el" href="namespacechip.html#a328f22f6c63f2a8500d1dfd9a2c63676">chip::MutableCharSpan</a> &amp;aQRCode, <a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">chip::RendezvousInformationFlags</a> aRendezvousFlags)</td></tr>
+<tr class="separator:a4000faf31af0a0c14b5c6de5acd8bcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada345ea04416f5aa3c7d61564f91546e" id="r_ada345ea04416f5aa3c7d61564f91546e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OnboardingCodesUtil_8h.html#ada345ea04416f5aa3c7d61564f91546e">GetQRCode</a> (<a class="el" href="namespacechip.html#a328f22f6c63f2a8500d1dfd9a2c63676">chip::MutableCharSpan</a> &amp;aQRCode, const <a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> &amp;payload)</td></tr>
+<tr class="separator:ada345ea04416f5aa3c7d61564f91546e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432af4128161c98340d0f5f4b5903c06" id="r_a432af4128161c98340d0f5f4b5903c06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OnboardingCodesUtil_8h.html#a432af4128161c98340d0f5f4b5903c06">GetQRCodeUrl</a> (char *aQRCodeUrl, size_t aUrlMaxSize, const <a class="el" href="namespacechip.html#a1e3573497c78c87072da81c586330d62">chip::CharSpan</a> &amp;aQRCode)</td></tr>
+<tr class="separator:a432af4128161c98340d0f5f4b5903c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a4fc623f11cba93769cb9d5368fefc" id="r_a61a4fc623f11cba93769cb9d5368fefc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OnboardingCodesUtil_8h.html#a61a4fc623f11cba93769cb9d5368fefc">GetManualPairingCode</a> (<a class="el" href="namespacechip.html#a328f22f6c63f2a8500d1dfd9a2c63676">chip::MutableCharSpan</a> &amp;aManualPairingCode, <a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">chip::RendezvousInformationFlags</a> aRendezvousFlags)</td></tr>
+<tr class="separator:a61a4fc623f11cba93769cb9d5368fefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6d32e8382cab3bb930ed9bd3aa2aa88" id="r_ad6d32e8382cab3bb930ed9bd3aa2aa88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OnboardingCodesUtil_8h.html#ad6d32e8382cab3bb930ed9bd3aa2aa88">GetManualPairingCode</a> (<a class="el" href="namespacechip.html#a328f22f6c63f2a8500d1dfd9a2c63676">chip::MutableCharSpan</a> &amp;aManualPairingCode, const <a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> &amp;payload)</td></tr>
+<tr class="separator:ad6d32e8382cab3bb930ed9bd3aa2aa88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b02a951bdb1f0167ab91ccb097b1dcc" id="r_a5b02a951bdb1f0167ab91ccb097b1dcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OnboardingCodesUtil_8h.html#a5b02a951bdb1f0167ab91ccb097b1dcc">GetPayloadContents</a> (<a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> &amp;aPayload, <a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">chip::RendezvousInformationFlags</a> aRendezvousFlags)</td></tr>
+<tr class="separator:a5b02a951bdb1f0167ab91ccb097b1dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ffc8f83188289578e3774fd73392e2" id="r_ad1ffc8f83188289578e3774fd73392e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OnboardingCodesUtil_8h.html#ad1ffc8f83188289578e3774fd73392e2">EncodeQRCodeToUrl</a> (const char *aQRCode, size_t aLen, char *aUrl, size_t aMaxSize)</td></tr>
+<tr class="separator:ad1ffc8f83188289578e3774fd73392e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ad1ffc8f83188289578e3774fd73392e2" name="ad1ffc8f83188289578e3774fd73392e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1ffc8f83188289578e3774fd73392e2">&#9670;&#160;</a></span>EncodeQRCodeToUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> EncodeQRCodeToUrl </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>aQRCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>aLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>aUrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>aMaxSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize DataModelHandler and start CHIP datamodel server, the server assumes the platform's networking has been setup already.</p>
+<p>Method verifies if every character of the QR Code is valid for the url encoding and otherwise it encodes the invalid character using available ones.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aQRCode</td><td>address of the array storing QR Code to encode. </td></tr>
+    <tr><td class="paramname">aLen</td><td>length of the given QR Code. </td></tr>
+    <tr><td class="paramname">aUrl</td><td>address of the location where encoded url should be stored. </td></tr>
+    <tr><td class="paramname">aMaxSize</td><td>maximal size of the array where encoded url should be stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_NO_ERROR on success and other values on error. </dd></dl>
+
+</div>
+</div>
+<a id="a61a4fc623f11cba93769cb9d5368fefc" name="a61a4fc623f11cba93769cb9d5368fefc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a4fc623f11cba93769cb9d5368fefc">&#9670;&#160;</a></span>GetManualPairingCode() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> GetManualPairingCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a328f22f6c63f2a8500d1dfd9a2c63676">chip::MutableCharSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>aManualPairingCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">chip::RendezvousInformationFlags</a>&#160;</td>
+          <td class="paramname"><em>aRendezvousFlags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a null-terminated manual pairing code from the payload created based on rendezvous flag information.</p>
+<p>The resulting size of the manual pairing code span will be the size of data written and not including the null terminator. </p>
+
+</div>
+</div>
+<a id="ad6d32e8382cab3bb930ed9bd3aa2aa88" name="ad6d32e8382cab3bb930ed9bd3aa2aa88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d32e8382cab3bb930ed9bd3aa2aa88">&#9670;&#160;</a></span>GetManualPairingCode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> GetManualPairingCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a328f22f6c63f2a8500d1dfd9a2c63676">chip::MutableCharSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>aManualPairingCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> &amp;&#160;</td>
+          <td class="paramname"><em>payload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a null-terminated manual pairing code based on the provided payload.</p>
+<p>The resulting size of the manual pairing code span will be the size of data written and not including the null terminator. </p>
+
+</div>
+</div>
+<a id="a5b02a951bdb1f0167ab91ccb097b1dcc" name="a5b02a951bdb1f0167ab91ccb097b1dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b02a951bdb1f0167ab91ccb097b1dcc">&#9670;&#160;</a></span>GetPayloadContents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> GetPayloadContents </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> &amp;&#160;</td>
+          <td class="paramname"><em>aPayload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">chip::RendezvousInformationFlags</a>&#160;</td>
+          <td class="paramname"><em>aRendezvousFlags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="OnboardingCodesUtil_8h_a5b02a951bdb1f0167ab91ccb097b1dcc_icgraph.png" border="0" usemap="#aOnboardingCodesUtil_8h_a5b02a951bdb1f0167ab91ccb097b1dcc_icgraph" alt=""/></div>
+<map name="aOnboardingCodesUtil_8h_a5b02a951bdb1f0167ab91ccb097b1dcc_icgraph" id="aOnboardingCodesUtil_8h_a5b02a951bdb1f0167ab91ccb097b1dcc_icgraph">
+<area shape="rect" title=" " alt="" coords="288,5,443,31"/>
+<area shape="rect" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="108,5,240,31"/>
+<area shape="poly" title=" " alt="" coords="274,21,240,21,240,15,274,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4000faf31af0a0c14b5c6de5acd8bcbb" name="a4000faf31af0a0c14b5c6de5acd8bcbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4000faf31af0a0c14b5c6de5acd8bcbb">&#9670;&#160;</a></span>GetQRCode() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> GetQRCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a328f22f6c63f2a8500d1dfd9a2c63676">chip::MutableCharSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>aQRCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">chip::RendezvousInformationFlags</a>&#160;</td>
+          <td class="paramname"><em>aRendezvousFlags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a null-terminated QR code from the payload created based on rendezvous flag information.</p>
+<p>The resulting size of the QR code span will be the size of data written and not including the null terminator. </p>
+
+</div>
+</div>
+<a id="ada345ea04416f5aa3c7d61564f91546e" name="ada345ea04416f5aa3c7d61564f91546e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada345ea04416f5aa3c7d61564f91546e">&#9670;&#160;</a></span>GetQRCode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> GetQRCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a328f22f6c63f2a8500d1dfd9a2c63676">chip::MutableCharSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>aQRCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> &amp;&#160;</td>
+          <td class="paramname"><em>payload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a null-terminated QR code based on the provided payload.</p>
+<p>The resulting size of the QR code span will be the size of data written and not including the null terminator. </p>
+
+</div>
+</div>
+<a id="a432af4128161c98340d0f5f4b5903c06" name="a432af4128161c98340d0f5f4b5903c06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432af4128161c98340d0f5f4b5903c06">&#9670;&#160;</a></span>GetQRCodeUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> GetQRCodeUrl </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>aQRCodeUrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>aUrlMaxSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a1e3573497c78c87072da81c586330d62">chip::CharSpan</a> &amp;&#160;</td>
+          <td class="paramname"><em>aQRCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a null-terminated QR code url. </p>
+
+</div>
+</div>
+<a id="a5c1494dd7fe8e5bab0f3ccb9361e66a6" name="a5c1494dd7fe8e5bab0f3ccb9361e66a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c1494dd7fe8e5bab0f3ccb9361e66a6">&#9670;&#160;</a></span>PrintOnboardingCodes() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PrintOnboardingCodes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">chip::RendezvousInformationFlags</a>&#160;</td>
+          <td class="paramname"><em>aRendezvousFlags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="OnboardingCodesUtil_8h_a5c1494dd7fe8e5bab0f3ccb9361e66a6_icgraph.png" border="0" usemap="#aOnboardingCodesUtil_8h_a5c1494dd7fe8e5bab0f3ccb9361e66a6_icgraph" alt=""/></div>
+<map name="aOnboardingCodesUtil_8h_a5c1494dd7fe8e5bab0f3ccb9361e66a6_icgraph" id="aOnboardingCodesUtil_8h_a5c1494dd7fe8e5bab0f3ccb9361e66a6_icgraph">
+<area shape="rect" title=" " alt="" coords="331,31,497,56"/>
+<area shape="rect" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="129,5,261,31"/>
+<area shape="poly" title=" " alt="" coords="317,35,261,28,262,23,317,29"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,55,283,80"/>
+<area shape="poly" title=" " alt="" coords="317,57,283,60,283,55,317,51"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,60,56"/>
+<area shape="poly" title=" " alt="" coords="116,33,61,42,60,37,115,28"/>
+<area shape="poly" title=" " alt="" coords="96,55,60,50,61,45,96,50"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa5145537ba71301be133b4a6a7e0b028" name="aa5145537ba71301be133b4a6a7e0b028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5145537ba71301be133b4a6a7e0b028">&#9670;&#160;</a></span>PrintOnboardingCodes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PrintOnboardingCodes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> &amp;&#160;</td>
+          <td class="paramname"><em>payload</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a690e67f5662afee10e0c3ee6ef119012" name="a690e67f5662afee10e0c3ee6ef119012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a690e67f5662afee10e0c3ee6ef119012">&#9670;&#160;</a></span>PrintQrCodeURL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PrintQrCodeURL </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a328f22f6c63f2a8500d1dfd9a2c63676">chip::MutableCharSpan</a>&#160;</td>
+          <td class="paramname"><em>qrCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45787e0ed1618f197bf939c6d9e5bbe2" name="a45787e0ed1618f197bf939c6d9e5bbe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45787e0ed1618f197bf939c6d9e5bbe2">&#9670;&#160;</a></span>ShareQRCodeOverNFC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShareQRCodeOverNFC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#aa1547163f7acfac3dece9fd81d4fd65f">chip::RendezvousInformationFlags</a>&#160;</td>
+          <td class="paramname"><em>aRendezvousFlags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

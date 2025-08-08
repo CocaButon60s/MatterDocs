@@ -1,0 +1,10 @@
+<map id="chip::Platform::Impl::PlatformMemoryManagement::MemoryFree" name="chip::Platform::Impl::PlatformMemoryManagement::MemoryFree">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,28,232,83"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Platform.html#a9a65a9cd65454203059a7878eb74ccc1" title=" " alt="" coords="280,5,483,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,37,278,30,279,35,233,42"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="306,79,457,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,68,292,77,292,82,232,74"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="341,80,332,70,336,60,353,54,381,52,417,56,427,61,431,66,426,69,423,65,415,61,381,57,354,59,340,64,337,70,345,77"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="531,79,737,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="457,89,517,89,517,94,457,94"/>
+</map>

@@ -1,0 +1,797 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::FixedSpan&lt; T, N &gt; クラステンプレート</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="classchip_1_1FixedSpan.html">FixedSpan</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classchip_1_1FixedSpan-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::FixedSpan&lt; T, N &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Span_8h_source.html">Span.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a915ce47cfbaf79c6f40a95caf7881ade" id="r_a915ce47cfbaf79c6f40a95caf7881ade"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a> = T *</td></tr>
+<tr class="separator:a915ce47cfbaf79c6f40a95caf7881ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cdd80139de0323285f289fed30408cd" id="r_a0cdd80139de0323285f289fed30408cd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">reference</a> = T &amp;</td></tr>
+<tr class="separator:a0cdd80139de0323285f289fed30408cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a1b3cc7506fc191438bd3ee8ea07c1df3" id="r_a1b3cc7506fc191438bd3ee8ea07c1df3"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a1b3cc7506fc191438bd3ee8ea07c1df3">FixedSpan</a> ()</td></tr>
+<tr class="separator:a1b3cc7506fc191438bd3ee8ea07c1df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21d2b93f3bd80f7eeac83367b4df934" id="r_ab21d2b93f3bd80f7eeac83367b4df934"><td class="memTemplParams" colspan="2">template&lt;class U , typename  = std::enable_if_t&lt;std::is_pointer&lt;U&gt;::value &amp;&amp; sizeof(std::remove_pointer_t&lt;U&gt;) == sizeof(T) &amp;&amp;                                          std::is_convertible&lt;U, T *&gt;::value&gt;&gt; </td></tr>
+<tr class="memitem:ab21d2b93f3bd80f7eeac83367b4df934"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#ab21d2b93f3bd80f7eeac83367b4df934">FixedSpan</a> (U databuf)</td></tr>
+<tr class="separator:ab21d2b93f3bd80f7eeac83367b4df934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff2a201223f406962496a91ed0ca855" id="r_a1ff2a201223f406962496a91ed0ca855"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a1ff2a201223f406962496a91ed0ca855">FixedSpan</a> (std::nullptr_t null)=delete</td></tr>
+<tr class="separator:a1ff2a201223f406962496a91ed0ca855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fed4eba72d4f7950caabe0bb59214b0" id="r_a4fed4eba72d4f7950caabe0bb59214b0"><td class="memTemplParams" colspan="2">template&lt;class U , size_t M, typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt; </td></tr>
+<tr class="memitem:a4fed4eba72d4f7950caabe0bb59214b0"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a4fed4eba72d4f7950caabe0bb59214b0">FixedSpan</a> (U(&amp;databuf)[M])</td></tr>
+<tr class="separator:a4fed4eba72d4f7950caabe0bb59214b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7f2f7e65ada6c2bb136b326ffa6d49" id="r_a4e7f2f7e65ada6c2bb136b326ffa6d49"><td class="memTemplParams" colspan="2">template&lt;class U , typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt; </td></tr>
+<tr class="memitem:a4e7f2f7e65ada6c2bb136b326ffa6d49"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a4e7f2f7e65ada6c2bb136b326ffa6d49">FixedSpan</a> (std::array&lt; U, N &gt; &amp;arr)</td></tr>
+<tr class="separator:a4e7f2f7e65ada6c2bb136b326ffa6d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f25337214bc0cf3ea106b4c3042d6e2" id="r_a7f25337214bc0cf3ea106b4c3042d6e2"><td class="memTemplParams" colspan="2">template&lt;class U , typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt; </td></tr>
+<tr class="memitem:a7f25337214bc0cf3ea106b4c3042d6e2"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a7f25337214bc0cf3ea106b4c3042d6e2">FixedSpan</a> (std::array&lt; U, N &gt; &amp;&amp;arr)=delete</td></tr>
+<tr class="separator:a7f25337214bc0cf3ea106b4c3042d6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8441475f2a0d0c6ea47c71492c501d4d" id="r_a8441475f2a0d0c6ea47c71492c501d4d"><td class="memTemplParams" colspan="2">template&lt;class U , typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;const U *, T *&gt;::value&gt;&gt; </td></tr>
+<tr class="memitem:a8441475f2a0d0c6ea47c71492c501d4d"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a8441475f2a0d0c6ea47c71492c501d4d">FixedSpan</a> (const std::array&lt; U, N &gt; &amp;arr)</td></tr>
+<tr class="separator:a8441475f2a0d0c6ea47c71492c501d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa036ec48ca589e599c656d1e692f268" id="r_afa036ec48ca589e599c656d1e692f268"><td class="memTemplParams" colspan="2">template&lt;class U , size_t M, typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt; </td></tr>
+<tr class="memitem:afa036ec48ca589e599c656d1e692f268"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#afa036ec48ca589e599c656d1e692f268">FixedSpan</a> (<a class="el" href="classchip_1_1FixedSpan.html">FixedSpan</a>&lt; U, M &gt; const &amp;other)</td></tr>
+<tr class="separator:afa036ec48ca589e599c656d1e692f268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a57787e85df3553e5767ceb52659c33" id="r_a8a57787e85df3553e5767ceb52659c33"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33">data</a> () const</td></tr>
+<tr class="separator:a8a57787e85df3553e5767ceb52659c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d4077e0775777dab6baaed9345b89fe" id="r_a1d4077e0775777dab6baaed9345b89fe"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a1d4077e0775777dab6baaed9345b89fe">begin</a> () const</td></tr>
+<tr class="separator:a1d4077e0775777dab6baaed9345b89fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad828dcfa23a8960c8ce6b006dc2487a6" id="r_ad828dcfa23a8960c8ce6b006dc2487a6"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#ad828dcfa23a8960c8ce6b006dc2487a6">end</a> () const</td></tr>
+<tr class="separator:ad828dcfa23a8960c8ce6b006dc2487a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa2794a2520be43e104e6d197452441" id="r_a6aa2794a2520be43e104e6d197452441"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a6aa2794a2520be43e104e6d197452441">operator[]</a> (size_t index) const</td></tr>
+<tr class="separator:a6aa2794a2520be43e104e6d197452441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af926bdbc37554b7730337ccf6cb31e9c" id="r_af926bdbc37554b7730337ccf6cb31e9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#af926bdbc37554b7730337ccf6cb31e9c">front</a> () const</td></tr>
+<tr class="separator:af926bdbc37554b7730337ccf6cb31e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe405db027b4bd613ad4d41ecd3790c4" id="r_afe405db027b4bd613ad4d41ecd3790c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#afe405db027b4bd613ad4d41ecd3790c4">back</a> () const</td></tr>
+<tr class="separator:afe405db027b4bd613ad4d41ecd3790c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045c655f139d3969640d6a4c92e451e4" id="r_a045c655f139d3969640d6a4c92e451e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a045c655f139d3969640d6a4c92e451e4">data_equal</a> (const <a class="el" href="classchip_1_1Span.html">Span</a>&lt; const T &gt; &amp;other) const</td></tr>
+<tr class="separator:a045c655f139d3969640d6a4c92e451e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4705860ff3347b74e425390bee08e490" id="r_a4705860ff3347b74e425390bee08e490"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a4705860ff3347b74e425390bee08e490"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a4705860ff3347b74e425390bee08e490">operator==</a> (const <a class="el" href="classchip_1_1Span.html">Span</a>&lt; U &gt; &amp;other) const =delete</td></tr>
+<tr class="separator:a4705860ff3347b74e425390bee08e490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a3fbe86a18e7f86746043c0dfbafa7" id="r_a93a3fbe86a18e7f86746043c0dfbafa7"><td class="memTemplParams" colspan="2">template&lt;typename U , size_t M&gt; </td></tr>
+<tr class="memitem:a93a3fbe86a18e7f86746043c0dfbafa7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a93a3fbe86a18e7f86746043c0dfbafa7">operator==</a> (const <a class="el" href="classchip_1_1FixedSpan.html">FixedSpan</a>&lt; U, M &gt; &amp;other) const =delete</td></tr>
+<tr class="separator:a93a3fbe86a18e7f86746043c0dfbafa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2d8af59ff7ab6ffd3e63b3cd711f34cc" id="r_a2d8af59ff7ab6ffd3e63b3cd711f34cc"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#a2d8af59ff7ab6ffd3e63b3cd711f34cc">size</a> ()</td></tr>
+<tr class="separator:a2d8af59ff7ab6ffd3e63b3cd711f34cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ab95443937a889f2cf7320fd081fe5eae" id="r_ab95443937a889f2cf7320fd081fe5eae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1FixedSpan.html#ab95443937a889f2cf7320fd081fe5eae">mDataBuf</a></td></tr>
+<tr class="separator:ab95443937a889f2cf7320fd081fe5eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T, size_t N&gt;<br />
+class chip::FixedSpan&lt; T, N &gt;</div><p>Similar to a <a class="el" href="classchip_1_1Span.html" title="A wrapper class for holding objects and its length, without the ownership of it. We can use C++20 std...">Span</a> but with a fixed size. </p>
+</div><h2 class="groupheader">型定義メンバ詳解</h2>
+<a id="a915ce47cfbaf79c6f40a95caf7881ade" name="a915ce47cfbaf79c6f40a95caf7881ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a915ce47cfbaf79c6f40a95caf7881ade">&#9670;&#160;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::pointer =  T *</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cdd80139de0323285f289fed30408cd" name="a0cdd80139de0323285f289fed30408cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cdd80139de0323285f289fed30408cd">&#9670;&#160;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::reference =  T &amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a1b3cc7506fc191438bd3ee8ea07c1df3" name="a1b3cc7506fc191438bd3ee8ea07c1df3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b3cc7506fc191438bd3ee8ea07c1df3">&#9670;&#160;</a></span>FixedSpan() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::FixedSpan </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab21d2b93f3bd80f7eeac83367b4df934" name="ab21d2b93f3bd80f7eeac83367b4df934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab21d2b93f3bd80f7eeac83367b4df934">&#9670;&#160;</a></span>FixedSpan() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<div class="memtemplate">
+template&lt;class U , typename  = std::enable_if_t&lt;std::is_pointer&lt;U&gt;::value &amp;&amp; sizeof(std::remove_pointer_t&lt;U&gt;) == sizeof(T) &amp;&amp;                                          std::is_convertible&lt;U, T *&gt;::value&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::FixedSpan </td>
+          <td>(</td>
+          <td class="paramtype">U&#160;</td>
+          <td class="paramname"><em>databuf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ff2a201223f406962496a91ed0ca855" name="a1ff2a201223f406962496a91ed0ca855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ff2a201223f406962496a91ed0ca855">&#9670;&#160;</a></span>FixedSpan() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::FixedSpan </td>
+          <td>(</td>
+          <td class="paramtype">std::nullptr_t&#160;</td>
+          <td class="paramname"><em>null</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fed4eba72d4f7950caabe0bb59214b0" name="a4fed4eba72d4f7950caabe0bb59214b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fed4eba72d4f7950caabe0bb59214b0">&#9670;&#160;</a></span>FixedSpan() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<div class="memtemplate">
+template&lt;class U , size_t M, typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::FixedSpan </td>
+          <td>(</td>
+          <td class="paramtype">U(&amp;)&#160;</td>
+          <td class="paramname"><em>databuf</em>[M]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e7f2f7e65ada6c2bb136b326ffa6d49" name="a4e7f2f7e65ada6c2bb136b326ffa6d49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e7f2f7e65ada6c2bb136b326ffa6d49">&#9670;&#160;</a></span>FixedSpan() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<div class="memtemplate">
+template&lt;class U , typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::FixedSpan </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; U, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f25337214bc0cf3ea106b4c3042d6e2" name="a7f25337214bc0cf3ea106b4c3042d6e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f25337214bc0cf3ea106b4c3042d6e2">&#9670;&#160;</a></span>FixedSpan() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<div class="memtemplate">
+template&lt;class U , typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::FixedSpan </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; U, N &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8441475f2a0d0c6ea47c71492c501d4d" name="a8441475f2a0d0c6ea47c71492c501d4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8441475f2a0d0c6ea47c71492c501d4d">&#9670;&#160;</a></span>FixedSpan() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<div class="memtemplate">
+template&lt;class U , typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;const U *, T *&gt;::value&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::FixedSpan </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; U, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa036ec48ca589e599c656d1e692f268" name="afa036ec48ca589e599c656d1e692f268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa036ec48ca589e599c656d1e692f268">&#9670;&#160;</a></span>FixedSpan() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<div class="memtemplate">
+template&lt;class U , size_t M, typename  = std::enable_if_t&lt;sizeof(U) == sizeof(T) &amp;&amp; std::is_convertible&lt;U *, T *&gt;::value&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::FixedSpan </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1FixedSpan.html">FixedSpan</a>&lt; U, M &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="afe405db027b4bd613ad4d41ecd3790c4" name="afe405db027b4bd613ad4d41ecd3790c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe405db027b4bd613ad4d41ecd3790c4">&#9670;&#160;</a></span>back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">reference</a> <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1FixedSpan_afe405db027b4bd613ad4d41ecd3790c4_cgraph.png" border="0" usemap="#aclasschip_1_1FixedSpan_afe405db027b4bd613ad4d41ecd3790c4_cgraph" alt=""/></div>
+<map name="aclasschip_1_1FixedSpan_afe405db027b4bd613ad4d41ecd3790c4_cgraph" id="aclasschip_1_1FixedSpan_afe405db027b4bd613ad4d41ecd3790c4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,168,31"/>
+<area shape="rect" href="classchip_1_1FixedSpan.html#a2d8af59ff7ab6ffd3e63b3cd711f34cc" title=" " alt="" coords="216,5,373,31"/>
+<area shape="poly" title=" " alt="" coords="169,15,202,15,202,21,169,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1d4077e0775777dab6baaed9345b89fe" name="a1d4077e0775777dab6baaed9345b89fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d4077e0775777dab6baaed9345b89fe">&#9670;&#160;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a> <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a57787e85df3553e5767ceb52659c33" name="a8a57787e85df3553e5767ceb52659c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a57787e85df3553e5767ceb52659c33">&#9670;&#160;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a> <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1FixedSpan_a8a57787e85df3553e5767ceb52659c33_icgraph.png" border="0" usemap="#aclasschip_1_1FixedSpan_a8a57787e85df3553e5767ceb52659c33_icgraph" alt=""/></div>
+<map name="aclasschip_1_1FixedSpan_a8a57787e85df3553e5767ceb52659c33_icgraph" id="aclasschip_1_1FixedSpan_a8a57787e85df3553e5767ceb52659c33_icgraph">
+<area shape="rect" title=" " alt="" coords="281,134,441,159"/>
+<area shape="rect" href="classchip_1_1FixedSpan.html#a045c655f139d3969640d6a4c92e451e4" title=" " alt="" coords="39,5,199,45"/>
+<area shape="poly" title=" " alt="" coords="333,127,288,93,232,60,199,47,200,42,235,55,291,88,336,123"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1P256PublicKey.html#a53cb79a1ab31094671f64a88ddd0bcd7" title=" " alt="" coords="30,69,209,109"/>
+<area shape="poly" title=" " alt="" coords="293,133,204,112,205,107,294,128"/>
+<area shape="rect" href="classchip_1_1FixedSpan.html#a6aa2794a2520be43e104e6d197452441" title=" " alt="" coords="21,134,217,159"/>
+<area shape="poly" title=" " alt="" coords="267,149,218,149,218,144,267,144"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1P256PublicKey.html#a9fc121c6e80e40e47a8412126277d25b" title=" " alt="" coords="30,184,209,224"/>
+<area shape="poly" title=" " alt="" coords="294,165,205,187,204,181,293,160"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1SensitiveDataFixedBuffer.html#a42689a9fc7876de27665395bc434e604" title=" " alt="" coords="5,249,233,303"/>
+<area shape="poly" title=" " alt="" coords="336,170,290,204,235,238,207,251,205,246,232,234,287,200,333,166"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a045c655f139d3969640d6a4c92e451e4" name="a045c655f139d3969640d6a4c92e451e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a045c655f139d3969640d6a4c92e451e4">&#9670;&#160;</a></span>data_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::data_equal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Span.html">Span</a>&lt; const T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1FixedSpan_a045c655f139d3969640d6a4c92e451e4_cgraph.png" border="0" usemap="#aclasschip_1_1FixedSpan_a045c655f139d3969640d6a4c92e451e4_cgraph" alt=""/></div>
+<map name="aclasschip_1_1FixedSpan_a045c655f139d3969640d6a4c92e451e4_cgraph" id="aclasschip_1_1FixedSpan_a045c655f139d3969640d6a4c92e451e4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,165,87"/>
+<area shape="rect" href="classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097" title=" " alt="" coords="230,5,357,31"/>
+<area shape="poly" title=" " alt="" coords="165,46,226,31,227,36,166,51"/>
+<area shape="rect" href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33" title=" " alt="" coords="213,55,373,80"/>
+<area shape="poly" title=" " alt="" coords="165,65,199,65,199,70,165,70"/>
+<area shape="rect" href="classchip_1_1Span.html#a7b92342295de7bf91dfd976f5a124aa8" title=" " alt="" coords="232,104,355,129"/>
+<area shape="poly" title=" " alt="" coords="166,84,227,98,226,103,165,89"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad828dcfa23a8960c8ce6b006dc2487a6" name="ad828dcfa23a8960c8ce6b006dc2487a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad828dcfa23a8960c8ce6b006dc2487a6">&#9670;&#160;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a> <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af926bdbc37554b7730337ccf6cb31e9c" name="af926bdbc37554b7730337ccf6cb31e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af926bdbc37554b7730337ccf6cb31e9c">&#9670;&#160;</a></span>front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">reference</a> <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93a3fbe86a18e7f86746043c0dfbafa7" name="a93a3fbe86a18e7f86746043c0dfbafa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a3fbe86a18e7f86746043c0dfbafa7">&#9670;&#160;</a></span>operator==() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<div class="memtemplate">
+template&lt;typename U , size_t M&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1FixedSpan.html">FixedSpan</a>&lt; U, M &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4705860ff3347b74e425390bee08e490" name="a4705860ff3347b74e425390bee08e490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4705860ff3347b74e425390bee08e490">&#9670;&#160;</a></span>operator==() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Span.html">Span</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6aa2794a2520be43e104e6d197452441" name="a6aa2794a2520be43e104e6d197452441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aa2794a2520be43e104e6d197452441">&#9670;&#160;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1FixedSpan.html#a0cdd80139de0323285f289fed30408cd">reference</a> <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1FixedSpan_a6aa2794a2520be43e104e6d197452441_cgraph.png" border="0" usemap="#aclasschip_1_1FixedSpan_a6aa2794a2520be43e104e6d197452441_cgraph" alt=""/></div>
+<map name="aclasschip_1_1FixedSpan_a6aa2794a2520be43e104e6d197452441_cgraph" id="aclasschip_1_1FixedSpan_a6aa2794a2520be43e104e6d197452441_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,31"/>
+<area shape="rect" href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33" title=" " alt="" coords="249,5,409,31"/>
+<area shape="poly" title=" " alt="" coords="202,15,236,15,236,21,202,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2d8af59ff7ab6ffd3e63b3cd711f34cc" name="a2d8af59ff7ab6ffd3e63b3cd711f34cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8af59ff7ab6ffd3e63b3cd711f34cc">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr size_t <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1FixedSpan_a2d8af59ff7ab6ffd3e63b3cd711f34cc_icgraph.png" border="0" usemap="#aclasschip_1_1FixedSpan_a2d8af59ff7ab6ffd3e63b3cd711f34cc_icgraph" alt=""/></div>
+<map name="aclasschip_1_1FixedSpan_a2d8af59ff7ab6ffd3e63b3cd711f34cc_icgraph" id="aclasschip_1_1FixedSpan_a2d8af59ff7ab6ffd3e63b3cd711f34cc_icgraph">
+<area shape="rect" title=" " alt="" coords="216,5,373,31"/>
+<area shape="rect" href="classchip_1_1FixedSpan.html#afe405db027b4bd613ad4d41ecd3790c4" title=" " alt="" coords="5,5,168,31"/>
+<area shape="poly" title=" " alt="" coords="202,21,168,21,168,15,202,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ab95443937a889f2cf7320fd081fe5eae" name="ab95443937a889f2cf7320fd081fe5eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab95443937a889f2cf7320fd081fe5eae">&#9670;&#160;</a></span>mDataBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1FixedSpan.html#a915ce47cfbaf79c6f40a95caf7881ade">pointer</a> <a class="el" href="classchip_1_1FixedSpan.html">chip::FixedSpan</a>&lt; T, N &gt;::mDataBuf</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/lib/support/<a class="el" href="Span_8h_source.html">Span.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

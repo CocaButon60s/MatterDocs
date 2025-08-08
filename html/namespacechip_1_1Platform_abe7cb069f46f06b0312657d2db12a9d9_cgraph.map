@@ -1,0 +1,6 @@
+<map id="chip::Platform::New" name="chip::Platform::New">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,156,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="44,31,36,21,40,11,55,5,81,3,113,7,125,16,121,20,111,11,81,8,56,10,44,15,41,20,48,27"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="204,29,411,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,39,190,39,190,45,157,45"/>
+</map>

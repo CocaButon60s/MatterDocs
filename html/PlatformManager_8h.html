@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/include/platform/PlatformManager.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_b0f90f4333c67a01e325f678b62f2fa5.html">include</a></li><li class="navelem"><a class="el" href="dir_a8b5684028953e02e2b85543d315d797.html">platform</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle"><div class="title">PlatformManager.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;platform/AttributeList.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPDeviceConfig_8h_source.html">platform/CHIPDeviceConfig.h</a>&gt;</code><br />
+<code>#include &lt;platform/CHIPDeviceEvent.h&gt;</code><br />
+<code>#include &lt;system/PlatformEventSupport.h&gt;</code><br />
+<code>#include &lt;system/SystemLayer.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+PlatformManager.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="PlatformManager_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2include_2platform_2PlatformManager_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2include_2platform_2PlatformManager_8h" id="aconnectedhomeip_2src_2include_2platform_2PlatformManager_8h">
+<area shape="rect" title=" " alt="" coords="447,5,640,60"/>
+<area shape="rect" title=" " alt="" coords="5,108,180,133"/>
+<area shape="poly" title=" " alt="" coords="447,55,166,108,165,103,446,50"/>
+<area shape="rect" href="CHIPDeviceConfig_8h.html" title=" " alt="" coords="205,108,415,133"/>
+<area shape="poly" title=" " alt="" coords="473,63,355,106,353,101,471,58"/>
+<area shape="rect" title=" " alt="" coords="440,108,647,133"/>
+<area shape="poly" title=" " alt="" coords="546,60,546,94,541,94,541,60"/>
+<area shape="rect" title=" " alt="" coords="671,108,901,133"/>
+<area shape="poly" title=" " alt="" coords="618,58,741,101,740,106,617,63"/>
+<area shape="rect" title=" " alt="" coords="925,108,1095,133"/>
+<area shape="poly" title=" " alt="" coords="641,49,935,103,934,108,640,54"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="231,181,389,207"/>
+<area shape="poly" title=" " alt="" coords="313,134,313,168,307,168,307,134"/>
+<area shape="rect" title=" " alt="" coords="78,255,198,280"/>
+<area shape="poly" title=" " alt="" coords="283,209,180,252,178,247,281,204"/>
+<area shape="rect" title=" " alt="" coords="222,255,398,280"/>
+<area shape="poly" title=" " alt="" coords="313,207,313,241,307,241,307,207"/>
+<area shape="rect" title=" " alt="" coords="423,255,552,280"/>
+<area shape="poly" title=" " alt="" coords="339,204,447,247,445,252,338,209"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="PlatformManager_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2include_2platform_2PlatformManager_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2include_2platform_2PlatformManager_8hdep" id="aconnectedhomeip_2src_2include_2platform_2PlatformManager_8hdep">
+<area shape="rect" title=" " alt="" coords="452,5,645,60"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="5,423,212,463"/>
+<area shape="poly" title=" " alt="" coords="439,45,387,53,332,66,277,85,226,110,172,150,153,171,139,193,121,246,109,314,106,373,109,423,104,423,101,373,103,313,115,244,135,191,149,168,168,146,223,106,275,80,330,61,386,48,438,39"/>
+<area shape="rect" href="AppMain_8cpp.html" title=" " alt="" coords="1240,423,1447,463"/>
+<area shape="poly" title=" " alt="" coords="659,38,958,61,1332,97,1510,120,1664,147,1778,176,1817,192,1840,209,1857,234,1865,258,1864,280,1854,301,1837,320,1814,337,1754,366,1680,390,1600,409,1447,434,1446,429,1599,404,1679,385,1752,361,1812,332,1834,316,1849,298,1858,279,1860,259,1853,237,1836,213,1814,197,1777,181,1663,152,1509,126,1331,102,958,66,659,44"/>
+<area shape="rect" href="AppMain_8h.html" title=" " alt="" coords="632,321,839,361"/>
+<area shape="poly" title=" " alt="" coords="518,72,488,114,463,165,455,191,453,216,457,241,469,263,490,272,537,286,659,318,658,323,536,291,488,277,466,267,452,243,448,217,450,190,458,163,484,112,514,69"/>
+<area shape="rect" href="CommissionableInit_8h.html" title=" " alt="" coords="147,313,377,368"/>
+<area shape="poly" title=" " alt="" coords="439,57,372,79,302,110,268,131,237,154,210,181,187,212,180,226,179,237,187,264,204,290,225,311,222,315,199,293,182,266,174,238,175,224,182,209,206,178,234,150,265,126,299,106,370,74,438,52"/>
+<area shape="rect" href="Rpc_8cpp.html" title=" " alt="" coords="587,115,793,155"/>
+<area shape="poly" title=" " alt="" coords="598,66,665,113,662,117,595,70"/>
+<area shape="rect" href="CommissionerDiscoveryController_8h.html" title=" " alt="" coords="479,211,730,265"/>
+<area shape="poly" title=" " alt="" coords="557,73,577,162,595,209,590,211,571,163,552,74"/>
+<area shape="rect" href="CHIPDeviceLayer_8h.html" title=" " alt="" coords="903,108,1117,163"/>
+<area shape="poly" title=" " alt="" coords="659,55,904,108,902,113,658,60"/>
+<area shape="poly" title=" " alt="" coords="644,366,620,371,509,387,422,395,335,403,224,419,187,426,186,421,223,413,334,397,421,389,508,381,619,365,643,361"/>
+<area shape="poly" title=" " alt="" coords="853,359,1240,422,1239,428,852,364"/>
+<area shape="poly" title=" " alt="" coords="212,378,139,425,136,421,209,373"/>
+<area shape="poly" title=" " alt="" coords="391,366,633,394,869,414,1240,436,1240,441,869,420,632,399,391,371"/>
+<area shape="rect" href="CommissionableInit_8cpp.html" title=" " alt="" coords="236,416,467,471"/>
+<area shape="poly" title=" " alt="" coords="296,377,330,414,326,418,292,380"/>
+<area shape="poly" title=" " alt="" coords="651,272,712,318,709,323,648,276"/>
+<area shape="poly" title=" " alt="" coords="890,156,806,165,745,168,667,168,487,166,395,168,311,175,239,189,210,200,186,213,163,234,145,259,131,288,122,318,112,378,111,423,105,423,107,377,117,317,126,286,140,256,159,230,183,208,208,195,238,184,310,170,395,162,487,160,667,163,744,163,806,160,890,150"/>
+<area shape="poly" title=" " alt="" coords="1131,149,1244,172,1290,189,1320,209,1337,234,1349,263,1356,293,1359,323,1357,380,1350,423,1345,423,1352,380,1354,323,1351,294,1344,264,1333,237,1316,213,1288,193,1242,177,1130,154"/>
+<area shape="poly" title=" " alt="" coords="1015,177,1009,223,1000,247,987,267,955,294,918,314,879,327,839,336,838,331,877,322,916,309,952,290,983,264,996,244,1004,222,1010,176"/>
+<area shape="poly" title=" " alt="" coords="892,169,711,213,710,208,891,163"/>
+<area shape="rect" href="Device_8cpp.html" title=" " alt="" coords="1618,218,1826,258"/>
+<area shape="poly" title=" " alt="" coords="1131,146,1349,172,1600,208,1639,215,1638,221,1599,213,1349,177,1130,151"/>
+<area shape="rect" href="CommissioneeShellCommands_8cpp.html" title=" " alt="" coords="1443,313,1694,368"/>
+<area shape="poly" title=" " alt="" coords="1131,134,1249,138,1375,150,1434,159,1486,172,1528,188,1557,209,1572,233,1579,261,1580,289,1577,314,1572,313,1574,289,1574,261,1568,235,1553,213,1525,193,1484,177,1433,165,1375,155,1249,143,1130,139"/>
+<area shape="rect" href="ControllerShellCommands_8cpp.html" title=" " alt="" coords="754,211,973,265"/>
+<area shape="poly" title=" " alt="" coords="962,173,903,213,900,208,959,168"/>
+<area shape="rect" href="Options_8h.html" title=" " alt="" coords="197,218,404,258"/>
+<area shape="poly" title=" " alt="" coords="890,155,468,213,405,223,404,218,467,208,889,150"/>
+<area shape="rect" href="RpcClientProcessor_8h.html" title=" " alt="" coords="1047,218,1306,258"/>
+<area shape="poly" title=" " alt="" coords="1066,167,1146,215,1144,220,1063,172"/>
+<area shape="rect" href="Dnssd_8h.html" title=" " alt="" coords="1381,218,1543,258"/>
+<area shape="poly" title=" " alt="" coords="1131,158,1363,208,1392,215,1391,221,1361,213,1130,163"/>
+<area shape="poly" title=" " alt="" coords="396,258,655,318,654,323,394,264"/>
+<area shape="poly" title=" " alt="" coords="291,272,275,314,270,312,286,270"/>
+<area shape="rect" href="Options_8cpp.html" title=" " alt="" coords="401,321,608,361"/>
+<area shape="poly" title=" " alt="" coords="352,262,468,318,465,323,350,266"/>
+<area shape="rect" href="RpcClientProcessor_8cpp.html" title=" " alt="" coords="1032,321,1305,361"/>
+<area shape="poly" title=" " alt="" coords="1177,272,1173,321,1168,320,1171,271"/>
+<area shape="poly" title=" " alt="" coords="1446,271,1357,424,1352,421,1442,269"/>
+<area shape="poly" title=" " alt="" coords="1494,266,1542,311,1539,315,1490,269"/>
+</map>
+</div>
+</div>
+<p><a href="PlatformManager_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManagerDelegate.html">chip::DeviceLayer::PlatformManagerDelegate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">chip::DeviceLayer::PlatformManager</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1StackLock.html">chip::DeviceLayer::StackLock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RAII locking for <a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a> to simplify management of LockChipStack()/UnlockChipStack calls.  <a href="classchip_1_1DeviceLayer_1_1StackLock.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1StackUnlock.html">chip::DeviceLayer::StackUnlock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RAII unlocking for <a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a> to simplify management of LockChipStack()/UnlockChipStack calls.  <a href="classchip_1_1DeviceLayer_1_1StackUnlock.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1Dnssd" id="r_namespacechip_1_1Dnssd"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1Dnssd.html">chip::Dnssd</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1DeviceLayer" id="r_namespacechip_1_1DeviceLayer"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html">chip::DeviceLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1DeviceLayer_1_1Internal" id="r_namespacechip_1_1DeviceLayer_1_1Internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer_1_1Internal.html">chip::DeviceLayer::Internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a9b90588e3accea89d79094c29fc07261" id="r_a9b90588e3accea89d79094c29fc07261"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1DeviceLayer_1_1PlatformManager.html">PlatformManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#a9b90588e3accea89d79094c29fc07261">chip::DeviceLayer::PlatformMgr</a> ()</td></tr>
+<tr class="separator:a9b90588e3accea89d79094c29fc07261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f116f09a0e109f6a32f9d894bf01d42" id="r_a0f116f09a0e109f6a32f9d894bf01d42"><td class="memItemLeft" align="right" valign="top">PlatformManagerImpl &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#a0f116f09a0e109f6a32f9d894bf01d42">chip::DeviceLayer::PlatformMgrImpl</a> ()</td></tr>
+<tr class="separator:a0f116f09a0e109f6a32f9d894bf01d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a0a6748d33a1f102e35573a2560097ab5" id="r_a0a6748d33a1f102e35573a2560097ab5"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#a0a6748d33a1f102e35573a2560097ab5">chip::DeviceLayer::kMaxCalendarTypes</a> = 12</td></tr>
+<tr class="separator:a0a6748d33a1f102e35573a2560097ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Defines the public interface for the <a class="el" href="classDevice.html">Device</a> Layer PlatformManager object. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

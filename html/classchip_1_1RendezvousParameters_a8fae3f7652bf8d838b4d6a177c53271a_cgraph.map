@@ -1,0 +1,10 @@
+<map id="chip::RendezvousParameters::SetIdleInterval" name="chip::RendezvousParameters::SetIdleInterval">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,49,216,89"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Optional.html#a3b10bfc8cf7c11d50b832dbf0faa4367" title="Constructs the contained value in&#45;place" alt="" coords="264,5,440,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,46,277,31,278,36,207,51"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="488,81,669,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,72,474,86,474,91,216,77"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="274,107,430,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,86,278,101,277,106,206,91"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="430,108,474,103,475,108,431,113"/>
+</map>

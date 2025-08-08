@@ -1,0 +1,22 @@
+<map id="chip::examples::InitCommissionableDataProvider" name="chip::examples::InitCommissionableDataProvider">
+<area shape="rect" id="Node000001" title="Initialize a LinuxCommissionableDataProvider from Linux common command&#45;line options,..." alt="" coords="5,199,264,239"/>
+<area shape="rect" id="Node000002" href="$classLinuxCommissionableDataProvider.html#a3008625eeb7d169fa9fc74397227a7ef" title="Initialize the commissionable Data provider for Linux samples" alt="" coords="312,199,563,239"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,217,298,217,298,222,264,222"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Span.html#a1d71c61752a48b7c6a5ff2612cc18097" title=" " alt="" coords="652,5,779,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="450,197,476,163,513,121,558,77,609,41,637,29,640,34,612,46,561,82,517,124,481,166,455,200"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Crypto_1_1Spake2pVerifier.html#adf56bdeacb33433cb87f30f6d41b6311" title=" " alt="" coords="611,55,820,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="463,197,528,151,609,105,626,98,629,103,612,110,531,156,466,201"/>
+<area shape="rect" id="Node000005" href="$classchip_1_1ChipError.html#a3a06d58e69520364afdacd7caf9eed61" title=" " alt="" coords="630,120,801,145"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="490,197,610,155,644,146,645,151,611,161,491,202"/>
+<area shape="rect" id="Node000006" href="$classchip_1_1Crypto_1_1Spake2pVerifier.html#afc56f5a658c66aca84cb78a76e90fc9a" title="Generate the Spake2+ verifier." alt="" coords="611,170,820,210"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="563,203,597,200,597,205,563,209"/>
+<area shape="rect" id="Node000007" href="$classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="868,317,1049,343"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="563,226,689,242,821,270,874,288,921,309,919,314,872,293,819,275,688,247,563,231"/>
+<area shape="rect" id="Node000008" href="$classchip_1_1Crypto_1_1Spake2pVerifier.html#a25c8a62cd0a49fe81567394373e25f6e" title=" " alt="" coords="611,285,820,325"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="504,237,637,278,635,283,502,242"/>
+<area shape="rect" id="Node000009" href="$classchip_1_1Optional.html#a02d5932f37467d13f8bef21a41b1f391" title=" " alt="" coords="627,349,804,375"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="464,237,528,286,569,312,612,334,634,343,633,348,610,339,566,317,525,290,460,242"/>
+<area shape="rect" id="Node000010" href="$classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="637,399,793,424"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="456,238,519,310,563,350,612,384,629,392,627,397,609,388,559,354,515,314,452,242"/>
+<area shape="poly" id="edge10_Node000010_Node000007" title=" " alt="" coords="774,396,819,383,916,346,918,351,821,389,776,401"/>
+</map>

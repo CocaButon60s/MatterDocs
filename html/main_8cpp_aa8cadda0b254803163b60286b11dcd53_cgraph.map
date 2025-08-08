@@ -1,0 +1,19 @@
+<map id="AddDeviceEndpoint" name="AddDeviceEndpoint">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,169,155,195"/>
+<area shape="rect" id="Node000002" href="$attribute-storage_8h.html#a1f86c8d1c32f0695fefd9a190e91ac9d" title=" " alt="" coords="203,5,417,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,168,129,107,162,71,201,41,217,33,219,38,204,46,166,75,133,110,91,171"/>
+<area shape="rect" id="Node000003" href="$attribute-storage_8h.html#abb4b4421de39aafca98d58f17c39e098" title=" " alt="" coords="203,55,417,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="98,167,143,136,202,105,219,98,221,102,204,110,146,141,100,171"/>
+<area shape="rect" id="Node000004" href="$classDevice.html#a98a2c4c280383bfd3dbcc676a1867cf7" title=" " alt="" coords="213,120,407,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="139,167,236,146,237,151,140,172"/>
+<area shape="rect" id="Node000006" href="$classDevice.html#a8f11cf52d0929e177fe97aa1f2c281bc" title=" " alt="" coords="241,169,379,195"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="155,179,227,179,227,185,155,185"/>
+<area shape="rect" id="Node000007" href="$classDevice.html#a07cc81a6eec5a65be617602c5e246753" title=" " alt="" coords="232,219,388,244"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="140,192,237,213,236,218,139,197"/>
+<area shape="rect" id="Node000008" href="$classDevice.html#a8cf116830d3dfda53a61a8a241d550d8" title=" " alt="" coords="227,268,393,293"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="100,193,146,223,204,253,229,262,228,267,202,258,143,227,97,197"/>
+<area shape="rect" id="Node000009" href="$classDevice.html#ae1c9045ae3f75ef445bd45d44968d052" title=" " alt="" coords="207,317,413,343"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="92,193,136,247,168,277,204,302,221,310,218,315,201,307,164,281,132,250,88,196"/>
+<area shape="rect" id="Node000005" href="$namespacechip_1_1Crypto.html#ae695d88ede2aae482fbdbb022828c29d" title=" " alt="" coords="465,120,648,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="407,130,452,130,452,135,407,135"/>
+</map>

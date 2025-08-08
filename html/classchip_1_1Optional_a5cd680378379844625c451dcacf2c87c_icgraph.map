@@ -1,0 +1,75 @@
+<map id="chip::Optional::HasValue" name="chip::Optional::HasValue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1227,751,1408,776"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a2d7b708ccf05d22915817568d3b44894" title=" " alt="" coords="641,29,884,84"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1310,737,1294,625,1265,467,1246,387,1225,314,1202,253,1177,212,1147,182,1113,157,1076,135,1038,117,958,90,884,73,885,67,960,84,1040,112,1079,130,1116,152,1150,178,1181,208,1207,251,1230,312,1252,386,1270,466,1299,624,1315,736"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a4d8fa2e7812d69df2ac9620f9e7e81a2" title=" " alt="" coords="641,132,884,187"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="1314,737,1311,651,1305,593,1294,529,1277,463,1253,398,1220,337,1177,284,1146,257,1112,234,1075,216,1036,200,958,179,884,167,885,162,959,174,1038,195,1077,211,1114,230,1149,253,1181,280,1224,334,1257,396,1282,461,1299,528,1310,592,1316,650,1319,737"/>
+<area shape="rect" id="Node000004" href="$classLinuxCommissionableDataProvider.html#a2e223847f3c35b55a442342670862515" title="Obtain the default setup passcode for the device if supported" alt="" coords="637,211,888,251"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="1312,737,1305,662,1285,560,1267,505,1244,451,1214,400,1177,356,1146,330,1112,308,1038,274,961,253,888,240,889,235,962,247,1040,269,1115,303,1149,326,1181,352,1218,397,1249,448,1272,503,1290,559,1310,661,1318,737"/>
+<area shape="rect" id="Node000005" href="$namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a9bc817214cd3507f4180a034760f0619" title=" " alt="" coords="936,1104,1179,1159"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="1312,790,1296,844,1270,915,1231,992,1208,1029,1181,1063,1153,1087,1123,1106,1120,1102,1150,1083,1177,1059,1203,1026,1227,989,1265,913,1291,842,1307,788"/>
+<area shape="rect" id="Node000006" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a40c81795ed59dad860acec7bbc2652c9" title="Callback that will be called to handle an InstantAction command." alt="" coords="355,1047,565,1117"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="1313,790,1299,842,1274,907,1256,940,1235,972,1210,1001,1180,1026,1146,1038,1089,1048,924,1064,733,1075,566,1082,565,1076,733,1070,923,1059,1088,1043,1145,1033,1177,1021,1206,997,1230,969,1251,938,1269,905,1294,840,1308,789"/>
+<area shape="rect" id="Node000007" href="$classchip_1_1RendezvousParameters.html#adeacc5eecd17452bb68c9cd7c335046a" title=" " alt="" coords="952,1183,1163,1223"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="1318,790,1311,865,1291,968,1273,1024,1250,1078,1219,1129,1180,1173,1164,1185,1161,1181,1177,1169,1215,1126,1245,1076,1268,1022,1286,967,1306,864,1313,789"/>
+<area shape="rect" id="Node000008" href="$classLinuxCommissionableDataProvider.html#a3008625eeb7d169fa9fc74397227a7ef" title="Initialize the commissionable Data provider for Linux samples" alt="" coords="637,419,888,459"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="1303,739,1284,700,1257,652,1221,604,1177,563,1109,522,1034,491,958,470,888,455,889,450,960,464,1036,486,1111,517,1180,559,1225,601,1261,649,1289,697,1308,737"/>
+<area shape="rect" id="Node000012" href="$structchip_1_1Crypto_1_1AttestationCertVidPid.html#af4c0ee0b8920eb4f1507fe81a2ce4931" title=" " alt="" coords="967,1247,1147,1287"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="1319,790,1316,876,1310,933,1299,996,1282,1061,1257,1125,1224,1185,1180,1237,1149,1257,1146,1253,1177,1233,1219,1182,1252,1123,1277,1059,1294,995,1305,932,1311,875,1314,790"/>
+<area shape="rect" id="Node000013" href="$namespaceanonymous__namespace_02AppMain_8cpp_03.html#a6d7b58a5856b38af87b2c1355f748baf" title=" " alt="" coords="657,276,868,331"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="1310,738,1299,674,1276,590,1259,546,1237,502,1209,462,1177,427,1143,400,1106,378,1066,359,1025,344,943,323,868,312,869,306,944,318,1027,339,1068,354,1108,373,1146,396,1180,423,1214,459,1241,500,1263,544,1281,589,1305,673,1316,737"/>
+<area shape="rect" id="Node000015" href="$classchip_1_1app_1_1AttributeAccessInterface.html#a09843999b983d05e07a0be1e672a3af9" title=" " alt="" coords="667,355,858,395"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="1307,738,1292,687,1267,621,1228,554,1205,523,1177,496,1141,470,1102,448,1018,415,933,394,858,383,858,378,934,389,1019,410,1104,443,1144,465,1180,492,1208,519,1233,551,1271,619,1297,685,1313,736"/>
+<area shape="rect" id="Node000016" href="$classchip_1_1app_1_1AttributeAccessInterface.html#aa465d39295b8fb8e06f34dcb93d2f74d" title=" " alt="" coords="667,598,858,638"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="1280,746,1232,723,1178,702,1095,678,1010,659,858,632,859,627,1011,653,1096,673,1180,697,1234,718,1282,742"/>
+<area shape="rect" id="Node000017" href="$classchip_1_1app_1_1AttributeAccessInterface.html#adc37488d8b7dfdf0e04319e9fc5fda83" title=" " alt="" coords="663,662,863,702"/>
+<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="1248,750,1178,737,1012,712,862,695,863,689,1012,707,1179,731,1249,745"/>
+<area shape="rect" id="Node000018" href="$classchip_1_1Optional.html#aefeeeb9f4b6334b2de947a1f909c7496" title=" " alt="" coords="664,727,861,752"/>
+<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="1212,761,862,746,862,741,1212,756"/>
+<area shape="rect" id="Node000019" href="$classchip_1_1Optional.html#a5b4ccede0e294879f50eefc2d34efa63" title=" " alt="" coords="675,776,850,801"/>
+<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="1212,771,850,787,850,782,1212,765"/>
+<area shape="rect" id="Node000020" href="$classchip_1_1RendezvousParameters.html#a5553db1b157f34ccea27ba1d5ce4055e" title=" " alt="" coords="657,826,868,866"/>
+<area shape="poly" id="edge23_Node000001_Node000020" title=" " alt="" coords="1228,781,1179,789,868,834,868,829,1178,783,1227,776"/>
+<area shape="rect" id="Node000021" href="$classchip_1_1RendezvousParameters.html#a8fae3f7652bf8d838b4d6a177c53271a" title=" " alt="" coords="657,890,868,930"/>
+<area shape="poly" id="edge24_Node000001_Node000021" title=" " alt="" coords="1282,785,1234,808,1180,830,1099,853,1017,872,868,899,868,894,1016,867,1098,848,1178,825,1232,803,1280,780"/>
+<area shape="rect" id="Node000022" href="$classchip_1_1Optional.html#a10fbed1c631f6736764e6e9dbbc25953" title=" " alt="" coords="693,954,833,994"/>
+<area shape="poly" id="edge25_Node000001_Node000022" title=" " alt="" coords="1300,788,1250,842,1217,869,1180,892,1136,912,1090,929,996,953,907,967,833,974,832,969,907,962,995,947,1088,924,1134,907,1177,888,1213,865,1246,838,1296,785"/>
+<area shape="rect" id="Node000023" href="$classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="979,573,1135,599"/>
+<area shape="poly" id="edge26_Node000001_Node000023" title=" " alt="" coords="1298,741,1249,680,1215,648,1177,620,1131,601,1133,596,1180,616,1218,644,1253,677,1302,738"/>
+<area shape="rect" id="Node000025" href="$classchip_1_1Optional.html#a4f92baa58b0f970e9301960c2ceaaa4e" title=" " alt="" coords="677,1019,848,1044"/>
+<area shape="poly" id="edge46_Node000001_Node000025" title=" " alt="" coords="1309,790,1291,831,1264,880,1227,928,1205,950,1180,968,1154,980,1120,991,1033,1008,937,1021,849,1029,848,1023,936,1015,1032,1003,1119,986,1152,976,1177,964,1201,946,1223,925,1259,877,1286,828,1304,788"/>
+<area shape="rect" id="Node000027" href="$classchip_1_1Optional.html#a1bb981d66c9f7063707396f4d2646a7a" title=" " alt="" coords="979,1312,1135,1337"/>
+<area shape="poly" id="edge45_Node000001_Node000027" title=" " alt="" coords="1316,790,1300,901,1272,1055,1254,1133,1232,1204,1208,1262,1181,1301,1160,1315,1137,1324,1135,1319,1158,1311,1177,1297,1203,1259,1227,1202,1249,1131,1267,1054,1295,900,1310,790"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="812,19,794,11,763,8,736,10,719,15,711,21,711,29,706,29,706,19,717,10,735,5,763,3,796,6,814,14"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="812,121,794,114,763,111,736,113,719,118,711,124,711,132,706,132,706,122,717,113,735,107,763,105,796,108,814,116"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="1101,1093,1085,1086,1057,1083,1034,1085,1019,1089,1012,1096,1012,1104,1007,1104,1007,1094,1016,1085,1033,1079,1057,1077,1086,1080,1103,1088"/>
+<area shape="rect" id="Node000009" href="$namespacechip_1_1examples.html#a63149b00322319c60a17f0450b9e6af5" title="Initialize a LinuxCommissionableDataProvider from Linux common command&#45;line options,..." alt="" coords="331,419,589,459"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="624,442,590,442,590,437,624,437"/>
+<area shape="rect" id="Node000010" href="$AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="129,427,261,452"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="317,442,262,442,262,437,317,437"/>
+<area shape="rect" id="Node000011" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,403,60,428"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="115,430,60,422,61,417,116,425"/>
+<area shape="rect" id="Node000014" href="$AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,355,283,380"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="644,319,283,360,282,355,643,314"/>
+<area shape="poly" id="edge17_Node000014_Node000011" title=" " alt="" coords="139,387,61,410,59,405,138,381"/>
+<area shape="poly" id="edge28_Node000023_Node000002" title=" " alt="" coords="1052,560,1044,472,1034,413,1019,348,997,280,969,214,932,152,886,97,873,86,876,82,890,93,937,149,974,211,1002,278,1024,346,1039,412,1049,471,1058,559"/>
+<area shape="poly" id="edge29_Node000023_Node000003" title=" " alt="" coords="1050,560,1035,489,1005,393,984,341,957,290,925,243,886,201,869,189,873,185,890,197,929,240,962,287,989,339,1010,391,1040,488,1055,559"/>
+<area shape="poly" id="edge30_Node000023_Node000004" title=" " alt="" coords="1048,561,1030,500,998,419,977,377,951,336,921,298,886,265,868,254,871,249,890,261,925,295,956,333,982,375,1003,417,1035,498,1053,559"/>
+<area shape="poly" id="edge32_Node000023_Node000008" title=" " alt="" coords="1023,568,934,508,911,489,887,474,856,462,858,457,889,469,914,485,938,504,1026,564"/>
+<area shape="poly" id="edge27_Node000023_Node000010" title=" " alt="" coords="965,580,811,563,637,538,483,509,330,474,248,455,249,450,331,469,484,504,638,533,812,557,966,575"/>
+<area shape="poly" id="edge33_Node000023_Node000013" title=" " alt="" coords="1043,562,1020,515,986,457,941,397,915,370,886,345,866,333,869,328,890,341,919,366,945,394,990,454,1025,513,1048,559"/>
+<area shape="poly" id="edge34_Node000023_Node000015" title=" " alt="" coords="1038,564,1013,529,978,487,935,445,887,410,857,396,859,391,889,405,939,441,982,484,1017,526,1043,561"/>
+<area shape="poly" id="edge35_Node000023_Node000016" title=" " alt="" coords="966,599,859,610,858,605,966,593"/>
+<area shape="poly" id="edge36_Node000023_Node000017" title=" " alt="" coords="1014,606,889,653,848,664,846,659,887,647,1012,601"/>
+<area shape="poly" id="edge37_Node000023_Node000018" title=" " alt="" coords="1035,611,973,664,932,693,889,716,852,729,851,724,887,712,930,688,970,660,1032,607"/>
+<area shape="poly" id="edge38_Node000023_Node000019" title=" " alt="" coords="1043,612,1017,647,982,689,939,731,889,766,851,781,850,776,887,761,936,727,978,685,1013,643,1038,608"/>
+<area shape="poly" id="edge39_Node000023_Node000020" title=" " alt="" coords="1047,613,1023,657,989,711,944,767,918,793,889,815,865,828,862,823,887,810,914,789,940,764,985,708,1019,654,1042,610"/>
+<area shape="poly" id="edge40_Node000023_Node000021" title=" " alt="" coords="1051,613,1032,669,999,741,977,779,952,816,923,850,890,880,870,892,867,888,886,876,919,847,948,813,973,776,994,739,1027,667,1046,611"/>
+<area shape="poly" id="edge41_Node000023_Node000022" title=" " alt="" coords="1054,613,1038,680,1008,769,986,817,960,864,928,907,890,944,863,960,834,970,832,965,861,955,886,940,923,903,955,861,981,815,1003,767,1033,678,1049,611"/>
+<area shape="rect" id="Node000024" href="$namespaceanonymous__namespace_02Options_8cpp_03.html#a522139bbb37aefbe7b4e7a8b047c6bc6" title=" " alt="" coords="655,483,871,523"/>
+<area shape="poly" id="edge31_Node000023_Node000024" title=" " alt="" coords="997,572,834,526,836,521,998,567"/>
+<area shape="poly" id="edge42_Node000023_Node000025" title=" " alt="" coords="1056,613,1045,691,1034,743,1018,799,996,856,968,912,933,964,890,1008,871,1020,849,1028,848,1023,868,1015,886,1004,929,960,964,909,991,854,1013,797,1029,741,1040,690,1051,612"/>
+<area shape="poly" id="edge44_Node000025_Node000006" title=" " alt="" coords="673,1049,566,1067,565,1062,672,1044"/>
+<area shape="rect" id="Node000026" href="$classchip_1_1RendezvousParameters.html#a809aedf018477320bccf374e7e9fafab" title=" " alt="" coords="355,983,565,1023"/>
+<area shape="poly" id="edge43_Node000025_Node000026" title=" " alt="" coords="663,1025,565,1016,566,1010,664,1020"/>
+</map>

@@ -1,0 +1,951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::Access::AccessRestrictionProvider クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1Access.html">Access</a></li><li class="navelem"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">AccessRestrictionProvider</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classchip_1_1Access_1_1AccessRestrictionProvider-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::Access::AccessRestrictionProvider クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="AccessRestrictionProvider_8h_source.html">AccessRestrictionProvider.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::Access::AccessRestrictionProvider の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Access_1_1AccessRestrictionProvider__inherit__graph.png" border="0" usemap="#achip_1_1Access_1_1AccessRestrictionProvider_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1Access_1_1AccessRestrictionProvider_inherit__map" id="achip_1_1Access_1_1AccessRestrictionProvider_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,5,231,45"/>
+<area shape="rect" href="classchip_1_1Access_1_1ExampleAccessRestrictionProvider.html" title=" " alt="" coords="12,93,224,133"/>
+<area shape="poly" title=" " alt="" coords="121,59,121,93,115,93,115,59"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::Access::AccessRestrictionProvider 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Access_1_1AccessRestrictionProvider__coll__graph.png" border="0" usemap="#achip_1_1Access_1_1AccessRestrictionProvider_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1Access_1_1AccessRestrictionProvider_coll__map" id="achip_1_1Access_1_1AccessRestrictionProvider_coll__map">
+<area shape="rect" title=" " alt="" coords="756,80,981,120"/>
+<area shape="rect" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1Listener.html" title=" " alt="" coords="333,44,559,84"/>
+<area shape="poly" title=" " alt="" coords="572,72,756,88,756,93,572,77"/>
+<area shape="poly" title=" " alt="" coords="418,28,428,20,446,17,462,19,472,25,477,34,475,44,470,43,472,35,469,29,460,25,446,23,430,25,421,32"/>
+<area shape="rect" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1StandardAccessRestrictionExceptionChecker.html" title=" " alt="" coords="317,109,575,163"/>
+<area shape="poly" title=" " alt="" coords="588,121,756,107,756,112,589,127"/>
+<area shape="rect" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1AccessRestrictionExceptionChecker.html" title=" " alt="" coords="5,109,268,163"/>
+<area shape="poly" title=" " alt="" coords="282,133,317,133,317,139,282,139"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1AccessRestrictionExceptionChecker.html">AccessRestrictionExceptionChecker</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1Listener.html">Listener</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Restriction.html">Restriction</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1StandardAccessRestrictionExceptionChecker.html">StandardAccessRestrictionExceptionChecker</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a2a155501ffd0f22f2379008fef9cc9f7" id="r_a2a155501ffd0f22f2379008fef9cc9f7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2a155501ffd0f22f2379008fef9cc9f7">Type</a> : uint8_t { <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2a155501ffd0f22f2379008fef9cc9f7ae1cf92c39e7085818450fdc40f69cf20">kAttributeAccessForbidden</a> = 0
+, <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2a155501ffd0f22f2379008fef9cc9f7a692bacdfb359100d444eb77f54492cd2">kAttributeWriteForbidden</a> = 1
+, <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2a155501ffd0f22f2379008fef9cc9f7afaefaab2ab2106810b30b31ad2172706">kCommandForbidden</a> = 2
+, <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2a155501ffd0f22f2379008fef9cc9f7afcc6a2f36b3015b9eaf2f72cf8bbaee4">kEventForbidden</a> = 3
+ }</td></tr>
+<tr class="separator:a2a155501ffd0f22f2379008fef9cc9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a087adcad07ba32d25cae473afc11d226" id="r_a087adcad07ba32d25cae473afc11d226"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a087adcad07ba32d25cae473afc11d226">AccessRestrictionProvider</a> ()=default</td></tr>
+<tr class="separator:a087adcad07ba32d25cae473afc11d226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0710c103cf928ea168a09f1a780182" id="r_a3e0710c103cf928ea168a09f1a780182"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a3e0710c103cf928ea168a09f1a780182">~AccessRestrictionProvider</a> ()=default</td></tr>
+<tr class="separator:a3e0710c103cf928ea168a09f1a780182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed4f4375f88925dd06326af7b79d6fc" id="r_a9ed4f4375f88925dd06326af7b79d6fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a9ed4f4375f88925dd06326af7b79d6fc">AccessRestrictionProvider</a> (const <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">AccessRestrictionProvider</a> &amp;)=delete</td></tr>
+<tr class="separator:a9ed4f4375f88925dd06326af7b79d6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d25dc5769f46a9003564d6a7ea478d9" id="r_a1d25dc5769f46a9003564d6a7ea478d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">AccessRestrictionProvider</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a1d25dc5769f46a9003564d6a7ea478d9">operator=</a> (const <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">AccessRestrictionProvider</a> &amp;)=delete</td></tr>
+<tr class="separator:a1d25dc5769f46a9003564d6a7ea478d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5346f080869d2f7e3381fa2615c742e" id="r_ac5346f080869d2f7e3381fa2615c742e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#ac5346f080869d2f7e3381fa2615c742e">SetCommissioningEntries</a> (const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;entries)</td></tr>
+<tr class="separator:ac5346f080869d2f7e3381fa2615c742e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad1eb3fa3d0424fe9e27ecefc65eebe" id="r_a9ad1eb3fa3d0424fe9e27ecefc65eebe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a9ad1eb3fa3d0424fe9e27ecefc65eebe">SetEntries</a> (const <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>, const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;entries)</td></tr>
+<tr class="separator:a9ad1eb3fa3d0424fe9e27ecefc65eebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae932ff87e6ef11730020658171a2c723" id="r_ae932ff87e6ef11730020658171a2c723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#ae932ff87e6ef11730020658171a2c723">AddListener</a> (<a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1Listener.html">Listener</a> &amp;listener)</td></tr>
+<tr class="separator:ae932ff87e6ef11730020658171a2c723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad793787e19e1b272023aececa7f203f1" id="r_ad793787e19e1b272023aececa7f203f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#ad793787e19e1b272023aececa7f203f1">RemoveListener</a> (<a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1Listener.html">Listener</a> &amp;listener)</td></tr>
+<tr class="separator:ad793787e19e1b272023aececa7f203f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3a7a51dca9a59e2170de77341d8631" id="r_aaa3a7a51dca9a59e2170de77341d8631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#aaa3a7a51dca9a59e2170de77341d8631">CheckForCommissioning</a> (const SubjectDescriptor &amp;subjectDescriptor, const RequestPath &amp;requestPath)</td></tr>
+<tr class="separator:aaa3a7a51dca9a59e2170de77341d8631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae367a3233b715bafd18eb4b72ce8d4f0" id="r_ae367a3233b715bafd18eb4b72ce8d4f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#ae367a3233b715bafd18eb4b72ce8d4f0">Check</a> (const SubjectDescriptor &amp;subjectDescriptor, const RequestPath &amp;requestPath)</td></tr>
+<tr class="separator:ae367a3233b715bafd18eb4b72ce8d4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a25bb1dabeef693db22d312a736d9c8" id="r_a7a25bb1dabeef693db22d312a736d9c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a7a25bb1dabeef693db22d312a736d9c8">RequestFabricRestrictionReview</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> fabricIndex, const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;arl, uint64_t &amp;token)</td></tr>
+<tr class="separator:a7a25bb1dabeef693db22d312a736d9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d31bc96f7df50a1dd65680f96b9edcf" id="r_a8d31bc96f7df50a1dd65680f96b9edcf"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a8d31bc96f7df50a1dd65680f96b9edcf">GetCommissioningEntries</a> () const</td></tr>
+<tr class="separator:a8d31bc96f7df50a1dd65680f96b9edcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9163d2baed916c1953f7b887edad27" id="r_a2f9163d2baed916c1953f7b887edad27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2f9163d2baed916c1953f7b887edad27">GetEntries</a> (const <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> fabricIndex, std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;entries) const</td></tr>
+<tr class="separator:a2f9163d2baed916c1953f7b887edad27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a403d6cb7256ff2fb2461346471e33e7c" id="r_a403d6cb7256ff2fb2461346471e33e7c"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a403d6cb7256ff2fb2461346471e33e7c">kNumberOfFabrics</a> = <a class="el" href="CHIPConfig_8h.html#aa4ce0e44e78ed2dd3f279714c194279d">CHIP_CONFIG_MAX_FABRICS</a></td></tr>
+<tr class="separator:a403d6cb7256ff2fb2461346471e33e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fd3f5b0b2043ed92e113757f92c7a8" id="r_a06fd3f5b0b2043ed92e113757f92c7a8"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a06fd3f5b0b2043ed92e113757f92c7a8">kEntriesPerFabric</a> = <a class="el" href="CHIPConfig_8h.html#a14cdbfdc4282bd7f49296752afd4317a">CHIP_CONFIG_ACCESS_RESTRICTION_MAX_ENTRIES_PER_FABRIC</a></td></tr>
+<tr class="separator:a06fd3f5b0b2043ed92e113757f92c7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad954066ba176977f88c44dcfdc13692d" id="r_ad954066ba176977f88c44dcfdc13692d"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#ad954066ba176977f88c44dcfdc13692d">kRestrictionsPerEntry</a> = <a class="el" href="CHIPConfig_8h.html#a15fa4ee4a481fb06e2e51293c2856c4b">CHIP_CONFIG_ACCESS_RESTRICTION_MAX_RESTRICTIONS_PER_ENTRY</a></td></tr>
+<tr class="separator:ad954066ba176977f88c44dcfdc13692d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a20935952ad311cdd8d15a02029ec97dd" id="r_a20935952ad311cdd8d15a02029ec97dd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a20935952ad311cdd8d15a02029ec97dd">DoRequestFabricRestrictionReview</a> (const <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> fabricIndex, uint64_t token, const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;arl)=0</td></tr>
+<tr class="separator:a20935952ad311cdd8d15a02029ec97dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0910537dd2f8fc3b7d39be8bbbdaed57" id="r_a0910537dd2f8fc3b7d39be8bbbdaed57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a0910537dd2f8fc3b7d39be8bbbdaed57">DoCheck</a> (const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;entries, const SubjectDescriptor &amp;subjectDescriptor, const RequestPath &amp;requestPath)</td></tr>
+<tr class="separator:a0910537dd2f8fc3b7d39be8bbbdaed57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a57e60fd2f32e6c675e0a2e7eaf64940a" id="r_a57e60fd2f32e6c675e0a2e7eaf64940a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a57e60fd2f32e6c675e0a2e7eaf64940a">mNextToken</a> = 1</td></tr>
+<tr class="separator:a57e60fd2f32e6c675e0a2e7eaf64940a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03dce91e708137fc05ddfbce4064e514" id="r_a03dce91e708137fc05ddfbce4064e514"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1Listener.html">Listener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a03dce91e708137fc05ddfbce4064e514">mListeners</a> = nullptr</td></tr>
+<tr class="separator:a03dce91e708137fc05ddfbce4064e514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ba0b09bc7491057548f48b61c9eae8" id="r_a74ba0b09bc7491057548f48b61c9eae8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1StandardAccessRestrictionExceptionChecker.html">StandardAccessRestrictionExceptionChecker</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a74ba0b09bc7491057548f48b61c9eae8">mExceptionChecker</a></td></tr>
+<tr class="separator:a74ba0b09bc7491057548f48b61c9eae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e452f4328cb0c75351884387969c3c1" id="r_a7e452f4328cb0c75351884387969c3c1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a7e452f4328cb0c75351884387969c3c1">mCommissioningEntries</a></td></tr>
+<tr class="separator:a7e452f4328cb0c75351884387969c3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5071172300790295bd1664b8cb31f9" id="r_a8a5071172300790295bd1664b8cb31f9"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>, std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a8a5071172300790295bd1664b8cb31f9">mFabricEntries</a></td></tr>
+<tr class="separator:a8a5071172300790295bd1664b8cb31f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a2a155501ffd0f22f2379008fef9cc9f7" name="a2a155501ffd0f22f2379008fef9cc9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a155501ffd0f22f2379008fef9cc9f7">&#9670;&#160;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a2a155501ffd0f22f2379008fef9cc9f7">chip::Access::AccessRestrictionProvider::Type</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Defines the type of access restriction, which is used to determine the meaning of the restriction's id. </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a2a155501ffd0f22f2379008fef9cc9f7ae1cf92c39e7085818450fdc40f69cf20" name="a2a155501ffd0f22f2379008fef9cc9f7ae1cf92c39e7085818450fdc40f69cf20"></a>kAttributeAccessForbidden&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2a155501ffd0f22f2379008fef9cc9f7a692bacdfb359100d444eb77f54492cd2" name="a2a155501ffd0f22f2379008fef9cc9f7a692bacdfb359100d444eb77f54492cd2"></a>kAttributeWriteForbidden&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2a155501ffd0f22f2379008fef9cc9f7afaefaab2ab2106810b30b31ad2172706" name="a2a155501ffd0f22f2379008fef9cc9f7afaefaab2ab2106810b30b31ad2172706"></a>kCommandForbidden&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2a155501ffd0f22f2379008fef9cc9f7afcc6a2f36b3015b9eaf2f72cf8bbaee4" name="a2a155501ffd0f22f2379008fef9cc9f7afcc6a2f36b3015b9eaf2f72cf8bbaee4"></a>kEventForbidden&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a087adcad07ba32d25cae473afc11d226" name="a087adcad07ba32d25cae473afc11d226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087adcad07ba32d25cae473afc11d226">&#9670;&#160;</a></span>AccessRestrictionProvider() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::Access::AccessRestrictionProvider::AccessRestrictionProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e0710c103cf928ea168a09f1a780182" name="a3e0710c103cf928ea168a09f1a780182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e0710c103cf928ea168a09f1a780182">&#9670;&#160;</a></span>~AccessRestrictionProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual chip::Access::AccessRestrictionProvider::~AccessRestrictionProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ed4f4375f88925dd06326af7b79d6fc" name="a9ed4f4375f88925dd06326af7b79d6fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed4f4375f88925dd06326af7b79d6fc">&#9670;&#160;</a></span>AccessRestrictionProvider() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::Access::AccessRestrictionProvider::AccessRestrictionProvider </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">AccessRestrictionProvider</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ae932ff87e6ef11730020658171a2c723" name="ae932ff87e6ef11730020658171a2c723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae932ff87e6ef11730020658171a2c723">&#9670;&#160;</a></span>AddListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Access::AccessRestrictionProvider::AddListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1Listener.html">Listener</a> &amp;&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add a listener to be notified of changes in the access restriction list and active reviews.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">listener</td><td>The listener to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae367a3233b715bafd18eb4b72ce8d4f0" name="ae367a3233b715bafd18eb4b72ce8d4f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae367a3233b715bafd18eb4b72ce8d4f0">&#9670;&#160;</a></span>Check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Access::AccessRestrictionProvider::Check </td>
+          <td>(</td>
+          <td class="paramtype">const SubjectDescriptor &amp;&#160;</td>
+          <td class="paramname"><em>subjectDescriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RequestPath &amp;&#160;</td>
+          <td class="paramname"><em>requestPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check whether access by a subject descriptor to a request path should be restricted (denied) for the given action. These restrictions are are only a part of overall access evaluation.</p>
+<p>If access is not restricted, CHIP_NO_ERROR will be returned.</p>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">CHIP_ERROR_ACCESS_DENIED</td><td>if access is denied. </td></tr>
+    <tr><td class="paramname">other</td><td>errors should also be treated as restricted/denied. </td></tr>
+    <tr><td class="paramname">CHIP_NO_ERROR</td><td>if access is not restricted/denied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa3a7a51dca9a59e2170de77341d8631" name="aaa3a7a51dca9a59e2170de77341d8631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3a7a51dca9a59e2170de77341d8631">&#9670;&#160;</a></span>CheckForCommissioning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Access::AccessRestrictionProvider::CheckForCommissioning </td>
+          <td>(</td>
+          <td class="paramtype">const SubjectDescriptor &amp;&#160;</td>
+          <td class="paramname"><em>subjectDescriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RequestPath &amp;&#160;</td>
+          <td class="paramname"><em>requestPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check whether access by a subject descriptor to a request path should be restricted (denied) for the given action during commissioning by using the CommissioningEntries.</p>
+<p>These restrictions are are only a part of overall access evaluation.</p>
+<p>If access is not restricted, CHIP_NO_ERROR will be returned.</p>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">CHIP_ERROR_ACCESS_DENIED</td><td>if access is denied. </td></tr>
+    <tr><td class="paramname">other</td><td>errors should also be treated as restricted/denied. </td></tr>
+    <tr><td class="paramname">CHIP_NO_ERROR</td><td>if access is not restricted/denied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0910537dd2f8fc3b7d39be8bbbdaed57" name="a0910537dd2f8fc3b7d39be8bbbdaed57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0910537dd2f8fc3b7d39be8bbbdaed57">&#9670;&#160;</a></span>DoCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Access::AccessRestrictionProvider::DoCheck </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>entries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SubjectDescriptor &amp;&#160;</td>
+          <td class="paramname"><em>subjectDescriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RequestPath &amp;&#160;</td>
+          <td class="paramname"><em>requestPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Perform the access restriction check using the given entries. </p>
+
+</div>
+</div>
+<a id="a20935952ad311cdd8d15a02029ec97dd" name="a20935952ad311cdd8d15a02029ec97dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20935952ad311cdd8d15a02029ec97dd">&#9670;&#160;</a></span>DoRequestFabricRestrictionReview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Access::AccessRestrictionProvider::DoRequestFabricRestrictionReview </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>fabricIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initiate a review of the access restrictions for a fabric. This method should be implemented by the platform and be non-blocking.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fabricIndex</td><td>The index of the fabric requesting a review. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>The unique token for the review, which can be matched to a review update event. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arl</td><td>An optinal list of access restriction entries to review. If null, all entries will be reviewed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>CHIP_NO_ERROR if the review was successfully requested, or an error code if the request failed. </dd></dl>
+
+<p><a class="el" href="classchip_1_1Access_1_1ExampleAccessRestrictionProvider.html#a1027ffc6e69f0eedef868cfee0c4f21e">chip::Access::ExampleAccessRestrictionProvider</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Access_1_1AccessRestrictionProvider_a20935952ad311cdd8d15a02029ec97dd_icgraph.png" border="0" usemap="#aclasschip_1_1Access_1_1AccessRestrictionProvider_a20935952ad311cdd8d15a02029ec97dd_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Access_1_1AccessRestrictionProvider_a20935952ad311cdd8d15a02029ec97dd_icgraph" id="aclasschip_1_1Access_1_1AccessRestrictionProvider_a20935952ad311cdd8d15a02029ec97dd_icgraph">
+<area shape="rect" title=" " alt="" coords="347,5,657,45"/>
+<area shape="rect" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a7a25bb1dabeef693db22d312a736d9c8" title=" " alt="" coords="5,5,299,45"/>
+<area shape="poly" title=" " alt="" coords="333,28,299,28,299,23,333,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8d31bc96f7df50a1dd65680f96b9edcf" name="a8d31bc96f7df50a1dd65680f96b9edcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d31bc96f7df50a1dd65680f96b9edcf">&#9670;&#160;</a></span>GetCommissioningEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp; chip::Access::AccessRestrictionProvider::GetCommissioningEntries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the commissioning restriction entries.</p>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">the</td><td>commissioning restriction entries. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2f9163d2baed916c1953f7b887edad27" name="a2f9163d2baed916c1953f7b887edad27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f9163d2baed916c1953f7b887edad27">&#9670;&#160;</a></span>GetEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Access::AccessRestrictionProvider::GetEntries </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>fabricIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>entries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the restriction entries for a fabric.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fabricIndex</td><td>the index of the fabric for which to get entries. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">entries</td><td>vector to hold the entries. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1d25dc5769f46a9003564d6a7ea478d9" name="a1d25dc5769f46a9003564d6a7ea478d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d25dc5769f46a9003564d6a7ea478d9">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">AccessRestrictionProvider</a> &amp; chip::Access::AccessRestrictionProvider::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider.html">AccessRestrictionProvider</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad793787e19e1b272023aececa7f203f1" name="ad793787e19e1b272023aececa7f203f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad793787e19e1b272023aececa7f203f1">&#9670;&#160;</a></span>RemoveListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Access::AccessRestrictionProvider::RemoveListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1Listener.html">Listener</a> &amp;&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove a listener from being notified of changes in the access restriction list and active reviews.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">listener</td><td>The listener to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7a25bb1dabeef693db22d312a736d9c8" name="a7a25bb1dabeef693db22d312a736d9c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a25bb1dabeef693db22d312a736d9c8">&#9670;&#160;</a></span>RequestFabricRestrictionReview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Access::AccessRestrictionProvider::RequestFabricRestrictionReview </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname"><em>fabricIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>token</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Request a review of the access restrictions for a fabric.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fabricIndex</td><td>The index of the fabric requesting a review. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arl</td><td>An optinal list of access restriction entries to review. If null, all entries will be reviewed. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">token</td><td>The unique token for the review, which can be matched to a review update event. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Access_1_1AccessRestrictionProvider_a7a25bb1dabeef693db22d312a736d9c8_cgraph.png" border="0" usemap="#aclasschip_1_1Access_1_1AccessRestrictionProvider_a7a25bb1dabeef693db22d312a736d9c8_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Access_1_1AccessRestrictionProvider_a7a25bb1dabeef693db22d312a736d9c8_cgraph" id="aclasschip_1_1Access_1_1AccessRestrictionProvider_a7a25bb1dabeef693db22d312a736d9c8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,299,45"/>
+<area shape="rect" href="classchip_1_1Access_1_1AccessRestrictionProvider.html#a20935952ad311cdd8d15a02029ec97dd" title=" " alt="" coords="347,5,657,45"/>
+<area shape="poly" title=" " alt="" coords="299,23,333,23,333,28,299,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac5346f080869d2f7e3381fa2615c742e" name="ac5346f080869d2f7e3381fa2615c742e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5346f080869d2f7e3381fa2615c742e">&#9670;&#160;</a></span>SetCommissioningEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Access::AccessRestrictionProvider::SetCommissioningEntries </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>entries</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the restriction entries that are to be used during commissioning when there is no accessing fabric.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">entries</td><td>The entries to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9ad1eb3fa3d0424fe9e27ecefc65eebe" name="a9ad1eb3fa3d0424fe9e27ecefc65eebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad1eb3fa3d0424fe9e27ecefc65eebe">&#9670;&#160;</a></span>SetEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Access::AccessRestrictionProvider::SetEntries </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>entries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the restriction entries for a fabric.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fabricIndex</td><td>The index of the fabric for which to create entries. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">entries</td><td>The entries to set for the fabric. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a06fd3f5b0b2043ed92e113757f92c7a8" name="a06fd3f5b0b2043ed92e113757f92c7a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fd3f5b0b2043ed92e113757f92c7a8">&#9670;&#160;</a></span>kEntriesPerFabric</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::Access::AccessRestrictionProvider::kEntriesPerFabric = <a class="el" href="CHIPConfig_8h.html#a14cdbfdc4282bd7f49296752afd4317a">CHIP_CONFIG_ACCESS_RESTRICTION_MAX_ENTRIES_PER_FABRIC</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a403d6cb7256ff2fb2461346471e33e7c" name="a403d6cb7256ff2fb2461346471e33e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a403d6cb7256ff2fb2461346471e33e7c">&#9670;&#160;</a></span>kNumberOfFabrics</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::Access::AccessRestrictionProvider::kNumberOfFabrics = <a class="el" href="CHIPConfig_8h.html#aa4ce0e44e78ed2dd3f279714c194279d">CHIP_CONFIG_MAX_FABRICS</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad954066ba176977f88c44dcfdc13692d" name="ad954066ba176977f88c44dcfdc13692d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad954066ba176977f88c44dcfdc13692d">&#9670;&#160;</a></span>kRestrictionsPerEntry</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t chip::Access::AccessRestrictionProvider::kRestrictionsPerEntry = <a class="el" href="CHIPConfig_8h.html#a15fa4ee4a481fb06e2e51293c2856c4b">CHIP_CONFIG_ACCESS_RESTRICTION_MAX_RESTRICTIONS_PER_ENTRY</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e452f4328cb0c75351884387969c3c1" name="a7e452f4328cb0c75351884387969c3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e452f4328cb0c75351884387969c3c1">&#9670;&#160;</a></span>mCommissioningEntries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a>&gt; chip::Access::AccessRestrictionProvider::mCommissioningEntries</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74ba0b09bc7491057548f48b61c9eae8" name="a74ba0b09bc7491057548f48b61c9eae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ba0b09bc7491057548f48b61c9eae8">&#9670;&#160;</a></span>mExceptionChecker</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1StandardAccessRestrictionExceptionChecker.html">StandardAccessRestrictionExceptionChecker</a> chip::Access::AccessRestrictionProvider::mExceptionChecker</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a5071172300790295bd1664b8cb31f9" name="a8a5071172300790295bd1664b8cb31f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a5071172300790295bd1664b8cb31f9">&#9670;&#160;</a></span>mFabricEntries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>, std::vector&lt;<a class="el" href="structchip_1_1Access_1_1AccessRestrictionProvider_1_1Entry.html">Entry</a>&gt; &gt; chip::Access::AccessRestrictionProvider::mFabricEntries</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03dce91e708137fc05ddfbce4064e514" name="a03dce91e708137fc05ddfbce4064e514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03dce91e708137fc05ddfbce4064e514">&#9670;&#160;</a></span>mListeners</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Access_1_1AccessRestrictionProvider_1_1Listener.html">Listener</a>* chip::Access::AccessRestrictionProvider::mListeners = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57e60fd2f32e6c675e0a2e7eaf64940a" name="a57e60fd2f32e6c675e0a2e7eaf64940a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e60fd2f32e6c675e0a2e7eaf64940a">&#9670;&#160;</a></span>mNextToken</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t chip::Access::AccessRestrictionProvider::mNextToken = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/access/<a class="el" href="AccessRestrictionProvider_8h_source.html">AccessRestrictionProvider.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

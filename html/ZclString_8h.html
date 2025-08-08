@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/support/ZclString.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_1d1f3af32c41ad09e7d154e58874adc8.html">support</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">ZclString.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="Span_8h_source.html">lib/support/Span.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+ZclString.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="ZclString_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2lib_2support_2ZclString_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2lib_2support_2ZclString_8h" id="aconnectedhomeip_2src_2lib_2support_2ZclString_8h">
+<area shape="rect" title=" " alt="" coords="266,5,435,45"/>
+<area shape="rect" href="Span_8h.html" title=" " alt="" coords="281,93,420,119"/>
+<area shape="poly" title=" " alt="" coords="353,46,353,79,348,79,348,46"/>
+<area shape="rect" title=" " alt="" coords="5,167,61,192"/>
+<area shape="poly" title=" " alt="" coords="293,121,75,169,74,164,291,116"/>
+<area shape="rect" title=" " alt="" coords="86,167,157,192"/>
+<area shape="poly" title=" " alt="" coords="315,121,171,165,169,160,313,116"/>
+<area shape="rect" title=" " alt="" coords="181,167,248,192"/>
+<area shape="poly" title=" " alt="" coords="330,121,250,163,248,158,328,116"/>
+<area shape="rect" title=" " alt="" coords="273,167,338,192"/>
+<area shape="poly" title=" " alt="" coords="345,120,322,157,318,154,341,118"/>
+<area shape="rect" title=" " alt="" coords="363,167,429,192"/>
+<area shape="poly" title=" " alt="" coords="360,118,384,154,379,157,356,120"/>
+<area shape="rect" title=" " alt="" coords="421,328,513,353"/>
+<area shape="poly" title=" " alt="" coords="381,116,415,136,430,149,444,165,461,203,470,244,472,282,472,314,466,314,467,282,464,244,456,205,439,168,427,153,411,140,379,121"/>
+<area shape="rect" title=" " alt="" coords="504,167,661,192"/>
+<area shape="poly" title=" " alt="" coords="389,116,533,160,531,165,387,121"/>
+<area shape="rect" href="CodeUtils_8h.html" title=" " alt="" coords="944,167,1115,192"/>
+<area shape="poly" title=" " alt="" coords="420,112,930,165,930,170,420,117"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="1191,328,1350,353"/>
+<area shape="poly" title=" " alt="" coords="1115,183,1352,202,1456,218,1491,227,1511,238,1523,258,1521,277,1509,292,1488,304,1430,322,1364,334,1363,328,1429,317,1486,299,1505,288,1516,275,1518,260,1507,242,1489,232,1455,223,1351,207,1115,188"/>
+<area shape="rect" href="CHIPError_8h.html" title=" " alt="" coords="504,247,651,273"/>
+<area shape="poly" title=" " alt="" coords="952,195,663,243,641,247,640,242,662,237,951,189"/>
+<area shape="rect" title=" " alt="" coords="675,247,810,273"/>
+<area shape="poly" title=" " alt="" coords="988,195,798,246,797,241,987,189"/>
+<area shape="rect" title=" " alt="" coords="834,247,1022,273"/>
+<area shape="poly" title=" " alt="" coords="1016,194,956,241,952,237,1013,190"/>
+<area shape="rect" title=" " alt="" coords="1047,240,1215,280"/>
+<area shape="poly" title=" " alt="" coords="1046,190,1097,229,1094,234,1043,194"/>
+<area shape="rect" title=" " alt="" coords="1239,240,1385,280"/>
+<area shape="poly" title=" " alt="" coords="1071,189,1232,234,1230,239,1070,195"/>
+<area shape="rect" title=" " alt="" coords="1410,247,1497,273"/>
+<area shape="poly" title=" " alt="" coords="1115,188,1249,207,1398,237,1410,241,1409,246,1397,243,1248,213,1115,193"/>
+<area shape="rect" title=" " alt="" coords="1039,401,1159,427"/>
+<area shape="poly" title=" " alt="" coords="1244,356,1140,398,1138,394,1242,351"/>
+<area shape="rect" title=" " alt="" coords="1183,401,1359,427"/>
+<area shape="poly" title=" " alt="" coords="1273,354,1273,388,1268,388,1268,354"/>
+<area shape="rect" title=" " alt="" coords="1383,401,1513,427"/>
+<area shape="poly" title=" " alt="" coords="1300,351,1408,394,1406,399,1298,356"/>
+<area shape="poly" title=" " alt="" coords="563,275,496,322,493,318,559,271"/>
+<area shape="poly" title=" " alt="" coords="625,270,663,277,803,297,944,312,1178,331,1177,336,943,317,802,302,662,283,624,275"/>
+<area shape="rect" title=" " alt="" coords="817,328,903,353"/>
+<area shape="poly" title=" " alt="" coords="619,270,807,322,805,327,618,275"/>
+<area shape="rect" title=" " alt="" coords="537,328,596,353"/>
+<area shape="poly" title=" " alt="" coords="578,273,573,315,567,314,573,272"/>
+<area shape="rect" title=" " alt="" coords="621,328,793,353"/>
+<area shape="poly" title=" " alt="" coords="598,271,677,318,675,323,595,275"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="ZclString_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2lib_2support_2ZclString_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2lib_2support_2ZclString_8hdep" id="aconnectedhomeip_2src_2lib_2support_2ZclString_8hdep">
+<area shape="rect" title=" " alt="" coords="24,5,193,45"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="5,93,212,133"/>
+<area shape="poly" title=" " alt="" coords="111,59,111,93,106,93,106,59"/>
+</map>
+</div>
+</div>
+<p><a href="ZclString_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a4d5608ded23ea2c06e67c78f4d57d7ff" id="r_a4d5608ded23ea2c06e67c78f4d57d7ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a4d5608ded23ea2c06e67c78f4d57d7ff">chip::MakeZclCharString</a> (<a class="el" href="namespacechip.html#aecc0d041dc6a4616514bc4b3bf00ae10">MutableByteSpan</a> &amp;buffer, const char *cString)</td></tr>
+<tr class="memdesc:a4d5608ded23ea2c06e67c78f4d57d7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create ZCL string (pascal string) from char string. The maximum size of the ZCL string is defined by the kBufferMaximumSize. In case char string exceeds the maximum of size ZCL string, the string will be 0-sized and the method will return an error.  <br /></td></tr>
+<tr class="separator:a4d5608ded23ea2c06e67c78f4d57d7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

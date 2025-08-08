@@ -1,0 +1,49 @@
+<map id="chip::Optional::Value" name="chip::Optional::Value">
+<area shape="rect" id="Node000001" title=" " alt="" coords="936,584,1092,609"/>
+<area shape="rect" id="Node000002" href="$AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="129,408,261,433"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1008,570,997,457,975,300,959,220,938,149,914,92,901,71,886,56,839,27,790,12,739,9,687,17,634,34,582,59,530,91,480,127,387,208,307,291,246,362,209,409,204,406,242,358,303,287,383,204,477,123,527,86,579,55,632,29,685,12,739,4,791,7,841,22,890,52,905,68,919,90,944,148,964,219,980,299,1003,456,1013,570"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a2d7b708ccf05d22915817568d3b44894" title=" " alt="" coords="641,91,884,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1011,571,1008,491,1002,438,992,381,976,321,954,262,925,207,886,159,873,148,876,143,890,155,929,204,959,260,981,319,997,379,1007,437,1013,490,1016,570"/>
+<area shape="rect" id="Node000005" href="$namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a4d8fa2e7812d69df2ac9620f9e7e81a2" title=" " alt="" coords="641,193,884,248"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="1008,571,999,509,978,426,963,382,942,339,917,298,886,263,870,250,873,246,890,259,921,295,947,336,968,380,984,424,1004,508,1013,570"/>
+<area shape="rect" id="Node000006" href="$classLinuxCommissionableDataProvider.html#a2e223847f3c35b55a442342670862515" title="Obtain the default setup passcode for the device if supported" alt="" coords="637,273,888,313"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="1006,571,994,519,971,453,936,385,913,354,886,327,869,315,872,311,890,323,917,350,941,382,976,451,999,517,1011,570"/>
+<area shape="rect" id="Node000007" href="$namespaceanonymous__namespace_02Options_8cpp_03.html#a522139bbb37aefbe7b4e7a8b047c6bc6" title=" " alt="" coords="655,337,871,377"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="1002,572,986,532,962,482,929,433,909,410,886,391,867,379,870,375,890,387,913,407,933,429,967,480,991,529,1007,570"/>
+<area shape="rect" id="Node000008" href="$classLinuxCommissionableDataProvider.html#a3008625eeb7d169fa9fc74397227a7ef" title="Initialize the commissionable Data provider for Linux samples" alt="" coords="637,401,888,441"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="996,574,952,514,921,482,887,455,863,443,866,439,889,451,925,478,956,510,1000,571"/>
+<area shape="rect" id="Node000010" href="$namespaceanonymous__namespace_02AppMain_8cpp_03.html#a6d7b58a5856b38af87b2c1355f748baf" title=" " alt="" coords="657,465,868,520"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="978,580,887,535,854,523,856,518,889,530,980,575"/>
+<area shape="rect" id="Node000012" href="$classchip_1_1app_1_1AttributeAccessInterface.html#a09843999b983d05e07a0be1e672a3af9" title=" " alt="" coords="667,545,858,585"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="922,588,858,580,858,574,923,583"/>
+<area shape="rect" id="Node000013" href="$classchip_1_1app_1_1AttributeAccessInterface.html#aa465d39295b8fb8e06f34dcb93d2f74d" title=" " alt="" coords="667,609,858,649"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="923,611,858,619,858,614,922,606"/>
+<area shape="rect" id="Node000014" href="$classchip_1_1app_1_1AttributeAccessInterface.html#adc37488d8b7dfdf0e04319e9fc5fda83" title=" " alt="" coords="663,673,863,713"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="981,619,938,642,889,663,853,675,851,670,887,658,935,637,978,614"/>
+<area shape="rect" id="Node000015" href="$classchip_1_1Optional.html#aefeeeb9f4b6334b2de947a1f909c7496" title=" " alt="" coords="664,737,861,763"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="998,622,954,676,923,704,889,727,859,740,857,735,887,722,920,700,950,672,994,619"/>
+<area shape="rect" id="Node000016" href="$classchip_1_1Optional.html#a5b4ccede0e294879f50eefc2d34efa63" title=" " alt="" coords="675,787,850,812"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="1005,624,987,659,962,700,930,742,889,776,851,793,849,788,887,772,926,738,958,697,983,656,1000,621"/>
+<area shape="rect" id="Node000017" href="$classchip_1_1RendezvousParameters.html#a5553db1b157f34ccea27ba1d5ce4055e" title=" " alt="" coords="657,837,868,877"/>
+<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="1008,624,993,668,969,722,935,778,914,803,890,826,868,839,865,834,886,821,910,800,931,775,965,720,988,666,1003,622"/>
+<area shape="rect" id="Node000018" href="$classchip_1_1RendezvousParameters.html#a8fae3f7652bf8d838b4d6a177c53271a" title=" " alt="" coords="657,901,868,941"/>
+<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="1012,624,1001,679,979,751,963,790,943,827,919,861,890,891,870,904,867,900,886,887,915,857,939,824,958,787,974,750,996,678,1007,622"/>
+<area shape="rect" id="Node000019" href="$classchip_1_1Optional.html#a10fbed1c631f6736764e6e9dbbc25953" title=" " alt="" coords="693,965,833,1005"/>
+<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="1014,623,1007,690,988,779,972,827,951,874,924,917,890,955,863,972,834,982,832,977,861,967,886,951,919,914,946,871,967,825,983,778,1002,689,1009,623"/>
+<area shape="rect" id="Node000020" href="$classchip_1_1Optional.html#a4f92baa58b0f970e9301960c2ceaaa4e" title=" " alt="" coords="677,1029,848,1055"/>
+<area shape="poly" id="edge23_Node000001_Node000020" title=" " alt="" coords="1016,624,1013,702,1008,753,997,809,982,866,959,922,929,974,890,1019,871,1032,850,1040,848,1035,868,1027,886,1015,925,971,955,919,977,864,992,807,1002,752,1008,701,1011,623"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,440,60,465"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,439,61,450,60,445,116,434"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="805,80,789,72,763,69,740,71,726,76,719,83,719,91,714,91,714,81,723,72,739,66,763,64,791,67,807,75"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="805,183,789,175,763,172,740,174,726,179,719,185,719,193,714,193,714,183,723,174,739,169,763,167,791,170,807,178"/>
+<area shape="rect" id="Node000009" href="$namespacechip_1_1examples.html#a63149b00322319c60a17f0450b9e6af5" title="Initialize a LinuxCommissionableDataProvider from Linux common command&#45;line options,..." alt="" coords="331,401,589,441"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="624,423,590,423,590,418,624,418"/>
+<area shape="poly" id="edge11_Node000009_Node000002" title=" " alt="" coords="317,423,262,423,262,418,317,418"/>
+<area shape="rect" id="Node000011" href="$AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,464,283,489"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="643,492,283,482,283,477,644,487"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="96,465,60,459,61,454,96,459"/>
+<area shape="rect" id="Node000021" href="$classchip_1_1RendezvousParameters.html#a809aedf018477320bccf374e7e9fafab" title=" " alt="" coords="355,982,565,1022"/>
+<area shape="poly" id="edge24_Node000020_Node000021" title=" " alt="" coords="663,1032,565,1019,566,1013,664,1026"/>
+<area shape="rect" id="Node000022" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a40c81795ed59dad860acec7bbc2652c9" title="Callback that will be called to handle an InstantAction command." alt="" coords="355,1046,565,1115"/>
+<area shape="poly" id="edge25_Node000020_Node000022" title=" " alt="" coords="664,1057,566,1070,565,1065,663,1052"/>
+</map>

@@ -1,0 +1,1293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::Optional&lt; T &gt; クラステンプレート</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="classchip_1_1Optional.html">Optional</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classchip_1_1Optional-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::Optional&lt; T &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Optional_8h_source.html">Optional.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::Optional&lt; T &gt; 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional__coll__graph.png" border="0" usemap="#achip_1_1Optional_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1Optional_3_01T_01_4_coll__map" id="achip_1_1Optional_3_01T_01_4_coll__map">
+<area shape="rect" title=" " alt="" coords="557,35,708,60"/>
+<area shape="rect" href="classchip_1_1Optional_1_1ValueHolder.html" title=" " alt="" coords="261,27,412,67"/>
+<area shape="poly" title=" " alt="" coords="426,45,557,45,557,50,426,50"/>
+<area shape="rect" title=" " alt="" coords="5,5,212,89"/>
+<area shape="poly" title=" " alt="" coords="226,45,261,45,261,50,226,50"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional_1_1NonTrivialDestructor.html">NonTrivialDestructor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional_1_1TrivialDestructor.html">TrivialDestructor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional_1_1ValueHolder.html">ValueHolder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a079c0497f86e65f1321e3d91085a6559" id="r_a079c0497f86e65f1321e3d91085a6559"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a079c0497f86e65f1321e3d91085a6559">Optional</a> ()</td></tr>
+<tr class="separator:a079c0497f86e65f1321e3d91085a6559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbf535afa905dc0fc04918dac193c16" id="r_a7fbf535afa905dc0fc04918dac193c16"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a7fbf535afa905dc0fc04918dac193c16">Optional</a> (<a class="el" href="structchip_1_1NullOptionalType.html">NullOptionalType</a>)</td></tr>
+<tr class="separator:a7fbf535afa905dc0fc04918dac193c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1943b15247bb4c1ecce5ec369a05eda3" id="r_a1943b15247bb4c1ecce5ec369a05eda3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a1943b15247bb4c1ecce5ec369a05eda3">Optional</a> (const T &amp;value)</td></tr>
+<tr class="separator:a1943b15247bb4c1ecce5ec369a05eda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeac569e6c15abc1adec64d04ec1f53c" id="r_abeac569e6c15abc1adec64d04ec1f53c"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:abeac569e6c15abc1adec64d04ec1f53c"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#abeac569e6c15abc1adec64d04ec1f53c">Optional</a> (InPlaceType, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:abeac569e6c15abc1adec64d04ec1f53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac159a6f31306cb65f881a66e6f6051" id="r_a6ac159a6f31306cb65f881a66e6f6051"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a6ac159a6f31306cb65f881a66e6f6051">Optional</a> (const <a class="el" href="classchip_1_1Optional.html">Optional</a> &amp;other)</td></tr>
+<tr class="separator:a6ac159a6f31306cb65f881a66e6f6051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b4ccede0e294879f50eefc2d34efa63" id="r_a5b4ccede0e294879f50eefc2d34efa63"><td class="memTemplParams" colspan="2">template&lt;class U , std::enable_if_t&lt;!std::is_same_v&lt; T, U &gt; &amp;&amp;std::is_convertible_v&lt; const U, T &gt;, bool &gt;  = true&gt; </td></tr>
+<tr class="memitem:a5b4ccede0e294879f50eefc2d34efa63"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a5b4ccede0e294879f50eefc2d34efa63">Optional</a> (const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; U &gt; &amp;other)</td></tr>
+<tr class="separator:a5b4ccede0e294879f50eefc2d34efa63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b4ccede0e294879f50eefc2d34efa63" id="r_a5b4ccede0e294879f50eefc2d34efa63"><td class="memTemplParams" colspan="2">template&lt;class U , std::enable_if_t&lt;!std::is_same_v&lt; T, U &gt; &amp;&amp;!std::is_convertible_v&lt; const U, T &gt; &amp;&amp;std::is_constructible_v&lt; T, const U &amp; &gt;, bool &gt;  = true&gt; </td></tr>
+<tr class="memitem:a5b4ccede0e294879f50eefc2d34efa63"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a5b4ccede0e294879f50eefc2d34efa63">Optional</a> (const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; U &gt; &amp;other)</td></tr>
+<tr class="separator:a5b4ccede0e294879f50eefc2d34efa63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1ae49e72482b283747dee0a62c6a9d" id="r_a3c1ae49e72482b283747dee0a62c6a9d"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a3c1ae49e72482b283747dee0a62c6a9d">Optional</a> (<a class="el" href="classchip_1_1Optional.html">Optional</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a3c1ae49e72482b283747dee0a62c6a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5c5a45381a8d03935abf38bab3e036" id="r_a7f5c5a45381a8d03935abf38bab3e036"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classchip_1_1Optional.html">Optional</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a7f5c5a45381a8d03935abf38bab3e036">operator=</a> (const <a class="el" href="classchip_1_1Optional.html">Optional</a> &amp;other)</td></tr>
+<tr class="separator:a7f5c5a45381a8d03935abf38bab3e036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f0f3f636bae74e82023448bb11b1e2" id="r_ac2f0f3f636bae74e82023448bb11b1e2"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classchip_1_1Optional.html">Optional</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#ac2f0f3f636bae74e82023448bb11b1e2">operator=</a> (<a class="el" href="classchip_1_1Optional.html">Optional</a> &amp;&amp;other)</td></tr>
+<tr class="separator:ac2f0f3f636bae74e82023448bb11b1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b10bfc8cf7c11d50b832dbf0faa4367" id="r_a3b10bfc8cf7c11d50b832dbf0faa4367"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:a3b10bfc8cf7c11d50b832dbf0faa4367"><td class="memTemplItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a3b10bfc8cf7c11d50b832dbf0faa4367">Emplace</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a3b10bfc8cf7c11d50b832dbf0faa4367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the contained value in-place  <br /></td></tr>
+<tr class="separator:a3b10bfc8cf7c11d50b832dbf0faa4367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d5932f37467d13f8bef21a41b1f391" id="r_a02d5932f37467d13f8bef21a41b1f391"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a02d5932f37467d13f8bef21a41b1f391">SetValue</a> (const T &amp;value)</td></tr>
+<tr class="separator:a02d5932f37467d13f8bef21a41b1f391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9fe736c59b2a53a6283edc2b80f1dd" id="r_a5b9fe736c59b2a53a6283edc2b80f1dd"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a5b9fe736c59b2a53a6283edc2b80f1dd">SetValue</a> (std::optional&lt; T &gt; &amp;value)</td></tr>
+<tr class="separator:a5b9fe736c59b2a53a6283edc2b80f1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf89fef2a4716fb4aa9eb4c25d9c5e1" id="r_aadf89fef2a4716fb4aa9eb4c25d9c5e1"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#aadf89fef2a4716fb4aa9eb4c25d9c5e1">SetValue</a> (T &amp;&amp;value)</td></tr>
+<tr class="separator:aadf89fef2a4716fb4aa9eb4c25d9c5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f355df5cfcb005b1da512b61e6288a" id="r_ac1f355df5cfcb005b1da512b61e6288a"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#ac1f355df5cfcb005b1da512b61e6288a">ClearValue</a> ()</td></tr>
+<tr class="separator:ac1f355df5cfcb005b1da512b61e6288a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7c61e9f1bdf79143adbd741b8d3ca7" id="r_aaf7c61e9f1bdf79143adbd741b8d3ca7"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7">Value</a> () &amp;</td></tr>
+<tr class="separator:aaf7c61e9f1bdf79143adbd741b8d3ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb981d66c9f7063707396f4d2646a7a" id="r_a1bb981d66c9f7063707396f4d2646a7a"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a1bb981d66c9f7063707396f4d2646a7a">Value</a> () const &amp;</td></tr>
+<tr class="separator:a1bb981d66c9f7063707396f4d2646a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f92baa58b0f970e9301960c2ceaaa4e" id="r_a4f92baa58b0f970e9301960c2ceaaa4e"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a4f92baa58b0f970e9301960c2ceaaa4e">ValueOr</a> (const T &amp;defaultValue) const</td></tr>
+<tr class="separator:a4f92baa58b0f970e9301960c2ceaaa4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd680378379844625c451dcacf2c87c" id="r_a5cd680378379844625c451dcacf2c87c"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c">HasValue</a> () const</td></tr>
+<tr class="separator:a5cd680378379844625c451dcacf2c87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992f18d571460532feccf13e12b21479" id="r_a992f18d571460532feccf13e12b21479"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a992f18d571460532feccf13e12b21479">operator==</a> (const <a class="el" href="classchip_1_1Optional.html">Optional</a> &amp;other) const</td></tr>
+<tr class="separator:a992f18d571460532feccf13e12b21479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6d4f91d5dccf3193a08ef198473912" id="r_ace6d4f91d5dccf3193a08ef198473912"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#ace6d4f91d5dccf3193a08ef198473912">operator!=</a> (const <a class="el" href="classchip_1_1Optional.html">Optional</a> &amp;other) const</td></tr>
+<tr class="separator:ace6d4f91d5dccf3193a08ef198473912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefeeeb9f4b6334b2de947a1f909c7496" id="r_aefeeeb9f4b6334b2de947a1f909c7496"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#aefeeeb9f4b6334b2de947a1f909c7496">operator==</a> (const T &amp;other) const</td></tr>
+<tr class="separator:aefeeeb9f4b6334b2de947a1f909c7496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf0256fc306a701adacbaaab5fcfff8" id="r_aecf0256fc306a701adacbaaab5fcfff8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#aecf0256fc306a701adacbaaab5fcfff8">operator!=</a> (const T &amp;other) const</td></tr>
+<tr class="separator:aecf0256fc306a701adacbaaab5fcfff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10fbed1c631f6736764e6e9dbbc25953" id="r_a10fbed1c631f6736764e6e9dbbc25953"><td class="memItemLeft" align="right" valign="top">std::optional&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a10fbed1c631f6736764e6e9dbbc25953">std_optional</a> () const</td></tr>
+<tr class="separator:a10fbed1c631f6736764e6e9dbbc25953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a03b6433922ca965fe245eebec8365021" id="r_a03b6433922ca965fe245eebec8365021"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a03b6433922ca965fe245eebec8365021">Missing</a> ()</td></tr>
+<tr class="separator:a03b6433922ca965fe245eebec8365021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73dd718d405f838a0c2d1b15b3850508" id="r_a73dd718d405f838a0c2d1b15b3850508"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:a73dd718d405f838a0c2d1b15b3850508"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a73dd718d405f838a0c2d1b15b3850508">Value</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a73dd718d405f838a0c2d1b15b3850508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a086c1d1081983bf3971a6f8b22a3b2b3" id="r_a086c1d1081983bf3971a6f8b22a3b2b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Optional_1_1ValueHolder.html">ValueHolder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Optional.html#a086c1d1081983bf3971a6f8b22a3b2b3">mValueHolder</a></td></tr>
+<tr class="separator:a086c1d1081983bf3971a6f8b22a3b2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
+class chip::Optional&lt; T &gt;</div><p>Pairs an object with a boolean value to determine if the object value is actually valid or not. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a079c0497f86e65f1321e3d91085a6559" name="a079c0497f86e65f1321e3d91085a6559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a079c0497f86e65f1321e3d91085a6559">&#9670;&#160;</a></span>Optional() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Optional </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_a079c0497f86e65f1321e3d91085a6559_icgraph.png" border="0" usemap="#aclasschip_1_1Optional_a079c0497f86e65f1321e3d91085a6559_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_a079c0497f86e65f1321e3d91085a6559_icgraph" id="aclasschip_1_1Optional_a079c0497f86e65f1321e3d91085a6559_icgraph">
+<area shape="rect" title=" " alt="" coords="209,5,384,31"/>
+<area shape="rect" href="classchip_1_1Optional.html#a73dd718d405f838a0c2d1b15b3850508" title=" " alt="" coords="5,5,161,31"/>
+<area shape="poly" title=" " alt="" coords="196,21,161,21,161,15,196,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7fbf535afa905dc0fc04918dac193c16" name="a7fbf535afa905dc0fc04918dac193c16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fbf535afa905dc0fc04918dac193c16">&#9670;&#160;</a></span>Optional() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Optional </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchip_1_1NullOptionalType.html">NullOptionalType</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1943b15247bb4c1ecce5ec369a05eda3" name="a1943b15247bb4c1ecce5ec369a05eda3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1943b15247bb4c1ecce5ec369a05eda3">&#9670;&#160;</a></span>Optional() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Optional </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abeac569e6c15abc1adec64d04ec1f53c" name="abeac569e6c15abc1adec64d04ec1f53c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeac569e6c15abc1adec64d04ec1f53c">&#9670;&#160;</a></span>Optional() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<div class="memtemplate">
+template&lt;class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Optional </td>
+          <td>(</td>
+          <td class="paramtype">InPlaceType&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ac159a6f31306cb65f881a66e6f6051" name="a6ac159a6f31306cb65f881a66e6f6051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac159a6f31306cb65f881a66e6f6051">&#9670;&#160;</a></span>Optional() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Optional </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b4ccede0e294879f50eefc2d34efa63" name="a5b4ccede0e294879f50eefc2d34efa63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b4ccede0e294879f50eefc2d34efa63">&#9670;&#160;</a></span>Optional() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<div class="memtemplate">
+template&lt;class U , std::enable_if_t&lt;!std::is_same_v&lt; T, U &gt; &amp;&amp;std::is_convertible_v&lt; const U, T &gt;, bool &gt;  = true&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Optional </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_a5b4ccede0e294879f50eefc2d34efa63_cgraph.png" border="0" usemap="#aclasschip_1_1Optional_a5b4ccede0e294879f50eefc2d34efa63_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_a5b4ccede0e294879f50eefc2d34efa63_cgraph" id="aclasschip_1_1Optional_a5b4ccede0e294879f50eefc2d34efa63_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,31"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="432,5,613,31"/>
+<area shape="poly" title=" " alt="" coords="180,15,418,15,418,21,180,21"/>
+<area shape="rect" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="228,31,384,56"/>
+<area shape="poly" title=" " alt="" coords="181,26,215,30,214,35,180,31"/>
+<area shape="poly" title=" " alt="" coords="384,32,418,28,419,33,385,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5b4ccede0e294879f50eefc2d34efa63" name="a5b4ccede0e294879f50eefc2d34efa63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b4ccede0e294879f50eefc2d34efa63">&#9670;&#160;</a></span>Optional() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<div class="memtemplate">
+template&lt;class U , std::enable_if_t&lt;!std::is_same_v&lt; T, U &gt; &amp;&amp;!std::is_convertible_v&lt; const U, T &gt; &amp;&amp;std::is_constructible_v&lt; T, const U &amp; &gt;, bool &gt;  = true&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Optional </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_a5b4ccede0e294879f50eefc2d34efa63_cgraph.png" border="0" usemap="#aclasschip_1_1Optional_a5b4ccede0e294879f50eefc2d34efa63_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_a5b4ccede0e294879f50eefc2d34efa63_cgraph" id="aclasschip_1_1Optional_a5b4ccede0e294879f50eefc2d34efa63_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,31"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="432,5,613,31"/>
+<area shape="poly" title=" " alt="" coords="180,15,418,15,418,21,180,21"/>
+<area shape="rect" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="228,31,384,56"/>
+<area shape="poly" title=" " alt="" coords="181,26,215,30,214,35,180,31"/>
+<area shape="poly" title=" " alt="" coords="384,32,418,28,419,33,385,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3c1ae49e72482b283747dee0a62c6a9d" name="a3c1ae49e72482b283747dee0a62c6a9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1ae49e72482b283747dee0a62c6a9d">&#9670;&#160;</a></span>Optional() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Optional </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ac1f355df5cfcb005b1da512b61e6288a" name="ac1f355df5cfcb005b1da512b61e6288a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1f355df5cfcb005b1da512b61e6288a">&#9670;&#160;</a></span>ClearValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::ClearValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Invalidate the value inside the optional. <a class="el" href="classchip_1_1Optional.html">Optional</a> now has no value </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_ac1f355df5cfcb005b1da512b61e6288a_icgraph.png" border="0" usemap="#aclasschip_1_1Optional_ac1f355df5cfcb005b1da512b61e6288a_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_ac1f355df5cfcb005b1da512b61e6288a_icgraph" id="aclasschip_1_1Optional_ac1f355df5cfcb005b1da512b61e6288a_icgraph">
+<area shape="rect" title=" " alt="" coords="587,76,777,101"/>
+<area shape="rect" href="namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#accaa405391d3e96f05206401f0da5112" title=" " alt="" coords="296,29,539,84"/>
+<area shape="poly" title=" " alt="" coords="573,78,539,74,539,69,573,73"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5b9fe736c59b2a53a6283edc2b80f1dd" title=" " alt="" coords="329,108,506,133"/>
+<area shape="poly" title=" " alt="" coords="573,104,507,113,506,107,572,99"/>
+<area shape="poly" title=" " alt="" coords="462,18,446,11,417,8,394,10,378,15,371,21,371,29,366,29,366,19,376,10,393,5,417,3,447,6,464,14"/>
+<area shape="rect" href="namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a4d8fa2e7812d69df2ac9620f9e7e81a2" title=" " alt="" coords="5,29,248,84"/>
+<area shape="poly" title=" " alt="" coords="283,59,248,59,248,54,283,54"/>
+<area shape="poly" title=" " alt="" coords="176,19,158,11,127,8,100,10,83,15,76,21,76,29,71,29,71,19,81,10,100,5,127,3,159,6,178,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3b10bfc8cf7c11d50b832dbf0faa4367" name="a3b10bfc8cf7c11d50b832dbf0faa4367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b10bfc8cf7c11d50b832dbf0faa4367">&#9670;&#160;</a></span>Emplace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<div class="memtemplate">
+template&lt;class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr T &amp; <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Emplace </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs the contained value in-place </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_a3b10bfc8cf7c11d50b832dbf0faa4367_icgraph.png" border="0" usemap="#aclasschip_1_1Optional_a3b10bfc8cf7c11d50b832dbf0faa4367_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_a3b10bfc8cf7c11d50b832dbf0faa4367_icgraph" id="aclasschip_1_1Optional_a3b10bfc8cf7c11d50b832dbf0faa4367_icgraph">
+<area shape="rect" title="Constructs the contained value in&#45;place" alt="" coords="587,145,763,170"/>
+<area shape="rect" href="namespaceanonymous__namespace_02Options_8cpp_03.html#a522139bbb37aefbe7b4e7a8b047c6bc6" title=" " alt="" coords="309,5,525,45"/>
+<area shape="poly" title=" " alt="" coords="648,138,599,98,537,60,508,48,510,43,540,55,602,93,651,133"/>
+<area shape="rect" href="namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#accaa405391d3e96f05206401f0da5112" title=" " alt="" coords="296,94,539,149"/>
+<area shape="poly" title=" " alt="" coords="573,146,539,141,539,136,573,141"/>
+<area shape="rect" href="classchip_1_1RendezvousParameters.html#a5553db1b157f34ccea27ba1d5ce4055e" title=" " alt="" coords="312,173,523,213"/>
+<area shape="poly" title=" " alt="" coords="573,174,523,181,522,176,572,169"/>
+<area shape="rect" href="classchip_1_1RendezvousParameters.html#a8fae3f7652bf8d838b4d6a177c53271a" title=" " alt="" coords="312,237,523,277"/>
+<area shape="poly" title=" " alt="" coords="641,179,594,204,540,228,503,240,502,235,538,223,591,199,639,174"/>
+<area shape="poly" title=" " alt="" coords="460,83,445,76,417,73,394,75,380,79,373,86,373,94,368,94,368,84,377,75,393,69,417,67,446,70,463,78"/>
+<area shape="rect" href="namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a4d8fa2e7812d69df2ac9620f9e7e81a2" title=" " alt="" coords="5,94,248,149"/>
+<area shape="poly" title=" " alt="" coords="283,124,248,124,248,119,283,119"/>
+<area shape="poly" title=" " alt="" coords="176,83,158,76,127,73,100,75,83,80,76,86,76,94,71,94,71,84,81,75,100,69,127,67,159,70,178,78"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5cd680378379844625c451dcacf2c87c" name="a5cd680378379844625c451dcacf2c87c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd680378379844625c451dcacf2c87c">&#9670;&#160;</a></span>HasValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::HasValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks if the optional contains a value or not </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_a5cd680378379844625c451dcacf2c87c_icgraph.png" border="0" usemap="#aclasschip_1_1Optional_a5cd680378379844625c451dcacf2c87c_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_a5cd680378379844625c451dcacf2c87c_icgraph" id="aclasschip_1_1Optional_a5cd680378379844625c451dcacf2c87c_icgraph">
+<area shape="rect" title=" " alt="" coords="1227,751,1408,776"/>
+<area shape="rect" href="namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a2d7b708ccf05d22915817568d3b44894" title=" " alt="" coords="641,29,884,84"/>
+<area shape="poly" title=" " alt="" coords="1310,737,1294,625,1265,467,1246,387,1225,314,1202,253,1177,212,1147,182,1113,157,1076,135,1038,117,958,90,884,73,885,67,960,84,1040,112,1079,130,1116,152,1150,178,1181,208,1207,251,1230,312,1252,386,1270,466,1299,624,1315,736"/>
+<area shape="rect" href="namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a4d8fa2e7812d69df2ac9620f9e7e81a2" title=" " alt="" coords="641,132,884,187"/>
+<area shape="poly" title=" " alt="" coords="1314,737,1311,651,1305,593,1294,529,1277,463,1253,398,1220,337,1177,284,1146,257,1112,234,1075,216,1036,200,958,179,884,167,885,162,959,174,1038,195,1077,211,1114,230,1149,253,1181,280,1224,334,1257,396,1282,461,1299,528,1310,592,1316,650,1319,737"/>
+<area shape="rect" href="classLinuxCommissionableDataProvider.html#a2e223847f3c35b55a442342670862515" title="Obtain the default setup passcode for the device if supported" alt="" coords="637,211,888,251"/>
+<area shape="poly" title=" " alt="" coords="1312,737,1305,662,1285,560,1267,505,1244,451,1214,400,1177,356,1146,330,1112,308,1038,274,961,253,888,240,889,235,962,247,1040,269,1115,303,1149,326,1181,352,1218,397,1249,448,1272,503,1290,559,1310,661,1318,737"/>
+<area shape="rect" href="namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a9bc817214cd3507f4180a034760f0619" title=" " alt="" coords="936,1104,1179,1159"/>
+<area shape="poly" title=" " alt="" coords="1312,790,1296,844,1270,915,1231,992,1208,1029,1181,1063,1153,1087,1123,1106,1120,1102,1150,1083,1177,1059,1203,1026,1227,989,1265,913,1291,842,1307,788"/>
+<area shape="rect" href="classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a40c81795ed59dad860acec7bbc2652c9" title="Callback that will be called to handle an InstantAction command." alt="" coords="355,1047,565,1117"/>
+<area shape="poly" title=" " alt="" coords="1313,790,1299,842,1274,907,1256,940,1235,972,1210,1001,1180,1026,1146,1038,1089,1048,924,1064,733,1075,566,1082,565,1076,733,1070,923,1059,1088,1043,1145,1033,1177,1021,1206,997,1230,969,1251,938,1269,905,1294,840,1308,789"/>
+<area shape="rect" href="classchip_1_1RendezvousParameters.html#adeacc5eecd17452bb68c9cd7c335046a" title=" " alt="" coords="952,1183,1163,1223"/>
+<area shape="poly" title=" " alt="" coords="1318,790,1311,865,1291,968,1273,1024,1250,1078,1219,1129,1180,1173,1164,1185,1161,1181,1177,1169,1215,1126,1245,1076,1268,1022,1286,967,1306,864,1313,789"/>
+<area shape="rect" href="classLinuxCommissionableDataProvider.html#a3008625eeb7d169fa9fc74397227a7ef" title="Initialize the commissionable Data provider for Linux samples" alt="" coords="637,419,888,459"/>
+<area shape="poly" title=" " alt="" coords="1303,739,1284,700,1257,652,1221,604,1177,563,1109,522,1034,491,958,470,888,455,889,450,960,464,1036,486,1111,517,1180,559,1225,601,1261,649,1289,697,1308,737"/>
+<area shape="rect" href="structchip_1_1Crypto_1_1AttestationCertVidPid.html#af4c0ee0b8920eb4f1507fe81a2ce4931" title=" " alt="" coords="967,1247,1147,1287"/>
+<area shape="poly" title=" " alt="" coords="1319,790,1316,876,1310,933,1299,996,1282,1061,1257,1125,1224,1185,1180,1237,1149,1257,1146,1253,1177,1233,1219,1182,1252,1123,1277,1059,1294,995,1305,932,1311,875,1314,790"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a6d7b58a5856b38af87b2c1355f748baf" title=" " alt="" coords="657,276,868,331"/>
+<area shape="poly" title=" " alt="" coords="1310,738,1299,674,1276,590,1259,546,1237,502,1209,462,1177,427,1143,400,1106,378,1066,359,1025,344,943,323,868,312,869,306,944,318,1027,339,1068,354,1108,373,1146,396,1180,423,1214,459,1241,500,1263,544,1281,589,1305,673,1316,737"/>
+<area shape="rect" href="classchip_1_1app_1_1AttributeAccessInterface.html#a09843999b983d05e07a0be1e672a3af9" title=" " alt="" coords="667,355,858,395"/>
+<area shape="poly" title=" " alt="" coords="1307,738,1292,687,1267,621,1228,554,1205,523,1177,496,1141,470,1102,448,1018,415,933,394,858,383,858,378,934,389,1019,410,1104,443,1144,465,1180,492,1208,519,1233,551,1271,619,1297,685,1313,736"/>
+<area shape="rect" href="classchip_1_1app_1_1AttributeAccessInterface.html#aa465d39295b8fb8e06f34dcb93d2f74d" title=" " alt="" coords="667,598,858,638"/>
+<area shape="poly" title=" " alt="" coords="1280,746,1232,723,1178,702,1095,678,1010,659,858,632,859,627,1011,653,1096,673,1180,697,1234,718,1282,742"/>
+<area shape="rect" href="classchip_1_1app_1_1AttributeAccessInterface.html#adc37488d8b7dfdf0e04319e9fc5fda83" title=" " alt="" coords="663,662,863,702"/>
+<area shape="poly" title=" " alt="" coords="1248,750,1178,737,1012,712,862,695,863,689,1012,707,1179,731,1249,745"/>
+<area shape="rect" href="classchip_1_1Optional.html#aefeeeb9f4b6334b2de947a1f909c7496" title=" " alt="" coords="664,727,861,752"/>
+<area shape="poly" title=" " alt="" coords="1212,761,862,746,862,741,1212,756"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5b4ccede0e294879f50eefc2d34efa63" title=" " alt="" coords="675,776,850,801"/>
+<area shape="poly" title=" " alt="" coords="1212,771,850,787,850,782,1212,765"/>
+<area shape="rect" href="classchip_1_1RendezvousParameters.html#a5553db1b157f34ccea27ba1d5ce4055e" title=" " alt="" coords="657,826,868,866"/>
+<area shape="poly" title=" " alt="" coords="1228,781,1179,789,868,834,868,829,1178,783,1227,776"/>
+<area shape="rect" href="classchip_1_1RendezvousParameters.html#a8fae3f7652bf8d838b4d6a177c53271a" title=" " alt="" coords="657,890,868,930"/>
+<area shape="poly" title=" " alt="" coords="1282,785,1234,808,1180,830,1099,853,1017,872,868,899,868,894,1016,867,1098,848,1178,825,1232,803,1280,780"/>
+<area shape="rect" href="classchip_1_1Optional.html#a10fbed1c631f6736764e6e9dbbc25953" title=" " alt="" coords="693,954,833,994"/>
+<area shape="poly" title=" " alt="" coords="1300,788,1250,842,1217,869,1180,892,1136,912,1090,929,996,953,907,967,833,974,832,969,907,962,995,947,1088,924,1134,907,1177,888,1213,865,1246,838,1296,785"/>
+<area shape="rect" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="979,573,1135,599"/>
+<area shape="poly" title=" " alt="" coords="1298,741,1249,680,1215,648,1177,620,1131,601,1133,596,1180,616,1218,644,1253,677,1302,738"/>
+<area shape="rect" href="classchip_1_1Optional.html#a4f92baa58b0f970e9301960c2ceaaa4e" title=" " alt="" coords="677,1019,848,1044"/>
+<area shape="poly" title=" " alt="" coords="1309,790,1291,831,1264,880,1227,928,1205,950,1180,968,1154,980,1120,991,1033,1008,937,1021,849,1029,848,1023,936,1015,1032,1003,1119,986,1152,976,1177,964,1201,946,1223,925,1259,877,1286,828,1304,788"/>
+<area shape="rect" href="classchip_1_1Optional.html#a1bb981d66c9f7063707396f4d2646a7a" title=" " alt="" coords="979,1312,1135,1337"/>
+<area shape="poly" title=" " alt="" coords="1316,790,1300,901,1272,1055,1254,1133,1232,1204,1208,1262,1181,1301,1160,1315,1137,1324,1135,1319,1158,1311,1177,1297,1203,1259,1227,1202,1249,1131,1267,1054,1295,900,1310,790"/>
+<area shape="poly" title=" " alt="" coords="812,19,794,11,763,8,736,10,719,15,711,21,711,29,706,29,706,19,717,10,735,5,763,3,796,6,814,14"/>
+<area shape="poly" title=" " alt="" coords="812,121,794,114,763,111,736,113,719,118,711,124,711,132,706,132,706,122,717,113,735,107,763,105,796,108,814,116"/>
+<area shape="poly" title=" " alt="" coords="1101,1093,1085,1086,1057,1083,1034,1085,1019,1089,1012,1096,1012,1104,1007,1104,1007,1094,1016,1085,1033,1079,1057,1077,1086,1080,1103,1088"/>
+<area shape="rect" href="namespacechip_1_1examples.html#a63149b00322319c60a17f0450b9e6af5" title="Initialize a LinuxCommissionableDataProvider from Linux common command&#45;line options,..." alt="" coords="331,419,589,459"/>
+<area shape="poly" title=" " alt="" coords="624,442,590,442,590,437,624,437"/>
+<area shape="rect" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="129,427,261,452"/>
+<area shape="poly" title=" " alt="" coords="317,442,262,442,262,437,317,437"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,403,60,428"/>
+<area shape="poly" title=" " alt="" coords="115,430,60,422,61,417,116,425"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,355,283,380"/>
+<area shape="poly" title=" " alt="" coords="644,319,283,360,282,355,643,314"/>
+<area shape="poly" title=" " alt="" coords="139,387,61,410,59,405,138,381"/>
+<area shape="poly" title=" " alt="" coords="1052,560,1044,472,1034,413,1019,348,997,280,969,214,932,152,886,97,873,86,876,82,890,93,937,149,974,211,1002,278,1024,346,1039,412,1049,471,1058,559"/>
+<area shape="poly" title=" " alt="" coords="1050,560,1035,489,1005,393,984,341,957,290,925,243,886,201,869,189,873,185,890,197,929,240,962,287,989,339,1010,391,1040,488,1055,559"/>
+<area shape="poly" title=" " alt="" coords="1048,561,1030,500,998,419,977,377,951,336,921,298,886,265,868,254,871,249,890,261,925,295,956,333,982,375,1003,417,1035,498,1053,559"/>
+<area shape="poly" title=" " alt="" coords="1023,568,934,508,911,489,887,474,856,462,858,457,889,469,914,485,938,504,1026,564"/>
+<area shape="poly" title=" " alt="" coords="965,580,811,563,637,538,483,509,330,474,248,455,249,450,331,469,484,504,638,533,812,557,966,575"/>
+<area shape="poly" title=" " alt="" coords="1043,562,1020,515,986,457,941,397,915,370,886,345,866,333,869,328,890,341,919,366,945,394,990,454,1025,513,1048,559"/>
+<area shape="poly" title=" " alt="" coords="1038,564,1013,529,978,487,935,445,887,410,857,396,859,391,889,405,939,441,982,484,1017,526,1043,561"/>
+<area shape="poly" title=" " alt="" coords="966,599,859,610,858,605,966,593"/>
+<area shape="poly" title=" " alt="" coords="1014,606,889,653,848,664,846,659,887,647,1012,601"/>
+<area shape="poly" title=" " alt="" coords="1035,611,973,664,932,693,889,716,852,729,851,724,887,712,930,688,970,660,1032,607"/>
+<area shape="poly" title=" " alt="" coords="1043,612,1017,647,982,689,939,731,889,766,851,781,850,776,887,761,936,727,978,685,1013,643,1038,608"/>
+<area shape="poly" title=" " alt="" coords="1047,613,1023,657,989,711,944,767,918,793,889,815,865,828,862,823,887,810,914,789,940,764,985,708,1019,654,1042,610"/>
+<area shape="poly" title=" " alt="" coords="1051,613,1032,669,999,741,977,779,952,816,923,850,890,880,870,892,867,888,886,876,919,847,948,813,973,776,994,739,1027,667,1046,611"/>
+<area shape="poly" title=" " alt="" coords="1054,613,1038,680,1008,769,986,817,960,864,928,907,890,944,863,960,834,970,832,965,861,955,886,940,923,903,955,861,981,815,1003,767,1033,678,1049,611"/>
+<area shape="rect" href="namespaceanonymous__namespace_02Options_8cpp_03.html#a522139bbb37aefbe7b4e7a8b047c6bc6" title=" " alt="" coords="655,483,871,523"/>
+<area shape="poly" title=" " alt="" coords="997,572,834,526,836,521,998,567"/>
+<area shape="poly" title=" " alt="" coords="1056,613,1045,691,1034,743,1018,799,996,856,968,912,933,964,890,1008,871,1020,849,1028,848,1023,868,1015,886,1004,929,960,964,909,991,854,1013,797,1029,741,1040,690,1051,612"/>
+<area shape="poly" title=" " alt="" coords="673,1049,566,1067,565,1062,672,1044"/>
+<area shape="rect" href="classchip_1_1RendezvousParameters.html#a809aedf018477320bccf374e7e9fafab" title=" " alt="" coords="355,983,565,1023"/>
+<area shape="poly" title=" " alt="" coords="663,1025,565,1016,566,1010,664,1020"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a03b6433922ca965fe245eebec8365021" name="a03b6433922ca965fe245eebec8365021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b6433922ca965fe245eebec8365021">&#9670;&#160;</a></span>Missing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; T &gt; <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Missing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convenience method to create an optional without a valid value. </p>
+
+</div>
+</div>
+<a id="ace6d4f91d5dccf3193a08ef198473912" name="ace6d4f91d5dccf3193a08ef198473912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace6d4f91d5dccf3193a08ef198473912">&#9670;&#160;</a></span>operator!=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecf0256fc306a701adacbaaab5fcfff8" name="aecf0256fc306a701adacbaaab5fcfff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf0256fc306a701adacbaaab5fcfff8">&#9670;&#160;</a></span>operator!=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f5c5a45381a8d03935abf38bab3e036" name="a7f5c5a45381a8d03935abf38bab3e036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f5c5a45381a8d03935abf38bab3e036">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1Optional.html">Optional</a> &amp; <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2f0f3f636bae74e82023448bb11b1e2" name="ac2f0f3f636bae74e82023448bb11b1e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2f0f3f636bae74e82023448bb11b1e2">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classchip_1_1Optional.html">Optional</a> &amp; <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a992f18d571460532feccf13e12b21479" name="a992f18d571460532feccf13e12b21479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992f18d571460532feccf13e12b21479">&#9670;&#160;</a></span>operator==() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefeeeb9f4b6334b2de947a1f909c7496" name="aefeeeb9f4b6334b2de947a1f909c7496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefeeeb9f4b6334b2de947a1f909c7496">&#9670;&#160;</a></span>operator==() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_aefeeeb9f4b6334b2de947a1f909c7496_cgraph.png" border="0" usemap="#aclasschip_1_1Optional_aefeeeb9f4b6334b2de947a1f909c7496_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_aefeeeb9f4b6334b2de947a1f909c7496_cgraph" id="aclasschip_1_1Optional_aefeeeb9f4b6334b2de947a1f909c7496_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,203,31"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="455,5,636,31"/>
+<area shape="poly" title=" " alt="" coords="203,15,441,15,441,21,203,21"/>
+<area shape="rect" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="251,31,407,56"/>
+<area shape="poly" title=" " alt="" coords="203,26,237,30,237,36,202,32"/>
+<area shape="poly" title=" " alt="" coords="407,32,441,28,441,33,408,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a02d5932f37467d13f8bef21a41b1f391" name="a02d5932f37467d13f8bef21a41b1f391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d5932f37467d13f8bef21a41b1f391">&#9670;&#160;</a></span>SetValue() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::SetValue </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Make the optional contain a specific value </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_a02d5932f37467d13f8bef21a41b1f391_icgraph.png" border="0" usemap="#aclasschip_1_1Optional_a02d5932f37467d13f8bef21a41b1f391_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_a02d5932f37467d13f8bef21a41b1f391_icgraph" id="aclasschip_1_1Optional_a02d5932f37467d13f8bef21a41b1f391_icgraph">
+<area shape="rect" title=" " alt="" coords="893,181,1071,206"/>
+<area shape="rect" href="structchip_1_1app_1_1ConcreteReadAttributePath.html#a3f7c2efbd9a295db6c35ba723f5b87f8" title=" " alt="" coords="601,5,839,45"/>
+<area shape="poly" title=" " alt="" coords="962,171,913,115,880,85,844,60,819,48,821,43,847,55,884,81,917,111,966,168"/>
+<area shape="rect" href="namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a4d8fa2e7812d69df2ac9620f9e7e81a2" title=" " alt="" coords="599,94,841,149"/>
+<area shape="poly" title=" " alt="" coords="921,180,819,151,821,146,923,174"/>
+<area shape="rect" href="namespaceanonymous__namespace_02Options_8cpp_03.html#a522139bbb37aefbe7b4e7a8b047c6bc6" title=" " alt="" coords="612,173,828,213"/>
+<area shape="poly" title=" " alt="" coords="880,196,828,196,828,191,880,191"/>
+<area shape="rect" href="classLinuxCommissionableDataProvider.html#a3008625eeb7d169fa9fc74397227a7ef" title="Initialize the commissionable Data provider for Linux samples" alt="" coords="595,237,845,277"/>
+<area shape="poly" title=" " alt="" coords="916,212,803,240,802,235,915,207"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5b9fe736c59b2a53a6283edc2b80f1dd" title=" " alt="" coords="631,302,809,327"/>
+<area shape="poly" title=" " alt="" coords="958,217,909,256,846,292,808,304,807,299,844,287,906,251,955,213"/>
+<area shape="poly" title=" " alt="" coords="764,83,748,76,720,73,697,75,681,79,674,86,675,94,669,94,670,84,679,75,696,69,720,67,749,70,766,78"/>
+<area shape="rect" href="namespacechip_1_1examples.html#a63149b00322319c60a17f0450b9e6af5" title="Initialize a LinuxCommissionableDataProvider from Linux common command&#45;line options,..." alt="" coords="288,237,547,277"/>
+<area shape="poly" title=" " alt="" coords="581,260,547,260,547,255,581,255"/>
+<area shape="rect" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="108,245,240,270"/>
+<area shape="poly" title=" " alt="" coords="275,260,241,260,241,255,275,255"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,245,60,270"/>
+<area shape="poly" title=" " alt="" coords="94,260,60,260,60,255,94,255"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5b9fe736c59b2a53a6283edc2b80f1dd" name="a5b9fe736c59b2a53a6283edc2b80f1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b9fe736c59b2a53a6283edc2b80f1dd">&#9670;&#160;</a></span>SetValue() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::SetValue </td>
+          <td>(</td>
+          <td class="paramtype">std::optional&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_a5b9fe736c59b2a53a6283edc2b80f1dd_cgraph.png" border="0" usemap="#aclasschip_1_1Optional_a5b9fe736c59b2a53a6283edc2b80f1dd_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_a5b9fe736c59b2a53a6283edc2b80f1dd_cgraph" id="aclasschip_1_1Optional_a5b9fe736c59b2a53a6283edc2b80f1dd_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,183,56"/>
+<area shape="rect" href="classchip_1_1Optional.html#ac1f355df5cfcb005b1da512b61e6288a" title=" " alt="" coords="231,5,421,31"/>
+<area shape="poly" title=" " alt="" coords="182,31,217,27,217,33,183,36"/>
+<area shape="rect" href="classchip_1_1Optional.html#a02d5932f37467d13f8bef21a41b1f391" title=" " alt="" coords="237,55,415,80"/>
+<area shape="poly" title=" " alt="" coords="183,50,224,54,223,59,182,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aadf89fef2a4716fb4aa9eb4c25d9c5e1" name="aadf89fef2a4716fb4aa9eb4c25d9c5e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf89fef2a4716fb4aa9eb4c25d9c5e1">&#9670;&#160;</a></span>SetValue() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::SetValue </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Make the optional contain a specific value </p>
+
+</div>
+</div>
+<a id="a10fbed1c631f6736764e6e9dbbc25953" name="a10fbed1c631f6736764e6e9dbbc25953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10fbed1c631f6736764e6e9dbbc25953">&#9670;&#160;</a></span>std_optional()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; T &gt; <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::std_optional </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_a10fbed1c631f6736764e6e9dbbc25953_cgraph.png" border="0" usemap="#aclasschip_1_1Optional_a10fbed1c631f6736764e6e9dbbc25953_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_a10fbed1c631f6736764e6e9dbbc25953_cgraph" id="aclasschip_1_1Optional_a10fbed1c631f6736764e6e9dbbc25953_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,145,45"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="397,13,579,38"/>
+<area shape="poly" title=" " alt="" coords="146,23,384,23,384,28,146,28"/>
+<area shape="rect" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="193,38,349,63"/>
+<area shape="poly" title=" " alt="" coords="146,32,180,36,179,41,145,37"/>
+<area shape="poly" title=" " alt="" coords="350,39,384,35,384,40,350,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaf7c61e9f1bdf79143adbd741b8d3ca7" name="aaf7c61e9f1bdf79143adbd741b8d3ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf7c61e9f1bdf79143adbd741b8d3ca7">&#9670;&#160;</a></span>Value() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> &amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the current value of the optional. Valid IFF <code>HasValue</code>. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_aaf7c61e9f1bdf79143adbd741b8d3ca7_cgraph.png" border="0" usemap="#aclasschip_1_1Optional_aaf7c61e9f1bdf79143adbd741b8d3ca7_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_aaf7c61e9f1bdf79143adbd741b8d3ca7_cgraph" id="aclasschip_1_1Optional_aaf7c61e9f1bdf79143adbd741b8d3ca7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,161,31"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="209,5,391,31"/>
+<area shape="poly" title=" " alt="" coords="162,15,195,15,195,21,162,21"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_aaf7c61e9f1bdf79143adbd741b8d3ca7_icgraph.png" border="0" usemap="#aclasschip_1_1Optional_aaf7c61e9f1bdf79143adbd741b8d3ca7_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_aaf7c61e9f1bdf79143adbd741b8d3ca7_icgraph" id="aclasschip_1_1Optional_aaf7c61e9f1bdf79143adbd741b8d3ca7_icgraph">
+<area shape="rect" title=" " alt="" coords="936,584,1092,609"/>
+<area shape="rect" href="AppMain_8cpp.html#a16ab9de630f50f5cc9fb21106e704ad3" title=" " alt="" coords="129,408,261,433"/>
+<area shape="poly" title=" " alt="" coords="1008,570,997,457,975,300,959,220,938,149,914,92,901,71,886,56,839,27,790,12,739,9,687,17,634,34,582,59,530,91,480,127,387,208,307,291,246,362,209,409,204,406,242,358,303,287,383,204,477,123,527,86,579,55,632,29,685,12,739,4,791,7,841,22,890,52,905,68,919,90,944,148,964,219,980,299,1003,456,1013,570"/>
+<area shape="rect" href="namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a2d7b708ccf05d22915817568d3b44894" title=" " alt="" coords="641,91,884,145"/>
+<area shape="poly" title=" " alt="" coords="1011,571,1008,491,1002,438,992,381,976,321,954,262,925,207,886,159,873,148,876,143,890,155,929,204,959,260,981,319,997,379,1007,437,1013,490,1016,570"/>
+<area shape="rect" href="namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a4d8fa2e7812d69df2ac9620f9e7e81a2" title=" " alt="" coords="641,193,884,248"/>
+<area shape="poly" title=" " alt="" coords="1008,571,999,509,978,426,963,382,942,339,917,298,886,263,870,250,873,246,890,259,921,295,947,336,968,380,984,424,1004,508,1013,570"/>
+<area shape="rect" href="classLinuxCommissionableDataProvider.html#a2e223847f3c35b55a442342670862515" title="Obtain the default setup passcode for the device if supported" alt="" coords="637,273,888,313"/>
+<area shape="poly" title=" " alt="" coords="1006,571,994,519,971,453,936,385,913,354,886,327,869,315,872,311,890,323,917,350,941,382,976,451,999,517,1011,570"/>
+<area shape="rect" href="namespaceanonymous__namespace_02Options_8cpp_03.html#a522139bbb37aefbe7b4e7a8b047c6bc6" title=" " alt="" coords="655,337,871,377"/>
+<area shape="poly" title=" " alt="" coords="1002,572,986,532,962,482,929,433,909,410,886,391,867,379,870,375,890,387,913,407,933,429,967,480,991,529,1007,570"/>
+<area shape="rect" href="classLinuxCommissionableDataProvider.html#a3008625eeb7d169fa9fc74397227a7ef" title="Initialize the commissionable Data provider for Linux samples" alt="" coords="637,401,888,441"/>
+<area shape="poly" title=" " alt="" coords="996,574,952,514,921,482,887,455,863,443,866,439,889,451,925,478,956,510,1000,571"/>
+<area shape="rect" href="namespaceanonymous__namespace_02AppMain_8cpp_03.html#a6d7b58a5856b38af87b2c1355f748baf" title=" " alt="" coords="657,465,868,520"/>
+<area shape="poly" title=" " alt="" coords="978,580,887,535,854,523,856,518,889,530,980,575"/>
+<area shape="rect" href="classchip_1_1app_1_1AttributeAccessInterface.html#a09843999b983d05e07a0be1e672a3af9" title=" " alt="" coords="667,545,858,585"/>
+<area shape="poly" title=" " alt="" coords="922,588,858,580,858,574,923,583"/>
+<area shape="rect" href="classchip_1_1app_1_1AttributeAccessInterface.html#aa465d39295b8fb8e06f34dcb93d2f74d" title=" " alt="" coords="667,609,858,649"/>
+<area shape="poly" title=" " alt="" coords="923,611,858,619,858,614,922,606"/>
+<area shape="rect" href="classchip_1_1app_1_1AttributeAccessInterface.html#adc37488d8b7dfdf0e04319e9fc5fda83" title=" " alt="" coords="663,673,863,713"/>
+<area shape="poly" title=" " alt="" coords="981,619,938,642,889,663,853,675,851,670,887,658,935,637,978,614"/>
+<area shape="rect" href="classchip_1_1Optional.html#aefeeeb9f4b6334b2de947a1f909c7496" title=" " alt="" coords="664,737,861,763"/>
+<area shape="poly" title=" " alt="" coords="998,622,954,676,923,704,889,727,859,740,857,735,887,722,920,700,950,672,994,619"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5b4ccede0e294879f50eefc2d34efa63" title=" " alt="" coords="675,787,850,812"/>
+<area shape="poly" title=" " alt="" coords="1005,624,987,659,962,700,930,742,889,776,851,793,849,788,887,772,926,738,958,697,983,656,1000,621"/>
+<area shape="rect" href="classchip_1_1RendezvousParameters.html#a5553db1b157f34ccea27ba1d5ce4055e" title=" " alt="" coords="657,837,868,877"/>
+<area shape="poly" title=" " alt="" coords="1008,624,993,668,969,722,935,778,914,803,890,826,868,839,865,834,886,821,910,800,931,775,965,720,988,666,1003,622"/>
+<area shape="rect" href="classchip_1_1RendezvousParameters.html#a8fae3f7652bf8d838b4d6a177c53271a" title=" " alt="" coords="657,901,868,941"/>
+<area shape="poly" title=" " alt="" coords="1012,624,1001,679,979,751,963,790,943,827,919,861,890,891,870,904,867,900,886,887,915,857,939,824,958,787,974,750,996,678,1007,622"/>
+<area shape="rect" href="classchip_1_1Optional.html#a10fbed1c631f6736764e6e9dbbc25953" title=" " alt="" coords="693,965,833,1005"/>
+<area shape="poly" title=" " alt="" coords="1014,623,1007,690,988,779,972,827,951,874,924,917,890,955,863,972,834,982,832,977,861,967,886,951,919,914,946,871,967,825,983,778,1002,689,1009,623"/>
+<area shape="rect" href="classchip_1_1Optional.html#a4f92baa58b0f970e9301960c2ceaaa4e" title=" " alt="" coords="677,1029,848,1055"/>
+<area shape="poly" title=" " alt="" coords="1016,624,1013,702,1008,753,997,809,982,866,959,922,929,974,890,1019,871,1032,850,1040,848,1035,868,1027,886,1015,925,971,955,919,977,864,992,807,1002,752,1008,701,1011,623"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,440,60,465"/>
+<area shape="poly" title=" " alt="" coords="118,439,61,450,60,445,116,434"/>
+<area shape="poly" title=" " alt="" coords="805,80,789,72,763,69,740,71,726,76,719,83,719,91,714,91,714,81,723,72,739,66,763,64,791,67,807,75"/>
+<area shape="poly" title=" " alt="" coords="805,183,789,175,763,172,740,174,726,179,719,185,719,193,714,193,714,183,723,174,739,169,763,167,791,170,807,178"/>
+<area shape="rect" href="namespacechip_1_1examples.html#a63149b00322319c60a17f0450b9e6af5" title="Initialize a LinuxCommissionableDataProvider from Linux common command&#45;line options,..." alt="" coords="331,401,589,441"/>
+<area shape="poly" title=" " alt="" coords="624,423,590,423,590,418,624,418"/>
+<area shape="poly" title=" " alt="" coords="317,423,262,423,262,418,317,418"/>
+<area shape="rect" href="AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,464,283,489"/>
+<area shape="poly" title=" " alt="" coords="643,492,283,482,283,477,644,487"/>
+<area shape="poly" title=" " alt="" coords="96,465,60,459,61,454,96,459"/>
+<area shape="rect" href="classchip_1_1RendezvousParameters.html#a809aedf018477320bccf374e7e9fafab" title=" " alt="" coords="355,982,565,1022"/>
+<area shape="poly" title=" " alt="" coords="663,1032,565,1019,566,1013,664,1026"/>
+<area shape="rect" href="classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a40c81795ed59dad860acec7bbc2652c9" title="Callback that will be called to handle an InstantAction command." alt="" coords="355,1046,565,1115"/>
+<area shape="poly" title=" " alt="" coords="664,1057,566,1070,565,1065,663,1052"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1bb981d66c9f7063707396f4d2646a7a" name="a1bb981d66c9f7063707396f4d2646a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb981d66c9f7063707396f4d2646a7a">&#9670;&#160;</a></span>Value() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T &amp; <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const &amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the current value of the optional. Valid IFF <code>HasValue</code>. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_a1bb981d66c9f7063707396f4d2646a7a_cgraph.png" border="0" usemap="#aclasschip_1_1Optional_a1bb981d66c9f7063707396f4d2646a7a_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_a1bb981d66c9f7063707396f4d2646a7a_cgraph" id="aclasschip_1_1Optional_a1bb981d66c9f7063707396f4d2646a7a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,161,31"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="209,5,391,31"/>
+<area shape="poly" title=" " alt="" coords="162,15,195,15,195,21,162,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a73dd718d405f838a0c2d1b15b3850508" name="a73dd718d405f838a0c2d1b15b3850508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73dd718d405f838a0c2d1b15b3850508">&#9670;&#160;</a></span>Value() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<div class="memtemplate">
+template&lt;class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classchip_1_1Optional.html">Optional</a>&lt; T &gt; <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::Value </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convenience method to create an optional containing the specified value. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_a73dd718d405f838a0c2d1b15b3850508_cgraph.png" border="0" usemap="#aclasschip_1_1Optional_a73dd718d405f838a0c2d1b15b3850508_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_a73dd718d405f838a0c2d1b15b3850508_cgraph" id="aclasschip_1_1Optional_a73dd718d405f838a0c2d1b15b3850508_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,161,31"/>
+<area shape="rect" href="classchip_1_1Optional.html#a079c0497f86e65f1321e3d91085a6559" title=" " alt="" coords="209,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="162,15,196,15,196,21,162,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4f92baa58b0f970e9301960c2ceaaa4e" name="a4f92baa58b0f970e9301960c2ceaaa4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f92baa58b0f970e9301960c2ceaaa4e">&#9670;&#160;</a></span>ValueOr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T &amp; <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::ValueOr </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>defaultValue</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the current value of the optional if the optional has a value; otherwise returns the provided default value. </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_a4f92baa58b0f970e9301960c2ceaaa4e_cgraph.png" border="0" usemap="#aclasschip_1_1Optional_a4f92baa58b0f970e9301960c2ceaaa4e_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_a4f92baa58b0f970e9301960c2ceaaa4e_cgraph" id="aclasschip_1_1Optional_a4f92baa58b0f970e9301960c2ceaaa4e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,176,31"/>
+<area shape="rect" href="classchip_1_1Optional.html#a5cd680378379844625c451dcacf2c87c" title=" " alt="" coords="428,5,609,31"/>
+<area shape="poly" title=" " alt="" coords="176,15,415,15,415,21,176,21"/>
+<area shape="rect" href="classchip_1_1Optional.html#aaf7c61e9f1bdf79143adbd741b8d3ca7" title=" " alt="" coords="224,31,380,56"/>
+<area shape="poly" title=" " alt="" coords="177,26,211,30,210,35,176,31"/>
+<area shape="poly" title=" " alt="" coords="380,32,414,28,415,33,381,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Optional_a4f92baa58b0f970e9301960c2ceaaa4e_icgraph.png" border="0" usemap="#aclasschip_1_1Optional_a4f92baa58b0f970e9301960c2ceaaa4e_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Optional_a4f92baa58b0f970e9301960c2ceaaa4e_icgraph" id="aclasschip_1_1Optional_a4f92baa58b0f970e9301960c2ceaaa4e_icgraph">
+<area shape="rect" title=" " alt="" coords="264,53,435,78"/>
+<area shape="rect" href="classchip_1_1RendezvousParameters.html#a809aedf018477320bccf374e7e9fafab" title=" " alt="" coords="5,5,216,45"/>
+<area shape="poly" title=" " alt="" coords="259,53,216,46,217,40,260,48"/>
+<area shape="rect" href="classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a40c81795ed59dad860acec7bbc2652c9" title="Callback that will be called to handle an InstantAction command." alt="" coords="5,69,216,139"/>
+<area shape="poly" title=" " alt="" coords="257,83,217,90,216,84,256,78"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a086c1d1081983bf3971a6f8b22a3b2b3" name="a086c1d1081983bf3971a6f8b22a3b2b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086c1d1081983bf3971a6f8b22a3b2b3">&#9670;&#160;</a></span>mValueHolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Optional_1_1ValueHolder.html">ValueHolder</a> <a class="el" href="classchip_1_1Optional.html">chip::Optional</a>&lt; T &gt;::mValueHolder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/lib/core/<a class="el" href="Optional_8h_source.html">Optional.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

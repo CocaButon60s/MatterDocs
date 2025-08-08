@@ -1,0 +1,9 @@
+<map id="chip::app::Clusters::Actions::EndpointListStorage::Set" name="chip::app::Clusters::Actions::EndpointListStorage::Set">
+<area shape="rect" id="Node000001" title=" " alt="" coords="276,91,521,131"/>
+<area shape="rect" id="Node000002" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1EndpointListStorage.html#a988d49081792fe5954a8c4770182f877" title=" " alt="" coords="9,5,225,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,90,215,63,216,58,314,85"/>
+<area shape="rect" id="Node000003" href="$structchip_1_1app_1_1Clusters_1_1Actions_1_1EndpointListStorage.html#a7fc768aae27f74de9aba6110d426459d" title=" " alt="" coords="9,84,225,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,114,225,114,225,109,262,109"/>
+<area shape="rect" id="Node000004" href="$classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a5c4740fd4a4f26ccf02e2ae6b74883ac" title=" " alt="" coords="5,163,228,233"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="320,138,229,166,228,161,319,133"/>
+</map>

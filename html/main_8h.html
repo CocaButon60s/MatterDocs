@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/examples/bridge-app/linux/include/main.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_10d0982b574d45f69a889a48df526ab0.html">examples</a></li><li class="navelem"><a class="el" href="dir_fbcb6c6c3fa2f37e00d6d1c150cb596c.html">bridge-app</a></li><li class="navelem"><a class="el" href="dir_26fba0e545759d82877cf41cb2c35ccd.html">linux</a></li><li class="navelem"><a class="el" href="dir_ce64238cb94578bcb76b042e92dd4428.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">main.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="NamedPipeCommands_8h_source.html">NamedPipeCommands.h</a>&quot;</code><br />
+<code>#include &lt;json/json.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+main.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8h__incl.png" border="0" usemap="#aconnectedhomeip_2examples_2bridge-app_2linux_2include_2main_8h" alt=""/></div>
+<map name="aconnectedhomeip_2examples_2bridge-app_2linux_2include_2main_8h" id="aconnectedhomeip_2examples_2bridge-app_2linux_2include_2main_8h">
+<area shape="rect" title=" " alt="" coords="350,5,582,45"/>
+<area shape="rect" href="NamedPipeCommands_8h.html" title=" " alt="" coords="295,93,477,119"/>
+<area shape="poly" title=" " alt="" coords="448,47,410,85,406,82,445,44"/>
+<area shape="rect" title=" " alt="" coords="501,93,593,119"/>
+<area shape="poly" title=" " alt="" coords="488,44,527,82,523,85,484,47"/>
+<area shape="rect" href="CHIPError_8h.html" title=" " alt="" coords="173,167,319,192"/>
+<area shape="poly" title=" " alt="" coords="365,121,282,163,280,158,362,116"/>
+<area shape="rect" title=" " alt="" coords="344,167,428,192"/>
+<area shape="poly" title=" " alt="" coords="389,119,389,153,383,153,383,119"/>
+<area shape="rect" title=" " alt="" coords="453,167,511,192"/>
+<area shape="poly" title=" " alt="" coords="403,117,457,156,454,160,400,121"/>
+<area shape="rect" title=" " alt="" coords="5,240,92,265"/>
+<area shape="poly" title=" " alt="" coords="215,195,95,238,93,233,213,190"/>
+<area shape="rect" title=" " alt="" coords="117,240,175,265"/>
+<area shape="poly" title=" " alt="" coords="231,194,175,234,172,230,228,190"/>
+<area shape="rect" title=" " alt="" coords="200,240,292,265"/>
+<area shape="poly" title=" " alt="" coords="249,192,249,226,243,226,243,192"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="316,240,475,265"/>
+<area shape="poly" title=" " alt="" coords="271,190,360,232,357,236,269,194"/>
+<area shape="rect" title=" " alt="" coords="499,240,671,265"/>
+<area shape="poly" title=" " alt="" coords="301,189,517,235,516,240,300,195"/>
+<area shape="rect" title=" " alt="" coords="163,313,283,339"/>
+<area shape="poly" title=" " alt="" coords="369,268,265,310,263,306,367,263"/>
+<area shape="rect" title=" " alt="" coords="307,313,483,339"/>
+<area shape="poly" title=" " alt="" coords="398,266,398,300,393,300,393,266"/>
+<area shape="rect" title=" " alt="" coords="508,313,637,339"/>
+<area shape="poly" title=" " alt="" coords="425,263,532,306,530,311,423,268"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2examples_2bridge-app_2linux_2include_2main_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2examples_2bridge-app_2linux_2include_2main_8hdep" id="aconnectedhomeip_2examples_2bridge-app_2linux_2include_2main_8hdep">
+<area shape="rect" title=" " alt="" coords="107,5,339,45"/>
+<area shape="rect" href="bridged-actions-stub_8cpp.html" title=" " alt="" coords="5,93,212,148"/>
+<area shape="poly" title=" " alt="" coords="191,56,143,95,139,91,188,52"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="236,101,443,141"/>
+<area shape="poly" title=" " alt="" coords="259,52,318,99,314,103,256,56"/>
+</map>
+</div>
+</div>
+<p><a href="main_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBridgeAppCommandHandler.html">BridgeAppCommandHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBridgeCommandDelegate.html">BridgeCommandDelegate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ae579118b6e30a9a0f9219e48f91ad5fb" id="r_ae579118b6e30a9a0f9219e48f91ad5fb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classEndpointListInfo.html">EndpointListInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ae579118b6e30a9a0f9219e48f91ad5fb">GetEndpointListInfo</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> parentId)</td></tr>
+<tr class="separator:ae579118b6e30a9a0f9219e48f91ad5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f1ce3837d8cb9dfabd138790a5956c5" id="r_a2f1ce3837d8cb9dfabd138790a5956c5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classAction.html">Action</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a2f1ce3837d8cb9dfabd138790a5956c5">GetActionListInfo</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> parentId)</td></tr>
+<tr class="separator:a2f1ce3837d8cb9dfabd138790a5956c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ca66fc20567f986f84e0193c2908ed" id="r_a20ca66fc20567f986f84e0193c2908ed"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classRoom.html">Room</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a20ca66fc20567f986f84e0193c2908ed">GetRoomListInfo</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> parentId)</td></tr>
+<tr class="separator:a20ca66fc20567f986f84e0193c2908ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb8ae1e4c715a0e59458291ea79451c" id="r_aecb8ae1e4c715a0e59458291ea79451c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#aecb8ae1e4c715a0e59458291ea79451c">runOnOffRoomAction</a> (<a class="el" href="classRoom.html">Room</a> *room, bool actionOn, <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a> endpointId, uint16_t actionID, uint32_t invokeID, bool hasInvokeID)</td></tr>
+<tr class="separator:aecb8ae1e4c715a0e59458291ea79451c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a2f1ce3837d8cb9dfabd138790a5956c5" name="a2f1ce3837d8cb9dfabd138790a5956c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f1ce3837d8cb9dfabd138790a5956c5">&#9670;&#160;</a></span>GetActionListInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classAction.html">Action</a> * &gt; GetActionListInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td>
+          <td class="paramname"><em>parentId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8h_a2f1ce3837d8cb9dfabd138790a5956c5_icgraph.png" border="0" usemap="#amain_8h_a2f1ce3837d8cb9dfabd138790a5956c5_icgraph" alt=""/></div>
+<map name="amain_8h_a2f1ce3837d8cb9dfabd138790a5956c5_icgraph" id="amain_8h_a2f1ce3837d8cb9dfabd138790a5956c5_icgraph">
+<area shape="rect" title=" " alt="" coords="264,121,399,146"/>
+<area shape="rect" href="classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a40c81795ed59dad860acec7bbc2652c9" title="Callback that will be called to handle an InstantAction command." alt="" coords="5,5,216,75"/>
+<area shape="poly" title=" " alt="" coords="287,118,192,77,194,72,289,113"/>
+<area shape="rect" href="classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#abef8c4a570d562b2053bb93dc136a2b3" title=" " alt="" coords="5,99,216,168"/>
+<area shape="poly" title=" " alt="" coords="250,136,216,136,216,131,250,131"/>
+<area shape="rect" href="classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a1c188b1512454e8589c2396698570081" title=" " alt="" coords="5,192,216,261"/>
+<area shape="poly" title=" " alt="" coords="289,154,194,194,192,190,287,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae579118b6e30a9a0f9219e48f91ad5fb" name="ae579118b6e30a9a0f9219e48f91ad5fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae579118b6e30a9a0f9219e48f91ad5fb">&#9670;&#160;</a></span>GetEndpointListInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classEndpointListInfo.html">EndpointListInfo</a> &gt; GetEndpointListInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td>
+          <td class="paramname"><em>parentId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8h_ae579118b6e30a9a0f9219e48f91ad5fb_cgraph.png" border="0" usemap="#amain_8h_ae579118b6e30a9a0f9219e48f91ad5fb_cgraph" alt=""/></div>
+<map name="amain_8h_ae579118b6e30a9a0f9219e48f91ad5fb_cgraph" id="amain_8h_ae579118b6e30a9a0f9219e48f91ad5fb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,92,156,117"/>
+<area shape="rect" href="classEndpointListInfo.html#af40b35b8722685258168b411588f96dc" title=" " alt="" coords="204,5,433,31"/>
+<area shape="poly" title=" " alt="" coords="102,90,148,65,203,41,234,31,235,37,205,46,150,70,105,94"/>
+<area shape="rect" href="classEndpointListInfo.html#aad2514a424801d260d206d1874e8f1fa" title=" " alt="" coords="211,55,426,95"/>
+<area shape="poly" title=" " alt="" coords="156,93,197,88,198,93,157,98"/>
+<area shape="rect" href="classDevice.html#ac63fa54e386a433b158302146c1dea21" title=" " alt="" coords="242,120,395,145"/>
+<area shape="poly" title=" " alt="" coords="157,111,228,119,228,125,156,116"/>
+<area shape="rect" href="classDevice.html#a7df969cb29ba2fd484286d5f743c9fbd" title=" " alt="" coords="253,169,384,195"/>
+<area shape="poly" title=" " alt="" coords="109,115,153,135,205,154,241,164,239,169,203,159,151,140,107,120"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8h_ae579118b6e30a9a0f9219e48f91ad5fb_icgraph.png" border="0" usemap="#amain_8h_ae579118b6e30a9a0f9219e48f91ad5fb_icgraph" alt=""/></div>
+<map name="amain_8h_ae579118b6e30a9a0f9219e48f91ad5fb_icgraph" id="amain_8h_ae579118b6e30a9a0f9219e48f91ad5fb_icgraph">
+<area shape="rect" title=" " alt="" coords="276,27,427,53"/>
+<area shape="rect" href="classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a5c4740fd4a4f26ccf02e2ae6b74883ac" title=" " alt="" coords="5,5,228,75"/>
+<area shape="poly" title=" " alt="" coords="262,43,228,43,228,37,262,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a20ca66fc20567f986f84e0193c2908ed" name="a20ca66fc20567f986f84e0193c2908ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ca66fc20567f986f84e0193c2908ed">&#9670;&#160;</a></span>GetRoomListInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classRoom.html">Room</a> * &gt; GetRoomListInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td>
+          <td class="paramname"><em>parentId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8h_a20ca66fc20567f986f84e0193c2908ed_icgraph.png" border="0" usemap="#amain_8h_a20ca66fc20567f986f84e0193c2908ed_icgraph" alt=""/></div>
+<map name="amain_8h_a20ca66fc20567f986f84e0193c2908ed_icgraph" id="amain_8h_a20ca66fc20567f986f84e0193c2908ed_icgraph">
+<area shape="rect" title=" " alt="" coords="264,27,395,53"/>
+<area shape="rect" href="classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a40c81795ed59dad860acec7bbc2652c9" title="Callback that will be called to handle an InstantAction command." alt="" coords="5,5,216,75"/>
+<area shape="poly" title=" " alt="" coords="250,43,216,43,216,37,250,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aecb8ae1e4c715a0e59458291ea79451c" name="aecb8ae1e4c715a0e59458291ea79451c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecb8ae1e4c715a0e59458291ea79451c">&#9670;&#160;</a></span>runOnOffRoomAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runOnOffRoomAction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRoom.html">Room</a> *&#160;</td>
+          <td class="paramname"><em>room</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>actionOn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a>&#160;</td>
+          <td class="paramname"><em>endpointId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>actionID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>invokeID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasInvokeID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8h_aecb8ae1e4c715a0e59458291ea79451c_cgraph.png" border="0" usemap="#amain_8h_aecb8ae1e4c715a0e59458291ea79451c_cgraph" alt=""/></div>
+<map name="amain_8h_aecb8ae1e4c715a0e59458291ea79451c_cgraph" id="amain_8h_aecb8ae1e4c715a0e59458291ea79451c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,80,164,105"/>
+<area shape="rect" href="classDevice.html#ac63fa54e386a433b158302146c1dea21" title=" " alt="" coords="221,5,374,31"/>
+<area shape="poly" title=" " alt="" coords="114,77,211,39,234,32,236,37,213,45,116,82"/>
+<area shape="rect" href="classRoom.html#ae6a3be5861b657a2cbbada8e67ab7fde" title=" " alt="" coords="233,55,361,80"/>
+<area shape="poly" title=" " alt="" coords="164,81,219,74,220,79,165,86"/>
+<area shape="rect" href="namespacechip_1_1app.html#a7822a7eff2758653a1309c90c7144a7e" title="Log an event via a EventLoggingDelegate, with options." alt="" coords="223,104,372,129"/>
+<area shape="poly" title=" " alt="" coords="164,99,209,104,209,109,164,104"/>
+<area shape="rect" href="classDeviceOnOff.html#aed1e36663c0981e619e7becf097ad368" title=" " alt="" coords="212,153,383,179"/>
+<area shape="poly" title=" " alt="" coords="119,103,213,138,240,147,238,152,211,143,117,108"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8h_aecb8ae1e4c715a0e59458291ea79451c_icgraph.png" border="0" usemap="#amain_8h_aecb8ae1e4c715a0e59458291ea79451c_icgraph" alt=""/></div>
+<map name="amain_8h_aecb8ae1e4c715a0e59458291ea79451c_icgraph" id="amain_8h_aecb8ae1e4c715a0e59458291ea79451c_icgraph">
+<area shape="rect" title=" " alt="" coords="264,27,423,53"/>
+<area shape="rect" href="classanonymous__namespace_02bridged-actions-stub_8cpp_03_1_1LinuxActionsDelegateImpl.html#a40c81795ed59dad860acec7bbc2652c9" title="Callback that will be called to handle an InstantAction command." alt="" coords="5,5,216,75"/>
+<area shape="poly" title=" " alt="" coords="250,43,216,43,216,37,250,37"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

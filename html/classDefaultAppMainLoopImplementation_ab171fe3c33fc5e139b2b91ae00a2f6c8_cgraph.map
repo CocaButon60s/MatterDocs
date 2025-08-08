@@ -1,0 +1,13 @@
+<map id="DefaultAppMainLoopImplementation::SignalSafeStopMainLoop" name="DefaultAppMainLoopImplementation::SignalSafeStopMainLoop">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,120,268,160"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Server.html#a8a19ddeb66b639f93d0ff613d4c04e3e" title=" " alt="" coords="335,5,531,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,117,240,86,315,55,338,47,340,52,317,60,242,91,178,122"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Server.html#aebc85f8a7d702eb987e86f075f2119e8" title=" " alt="" coords="341,70,526,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,117,353,95,354,101,241,123"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1DeviceLayer.html#a9b90588e3accea89d79094c29fc07261" title=" " alt="" coords="360,120,507,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="268,137,346,137,346,143,268,143"/>
+<area shape="rect" id="Node000005" href="$classchip_1_1DeviceLayer_1_1PlatformManager.html#a8a1daf9aaf8eb75f6c743c8dd1935d29" title=" " alt="" coords="316,184,551,224"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="231,157,327,178,326,184,230,163"/>
+<area shape="rect" id="Node000006" href="$classchip_1_1DeviceLayer_1_1PlatformManager.html#a45ec9f9b795dcb62d2fb8963fbfe431f" title="This will trigger the event loop to exit and block till it has exited the loop. This prevents the pro..." alt="" coords="329,249,538,303"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="173,158,239,195,317,234,335,241,333,246,315,238,236,200,170,162"/>
+</map>

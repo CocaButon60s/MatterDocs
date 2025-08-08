@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/examples/platform/linux/Options.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_10d0982b574d45f69a889a48df526ab0.html">examples</a></li><li class="navelem"><a class="el" href="dir_b568bdd729e53f1ef6f0845f5f040bad.html">platform</a></li><li class="navelem"><a class="el" href="dir_305ccfe11c2879671f1244ec47ab4e9e.html">linux</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Options.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Options_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *    Copyright (c) 2020 Project CHIP Authors</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *    All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *    You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *        http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *    Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *    See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *    limitations under the License.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;<a class="code" href="AccessConfig_8h.html">access/AccessConfig.h</a>&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;<a class="code" href="AppConfig_8h.html">app/AppConfig.h</a>&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="InetInterface_8h.html">inet/InetInterface.h</a>&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPError_8h.html">lib/core/CHIPError.h</a>&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="Optional_8h.html">lib/core/Optional.h</a>&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPArgParser_8hpp.html">lib/support/CHIPArgParser.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPDeviceConfig_8h.html">platform/CHIPDeviceConfig.h</a>&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;<a class="code" href="CHIPDeviceLayer_8h.html">platform/CHIPDeviceLayer.h</a>&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;<a class="code" href="SetupPayload_8h.html">setup_payload/SetupPayload.h</a>&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;<a class="code" href="DeviceAttestationCredsProvider_8h.html">credentials/DeviceAttestationCredsProvider.h</a>&gt;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;testing/CustomCSRResponse.h&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#if CHIP_CONFIG_USE_ACCESS_RESTRICTIONS</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &lt;<a class="code" href="AccessRestrictionProvider_8h.html">access/AccessRestrictionProvider.h</a>&gt;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html">   48</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structLinuxDeviceOptions.html">LinuxDeviceOptions</a></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a5e38ea9b54c27c22531bdfe7ec7af533">   50</a></span>    <a class="code hl_struct" href="structchip_1_1PayloadContents.html">chip::PayloadContents</a> <a class="code hl_variable" href="structLinuxDeviceOptions.html#a5e38ea9b54c27c22531bdfe7ec7af533">payload</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a12d9c01f695d07a693c981930f36111f">   51</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;uint16_t&gt;</a> <a class="code hl_variable" href="structLinuxDeviceOptions.html#a12d9c01f695d07a693c981930f36111f">discriminator</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a5cc6e117921c899ed5dd8b176867af57">   52</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;std::vector&lt;uint8_t&gt;</a>&gt; <a class="code hl_variable" href="structLinuxDeviceOptions.html#a5cc6e117921c899ed5dd8b176867af57">spake2pVerifier</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a6df9fe9a82b4d17d2b9ac882b3154c80">   53</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;std::vector&lt;uint8_t&gt;</a>&gt; <a class="code hl_variable" href="structLinuxDeviceOptions.html#a6df9fe9a82b4d17d2b9ac882b3154c80">spake2pSalt</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#aad907bbbced7b6763d4142f206f06adc">   54</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;std::string&gt;</a> <a class="code hl_variable" href="structLinuxDeviceOptions.html#aad907bbbced7b6763d4142f206f06adc">dacProviderFile</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a019d8aa96c4b1594e28e7949b8d98e98">   55</a></span>    uint32_t <a class="code hl_variable" href="structLinuxDeviceOptions.html#a019d8aa96c4b1594e28e7949b8d98e98">spake2pIterations</a> = 0; <span class="comment">// When not provided (0), will default elsewhere</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a34240a1a81f38483250d9feebe606e03">   56</a></span>    uint32_t <a class="code hl_variable" href="structLinuxDeviceOptions.html#a34240a1a81f38483250d9feebe606e03">mBleDevice</a>        = 0;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#af6b4fd7740769081a25eea1362c6042f">   57</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structLinuxDeviceOptions.html#af6b4fd7740769081a25eea1362c6042f">wifiSupports5g</a>        = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#ad3ff5862258c00a61e9098aba7bf006c">   58</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structLinuxDeviceOptions.html#ad3ff5862258c00a61e9098aba7bf006c">mWiFi</a>                 = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a20b2d2dfa28c02fcaa7109c0568bb467">   59</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structLinuxDeviceOptions.html#a20b2d2dfa28c02fcaa7109c0568bb467">mThread</a>               = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a5d03f904507dada02f41c6d260f66e70">   60</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structLinuxDeviceOptions.html#a5d03f904507dada02f41c6d260f66e70">cameraDeferredOffer</a>   = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a8867ffc4f12e40ddb995a5cac8b9a386">   61</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;std::string&gt;</a> <a class="code hl_variable" href="structLinuxDeviceOptions.html#a8867ffc4f12e40ddb995a5cac8b9a386">cameraVideoDevice</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#if CHIP_DEVICE_CONFIG_ENABLE_WIFIPAF</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">bool</span> mWiFiPAF                = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * mWiFiPAFExtCmds = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    uint32_t mPublishId          = 0;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#if CHIP_DEVICE_CONFIG_ENABLE_BOTH_COMMISSIONER_AND_COMMISSIONEE || CHIP_DEVICE_ENABLE_PORT_PARAMS</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    uint16_t securedDevicePort         = <a class="code hl_define" href="CHIPConfig_8h.html#a6affe2b65fc2ab95d72bc782ab34908c">CHIP_PORT</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    uint16_t unsecuredCommissionerPort = <a class="code hl_define" href="CHIPConfig_8h.html#a9d7f7b42cde77e003c383afaca573db5">CHIP_UDC_PORT</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_DEVICE_CONFIG_ENABLE_BOTH_COMMISSIONER_AND_COMMISSIONEE || CHIP_DEVICE_ENABLE_PORT_PARAMS</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#if CHIP_DEVICE_CONFIG_ENABLE_BOTH_COMMISSIONER_AND_COMMISSIONEE</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    uint16_t securedCommissionerPort    = <a class="code hl_define" href="CHIPConfig_8h.html#a6affe2b65fc2ab95d72bc782ab34908c">CHIP_PORT</a> + 12; <span class="comment">// TODO: why + 12?</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_typedef" href="namespacechip.html#ab7688ed76c3e1a7ec2ea0a86ab10ed16">chip::FabricId</a> commissionerFabricId = <a class="code hl_variable" href="namespacechip.html#a9d7142a4f80386f8795826a188f6b4a7">chip::kUndefinedFabricId</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_DEVICE_CONFIG_ENABLE_BOTH_COMMISSIONER_AND_COMMISSIONEE</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a83f1b849f1bab9aeccf3c694b58bf8f1">   75</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code hl_variable" href="structLinuxDeviceOptions.html#a83f1b849f1bab9aeccf3c694b58bf8f1">command</a>                = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#acbd1cf2449fcd422cb9a78b9f9d08659">   76</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code hl_variable" href="structLinuxDeviceOptions.html#acbd1cf2449fcd422cb9a78b9f9d08659">PICS</a>                   = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#ac0661dfcdf5331ea1d42849ae71e67a8">   77</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code hl_variable" href="structLinuxDeviceOptions.html#ac0661dfcdf5331ea1d42849ae71e67a8">KVS</a>                    = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a8e2cdf44ece8d7a92fb6a23af8447af0">   78</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code hl_variable" href="structLinuxDeviceOptions.html#a8e2cdf44ece8d7a92fb6a23af8447af0">app_pipe</a>               = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a7e3a1c09edc173c6f65441fd00525cd1">   79</a></span>    <a class="code hl_class" href="classchip_1_1Inet_1_1InterfaceId.html">chip::Inet::InterfaceId</a> <a class="code hl_variable" href="structLinuxDeviceOptions.html#a7e3a1c09edc173c6f65441fd00525cd1">interfaceId</a> = <a class="code hl_function" href="classchip_1_1Inet_1_1InterfaceId.html#af5af583e6c6d8343374241114077999d">chip::Inet::InterfaceId::Null</a>();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#if CHIP_CONFIG_TRANSPORT_TRACE_ENABLED</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">bool</span> traceStreamDecodeEnabled = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">bool</span> traceStreamToLogEnabled  = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;std::string&gt;</a> traceStreamFilename;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#endif </span><span class="comment">// CHIP_CONFIG_TRANSPORT_TRACE_ENABLED</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a1d2285cd105579d4d4a4be9840dbe566">   85</a></span>    <a class="code hl_class" href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html">chip::Credentials::DeviceAttestationCredentialsProvider</a> * <a class="code hl_variable" href="structLinuxDeviceOptions.html#a1d2285cd105579d4d4a4be9840dbe566">dacProvider</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a3d01206e3f8be2e4ece219b8b72787ff">   86</a></span>    chip::CSRResponseOptions <a class="code hl_variable" href="structLinuxDeviceOptions.html#a3d01206e3f8be2e4ece219b8b72787ff">mCSRResponseOptions</a>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a5383a8377a5deab9c94ed2dcaa98df0a">   87</a></span>    uint8_t <a class="code hl_variable" href="structLinuxDeviceOptions.html#a5383a8377a5deab9c94ed2dcaa98df0a">testEventTriggerEnableKey</a>[16] = { 0 };</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a589b049d69d83c7646d3987911aba798">   88</a></span>    std::vector&lt;std::string&gt; <a class="code hl_variable" href="structLinuxDeviceOptions.html#a589b049d69d83c7646d3987911aba798">traceTo</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a5cbb0bbee5898d757a446fb351c982c8">   89</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structLinuxDeviceOptions.html#a5cbb0bbee5898d757a446fb351c982c8">mSimulateNoInternalTime</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#if defined(PW_RPC_ENABLED)</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    uint16_t rpcServerPort = 33000;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#if CONFIG_BUILD_FOR_HOST_UNIT_TEST</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    int32_t subscriptionCapacity                   = <a class="code hl_define" href="CHIPConfig_8h.html#a1ab3a4cb431bbc7a56640d71437e7c8d">CHIP_IM_MAX_NUM_SUBSCRIPTIONS</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    int32_t subscriptionResumptionRetryIntervalSec = -1;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#if CHIP_CONFIG_USE_ACCESS_RESTRICTIONS</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;std::vector&lt;chip::Access::AccessRestrictionProvider::Entry&gt;</a>&gt; commissioningArlEntries;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;std::vector&lt;chip::Access::AccessRestrictionProvider::Entry&gt;</a>&gt; arlEntries;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#if CHIP_CONFIG_TERMS_AND_CONDITIONS_REQUIRED</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;uint16_t&gt;</a> tcVersion;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;uint16_t&gt;</a> tcRequired;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#if CHIP_CONFIG_ENABLE_ICD_SERVER</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;chip::System::Clock::Milliseconds32&gt;</a> icdActiveModeDurationMs;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;chip::System::Clock::Milliseconds32&gt;</a> icdIdleModeDurationMs;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#aa9adc9ce18fa4a66ca2bf6ebe87b3003">  109</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;std::string&gt;</a> <a class="code hl_variable" href="structLinuxDeviceOptions.html#aa9adc9ce18fa4a66ca2bf6ebe87b3003">vendorName</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a1217f57b32484ef28f63f87b3f65d78e">  110</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;std::string&gt;</a> <a class="code hl_variable" href="structLinuxDeviceOptions.html#a1217f57b32484ef28f63f87b3f65d78e">productName</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a3d97cc0e4bab3cc88cc2b6b63a58a496">  111</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;std::string&gt;</a> <a class="code hl_variable" href="structLinuxDeviceOptions.html#a3d97cc0e4bab3cc88cc2b6b63a58a496">hardwareVersionString</a>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="structLinuxDeviceOptions.html#a3c993106327379d50be6c895d598efe0">  112</a></span>    <a class="code hl_class" href="classchip_1_1Optional.html">chip::Optional&lt;std::string&gt;</a> <a class="code hl_variable" href="structLinuxDeviceOptions.html#a3c993106327379d50be6c895d598efe0">serialNumber</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structLinuxDeviceOptions.html">LinuxDeviceOptions</a> &amp; <a class="code hl_function" href="structLinuxDeviceOptions.html#a80e54198d3e60b3a2c7d351683548d88">GetInstance</a>();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>};</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="Options_8h.html#a7e778c816558d94af55af49cd0ce69f2">  116</a></span><a class="code hl_class" href="classchip_1_1ChipError.html">CHIP_ERROR</a> <a class="code hl_function" href="Options_8h.html#a7e778c816558d94af55af49cd0ce69f2">ParseArguments</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * <span class="keyword">const</span> argv[], chip::ArgParser::OptionSet * customOptions = <span class="keyword">nullptr</span>);</div>
+<div class="ttc" id="aAccessConfig_8h_html"><div class="ttname"><a href="AccessConfig_8h.html">AccessConfig.h</a></div></div>
+<div class="ttc" id="aAccessRestrictionProvider_8h_html"><div class="ttname"><a href="AccessRestrictionProvider_8h.html">AccessRestrictionProvider.h</a></div></div>
+<div class="ttc" id="aAppConfig_8h_html"><div class="ttname"><a href="AppConfig_8h.html">AppConfig.h</a></div></div>
+<div class="ttc" id="aCHIPArgParser_8hpp_html"><div class="ttname"><a href="CHIPArgParser_8hpp.html">CHIPArgParser.hpp</a></div></div>
+<div class="ttc" id="aCHIPConfig_8h_html_a1ab3a4cb431bbc7a56640d71437e7c8d"><div class="ttname"><a href="CHIPConfig_8h.html#a1ab3a4cb431bbc7a56640d71437e7c8d">CHIP_IM_MAX_NUM_SUBSCRIPTIONS</a></div><div class="ttdeci">#define CHIP_IM_MAX_NUM_SUBSCRIPTIONS</div><div class="ttdoc">Defines the maximum number of ReadHandler for subscriptions, limits the number of active subscription...</div><div class="ttdef"><b>Definition</b> CHIPConfig.h:928</div></div>
+<div class="ttc" id="aCHIPConfig_8h_html_a6affe2b65fc2ab95d72bc782ab34908c"><div class="ttname"><a href="CHIPConfig_8h.html#a6affe2b65fc2ab95d72bc782ab34908c">CHIP_PORT</a></div><div class="ttdeci">#define CHIP_PORT</div><div class="ttdoc">chip TCP/UDP port for secured chip traffic.</div><div class="ttdef"><b>Definition</b> CHIPConfig.h:335</div></div>
+<div class="ttc" id="aCHIPConfig_8h_html_a9d7f7b42cde77e003c383afaca573db5"><div class="ttname"><a href="CHIPConfig_8h.html#a9d7f7b42cde77e003c383afaca573db5">CHIP_UDC_PORT</a></div><div class="ttdeci">#define CHIP_UDC_PORT</div><div class="ttdoc">chip TCP/UDP port on commissioner for unsecured user-directed-commissioning traffic.</div><div class="ttdef"><b>Definition</b> CHIPConfig.h:346</div></div>
+<div class="ttc" id="aCHIPDeviceConfig_8h_html"><div class="ttname"><a href="CHIPDeviceConfig_8h.html">CHIPDeviceConfig.h</a></div></div>
+<div class="ttc" id="aCHIPDeviceLayer_8h_html"><div class="ttname"><a href="CHIPDeviceLayer_8h.html">CHIPDeviceLayer.h</a></div></div>
+<div class="ttc" id="aCHIPError_8h_html"><div class="ttname"><a href="CHIPError_8h.html">CHIPError.h</a></div></div>
+<div class="ttc" id="aDeviceAttestationCredsProvider_8h_html"><div class="ttname"><a href="DeviceAttestationCredsProvider_8h.html">DeviceAttestationCredsProvider.h</a></div></div>
+<div class="ttc" id="aInetInterface_8h_html"><div class="ttname"><a href="InetInterface_8h.html">InetInterface.h</a></div></div>
+<div class="ttc" id="aOptional_8h_html"><div class="ttname"><a href="Optional_8h.html">Optional.h</a></div></div>
+<div class="ttc" id="aOptions_8h_html_a7e778c816558d94af55af49cd0ce69f2"><div class="ttname"><a href="Options_8h.html#a7e778c816558d94af55af49cd0ce69f2">ParseArguments</a></div><div class="ttdeci">CHIP_ERROR ParseArguments(int argc, char *const argv[], chip::ArgParser::OptionSet *customOptions=nullptr)</div></div>
+<div class="ttc" id="aSetupPayload_8h_html"><div class="ttname"><a href="SetupPayload_8h.html">SetupPayload.h</a></div></div>
+<div class="ttc" id="aclasschip_1_1ChipError_html"><div class="ttname"><a href="classchip_1_1ChipError.html">chip::ChipError</a></div><div class="ttdef"><b>Definition</b> CHIPError.h:55</div></div>
+<div class="ttc" id="aclasschip_1_1Credentials_1_1DeviceAttestationCredentialsProvider_html"><div class="ttname"><a href="classchip_1_1Credentials_1_1DeviceAttestationCredentialsProvider.html">chip::Credentials::DeviceAttestationCredentialsProvider</a></div><div class="ttdef"><b>Definition</b> DeviceAttestationCredsProvider.h:26</div></div>
+<div class="ttc" id="aclasschip_1_1Inet_1_1InterfaceId_html"><div class="ttname"><a href="classchip_1_1Inet_1_1InterfaceId.html">chip::Inet::InterfaceId</a></div><div class="ttdef"><b>Definition</b> InetInterface.h:77</div></div>
+<div class="ttc" id="aclasschip_1_1Inet_1_1InterfaceId_html_af5af583e6c6d8343374241114077999d"><div class="ttname"><a href="classchip_1_1Inet_1_1InterfaceId.html#af5af583e6c6d8343374241114077999d">chip::Inet::InterfaceId::Null</a></div><div class="ttdeci">static constexpr InterfaceId Null()</div><div class="ttdef"><b>Definition</b> InetInterface.h:111</div></div>
+<div class="ttc" id="aclasschip_1_1Optional_html"><div class="ttname"><a href="classchip_1_1Optional.html">chip::Optional</a></div><div class="ttdef"><b>Definition</b> Optional.h:49</div></div>
+<div class="ttc" id="anamespacechip_html_a9d7142a4f80386f8795826a188f6b4a7"><div class="ttname"><a href="namespacechip.html#a9d7142a4f80386f8795826a188f6b4a7">chip::kUndefinedFabricId</a></div><div class="ttdeci">constexpr FabricId kUndefinedFabricId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:67</div></div>
+<div class="ttc" id="anamespacechip_html_ab7688ed76c3e1a7ec2ea0a86ab10ed16"><div class="ttname"><a href="namespacechip.html#ab7688ed76c3e1a7ec2ea0a86ab10ed16">chip::FabricId</a></div><div class="ttdeci">uint64_t FabricId</div><div class="ttdef"><b>Definition</b> DataModelTypes.h:43</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html"><div class="ttname"><a href="structLinuxDeviceOptions.html">LinuxDeviceOptions</a></div><div class="ttdef"><b>Definition</b> Options.h:49</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a019d8aa96c4b1594e28e7949b8d98e98"><div class="ttname"><a href="structLinuxDeviceOptions.html#a019d8aa96c4b1594e28e7949b8d98e98">LinuxDeviceOptions::spake2pIterations</a></div><div class="ttdeci">uint32_t spake2pIterations</div><div class="ttdef"><b>Definition</b> Options.h:55</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a1217f57b32484ef28f63f87b3f65d78e"><div class="ttname"><a href="structLinuxDeviceOptions.html#a1217f57b32484ef28f63f87b3f65d78e">LinuxDeviceOptions::productName</a></div><div class="ttdeci">chip::Optional&lt; std::string &gt; productName</div><div class="ttdef"><b>Definition</b> Options.h:110</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a12d9c01f695d07a693c981930f36111f"><div class="ttname"><a href="structLinuxDeviceOptions.html#a12d9c01f695d07a693c981930f36111f">LinuxDeviceOptions::discriminator</a></div><div class="ttdeci">chip::Optional&lt; uint16_t &gt; discriminator</div><div class="ttdef"><b>Definition</b> Options.h:51</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a1d2285cd105579d4d4a4be9840dbe566"><div class="ttname"><a href="structLinuxDeviceOptions.html#a1d2285cd105579d4d4a4be9840dbe566">LinuxDeviceOptions::dacProvider</a></div><div class="ttdeci">chip::Credentials::DeviceAttestationCredentialsProvider * dacProvider</div><div class="ttdef"><b>Definition</b> Options.h:85</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a20b2d2dfa28c02fcaa7109c0568bb467"><div class="ttname"><a href="structLinuxDeviceOptions.html#a20b2d2dfa28c02fcaa7109c0568bb467">LinuxDeviceOptions::mThread</a></div><div class="ttdeci">bool mThread</div><div class="ttdef"><b>Definition</b> Options.h:59</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a34240a1a81f38483250d9feebe606e03"><div class="ttname"><a href="structLinuxDeviceOptions.html#a34240a1a81f38483250d9feebe606e03">LinuxDeviceOptions::mBleDevice</a></div><div class="ttdeci">uint32_t mBleDevice</div><div class="ttdef"><b>Definition</b> Options.h:56</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a3c993106327379d50be6c895d598efe0"><div class="ttname"><a href="structLinuxDeviceOptions.html#a3c993106327379d50be6c895d598efe0">LinuxDeviceOptions::serialNumber</a></div><div class="ttdeci">chip::Optional&lt; std::string &gt; serialNumber</div><div class="ttdef"><b>Definition</b> Options.h:112</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a3d01206e3f8be2e4ece219b8b72787ff"><div class="ttname"><a href="structLinuxDeviceOptions.html#a3d01206e3f8be2e4ece219b8b72787ff">LinuxDeviceOptions::mCSRResponseOptions</a></div><div class="ttdeci">chip::CSRResponseOptions mCSRResponseOptions</div><div class="ttdef"><b>Definition</b> Options.h:86</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a3d97cc0e4bab3cc88cc2b6b63a58a496"><div class="ttname"><a href="structLinuxDeviceOptions.html#a3d97cc0e4bab3cc88cc2b6b63a58a496">LinuxDeviceOptions::hardwareVersionString</a></div><div class="ttdeci">chip::Optional&lt; std::string &gt; hardwareVersionString</div><div class="ttdef"><b>Definition</b> Options.h:111</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a5383a8377a5deab9c94ed2dcaa98df0a"><div class="ttname"><a href="structLinuxDeviceOptions.html#a5383a8377a5deab9c94ed2dcaa98df0a">LinuxDeviceOptions::testEventTriggerEnableKey</a></div><div class="ttdeci">uint8_t testEventTriggerEnableKey[16]</div><div class="ttdef"><b>Definition</b> Options.h:87</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a589b049d69d83c7646d3987911aba798"><div class="ttname"><a href="structLinuxDeviceOptions.html#a589b049d69d83c7646d3987911aba798">LinuxDeviceOptions::traceTo</a></div><div class="ttdeci">std::vector&lt; std::string &gt; traceTo</div><div class="ttdef"><b>Definition</b> Options.h:88</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a5cbb0bbee5898d757a446fb351c982c8"><div class="ttname"><a href="structLinuxDeviceOptions.html#a5cbb0bbee5898d757a446fb351c982c8">LinuxDeviceOptions::mSimulateNoInternalTime</a></div><div class="ttdeci">bool mSimulateNoInternalTime</div><div class="ttdef"><b>Definition</b> Options.h:89</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a5cc6e117921c899ed5dd8b176867af57"><div class="ttname"><a href="structLinuxDeviceOptions.html#a5cc6e117921c899ed5dd8b176867af57">LinuxDeviceOptions::spake2pVerifier</a></div><div class="ttdeci">chip::Optional&lt; std::vector&lt; uint8_t &gt; &gt; spake2pVerifier</div><div class="ttdef"><b>Definition</b> Options.h:52</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a5d03f904507dada02f41c6d260f66e70"><div class="ttname"><a href="structLinuxDeviceOptions.html#a5d03f904507dada02f41c6d260f66e70">LinuxDeviceOptions::cameraDeferredOffer</a></div><div class="ttdeci">bool cameraDeferredOffer</div><div class="ttdef"><b>Definition</b> Options.h:60</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a5e38ea9b54c27c22531bdfe7ec7af533"><div class="ttname"><a href="structLinuxDeviceOptions.html#a5e38ea9b54c27c22531bdfe7ec7af533">LinuxDeviceOptions::payload</a></div><div class="ttdeci">chip::PayloadContents payload</div><div class="ttdef"><b>Definition</b> Options.h:50</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a6df9fe9a82b4d17d2b9ac882b3154c80"><div class="ttname"><a href="structLinuxDeviceOptions.html#a6df9fe9a82b4d17d2b9ac882b3154c80">LinuxDeviceOptions::spake2pSalt</a></div><div class="ttdeci">chip::Optional&lt; std::vector&lt; uint8_t &gt; &gt; spake2pSalt</div><div class="ttdef"><b>Definition</b> Options.h:53</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a7e3a1c09edc173c6f65441fd00525cd1"><div class="ttname"><a href="structLinuxDeviceOptions.html#a7e3a1c09edc173c6f65441fd00525cd1">LinuxDeviceOptions::interfaceId</a></div><div class="ttdeci">chip::Inet::InterfaceId interfaceId</div><div class="ttdef"><b>Definition</b> Options.h:79</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a80e54198d3e60b3a2c7d351683548d88"><div class="ttname"><a href="structLinuxDeviceOptions.html#a80e54198d3e60b3a2c7d351683548d88">LinuxDeviceOptions::GetInstance</a></div><div class="ttdeci">static LinuxDeviceOptions &amp; GetInstance()</div><div class="ttdef"><b>Definition</b> Options.cpp:953</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a83f1b849f1bab9aeccf3c694b58bf8f1"><div class="ttname"><a href="structLinuxDeviceOptions.html#a83f1b849f1bab9aeccf3c694b58bf8f1">LinuxDeviceOptions::command</a></div><div class="ttdeci">const char * command</div><div class="ttdef"><b>Definition</b> Options.h:75</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a8867ffc4f12e40ddb995a5cac8b9a386"><div class="ttname"><a href="structLinuxDeviceOptions.html#a8867ffc4f12e40ddb995a5cac8b9a386">LinuxDeviceOptions::cameraVideoDevice</a></div><div class="ttdeci">chip::Optional&lt; std::string &gt; cameraVideoDevice</div><div class="ttdef"><b>Definition</b> Options.h:61</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_a8e2cdf44ece8d7a92fb6a23af8447af0"><div class="ttname"><a href="structLinuxDeviceOptions.html#a8e2cdf44ece8d7a92fb6a23af8447af0">LinuxDeviceOptions::app_pipe</a></div><div class="ttdeci">const char * app_pipe</div><div class="ttdef"><b>Definition</b> Options.h:78</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_aa9adc9ce18fa4a66ca2bf6ebe87b3003"><div class="ttname"><a href="structLinuxDeviceOptions.html#aa9adc9ce18fa4a66ca2bf6ebe87b3003">LinuxDeviceOptions::vendorName</a></div><div class="ttdeci">chip::Optional&lt; std::string &gt; vendorName</div><div class="ttdef"><b>Definition</b> Options.h:109</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_aad907bbbced7b6763d4142f206f06adc"><div class="ttname"><a href="structLinuxDeviceOptions.html#aad907bbbced7b6763d4142f206f06adc">LinuxDeviceOptions::dacProviderFile</a></div><div class="ttdeci">chip::Optional&lt; std::string &gt; dacProviderFile</div><div class="ttdef"><b>Definition</b> Options.h:54</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_ac0661dfcdf5331ea1d42849ae71e67a8"><div class="ttname"><a href="structLinuxDeviceOptions.html#ac0661dfcdf5331ea1d42849ae71e67a8">LinuxDeviceOptions::KVS</a></div><div class="ttdeci">const char * KVS</div><div class="ttdef"><b>Definition</b> Options.h:77</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_acbd1cf2449fcd422cb9a78b9f9d08659"><div class="ttname"><a href="structLinuxDeviceOptions.html#acbd1cf2449fcd422cb9a78b9f9d08659">LinuxDeviceOptions::PICS</a></div><div class="ttdeci">const char * PICS</div><div class="ttdef"><b>Definition</b> Options.h:76</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_ad3ff5862258c00a61e9098aba7bf006c"><div class="ttname"><a href="structLinuxDeviceOptions.html#ad3ff5862258c00a61e9098aba7bf006c">LinuxDeviceOptions::mWiFi</a></div><div class="ttdeci">bool mWiFi</div><div class="ttdef"><b>Definition</b> Options.h:58</div></div>
+<div class="ttc" id="astructLinuxDeviceOptions_html_af6b4fd7740769081a25eea1362c6042f"><div class="ttname"><a href="structLinuxDeviceOptions.html#af6b4fd7740769081a25eea1362c6042f">LinuxDeviceOptions::wifiSupports5g</a></div><div class="ttdeci">bool wifiSupports5g</div><div class="ttdef"><b>Definition</b> Options.h:57</div></div>
+<div class="ttc" id="astructchip_1_1PayloadContents_html"><div class="ttname"><a href="structchip_1_1PayloadContents.html">chip::PayloadContents</a></div><div class="ttdef"><b>Definition</b> SetupPayload.h:121</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

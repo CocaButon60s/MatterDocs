@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/include/platform/DiagnosticDataProvider.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_b0f90f4333c67a01e325f678b62f2fa5.html">include</a></li><li class="navelem"><a class="el" href="dir_a8b5684028953e02e2b85543d315d797.html">platform</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle"><div class="title">DiagnosticDataProvider.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;app-common/zap-generated/cluster-objects.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="InetInterface_8h_source.html">inet/InetInterface.h</a>&gt;</code><br />
+<code>#include &lt;lib/core/ClusterEnums.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPDeviceConfig_8h_source.html">platform/CHIPDeviceConfig.h</a>&gt;</code><br />
+<code>#include &lt;platform/GeneralFaults.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+DiagnosticDataProvider.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="DiagnosticDataProvider_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2include_2platform_2DiagnosticDataProvider_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2include_2platform_2DiagnosticDataProvider_8h" id="aconnectedhomeip_2src_2include_2platform_2DiagnosticDataProvider_8h">
+<area shape="rect" title=" " alt="" coords="455,5,662,60"/>
+<area shape="rect" title=" " alt="" coords="68,108,275,148"/>
+<area shape="poly" title=" " alt="" coords="455,61,264,107,262,102,454,56"/>
+<area shape="rect" href="InetInterface_8h.html" title=" " alt="" coords="300,115,446,141"/>
+<area shape="poly" title=" " alt="" coords="508,62,409,112,407,107,505,58"/>
+<area shape="rect" title=" " alt="" coords="470,115,646,141"/>
+<area shape="poly" title=" " alt="" coords="561,60,561,101,556,101,556,60"/>
+<area shape="rect" href="CHIPDeviceConfig_8h.html" title=" " alt="" coords="670,115,881,141"/>
+<area shape="poly" title=" " alt="" coords="621,58,738,108,736,112,619,63"/>
+<area shape="rect" title=" " alt="" coords="906,115,1088,141"/>
+<area shape="poly" title=" " alt="" coords="662,53,930,110,929,115,661,58"/>
+<area shape="rect" title=" " alt="" coords="244,269,374,295"/>
+<area shape="poly" title=" " alt="" coords="322,143,287,151,225,157,145,162,69,173,40,183,20,198,8,221,9,230,13,238,32,252,63,263,145,276,231,279,230,285,144,281,62,268,30,257,9,242,4,231,3,220,16,194,37,179,68,168,144,156,225,151,286,145,321,138"/>
+<area shape="rect" title=" " alt="" coords="31,196,158,221"/>
+<area shape="poly" title=" " alt="" coords="333,143,149,195,147,190,332,138"/>
+<area shape="rect" title=" " alt="" coords="182,196,300,221"/>
+<area shape="poly" title=" " alt="" coords="355,143,274,191,271,187,352,139"/>
+<area shape="rect" title=" " alt="" coords="324,196,478,221"/>
+<area shape="poly" title=" " alt="" coords="380,140,395,182,390,184,375,142"/>
+<area shape="rect" title=" " alt="" coords="502,196,577,221"/>
+<area shape="poly" title=" " alt="" coords="398,138,504,188,502,193,396,143"/>
+<area shape="rect" title=" " alt="" coords="602,196,672,221"/>
+<area shape="poly" title=" " alt="" coords="412,138,589,190,588,196,411,143"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="696,196,855,221"/>
+<area shape="poly" title=" " alt="" coords="778,141,778,182,773,182,773,141"/>
+<area shape="poly" title=" " alt="" coords="701,224,388,271,387,266,700,219"/>
+<area shape="rect" title=" " alt="" coords="629,269,749,295"/>
+<area shape="poly" title=" " alt="" coords="764,223,715,263,712,258,760,219"/>
+<area shape="rect" title=" " alt="" coords="773,269,949,295"/>
+<area shape="poly" title=" " alt="" coords="791,219,839,258,835,263,788,223"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="DiagnosticDataProvider_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2include_2platform_2DiagnosticDataProvider_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2include_2platform_2DiagnosticDataProvider_8hdep" id="aconnectedhomeip_2src_2include_2platform_2DiagnosticDataProvider_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,212,60"/>
+<area shape="rect" href="AppMain_8cpp.html" title=" " alt="" coords="5,108,212,148"/>
+<area shape="poly" title=" " alt="" coords="111,74,111,108,106,108,106,74"/>
+</map>
+</div>
+</div>
+<p><a href="DiagnosticDataProvider_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1DeviceLayer_1_1ThreadMetrics.html">chip::DeviceLayer::ThreadMetrics</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchip_1_1DeviceLayer_1_1NetworkInterface.html">chip::DeviceLayer::NetworkInterface</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1WiFiDiagnosticsDelegate.html">chip::DeviceLayer::WiFiDiagnosticsDelegate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1ThreadDiagnosticsDelegate.html">chip::DeviceLayer::ThreadDiagnosticsDelegate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">chip::DeviceLayer::DiagnosticDataProvider</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1DeviceLayer" id="r_namespacechip_1_1DeviceLayer"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html">chip::DeviceLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a023f09be0d01139137032466eef44f2f" id="r_a023f09be0d01139137032466eef44f2f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#a023f09be0d01139137032466eef44f2f">chip::DeviceLayer::BootReasonType</a> = app::Clusters::GeneralDiagnostics::BootReasonEnum</td></tr>
+<tr class="separator:a023f09be0d01139137032466eef44f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:aca17c3d8af88a47b8657ec7be803bf7d" id="r_aca17c3d8af88a47b8657ec7be803bf7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">DiagnosticDataProvider</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#aca17c3d8af88a47b8657ec7be803bf7d">chip::DeviceLayer::GetDiagnosticDataProvider</a> ()</td></tr>
+<tr class="separator:aca17c3d8af88a47b8657ec7be803bf7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc795b13853241d89b053707d39e3a69" id="r_acc795b13853241d89b053707d39e3a69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">DiagnosticDataProvider</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#acc795b13853241d89b053707d39e3a69">chip::DeviceLayer::GetDiagnosticDataProviderImpl</a> ()</td></tr>
+<tr class="separator:acc795b13853241d89b053707d39e3a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71bdc8cb6a871b7e8a7df4fffcaac401" id="r_a71bdc8cb6a871b7e8a7df4fffcaac401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#a71bdc8cb6a871b7e8a7df4fffcaac401">chip::DeviceLayer::SetDiagnosticDataProvider</a> (<a class="el" href="classchip_1_1DeviceLayer_1_1DiagnosticDataProvider.html">DiagnosticDataProvider</a> *diagnosticDataProvider)</td></tr>
+<tr class="separator:a71bdc8cb6a871b7e8a7df4fffcaac401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a86b1361905a7cbb602c348a966bc4ff8" id="r_a86b1361905a7cbb602c348a966bc4ff8"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#a86b1361905a7cbb602c348a966bc4ff8">chip::DeviceLayer::kMaxThreadNameLength</a> = 8</td></tr>
+<tr class="separator:a86b1361905a7cbb602c348a966bc4ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94fa9ba326b339facafbd7cc2e589cb" id="r_af94fa9ba326b339facafbd7cc2e589cb"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#af94fa9ba326b339facafbd7cc2e589cb">chip::DeviceLayer::kMaxHardwareAddrSize</a> = 8</td></tr>
+<tr class="separator:af94fa9ba326b339facafbd7cc2e589cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b092c5ba9d4e5af4c065561b6928b42" id="r_a5b092c5ba9d4e5af4c065561b6928b42"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#a5b092c5ba9d4e5af4c065561b6928b42">chip::DeviceLayer::kMaxIPv4AddrSize</a> = 4</td></tr>
+<tr class="separator:a5b092c5ba9d4e5af4c065561b6928b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab229c4f750e60171d15477565b4c8d15" id="r_ab229c4f750e60171d15477565b4c8d15"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#ab229c4f750e60171d15477565b4c8d15">chip::DeviceLayer::kMaxIPv6AddrSize</a> = 16</td></tr>
+<tr class="separator:ab229c4f750e60171d15477565b4c8d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f15d7ecda126b65a015d88e6f15b6f" id="r_ac0f15d7ecda126b65a015d88e6f15b6f"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#ac0f15d7ecda126b65a015d88e6f15b6f">chip::DeviceLayer::kMaxIPv4AddrCount</a> = 4</td></tr>
+<tr class="separator:ac0f15d7ecda126b65a015d88e6f15b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f7ce13188f6f973c9cb5482fef7179" id="r_a88f7ce13188f6f973c9cb5482fef7179"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1DeviceLayer.html#a88f7ce13188f6f973c9cb5482fef7179">chip::DeviceLayer::kMaxIPv6AddrCount</a> = 8</td></tr>
+<tr class="separator:a88f7ce13188f6f973c9cb5482fef7179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Defines the public interface for the <a class="el" href="classDevice.html">Device</a> Layer DiagnosticDataProvider object. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

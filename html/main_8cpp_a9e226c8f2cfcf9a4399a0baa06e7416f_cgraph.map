@@ -1,0 +1,29 @@
+<map id="HandleDevicePowerSourceStatusChanged" name="HandleDevicePowerSourceStatusChanged">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,119,244,159"/>
+<area shape="rect" id="Node000002" href="$classDevice.html#a24eec7ca17d202f489ee2534a879fb08" title=" " alt="" coords="865,5,1031,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,119,292,111,851,29,851,34,292,117,245,124"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#acddbdac074074838706f6cac15611fd5" title=" " alt="" coords="292,127,503,152"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,137,278,137,278,142,244,142"/>
+<area shape="rect" id="Node000010" href="$reporting_8h.html#a40f7305633e16b8108577ada09979774" title="Reporting Attribute Change" alt="" coords="1113,299,1299,339"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="195,157,314,190,471,229,649,268,831,299,971,312,1100,317,1099,322,971,318,830,305,648,274,470,235,312,195,194,162"/>
+<area shape="rect" id="Node000004" href="$namespaceanonymous__namespace_02main_8cpp_03.html#aa4ee5c65f36fa242b228245f65d51531" title=" " alt="" coords="551,112,783,167"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="503,137,537,137,537,142,503,142"/>
+<area shape="poly" id="edge11_Node000004_Node000002" title=" " alt="" coords="705,110,762,74,830,41,858,32,859,37,832,46,765,79,708,114"/>
+<area shape="rect" id="Node000005" href="$namespaceanonymous__namespace_02main_8cpp_03.html#ab0193cf2c61496605a87c3e86a759c4f" title=" " alt="" coords="849,235,1047,289"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="726,164,832,213,865,227,863,232,830,218,724,169"/>
+<area shape="rect" id="Node000008" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="1373,188,1523,213"/>
+<area shape="poly" id="edge12_Node000004_Node000008" title=" " alt="" coords="783,161,831,169,976,183,1120,191,1359,198,1359,203,1120,197,975,188,830,174,782,167"/>
+<area shape="rect" id="Node000011" href="$namespacechip_1_1DeviceLayer.html#a9b90588e3accea89d79094c29fc07261" title=" " alt="" coords="875,55,1021,95"/>
+<area shape="poly" id="edge13_Node000004_Node000011" title=" " alt="" coords="782,110,861,92,862,97,784,116"/>
+<area shape="rect" id="Node000012" href="$classchip_1_1DeviceLayer_1_1PlatformManager.html#a8a1daf9aaf8eb75f6c743c8dd1935d29" title=" " alt="" coords="831,119,1065,159"/>
+<area shape="poly" id="edge14_Node000004_Node000012" title=" " alt="" coords="783,137,817,137,817,142,783,142"/>
+<area shape="rect" id="Node000006" href="$namespacechip_1_1Platform.html#a43b3e4c947b3e37de31cb9c07c113592" title=" " alt="" coords="1124,245,1288,271"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1048,258,1110,257,1110,262,1048,263"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="1048,281,1103,294,1102,299,1047,287"/>
+<area shape="rect" id="Node000007" href="$namespacechip_1_1Platform.html#a9a65a9cd65454203059a7878eb74ccc1" title=" " alt="" coords="1347,245,1549,271"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1288,255,1333,255,1333,261,1288,261"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1260,243,1380,214,1381,219,1261,248"/>
+<area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="1409,190,1401,180,1405,170,1421,164,1448,161,1482,165,1495,175,1491,179,1480,170,1448,167,1422,169,1409,174,1406,179,1413,186"/>
+<area shape="rect" id="Node000009" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="1597,188,1804,213"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1524,198,1584,198,1584,203,1524,203"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="chip::rpc::RunRpcService" name="chip::rpc::RunRpcService">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,77,188,102"/>
+<area shape="rect" id="Node000002" href="$namespacepw_1_1rpc_1_1system__server.html#aeaf81baa03911b45d3432b551a7e36cd" title=" " alt="" coords="236,5,408,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,74,237,47,238,52,143,79"/>
+<area shape="rect" id="Node000003" href="$namespacepw_1_1rpc_1_1system__server.html#a74abc31e84e397fc785a6a2c53c3ba00" title=" " alt="" coords="236,69,408,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,87,222,87,222,92,189,92"/>
+<area shape="rect" id="Node000004" href="$namespacepw_1_1rpc_1_1system__server.html#a0fd0d9a2c6e9b71e58b9da83c192b4a5" title=" " alt="" coords="236,133,408,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,100,238,127,237,132,142,105"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="chip::rpc::Init" name="chip::rpc::Init">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,106,112,131"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1rpc.html#a7010d37cb69460c170fd0e896d90fdd4" title=" " alt="" coords="160,77,343,102"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,108,154,101,155,107,113,113"/>
+<area shape="rect" id="Node000006" href="$namespacepw_1_1rpc_1_1system__server.html#a745625a735bc54e17cabecbbb2df8e7b" title=" " alt="" coords="165,127,337,167"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="113,124,152,130,151,135,112,129"/>
+<area shape="rect" id="Node000003" href="$namespacepw_1_1rpc_1_1system__server.html#aeaf81baa03911b45d3432b551a7e36cd" title=" " alt="" coords="391,5,563,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,74,392,47,393,52,298,79"/>
+<area shape="rect" id="Node000004" href="$namespacepw_1_1rpc_1_1system__server.html#a74abc31e84e397fc785a6a2c53c3ba00" title=" " alt="" coords="391,69,563,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="343,87,377,87,377,92,343,92"/>
+<area shape="rect" id="Node000005" href="$namespacepw_1_1rpc_1_1system__server.html#a0fd0d9a2c6e9b71e58b9da83c192b4a5" title=" " alt="" coords="391,133,563,173"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="299,99,343,112,394,127,393,132,342,117,297,105"/>
+</map>

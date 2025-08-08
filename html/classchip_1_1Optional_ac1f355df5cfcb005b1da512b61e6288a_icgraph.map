@@ -1,0 +1,11 @@
+<map id="chip::Optional::ClearValue" name="chip::Optional::ClearValue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="587,76,777,101"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#accaa405391d3e96f05206401f0da5112" title=" " alt="" coords="296,29,539,84"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="573,78,539,74,539,69,573,73"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1Optional.html#a5b9fe736c59b2a53a6283edc2b80f1dd" title=" " alt="" coords="329,108,506,133"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="573,104,507,113,506,107,572,99"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="462,18,446,11,417,8,394,10,378,15,371,21,371,29,366,29,366,19,376,10,393,5,417,3,447,6,464,14"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1examples_1_1anonymous__namespace_02CommissionableInit_8cpp_03.html#a4d8fa2e7812d69df2ac9620f9e7e81a2" title=" " alt="" coords="5,29,248,84"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="283,59,248,59,248,54,283,54"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="176,19,158,11,127,8,100,10,83,15,76,21,76,29,71,29,71,19,81,10,100,5,127,3,159,6,178,14"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Device::Device" name="Device::Device">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,125,55"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d" title=" " alt="" coords="173,29,365,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,39,160,39,160,45,125,45"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="413,29,564,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="366,39,400,39,400,45,366,45"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="453,31,445,21,449,11,464,5,489,3,519,6,531,15,528,20,517,11,489,8,465,10,453,15,450,20,457,28"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="612,29,819,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="565,39,598,39,598,45,565,45"/>
+</map>

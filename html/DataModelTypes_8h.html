@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/core/DataModelTypes.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_36b9cabaeea5561ffd6db568f8d0cd67.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle"><div class="title">DataModelTypes.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;<a class="el" href="CHIPConfig_8h_source.html">lib/core/CHIPConfig.h</a>&gt;</code><br />
+<code>#include &lt;lib/core/CHIPVendorIdentifiers.hpp&gt;</code><br />
+<code>#include &lt;lib/core/GroupId.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="NodeId_8h_source.html">lib/core/NodeId.h</a>&gt;</code><br />
+<code>#include &lt;lib/core/PasscodeId.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+DataModelTypes.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="DataModelTypes_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2lib_2core_2DataModelTypes_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2lib_2core_2DataModelTypes_8h" id="aconnectedhomeip_2src_2lib_2core_2DataModelTypes_8h">
+<area shape="rect" title=" " alt="" coords="201,5,399,45"/>
+<area shape="rect" title=" " alt="" coords="5,167,72,192"/>
+<area shape="poly" title=" " alt="" coords="201,45,144,65,116,78,91,95,66,124,50,155,45,152,62,121,88,91,114,74,142,60,200,40"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="422,93,581,119"/>
+<area shape="poly" title=" " alt="" coords="349,43,460,86,458,91,347,48"/>
+<area shape="rect" title=" " alt="" coords="605,93,848,119"/>
+<area shape="poly" title=" " alt="" coords="400,42,651,88,650,93,399,47"/>
+<area shape="rect" title=" " alt="" coords="97,167,234,192"/>
+<area shape="poly" title=" " alt="" coords="294,47,275,82,247,120,223,143,198,161,195,157,220,139,243,117,270,80,289,44"/>
+<area shape="rect" href="NodeId_8h.html" title=" " alt="" coords="102,93,234,119"/>
+<area shape="poly" title=" " alt="" coords="270,48,201,88,198,84,267,43"/>
+<area shape="rect" title=" " alt="" coords="258,167,417,192"/>
+<area shape="poly" title=" " alt="" coords="307,45,334,152,329,154,302,46"/>
+<area shape="rect" title=" " alt="" coords="441,167,561,192"/>
+<area shape="poly" title=" " alt="" coords="504,119,504,153,499,153,499,119"/>
+<area shape="rect" title=" " alt="" coords="585,167,761,192"/>
+<area shape="poly" title=" " alt="" coords="530,116,634,159,632,164,528,121"/>
+<area shape="rect" title=" " alt="" coords="786,167,915,192"/>
+<area shape="poly" title=" " alt="" coords="558,116,782,161,780,167,557,121"/>
+<area shape="poly" title=" " alt="" coords="148,121,73,162,71,157,146,116"/>
+<area shape="poly" title=" " alt="" coords="170,119,169,153,164,153,165,119"/>
+<area shape="poly" title=" " alt="" coords="196,116,298,159,296,164,194,121"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="DataModelTypes_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2lib_2core_2DataModelTypes_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2lib_2core_2DataModelTypes_8hdep" id="aconnectedhomeip_2src_2lib_2core_2DataModelTypes_8hdep">
+<area shape="rect" title=" " alt="" coords="677,5,876,45"/>
+<area shape="rect" href="AppMain_8h.html" title=" " alt="" coords="955,394,1161,434"/>
+<area shape="poly" title=" " alt="" coords="890,40,977,61,1012,75,1035,91,1058,128,1074,170,1081,213,1084,257,1077,337,1066,394,1061,393,1072,336,1078,257,1076,214,1068,171,1054,131,1031,95,1009,80,975,66,889,46"/>
+<area shape="rect" href="AccessRestrictionProvider_8h.html" title=" " alt="" coords="765,93,1020,133"/>
+<area shape="poly" title=" " alt="" coords="815,52,869,91,865,95,812,56"/>
+<area shape="rect" href="EventLogging_8h.html" title=" " alt="" coords="580,93,741,133"/>
+<area shape="poly" title=" " alt="" coords="742,56,688,95,685,91,738,52"/>
+<area shape="rect" href="af-types_8h.html" title=" " alt="" coords="343,189,504,229"/>
+<area shape="poly" title=" " alt="" coords="664,44,593,64,558,78,525,96,497,117,472,142,437,190,433,187,468,139,493,113,522,91,555,73,591,59,663,39"/>
+<area shape="rect" href="util_8h.html" title=" " alt="" coords="485,394,647,434"/>
+<area shape="poly" title=" " alt="" coords="665,39,612,59,590,75,571,95,550,132,538,173,534,215,534,258,546,337,562,393,557,394,541,338,529,259,528,215,533,172,545,130,567,92,586,71,610,55,663,34"/>
+<area shape="rect" href="CHIPCryptoPAL_8h.html" title=" " alt="" coords="1623,93,1803,133"/>
+<area shape="poly" title=" " alt="" coords="890,34,1623,101,1622,106,890,40"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="531,497,737,537"/>
+<area shape="poly" title=" " alt="" coords="966,440,714,499,713,494,965,435"/>
+<area shape="rect" href="AppMain_8cpp.html" title=" " alt="" coords="1147,497,1353,537"/>
+<area shape="poly" title=" " alt="" coords="1107,438,1215,494,1213,499,1105,443"/>
+<area shape="rect" href="ExampleAccessRestrictionProvider_8h.html" title=" " alt="" coords="725,181,1020,236"/>
+<area shape="poly" title=" " alt="" coords="888,147,881,182,876,181,883,146"/>
+<area shape="poly" title=" " alt="" coords="671,146,688,191,700,214,716,234,728,244,740,250,766,255,790,262,802,270,812,283,819,297,821,311,812,340,783,391,744,436,702,472,666,499,663,494,699,468,740,432,778,388,808,338,816,310,814,299,808,285,798,274,788,267,764,260,738,255,725,249,712,238,696,217,683,193,666,148"/>
+<area shape="poly" title=" " alt="" coords="717,136,814,179,812,184,715,141"/>
+<area shape="poly" title=" " alt="" coords="424,243,425,286,432,338,447,392,459,417,475,440,492,458,513,472,559,494,556,499,510,477,489,462,471,443,455,419,442,394,427,339,420,286,419,243"/>
+<area shape="rect" href="attribute-storage_8h.html" title=" " alt="" coords="207,284,368,339"/>
+<area shape="poly" title=" " alt="" coords="388,239,325,286,321,282,385,235"/>
+<area shape="rect" href="endpoint-config-api_8h.html" title=" " alt="" coords="580,291,797,331"/>
+<area shape="poly" title=" " alt="" coords="487,231,640,289,638,294,485,236"/>
+<area shape="poly" title=" " alt="" coords="446,238,555,392,550,395,442,241"/>
+<area shape="poly" title=" " alt="" coords="327,346,425,439,491,471,557,494,556,499,489,476,422,444,323,350"/>
+<area shape="rect" href="bridged-actions-stub_8cpp.html" title=" " alt="" coords="5,489,212,544"/>
+<area shape="poly" title=" " alt="" coords="195,343,163,363,136,388,123,412,115,439,110,489,105,489,109,438,118,410,132,385,160,358,193,339"/>
+<area shape="rect" href="Device_8h.html" title=" " alt="" coords="147,387,353,441"/>
+<area shape="poly" title=" " alt="" coords="275,353,262,388,257,386,270,351"/>
+<area shape="poly" title=" " alt="" coords="364,442,563,494,561,499,362,447"/>
+<area shape="poly" title=" " alt="" coords="204,451,147,491,144,487,201,447"/>
+<area shape="rect" href="Device_8cpp.html" title=" " alt="" coords="237,497,445,537"/>
+<area shape="poly" title=" " alt="" coords="285,450,325,494,321,498,281,453"/>
+<area shape="poly" title=" " alt="" coords="684,345,661,442,643,497,638,496,655,441,679,344"/>
+<area shape="poly" title=" " alt="" coords="733,336,828,387,944,439,1048,471,1147,494,1146,499,1046,476,942,444,826,392,730,341"/>
+<area shape="poly" title=" " alt="" coords="657,342,591,396,587,392,653,338"/>
+<area shape="poly" title=" " alt="" coords="589,444,623,495,619,498,584,447"/>
+<area shape="poly" title=" " alt="" coords="1778,138,1803,156,1823,180,1843,223,1851,261,1845,299,1823,340,1793,369,1747,395,1690,419,1624,440,1483,476,1354,501,1353,496,1482,471,1623,435,1688,414,1745,390,1790,365,1819,337,1840,298,1846,261,1838,224,1818,183,1800,160,1775,142"/>
+<area shape="rect" href="CommissionableInit_8cpp.html" title=" " alt="" coords="1935,181,2165,236"/>
+<area shape="poly" title=" " alt="" coords="1795,135,1956,179,1954,184,1794,140"/>
+<area shape="rect" href="LinuxCommissionableDataProvider_8cpp.html" title=" " alt="" coords="1095,181,1362,236"/>
+<area shape="poly" title=" " alt="" coords="1610,137,1363,184,1362,179,1609,132"/>
+<area shape="rect" href="Options_8cpp.html" title=" " alt="" coords="1387,189,1593,229"/>
+<area shape="poly" title=" " alt="" coords="1656,141,1536,191,1534,186,1654,136"/>
+<area shape="rect" href="TestGroupData_8h.html" title=" " alt="" coords="1884,291,2091,331"/>
+<area shape="poly" title=" " alt="" coords="1783,136,1825,155,1866,179,1918,229,1973,289,1969,293,1914,232,1863,183,1823,160,1781,141"/>
+<area shape="rect" href="RendezvousParameters_8h.html" title=" " alt="" coords="1617,181,1808,236"/>
+<area shape="poly" title=" " alt="" coords="1715,147,1715,181,1710,181,1710,147"/>
+<area shape="poly" title=" " alt="" coords="1970,344,1927,397,1898,423,1866,444,1825,459,1770,472,1634,493,1485,506,1354,514,1354,509,1485,501,1633,487,1769,467,1823,454,1863,439,1895,419,1923,393,1966,341"/>
+<area shape="rect" href="ControllerShellCommands_8cpp.html" title=" " alt="" coords="1590,284,1809,339"/>
+<area shape="poly" title=" " alt="" coords="1710,250,1705,284,1700,284,1705,249"/>
+<area shape="rect" href="Server_8h.html" title=" " alt="" coords="1169,291,1331,331"/>
+<area shape="poly" title=" " alt="" coords="1604,239,1331,297,1330,291,1603,234"/>
+<area shape="poly" title=" " alt="" coords="1203,340,1095,396,1093,392,1201,335"/>
+<area shape="poly" title=" " alt="" coords="1243,346,1218,397,1199,423,1175,444,1142,460,1096,474,981,494,854,507,738,514,738,509,853,502,981,489,1095,468,1140,455,1173,439,1195,419,1214,394,1238,343"/>
+<area shape="poly" title=" " alt="" coords="1253,345,1253,496,1247,496,1247,345"/>
+<area shape="rect" href="CommissioneeShellCommands_8cpp.html" title=" " alt="" coords="1287,387,1538,441"/>
+<area shape="poly" title=" " alt="" coords="1294,337,1371,384,1369,389,1291,341"/>
+</map>
+</div>
+</div>
+<p><a href="DataModelTypes_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:acf7abc794e9d889e35f65f5a98adcf16" id="r_acf7abc794e9d889e35f65f5a98adcf16"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#acf7abc794e9d889e35f65f5a98adcf16">chip::ActionId</a></td></tr>
+<tr class="separator:acf7abc794e9d889e35f65f5a98adcf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9679009d83716300aae025b8a172c401" id="r_a9679009d83716300aae025b8a172c401"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a9679009d83716300aae025b8a172c401">chip::AttributeId</a></td></tr>
+<tr class="separator:a9679009d83716300aae025b8a172c401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167c692d0d28c8e6a7d0b2f0c50b290a" id="r_a167c692d0d28c8e6a7d0b2f0c50b290a"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">chip::ClusterId</a></td></tr>
+<tr class="separator:a167c692d0d28c8e6a7d0b2f0c50b290a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedffade635edfd1a0540c6280bb04976" id="r_aedffade635edfd1a0540c6280bb04976"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#aedffade635edfd1a0540c6280bb04976">chip::ClusterStatus</a></td></tr>
+<tr class="separator:aedffade635edfd1a0540c6280bb04976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a2c26a7133fc357423dbe0ab77e58a" id="r_a41a2c26a7133fc357423dbe0ab77e58a"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a41a2c26a7133fc357423dbe0ab77e58a">chip::CommandId</a></td></tr>
+<tr class="separator:a41a2c26a7133fc357423dbe0ab77e58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8e062540564cc5c3682903b762d101" id="r_a7e8e062540564cc5c3682903b762d101"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a7e8e062540564cc5c3682903b762d101">chip::CommandRef</a></td></tr>
+<tr class="separator:a7e8e062540564cc5c3682903b762d101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23347b9856fccbeb6370b532bec6f2c6" id="r_a23347b9856fccbeb6370b532bec6f2c6"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a23347b9856fccbeb6370b532bec6f2c6">chip::CompressedFabricId</a></td></tr>
+<tr class="separator:a23347b9856fccbeb6370b532bec6f2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c303d8822f2cfe11937234b285a5a4d" id="r_a7c303d8822f2cfe11937234b285a5a4d"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a7c303d8822f2cfe11937234b285a5a4d">chip::DataVersion</a></td></tr>
+<tr class="separator:a7c303d8822f2cfe11937234b285a5a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e8291003701de07424f7d5887fc53d3" id="r_a9e8291003701de07424f7d5887fc53d3"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a9e8291003701de07424f7d5887fc53d3">chip::DeviceTypeId</a></td></tr>
+<tr class="separator:a9e8291003701de07424f7d5887fc53d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5a3b4726fc1a49ee77a3a9531ddfd8" id="r_aed5a3b4726fc1a49ee77a3a9531ddfd8"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#aed5a3b4726fc1a49ee77a3a9531ddfd8">chip::ElapsedS</a></td></tr>
+<tr class="separator:aed5a3b4726fc1a49ee77a3a9531ddfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e3807cea12f480cdb9c90c2cca56ef" id="r_ae2e3807cea12f480cdb9c90c2cca56ef"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">chip::EndpointId</a></td></tr>
+<tr class="separator:ae2e3807cea12f480cdb9c90c2cca56ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3cf96f5ac9b4b586f568c522c89ab4" id="r_a1d3cf96f5ac9b4b586f568c522c89ab4"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a1d3cf96f5ac9b4b586f568c522c89ab4">chip::EventId</a></td></tr>
+<tr class="separator:a1d3cf96f5ac9b4b586f568c522c89ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2984975362020fb7236f682db9a4dcc3" id="r_a2984975362020fb7236f682db9a4dcc3"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a2984975362020fb7236f682db9a4dcc3">chip::EventNumber</a></td></tr>
+<tr class="separator:a2984975362020fb7236f682db9a4dcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7688ed76c3e1a7ec2ea0a86ab10ed16" id="r_ab7688ed76c3e1a7ec2ea0a86ab10ed16"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ab7688ed76c3e1a7ec2ea0a86ab10ed16">chip::FabricId</a></td></tr>
+<tr class="separator:ab7688ed76c3e1a7ec2ea0a86ab10ed16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9cd819dd784f7e7389b65e53d005c4" id="r_a4b9cd819dd784f7e7389b65e53d005c4"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">chip::FabricIndex</a></td></tr>
+<tr class="separator:a4b9cd819dd784f7e7389b65e53d005c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa177c30ddba757c38c6ba2e352123ceb" id="r_aa177c30ddba757c38c6ba2e352123ceb"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#aa177c30ddba757c38c6ba2e352123ceb">chip::FieldId</a></td></tr>
+<tr class="separator:aa177c30ddba757c38c6ba2e352123ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7fdd8f9605bd3988e736a1f26fc305" id="r_ade7fdd8f9605bd3988e736a1f26fc305"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ade7fdd8f9605bd3988e736a1f26fc305">chip::ListIndex</a></td></tr>
+<tr class="separator:ade7fdd8f9605bd3988e736a1f26fc305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a477272b38ab123d22d1ffc380a3581af" id="r_a477272b38ab123d22d1ffc380a3581af"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a477272b38ab123d22d1ffc380a3581af">chip::LocalizedStringIdentifier</a></td></tr>
+<tr class="separator:a477272b38ab123d22d1ffc380a3581af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91206fb3c377043029beb254a6b8d73c" id="r_a91206fb3c377043029beb254a6b8d73c"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a91206fb3c377043029beb254a6b8d73c">chip::TransactionId</a></td></tr>
+<tr class="separator:a91206fb3c377043029beb254a6b8d73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe77b777e11684ff81ad71f8fd419efe" id="r_abe77b777e11684ff81ad71f8fd419efe"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#abe77b777e11684ff81ad71f8fd419efe">chip::KeysetId</a></td></tr>
+<tr class="separator:abe77b777e11684ff81ad71f8fd419efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a176d0645ba8dd635375a64b75aac6a" id="r_a4a176d0645ba8dd635375a64b75aac6a"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a4a176d0645ba8dd635375a64b75aac6a">chip::InteractionModelRevision</a></td></tr>
+<tr class="separator:a4a176d0645ba8dd635375a64b75aac6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b6c2b2e660332fc3416cc5dd24bfe3" id="r_ae0b6c2b2e660332fc3416cc5dd24bfe3"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ae0b6c2b2e660332fc3416cc5dd24bfe3">chip::SubscriptionId</a></td></tr>
+<tr class="separator:ae0b6c2b2e660332fc3416cc5dd24bfe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f1b77952ae414f76c0fbbc5152fd27" id="r_a82f1b77952ae414f76c0fbbc5152fd27"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a82f1b77952ae414f76c0fbbc5152fd27">chip::SceneId</a></td></tr>
+<tr class="separator:a82f1b77952ae414f76c0fbbc5152fd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8852fbfa60e4329179e5cef558bf4779" id="r_a8852fbfa60e4329179e5cef558bf4779"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a8852fbfa60e4329179e5cef558bf4779">chip::Percent</a></td></tr>
+<tr class="separator:a8852fbfa60e4329179e5cef558bf4779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0618b8fa6708ef4c12f747b3b026fe84" id="r_a0618b8fa6708ef4c12f747b3b026fe84"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a0618b8fa6708ef4c12f747b3b026fe84">chip::Percent100ths</a></td></tr>
+<tr class="separator:a0618b8fa6708ef4c12f747b3b026fe84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68886f3daf789700b3ca43e426784ac5" id="r_a68886f3daf789700b3ca43e426784ac5"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a68886f3daf789700b3ca43e426784ac5">chip::Energy_mWh</a></td></tr>
+<tr class="separator:a68886f3daf789700b3ca43e426784ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a1e6b8f9345c5966d856c33b95892f1" id="r_a6a1e6b8f9345c5966d856c33b95892f1"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a6a1e6b8f9345c5966d856c33b95892f1">chip::Energy_mVAh</a></td></tr>
+<tr class="separator:a6a1e6b8f9345c5966d856c33b95892f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa421b8517437a8c73f4f535c5c286b19" id="r_aa421b8517437a8c73f4f535c5c286b19"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#aa421b8517437a8c73f4f535c5c286b19">chip::Energy_mVARh</a></td></tr>
+<tr class="separator:aa421b8517437a8c73f4f535c5c286b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ff9aa8bcb82d5a597f435c5ed7498e" id="r_a58ff9aa8bcb82d5a597f435c5ed7498e"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a58ff9aa8bcb82d5a597f435c5ed7498e">chip::Amperage_mA</a></td></tr>
+<tr class="separator:a58ff9aa8bcb82d5a597f435c5ed7498e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a4cefcf3a9aade9584fe092e2465f5" id="r_af2a4cefcf3a9aade9584fe092e2465f5"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#af2a4cefcf3a9aade9584fe092e2465f5">chip::Power_mW</a></td></tr>
+<tr class="separator:af2a4cefcf3a9aade9584fe092e2465f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05695c8bd278b98a9c9fbce55ce75f11" id="r_a05695c8bd278b98a9c9fbce55ce75f11"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a05695c8bd278b98a9c9fbce55ce75f11">chip::Power_mVA</a></td></tr>
+<tr class="separator:a05695c8bd278b98a9c9fbce55ce75f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b604b37f566a76dab4decb6e683301" id="r_ad7b604b37f566a76dab4decb6e683301"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ad7b604b37f566a76dab4decb6e683301">chip::Power_mVAR</a></td></tr>
+<tr class="separator:ad7b604b37f566a76dab4decb6e683301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab2645fe547382cdbe1486fee159bab" id="r_adab2645fe547382cdbe1486fee159bab"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#adab2645fe547382cdbe1486fee159bab">chip::Voltage_mV</a></td></tr>
+<tr class="separator:adab2645fe547382cdbe1486fee159bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1832681ce344cde61d1bd2077eda9551" id="r_a1832681ce344cde61d1bd2077eda9551"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a1832681ce344cde61d1bd2077eda9551">chip::Money</a></td></tr>
+<tr class="separator:a1832681ce344cde61d1bd2077eda9551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ab204ac502c579fe43f1faadd94954ba5" id="r_ab204ac502c579fe43f1faadd94954ba5"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ab204ac502c579fe43f1faadd94954ba5">chip::ExtractIdFromMEI</a> (uint32_t aMEI)</td></tr>
+<tr class="separator:ab204ac502c579fe43f1faadd94954ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7057530fc05fe15211e3289ed18aa1b" id="r_ac7057530fc05fe15211e3289ed18aa1b"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ac7057530fc05fe15211e3289ed18aa1b">chip::ExtractVendorFromMEI</a> (uint32_t aMEI)</td></tr>
+<tr class="separator:ac7057530fc05fe15211e3289ed18aa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51355cddb630ee5bf2aef6752bade03" id="r_ae51355cddb630ee5bf2aef6752bade03"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ae51355cddb630ee5bf2aef6752bade03">chip::IsValidVendorId</a> (uint16_t aVendorId)</td></tr>
+<tr class="separator:ae51355cddb630ee5bf2aef6752bade03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0add696d05aac55f86a4d664cdb37238" id="r_a0add696d05aac55f86a4d664cdb37238"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a0add696d05aac55f86a4d664cdb37238">chip::IsValidClusterId</a> (<a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a> aClusterId)</td></tr>
+<tr class="separator:a0add696d05aac55f86a4d664cdb37238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff28dadde01639e13129144f3f5b801" id="r_abff28dadde01639e13129144f3f5b801"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#abff28dadde01639e13129144f3f5b801">chip::IsGlobalAttribute</a> (<a class="el" href="namespacechip.html#a9679009d83716300aae025b8a172c401">AttributeId</a> aAttributeId)</td></tr>
+<tr class="separator:abff28dadde01639e13129144f3f5b801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793b88e663c13e4deba835fb5512254c" id="r_a793b88e663c13e4deba835fb5512254c"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a793b88e663c13e4deba835fb5512254c">chip::IsValidAttributeId</a> (<a class="el" href="namespacechip.html#a9679009d83716300aae025b8a172c401">AttributeId</a> aAttributeId)</td></tr>
+<tr class="separator:a793b88e663c13e4deba835fb5512254c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13acf9a860aae53fe107f2745562e450" id="r_a13acf9a860aae53fe107f2745562e450"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a13acf9a860aae53fe107f2745562e450">chip::IsValidCommandId</a> (<a class="el" href="namespacechip.html#a41a2c26a7133fc357423dbe0ab77e58a">CommandId</a> aCommandId)</td></tr>
+<tr class="separator:a13acf9a860aae53fe107f2745562e450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130c07a89ceeae5ede6dcfdf1e54a073" id="r_a130c07a89ceeae5ede6dcfdf1e54a073"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a130c07a89ceeae5ede6dcfdf1e54a073">chip::IsValidDeviceTypeId</a> (<a class="el" href="namespacechip.html#a9e8291003701de07424f7d5887fc53d3">DeviceTypeId</a> aDeviceTypeId)</td></tr>
+<tr class="separator:a130c07a89ceeae5ede6dcfdf1e54a073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9dc93425df71be500b163536b8c4c3" id="r_a1f9dc93425df71be500b163536b8c4c3"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a1f9dc93425df71be500b163536b8c4c3">chip::IsValidEndpointId</a> (<a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a> aEndpointId)</td></tr>
+<tr class="separator:a1f9dc93425df71be500b163536b8c4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add685bae576298d5721709525954c16c" id="r_add685bae576298d5721709525954c16c"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#add685bae576298d5721709525954c16c">chip::IsValidFabricIndex</a> (<a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a> fabricIndex)</td></tr>
+<tr class="separator:add685bae576298d5721709525954c16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9607d4e63199f46a864f075de72dc79" id="r_ac9607d4e63199f46a864f075de72dc79"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ac9607d4e63199f46a864f075de72dc79">chip::IsValidFabricId</a> (<a class="el" href="namespacechip.html#ab7688ed76c3e1a7ec2ea0a86ab10ed16">FabricId</a> fabricId)</td></tr>
+<tr class="separator:ac9607d4e63199f46a864f075de72dc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a1be66c73da6cf780599052c2966d73aa" id="r_a1be66c73da6cf780599052c2966d73aa"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacechip.html#a23347b9856fccbeb6370b532bec6f2c6">CompressedFabricId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a1be66c73da6cf780599052c2966d73aa">chip::kUndefinedCompressedFabricId</a> = 0ULL</td></tr>
+<tr class="separator:a1be66c73da6cf780599052c2966d73aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d7142a4f80386f8795826a188f6b4a7" id="r_a9d7142a4f80386f8795826a188f6b4a7"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacechip.html#ab7688ed76c3e1a7ec2ea0a86ab10ed16">FabricId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a9d7142a4f80386f8795826a188f6b4a7">chip::kUndefinedFabricId</a> = 0ULL</td></tr>
+<tr class="separator:a9d7142a4f80386f8795826a188f6b4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d26f01e806979e8e54d1285c0ed2b9" id="r_ab8d26f01e806979e8e54d1285c0ed2b9"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ab8d26f01e806979e8e54d1285c0ed2b9">chip::kUndefinedFabricIndex</a> = 0</td></tr>
+<tr class="separator:ab8d26f01e806979e8e54d1285c0ed2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418ca757131876c68e5bce3c7cf433a3" id="r_a418ca757131876c68e5bce3c7cf433a3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a418ca757131876c68e5bce3c7cf433a3">chip::kMinValidFabricIndex</a> = 1</td></tr>
+<tr class="separator:a418ca757131876c68e5bce3c7cf433a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d66e0dd23ad1d089696f9d401329f0f" id="r_a2d66e0dd23ad1d089696f9d401329f0f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacechip.html#a4b9cd819dd784f7e7389b65e53d005c4">FabricIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a2d66e0dd23ad1d089696f9d401329f0f">chip::kMaxValidFabricIndex</a> = UINT8_MAX - 1</td></tr>
+<tr class="separator:a2d66e0dd23ad1d089696f9d401329f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60363f0ed4c6c716469a119aa17afe95" id="r_a60363f0ed4c6c716469a119aa17afe95"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a60363f0ed4c6c716469a119aa17afe95">chip::kInvalidEndpointId</a> = 0xFFFF</td></tr>
+<tr class="separator:a60363f0ed4c6c716469a119aa17afe95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a002a5fdc97a2720c43072f3bd61fadfe" id="r_a002a5fdc97a2720c43072f3bd61fadfe"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacechip.html#ae2e3807cea12f480cdb9c90c2cca56ef">EndpointId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a002a5fdc97a2720c43072f3bd61fadfe">chip::kRootEndpointId</a> = 0</td></tr>
+<tr class="separator:a002a5fdc97a2720c43072f3bd61fadfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07003ad9f9e333f931a1e839ead44dee" id="r_a07003ad9f9e333f931a1e839ead44dee"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacechip.html#ade7fdd8f9605bd3988e736a1f26fc305">ListIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a07003ad9f9e333f931a1e839ead44dee">chip::kInvalidListIndex</a> = 0xFFFF</td></tr>
+<tr class="separator:a07003ad9f9e333f931a1e839ead44dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11e639cc2dd57f97f59dcb99da8fbd5" id="r_af11e639cc2dd57f97f59dcb99da8fbd5"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacechip.html#abe77b777e11684ff81ad71f8fd419efe">KeysetId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#af11e639cc2dd57f97f59dcb99da8fbd5">chip::kInvalidKeysetId</a> = 0xFFFF</td></tr>
+<tr class="separator:af11e639cc2dd57f97f59dcb99da8fbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ea0c4017614f2f9ac6d243bea5fa9f" id="r_ad4ea0c4017614f2f9ac6d243bea5fa9f"><td class="memItemLeft" align="right" valign="top">constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ad4ea0c4017614f2f9ac6d243bea5fa9f">chip::kInvalidIcId</a> = 0</td></tr>
+<tr class="separator:ad4ea0c4017614f2f9ac6d243bea5fa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96e1c65a71ec04c4a43857b947f27de" id="r_ae96e1c65a71ec04c4a43857b947f27de"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespacechip.html#a167c692d0d28c8e6a7d0b2f0c50b290a">ClusterId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ae96e1c65a71ec04c4a43857b947f27de">chip::kInvalidClusterId</a> = 0xFFFF'FFFF</td></tr>
+<tr class="separator:ae96e1c65a71ec04c4a43857b947f27de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6090cd0ad8f477b5282e955773de626" id="r_ac6090cd0ad8f477b5282e955773de626"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespacechip.html#a9679009d83716300aae025b8a172c401">AttributeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ac6090cd0ad8f477b5282e955773de626">chip::kInvalidAttributeId</a> = 0xFFFF'FFFF</td></tr>
+<tr class="separator:ac6090cd0ad8f477b5282e955773de626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72d2fdcae02d9f3b1342772ee3dac51" id="r_ac72d2fdcae02d9f3b1342772ee3dac51"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespacechip.html#a41a2c26a7133fc357423dbe0ab77e58a">CommandId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ac72d2fdcae02d9f3b1342772ee3dac51">chip::kInvalidCommandId</a> = 0xFFFF'FFFF</td></tr>
+<tr class="separator:ac72d2fdcae02d9f3b1342772ee3dac51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4588df7d4ff9078c01858aa4e5e1521d" id="r_a4588df7d4ff9078c01858aa4e5e1521d"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespacechip.html#a1d3cf96f5ac9b4b586f568c522c89ab4">EventId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a4588df7d4ff9078c01858aa4e5e1521d">chip::kInvalidEventId</a> = 0xFFFF'FFFF</td></tr>
+<tr class="separator:a4588df7d4ff9078c01858aa4e5e1521d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f455748204c6a5ba54673adf7ac2ea" id="r_a64f455748204c6a5ba54673adf7ac2ea"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespacechip.html#aa177c30ddba757c38c6ba2e352123ceb">FieldId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a64f455748204c6a5ba54673adf7ac2ea">chip::kInvalidFieldId</a> = 0xFFFF'FFFF</td></tr>
+<tr class="separator:a64f455748204c6a5ba54673adf7ac2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbf8a891675539b8c1a8d15d46d3cbc" id="r_a8fbf8a891675539b8c1a8d15d46d3cbc"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a8fbf8a891675539b8c1a8d15d46d3cbc">chip::kMaxVendorId</a> = VendorId::TestVendor4</td></tr>
+<tr class="separator:a8fbf8a891675539b8c1a8d15d46d3cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

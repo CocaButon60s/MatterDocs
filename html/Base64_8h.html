@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/src/lib/support/Base64.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_ab6d861f22a617d3b041ce510249db39.html">src</a></li><li class="navelem"><a class="el" href="dir_87164346d26f3f78bf4c17bfb7dcdd6e.html">lib</a></li><li class="navelem"><a class="el" href="dir_1d1f3af32c41ad09e7d154e58874adc8.html">support</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">Base64.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Base64.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="Base64_8h__incl.png" border="0" usemap="#aconnectedhomeip_2src_2lib_2support_2Base64_8h" alt=""/></div>
+<map name="aconnectedhomeip_2src_2lib_2support_2Base64_8h" id="aconnectedhomeip_2src_2lib_2support_2Base64_8h">
+<area shape="rect" title=" " alt="" coords="5,5,167,45"/>
+<area shape="rect" title=" " alt="" coords="51,93,121,119"/>
+<area shape="poly" title=" " alt="" coords="89,46,89,79,83,79,83,46"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="Base64_8h__dep__incl.png" border="0" usemap="#aconnectedhomeip_2src_2lib_2support_2Base64_8hdep" alt=""/></div>
+<map name="aconnectedhomeip_2src_2lib_2support_2Base64_8hdep" id="aconnectedhomeip_2src_2lib_2support_2Base64_8hdep">
+<area shape="rect" title=" " alt="" coords="176,5,337,45"/>
+<area shape="rect" href="Options_8cpp.html" title=" " alt="" coords="5,189,212,229"/>
+<area shape="poly" title=" " alt="" coords="234,58,126,190,122,187,230,55"/>
+<area shape="rect" href="CHIPCryptoPAL_8h.html" title=" " alt="" coords="313,93,493,133"/>
+<area shape="poly" title=" " alt="" coords="302,50,373,91,370,96,300,55"/>
+<area shape="poly" title=" " alt="" coords="331,140,169,191,167,186,330,135"/>
+<area shape="rect" href="AppMain_8cpp.html" title=" " alt="" coords="581,489,788,529"/>
+<area shape="poly" title=" " alt="" coords="326,141,299,159,278,183,271,196,269,208,278,235,310,284,350,328,396,366,445,400,494,429,543,453,627,487,625,492,541,458,492,433,442,405,393,371,347,332,306,287,273,237,264,209,266,195,273,180,295,155,323,137"/>
+<area shape="rect" href="CommissionableInit_8cpp.html" title=" " alt="" coords="288,181,519,236"/>
+<area shape="poly" title=" " alt="" coords="406,147,406,181,401,181,401,147"/>
+<area shape="rect" href="LinuxCommissionableDataProvider_8cpp.html" title=" " alt="" coords="543,181,810,236"/>
+<area shape="poly" title=" " alt="" coords="472,135,601,179,599,184,471,140"/>
+<area shape="rect" href="TestGroupData_8h.html" title=" " alt="" coords="532,291,739,331"/>
+<area shape="poly" title=" " alt="" coords="507,114,598,119,692,130,773,150,803,163,824,180,833,194,836,208,832,223,824,238,806,253,777,268,706,294,704,289,775,264,803,249,820,234,827,221,830,208,828,196,820,183,800,168,771,155,691,136,597,124,507,119"/>
+<area shape="rect" href="RendezvousParameters_8h.html" title=" " alt="" coords="885,181,1076,236"/>
+<area shape="poly" title=" " alt="" coords="508,125,676,148,866,179,886,182,885,188,866,184,675,153,507,130"/>
+<area shape="poly" title=" " alt="" coords="646,344,682,488,677,490,641,345"/>
+<area shape="rect" href="ControllerShellCommands_8cpp.html" title=" " alt="" coords="763,284,982,339"/>
+<area shape="poly" title=" " alt="" coords="944,248,903,286,899,282,940,244"/>
+<area shape="rect" href="Server_8h.html" title=" " alt="" coords="1007,291,1168,331"/>
+<area shape="poly" title=" " alt="" coords="1020,244,1069,289,1065,293,1017,247"/>
+<area shape="poly" title=" " alt="" coords="1009,337,995,341,933,352,883,355,836,363,811,373,782,389,754,412,730,439,696,491,692,488,725,436,750,408,779,384,808,368,835,358,883,350,932,346,993,336,1008,332"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="832,489,1039,529"/>
+<area shape="poly" title=" " alt="" coords="1075,345,1048,393,1013,443,988,469,963,491,959,487,985,465,1009,440,1044,390,1070,343"/>
+<area shape="rect" href="AppMain_8h.html" title=" " alt="" coords="792,394,999,434"/>
+<area shape="poly" title=" " alt="" coords="1041,340,933,396,930,392,1038,335"/>
+<area shape="rect" href="CommissioneeShellCommands_8cpp.html" title=" " alt="" coords="1074,387,1325,441"/>
+<area shape="poly" title=" " alt="" coords="1120,338,1172,384,1168,388,1117,342"/>
+<area shape="poly" title=" " alt="" coords="841,442,728,492,726,487,839,437"/>
+<area shape="poly" title=" " alt="" coords="911,445,930,488,925,490,906,447"/>
+</map>
+</div>
+</div>
+<p><a href="Base64_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a1cb8be7a4fb7894b7b9139fa5570880b" id="r_a1cb8be7a4fb7894b7b9139fa5570880b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Base64_8h.html#a1cb8be7a4fb7894b7b9139fa5570880b">BASE64_ENCODED_LEN</a>(LEN)&#160;&#160;&#160;((((LEN) + 2) / 3) * 4)</td></tr>
+<tr class="separator:a1cb8be7a4fb7894b7b9139fa5570880b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d740772cdb09746ddd086766ac19ca9" id="r_a7d740772cdb09746ddd086766ac19ca9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Base64_8h.html#a7d740772cdb09746ddd086766ac19ca9">BASE64_MAX_DECODED_LEN</a>(LEN)&#160;&#160;&#160;((LEN) *3 / 4)</td></tr>
+<tr class="separator:a7d740772cdb09746ddd086766ac19ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a10d7218fd892829c8da68afc403d9d97" id="r_a10d7218fd892829c8da68afc403d9d97"><td class="memItemLeft" align="right" valign="top">typedef char(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a10d7218fd892829c8da68afc403d9d97">chip::Base64ValToCharFunct</a>) (uint8_t val)</td></tr>
+<tr class="separator:a10d7218fd892829c8da68afc403d9d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a716a479aabdba1c1139f1903ff2226a9" id="r_a716a479aabdba1c1139f1903ff2226a9"><td class="memItemLeft" align="right" valign="top">typedef uint8_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a716a479aabdba1c1139f1903ff2226a9">chip::Base64CharToValFunct</a>) (uint8_t c)</td></tr>
+<tr class="separator:a716a479aabdba1c1139f1903ff2226a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:adfb9a2e9da66e08b77f8a7a1f56281a9" id="r_adfb9a2e9da66e08b77f8a7a1f56281a9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#adfb9a2e9da66e08b77f8a7a1f56281a9">chip::Base64Encode</a> (const uint8_t *in, uint16_t inLen, char *out)</td></tr>
+<tr class="separator:adfb9a2e9da66e08b77f8a7a1f56281a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803853c83059a0d584b07eb79446eeeb" id="r_a803853c83059a0d584b07eb79446eeeb"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a803853c83059a0d584b07eb79446eeeb">chip::Base64URLEncode</a> (const uint8_t *in, uint16_t inLen, char *out)</td></tr>
+<tr class="separator:a803853c83059a0d584b07eb79446eeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3684ea6b198787b7dc28d1f4b0c598b9" id="r_a3684ea6b198787b7dc28d1f4b0c598b9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a3684ea6b198787b7dc28d1f4b0c598b9">chip::Base64Encode</a> (const uint8_t *in, uint16_t inLen, char *out, <a class="el" href="namespacechip.html#a10d7218fd892829c8da68afc403d9d97">Base64ValToCharFunct</a> valToCharFunct)</td></tr>
+<tr class="separator:a3684ea6b198787b7dc28d1f4b0c598b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8ad41057aaea048d714c141e78d85d" id="r_a1e8ad41057aaea048d714c141e78d85d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a1e8ad41057aaea048d714c141e78d85d">chip::Base64Decode</a> (const char *in, uint16_t inLen, uint8_t *out)</td></tr>
+<tr class="separator:a1e8ad41057aaea048d714c141e78d85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6dec05724511b5851187c7780c161b6" id="r_ab6dec05724511b5851187c7780c161b6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#ab6dec05724511b5851187c7780c161b6">chip::Base64URLDecode</a> (const char *in, uint16_t inLen, uint8_t *out)</td></tr>
+<tr class="separator:ab6dec05724511b5851187c7780c161b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890185002e17e56ba7b217a8e89a377c" id="r_a890185002e17e56ba7b217a8e89a377c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a890185002e17e56ba7b217a8e89a377c">chip::Base64Decode</a> (const char *in, uint16_t inLen, uint8_t *out, <a class="el" href="namespacechip.html#a716a479aabdba1c1139f1903ff2226a9">Base64CharToValFunct</a> charToValFunct)</td></tr>
+<tr class="separator:a890185002e17e56ba7b217a8e89a377c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78556bd1c90b96a3a6d9437c721654df" id="r_a78556bd1c90b96a3a6d9437c721654df"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a78556bd1c90b96a3a6d9437c721654df">chip::Base64Encode32</a> (const uint8_t *in, uint32_t inLen, char *out)</td></tr>
+<tr class="separator:a78556bd1c90b96a3a6d9437c721654df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02947d829564297137b3c90e938bdf38" id="r_a02947d829564297137b3c90e938bdf38"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a02947d829564297137b3c90e938bdf38">chip::Base64Encode32</a> (const uint8_t *in, uint32_t inLen, char *out, <a class="el" href="namespacechip.html#a10d7218fd892829c8da68afc403d9d97">Base64ValToCharFunct</a> valToCharFunct)</td></tr>
+<tr class="separator:a02947d829564297137b3c90e938bdf38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78131f019e0d9e00fc0b0ca265dad358" id="r_a78131f019e0d9e00fc0b0ca265dad358"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a78131f019e0d9e00fc0b0ca265dad358">chip::Base64Decode32</a> (const char *in, uint32_t inLen, uint8_t *out)</td></tr>
+<tr class="separator:a78131f019e0d9e00fc0b0ca265dad358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a052ea53e749c26d2dbbd44b1c290a742" id="r_a052ea53e749c26d2dbbd44b1c290a742"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html#a052ea53e749c26d2dbbd44b1c290a742">chip::Base64Decode32</a> (const char *in, uint32_t inLen, uint8_t *out, <a class="el" href="namespacechip.html#a716a479aabdba1c1139f1903ff2226a9">Base64CharToValFunct</a> charToValFunct)</td></tr>
+<tr class="separator:a052ea53e749c26d2dbbd44b1c290a742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Base-64 utility functions. </p>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a1cb8be7a4fb7894b7b9139fa5570880b" name="a1cb8be7a4fb7894b7b9139fa5570880b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb8be7a4fb7894b7b9139fa5570880b">&#9670;&#160;</a></span>BASE64_ENCODED_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BASE64_ENCODED_LEN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">LEN</td><td>)</td>
+          <td>&#160;&#160;&#160;((((LEN) + 2) / 3) * 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Computes the base-64 encoded length for a given input length.</p>
+<p>The computed length includes room for padding characters.</p>
+<p>NOTE: The supplied argument must be an integer type. </p>
+
+</div>
+</div>
+<a id="a7d740772cdb09746ddd086766ac19ca9" name="a7d740772cdb09746ddd086766ac19ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d740772cdb09746ddd086766ac19ca9">&#9670;&#160;</a></span>BASE64_MAX_DECODED_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BASE64_MAX_DECODED_LEN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">LEN</td><td>)</td>
+          <td>&#160;&#160;&#160;((LEN) *3 / 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Computes the maximum possible decoded length for a given base-64 string input length.</p>
+<p>NOTE: The actual decoded length may be smaller than this due to padding. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

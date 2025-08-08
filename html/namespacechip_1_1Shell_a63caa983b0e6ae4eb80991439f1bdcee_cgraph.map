@@ -1,0 +1,19 @@
+<map id="chip::Shell::CommissioneeHandler" name="chip::Shell::CommissioneeHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,209,200,249"/>
+<area shape="rect" id="Node000002" href="$classchip_1_1Server.html#a028441cde3dca084cad196dbab534a73" title=" " alt="" coords="278,5,509,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,208,133,174,163,132,201,90,247,55,264,46,267,51,249,60,205,94,167,136,138,177,117,211"/>
+<area shape="rect" id="Node000003" href="$classchip_1_1Server.html#aebc85f8a7d702eb987e86f075f2119e8" title=" " alt="" coords="301,70,486,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,207,172,156,208,128,247,106,287,92,288,97,249,110,211,133,176,160,123,211"/>
+<area shape="rect" id="Node000004" href="$classchip_1_1app_1_1DnssdServer.html#a082e0a6e768395c9eaf50f948acbd4c7" title="Provides the system&#45;wide implementation of the service advertiser" alt="" coords="308,120,479,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,207,247,169,294,157,295,162,249,175,150,212"/>
+<area shape="rect" id="Node000005" href="$namespacechip_1_1Shell.html#aa47601d2de80eb5755cf74626da4889e" title=" " alt="" coords="284,185,503,210"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="200,216,270,208,271,214,201,221"/>
+<area shape="rect" id="Node000006" href="$classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1IdentificationDeclaration.html#a077fb810f85b411aeb3e716bce11d7a8" title=" " alt="" coords="248,234,539,289"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="201,237,234,241,234,246,200,243"/>
+<area shape="rect" id="Node000007" href="$classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1IdentificationDeclaration.html#ab1bccff5d8f264f6b8afdbf458ca4fc7" title=" " alt="" coords="248,313,539,367"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="142,247,192,273,249,298,273,306,271,311,247,302,190,278,139,252"/>
+<area shape="rect" id="Node000008" href="$classchip_1_1Protocols_1_1UserDirectedCommissioning_1_1IdentificationDeclaration.html#acb36f774f63d222218c01215e9d33cfe" title=" " alt="" coords="248,391,539,446"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="120,248,172,312,208,347,249,376,262,383,259,388,247,381,205,351,168,315,116,251"/>
+<area shape="rect" id="Node000009" href="$classchip_1_1app_1_1DnssdServer.html#a6a20c2a5830002513dd22e0c28d42041" title=" " alt="" coords="308,471,479,511"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="113,249,131,292,159,349,199,407,223,433,250,455,271,468,295,477,294,482,269,472,246,460,219,437,195,410,154,351,126,294,108,250"/>
+</map>

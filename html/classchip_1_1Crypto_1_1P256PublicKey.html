@@ -1,0 +1,630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: chip::Crypto::P256PublicKey クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1Crypto.html">Crypto</a></li><li class="navelem"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html">P256PublicKey</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classchip_1_1Crypto_1_1P256PublicKey-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">chip::Crypto::P256PublicKey クラス<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="CHIPCryptoPAL_8h_source.html">CHIPCryptoPAL.h</a>&gt;</code></p>
+<div class="dynheader">
+chip::Crypto::P256PublicKey の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Crypto_1_1P256PublicKey__inherit__graph.png" border="0" usemap="#achip_1_1Crypto_1_1P256PublicKey_inherit__map" alt="Inheritance graph"/></div>
+<map name="achip_1_1Crypto_1_1P256PublicKey_inherit__map" id="achip_1_1Crypto_1_1P256PublicKey_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,93,208,119"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1ECPKey.html" title=" " alt="" coords="11,5,202,45"/>
+<area shape="poly" title=" " alt="" coords="109,59,109,93,104,93,104,59"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+chip::Crypto::P256PublicKey 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Crypto_1_1P256PublicKey__coll__graph.png" border="0" usemap="#achip_1_1Crypto_1_1P256PublicKey_coll__map" alt="Collaboration graph"/></div>
+<map name="achip_1_1Crypto_1_1P256PublicKey_coll__map" id="achip_1_1Crypto_1_1P256PublicKey_coll__map">
+<area shape="rect" title=" " alt="" coords="5,93,208,119"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1ECPKey.html" title=" " alt="" coords="11,5,202,45"/>
+<area shape="poly" title=" " alt="" coords="109,59,109,93,104,93,104,59"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a11de8306f42a4c1c7897d7e2ec25e1f8" id="r_a11de8306f42a4c1c7897d7e2ec25e1f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#a11de8306f42a4c1c7897d7e2ec25e1f8">P256PublicKey</a> ()=default</td></tr>
+<tr class="separator:a11de8306f42a4c1c7897d7e2ec25e1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe24769636283d38dfc461180d32082" id="r_acfe24769636283d38dfc461180d32082"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:acfe24769636283d38dfc461180d32082"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#acfe24769636283d38dfc461180d32082">P256PublicKey</a> (const uint8_t(&amp;raw_value)[N])</td></tr>
+<tr class="separator:acfe24769636283d38dfc461180d32082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc121c6e80e40e47a8412126277d25b" id="r_a9fc121c6e80e40e47a8412126277d25b"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:a9fc121c6e80e40e47a8412126277d25b"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#a9fc121c6e80e40e47a8412126277d25b">P256PublicKey</a> (const <a class="el" href="namespacechip.html#a43f92c244158b5eeef1612561bd5620d">FixedByteSpan</a>&lt; N &gt; &amp;value)</td></tr>
+<tr class="separator:a9fc121c6e80e40e47a8412126277d25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53cb79a1ab31094671f64a88ddd0bcd7" id="r_a53cb79a1ab31094671f64a88ddd0bcd7"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:a53cb79a1ab31094671f64a88ddd0bcd7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html">P256PublicKey</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#a53cb79a1ab31094671f64a88ddd0bcd7">operator=</a> (const <a class="el" href="namespacechip.html#a43f92c244158b5eeef1612561bd5620d">FixedByteSpan</a>&lt; N &gt; &amp;value)</td></tr>
+<tr class="separator:a53cb79a1ab31094671f64a88ddd0bcd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef697068cc67ca6fd20c9675358b0948" id="r_aef697068cc67ca6fd20c9675358b0948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1Crypto.html#a2d012896aa9d0f5252d0e2471036be95">SupportedECPKeyTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#aef697068cc67ca6fd20c9675358b0948">Type</a> () const override</td></tr>
+<tr class="separator:aef697068cc67ca6fd20c9675358b0948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0297054166dea678b6d2ebc8ee32d3" id="r_a4e0297054166dea678b6d2ebc8ee32d3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#a4e0297054166dea678b6d2ebc8ee32d3">Length</a> () const override</td></tr>
+<tr class="separator:a4e0297054166dea678b6d2ebc8ee32d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fb0d32df8fea3b16aeea9e4bd4205d" id="r_aa0fb0d32df8fea3b16aeea9e4bd4205d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#aa0fb0d32df8fea3b16aeea9e4bd4205d">operator uint8_t *</a> () override</td></tr>
+<tr class="separator:aa0fb0d32df8fea3b16aeea9e4bd4205d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb905352000bba8293121a614f26cdd" id="r_a5cb905352000bba8293121a614f26cdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#a5cb905352000bba8293121a614f26cdd">operator const uint8_t *</a> () const override</td></tr>
+<tr class="separator:a5cb905352000bba8293121a614f26cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09dc6f3eeba2823922d5c74b5c8a29ef" id="r_a09dc6f3eeba2823922d5c74b5c8a29ef"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#a09dc6f3eeba2823922d5c74b5c8a29ef">ConstBytes</a> () const override</td></tr>
+<tr class="separator:a09dc6f3eeba2823922d5c74b5c8a29ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d858e8a9bac95768b253b79cb6242d" id="r_aa3d858e8a9bac95768b253b79cb6242d"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#aa3d858e8a9bac95768b253b79cb6242d">Bytes</a> () override</td></tr>
+<tr class="separator:aa3d858e8a9bac95768b253b79cb6242d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf8e9b8f39c459f826a7c2bc0e4c7434" id="r_aaf8e9b8f39c459f826a7c2bc0e4c7434"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#aaf8e9b8f39c459f826a7c2bc0e4c7434">IsUncompressed</a> () const override</td></tr>
+<tr class="separator:aaf8e9b8f39c459f826a7c2bc0e4c7434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5d823014ae385fc716f10d56e5ab05" id="r_acf5d823014ae385fc716f10d56e5ab05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#acf5d823014ae385fc716f10d56e5ab05">ECDSA_validate_msg_signature</a> (const uint8_t *msg, size_t msg_length, const <a class="el" href="namespacechip_1_1Crypto.html#a2d59a8523f17a9f6b9807937e7ce8334">P256ECDSASignature</a> &amp;signature) const override</td></tr>
+<tr class="separator:acf5d823014ae385fc716f10d56e5ab05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d33b9b2f6ab2afcfe7c25b647fc3f7" id="r_a14d33b9b2f6ab2afcfe7c25b647fc3f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#a14d33b9b2f6ab2afcfe7c25b647fc3f7">ECDSA_validate_hash_signature</a> (const uint8_t *hash, size_t hash_length, const <a class="el" href="namespacechip_1_1Crypto.html#a2d59a8523f17a9f6b9807937e7ce8334">P256ECDSASignature</a> &amp;signature) const override</td></tr>
+<tr class="separator:a14d33b9b2f6ab2afcfe7c25b647fc3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classchip_1_1Crypto_1_1ECPKey"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classchip_1_1Crypto_1_1ECPKey')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classchip_1_1Crypto_1_1ECPKey.html">chip::Crypto::ECPKey&lt; P256ECDSASignature &gt;</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a56cf4ac1483a9e6a0434b8440d9a80f8 inherit pub_methods_classchip_1_1Crypto_1_1ECPKey" id="r_a56cf4ac1483a9e6a0434b8440d9a80f8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#a56cf4ac1483a9e6a0434b8440d9a80f8">~ECPKey</a> ()=default</td></tr>
+<tr class="separator:a56cf4ac1483a9e6a0434b8440d9a80f8 inherit pub_methods_classchip_1_1Crypto_1_1ECPKey"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6374e643c86eda838cd96b5bc8f6e8d0 inherit pub_methods_classchip_1_1Crypto_1_1ECPKey" id="r_a6374e643c86eda838cd96b5bc8f6e8d0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#a6374e643c86eda838cd96b5bc8f6e8d0">Matches</a> (const <a class="el" href="classchip_1_1Crypto_1_1ECPKey.html">ECPKey</a>&lt; <a class="el" href="namespacechip_1_1Crypto.html#a2d59a8523f17a9f6b9807937e7ce8334">P256ECDSASignature</a> &gt; &amp;other) const</td></tr>
+<tr class="separator:a6374e643c86eda838cd96b5bc8f6e8d0 inherit pub_methods_classchip_1_1Crypto_1_1ECPKey"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:abbee81439061ea072be8c717f8c8dd4c" id="r_abbee81439061ea072be8c717f8c8dd4c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html#abbee81439061ea072be8c717f8c8dd4c">bytes</a> [<a class="el" href="namespacechip_1_1Crypto.html#aa0cece817f2925ac84285746bd195283">kP256_PublicKey_Length</a>]</td></tr>
+<tr class="separator:abbee81439061ea072be8c717f8c8dd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_methods_classchip_1_1Crypto_1_1ECPKey"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classchip_1_1Crypto_1_1ECPKey')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classchip_1_1Crypto_1_1ECPKey.html">chip::Crypto::ECPKey&lt; P256ECDSASignature &gt;</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a668a0d7db5313344b495d81c9ca28bd5 inherit pro_methods_classchip_1_1Crypto_1_1ECPKey" id="r_a668a0d7db5313344b495d81c9ca28bd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#a668a0d7db5313344b495d81c9ca28bd5">ECPKey</a> ()=default</td></tr>
+<tr class="separator:a668a0d7db5313344b495d81c9ca28bd5 inherit pro_methods_classchip_1_1Crypto_1_1ECPKey"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e532238dabc9d7fff020eaee3f7de6 inherit pro_methods_classchip_1_1Crypto_1_1ECPKey" id="r_af9e532238dabc9d7fff020eaee3f7de6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#af9e532238dabc9d7fff020eaee3f7de6">ECPKey</a> (const <a class="el" href="classchip_1_1Crypto_1_1ECPKey.html">ECPKey</a> &amp;)=default</td></tr>
+<tr class="separator:af9e532238dabc9d7fff020eaee3f7de6 inherit pro_methods_classchip_1_1Crypto_1_1ECPKey"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e006d296ff3a06dd09895388be4169e inherit pro_methods_classchip_1_1Crypto_1_1ECPKey" id="r_a1e006d296ff3a06dd09895388be4169e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html">ECPKey</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#a1e006d296ff3a06dd09895388be4169e">operator=</a> (const <a class="el" href="classchip_1_1Crypto_1_1ECPKey.html">ECPKey</a> &amp;)=default</td></tr>
+<tr class="separator:a1e006d296ff3a06dd09895388be4169e inherit pro_methods_classchip_1_1Crypto_1_1ECPKey"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a11de8306f42a4c1c7897d7e2ec25e1f8" name="a11de8306f42a4c1c7897d7e2ec25e1f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11de8306f42a4c1c7897d7e2ec25e1f8">&#9670;&#160;</a></span>P256PublicKey() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::Crypto::P256PublicKey::P256PublicKey </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfe24769636283d38dfc461180d32082" name="acfe24769636283d38dfc461180d32082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe24769636283d38dfc461180d32082">&#9670;&#160;</a></span>P256PublicKey() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr chip::Crypto::P256PublicKey::P256PublicKey </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t(&amp;)&#160;</td>
+          <td class="paramname"><em>raw_value</em>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fc121c6e80e40e47a8412126277d25b" name="a9fc121c6e80e40e47a8412126277d25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc121c6e80e40e47a8412126277d25b">&#9670;&#160;</a></span>P256PublicKey() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr chip::Crypto::P256PublicKey::P256PublicKey </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a43f92c244158b5eeef1612561bd5620d">FixedByteSpan</a>&lt; N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Crypto_1_1P256PublicKey_a9fc121c6e80e40e47a8412126277d25b_cgraph.png" border="0" usemap="#aclasschip_1_1Crypto_1_1P256PublicKey_a9fc121c6e80e40e47a8412126277d25b_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Crypto_1_1P256PublicKey_a9fc121c6e80e40e47a8412126277d25b_cgraph" id="aclasschip_1_1Crypto_1_1P256PublicKey_a9fc121c6e80e40e47a8412126277d25b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,184,45"/>
+<area shape="rect" href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33" title=" " alt="" coords="232,13,392,38"/>
+<area shape="poly" title=" " alt="" coords="185,23,218,23,218,28,185,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="aa3d858e8a9bac95768b253b79cb6242d" name="aa3d858e8a9bac95768b253b79cb6242d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d858e8a9bac95768b253b79cb6242d">&#9670;&#160;</a></span>Bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t * chip::Crypto::P256PublicKey::Bytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#aabe55ac5908175dadef3f3e5e03f3fcb">chip::Crypto::ECPKey&lt; P256ECDSASignature &gt;</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a09dc6f3eeba2823922d5c74b5c8a29ef" name="a09dc6f3eeba2823922d5c74b5c8a29ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09dc6f3eeba2823922d5c74b5c8a29ef">&#9670;&#160;</a></span>ConstBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * chip::Crypto::P256PublicKey::ConstBytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#adde14d6d9b322691a44091eb90c7ed44">chip::Crypto::ECPKey&lt; P256ECDSASignature &gt;</a>を実装しています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Crypto_1_1P256PublicKey_a09dc6f3eeba2823922d5c74b5c8a29ef_icgraph.png" border="0" usemap="#aclasschip_1_1Crypto_1_1P256PublicKey_a09dc6f3eeba2823922d5c74b5c8a29ef_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Crypto_1_1P256PublicKey_a09dc6f3eeba2823922d5c74b5c8a29ef_icgraph" id="aclasschip_1_1Crypto_1_1P256PublicKey_a09dc6f3eeba2823922d5c74b5c8a29ef_icgraph">
+<area shape="rect" title=" " alt="" coords="232,5,411,45"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1P256PublicKey.html#aaf8e9b8f39c459f826a7c2bc0e4c7434" title=" " alt="" coords="5,5,184,45"/>
+<area shape="poly" title=" " alt="" coords="218,28,184,28,184,23,218,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a14d33b9b2f6ab2afcfe7c25b647fc3f7" name="a14d33b9b2f6ab2afcfe7c25b647fc3f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d33b9b2f6ab2afcfe7c25b647fc3f7">&#9670;&#160;</a></span>ECDSA_validate_hash_signature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Crypto::P256PublicKey::ECDSA_validate_hash_signature </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>hash_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacechip_1_1Crypto.html#a2d59a8523f17a9f6b9807937e7ce8334">P256ECDSASignature</a> &amp;&#160;</td>
+          <td class="paramname"><em>signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#aab697ccec2e13b8a2094fd927034e1a8">chip::Crypto::ECPKey&lt; P256ECDSASignature &gt;</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="acf5d823014ae385fc716f10d56e5ab05" name="acf5d823014ae385fc716f10d56e5ab05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5d823014ae385fc716f10d56e5ab05">&#9670;&#160;</a></span>ECDSA_validate_msg_signature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a> chip::Crypto::P256PublicKey::ECDSA_validate_msg_signature </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>msg_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacechip_1_1Crypto.html#a2d59a8523f17a9f6b9807937e7ce8334">P256ECDSASignature</a> &amp;&#160;</td>
+          <td class="paramname"><em>signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#a235a14f3c07a534207e0bf93fa95b537">chip::Crypto::ECPKey&lt; P256ECDSASignature &gt;</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="aaf8e9b8f39c459f826a7c2bc0e4c7434" name="aaf8e9b8f39c459f826a7c2bc0e4c7434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf8e9b8f39c459f826a7c2bc0e4c7434">&#9670;&#160;</a></span>IsUncompressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::Crypto::P256PublicKey::IsUncompressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#aee1c01b53553c32524e5a82a5593ff1b">chip::Crypto::ECPKey&lt; P256ECDSASignature &gt;</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Crypto_1_1P256PublicKey_aaf8e9b8f39c459f826a7c2bc0e4c7434_cgraph.png" border="0" usemap="#aclasschip_1_1Crypto_1_1P256PublicKey_aaf8e9b8f39c459f826a7c2bc0e4c7434_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Crypto_1_1P256PublicKey_aaf8e9b8f39c459f826a7c2bc0e4c7434_cgraph" id="aclasschip_1_1Crypto_1_1P256PublicKey_aaf8e9b8f39c459f826a7c2bc0e4c7434_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,184,77"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1P256PublicKey.html#a09dc6f3eeba2823922d5c74b5c8a29ef" title=" " alt="" coords="232,5,411,45"/>
+<area shape="poly" title=" " alt="" coords="184,42,218,37,219,42,185,47"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1P256PublicKey.html#a4e0297054166dea678b6d2ebc8ee32d3" title=" " alt="" coords="232,69,411,109"/>
+<area shape="poly" title=" " alt="" coords="185,67,219,72,218,77,184,73"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e0297054166dea678b6d2ebc8ee32d3" name="a4e0297054166dea678b6d2ebc8ee32d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e0297054166dea678b6d2ebc8ee32d3">&#9670;&#160;</a></span>Length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t chip::Crypto::P256PublicKey::Length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#a8ff4b1e15c6c221ac414a31d4a5009e9">chip::Crypto::ECPKey&lt; P256ECDSASignature &gt;</a>を実装しています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Crypto_1_1P256PublicKey_a4e0297054166dea678b6d2ebc8ee32d3_icgraph.png" border="0" usemap="#aclasschip_1_1Crypto_1_1P256PublicKey_a4e0297054166dea678b6d2ebc8ee32d3_icgraph" alt=""/></div>
+<map name="aclasschip_1_1Crypto_1_1P256PublicKey_a4e0297054166dea678b6d2ebc8ee32d3_icgraph" id="aclasschip_1_1Crypto_1_1P256PublicKey_a4e0297054166dea678b6d2ebc8ee32d3_icgraph">
+<area shape="rect" title=" " alt="" coords="232,5,411,45"/>
+<area shape="rect" href="classchip_1_1Crypto_1_1P256PublicKey.html#aaf8e9b8f39c459f826a7c2bc0e4c7434" title=" " alt="" coords="5,5,184,45"/>
+<area shape="poly" title=" " alt="" coords="218,28,184,28,184,23,218,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5cb905352000bba8293121a614f26cdd" name="a5cb905352000bba8293121a614f26cdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cb905352000bba8293121a614f26cdd">&#9670;&#160;</a></span>operator const uint8_t *()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::Crypto::P256PublicKey::operator const uint8_t * </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#af573620cec5db5691827879e2363f7bc">chip::Crypto::ECPKey&lt; P256ECDSASignature &gt;</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="aa0fb0d32df8fea3b16aeea9e4bd4205d" name="aa0fb0d32df8fea3b16aeea9e4bd4205d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0fb0d32df8fea3b16aeea9e4bd4205d">&#9670;&#160;</a></span>operator uint8_t *()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chip::Crypto::P256PublicKey::operator uint8_t * </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#a889cad469b20899cf42d595f77a49907">chip::Crypto::ECPKey&lt; P256ECDSASignature &gt;</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a53cb79a1ab31094671f64a88ddd0bcd7" name="a53cb79a1ab31094671f64a88ddd0bcd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53cb79a1ab31094671f64a88ddd0bcd7">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classchip_1_1Crypto_1_1P256PublicKey.html">P256PublicKey</a> &amp; chip::Crypto::P256PublicKey::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacechip.html#a43f92c244158b5eeef1612561bd5620d">FixedByteSpan</a>&lt; N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchip_1_1Crypto_1_1P256PublicKey_a53cb79a1ab31094671f64a88ddd0bcd7_cgraph.png" border="0" usemap="#aclasschip_1_1Crypto_1_1P256PublicKey_a53cb79a1ab31094671f64a88ddd0bcd7_cgraph" alt=""/></div>
+<map name="aclasschip_1_1Crypto_1_1P256PublicKey_a53cb79a1ab31094671f64a88ddd0bcd7_cgraph" id="aclasschip_1_1Crypto_1_1P256PublicKey_a53cb79a1ab31094671f64a88ddd0bcd7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,184,45"/>
+<area shape="rect" href="classchip_1_1FixedSpan.html#a8a57787e85df3553e5767ceb52659c33" title=" " alt="" coords="232,13,392,38"/>
+<area shape="poly" title=" " alt="" coords="185,23,218,23,218,28,185,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aef697068cc67ca6fd20c9675358b0948" name="aef697068cc67ca6fd20c9675358b0948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef697068cc67ca6fd20c9675358b0948">&#9670;&#160;</a></span>Type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip_1_1Crypto.html#a2d012896aa9d0f5252d0e2471036be95">SupportedECPKeyTypes</a> chip::Crypto::P256PublicKey::Type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classchip_1_1Crypto_1_1ECPKey.html#a4f4f8d5131b73d89777219df2d1f35de">chip::Crypto::ECPKey&lt; P256ECDSASignature &gt;</a>を実装しています。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="abbee81439061ea072be8c717f8c8dd4c" name="abbee81439061ea072be8c717f8c8dd4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbee81439061ea072be8c717f8c8dd4c">&#9670;&#160;</a></span>bytes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t chip::Crypto::P256PublicKey::bytes[<a class="el" href="namespacechip_1_1Crypto.html#aa0cece817f2925ac84285746bd195283">kP256_PublicKey_Length</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>connectedhomeip/src/crypto/<a class="el" href="CHIPCryptoPAL_8h_source.html">CHIPCryptoPAL.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

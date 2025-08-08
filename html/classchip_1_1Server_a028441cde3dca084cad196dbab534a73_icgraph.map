@@ -1,0 +1,13 @@
+<map id="chip::Server::GetCommissioningWindowManager" name="chip::Server::GetCommissioningWindowManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="881,37,1112,77"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Shell.html#a63caa983b0e6ae4eb80991439f1bdcee" title=" " alt="" coords="633,5,827,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="867,45,827,40,828,34,868,39"/>
+<area shape="rect" id="Node000006" href="$classchip_1_1Server_1_1ServerFabricDelegate.html#a19d8d40984c68b27400702d9f4b6a9ab" title=" " alt="" coords="627,69,833,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="868,75,834,80,833,74,867,70"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Shell.html#ae532786c8c06657dca496e305a3a4979" title=" " alt="" coords="331,5,579,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="619,28,579,28,579,23,619,23"/>
+<area shape="rect" id="Node000004" href="$AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,13,283,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="317,28,283,28,283,23,317,23"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="95,28,60,28,60,23,95,23"/>
+</map>

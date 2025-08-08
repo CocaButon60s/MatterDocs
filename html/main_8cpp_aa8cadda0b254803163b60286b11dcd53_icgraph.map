@@ -1,0 +1,12 @@
+<map id="AddDeviceEndpoint" name="AddDeviceEndpoint">
+<area shape="rect" id="Node000001" title=" " alt="" coords="705,5,855,31"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a24fca18689ed30bdf1bcf5973f0d3985" title=" " alt="" coords="331,5,447,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="692,21,447,21,447,15,692,15"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#afec09689053904c38e1d4accbc62654b" title=" " alt="" coords="495,31,657,56"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="692,32,658,36,657,31,691,26"/>
+<area shape="rect" id="Node000003" href="$AppMain_8cpp.html#aa527d4be3bd3bab615a180981b6555e4" title=" " alt="" coords="108,5,283,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="317,21,283,21,283,15,317,15"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="95,21,60,21,60,15,95,15"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="480,33,447,28,447,23,481,28"/>
+</map>

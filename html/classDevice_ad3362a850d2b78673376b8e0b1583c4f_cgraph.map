@@ -1,0 +1,10 @@
+<map id="Device::SetUniqueId" name="Device::SetUniqueId">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,160,55"/>
+<area shape="rect" id="Node000002" href="$namespacechip_1_1Platform.html#aea7c95adcc593e92ebc13c88833c430d" title=" " alt="" coords="208,29,400,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,39,194,39,194,45,160,45"/>
+<area shape="rect" id="Node000003" href="$namespacechip_1_1Platform.html#abe7cb069f46f06b0312657d2db12a9d9" title=" " alt="" coords="448,29,599,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="400,39,434,39,434,45,400,45"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="488,31,480,21,484,11,499,5,523,3,554,6,566,15,563,20,552,11,523,8,500,10,488,15,485,20,492,28"/>
+<area shape="rect" id="Node000004" href="$namespacechip_1_1Platform.html#af1a25352e7486414fa03671cb9da8af1" title=" " alt="" coords="647,29,853,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="599,39,633,39,633,45,599,45"/>
+</map>

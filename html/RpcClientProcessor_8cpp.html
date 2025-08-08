@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MatterDocs: connectedhomeip/examples/platform/linux/RpcClientProcessor.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MatterDocs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_824aae81ebdca1899c082041583021a8.html">connectedhomeip</a></li><li class="navelem"><a class="el" href="dir_10d0982b574d45f69a889a48df526ab0.html">examples</a></li><li class="navelem"><a class="el" href="dir_b568bdd729e53f1ef6f0845f5f040bad.html">platform</a></li><li class="navelem"><a class="el" href="dir_305ccfe11c2879671f1244ec47ab4e9e.html">linux</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle"><div class="title">RpcClientProcessor.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="RpcClientProcessor_8h_source.html">RpcClientProcessor.h</a>&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &quot;pw_hdlc/decoder.h&quot;</code><br />
+<code>#include &quot;pw_hdlc/default_addresses.h&quot;</code><br />
+<code>#include &quot;pw_hdlc/rpc_channel.h&quot;</code><br />
+<code>#include &quot;pw_stream/socket_stream.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+RpcClientProcessor.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="RpcClientProcessor_8cpp__incl.png" border="0" usemap="#aconnectedhomeip_2examples_2platform_2linux_2RpcClientProcessor_8cpp" alt=""/></div>
+<map name="aconnectedhomeip_2examples_2platform_2linux_2RpcClientProcessor_8cpp" id="aconnectedhomeip_2examples_2platform_2linux_2RpcClientProcessor_8cpp">
+<area shape="rect" title=" " alt="" coords="1929,5,2202,45"/>
+<area shape="rect" href="RpcClientProcessor_8h.html" title=" " alt="" coords="1639,93,1798,119"/>
+<area shape="poly" title=" " alt="" coords="1983,48,1783,93,1782,88,1982,43"/>
+<area shape="rect" title=" " alt="" coords="1823,93,1881,119"/>
+<area shape="poly" title=" " alt="" coords="2015,48,1895,92,1894,87,2013,43"/>
+<area shape="rect" title=" " alt="" coords="1905,93,1969,119"/>
+<area shape="poly" title=" " alt="" coords="2036,48,1969,88,1966,84,2033,43"/>
+<area shape="rect" title=" " alt="" coords="1994,93,2137,119"/>
+<area shape="poly" title=" " alt="" coords="2068,46,2068,79,2063,79,2063,46"/>
+<area shape="rect" title=" " alt="" coords="2161,93,2372,119"/>
+<area shape="poly" title=" " alt="" coords="2115,43,2225,86,2223,91,2113,48"/>
+<area shape="rect" title=" " alt="" coords="2397,93,2566,119"/>
+<area shape="poly" title=" " alt="" coords="2165,43,2408,88,2407,93,2164,48"/>
+<area shape="rect" title=" " alt="" coords="2591,93,2796,119"/>
+<area shape="poly" title=" " alt="" coords="2203,41,2589,89,2588,94,2202,46"/>
+<area shape="rect" title=" " alt="" coords="1472,167,1592,192"/>
+<area shape="poly" title=" " alt="" coords="1690,121,1576,164,1574,159,1688,116"/>
+<area shape="rect" href="CHIPDeviceLayer_8h.html" title=" " alt="" coords="1616,167,1821,192"/>
+<area shape="poly" title=" " alt="" coords="1721,119,1721,153,1716,153,1716,119"/>
+<area shape="rect" title=" " alt="" coords="1845,167,1920,192"/>
+<area shape="poly" title=" " alt="" coords="1746,116,1845,159,1842,164,1744,121"/>
+<area shape="rect" href="CHIPDeviceConfig_8h.html" title=" " alt="" coords="1052,321,1263,346"/>
+<area shape="poly" title=" " alt="" coords="1616,194,1375,220,1274,233,1226,242,1208,256,1193,274,1170,310,1166,307,1188,270,1205,252,1224,238,1273,228,1374,215,1615,188"/>
+<area shape="rect" href="CHIPCore_8h.html" title=" " alt="" coords="124,240,271,265"/>
+<area shape="poly" title=" " alt="" coords="1616,194,1604,195,1219,218,840,235,284,252,284,247,840,229,1218,212,1604,189,1615,188"/>
+<area shape="rect" title=" " alt="" coords="1499,240,1699,265"/>
+<area shape="poly" title=" " alt="" coords="1701,194,1632,235,1629,230,1698,190"/>
+<area shape="rect" href="ConfigurationManager_8h.html" title=" " alt="" coords="1237,240,1475,265"/>
+<area shape="poly" title=" " alt="" coords="1661,195,1428,240,1427,235,1660,189"/>
+<area shape="rect" title=" " alt="" coords="1723,240,1955,265"/>
+<area shape="poly" title=" " alt="" coords="1739,190,1808,230,1806,235,1737,194"/>
+<area shape="rect" title=" " alt="" coords="1979,240,2154,265"/>
+<area shape="poly" title=" " alt="" coords="1775,189,1997,235,1996,240,1774,195"/>
+<area shape="rect" title=" " alt="" coords="2178,240,2422,265"/>
+<area shape="poly" title=" " alt="" coords="1812,189,2193,236,2193,241,1812,195"/>
+<area shape="rect" href="PlatformManager_8h.html" title=" " alt="" coords="689,240,895,265"/>
+<area shape="poly" title=" " alt="" coords="1616,194,1604,195,1223,225,910,246,909,241,1223,219,1604,189,1615,188"/>
+<area shape="rect" title=" " alt="" coords="2447,240,2617,265"/>
+<area shape="poly" title=" " alt="" coords="1822,188,1834,189,2132,212,2433,237,2433,243,2131,218,1833,195,1822,194"/>
+<area shape="rect" title=" " alt="" coords="2641,240,2841,265"/>
+<area shape="poly" title=" " alt="" coords="1822,188,1834,189,2055,205,2229,213,2403,222,2628,237,2627,243,2403,227,2228,218,2055,210,1833,195,1822,194"/>
+<area shape="rect" href="CHIPConfig_8h.html" title=" " alt="" coords="158,563,317,588"/>
+<area shape="poly" title=" " alt="" coords="1088,349,1040,356,928,368,830,371,662,371,583,377,502,393,415,425,317,477,297,493,278,512,252,552,247,549,274,509,293,489,315,472,413,420,501,388,582,372,661,366,830,366,927,363,1040,351,1087,343"/>
+<area shape="rect" title=" " alt="" coords="5,636,125,661"/>
+<area shape="poly" title=" " alt="" coords="211,590,107,633,105,628,209,586"/>
+<area shape="rect" title=" " alt="" coords="149,636,325,661"/>
+<area shape="poly" title=" " alt="" coords="240,588,240,622,235,622,235,588"/>
+<area shape="rect" title=" " alt="" coords="350,636,479,661"/>
+<area shape="poly" title=" " alt="" coords="267,586,374,628,372,633,265,590"/>
+<area shape="poly" title=" " alt="" coords="186,267,168,288,153,314,150,333,153,353,168,410,188,464,227,549,222,552,183,466,163,411,148,354,145,333,148,312,163,285,182,264"/>
+<area shape="rect" title=" " alt="" coords="173,321,344,346"/>
+<area shape="poly" title=" " alt="" coords="208,264,243,308,239,312,204,267"/>
+<area shape="rect" href="CHIPError_8h.html" title=" " alt="" coords="413,482,560,507"/>
+<area shape="poly" title=" " alt="" coords="189,267,175,285,163,307,158,330,164,352,185,379,211,403,241,423,272,440,338,465,400,480,399,485,336,470,270,445,238,428,208,407,182,383,159,355,152,330,158,305,171,282,184,264"/>
+<area shape="poly" title=" " alt="" coords="451,510,287,561,286,556,450,505"/>
+<area shape="rect" title=" " alt="" coords="346,563,433,588"/>
+<area shape="poly" title=" " alt="" coords="474,510,416,556,413,552,471,505"/>
+<area shape="rect" title=" " alt="" coords="457,563,516,588"/>
+<area shape="poly" title=" " alt="" coords="489,508,489,549,484,549,484,508"/>
+<area shape="rect" title=" " alt="" coords="1071,563,1163,588"/>
+<area shape="poly" title=" " alt="" coords="541,505,582,512,847,546,1058,566,1057,572,846,551,581,517,540,510"/>
+<area shape="rect" title=" " alt="" coords="541,563,713,588"/>
+<area shape="poly" title=" " alt="" coords="509,505,595,554,593,558,506,510"/>
+<area shape="poly" title=" " alt="" coords="1328,268,1200,318,1198,313,1326,263"/>
+<area shape="rect" title=" " alt="" coords="1761,401,1828,427"/>
+<area shape="poly" title=" " alt="" coords="1470,263,1722,290,1823,302,1868,311,1875,323,1877,334,1868,357,1849,378,1827,395,1823,391,1845,374,1863,354,1871,334,1870,324,1865,316,1822,307,1721,295,1470,268"/>
+<area shape="rect" title=" " alt="" coords="1449,321,1625,346"/>
+<area shape="poly" title=" " alt="" coords="1383,263,1499,313,1497,318,1381,268"/>
+<area shape="rect" href="Span_8h.html" title=" " alt="" coords="1287,321,1425,346"/>
+<area shape="poly" title=" " alt="" coords="1359,266,1359,307,1353,307,1353,266"/>
+<area shape="rect" title=" " alt="" coords="1650,321,1854,346"/>
+<area shape="poly" title=" " alt="" coords="1414,263,1682,315,1681,321,1413,268"/>
+<area shape="rect" title=" " alt="" coords="1929,313,2141,353"/>
+<area shape="poly" title=" " alt="" coords="1475,263,1679,284,1911,311,1915,311,1915,317,1910,316,1679,289,1475,268"/>
+<area shape="poly" title=" " alt="" coords="1370,344,1398,376,1427,420,1438,445,1443,470,1441,494,1429,516,1412,530,1387,541,1321,558,1246,568,1177,574,1177,569,1246,563,1320,553,1385,536,1409,525,1425,513,1436,493,1438,470,1433,447,1423,423,1394,379,1366,348"/>
+<area shape="poly" title=" " alt="" coords="1404,343,1438,351,1609,381,1748,403,1747,408,1608,387,1437,356,1403,349"/>
+<area shape="rect" title=" " alt="" coords="1489,401,1545,427"/>
+<area shape="poly" title=" " alt="" coords="1381,344,1483,393,1481,398,1378,348"/>
+<area shape="rect" title=" " alt="" coords="702,401,773,427"/>
+<area shape="poly" title=" " alt="" coords="1312,349,1275,356,1140,373,1033,380,925,387,786,404,786,399,924,381,1032,375,1139,368,1274,351,1311,343"/>
+<area shape="rect" title=" " alt="" coords="797,401,862,427"/>
+<area shape="poly" title=" " alt="" coords="1311,349,1275,356,1165,372,1077,379,989,387,876,404,876,399,988,382,1077,374,1164,366,1274,351,1310,343"/>
+<area shape="rect" title=" " alt="" coords="887,401,953,427"/>
+<area shape="poly" title=" " alt="" coords="1310,349,1275,356,1123,379,1055,389,967,404,966,399,1054,383,1122,374,1274,351,1309,343"/>
+<area shape="rect" title=" " alt="" coords="977,401,1135,427"/>
+<area shape="poly" title=" " alt="" coords="1313,349,1113,401,1112,395,1312,343"/>
+<area shape="rect" href="CodeUtils_8h.html" title=" " alt="" coords="1159,401,1329,427"/>
+<area shape="poly" title=" " alt="" coords="1341,348,1273,396,1270,391,1338,344"/>
+<area shape="poly" title=" " alt="" coords="1159,428,1147,429,983,436,771,440,562,451,472,462,402,477,362,493,324,514,263,556,260,552,321,509,360,488,401,472,472,456,561,446,771,435,983,431,1146,424,1158,423"/>
+<area shape="poly" title=" " alt="" coords="1159,428,1147,429,988,443,864,450,740,459,582,477,553,482,552,477,581,472,739,453,863,444,987,437,1146,424,1158,423"/>
+<area shape="rect" title=" " alt="" coords="705,482,839,507"/>
+<area shape="poly" title=" " alt="" coords="1159,429,1015,450,852,477,832,482,831,476,852,472,1014,444,1158,424"/>
+<area shape="rect" title=" " alt="" coords="863,482,1051,507"/>
+<area shape="poly" title=" " alt="" coords="1203,429,1013,481,1011,476,1202,424"/>
+<area shape="rect" title=" " alt="" coords="1076,475,1244,515"/>
+<area shape="poly" title=" " alt="" coords="1233,429,1192,467,1188,463,1230,425"/>
+<area shape="rect" title=" " alt="" coords="1268,475,1415,515"/>
+<area shape="poly" title=" " alt="" coords="1260,425,1309,464,1306,468,1257,429"/>
+<area shape="rect" title=" " alt="" coords="594,482,681,507"/>
+<area shape="poly" title=" " alt="" coords="1159,428,1147,429,1019,440,919,446,820,455,694,477,682,480,680,475,693,472,819,450,919,440,1019,435,1146,424,1158,423"/>
+<area shape="poly" title=" " alt="" coords="846,263,1092,315,1090,320,845,268"/>
+<area shape="poly" title=" " alt="" coords="698,268,538,289,356,316,329,321,328,315,356,311,537,284,697,263"/>
+<area shape="rect" title=" " alt="" coords="369,321,543,346"/>
+<area shape="poly" title=" " alt="" coords="744,268,519,320,518,315,743,263"/>
+<area shape="rect" title=" " alt="" coords="567,321,774,346"/>
+<area shape="poly" title=" " alt="" coords="776,268,701,315,698,311,773,263"/>
+<area shape="rect" title=" " alt="" coords="799,321,1028,346"/>
+<area shape="poly" title=" " alt="" coords="811,263,886,311,883,315,808,268"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacechip" id="r_namespacechip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip.html">chip</a></td></tr>
+<tr class="memdesc:namespacechip"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers shell commands for a commissionee (eg. end device) related to commissioning. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1rpc" id="r_namespacechip_1_1rpc"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc.html">chip::rpc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1rpc_1_1client" id="r_namespacechip_1_1rpc_1_1client"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client.html">chip::rpc::client</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03" id="r_namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html">chip::rpc::client::anonymous_namespace{RpcClientProcessor.cpp}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a257ccaffc51eabac25148ec708378587" id="r_a257ccaffc51eabac25148ec708378587"><td class="memItemLeft" align="right" valign="top">pw::hdlc::RpcChannelOutput&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#a257ccaffc51eabac25148ec708378587">chip::rpc::client::anonymous_namespace{RpcClientProcessor.cpp}::hdlcChannelOutput</a> (<a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#a1fa799959bcaf8879cb454d5f36105a1">rpcSocketStream</a>, pw::hdlc::kDefaultRpcAddress, &quot;HDLC channel&quot;)</td></tr>
+<tr class="separator:a257ccaffc51eabac25148ec708378587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3b61d0bc73ba80c28392a6bc3d4a24" id="r_aea3b61d0bc73ba80c28392a6bc3d4a24"><td class="memItemLeft" align="right" valign="top">pw::rpc::Client&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#aea3b61d0bc73ba80c28392a6bc3d4a24">chip::rpc::client::anonymous_namespace{RpcClientProcessor.cpp}::rpcClient</a> (<a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#a1e6485603d7c5db365443d1c60ea9600">channels</a>)</td></tr>
+<tr class="separator:aea3b61d0bc73ba80c28392a6bc3d4a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6069f437a7dcc71c5babc280a71069f7" id="r_a6069f437a7dcc71c5babc280a71069f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#a6069f437a7dcc71c5babc280a71069f7">chip::rpc::client::anonymous_namespace{RpcClientProcessor.cpp}::ProcessPackets</a> ()</td></tr>
+<tr class="separator:a6069f437a7dcc71c5babc280a71069f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f4787ab32989874525dfa26a6e8b432" id="r_a0f4787ab32989874525dfa26a6e8b432"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client.html#a0f4787ab32989874525dfa26a6e8b432">chip::rpc::client::SetRpcServerAddress</a> (const char *address)</td></tr>
+<tr class="separator:a0f4787ab32989874525dfa26a6e8b432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d318602d576dbd60876363377c07e99" id="r_a0d318602d576dbd60876363377c07e99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client.html#a0d318602d576dbd60876363377c07e99">chip::rpc::client::SetRpcServerPort</a> (uint16_t port)</td></tr>
+<tr class="separator:a0d318602d576dbd60876363377c07e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bdc6b4bdf6b08be09523e9517da4d12" id="r_a2bdc6b4bdf6b08be09523e9517da4d12"><td class="memItemLeft" align="right" valign="top">pw::rpc::Client &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client.html#a2bdc6b4bdf6b08be09523e9517da4d12">chip::rpc::client::GetDefaultRpcClient</a> ()</td></tr>
+<tr class="separator:a2bdc6b4bdf6b08be09523e9517da4d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9b9d6295efa14da651167a75e61494" id="r_a7d9b9d6295efa14da651167a75e61494"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CHIPError_8h.html#a14096ae3b9aa35fdb19b9d949b212e0d">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client.html#a7d9b9d6295efa14da651167a75e61494">chip::rpc::client::StartPacketProcessing</a> ()</td></tr>
+<tr class="separator:a7d9b9d6295efa14da651167a75e61494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:ad72eb10c8d881e7a2a4e5066c2de3a54" id="r_ad72eb10c8d881e7a2a4e5066c2de3a54"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#ad72eb10c8d881e7a2a4e5066c2de3a54">chip::rpc::client::anonymous_namespace{RpcClientProcessor.cpp}::kMaxTransmissionUnit</a> = 256</td></tr>
+<tr class="separator:ad72eb10c8d881e7a2a4e5066c2de3a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364c94494c568fe4c740403f90a4a207" id="r_a364c94494c568fe4c740403f90a4a207"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#a364c94494c568fe4c740403f90a4a207">chip::rpc::client::anonymous_namespace{RpcClientProcessor.cpp}::kDefaultRpcServerAddress</a> = &quot;127.0.0.1&quot;</td></tr>
+<tr class="separator:a364c94494c568fe4c740403f90a4a207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa799959bcaf8879cb454d5f36105a1" id="r_a1fa799959bcaf8879cb454d5f36105a1"><td class="memItemLeft" align="right" valign="top">pw::stream::SocketStream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#a1fa799959bcaf8879cb454d5f36105a1">chip::rpc::client::anonymous_namespace{RpcClientProcessor.cpp}::rpcSocketStream</a></td></tr>
+<tr class="separator:a1fa799959bcaf8879cb454d5f36105a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6485603d7c5db365443d1c60ea9600" id="r_a1e6485603d7c5db365443d1c60ea9600"><td class="memItemLeft" align="right" valign="top">pw::rpc::Channel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#a1e6485603d7c5db365443d1c60ea9600">chip::rpc::client::anonymous_namespace{RpcClientProcessor.cpp}::channels</a> [] = { pw::rpc::Channel::Create&lt;1&gt;(&amp;<a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#a257ccaffc51eabac25148ec708378587">hdlcChannelOutput</a>) }</td></tr>
+<tr class="separator:a1e6485603d7c5db365443d1c60ea9600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2ec7bf3586c1075d1fc87109ce6401" id="r_a2e2ec7bf3586c1075d1fc87109ce6401"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#a2e2ec7bf3586c1075d1fc87109ce6401">chip::rpc::client::anonymous_namespace{RpcClientProcessor.cpp}::rpcServerPort</a> = 0</td></tr>
+<tr class="separator:a2e2ec7bf3586c1075d1fc87109ce6401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0de2406b588369e91eeb94604a1609" id="r_afd0de2406b588369e91eeb94604a1609"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#afd0de2406b588369e91eeb94604a1609">chip::rpc::client::anonymous_namespace{RpcClientProcessor.cpp}::rpcServerAddress</a> = <a class="el" href="namespacechip_1_1rpc_1_1client_1_1anonymous__namespace_02RpcClientProcessor_8cpp_03.html#a364c94494c568fe4c740403f90a4a207">kDefaultRpcServerAddress</a></td></tr>
+<tr class="separator:afd0de2406b588369e91eeb94604a1609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
